@@ -4,7 +4,7 @@ import MainSidebar from './Components/MainSidebar/MainSidebar';
 import NavBar from './Components/NavBar/NavBar';
 import ProfileBar from './Components/ProfileBar/ProfileBar';
 
-function App() {
+export default function App() {
   return (
     <div className='app-container'>
       <NavBar/>
@@ -16,5 +16,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

@@ -1,9 +1,15 @@
-import "./NavBar.css"
+import React from 'react';
+import "./NavBar.css";
 
-export default function NavBar() {
+function NavBar() {
     return (
-        <div className="navbar">
-            <p>NavBar</p>
-        </div>
-    )
-}
+      <div className="navbar">
+        <nav>
+            <h1 id="logo"> Campus Connect</h1>
+            <img id="profile" src="" alt="profile"></img>
+        </nav>
+      </div>
+    );
+  }
+  
+  export default NavBar;
