@@ -1,0 +1,6 @@
+.main-content-container{
+    background: yellow;
+    max-width: 70%;
+    min-width: 60%;
+    flex-grow: 1;
+}

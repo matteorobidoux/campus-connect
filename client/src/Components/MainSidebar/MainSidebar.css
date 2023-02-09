@@ -1,0 +1,6 @@
+.main-sidebar-container{
+    background-color: azure;
+    max-width: 20%;
+    min-width: 15%;
+    flex-grow: 1;
+}
