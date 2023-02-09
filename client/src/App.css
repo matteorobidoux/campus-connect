@@ -17,3 +17,9 @@
     justify-content: center;
     column-gap: 1rem;
 }
+
+@media only screen and (max-width: 900px) {
+    .app-content-container {
+        column-gap: 0;
+    }
+}

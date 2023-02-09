@@ -4,3 +4,10 @@
     min-width: 60%;
     flex-grow: 1;
 }
+
+@media only screen and (max-width: 900px) {
+    .main-content-container {
+        min-width: 70%;
+        width: 70%;
+    }
+}

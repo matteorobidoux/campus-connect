@@ -1,12 +1,16 @@
 .navbar {
-    background: red;
     padding: 1.5rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    top: 0;
     background-color: #FC8D33;
     width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: 100%;
 }
 
 #logo {
