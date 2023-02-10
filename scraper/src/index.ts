@@ -80,6 +80,9 @@ async function fetchCourseSpecificInformation(params: CourseFetchSearchParams): 
   });
 
   const text = await timeTable.text()
+  const name = Object.entries(params).find(s => s[1] != undefined);
+  fs.writeFile('html_artifact/' + `${name?.[0]}-${name?.[1]}` + ".html", text, () => {})
+
   const root = parse(text.toString());
 
   const courses = root.querySelectorAll(".course-wrap")!
@@ -114,7 +117,6 @@ let things = getAllSections();
 let specific_ed = things[0];
 let general = things[2];
 let complementary = things[3];
-// log.debug(things[]);
  
 function querySpecifidEd()  {
   // Social science has an "all" option that we don't want to use. Let's skip that
