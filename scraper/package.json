@@ -4,6 +4,7 @@
   },
   "dependencies": {
     "@types/node": "^18.13.0",
+    "enquirer": "^2.3.6",
     "node-html-parser": "^6.1.4",
     "ts-node": "^10.9.1",
     "tslog": "^4.7.2",
