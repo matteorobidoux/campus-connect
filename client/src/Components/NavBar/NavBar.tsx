@@ -1,13 +1,18 @@
 import { profile } from "console";
 import "./NavBar.css";
-import profileImg from "./profile.png";
 
-function NavBar() {
+//Fix type script BS
+type NavBarProps = {
+    children: React.ReactNode;
+}
+
+function NavBar(props: NavBarProps) { 
+
   return (
     <div className="navbar">
       <nav>
         <h1 id="logo">Campus Connect</h1>
-        <img id="profile" src={profileImg} alt="profile"></img>
+        {props.children}
       </nav>
     </div>
   );
