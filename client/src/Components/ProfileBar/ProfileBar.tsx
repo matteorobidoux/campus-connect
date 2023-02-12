@@ -8,18 +8,17 @@ type ProfileBarProps = {
 
 export default function ProfileBar(props: ProfileBarProps) {
 
+    let profileBar = document.querySelector("#profileBar") as HTMLElement;
     if(props.data){
         console.log(props.data)
-        let profileBar = document.querySelector("#profileBar");
         //Fix type script BS
         if(profileBar){
-            profileBar.className = "openSidebar"
+            profileBar.style.right = "0%"
         }
     }else{
         console.log(props.data)
-        let profileBar = document.querySelector("#profileBar");
         if(profileBar){
-            profileBar.className = "closeSidebar"
+            profileBar.style.right = "-20%"
         }
     }
 

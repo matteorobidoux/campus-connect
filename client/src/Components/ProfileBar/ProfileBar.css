@@ -17,30 +17,7 @@
     padding: 1.25rem;
     top: 0;
     width: 20%;
-    right: -20%
-}
-
-.openSidebar {
-    animation-name: openSlide;
-    animation-duration: 1s;
-    transition-timing-function: ease;
-    left: 80%;
-}
-
-.closeSideBar {
-    animation-name: closeSlide;
-    animation-duration: 1s;
-    transition-timing-function: ease;
-    left: 0;
     right: -20%;
-}
-
-@keyframes openSlide {
-    0% {left: 120%;}
-    100% {left: 80%;}
-}
-
-@keyframes closeSlide {
-    0% {right: 0}
-    100% {right: -20%}
+    transition: right 1s;
+    transition-timing-function: ease-in-out;
 }
