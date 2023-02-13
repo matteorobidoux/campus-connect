@@ -5,6 +5,7 @@ import MainSidebar from './Components/MainSidebar/MainSidebar';
 import NavBar from './Components/NavBar/NavBar';
 import ProfileBar from './Components/ProfileBar/ProfileBar';
 import profileImg from "./profile.png";
+import closeImg from "./close.png"
 
 export default function App() {
 
@@ -29,7 +30,13 @@ export default function App() {
         <Main />
       </div>
       <ProfileBar data={isOpen.data}>
-        <button onClick={openProfileBar}>Close Profile Bar</button>
+        <img id="closeProfile" src={closeImg} alt="close icon" onClick={openProfileBar}></img>
+        <h1>Login</h1>
+        <form id="login">
+          <input id="username" type="text"></input>
+          <input id="password" type="password"></input>
+          <input id="submit" type="submit"></input>
+        </form>
       </ProfileBar>
     </div>
   );
