@@ -18,3 +18,15 @@ code {
   width: 100%;
   height: 100%;
 }
+
+:root {
+  --classes-red: #E03524;
+  --classes-orange: #F07C12;
+  --classes-yellow: #FFC200;
+  --classes-light-green: #90BC1A;
+  --classes-green: #21B534;
+  --classes-light-blue: #0095AC;
+  --classes-blue: #1F64AD;
+  --classes-dark-blue: #4040A0;
+  --classes-purple: #903498;
+}
