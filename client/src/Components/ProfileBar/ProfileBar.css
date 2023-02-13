@@ -1,5 +1,5 @@
 #profileBar {
-    background-color: rgba(252, 141, 51);
+    background-color: #7EB77F;
     position: absolute;
     height: 100%;
     padding: 1.25rem;
@@ -26,6 +26,7 @@ form {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     border: none;
+    background-color: azure;
 
 }
 
@@ -34,7 +35,9 @@ form {
     margin-left: auto;
     margin-right: auto;
     border: none;
-    background-color: white;
+    background-color: #80c974;
+    color: white;
+    padding: 1%;
 }
 
 #username,#password,#submit:focus {
@@ -42,7 +45,7 @@ form {
 }
 
 h1 {
-    color: white;
+    color: azure;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     padding: 1%;
