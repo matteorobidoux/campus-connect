@@ -6,7 +6,7 @@ export default interface CalendarEvent {
   title: string;
   description: string;
 
-  associatedClass: {
+  associatedSection: {
     name: string;
   };
 

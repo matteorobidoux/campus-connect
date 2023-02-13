@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  padding: 1rem;
+  background-color: #eeeeee;
+  border-radius: 15px;
+  min-height: 20px;
+  font-weight: 300;
+  width: 100%;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+
+    .day {
+      // font-weight: 400;
+      font-size: 1.5rem;
+    }
+  }
+
+
+  .vl {
+    border-left: 3px solid black;
+    min-height: 100%;
+    border-color: #2084E7;
+    margin: 0 0.8rem 0 0.5rem;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+
+    .className {
+    }
+    
+    .eventName {
+      font-weight: 400;
+    }
+
+  }
+
+}
