@@ -9,6 +9,10 @@ html, body {
   height: 100%;
 }
 
+body {
+  color: azure;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -29,4 +33,5 @@ code {
   --classes-blue: #1F64AD;
   --classes-dark-blue: #4040A0;
   --classes-purple: #903498;
+  --green: #7EB77F;
 }

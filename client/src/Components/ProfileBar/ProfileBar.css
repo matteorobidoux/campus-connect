@@ -3,7 +3,7 @@
 }
 
 #profileBar {
-    background-color: rgba(252, 141, 51);
+    background-color: var(--green);
     background: white;
     color: var(--text-color);
     position: absolute;
@@ -37,6 +37,8 @@ form input {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     border: none;
+    background-color: azure;
+
 }
 
 #submit {
@@ -44,7 +46,9 @@ form input {
     margin-left: auto;
     margin-right: auto;
     border: none;
-    background-color: white;
+    background-color: #80c974;
+    color: white;
+    padding: 1%;
 }
 
 #username,#password,#submit:focus {
@@ -52,6 +56,7 @@ form input {
 }
 
 h1 {
+    color: azure;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     padding: 1%;
