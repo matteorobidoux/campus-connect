@@ -18,6 +18,6 @@
     top: 0;
     width: 20%;
     right: -20%;
-    transition: right 1s;
+    transition: right .3s;
     transition-timing-function: ease-in-out;
 }

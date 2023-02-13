@@ -1,18 +1,22 @@
-import { profile } from "console";
+import profileImg from "../../profile.png"
 import "./NavBar.css";
 
 //Fix type script BS
 type NavBarProps = {
-    children: React.ReactNode;
+  toggleSidebar: Function
 }
 
-function NavBar(props: NavBarProps) { 
+function NavBar(props: NavBarProps) {
 
   return (
     <div className="navbar">
       <nav>
         <h1 id="logo">Campus Connect</h1>
-        {props.children}
+
+        <img id="profile" src={profileImg} alt="profile" onClick={e => {
+          e.preventDefault()
+          props.toggleSidebar(e)
+        }}></img>
       </nav>
     </div>
   );
