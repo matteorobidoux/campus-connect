@@ -1,9 +1,9 @@
 #profileBar {
-    background: green;
+    background-color: rgba(252, 141, 51);
     position: absolute;
     height: 100%;
     padding: 1.25rem;
-    top: 0;
+    bottom: 0;
     width: 20%;
     right: -25%;
     transition: right .3s;

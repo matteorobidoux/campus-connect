@@ -1,4 +1,5 @@
 import "./ProfileBar.css"
+import closeImg from "../../close.png"
 
 //fix type script stuff
 type ProfileBarProps = {
@@ -17,10 +18,16 @@ export default function ProfileBar(props: ProfileBarProps) {
 
     return (
         <div id="profileBar">
-            <button onClick={e => {
+            <img id="closeProfile" src={closeImg} alt="close icon" onClick={e => {
                 e.preventDefault()
                 props.toggleFunc(e)
-            }}>Close Profile Bar</button>
+            }}></img>
+            <h1>Login</h1>
+            <form id="login">
+                <input id="username" type="text"></input>
+                <input id="password" type="password"></input>
+                <input id="submit" type="submit"></input>
+            </form>
         </div>
     )
 }
