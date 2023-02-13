@@ -9,7 +9,7 @@
 }
 
 .app-content-container{
-    background: rgba(247, 0, 255, 0.167);
+    background: azure;
     height: 100%;
     width: 100%; 
     display: inherit;
