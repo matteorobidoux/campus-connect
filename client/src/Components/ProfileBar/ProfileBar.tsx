@@ -26,7 +26,9 @@ export default function ProfileBar(props: ProfileBarProps) {
             <form id="login">
                 <input id="username" type="text"></input>
                 <input id="password" type="password"></input>
-                <input id="submit" type="submit"></input>
+                <input id="submit" type="submit" onClick={e => {
+                    e.preventDefault()
+                }}></input>
             </form>
         </div>
     )
