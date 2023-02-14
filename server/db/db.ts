@@ -17,19 +17,28 @@ disconnectdb(){
 }
 
 
-async addRandom(){
+async addUser(nameUser:String, passwd:String, classes: String[]){
   await this.connectDb("test")
-  const abie= new User({ name: "three", password: "four", class: ["asdasd","dasdadsas"] })
+  const abie= new User({ name:nameUser, password: passwd, class: classes })
   await abie.save();
   this.disconnectdb();
 }
 
 
+async getAllUsers(){
+  await this.connectDb("test")
+  const result= await User.find()
+  console.log(result)
+  this.disconnectdb();
+}
+
 
 }
 
 const x =new  DbMongoose();
-x.addRandom();
+// let abo= ["five", "six"]
+// x.addUser("abe", "maria",abo);
+x.getAllUsers();
 
 
 
