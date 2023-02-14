@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 import User from "./models/user-schema"
-
+import Event from './models/event-schema';
 
 class DbMongoose{
   name: String
@@ -28,6 +28,14 @@ async addUser(nameUser:String, passwd:String, classes: String[]){
   this.disconnectdb();
 }
 
+async addEvent(id:String, date:Date, title: String, desc: String, sectionName:String){
+  await this.connectDb()
+  const abie= new Event({ id:id, date: date, title: title, desc: desc, associatedSection: {name: sectionName}})
+  console.log(abie)
+  await abie.save();
+  this.disconnectdb();
+}
+
 async getUserByClasss(classname: String){
   await this.connectDb()
   const result= await User.find({class: classname})
@@ -46,10 +54,10 @@ async getAllUsers(){
 
 
 }
-
-
-const a = new DbMongoose("test")
-a.getUserByClasss("asdasd")
+const b= new DbMongoose('test');
+const date=new Date()
+const description="Today I had an interview at 2pm but the Interviewer is making me wait and it 5h20pm already should I quit?"
+b.addEvent("2",date,"Intership", description, "Section0003")
 export default DbMongoose;
 
 

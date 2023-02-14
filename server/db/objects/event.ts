@@ -1,12 +1,16 @@
 class Events {
-  name: String;
+  id: String;
+  title: String;
   deadline: Date;
   desc: String;
-
-  constructor(theName :String, theDealine: Date, theDesc: String){
-    this.name=theName;
+  associatedSection: {
+    name: String
+  };
+  constructor(id: String, theTtitle :String, theDealine: Date, theDesc: String, sectionName: String){
+    this.title=theTtitle;
     this.deadline= theDealine;
     this.desc= theDesc;
+    this.associatedSection.name= sectionName
   }
 
   deadLine(){
@@ -15,8 +19,11 @@ class Events {
   description(){
     return this.desc
   }
-  eventName(){
-    return this.name
+  eventTitle(){
+    return this.title
+  }
+  associatedSec(){
+    return this.associatedSection.name
   }
 }
 
