@@ -9,4 +9,15 @@ class Events {
     this.desc= theDesc;
   }
 
+  deadLine(){
+    return this.deadLine
+  }
+  description(){
+    return this.desc
+  }
+  eventName(){
+    return this.name
+  }
 }
+
+export default Events;

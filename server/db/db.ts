@@ -3,10 +3,14 @@ import User from "./models/user-schema"
 
 
 class DbMongoose{
-connectDb(dnName: String)
+  name: String
+  constructor(name: String){
+    this.name=name
+  }
+connectDb()
 {
   let dbOptions = {
-  dbName: ""+dnName
+  dbName: ""+this.name
 }
 
   mongoose.connect("mongodb+srv://nenechi:nenechi12@exercise11.cfvsryo.mongodb.net/?retryWrites=true&w=majority", dbOptions);
@@ -18,27 +22,35 @@ disconnectdb(){
 
 
 async addUser(nameUser:String, passwd:String, classes: String[]){
-  await this.connectDb("test")
+  await this.connectDb()
   const abie= new User({ name:nameUser, password: passwd, class: classes })
   await abie.save();
   this.disconnectdb();
 }
 
+async getUserByClasss(classname: String){
+  await this.connectDb()
+  const result= await User.find({class: classname})
+  console.log(result)
+  this.disconnectdb();
+  return result;
+}
 
 async getAllUsers(){
-  await this.connectDb("test")
+  await this.connectDb()
   const result= await User.find()
   console.log(result)
   this.disconnectdb();
+  return result;
 }
 
 
 }
 
-const x =new  DbMongoose();
-// let abo= ["five", "six"]
-// x.addUser("abe", "maria",abo);
-x.getAllUsers();
+
+const a = new DbMongoose("test")
+a.getUserByClasss("asdasd")
+export default DbMongoose;
 
 
 
