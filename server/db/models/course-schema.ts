@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import Section from './Section';
+import Section from './section-schema';
 
 const {Schema, model} = mongoose;
 
