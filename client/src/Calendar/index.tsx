@@ -5,6 +5,7 @@ import 'react-calendar/dist/Calendar.css';
 import "./calendar.css"
 import { useEffect, useState } from "react";
 import { useQuery } from "react-query";
+import { toast } from "react-toastify";
 
 function isDateImportant({date}: CalendarTileProperties, usedDates: Date[]): string {
   if (
@@ -17,15 +18,29 @@ function isDateImportant({date}: CalendarTileProperties, usedDates: Date[]): str
 }
 
 async function getCalendarEvents() {
+  // Fake a response time
+  await new Promise(r => setTimeout(r, 1000));
   const tomorrow = new Date();
   tomorrow.setDate(1);
-  const cEvents: CalendarEvents[] = [{
-    id: 'ABC',
-    date: tomorrow,
-    associatedSection: { name: "Web Development" } ,
-    title: 'Submit thingy one',
-    description: 'We gotta submit the first sprint demo.',
-  }]
+
+  const afterTomorrow = new Date();
+  afterTomorrow.setDate(2);
+  const cEvents: CalendarEvents[] = [
+    {
+      id: 'ABC',
+      date: tomorrow,
+      associatedSection: { name: "Web Development" } ,
+      title: 'Submit thingy one',
+      description: 'We gotta submit the first sprint demo.',
+  },
+    {
+      id: 'ABD',
+      date: afterTomorrow,
+      associatedSection: { name: "Software Deployment" } ,
+      title: 'Submit thingy two',
+      description: 'Description two'
+    }
+  ]
   return cEvents;
 }
 
@@ -39,14 +54,27 @@ export interface CalendarProps {
 */
 export default function Calendar({onMonthChanged}: CalendarProps) {
   const [clickedDayRef, setClickedDayRef] = useState<EventTarget | null>(null)
+  const [currentMonth, setCurrentMonth] = useState(new Date().getMonth());
   const queryEvents = useQuery('events', getCalendarEvents)
 
   const handleActiveStartDateChange = (view: ViewCallbackProperties) => {
     if (view.action != "prev" && view.action != "next") return;
-    const matches = queryEvents.data!
-      .filter(ev => view.activeStartDate.getMonth() == ev.date.getMonth());
-    onMonthChanged?.(view.activeStartDate.getDate(), matches);
+    setCurrentMonth(view.activeStartDate.getMonth());
   }
+
+
+
+  useEffect(() => {
+    if (queryEvents.isLoading == true) {
+      toast.loading("loading events", {toastId: 'loadingEvents'});
+      return;
+    }
+    toast.update('loadingEvents', {render: 'loaded!', autoClose: 1000, type: 'success', isLoading: false});
+    const matches = queryEvents.data!.filter(ev => currentMonth == ev.date.getMonth());
+    onMonthChanged?.(currentMonth, matches);
+    console.log(queryEvents.data)
+
+  }, [currentMonth, queryEvents.isSuccess])
 
   useEffect(() => { console.log("Update clicked day ref") }, [clickedDayRef])
 
@@ -57,6 +85,6 @@ export default function Calendar({onMonthChanged}: CalendarProps) {
       onActiveStartDateChange={handleActiveStartDateChange}
       minDetail={'year'}
       showNeighboringMonth
-      />
+    />
   </div>
 }

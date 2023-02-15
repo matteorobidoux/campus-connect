@@ -1,22 +1,28 @@
 import './App.css';
-import Calendar from './Calendar';
-import CalendarEvent from "../../types/Calendar"
-import { useState } from 'react';
-import CalendarEventRow from './CalendarEntry';
+import 'react-toastify/dist/ReactToastify.css';
 import { QueryClient, QueryClientProvider } from 'react-query';
+import { CalendarWidget } from './CalendarWidget';
+import { ToastContainer } from 'react-toastify';
 
 const queryClient = new QueryClient()
 
 function App() {
-  const [events, setEvents] = useState<CalendarEvent[]>([])
-
   return (
     <QueryClientProvider client={queryClient}>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <div className="App">
-        <Calendar onMonthChanged={(_, evs)=> setEvents(evs)}/>
-        <div style={{width: "250px"}}>
-          {events.map(ev => <CalendarEventRow event={ev} key={ev.id}/>)}
-        </div>
+        <CalendarWidget/>
       </div>
     </QueryClientProvider>
   );

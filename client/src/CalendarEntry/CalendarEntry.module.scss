@@ -1,7 +1,10 @@
 .wrapper {
   display: flex;
+  justify-content: center;
   padding: 1rem;
-  background-color: #eeeeee;
+  background-color: rgb(249 249 249);
+  -webkit-box-shadow: 8px 6px 17px -3px rgba(0,0,0,0.15); 
+  box-shadow: 8px 6px 17px -3px rgba(0,0,0,0.15);
   border-radius: 15px;
   min-height: 20px;
   font-weight: 300;
@@ -10,9 +13,9 @@
   .left {
     display: flex;
     flex-direction: column;
+    padding: 0 0.2em;
 
     .day {
-      // font-weight: 400;
       font-size: 1.5rem;
     }
   }
@@ -27,9 +30,12 @@
 
   .right {
     display: flex;
+    flex-grow: 2;
+    justify-content: space-between;
     align-items: center;
 
     .className {
+      margin-right: 1rem;
     }
     
     .eventName {
@@ -38,4 +44,14 @@
 
   }
 
+  .plus {
+    padding: 0;
+    margin: 0;
+
+  }
 }
+
+.selectable {
+  cursor: pointer;
+}
+
