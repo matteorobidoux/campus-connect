@@ -22,7 +22,7 @@ export function AddEventEntry({}: AddEventEntryProps) {
       <p className={styles.plus}> + </p>
     </div>
     <Rodal visible={isVisible} onClose={() => setIsVisible(false)} height={500}>
-      <CalendarEntryModal/>
+      <CalendarEntryModal onClose={() => setIsVisible(false)}/>
     </Rodal>
     </>
   )

@@ -4,8 +4,8 @@ import ReactCalendar, { CalendarTileProperties, ViewCallbackProperties } from "r
 import 'react-calendar/dist/Calendar.css';
 import "./calendar.css"
 import { useEffect, useState } from "react";
-import { useQuery } from "react-query";
 import { toast } from "react-toastify";
+import { useCalendarEvents } from "../custom-query-hooks";
 
 function isDateImportant({date}: CalendarTileProperties, usedDates: Date[]): string {
   if (
@@ -15,33 +15,6 @@ function isDateImportant({date}: CalendarTileProperties, usedDates: Date[]): str
     return 'used'
   }
   return ''
-}
-
-async function getCalendarEvents() {
-  // Fake a response time
-  await new Promise(r => setTimeout(r, 1000));
-  const tomorrow = new Date();
-  tomorrow.setDate(1);
-
-  const afterTomorrow = new Date();
-  afterTomorrow.setDate(2);
-  const cEvents: CalendarEvents[] = [
-    {
-      id: 'ABC',
-      date: tomorrow,
-      associatedSection: { name: "Web Development" } ,
-      title: 'Submit thingy one',
-      description: 'We gotta submit the first sprint demo.',
-  },
-    {
-      id: 'ABD',
-      date: afterTomorrow,
-      associatedSection: { name: "Software Deployment" } ,
-      title: 'Submit thingy two',
-      description: 'Description two'
-    }
-  ]
-  return cEvents;
 }
 
 export interface CalendarProps {
@@ -55,7 +28,7 @@ export interface CalendarProps {
 export default function Calendar({onMonthChanged}: CalendarProps) {
   const [clickedDayRef, setClickedDayRef] = useState<EventTarget | null>(null)
   const [currentMonth, setCurrentMonth] = useState(new Date().getMonth());
-  const queryEvents = useQuery('events', getCalendarEvents)
+  const queryEvents = useCalendarEvents();
 
   const handleActiveStartDateChange = (view: ViewCallbackProperties) => {
     if (view.action != "prev" && view.action != "next") return;
@@ -84,7 +57,7 @@ export default function Calendar({onMonthChanged}: CalendarProps) {
       tileClassName={(p) => queryEvents.data ? isDateImportant(p, queryEvents.data.map(e => e.date)) : ""}
       onActiveStartDateChange={handleActiveStartDateChange}
       minDetail={'year'}
-      showNeighboringMonth
+      showFixedNumberOfWeeks={true}
     />
   </div>
 }
