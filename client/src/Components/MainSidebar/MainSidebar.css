@@ -1,5 +1,5 @@
 .main-sidebar-container{
-    background-color: azure;
+    background-color: var(--background);
     margin: 1rem;
     padding: .75rem;
     border-radius: 10px;

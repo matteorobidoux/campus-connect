@@ -13,7 +13,7 @@ export default function ProfileBar(props: ProfileBarProps) {
     if (props.isOpen && profileBar) {
         profileBar.style.right = "0%"
     } else if (!props.isOpen && profileBar) {
-        profileBar.style.right = "-100%"
+        profileBar.style.right = "-30%"
     }
 
     return (

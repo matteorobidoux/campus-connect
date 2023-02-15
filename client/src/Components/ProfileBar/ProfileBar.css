@@ -12,9 +12,8 @@
     min-width: 300px;
     bottom: 0;
     width: 20%;
-    right: -50%;
-    transition: right 0.4s;
-    transition-timing-function: ease-in-out;
+    right: -30%;
+    transition: right 0.2s;
     box-shadow: -3px 0px 8px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -37,7 +36,7 @@ form input {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     border: none;
-    background-color: azure;
+    background-color: var(--background);
 
 }
 
@@ -56,7 +55,7 @@ form input {
 }
 
 h1 {
-    color: azure;
+    color: var(--background);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     padding: 1%;
