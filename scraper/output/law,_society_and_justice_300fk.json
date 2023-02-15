@@ -1,0 +1,533 @@
+[
+	{
+		"title": "Western Civilization",
+		"number": "330-101-DW",
+		"sections": [
+			{
+				"section": "00015",
+				"teacher": "Pierre L'Heureux",
+				"schedule": "Tuesday8:30 AM - 10:00 AM4P.24ClassFriday8:30 AM - 10:00 AM4P.24Class"
+			}
+		]
+	},
+	{
+		"title": "General Psychology",
+		"number": "350-101-DW",
+		"sections": [
+			{
+				"section": "00009",
+				"teacher": "Pavel Piterkin",
+				"schedule": "Monday2:30 PM - 4:00 PM4P.10ClassWednesday2:30 PM - 4:00 PM4P.10Class"
+			}
+		]
+	},
+	{
+		"title": "Individual and Society",
+		"number": "387-101-DW",
+		"sections": [
+			{
+				"section": "00005",
+				"teacher": "Kelly Phipps",
+				"schedule": "Tuesday2:30 PM - 4:00 PM4A.7ClassThursday2:30 PM - 4:00 PM4A.7Class"
+			}
+		]
+	},
+	{
+		"title": "Western Civilization",
+		"number": "330-101-DW",
+		"sections": [
+			{
+				"section": "00003",
+				"teacher": "Frédéric Bastien",
+				"schedule": "Monday4:00 PM - 5:30 PM4H.21ClassWednesday4:00 PM - 5:30 PM4H.21Class"
+			}
+		]
+	},
+	{
+		"title": "General Psychology",
+		"number": "350-101-DW",
+		"sections": [
+			{
+				"section": "00013",
+				"teacher": "Pavel Piterkin",
+				"schedule": "Tuesday2:30 PM - 4:00 PM2P.04ClassThursday2:30 PM - 4:00 PM2P.04Class"
+			}
+		]
+	},
+	{
+		"title": "Individual and Society",
+		"number": "387-101-DW",
+		"sections": [
+			{
+				"section": "00009",
+				"teacher": "Kelly Phipps",
+				"schedule": "Tuesday4:00 PM - 5:30 PM4H.21ClassThursday4:00 PM - 5:30 PM4H.21Class"
+			}
+		]
+	},
+	{
+		"title": "Research Methods",
+		"number": "300-300-DW",
+		"sections": [
+			{
+				"section": "00018",
+				"teacher": "Vanessa Gordon",
+				"schedule": "Monday2:00 PM - 4:00 PM3H.19ClassThursday10:00 AM - 12:00 PM3H.19Class"
+			},
+			{
+				"section": "00019",
+				"teacher": "Rubens Lima Moraes",
+				"schedule": "Monday8:00 AM - 10:00 AM3A.9ClassWednesday8:00 AM - 10:00 AM3A.9Class"
+			}
+		]
+	},
+	{
+		"title": "Introduction to Economics",
+		"number": "383-101-DW",
+		"sections": [
+			{
+				"section": "00004",
+				"teacher": "Jean Duclos Alegue Feugo",
+				"schedule": "Tuesday1:00 PM - 2:30 PM4P.24ClassThursday1:00 PM - 2:30 PM4P.24Class"
+			}
+		]
+	},
+	{
+		"title": "Introduction to Politics",
+		"number": "385-101-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Donal Gill",
+				"schedule": "Tuesday8:30 AM - 10:00 AM4H.21ClassFriday8:30 AM - 10:00 AM4H.21Class"
+			}
+		]
+	},
+	{
+		"title": "Sociology of Law",
+		"number": "387-219-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Jennifer Sigouin",
+				"schedule": "Wednesday11:30 AM - 1:00 PM3H.15ClassFriday11:30 AM - 1:00 PM3H.15Class"
+			}
+		]
+	},
+	{
+		"title": "Research Methods",
+		"number": "300-300-DW",
+		"sections": [
+			{
+				"section": "00019",
+				"teacher": "Rubens Lima Moraes",
+				"schedule": "Monday8:00 AM - 10:00 AM3A.9ClassWednesday8:00 AM - 10:00 AM3A.9Class"
+			},
+			{
+				"section": "00020",
+				"teacher": "Francine Small",
+				"schedule": "Monday10:00 AM - 12:00 PM3A.4ClassWednesday10:00 AM - 12:00 PM3A.4Class"
+			}
+		]
+	},
+	{
+		"title": "Introduction to Economics",
+		"number": "383-101-DW",
+		"sections": [
+			{
+				"section": "00005",
+				"teacher": "Menouar Boulahfa",
+				"schedule": "Tuesday11:30 AM - 1:00 PM4H.19ClassThursday11:30 AM - 1:00 PM4H.19Class"
+			}
+		]
+	},
+	{
+		"title": "Introduction to Politics",
+		"number": "385-101-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Michel Fournier-Simard",
+				"schedule": "Tuesday4:00 PM - 5:30 PM4H.8ClassThursday4:00 PM - 5:30 PM4H.8Class"
+			}
+		]
+	},
+	{
+		"title": "Sociology of Law",
+		"number": "387-219-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Jennifer Sigouin",
+				"schedule": "Tuesday2:30 PM - 4:00 PM3E.1ClassThursday2:30 PM - 4:00 PM3E.1Class"
+			}
+		]
+	},
+	{
+		"title": "Research Methods",
+		"number": "300-300-DW",
+		"sections": [
+			{
+				"section": "00013",
+				"teacher": "Verity Whalen",
+				"schedule": "Monday10:00 AM - 12:00 PM5B.11ClassWednesday10:00 AM - 12:00 PM5B.11Class"
+			},
+			{
+				"section": "00034",
+				"teacher": "Maryann Farkas",
+				"schedule": "Tuesday4:00 PM - 6:00 PM3A.7ClassThursday4:00 PM - 6:00 PM3A.7Class"
+			}
+		]
+	},
+	{
+		"title": "Introduction to Economics",
+		"number": "383-101-DW",
+		"sections": [
+			{
+				"section": "00006",
+				"teacher": "Roger Tabry",
+				"schedule": "Monday2:30 PM - 4:00 PM3H.13ClassWednesday2:30 PM - 4:00 PM3H.13Class"
+			}
+		]
+	},
+	{
+		"title": "Introduction to Politics",
+		"number": "385-101-DW",
+		"sections": [
+			{
+				"section": "00004",
+				"teacher": "Vanessa Gordon",
+				"schedule": "Monday8:30 AM - 10:00 AM3F.3ClassWednesday8:30 AM - 10:00 AM3F.3Class"
+			}
+		]
+	},
+	{
+		"title": "Sociology of Law",
+		"number": "387-219-DW",
+		"sections": [
+			{
+				"section": "00003",
+				"teacher": "Jennifer Sigouin",
+				"schedule": "Tuesday11:30 AM - 1:00 PM4P.26ClassThursday11:30 AM - 1:00 PM4P.26Class"
+			}
+		]
+	},
+	{
+		"title": "Research Methods",
+		"number": "300-300-DW",
+		"sections": [
+			{
+				"section": "00034",
+				"teacher": "Maryann Farkas",
+				"schedule": "Tuesday4:00 PM - 6:00 PM3A.7ClassThursday4:00 PM - 6:00 PM3A.7Class"
+			},
+			{
+				"section": "00036",
+				"teacher": "Jan Alexandros Arvanitakis",
+				"schedule": "Monday2:00 PM - 4:00 PM3H.17ClassThursday10:00 AM - 12:00 PM3H.17Class"
+			}
+		]
+	},
+	{
+		"title": "Introduction to Economics",
+		"number": "383-101-DW",
+		"sections": [
+			{
+				"section": "00014",
+				"teacher": "James Roberts",
+				"schedule": "Tuesday1:00 PM - 2:30 PM4D.11ClassThursday1:00 PM - 2:30 PM4D.11Class"
+			}
+		]
+	},
+	{
+		"title": "Introduction to Politics",
+		"number": "385-101-DW",
+		"sections": [
+			{
+				"section": "00007",
+				"teacher": "Antonia Fikkert",
+				"schedule": "Monday8:30 AM - 10:00 AM4H.19ClassWednesday8:30 AM - 10:00 AM4H.19Class"
+			}
+		]
+	},
+	{
+		"title": "Sociology of Law",
+		"number": "387-219-DW",
+		"sections": [
+			{
+				"section": "00004",
+				"teacher": "Donald Shawn Berry",
+				"schedule": "Wednesday11:30 AM - 1:00 PM4P.26ClassFriday11:30 AM - 1:00 PM4P.26Class"
+			}
+		]
+	},
+	{
+		"title": "Research Methods",
+		"number": "300-300-DW",
+		"sections": [
+			{
+				"section": "00036",
+				"teacher": "Jan Alexandros Arvanitakis",
+				"schedule": "Monday2:00 PM - 4:00 PM3H.17ClassThursday10:00 AM - 12:00 PM3H.17Class"
+			},
+			{
+				"section": "00038",
+				"teacher": "Ray Claudio Pino",
+				"schedule": "Monday10:00 AM - 12:00 PM3H.19ClassWednesday10:00 AM - 12:00 PM3H.19Class"
+			}
+		]
+	},
+	{
+		"title": "Introduction to Economics",
+		"number": "383-101-DW",
+		"sections": [
+			{
+				"section": "00008",
+				"teacher": "Menouar Boulahfa",
+				"schedule": "Tuesday10:00 AM - 11:30 AM4A.4ClassFriday10:00 AM - 11:30 AM5D.2Class"
+			}
+		]
+	},
+	{
+		"title": "Introduction to Politics",
+		"number": "385-101-DW",
+		"sections": [
+			{
+				"section": "00006",
+				"teacher": "Vanessa Gordon",
+				"schedule": "Wednesday1:00 PM - 2:30 PM3F.3ClassFriday1:00 PM - 2:30 PM3F.3Class"
+			}
+		]
+	},
+	{
+		"title": "Sociology of Law",
+		"number": "387-219-DW",
+		"sections": [
+			{
+				"section": "00005",
+				"teacher": "Donald Shawn Berry",
+				"schedule": "Tuesday1:00 PM - 2:30 PM4E.9ClassThursday1:00 PM - 2:30 PM4E.9Class"
+			}
+		]
+	},
+	{
+		"title": "Canadian History",
+		"number": "330-201-DW",
+		"sections": [
+			{
+				"title": "Crime and Injustices in Canada",
+				"section": "00001",
+				"teacher": "Catherine Braithwaite",
+				"schedule": "Tuesday10:00 AM - 11:30 AM3F.7ClassFriday10:00 AM - 11:30 AM3F.7Class"
+			}
+		]
+	},
+	{
+		"title": "Psychology and the Law",
+		"number": "350-214-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Caroline Chochol",
+				"schedule": "Wednesday11:30 AM - 2:30 PM3H.10Class"
+			}
+		]
+	},
+	{
+		"title": "Quantitative Methods",
+		"number": "360-300-DW",
+		"sections": [
+			{
+				"section": "00006",
+				"teacher": "Islam Mohammad",
+				"schedule": "Tuesday2:00 PM - 4:00 PM3H.19ClassThursday2:00 PM - 4:00 PM3H.19Class"
+			},
+			{
+				"section": "00007",
+				"teacher": "Islam Mohammad",
+				"schedule": "Monday8:00 AM - 10:00 AM3H.19ClassWednesday8:00 AM - 10:00 AM3H.19Class"
+			}
+		]
+	},
+	{
+		"title": "Canadian Democracy",
+		"number": "385-306-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Cynthia J. Martin",
+				"schedule": "Tuesday11:30 AM - 1:00 PM4E.20ClassThursday11:30 AM - 1:00 PM4E.20Class"
+			}
+		]
+	},
+	{
+		"title": "Canadian History",
+		"number": "330-201-DW",
+		"sections": [
+			{
+				"title": "Crime and Society",
+				"section": "00002",
+				"teacher": "Rachèle Caux",
+				"schedule": "Tuesday4:00 PM - 5:30 PM4H.15ClassThursday4:00 PM - 5:30 PM4H.15Class"
+			}
+		]
+	},
+	{
+		"title": "Psychology and the Law",
+		"number": "350-214-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Caroline Chochol",
+				"schedule": "Friday11:30 AM - 2:30 PM3H.10Class"
+			}
+		]
+	},
+	{
+		"title": "Quantitative Methods",
+		"number": "360-300-DW",
+		"sections": [
+			{
+				"section": "00006",
+				"teacher": "Islam Mohammad",
+				"schedule": "Tuesday2:00 PM - 4:00 PM3H.19ClassThursday2:00 PM - 4:00 PM3H.19Class"
+			},
+			{
+				"section": "00007",
+				"teacher": "Islam Mohammad",
+				"schedule": "Monday8:00 AM - 10:00 AM3H.19ClassWednesday8:00 AM - 10:00 AM3H.19Class"
+			}
+		]
+	},
+	{
+		"title": "Canadian Democracy",
+		"number": "385-306-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Michel Fournier-Simard",
+				"schedule": "Tuesday11:30 AM - 1:00 PM4P.22ClassThursday11:30 AM - 1:00 PM4P.22Class"
+			}
+		]
+	},
+	{
+		"title": "Integrative Seminar",
+		"number": "300-308-DW",
+		"sections": [
+			{
+				"title": "Ethical Issues in Canada",
+				"section": "00027",
+				"teacher": "Calogero Miceli",
+				"schedule": "Tuesday2:00 PM - 4:00 PM5B.11ClassThursday2:00 PM - 4:00 PM5B.11Class"
+			},
+			{
+				"title": "Contemporary Threats to Liberal Democracy",
+				"section": "00033",
+				"teacher": "Donal Gill",
+				"schedule": "Monday12:00 PM - 2:00 PM3A.9ClassThursday8:00 AM - 10:00 AM3A.9Class"
+			}
+		]
+	},
+	{
+		"title": "Advanced Studies in Politics",
+		"number": "385-401-DW",
+		"sections": [
+			{
+				"title": "Abortion, Prostitution, and Drugs: Supreme Court and the Law",
+				"section": "00001",
+				"teacher": "Marianne Pelton",
+				"schedule": "Tuesday11:30 AM - 1:00 PM3E.9ClassThursday11:30 AM - 1:00 PM3E.9Class"
+			}
+		]
+	},
+	{
+		"title": "Integrative Seminar",
+		"number": "300-308-DW",
+		"sections": [
+			{
+				"title": "Contemporary Threats to Liberal Democracy",
+				"section": "00033",
+				"teacher": "Donal Gill",
+				"schedule": "Monday12:00 PM - 2:00 PM3A.9ClassThursday8:00 AM - 10:00 AM3A.9Class"
+			},
+			{
+				"title": "Global Justice Issues?",
+				"section": "00034",
+				"teacher": "Catherine Braithwaite",
+				"schedule": "Wednesday12:00 PM - 2:00 PM3A.9ClassFriday12:00 PM - 2:00 PM3A.9Class"
+			}
+		]
+	},
+	{
+		"title": "Advanced Studies in Politics",
+		"number": "385-401-DW",
+		"sections": [
+			{
+				"title": "Abortion, Prostitution, and Drugs: Supreme Court and the Law",
+				"section": "00001",
+				"teacher": "Marianne Pelton",
+				"schedule": "Tuesday11:30 AM - 1:00 PM3E.9ClassThursday11:30 AM - 1:00 PM3E.9Class"
+			}
+		]
+	},
+	{
+		"title": "Integrative Seminar",
+		"number": "300-308-DW",
+		"sections": [
+			{
+				"title": "Indigenous Canada",
+				"section": "00036",
+				"teacher": "Michael Duckett",
+				"schedule": "Monday8:00 AM - 10:00 AM3A.7ClassWednesday8:00 AM - 10:00 AM3A.7Class"
+			},
+			{
+				"title": "Global Justice Issues?",
+				"section": "00041",
+				"teacher": "Catherine Braithwaite",
+				"schedule": "Monday10:00 AM - 12:00 PM3A.9ClassWednesday10:00 AM - 12:00 PM3A.9Class"
+			}
+		]
+	},
+	{
+		"title": "Advanced Studies in Politics",
+		"number": "385-401-DW",
+		"sections": [
+			{
+				"title": "Abortion, Prostitution, and Drugs: Supreme Court and the Law",
+				"section": "00001",
+				"teacher": "Marianne Pelton",
+				"schedule": "Tuesday11:30 AM - 1:00 PM3E.9ClassThursday11:30 AM - 1:00 PM3E.9Class"
+			}
+		]
+	},
+	{
+		"title": "Integrative Seminar",
+		"number": "300-308-DW",
+		"sections": [
+			{
+				"title": "Global Justice Issues?",
+				"section": "00041",
+				"teacher": "Catherine Braithwaite",
+				"schedule": "Monday10:00 AM - 12:00 PM3A.9ClassWednesday10:00 AM - 12:00 PM3A.9Class"
+			},
+			{
+				"title": "Contemporary Threats to Liberal Democracy",
+				"section": "00042",
+				"teacher": "Donal Gill",
+				"schedule": "Monday4:00 PM - 6:00 PM5B.11ClassWednesday4:00 PM - 6:00 PM5B.11Class"
+			}
+		]
+	},
+	{
+		"title": "Advanced Studies in Politics",
+		"number": "385-401-DW",
+		"sections": [
+			{
+				"title": "Abortion, Prostitution, and Drugs: Supreme Court and the Law",
+				"section": "00001",
+				"teacher": "Marianne Pelton",
+				"schedule": "Tuesday11:30 AM - 1:00 PM3E.9ClassThursday11:30 AM - 1:00 PM3E.9Class"
+			}
+		]
+	}
+]

@@ -1,0 +1,107 @@
+[
+	{
+		"title": "Quantitative Methods",
+		"number": "360-300-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Erin Hall",
+				"schedule": "Monday8:00 AM - 10:00 AM3H.17ClassWednesday8:00 AM - 10:00 AM3H.17Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Erin Hall",
+				"schedule": "Tuesday12:00 PM - 2:00 PM5B.11ClassThursday12:00 PM - 2:00 PM5B.11Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Anna De Aguayo",
+				"schedule": "Monday8:00 AM - 10:00 AM3E.7ClassWednesday8:00 AM - 10:00 AM3E.7Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Anna De Aguayo",
+				"schedule": "Tuesday8:00 AM - 10:00 AM3E.7ClassFriday8:00 AM - 10:00 AM3E.7Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "Worku Aberra",
+				"schedule": "Wednesday12:00 PM - 2:00 PM3H.19ClassFriday12:00 PM - 2:00 PM3H.19Class"
+			},
+			{
+				"section": "00006",
+				"teacher": "Islam Mohammad",
+				"schedule": "Tuesday2:00 PM - 4:00 PM3H.19ClassThursday2:00 PM - 4:00 PM3H.19Class"
+			},
+			{
+				"section": "00007",
+				"teacher": "Islam Mohammad",
+				"schedule": "Monday8:00 AM - 10:00 AM3H.19ClassWednesday8:00 AM - 10:00 AM3H.19Class"
+			},
+			{
+				"section": "00008",
+				"teacher": "Roger Tabry",
+				"schedule": "Monday10:00 AM - 12:00 PM3H.17ClassWednesday10:00 AM - 12:00 PM3H.17Class"
+			},
+			{
+				"section": "00009",
+				"teacher": "Worku Aberra",
+				"schedule": "Tuesday12:00 PM - 2:00 PM3A.4ClassThursday12:00 PM - 2:00 PM3A.4Class"
+			},
+			{
+				"section": "00010",
+				"teacher": "Roger Tabry",
+				"schedule": "Tuesday2:00 PM - 4:00 PM3H.17ClassThursday2:00 PM - 4:00 PM3H.17Class"
+			},
+			{
+				"section": "00011",
+				"teacher": "Gemma Albanese",
+				"schedule": "Tuesday10:00 AM - 12:00 PM3H.17ClassFriday10:00 AM - 12:00 PM3H.17Class"
+			},
+			{
+				"section": "00012",
+				"teacher": "Michael Wasser",
+				"schedule": "Monday12:00 PM - 2:00 PM3H.17ClassThursday8:00 AM - 10:00 AM3H.17Class"
+			},
+			{
+				"section": "00013",
+				"teacher": "Michael Wasser",
+				"schedule": "Tuesday2:00 PM - 4:00 PM3A.9ClassThursday2:00 PM - 4:00 PM3A.9Class"
+			},
+			{
+				"section": "00014",
+				"teacher": "Sabrina Smofsky",
+				"schedule": "Monday2:00 PM - 4:00 PM3A.4ClassThursday10:00 AM - 12:00 PM3A.4Class"
+			}
+		]
+	},
+	{
+		"title": "Field Experience in a Developing Country",
+		"number": "360-321-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Sara Louise Kendall",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		]
+	},
+	{
+		"title": "Advanced Environmental Studies",
+		"number": "360-401-DW",
+		"sections": [
+			{
+				"title": "Sustenance, Sustainability, and the Sacred",
+				"section": "00001",
+				"teacher": "Natalie Kepka",
+				"schedule": "Wednesday1:00 PM - 2:30 PM3E.11ClassFriday1:00 PM - 2:30 PM3E.11Class"
+			},
+			{
+				"title": "Sustenance, Sustainability, and the Sacred",
+				"section": "00002",
+				"teacher": "Natalie Kepka",
+				"schedule": "Wednesday11:30 AM - 1:00 PM4D.6ClassFriday11:30 AM - 1:00 PM4D.6Class"
+			}
+		]
+	}
+]

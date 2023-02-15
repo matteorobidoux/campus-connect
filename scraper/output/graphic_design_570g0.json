@@ -1,0 +1,442 @@
+[
+	{
+		"title": "Life and Still Life Drawing",
+		"number": "510-921-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Natalie Olanick",
+				"schedule": "Tuesday8:30 AM - 11:30 AM3B.25Lab"
+			}
+		]
+	},
+	{
+		"title": "3D Foundations",
+		"number": "510-922-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Nina Dubois",
+				"schedule": "Thursday8:30 AM - 11:30 AM1G.3LabThursday8:30 AM - 11:30 AM1G.5Lab"
+			}
+		]
+	},
+	{
+		"title": "Typography 2",
+		"number": "570-261-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "François Martin",
+				"schedule": "Monday3:00 PM - 6:00 PM4G.10LabMonday3:00 PM - 6:00 PM4G.19Lab"
+			}
+		]
+	},
+	{
+		"title": "Photography for Graphic Design",
+		"number": "570-262-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Nelly Dahan",
+				"schedule": "Monday11:30 AM - 2:30 PM4G.13LabMonday11:30 AM - 2:30 PM4H.12Lab"
+			}
+		]
+	},
+	{
+		"title": "Typographic Grid Systems",
+		"number": "570-263-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Luc Parent",
+				"schedule": "Thursday12:00 PM - 3:00 PM4G.19LabThursday12:00 PM - 3:00 PM4G.8Lab"
+			}
+		]
+	},
+	{
+		"title": "Basic Design 2",
+		"number": "570-264-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Suzanne Côté",
+				"schedule": "Tuesday12:00 PM - 3:00 PM4G.10LabTuesday12:00 PM - 3:00 PM4G.19Lab"
+			}
+		]
+	},
+	{
+		"title": "Digital Imaging I",
+		"number": "570-266-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Laurence Pilon",
+				"schedule": "Friday1:00 PM - 4:00 PM4G.10Lab"
+			}
+		]
+	},
+	{
+		"title": "Life and Still Life Drawing",
+		"number": "510-921-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Antoinetta Grassi",
+				"schedule": "Wednesday2:30 PM - 5:30 PM3B.25Lab"
+			}
+		]
+	},
+	{
+		"title": "3D Foundations",
+		"number": "510-922-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Nina Dubois",
+				"schedule": "Thursday12:00 PM - 3:00 PM1G.3LabThursday12:00 PM - 3:00 PM1G.5Lab"
+			}
+		]
+	},
+	{
+		"title": "Typography 2",
+		"number": "570-261-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Benoit Deschamps",
+				"schedule": "Tuesday8:30 AM - 11:30 AM4G.19LabTuesday8:30 AM - 11:30 AM4G.8Lab"
+			}
+		]
+	},
+	{
+		"title": "Photography for Graphic Design",
+		"number": "570-262-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Nelly Dahan",
+				"schedule": "Friday2:00 PM - 5:00 PM4A.14LabFriday2:00 PM - 5:00 PM4G.15Lab"
+			}
+		]
+	},
+	{
+		"title": "Typographic Grid Systems",
+		"number": "570-263-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Suzanne Côté",
+				"schedule": "Thursday8:30 AM - 11:30 AM3G.3LabThursday8:30 AM - 11:30 AM4G.10Lab"
+			}
+		]
+	},
+	{
+		"title": "Basic Design 2",
+		"number": "570-264-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Suzanne Côté",
+				"schedule": "Monday12:00 PM - 3:00 PM4G.10LabMonday12:00 PM - 3:00 PM4G.19Lab"
+			}
+		]
+	},
+	{
+		"title": "Digital Imaging I",
+		"number": "570-266-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Laurence Pilon",
+				"schedule": "Friday8:30 AM - 11:30 AM4G.10Lab"
+			}
+		]
+	},
+	{
+		"title": "Semiotics and Visual Communication",
+		"number": "570-461-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Maya Saikali",
+				"schedule": "Wednesday8:30 AM - 11:30 AM4G.8Lab"
+			}
+		]
+	},
+	{
+		"title": "Motion Graphics 1",
+		"number": "570-462-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Suzanne Côté",
+				"schedule": "Wednesday1:30 PM - 4:30 PM4G.13Lab"
+			}
+		]
+	},
+	{
+		"title": "Logotype Design",
+		"number": "570-463-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Luc Parent",
+				"schedule": "Tuesday1:00 PM - 4:00 PM3E.6LabTuesday1:00 PM - 4:00 PM4G.8Lab"
+			}
+		]
+	},
+	{
+		"title": "Explorations in Printed Illustration",
+		"number": "570-465-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Pierre-Antoine Robitaille",
+				"schedule": "Monday2:30 PM - 5:30 PM2G.13LabMonday2:30 PM - 5:30 PM4G.13Lab"
+			}
+		]
+	},
+	{
+		"title": "Advertising Design",
+		"number": "570-466-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Tania Chiarotto",
+				"schedule": "Friday1:00 PM - 4:00 PM4G.19LabFriday1:00 PM - 4:00 PM4G.8Lab"
+			}
+		]
+	},
+	{
+		"title": "Visual Communication 2",
+		"number": "570-468-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "François Martin",
+				"schedule": "Monday9:00 AM - 12:00 PM4G.10LabMonday9:00 AM - 12:00 PM4G.19Lab"
+			}
+		]
+	},
+	{
+		"title": "Web Design I",
+		"number": "570-469-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Laurence Pilon",
+				"schedule": "Thursday11:30 AM - 2:30 PM4G.15Lab"
+			}
+		]
+	},
+	{
+		"title": "Semiotics and Visual Communication",
+		"number": "570-461-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Maya Saikali",
+				"schedule": "Wednesday1:00 PM - 4:00 PM4G.15Lab"
+			}
+		]
+	},
+	{
+		"title": "Motion Graphics 1",
+		"number": "570-462-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Suzanne Côté",
+				"schedule": "Monday8:30 AM - 11:30 AM4G.13Lab"
+			}
+		]
+	},
+	{
+		"title": "Logotype Design",
+		"number": "570-463-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Benoit Deschamps",
+				"schedule": "Monday2:30 PM - 5:30 PM3G.3LabMonday2:30 PM - 5:30 PM4G.8Lab"
+			}
+		]
+	},
+	{
+		"title": "Explorations in Printed Illustration",
+		"number": "570-465-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Pierre-Antoine Robitaille",
+				"schedule": "Friday12:00 PM - 3:00 PM2G.13LabFriday12:00 PM - 3:00 PM4G.13Lab"
+			}
+		]
+	},
+	{
+		"title": "Advertising Design",
+		"number": "570-466-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Tania Chiarotto",
+				"schedule": "Wednesday9:00 AM - 12:00 PM4G.10LabWednesday9:00 AM - 12:00 PM4G.19Lab"
+			}
+		]
+	},
+	{
+		"title": "Visual Communication 2",
+		"number": "570-468-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "François Martin",
+				"schedule": "Thursday3:00 PM - 6:00 PM4G.13LabThursday3:00 PM - 6:00 PM4G.19Lab"
+			}
+		]
+	},
+	{
+		"title": "Web Design I",
+		"number": "570-469-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Étienne Després",
+				"schedule": "Tuesday2:30 PM - 3:00 PM4G.15LabTuesday3:00 PM - 5:30 PM4G.15LabTuesday3:00 PM - 5:30 PM4G.19Lab"
+			}
+		]
+	},
+	{
+		"title": "Professional Graphic Design Practice 2",
+		"number": "570-661-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Pierre-Antoine Robitaille",
+				"schedule": "Tuesday8:30 AM - 11:30 AM4G.10Lab"
+			}
+		]
+	},
+	{
+		"title": "Interactive Design and Motion Graphics",
+		"number": "570-662-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Tania Chiarotto",
+				"schedule": "Thursday9:00 AM - 12:00 PM4G.17LabThursday1:00 PM - 4:00 PM4G.17Lab"
+			}
+		]
+	},
+	{
+		"title": "Publication Design",
+		"number": "570-663-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "François Martin",
+				"schedule": "Friday9:00 AM - 12:00 PM4G.17Lab"
+			}
+		]
+	},
+	{
+		"title": "Branding Design",
+		"number": "570-665-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Gyula Zoltan Gefin",
+				"schedule": "Wednesday9:30 AM - 12:30 PM4G.17LabWednesday1:30 PM - 4:30 PM4G.17Lab"
+			}
+		]
+	},
+	{
+		"title": "Social and Cultural Promotional Design",
+		"number": "570-666-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Gyula Zoltan Gefin",
+				"schedule": "Monday11:30 AM - 2:30 PM3G.3LabMonday11:30 AM - 2:30 PM4G.8Lab"
+			}
+		]
+	},
+	{
+		"title": "Production Constraints",
+		"number": "570-668-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Marvin Harder",
+				"schedule": "Monday3:00 PM - 6:00 PM4G.15Lab"
+			}
+		]
+	},
+	{
+		"title": "Professional Graphic Design Practice 2",
+		"number": "570-661-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Pierre-Antoine Robitaille",
+				"schedule": "Thursday8:30 AM - 11:30 AM4G.19LabThursday8:30 AM - 11:30 AM4G.8Lab"
+			}
+		]
+	},
+	{
+		"title": "Interactive Design and Motion Graphics",
+		"number": "570-662-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Tania Chiarotto",
+				"schedule": "Monday9:30 AM - 12:30 PM4G.17LabMonday1:30 PM - 4:30 PM4G.17Lab"
+			}
+		]
+	},
+	{
+		"title": "Publication Design",
+		"number": "570-663-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "François Martin",
+				"schedule": "Friday1:00 PM - 4:00 PM4G.17Lab"
+			}
+		]
+	},
+	{
+		"title": "Branding Design",
+		"number": "570-665-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Marvin Harder",
+				"schedule": "Tuesday9:00 AM - 12:00 PM4G.17LabTuesday1:00 PM - 4:00 PM4G.17Lab"
+			}
+		]
+	},
+	{
+		"title": "Social and Cultural Promotional Design",
+		"number": "570-666-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Pierre-Antoine Robitaille",
+				"schedule": "Friday8:30 AM - 11:30 AM4G.19LabFriday8:30 AM - 11:30 AM4G.8Lab"
+			}
+		]
+	},
+	{
+		"title": "Production Constraints",
+		"number": "570-668-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Marvin Harder",
+				"schedule": "Wednesday11:30 AM - 12:00 PM4G.8LabWednesday12:00 PM - 2:30 PM4G.19LabWednesday12:00 PM - 2:30 PM4G.8Lab"
+			}
+		]
+	}
+]
