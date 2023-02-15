@@ -8,23 +8,13 @@ import { toast } from "react-toastify";
 import { useCalendarEvents } from "../../custom-query-hooks";
 import CalendarEvent from "../../../../types/Calendar";
 
-function isDateImportant({date}: CalendarTileProperties, usedDates: Date[]): string {
-  if (
-    usedDates.some(d => date.getDate() == d.getDate()
-    && d.getMonth() == date.getMonth())
-  ) {
-    return 'used'
-  }
-  return ''
-}
 
 export interface CalendarProps {
   onMonthChanged?: (month: number, events: CalendarEvents[]) => void;
 }
 
-function sameDayAndMonth(d1: Date, d2: Date) {
-  return (d1.getMonth() == d2.getMonth() && d2.getDate() == d1.getDate());
-}
+const isSameDayAndMonth = (d1: Date, d2: Date) => d1.getMonth() == d2.getMonth() && d2.getDate() == d1.getDate();
+const getCEvClassName = (d1: Date, usedDates: Date[]) => usedDates.some(d => isSameDayAndMonth(d, d1)) ? 'used' : null;
 
 /**
  * TODO: Implement API call to fetch all the calendar events.
@@ -45,7 +35,7 @@ export default function Calendar({onMonthChanged}: CalendarProps) {
   }
 
   const handleDayClicked = (date: Date, ev: React.MouseEvent) => {
-    if (sameDayAndMonth(date, currentDate)) {
+    if (isSameDayAndMonth(date, currentDate)) {
       setCurrentDay(null);
       setCurrentDate(new Date());
       setClickedDayRef(null);
@@ -75,15 +65,17 @@ export default function Calendar({onMonthChanged}: CalendarProps) {
       toast.loading("loading events", {toastId: 'loadingEvents'});
       return;
     }
+
     toast.done('loadingEvents');
     const matches = queryEvents.data!.filter(filterByDayAndMonth);
     onMonthChanged?.(currentMonth, matches);
+
   }, [currentMonth, queryEvents.isSuccess, currentDay])
 
   return <div>
     <ReactCalendar
       onClickDay={handleDayClicked}
-      tileClassName={(p) => queryEvents.data ? isDateImportant(p, queryEvents.data.map(e => e.date)) : ""}
+      tileClassName={(p) => queryEvents.data ? getCEvClassName(p.date, queryEvents.data.map(e => e.date)) : null} 
       onActiveStartDateChange={handleActiveStartDateChange}
       minDetail={'year'}
       showFixedNumberOfWeeks={true}
