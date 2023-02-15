@@ -45,7 +45,7 @@ abbr[title] {
 .react-calendar__tile:enabled:focus {
  background: #f8f8fa;
  color: #6f48eb;
- border-radius: 6px;
+  border-radius: 20px;
 }
 .react-calendar__tile--now {
  background: #6f48eb33;

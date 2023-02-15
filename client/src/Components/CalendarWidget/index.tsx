@@ -10,6 +10,7 @@ export interface CalendarWidgetProps {
 
 export function CalendarWidget({}: CalendarWidgetProps) {
   const [events, setEvents] = useState<CalendarEvent[]>([])
+
   return (
     <div className={styles.wrapper}>
       <Calendar onMonthChanged={(_, evs)=> setEvents(evs)}/>

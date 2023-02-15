@@ -8,7 +8,7 @@
   box-shadow: 8px 6px 17px -3px rgba(0,0,0,0.15);
   border-radius: 15px;
   min-height: 20px;
-  font-weight: 300;
+  font-weight: 200;
   width: 100%;
 
   .left {
@@ -17,6 +17,7 @@
     padding: 0 0.2em;
 
     .day {
+      text-align: center;
       font-size: 1.5rem;
     }
   }

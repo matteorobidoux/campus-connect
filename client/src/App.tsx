@@ -1,6 +1,6 @@
 import './App.css';
 import 'react-toastify/dist/ReactToastify.css';
-import { QueryClient, QueryClientProvider } from 'react-query';
+import { QueryClient, QueryClientProvider, useQuery } from 'react-query';
 import { ToastContainer } from 'react-toastify';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCircleNotch } from '@fortawesome/free-solid-svg-icons'
@@ -20,6 +20,7 @@ export default function App() {
   function openProfileBar(e: any) {
     setIsOpen(!isOpen)
   }
+
 
   return (
     <QueryClientProvider client={queryClient}>
