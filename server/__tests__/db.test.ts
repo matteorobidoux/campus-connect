@@ -1,5 +1,5 @@
 const mockingoose = require('mockingoose');
-import User from "../db/models/user-schema";
+const user= require('../db/models/user-schema')
 
 
 describe('test mongoose User model', () => {
@@ -10,9 +10,9 @@ describe('test mongoose User model', () => {
       email: 'name@email.com',
     };
 
-    mockingoose(User).toReturn(_doc, 'findOne');
+    mockingoose(user).toReturn(_doc, 'findOne');
 
-    return User.findById({ _id: '507f191e810c19729de860ea' }).then(doc => {
+    return user.findById({ _id: '507f191e810c19729de860ea' }).then(doc => {
       expect(JSON.parse(JSON.stringify(doc))).toMatchObject(_doc);
     });
   });
