@@ -6,6 +6,7 @@ class DbMongoose{
   name: String
   constructor(name: String){
     this.name=name
+    this.connectDb();
   }
 connectDb()
 {
@@ -22,33 +23,26 @@ disconnectdb(){
 
 
 async addUser(nameUser:String, passwd:String, classes: String[]){
-  await this.connectDb()
   const abie= new User({ name:nameUser, password: passwd, class: classes })
   await abie.save();
-  this.disconnectdb();
+ 
 }
 
 async addEvent(id:String, date:Date, title: String, desc: String, sectionName:String){
-  await this.connectDb()
   const abie= new Event({ id:id, date: date, title: title, desc: desc, associatedSection: {name: sectionName}})
   console.log(abie)
   await abie.save();
-  this.disconnectdb();
 }
 
 async getUserByClasss(classname: String){
-  await this.connectDb()
   const result= await User.find({class: classname})
   console.log(result)
-  this.disconnectdb();
   return result;
 }
 
-async getAllUsers(){
-  await this.connectDb()
+async getAllUsers(){ 
   const result= await User.find()
   console.log(result)
-  this.disconnectdb();
   return result;
 }
 

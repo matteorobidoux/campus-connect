@@ -8,9 +8,10 @@ class Events {
   };
   constructor(id: String, theTtitle :String, theDealine: Date, theDesc: String, sectionName: String){
     this.title=theTtitle;
+    this.id=id;
     this.deadline= theDealine;
     this.desc= theDesc;
-    this.associatedSection.name= sectionName
+    this.associatedSection= {name:sectionName}
   }
 
   deadLine(){
