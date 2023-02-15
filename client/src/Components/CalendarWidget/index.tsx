@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CalendarEvent from "../../../types/Calendar";
+import CalendarEvent from "../../../../types/Calendar";
 import Calendar from "../Calendar";
 import CalendarEventRow from "../CalendarEntry";
 import { AddEventEntry } from "../CalendarEntry/AddEventEntry";

@@ -1,11 +1,11 @@
-import CalendarEvents from "../../../types/Calendar"
+import CalendarEvents from "../../../../types/Calendar"
 import ReactCalendar, { CalendarTileProperties, ViewCallbackProperties } from "react-calendar"
 
 import 'react-calendar/dist/Calendar.css';
 import "./calendar.css"
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
-import { useCalendarEvents } from "../custom-query-hooks";
+import { useCalendarEvents } from "../../custom-query-hooks";
 
 function isDateImportant({date}: CalendarTileProperties, usedDates: Date[]): string {
   if (
@@ -38,7 +38,7 @@ export default function Calendar({onMonthChanged}: CalendarProps) {
 
 
   useEffect(() => {
-    if (queryEvents.isLoading == true) {
+    if (queryEvents.isLoading) {
       toast.loading("loading events", {toastId: 'loadingEvents'});
       return;
     }

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Rodal from "rodal";
-import CalendarEvent from "../../../types/Calendar"
+import CalendarEvent from "../../../../types/Calendar"
 import styles from "./CalendarEntry.module.scss"
 
 export interface CalendarEventRowProps {
