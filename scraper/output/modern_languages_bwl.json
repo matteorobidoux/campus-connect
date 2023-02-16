@@ -1,0 +1,182 @@
+[
+	{
+		"title": "Modern Languages: ",
+		"sections": [
+			{
+				"title": "Chinese 1",
+				"section": "00001",
+				"teacher": "Joy Cheng Yu Lin",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Chinese 1",
+				"section": "00002",
+				"teacher": "Joy Cheng Yu Lin",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		],
+		"number": "613-BWL-03"
+	},
+	{
+		"title": "Modern Languages",
+		"sections": [
+			{
+				"title": "German 1",
+				"section": "00001",
+				"teacher": "Marie-France Lemay",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		],
+		"number": "609-BWL-03"
+	},
+	{
+		"title": "Modern Languages",
+		"sections": [
+			{
+				"title": "Greek 1",
+				"section": "00001",
+				"teacher": "Irene Tourkomanoli",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		],
+		"number": "615-BWL-03"
+	},
+	{
+		"title": "Modern Languages",
+		"sections": [
+			{
+				"title": "Hebrew 1",
+				"section": "00001",
+				"teacher": "Leila Roiter",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		],
+		"number": "611-BWL-03"
+	},
+	{
+		"title": "Modern Languages",
+		"sections": [
+			{
+				"title": "Italian 1",
+				"section": "00001",
+				"teacher": "Nicola Martino",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Italian 1",
+				"section": "00002",
+				"teacher": "Nicola Martino",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Italian 1",
+				"section": "00003",
+				"teacher": "Santina Montagano",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Italian 1",
+				"section": "00004",
+				"teacher": "Nicola Martino",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Italian 1",
+				"section": "00005",
+				"teacher": "Santina Montagano",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Italian 1",
+				"section": "00006",
+				"teacher": "Santina Montagano",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Italian Mother Tongue 1 (FOR ITALIAN SPEAKERS)",
+				"section": "00007",
+				"teacher": "Giorgia Sottanelli",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		],
+		"number": "608-BWL-03"
+	},
+	{
+		"title": "Modern Languages",
+		"sections": [
+			{
+				"title": "Spanish 1",
+				"section": "00001",
+				"teacher": "Christina Chough",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Spanish 1",
+				"section": "00002",
+				"teacher": "Nelly Muresan",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Spanish 1",
+				"section": "00003",
+				"teacher": "Maria Fernanda Benavides",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Spanish 1",
+				"section": "00004",
+				"teacher": "Maria-Elena Grijalva-Barba",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Spanish 1",
+				"section": "00005",
+				"teacher": "Maria-Elena Grijalva-Barba",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Spanish 1",
+				"section": "00006",
+				"teacher": "Christina Chough",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Spanish 1",
+				"section": "00007",
+				"teacher": "Nelly Muresan",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Spanish 1",
+				"section": "00008",
+				"teacher": "Maria Fernanda Benavides",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Spanish 1",
+				"section": "00009",
+				"teacher": "Maria Fernanda Benavides",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Spanish 1",
+				"section": "00010",
+				"teacher": "Francisco Goire",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Spanish 1",
+				"section": "00011",
+				"teacher": "Maria-Elena Grijalva-Barba",
+				"schedule": "Tuesday10:00 AM - 11:30 AM3E.3ClassFriday10:00 AM - 11:30 AM3E.3Class"
+			},
+			{
+				"title": "Spanish 1",
+				"section": "00012",
+				"teacher": "Francisco Goire",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		],
+		"number": "607-BWL-03"
+	}
+]

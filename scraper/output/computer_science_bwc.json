@@ -1,0 +1,38 @@
+[
+	{
+		"title": "Introduction to Computer Science",
+		"sections": [
+			{
+				"title": "Introduction to Computers",
+				"section": "00001",
+				"teacher": "Chaviva Lifson",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to Computers",
+				"section": "00002",
+				"teacher": "Mahsa Sadeghi Ghahroudi",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to Computers",
+				"section": "00003",
+				"teacher": "Chaviva Lifson",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to Computers",
+				"section": "00004",
+				"teacher": "Chaviva Lifson",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to Computers",
+				"section": "00005",
+				"teacher": "Behnam Karimi",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		],
+		"number": "420-BWC-03"
+	}
+]

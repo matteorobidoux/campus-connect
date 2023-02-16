@@ -1,0 +1,310 @@
+[
+	{
+		"title": "Art & the Built Environment",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Emma Doubt",
+				"schedule": "Friday12:00 PM - 3:00 PM4F.2Class"
+			}
+		],
+		"number": "520-240-DW"
+	},
+	{
+		"title": "Materials & Furnishings II",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Jill Hogan",
+				"schedule": "Monday12:00 PM - 3:00 PM3G.4Lab"
+			}
+		],
+		"number": "570-240-DW"
+	},
+	{
+		"title": "Interior Design II",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Kurt Holfeld, Scott Millar",
+				"schedule": "Tuesday8:30 AM - 11:30 AM3G.21LabTuesday12:00 PM - 3:00 PM3G.21Lab"
+			}
+		],
+		"number": "570-241-DW"
+	},
+	{
+		"title": "Visual Communication I",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Philip Fontaine",
+				"schedule": "Wednesday12:30 PM - 3:30 PM3G.4Lab"
+			}
+		],
+		"number": "570-244-DW"
+	},
+	{
+		"title": "CAD I",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Mark Lance Lipson",
+				"schedule": "Friday8:30 AM - 11:30 AM3G.8Lab"
+			}
+		],
+		"number": "570-245-DW"
+	},
+	{
+		"title": "Colour & Lighting I",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Adolphe Tinling, James McCallan",
+				"schedule": "Thursday8:30 AM - 11:30 AM1G.14LabThursday8:30 AM - 11:30 AM3G.21Lab"
+			}
+		],
+		"number": "570-246-DW"
+	},
+	{
+		"title": "Art & the Built Environment",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Emma Doubt",
+				"schedule": "Friday12:00 PM - 3:00 PM4F.2Class"
+			}
+		],
+		"number": "520-240-DW"
+	},
+	{
+		"title": "Materials & Furnishings II",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Jill Hogan",
+				"schedule": "Tuesday8:30 AM - 11:30 AM3G.8Lab"
+			}
+		],
+		"number": "570-240-DW"
+	},
+	{
+		"title": "Interior Design II",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Adolphe Tinling",
+				"schedule": "Monday8:30 AM - 11:30 AM3G.21LabMonday12:00 PM - 3:00 PM3G.21Lab"
+			}
+		],
+		"number": "570-241-DW"
+	},
+	{
+		"title": "Visual Communication I",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Philip Fontaine",
+				"schedule": "Wednesday8:30 AM - 11:30 AM3G.4Lab"
+			}
+		],
+		"number": "570-244-DW"
+	},
+	{
+		"title": "CAD I",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Mark Lance Lipson",
+				"schedule": "Thursday8:30 AM - 11:30 AM3G.8Lab"
+			}
+		],
+		"number": "570-245-DW"
+	},
+	{
+		"title": "Colour & Lighting I",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Adolphe Tinling, Philip Fontaine",
+				"schedule": "Thursday12:30 PM - 3:30 PM1G.14LabThursday12:30 PM - 3:30 PM3G.21Lab"
+			}
+		],
+		"number": "570-246-DW"
+	},
+	{
+		"title": "Interior Design IV",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Anne-Marie Legault",
+				"schedule": "Tuesday1:00 PM - 3:00 PM3G.4LabFriday9:00 AM - 12:00 PM3G.4LabFriday12:30 PM - 3:30 PM3G.4Lab"
+			}
+		],
+		"number": "570-441-DW"
+	},
+	{
+		"title": "Construction Documents II",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Mark Lance Lipson",
+				"schedule": "Monday3:00 PM - 6:00 PM3G.4Lab"
+			}
+		],
+		"number": "570-442-DW"
+	},
+	{
+		"title": "Visual Communication III",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "James McCallan",
+				"schedule": "Tuesday8:30 AM - 12:30 PM3G.4Lab"
+			}
+		],
+		"number": "570-444-DW"
+	},
+	{
+		"title": "Building Systems, Environmental Design",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Adolphe Tinling",
+				"schedule": "Wednesday3:00 PM - 6:00 PM3G.8Lab"
+			}
+		],
+		"number": "570-448-DW"
+	},
+	{
+		"title": "Interior Design IV",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Jill Hogan",
+				"schedule": "Wednesday8:30 AM - 11:30 AM3G.8LabWednesday12:00 PM - 3:00 PM3G.8LabFriday10:00 AM - 12:00 PM3G.21Lab"
+			}
+		],
+		"number": "570-441-DW"
+	},
+	{
+		"title": "Construction Documents II",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Philip Fontaine",
+				"schedule": "Tuesday3:00 PM - 6:00 PM3G.21Lab"
+			}
+		],
+		"number": "570-442-DW"
+	},
+	{
+		"title": "Visual Communication III",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "James McCallan",
+				"schedule": "Friday12:30 PM - 4:30 PM3G.21Lab"
+			}
+		],
+		"number": "570-444-DW"
+	},
+	{
+		"title": "Building Systems, Environmental Design",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Anne-Marie Legault",
+				"schedule": "Monday2:30 PM - 5:30 PM3H.10Lab"
+			}
+		],
+		"number": "570-448-DW"
+	},
+	{
+		"title": "Interior Design VI",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Kurt Holfeld, Scott Millar",
+				"schedule": "Thursday10:00 AM - 1:00 PM3G.4LabThursday1:30 PM - 4:30 PM3G.4LabFriday11:30 AM - 2:30 PM3G.8LabFriday3:00 PM - 6:00 PM3G.8Lab"
+			}
+		],
+		"number": "570-631-DW"
+	},
+	{
+		"title": "Construction Documents IV",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Scott Millar",
+				"schedule": "Monday1:00 PM - 5:00 PM3G.8Lab"
+			}
+		],
+		"number": "570-632-DW"
+	},
+	{
+		"title": "Professional Practice: Theory",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Sandra Signe Schmitke",
+				"schedule": "WednesdayJan 18, 2023May 11, 20238:30 AM - 11:30 AM3G.21LabWednesdayJan 18, 2023May 11, 202312:00 PM - 3:00 PM3G.21Intensive"
+			}
+		],
+		"number": "570-637-DW"
+	},
+	{
+		"title": "Professional Practice: Experience",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "James McCallan",
+				"schedule": "WednesdayJan 18, 2023May 11, 20238:30 AM - 12:30 PM3G.21IntensiveWednesdayJan 18, 2023May 11, 20231:30 PM - 5:30 PM3G.21Lab"
+			}
+		],
+		"number": "570-639-DW"
+	},
+	{
+		"title": "Interior Design VI",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Mark Lance Lipson, Sandra Signe Schmitke",
+				"schedule": "Tuesday11:30 AM - 2:30 PM3G.8LabTuesday3:00 PM - 6:00 PM3G.8LabThursday11:30 AM - 2:30 PM3G.8LabThursday3:00 PM - 6:00 PM3G.8Lab"
+			}
+		],
+		"number": "570-631-DW"
+	},
+	{
+		"title": "Construction Documents IV",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Philip Fontaine",
+				"schedule": "Monday8:30 AM - 12:30 PM3G.8Lab"
+			}
+		],
+		"number": "570-632-DW"
+	},
+	{
+		"title": "Professional Practice: Theory",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Sandra Signe Schmitke",
+				"schedule": "WednesdayJan 18, 2023May 11, 20238:30 AM - 11:30 AM3G.21LabWednesdayJan 18, 2023May 11, 202312:00 PM - 3:00 PM3G.21Intensive"
+			}
+		],
+		"number": "570-637-DW"
+	},
+	{
+		"title": "Professional Practice: Experience",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "James McCallan",
+				"schedule": "WednesdayJan 18, 2023May 11, 20238:30 AM - 12:30 PM3G.21IntensiveWednesdayJan 18, 2023May 11, 20231:30 PM - 5:30 PM3G.21Lab"
+			}
+		],
+		"number": "570-639-DW"
+	}
+]

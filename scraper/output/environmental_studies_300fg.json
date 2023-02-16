@@ -1,0 +1,98 @@
+[
+	{
+		"title": "Research Methods",
+		"sections": [
+			{
+				"section": "00041",
+				"teacher": "Laurence Nixon",
+				"schedule": "Monday4:00 PM - 6:00 PM3A.9ClassWednesday4:00 PM - 6:00 PM3A.9Class"
+			}
+		],
+		"number": "300-300-DW"
+	},
+	{
+		"title": "Natural Environment",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Richard Soare",
+				"schedule": "Wednesday11:30 AM - 1:00 PM4D.17ClassFriday11:30 AM - 1:00 PM4D.17Class"
+			}
+		],
+		"number": "320-216-DW"
+	},
+	{
+		"title": "General Psychology",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Madelaine Côté",
+				"schedule": "Tuesday2:30 PM - 4:00 PM4P.25ClassThursday2:30 PM - 4:00 PM4P.25Class"
+			}
+		],
+		"number": "350-101-DW"
+	},
+	{
+		"title": "Introduction to Business",
+		"sections": [
+			{
+				"section": "00004",
+				"teacher": "Roberto Greco",
+				"schedule": "Monday8:30 AM - 10:00 AM4H.25ClassWednesday8:30 AM - 10:00 AM4H.25Class"
+			}
+		],
+		"number": "401-101-DW"
+	},
+	{
+		"title": "Integrative Seminar",
+		"sections": [
+			{
+				"title": "The X-Files: The Truth about Belief",
+				"section": "00022",
+				"teacher": "Richard Soare",
+				"schedule": "Tuesday8:00 AM - 10:00 AM3A.9ClassFriday8:00 AM - 10:00 AM3A.9Class"
+			}
+		],
+		"number": "300-308-DW"
+	},
+	{
+		"title": "Advanced Environmental Studies",
+		"sections": [
+			{
+				"title": "Sustenance, Sustainability, and the Sacred",
+				"section": "00001",
+				"teacher": "Natalie Kepka",
+				"schedule": "Wednesday1:00 PM - 2:30 PM3E.11ClassFriday1:00 PM - 2:30 PM3E.11Class"
+			},
+			{
+				"title": "Sustenance, Sustainability, and the Sacred",
+				"section": "00002",
+				"teacher": "Natalie Kepka",
+				"schedule": "Wednesday11:30 AM - 1:00 PM4D.6ClassFriday11:30 AM - 1:00 PM4D.6Class"
+			}
+		],
+		"number": "360-401-DW"
+	},
+	{
+		"title": "Social Problems",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Dan Loomer",
+				"schedule": "Monday10:00 AM - 11:30 AM4E.20ClassWednesday10:00 AM - 11:30 AM4E.20Class"
+			}
+		],
+		"number": "387-201-DW"
+	},
+	{
+		"title": "Sustainability and Business",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Helen Stavaris",
+				"schedule": "Monday4:00 PM - 5:30 PM3F.45ClassWednesday4:00 PM - 5:30 PM3F.45Class"
+			}
+		],
+		"number": "401-225-DW"
+	}
+]

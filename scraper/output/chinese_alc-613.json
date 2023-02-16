@@ -1,0 +1,29 @@
+[
+	{
+		"title": "Chinese 1",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Joy Cheng Yu Lin",
+				"schedule": "Tuesday8:30 AM - 10:00 AM3D.2ClassFriday8:30 AM - 10:00 AM3D.2Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Joy Cheng Yu Lin",
+				"schedule": "Tuesday11:30 AM - 1:00 PM4D.6ClassThursday11:30 AM - 1:00 PM4D.6Class"
+			}
+		],
+		"number": "613-111-DW"
+	},
+	{
+		"title": "Chinese 2",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Joy Cheng Yu Lin",
+				"schedule": "Monday11:30 AM - 1:00 PM4D.6ClassThursday8:30 AM - 10:00 AM4D.6Class"
+			}
+		],
+		"number": "613-211-DW"
+	}
+]

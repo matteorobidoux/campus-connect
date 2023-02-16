@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Contemporary Issues Set 1",
+		"sections": [
+			{
+				"title": "Designing Solutions for a Better World (INTENSIVE)",
+				"section": "00001",
+				"teacher": "Timothy Miller",
+				"schedule": "Thursday, June 1, 2023"
+			},
+			{
+				"title": "Racism",
+				"section": "00002",
+				"teacher": "Eliza Wood",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Peace 365",
+				"section": "00003",
+				"teacher": "Ivan Freud",
+				"schedule": "Friday11:30 AM - 2:30 PM3F.45Class"
+			},
+			{
+				"title": "Foundations in Indigenization and Decolonization",
+				"section": "00004",
+				"teacher": "Amanda Lickers, Jocelyn Parr, Morgan Phillips",
+				"schedule": "Wednesday2:30 PM - 5:30 PM4E.13Class"
+			}
+		],
+		"number": "365-BWP-DW"
+	}
+]

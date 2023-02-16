@@ -1,0 +1,82 @@
+[
+	{
+		"title": "Introduction to Geography and the Environment",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Tesfa Aeisha Peterson",
+				"schedule": "Monday2:30 PM - 4:00 PM4D.17ClassWednesday2:30 PM - 4:00 PM4D.17Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Tesfa Aeisha Peterson",
+				"schedule": "Tuesday11:30 AM - 1:00 PM4D.17ClassThursday11:30 AM - 1:00 PM4D.17Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Tesfa Aeisha Peterson",
+				"schedule": "Tuesday2:30 PM - 4:00 PM4D.17ClassThursday2:30 PM - 4:00 PM4D.17Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Lazar Konforti",
+				"schedule": "Wednesday1:00 PM - 2:30 PM4D.17ClassFriday1:00 PM - 2:30 PM4D.17Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "Lazar Konforti",
+				"schedule": "Monday10:00 AM - 11:30 AM4D.17ClassWednesday10:00 AM - 11:30 AM4D.17Class"
+			},
+			{
+				"section": "00006",
+				"teacher": "Gisela Frias",
+				"schedule": "Tuesday10:00 AM - 11:30 AM4D.17ClassFriday10:00 AM - 11:30 AM4D.17Class"
+			}
+		],
+		"number": "320-102-DW"
+	},
+	{
+		"title": "Tourism",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Tesfa Aeisha Peterson",
+				"schedule": "Tuesday4:00 PM - 5:30 PM4D.17ClassThursday4:00 PM - 5:30 PM4D.17Class"
+			}
+		],
+		"number": "320-212-DW"
+	},
+	{
+		"title": "Natural Environment",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Richard Soare",
+				"schedule": "Wednesday11:30 AM - 1:00 PM4D.17ClassFriday11:30 AM - 1:00 PM4D.17Class"
+			}
+		],
+		"number": "320-216-DW"
+	},
+	{
+		"title": "Environmental Issues",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Geoffrey Pearce",
+				"schedule": "Monday11:30 AM - 1:00 PM4D.17ClassThursday8:30 AM - 10:00 AM4D.17Class"
+			}
+		],
+		"number": "320-303-DW"
+	},
+	{
+		"title": "Advanced Studies in Geography",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Sarah May Harris",
+				"schedule": "Monday1:00 PM - 2:30 PM4D.17ClassThursday10:00 AM - 11:30 AM4D.17Class"
+			}
+		],
+		"number": "320-401-DW"
+	}
+]

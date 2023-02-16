@@ -1,0 +1,251 @@
+[
+	{
+		"title": "Explorations in Cinema and Communications",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Jesse Hunter",
+				"schedule": "Tuesday10:00 AM - 2:00 PM3B.13Class"
+			}
+		],
+		"number": "530-113-DW"
+	},
+	{
+		"title": "Cinema and Media History",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Magdalena Olszanowski",
+				"schedule": "Tuesday8:30 AM - 11:30 AM4C.8Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "George Alexander Milton",
+				"schedule": "Tuesday2:30 PM - 5:30 PM4C.8Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Sarah Del Seronde",
+				"schedule": "Friday11:30 AM - 2:30 PM4C.8Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Sarah Del Seronde",
+				"schedule": "Thursday2:30 PM - 5:30 PM4C.8Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "George Alexander Milton",
+				"schedule": "Wednesday11:30 AM - 2:30 PM4C.8Class"
+			}
+		],
+		"number": "530-213-DW"
+	},
+	{
+		"title": "Writing Lab",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Myriam Rafla",
+				"schedule": "Monday11:30 AM - 2:30 PM3B.6Class"
+			}
+		],
+		"number": "530-313-DW"
+	},
+	{
+		"title": "Film Theory",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Jesse Hunter",
+				"schedule": "Thursday10:00 AM - 2:00 PM3B.13Class"
+			}
+		],
+		"number": "530-314-DW"
+	},
+	{
+		"title": "Media Lab",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Justine McLellan",
+				"schedule": "Tuesday2:00 PM - 6:00 PM3B.1Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Myriam Rafla",
+				"schedule": "Thursday2:00 PM - 6:00 PM3B.1Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Reisa Levine",
+				"schedule": "Wednesday10:00 AM - 2:00 PM3B.1Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "George Alexander Milton",
+				"schedule": "Monday10:00 AM - 2:00 PM3B.1Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "Stephane Calce",
+				"schedule": "Friday2:00 PM - 6:00 PM3B.1Class"
+			}
+		],
+		"number": "530-413-DW"
+	},
+	{
+		"title": "Integrating Activity (IA)",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Terryll Loffler",
+				"schedule": "Friday10:00 AM - 2:00 PM3B.1Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "George Alexander Milton",
+				"schedule": "Thursday10:00 AM - 2:00 PM3B.1Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Jesse Klein",
+				"schedule": "Tuesday10:00 AM - 2:00 PM3B.1Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Sarah Del Seronde",
+				"schedule": "Wednesday10:00 AM - 2:00 PM3B.6Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "Stephane Calce",
+				"schedule": "Monday2:00 PM - 6:00 PM3B.1Class"
+			}
+		],
+		"number": "530-498-DW"
+	},
+	{
+		"title": "Scripting for Media",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Justine McLellan",
+				"schedule": "Friday11:30 AM - 2:30 PM3B.13Class"
+			}
+		],
+		"number": "530-911-DW"
+	},
+	{
+		"title": "Cinema Styles",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Dipti Gupta",
+				"schedule": "Thursday11:30 AM - 2:30 PM4C.8Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Reisa Levine",
+				"schedule": "Friday11:30 AM - 2:30 PM4C.4Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Jesse Klein",
+				"schedule": "Monday8:30 AM - 11:30 AM3B.13Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Jesse Klein",
+				"schedule": "Thursday8:30 AM - 11:30 AM4C.4Class"
+			}
+		],
+		"number": "530-916-DW"
+	},
+	{
+		"title": "Multimedia Techniques",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Michael Filtz",
+				"schedule": "Monday8:30 AM - 11:30 AM3B.6Class"
+			}
+		],
+		"number": "530-918-DW"
+	},
+	{
+		"title": "Video Basics",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Terryll Loffler",
+				"schedule": "Monday2:30 PM - 5:30 PM3B.6Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Terryll Loffler",
+				"schedule": "Wednesday2:30 PM - 5:30 PM3B.1Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Reisa Levine",
+				"schedule": "Thursday11:30 AM - 2:30 PM3B.6Class"
+			}
+		],
+		"number": "530-919-DW"
+	},
+	{
+		"title": "Cinema and Communications: Selected Topics",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Michael Filtz",
+				"schedule": "Wednesday8:30 AM - 11:30 AM4C.4Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Michael Filtz",
+				"schedule": "Wednesday2:30 PM - 5:30 PM4C.4Class"
+			}
+		],
+		"number": "530-925-DW"
+	},
+	{
+		"title": "Media and Society",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Justine McLellan",
+				"schedule": "Tuesday8:30 AM - 11:30 AM4C.4Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Justine McLellan",
+				"schedule": "Thursday8:30 AM - 11:30 AM4C.8Class"
+			}
+		],
+		"number": "530-926-DW"
+	},
+	{
+		"title": "Alternative Cinema",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Terryll Loffler",
+				"schedule": "Tuesday11:30 AM - 2:30 PM4C.4Class"
+			}
+		],
+		"number": "530-931-DW"
+	},
+	{
+		"title": "Animation",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Dipti Gupta",
+				"schedule": "Wednesday2:30 PM - 5:30 PM3B.6Class"
+			}
+		],
+		"number": "530-932-DW"
+	}
+]
