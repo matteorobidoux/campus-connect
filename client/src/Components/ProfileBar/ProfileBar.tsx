@@ -17,12 +17,12 @@ export default function ProfileBar(props: ProfileBarProps) {
             <h1>Login</h1>
             <form className={styles.login} id="login">
                 <label htmlFor="username">Username</label>
-                <input className={styles.username} id="username" type="text"></input>
+                <input className={styles.username} id="username" type="text" />
                 <label htmlFor="password">Password</label>
-                <input className={styles.password} id="password" type="password"></input>
-                <input id="submit" type="submit" onClick={e => {
+                <input className={styles.password} id="password" type="password" />
+                <input className={styles.submit} id="submit" type="submit" onClick={e => {
                     e.preventDefault()
-                }}></input>
+                }} value="Login"/>
             </form>
         </div>
     )

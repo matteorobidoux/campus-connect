@@ -9,9 +9,9 @@ type NavBarProps = {
 function NavBar(props: NavBarProps) {
 
   return (
-    <div className="navbar">
+    <div className={styles.navbar}>
       <nav>
-        <h1 id="logo">Campus Connect</h1>
+        <h1 className={styles.logo}>Campus Connect</h1>
 
         <img id="profile" src={profileImg} alt="profile" onClick={e => {
           e.preventDefault()

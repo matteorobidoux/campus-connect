@@ -3,8 +3,7 @@ import styles from "./Main.module.scss"
 
 export default function Main() {
   return (
-    <div className="main-content-container">
-      <p>Main</p>
+    <div className={styles["main-content-container"]}>
       <CalendarWidget />
     </div>
   )
