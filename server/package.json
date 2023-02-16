@@ -3,7 +3,10 @@
 
 
 
-
+  "scripts": {
+    "build": "tsc",
+"test":"jest"
+  },
 
 
 

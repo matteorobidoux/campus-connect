@@ -1,21 +1,21 @@
-const mockingoose = require('mockingoose');
-const user= require('../db/models/user-schema')
+const mockingoose = require("mockingoose");
+import User from '../db/models/user-schema'
 
 
 describe('test mongoose User model', () => {
   it('should return the doc with findById', () => {
     const _doc = {
-      _id: '507f191e810c19729de860ea',
-      name: 'name',
-      email: 'name@email.com',
+      name: 'nameOb',
+      password: 'name123',
+      class: ["class1", "class2"]
     };
 
-    mockingoose(user).toReturn(_doc, 'findOne');
+    mockingoose(User).toReturn(_doc, 'findOne');
 
-    return user.findById({ _id: '507f191e810c19729de860ea' }).then(doc => {
+    return User.findById({name: 'nameOb' }).then(doc => {
       expect(JSON.parse(JSON.stringify(doc))).toMatchObject(_doc);
     });
   });
 
-
+  
 });
