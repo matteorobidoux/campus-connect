@@ -17,7 +17,7 @@ export default function App() {
   const [isOpen, setIsOpen] = useState(false);
 
   // TODO: what should the type of e be?
-  function openProfileBar(e: any) {
+  function openProfileBar() {
     setIsOpen(!isOpen)
   }
 

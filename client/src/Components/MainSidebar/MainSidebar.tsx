@@ -1,8 +1,8 @@
-import "./MainSidebar.css"
+import styles from "./MainSidebar.module.scss"
 
 export default function MainSidebar() {
     return (
-        <div className="main-sidebar-container">
+        <div className={styles["main-sidebar-container"]}>
             <p>Main sidebar</p>
         </div>
     )

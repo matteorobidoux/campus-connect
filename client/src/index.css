@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-  color: var(--text);
+  color: var(--text-black);
 }
 
 code {
@@ -37,7 +37,8 @@ code {
   --classes-dark-blue: #4040A0;
   --classes-purple: #903498;
   --primary: #7EB77F;
-  --text: #000;
+  --text-black: #000;
+  --text-white: #fffcfc;
   /* --seconday:; */
   --background: #fffcfc;
   --font: 'Inter', sans-serif;
