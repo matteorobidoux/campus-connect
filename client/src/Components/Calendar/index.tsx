@@ -62,15 +62,19 @@ export default function Calendar({onMonthChanged}: CalendarProps) {
 
   useEffect(() => {
     if (queryEvents.isLoading) {
-      toast.loading("loading events", {toastId: 'loadingEvents'});
+      toast.loading("Loading events", {toastId: 'loadingEvents'});
+      return;
+    }
+
+    if (queryEvents.isStale) {
+      toast.loading("Re-fetching events", {toastId: 'loadingEvents'});
       return;
     }
 
     toast.done('loadingEvents');
     const matches = queryEvents.data!.filter(filterByDayAndMonth);
     onMonthChanged?.(currentMonth, matches);
-
-  }, [currentMonth, queryEvents.isSuccess, currentDay])
+  }, [currentMonth, queryEvents.isLoading, queryEvents.isStale, currentDay])
 
   return <div>
     <ReactCalendar
