@@ -1,11 +1,11 @@
 import { CalendarWidget } from "../CalendarWidget"
-import "./Main.css"
+import styles from "./Main.module.scss"
 
 export default function Main() {
   return (
     <div className="main-content-container">
       <p>Main</p>
-      <CalendarWidget/>
+      <CalendarWidget />
     </div>
   )
 }

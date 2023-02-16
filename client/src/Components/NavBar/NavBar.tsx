@@ -1,5 +1,5 @@
 import profileImg from "../../profile.png"
-import "./NavBar.css";
+import styles from "./NavBar.module.scss";
 
 //Fix type script BS
 type NavBarProps = {

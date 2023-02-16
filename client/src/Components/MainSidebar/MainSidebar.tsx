@@ -1,4 +1,4 @@
-import "./MainSidebar.css"
+import styles from "./MainSidebar.module.scss"
 
 export default function MainSidebar() {
     return (
