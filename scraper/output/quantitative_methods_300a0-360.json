@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Quantitative Methods",
-		"number": "360-300-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -73,22 +72,22 @@
 				"teacher": "Sabrina Smofsky",
 				"schedule": "Monday2:00 PM - 4:00 PM3A.4ClassThursday10:00 AM - 12:00 PM3A.4Class"
 			}
-		]
+		],
+		"number": "360-300-DW"
 	},
 	{
 		"title": "Field Experience in a Developing Country",
-		"number": "360-321-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Sara Louise Kendall",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "360-321-DW"
 	},
 	{
 		"title": "Advanced Environmental Studies",
-		"number": "360-401-DW",
 		"sections": [
 			{
 				"title": "Sustenance, Sustainability, and the Sacred",
@@ -102,6 +101,7 @@
 				"teacher": "Natalie Kepka",
 				"schedule": "Wednesday11:30 AM - 1:00 PM4D.6ClassFriday11:30 AM - 1:00 PM4D.6Class"
 			}
-		]
+		],
+		"number": "360-401-DW"
 	}
 ]

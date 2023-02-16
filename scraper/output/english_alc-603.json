@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Poetry and Prosody",
-		"number": "603-213-DW",
 		"sections": [
 			{
 				"title": "Poetry and Prosody",
@@ -15,11 +14,11 @@
 				"teacher": "David Gelineau",
 				"schedule": "Tuesday2:30 PM - 4:00 PM3E.9ClassThursday2:30 PM - 4:00 PM3E.9Class"
 			}
-		]
+		],
+		"number": "603-213-DW"
 	},
 	{
 		"title": "Creative Writing Workshop",
-		"number": "603-413-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -31,22 +30,22 @@
 				"teacher": "Andrea Strudensky",
 				"schedule": "Tuesday8:00 AM - 10:00 AM4H.23ClassFriday8:00 AM - 10:00 AM4H.23Class"
 			}
-		]
+		],
+		"number": "603-413-DW"
 	},
 	{
 		"title": "Integrating Activity (IA)",
-		"number": "603-498-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Liana Bellon",
 				"schedule": "Tuesday4:00 PM - 6:00 PM7B.2ClassThursday4:00 PM - 6:00 PM7B.2Class"
 			}
-		]
+		],
+		"number": "603-498-DW"
 	},
 	{
 		"title": "Literary Currents",
-		"number": "603-914-DW",
 		"sections": [
 			{
 				"title": "Literary Currents",
@@ -54,28 +53,29 @@
 				"teacher": "Shalon Nicole Noble",
 				"schedule": "Wednesday11:30 AM - 1:00 PM5D.6ClassFriday11:30 AM - 1:00 PM5D.6Class"
 			}
-		]
+		],
+		"number": "603-914-DW"
 	},
 	{
 		"title": "Literature and Creative Practice",
-		"number": "603-915-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Anna Lewton-Brain, Justin Pfefferle",
 				"schedule": "Tuesday10:00 AM - 11:30 AM3E.7ClassFriday10:00 AM - 11:30 AM3E.7Class"
 			}
-		]
+		],
+		"number": "603-915-DW"
 	},
 	{
 		"title": "Literature and Borders",
-		"number": "603-917-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Pauline Morel",
 				"schedule": "Wednesday11:30 AM - 1:00 PM3F.5ClassFriday11:30 AM - 1:00 PM3F.5Class"
 			}
-		]
+		],
+		"number": "603-917-DW"
 	}
 ]

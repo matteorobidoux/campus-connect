@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Introduction to Anthropology",
-		"number": "381-101-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -33,11 +32,11 @@
 				"teacher": "Verity Whalen",
 				"schedule": "Monday4:00 PM - 5:30 PM3D.23ClassWednesday4:00 PM - 5:30 PM3D.23Class"
 			}
-		]
+		],
+		"number": "381-101-DW"
 	},
 	{
 		"title": "Human Evolution",
-		"number": "381-201-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -49,11 +48,11 @@
 				"teacher": "Maciej Domanski",
 				"schedule": "Tuesday2:30 PM - 4:00 PM3D.23ClassThursday2:30 PM - 4:00 PM3D.23Class"
 			}
-		]
+		],
+		"number": "381-201-DW"
 	},
 	{
 		"title": "Anthropology of Parenthood",
-		"number": "381-210-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -70,11 +69,11 @@
 				"teacher": "Sabrina Smofsky",
 				"schedule": "Tuesday4:00 PM - 5:30 PM3E.7ClassThursday4:00 PM - 5:30 PM3E.7Class"
 			}
-		]
+		],
+		"number": "381-210-DW"
 	},
 	{
 		"title": "Contemporary Anthropology",
-		"number": "381-313-DW",
 		"sections": [
 			{
 				"title": "Culture and Environment",
@@ -82,11 +81,11 @@
 				"teacher": "Maciej Domanski",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "381-313-DW"
 	},
 	{
 		"title": "Perspectives in Anthropology",
-		"number": "381-319-DW",
 		"sections": [
 			{
 				"title": "Visual Anthropology",
@@ -94,11 +93,11 @@
 				"teacher": "Katarzyna Wolfson",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "381-319-DW"
 	},
 	{
 		"title": "Advanced Studies in Anthropology",
-		"number": "381-401-DW",
 		"sections": [
 			{
 				"title": "Material Culture",
@@ -106,6 +105,7 @@
 				"teacher": "Maciej Domanski",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "381-401-DW"
 	}
 ]

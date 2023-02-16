@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Introduction to Philosophy",
-		"number": "340-101-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -33,11 +32,11 @@
 				"teacher": "Sarah Allen",
 				"schedule": "Tuesday11:30 AM - 1:00 PM4F.4ClassThursday11:30 AM - 1:00 PM4F.4Class"
 			}
-		]
+		],
+		"number": "340-101-DW"
 	},
 	{
 		"title": "Topics in Philosophy",
-		"number": "340-219-DW",
 		"sections": [
 			{
 				"title": "Poetic Justice",
@@ -45,6 +44,7 @@
 				"teacher": "Gerardo Mosquera",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "340-219-DW"
 	}
 ]

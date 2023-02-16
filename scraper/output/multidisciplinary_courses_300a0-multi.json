@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Advanced Environmental Studies",
-		"number": "360-401-DW",
 		"sections": [
 			{
 				"title": "Sustenance, Sustainability, and the Sacred",
@@ -15,6 +14,7 @@
 				"teacher": "Natalie Kepka",
 				"schedule": "Wednesday11:30 AM - 1:00 PM4D.6ClassFriday11:30 AM - 1:00 PM4D.6Class"
 			}
-		]
+		],
+		"number": "360-401-DW"
 	}
 ]

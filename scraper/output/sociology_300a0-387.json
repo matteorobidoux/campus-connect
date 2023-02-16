@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Individual and Society",
-		"number": "387-101-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -48,11 +47,11 @@
 				"teacher": "Kelly Phipps",
 				"schedule": "Tuesday4:00 PM - 5:30 PM4H.21ClassThursday4:00 PM - 5:30 PM4H.21Class"
 			}
-		]
+		],
+		"number": "387-101-DW"
 	},
 	{
 		"title": "Social Problems",
-		"number": "387-201-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -64,22 +63,22 @@
 				"teacher": "Dan Loomer",
 				"schedule": "Monday8:30 AM - 10:00 AM4E.20ClassWednesday8:30 AM - 10:00 AM4E.20Class"
 			}
-		]
+		],
+		"number": "387-201-DW"
 	},
 	{
 		"title": "Education",
-		"number": "387-216-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Elliot Kerr, Marian Misdrahi Flores",
 				"schedule": "Wednesday11:30 AM - 1:00 PM3F.3ClassFriday11:30 AM - 1:00 PM3F.3Class"
 			}
-		]
+		],
+		"number": "387-216-DW"
 	},
 	{
 		"title": "Sociology of Law",
-		"number": "387-219-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -106,22 +105,22 @@
 				"teacher": "Donald Shawn Berry",
 				"schedule": "Tuesday1:00 PM - 2:30 PM4E.9ClassThursday1:00 PM - 2:30 PM4E.9Class"
 			}
-		]
+		],
+		"number": "387-219-DW"
 	},
 	{
 		"title": "Work and Society",
-		"number": "387-229-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Jennifer Sigouin",
 				"schedule": "Monday4:00 PM - 5:30 PM4D.3ClassWednesday4:00 PM - 5:30 PM4D.3Class"
 			}
-		]
+		],
+		"number": "387-229-DW"
 	},
 	{
 		"title": "Sexuality and Society",
-		"number": "387-314-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -133,11 +132,11 @@
 				"teacher": "Sarah Beer",
 				"schedule": "Wednesday11:30 AM - 1:00 PM4H.19ClassFriday11:30 AM - 1:00 PM4H.19Class"
 			}
-		]
+		],
+		"number": "387-314-DW"
 	},
 	{
 		"title": "Advanced Studies in Sociology",
-		"number": "387-401-DW",
 		"sections": [
 			{
 				"title": "Food and the Environment",
@@ -151,6 +150,7 @@
 				"teacher": "Laura Shea",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "387-401-DW"
 	}
 ]

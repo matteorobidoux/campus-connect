@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Introduction to Politics",
-		"number": "385-101-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -43,11 +42,11 @@
 				"teacher": "Michel Fournier-Simard",
 				"schedule": "Monday2:30 PM - 4:00 PM3F.39ClassWednesday2:30 PM - 4:00 PM3F.39Class"
 			}
-		]
+		],
+		"number": "385-101-DW"
 	},
 	{
 		"title": "Canadian Democracy",
-		"number": "385-306-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -59,22 +58,22 @@
 				"teacher": "Michel Fournier-Simard",
 				"schedule": "Tuesday11:30 AM - 1:00 PM4P.22ClassThursday11:30 AM - 1:00 PM4P.22Class"
 			}
-		]
+		],
+		"number": "385-306-DW"
 	},
 	{
 		"title": "Global Politics",
-		"number": "385-311-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Cynthia J. Martin",
 				"schedule": "Tuesday2:30 PM - 4:00 PM3E.13ClassThursday2:30 PM - 4:00 PM3E.13Class"
 			}
-		]
+		],
+		"number": "385-311-DW"
 	},
 	{
 		"title": "Advanced Studies in Politics",
-		"number": "385-401-DW",
 		"sections": [
 			{
 				"title": "Abortion, Prostitution, and Drugs: Supreme Court and the Law",
@@ -82,6 +81,7 @@
 				"teacher": "Marianne Pelton",
 				"schedule": "Tuesday11:30 AM - 1:00 PM3E.9ClassThursday11:30 AM - 1:00 PM3E.9Class"
 			}
-		]
+		],
+		"number": "385-401-DW"
 	}
 ]

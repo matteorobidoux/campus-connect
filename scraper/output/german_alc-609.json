@@ -1,18 +1,17 @@
 [
 	{
 		"title": "German 1",
-		"number": "609-111-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Marie-France Lemay",
 				"schedule": "Tuesday11:30 AM - 1:00 PM3E.3ClassThursday11:30 AM - 1:00 PM3E.3Class"
 			}
-		]
+		],
+		"number": "609-111-DW"
 	},
 	{
 		"title": "German 2",
-		"number": "609-211-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -24,17 +23,18 @@
 				"teacher": "Marie-France Lemay",
 				"schedule": "Tuesday2:30 PM - 4:00 PM3E.3ClassThursday2:30 PM - 4:00 PM3E.3Class"
 			}
-		]
+		],
+		"number": "609-211-DW"
 	},
 	{
 		"title": "German 4",
-		"number": "609-411-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Nathalie Lachance",
 				"schedule": "Tuesday4:00 PM - 5:30 PM3E.3ClassThursday4:00 PM - 5:30 PM3E.3Class"
 			}
-		]
+		],
+		"number": "609-411-DW"
 	}
 ]

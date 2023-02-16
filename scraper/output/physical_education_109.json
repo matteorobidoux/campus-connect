@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Physical Activity and Health",
-		"number": "109-101-MQ",
 		"sections": [
 			{
 				"title": "Outdoor Fitness (COMPRESSED)",
@@ -339,11 +338,11 @@
 				"teacher": "Holly McIntyre",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "109-101-MQ"
 	},
 	{
 		"title": "Physical Activity and Effectiveness",
-		"number": "109-102-MQ",
 		"sections": [
 			{
 				"title": "Dance Styles",
@@ -711,11 +710,11 @@
 				"teacher": "Holly McIntyre",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "109-102-MQ"
 	},
 	{
 		"title": "Physical Activity and Autonomy",
-		"number": "109-103-MQ",
 		"sections": [
 			{
 				"title": "Combative Activities",
@@ -1059,6 +1058,7 @@
 				"teacher": "Cindy Cantin-Starzenski",
 				"schedule": "Friday, March 24, 2023"
 			}
-		]
+		],
+		"number": "109-103-MQ"
 	}
 ]

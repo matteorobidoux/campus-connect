@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Integrative Seminar",
-		"number": "300-303-DW",
 		"sections": [
 			{
 				"title": "Finding Your Passion",
@@ -36,11 +35,11 @@
 				"teacher": "Frédéric Bastien",
 				"schedule": "Tuesday8:30 AM - 11:30 AM4F.6Class"
 			}
-		]
+		],
+		"number": "300-303-DW"
 	},
 	{
 		"title": "Integrative Seminar",
-		"number": "300-308-DW",
 		"sections": [
 			{
 				"title": "North-South Field Trip: The Integration of Knowledge and Experience",
@@ -162,6 +161,7 @@
 				"teacher": "Donal Gill",
 				"schedule": "Monday4:00 PM - 6:00 PM5B.11ClassWednesday4:00 PM - 6:00 PM5B.11Class"
 			}
-		]
+		],
+		"number": "300-308-DW"
 	}
 ]

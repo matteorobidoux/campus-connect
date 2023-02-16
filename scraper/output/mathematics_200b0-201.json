@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Remedial Activities for Secondary V Mathematics: Technical and Scientific Option",
-		"number": "201-015-RE",
 		"sections": [
 			{
 				"section": "00001",
@@ -13,22 +12,22 @@
 				"teacher": "Igor Gorelyshev",
 				"schedule": "Tuesday8:00 AM - 10:00 AM5B.3ClassThursday12:00 PM - 2:00 PM5B.3LabFriday8:00 AM - 10:00 AM5B.3Class"
 			}
-		]
+		],
+		"number": "201-015-RE"
 	},
 	{
 		"title": "Remedial Activities for Secondary IV Mathematics: Technical and Scientific Option",
-		"number": "201-016-RE",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Garry Ka Lok Chu",
 				"schedule": "Monday2:30 PM - 4:00 PM7A.11ClassWednesday2:30 PM - 4:00 PM7A.11ClassThursday10:00 AM - 12:00 PM3F.45Lab"
 			}
-		]
+		],
+		"number": "201-016-RE"
 	},
 	{
 		"title": "Calculus I",
-		"number": "201-103-DW",
 		"sections": [
 			{
 				"section": "00003",
@@ -45,33 +44,33 @@
 				"teacher": "Georgeana Bobos-Kristof",
 				"schedule": "Monday8:00 AM - 10:00 AM4A.2LabTuesday8:30 AM - 10:00 AM5A.12ClassFriday8:30 AM - 10:00 AM5A.12Class"
 			}
-		]
+		],
+		"number": "201-103-DW"
 	},
 	{
 		"title": "Linear Algebra",
-		"number": "201-105-DW",
 		"sections": [
 			{
 				"section": "00005",
 				"teacher": "Gilbert Honnouvo",
 				"schedule": "Tuesday2:00 PM - 4:00 PM4D.2LabWednesday1:00 PM - 2:30 PM4H.19ClassFriday1:00 PM - 2:30 PM4H.19Class"
 			}
-		]
+		],
+		"number": "201-105-DW"
 	},
 	{
 		"title": "Calculus II",
-		"number": "201-203-DW",
 		"sections": [
 			{
 				"section": "00005",
 				"teacher": "Oxana Cerba",
 				"schedule": "Tuesday8:30 AM - 10:00 AM4D.11ClassThursday8:00 AM - 10:00 AM4A.2LabFriday8:30 AM - 10:00 AM4D.11Class"
 			}
-		]
+		],
+		"number": "201-203-DW"
 	},
 	{
 		"title": "Calculus III",
-		"number": "201-BZF-05",
 		"sections": [
 			{
 				"section": "00001",
@@ -83,11 +82,11 @@
 				"teacher": "Alexander Hariton",
 				"schedule": "Monday10:00 AM - 11:30 AM4H.19ClassWednesday10:00 AM - 11:30 AM4H.19ClassThursday4:00 PM - 6:00 PM4H.6Lab"
 			}
-		]
+		],
+		"number": "201-BZF-05"
 	},
 	{
 		"title": "Probability and Statistics",
-		"number": "201-BZS-05",
 		"sections": [
 			{
 				"section": "00001",
@@ -99,11 +98,11 @@
 				"teacher": "Andrea Gambioli",
 				"schedule": "Monday12:00 PM - 2:00 PM4A.3LabTuesday11:30 AM - 1:00 PM5D.6ClassThursday11:30 AM - 1:00 PM5D.6Class"
 			}
-		]
+		],
+		"number": "201-BZS-05"
 	},
 	{
 		"title": "Special Topics in Mathematics",
-		"number": "201-BZT-DW",
 		"sections": [
 			{
 				"title": "Discrete Mathematics",
@@ -111,11 +110,11 @@
 				"teacher": "Shahab Shahabi",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "201-BZT-DW"
 	},
 	{
 		"title": "Calculus I",
-		"number": "201-NYA-05",
 		"sections": [
 			{
 				"section": "00001",
@@ -137,11 +136,11 @@
 				"teacher": "Stefan M. Soltuz",
 				"schedule": "Tuesday8:00 AM - 10:00 AM4A.2LabWednesday1:00 PM - 2:30 PM4P.25ClassFriday1:00 PM - 2:30 PM4P.25Class"
 			}
-		]
+		],
+		"number": "201-NYA-05"
 	},
 	{
 		"title": "Calculus II",
-		"number": "201-NYB-05",
 		"sections": [
 			{
 				"section": "00001",
@@ -213,11 +212,11 @@
 				"teacher": "Mathilde Hitier",
 				"schedule": "Tuesday10:00 AM - 11:30 AM3F.38ClassThursday12:00 PM - 2:00 PM4G.2ALabFriday10:00 AM - 11:30 AM3F.38Class"
 			}
-		]
+		],
+		"number": "201-NYB-05"
 	},
 	{
 		"title": "Linear Algebra",
-		"number": "201-NYC-05",
 		"sections": [
 			{
 				"section": "00001",
@@ -259,6 +258,7 @@
 				"teacher": "Febina Blaise Fonseca",
 				"schedule": "Monday8:00 AM - 10:00 AM4A.3LabTuesday1:00 PM - 2:30 PM3H.13ClassThursday1:00 PM - 2:30 PM3H.13Class"
 			}
-		]
+		],
+		"number": "201-NYC-05"
 	}
 ]

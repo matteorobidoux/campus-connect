@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Modern Languages Ensemble 2",
-		"number": "613-BXL-DW",
 		"sections": [
 			{
 				"title": "Chinese 2",
@@ -9,11 +8,11 @@
 				"teacher": "Joy Cheng Yu Lin",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "613-BXL-DW"
 	},
 	{
 		"title": "Modern Languages",
-		"number": "609-BXL-03",
 		"sections": [
 			{
 				"title": "German 2",
@@ -27,11 +26,11 @@
 				"teacher": "Marie-France Lemay",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "609-BXL-03"
 	},
 	{
 		"title": "Modern languages: greek II",
-		"number": "615-BXL-03",
 		"sections": [
 			{
 				"title": "Greek 2",
@@ -39,11 +38,11 @@
 				"teacher": "Irene Tourkomanoli",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "615-BXL-03"
 	},
 	{
 		"title": "Modern languages: hebrew II",
-		"number": "611-BXL-03",
 		"sections": [
 			{
 				"title": "Hebrew 2",
@@ -51,11 +50,11 @@
 				"teacher": "Leila Roiter",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "611-BXL-03"
 	},
 	{
 		"title": "Modern Languages",
-		"number": "608-BXL-03",
 		"sections": [
 			{
 				"title": "Italian 2",
@@ -69,11 +68,11 @@
 				"teacher": "Giorgia Sottanelli",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "608-BXL-03"
 	},
 	{
 		"title": "Modern Languages",
-		"number": "607-BXL-03",
 		"sections": [
 			{
 				"title": "Spanish 2",
@@ -93,6 +92,7 @@
 				"teacher": "Nelly Muresan",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "607-BXL-03"
 	}
 ]

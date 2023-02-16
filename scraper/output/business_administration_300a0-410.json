@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Introduction to Business",
-		"number": "401-101-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -33,11 +32,11 @@
 				"teacher": "Martin Namour",
 				"schedule": "Monday1:00 PM - 2:30 PM5B.7ClassThursday10:00 AM - 11:30 AM5B.7Class"
 			}
-		]
+		],
+		"number": "401-101-DW"
 	},
 	{
 		"title": "Basics of Marketing",
-		"number": "401-201-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -69,11 +68,11 @@
 				"teacher": "Charles Bierbrier",
 				"schedule": "Wednesday1:00 PM - 2:30 PM4P.10ClassFriday1:00 PM - 2:30 PM4P.10Class"
 			}
-		]
+		],
+		"number": "401-201-DW"
 	},
 	{
 		"title": "International Business",
-		"number": "401-205-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -85,11 +84,11 @@
 				"teacher": "Kayrod Niamir",
 				"schedule": "Monday10:00 AM - 11:30 AM2P.04ClassWednesday10:00 AM - 11:30 AM2P.04Class"
 			}
-		]
+		],
+		"number": "401-205-DW"
 	},
 	{
 		"title": "Topics in Business",
-		"number": "401-219-DW",
 		"sections": [
 			{
 				"title": "Basics of Accounting",
@@ -97,22 +96,22 @@
 				"teacher": "Julie Wong",
 				"schedule": "Tuesday4:00 PM - 5:30 PM5B.3ClassThursday4:00 PM - 5:30 PM5B.3Class"
 			}
-		]
+		],
+		"number": "401-219-DW"
 	},
 	{
 		"title": "Sustainability and Business",
-		"number": "401-225-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Helen Stavaris",
 				"schedule": "Monday4:00 PM - 5:30 PM3F.45ClassWednesday4:00 PM - 5:30 PM3F.45Class"
 			}
-		]
+		],
+		"number": "401-225-DW"
 	},
 	{
 		"title": "Basic Financial Management",
-		"number": "401-301-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -124,28 +123,29 @@
 				"teacher": "Jim Parthimos",
 				"schedule": "Monday2:30 PM - 4:00 PM3H.21ClassWednesday2:30 PM - 4:00 PM3H.21Class"
 			}
-		]
+		],
+		"number": "401-301-DW"
 	},
 	{
 		"title": "Global Marketing",
-		"number": "401-315-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Amanda Petriello",
 				"schedule": "Wednesday1:00 PM - 2:30 PM4H.21ClassFriday1:00 PM - 2:30 PM4H.21Class"
 			}
-		]
+		],
+		"number": "401-315-DW"
 	},
 	{
 		"title": "Advanced Studies in Business",
-		"number": "401-401-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Roberto Greco",
 				"schedule": "Wednesday11:30 AM - 1:00 PM4P.22ClassFriday11:30 AM - 1:00 PM4P.22Class"
 			}
-		]
+		],
+		"number": "401-401-DW"
 	}
 ]

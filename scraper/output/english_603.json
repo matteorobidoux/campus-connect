@@ -1,7 +1,6 @@
 [
 	{
 		"title": "I.C.E.",
-		"number": "603-101-MQ",
 		"sections": [
 			{
 				"title": "Writing English",
@@ -141,11 +140,11 @@
 				"teacher": "Trevor Rouse",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "603-101-MQ"
 	},
 	{
 		"title": "Literary Genres",
-		"number": "603-102-MQ",
 		"sections": [
 			{
 				"section": "00001",
@@ -486,11 +485,11 @@
 				"teacher": "Gray Miles, Rebecca Million",
 				"schedule": "Thursday2:30 PM - 5:30 PM4E.13Class"
 			}
-		]
+		],
+		"number": "603-102-MQ"
 	},
 	{
 		"title": "Literary Themes",
-		"number": "603-103-MQ",
 		"sections": [
 			{
 				"title": "Drama of Ibsen and Strindberg",
@@ -659,11 +658,11 @@
 				"teacher": "Seyed-Gholamreza Shafieesabet",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "603-103-MQ"
 	},
 	{
 		"title": "Applied Themes in English",
-		"number": "603-BXE-DW",
 		"sections": [
 			{
 				"title": "Rhetoric",
@@ -937,6 +936,7 @@
 				"teacher": "Gregory Polakoff, Jay Shea",
 				"schedule": "Tuesday11:30 AM - 2:30 PM4E.13Class"
 			}
-		]
+		],
+		"number": "603-BXE-DW"
 	}
 ]

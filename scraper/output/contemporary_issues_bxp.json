@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Contemporary Issues Set 2",
-		"number": "365-BXP-DW",
 		"sections": [
 			{
 				"title": "Learning Perspectives 2",
@@ -27,6 +26,7 @@
 				"teacher": "Kim Simard, Patricia Romano",
 				"schedule": "Thursday2:30 PM - 5:30 PM3B.6Class"
 			}
-		]
+		],
+		"number": "365-BXP-DW"
 	}
 ]

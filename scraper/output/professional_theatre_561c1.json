@@ -1,387 +1,387 @@
 [
 	{
 		"title": "Movement for Actors 2",
-		"number": "561-201-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Elissa Bernstein, Kimberley Barfuss",
 				"schedule": "Tuesday1:00 PM - 2:30 PM3A.3LabThursday8:00 AM - 10:00 AM5B.16LabFriday11:30 AM - 1:00 PM3A.3Lab"
 			}
-		]
+		],
+		"number": "561-201-DW"
 	},
 	{
 		"title": "Improvisation 2",
-		"number": "561-212-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Matthew Michael Enos",
 				"schedule": "Wednesday11:30 AM - 2:30 PM3A.2Lab"
 			}
-		]
+		],
+		"number": "561-212-DW"
 	},
 	{
 		"title": "Voice and Speech 2",
-		"number": "561-223-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Jonathan Monro",
 				"schedule": "Monday11:30 AM - 1:00 PM3A.13LabWednesday10:00 AM - 11:30 AM3A.13Lab"
 			}
-		]
+		],
+		"number": "561-223-DW"
 	},
 	{
 		"title": "Acting 2 (Character)",
-		"number": "561-234-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Matthew Michael Enos",
 				"schedule": "Thursday11:30 AM - 1:00 PM3A.3LabThursday1:00 PM - 2:30 PM3A.13Lab"
 			}
-		]
+		],
+		"number": "561-234-DW"
 	},
 	{
 		"title": "Acting 2 (Analysis)",
-		"number": "561-235-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Bruce Lambie, Michael Edward Hughes",
 				"schedule": "Thursday3:00 PM - 6:00 PM3A.2LabFriday5:00 PM - 6:00 PM3B.15Lab"
 			}
-		]
+		],
+		"number": "561-235-DW"
 	},
 	{
 		"title": "Text 2",
-		"number": "561-246-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Stephane Zarov",
 				"schedule": "Tuesday3:00 PM - 6:00 PM3A.3Lab"
 			}
-		]
+		],
+		"number": "561-246-DW"
 	},
 	{
 		"title": "History and Literature 2",
-		"number": "561-257-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Stephane Zarov",
 				"schedule": "Tuesday10:00 AM - 1:00 PM3B.15Class"
 			}
-		]
+		],
+		"number": "561-257-DW"
 	},
 	{
 		"title": "Movement for Actors 2",
-		"number": "561-201-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Elissa Bernstein, Kimberley Barfuss",
 				"schedule": "Monday11:30 AM - 1:00 PM3A.3LabWednesday1:00 PM - 2:30 PM3A.3LabThursday10:00 AM - 12:00 PM5B.16Lab"
 			}
-		]
+		],
+		"number": "561-201-DW"
 	},
 	{
 		"title": "Improvisation 2",
-		"number": "561-212-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Matthew Michael Enos",
 				"schedule": "Wednesday3:00 PM - 6:00 PM3A.2Lab"
 			}
-		]
+		],
+		"number": "561-212-DW"
 	},
 	{
 		"title": "Voice and Speech 2",
-		"number": "561-223-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Jonathan Monro",
 				"schedule": "Monday10:00 AM - 11:30 AM3A.13LabWednesday11:30 AM - 1:00 PM3A.13Lab"
 			}
-		]
+		],
+		"number": "561-223-DW"
 	},
 	{
 		"title": "Acting 2 (Character)",
-		"number": "561-234-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Matthew Michael Enos",
 				"schedule": "Friday10:00 AM - 1:00 PM3A.2Lab"
 			}
-		]
+		],
+		"number": "561-234-DW"
 	},
 	{
 		"title": "Acting 2 (Analysis)",
-		"number": "561-235-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Bruce Lambie, Michael Edward Hughes",
 				"schedule": "Tuesday3:00 PM - 6:00 PM3A.2LabFriday4:00 PM - 5:00 PM3B.15Lab"
 			}
-		]
+		],
+		"number": "561-235-DW"
 	},
 	{
 		"title": "Text 2",
-		"number": "561-246-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Leah Esau",
 				"schedule": "Monday3:00 PM - 6:00 PM3A.3Lab"
 			}
-		]
+		],
+		"number": "561-246-DW"
 	},
 	{
 		"title": "History and Literature 2",
-		"number": "561-257-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Stephane Zarov",
 				"schedule": "Tuesday10:00 AM - 1:00 PM3B.15Class"
 			}
-		]
+		],
+		"number": "561-257-DW"
 	},
 	{
 		"title": "Movement for Actors 4",
-		"number": "561-401-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Kimberley Barfuss",
 				"schedule": "Monday1:00 PM - 2:30 PM3A.3LabThursday1:00 PM - 2:30 PM3A.3Lab"
 			}
-		]
+		],
+		"number": "561-401-DW"
 	},
 	{
 		"title": "Improvisation 4",
-		"number": "561-412-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Arianna Bardesono",
 				"schedule": "Tuesday11:30 AM - 2:30 PM3A.2Lab"
 			}
-		]
+		],
+		"number": "561-412-DW"
 	},
 	{
 		"title": "Voice and Speech 4",
-		"number": "561-423-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Elissa Bernstein, Matt Holland",
 				"schedule": "Monday11:00 AM - 1:00 PM5E.1LabTuesday10:00 AM - 11:30 AM3A.2LabFriday10:00 AM - 11:30 AM3A.13Lab"
 			}
-		]
+		],
+		"number": "561-423-DW"
 	},
 	{
 		"title": "Acting 4",
-		"number": "561-434-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Leslie Baker",
 				"schedule": "Friday11:30 AM - 2:30 PM3A.13Lab"
 			}
-		]
+		],
+		"number": "561-434-DW"
 	},
 	{
 		"title": "Text 4",
-		"number": "561-446-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Stephane Zarov",
 				"schedule": "Thursday10:00 AM - 1:00 PM3B.15Lab"
 			}
-		]
+		],
+		"number": "561-446-DW"
 	},
 	{
 		"title": "History and Literature 4",
-		"number": "561-457-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Leah Esau",
 				"schedule": "Wednesday11:30 AM - 2:30 PM3E.13Class"
 			}
-		]
+		],
+		"number": "561-457-DW"
 	},
 	{
 		"title": "Make-up, Rehearsal, and Performance 2",
-		"number": "561-465-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "George Tucci, Stefanie L Buxton",
 				"schedule": "Monday4:00 PM - 6:00 PMTHEATRETutorialTuesday3:00 PM - 6:00 PMTHEATRETutorialWednesday4:00 PM - 6:00 PMTHEATRETutorialThursday3:00 PM - 7:00 PM3A.3LabFriday2:30 PM - 4:30 PM3A.3LabFriday4:30 PM - 6:00 PMTHEATRETutorial"
 			}
-		]
+		],
+		"number": "561-465-DW"
 	},
 	{
 		"title": "Movement for Actors 4",
-		"number": "561-401-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Kimberley Barfuss",
 				"schedule": "Tuesday10:00 AM - 11:30 AM3A.3LabFriday10:00 AM - 11:30 AM3A.3Lab"
 			}
-		]
+		],
+		"number": "561-401-DW"
 	},
 	{
 		"title": "Improvisation 4",
-		"number": "561-412-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Arianna Bardesono",
 				"schedule": "Monday10:00 AM - 1:00 PM3A.2Lab"
 			}
-		]
+		],
+		"number": "561-412-DW"
 	},
 	{
 		"title": "Voice and Speech 4",
-		"number": "561-423-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Leslie Baker, Matt Holland",
 				"schedule": "Monday1:00 PM - 2:30 PM3A.2LabTuesday11:30 AM - 1:30 PM5E.1LabThursday10:00 AM - 11:30 AM3A.2Lab"
 			}
-		]
+		],
+		"number": "561-423-DW"
 	},
 	{
 		"title": "Acting 4",
-		"number": "561-434-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Stefanie L Buxton",
 				"schedule": "Thursday11:30 AM - 2:30 PM3A.2Lab"
 			}
-		]
+		],
+		"number": "561-434-DW"
 	},
 	{
 		"title": "Text 4",
-		"number": "561-446-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Leah Esau",
 				"schedule": "Friday11:30 AM - 2:30 PM3E.13Lab"
 			}
-		]
+		],
+		"number": "561-446-DW"
 	},
 	{
 		"title": "History and Literature 4",
-		"number": "561-457-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Leah Esau",
 				"schedule": "Wednesday11:30 AM - 2:30 PM3E.13Class"
 			}
-		]
+		],
+		"number": "561-457-DW"
 	},
 	{
 		"title": "Make-up, Rehearsal, and Performance 2",
-		"number": "561-465-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "George Tucci, Matthew Michael Enos",
 				"schedule": "Monday4:00 PM - 6:00 PMTHEATRETutorialTuesday3:00 PM - 7:00 PM3A.13LabWednesday4:00 PM - 6:00 PMTHEATRETutorialThursday3:00 PM - 6:00 PMTHEATRETutorialFriday4:30 PM - 6:30 PM3A.3Lab"
 			}
-		]
+		],
+		"number": "561-465-DW"
 	},
 	{
 		"title": "Movement for Actors 6",
-		"number": "561-601-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Elissa Bernstein, Kimberley Barfuss",
 				"schedule": "Wednesday11:30 AM - 1:00 PM3A.3LabFriday1:00 PM - 2:30 PM3A.3Lab"
 			}
-		]
+		],
+		"number": "561-601-DW"
 	},
 	{
 		"title": "Voice and Speech 6",
-		"number": "561-623-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Jonathan Monro",
 				"schedule": "Monday1:00 PM - 2:30 PM3A.13LabWednesday1:00 PM - 2:30 PM3A.13Lab"
 			}
-		]
+		],
+		"number": "561-623-DW"
 	},
 	{
 		"title": "Singing 2",
-		"number": "561-624-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Jonathan Monro",
 				"schedule": "Thursday10:00 AM - 1:00 PM3A.13Lab"
 			}
-		]
+		],
+		"number": "561-624-DW"
 	},
 	{
 		"title": "Acting 6 - Rehearsal",
-		"number": "561-634-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Michael Edward Hughes",
 				"schedule": "Tuesday11:30 AM - 2:30 PM3A.13Lab"
 			}
-		]
+		],
+		"number": "561-634-DW"
 	},
 	{
 		"title": "Acting Before the Camera 2",
-		"number": "561-635-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Stefanie L Buxton",
 				"schedule": "Friday10:00 AM - 1:00 PM5E.1Lab"
 			}
-		]
+		],
+		"number": "561-635-DW"
 	},
 	{
 		"title": "History and Literature 6",
-		"number": "561-657-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Leah Esau",
 				"schedule": "Monday10:00 AM - 1:00 PM2P.14Lab"
 			}
-		]
+		],
+		"number": "561-657-DW"
 	},
 	{
 		"title": "Rehearsal and Performance 2",
-		"number": "561-665-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Leslie Baker, Michael Edward Hughes",
 				"schedule": "Monday3:00 PM - 6:00 PMTHEATRETutorialTuesday3:00 PM - 6:00 PMTHEATRETutorialWednesday3:00 PM - 6:00 PMTHEATRETutorialThursday3:00 PM - 6:00 PM3A.13LabFriday3:00 PM - 6:00 PM3A.13Lab"
 			}
-		]
+		],
+		"number": "561-665-DW"
 	}
 ]

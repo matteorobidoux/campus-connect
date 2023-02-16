@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Introduction to Geography and the Environment",
-		"number": "320-BWS-03",
 		"sections": [
 			{
 				"title": "Geography and the Environment",
@@ -39,11 +38,11 @@
 				"teacher": "Gisela Frias",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "320-BWS-03"
 	},
 	{
 		"title": "Introduction to History",
-		"number": "330-BWS-03",
 		"sections": [
 			{
 				"title": "History of Science and Technology",
@@ -51,11 +50,11 @@
 				"teacher": "Benjamin Lander",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "330-BWS-03"
 	},
 	{
 		"title": "Introduction to Philosophy",
-		"number": "340-BWS-03",
 		"sections": [
 			{
 				"title": "Introduction to Philosophy",
@@ -93,11 +92,11 @@
 				"teacher": "Sarah Allen",
 				"schedule": "Tuesday11:30 AM - 1:00 PM4F.4ClassThursday11:30 AM - 1:00 PM4F.4Class"
 			}
-		]
+		],
+		"number": "340-BWS-03"
 	},
 	{
 		"title": "Social science: introduction to psychology",
-		"number": "350-BWS-03",
 		"sections": [
 			{
 				"title": "Psychology of Sexuality",
@@ -111,11 +110,11 @@
 				"teacher": "Jonathan Ohayon",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "350-BWS-03"
 	},
 	{
 		"title": "Introduction to Religion Studies",
-		"number": "370-BWS-03",
 		"sections": [
 			{
 				"title": "Introduction to World Religions",
@@ -159,11 +158,11 @@
 				"teacher": "Ivan Freud",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "370-BWS-03"
 	},
 	{
 		"title": "Social Science 1",
-		"number": "388-BWS-DW",
 		"sections": [
 			{
 				"title": "The Power of Non-Violent Communication",
@@ -171,11 +170,11 @@
 				"teacher": "Alyssa Kuzmarov",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "388-BWS-DW"
 	},
 	{
 		"title": "Social science: introduction to sociology",
-		"number": "387-BWS-03",
 		"sections": [
 			{
 				"title": "Individual and Society",
@@ -189,6 +188,7 @@
 				"teacher": "Kelly Phipps",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "387-BWS-03"
 	}
 ]

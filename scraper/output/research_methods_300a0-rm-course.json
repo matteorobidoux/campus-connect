@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Research Methods",
-		"number": "300-300-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -233,6 +232,7 @@
 				"teacher": "Ray Claudio Pino",
 				"schedule": "Tuesday4:00 PM - 6:00 PM3H.17ClassThursday4:00 PM - 6:00 PM3H.17Class"
 			}
-		]
+		],
+		"number": "300-300-DW"
 	}
 ]

@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Systems, Modeling and Creative Computation",
-		"number": "585-211-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -13,33 +12,33 @@
 				"teacher": "Adam Basanta",
 				"schedule": "Wednesday2:30 PM - 5:30 PM3B.4Class"
 			}
-		]
+		],
+		"number": "585-211-DW"
 	},
 	{
 		"title": "The Art of Physical Computing",
-		"number": "585-413-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "John Connolly",
 				"schedule": "Thursday2:00 PM - 6:00 PM3B.4Class"
 			}
-		]
+		],
+		"number": "585-413-DW"
 	},
 	{
 		"title": "Integrating Activity (IA)",
-		"number": "585-498-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Bérengère Marin Dubuard",
 				"schedule": "Monday10:00 AM - 2:00 PM3B.4Class"
 			}
-		]
+		],
+		"number": "585-498-DW"
 	},
 	{
 		"title": "The Art of Game Design",
-		"number": "585-914-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -51,39 +50,40 @@
 				"teacher": "Shawn Bell",
 				"schedule": "Wednesday8:30 AM - 11:30 AM3B.4Class"
 			}
-		]
+		],
+		"number": "585-914-DW"
 	},
 	{
 		"title": "Computer Music and Sound Art",
-		"number": "585-915-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Adam Basanta, Shawn Bell",
 				"schedule": "Tuesday2:30 PM - 5:30 PM3B.4Class"
 			}
-		]
+		],
+		"number": "585-915-DW"
 	},
 	{
 		"title": "Interactive Arts: Local to Global",
-		"number": "585-917-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Bérengère Marin Dubuard",
 				"schedule": "Wednesday11:30 AM - 2:30 PM3B.4Class"
 			}
-		]
+		],
+		"number": "585-917-DW"
 	},
 	{
 		"title": "Tangible Media: Making Things Interactive",
-		"number": "585-923-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Bérengère Marin Dubuard",
 				"schedule": "Tuesday11:30 AM - 2:30 PM3B.4Class"
 			}
-		]
+		],
+		"number": "585-923-DW"
 	}
 ]

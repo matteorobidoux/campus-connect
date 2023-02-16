@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Remedial Activities for Secondary V Mathematics: Technical and Scientific Option",
-		"number": "201-015-RE",
 		"sections": [
 			{
 				"section": "00001",
@@ -13,22 +12,22 @@
 				"teacher": "Igor Gorelyshev",
 				"schedule": "Tuesday8:00 AM - 10:00 AM5B.3ClassThursday12:00 PM - 2:00 PM5B.3LabFriday8:00 AM - 10:00 AM5B.3Class"
 			}
-		]
+		],
+		"number": "201-015-RE"
 	},
 	{
 		"title": "Remedial Activities for Secondary IV Mathematics: Technical and Scientific Option",
-		"number": "201-016-RE",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Garry Ka Lok Chu",
 				"schedule": "Monday2:30 PM - 4:00 PM7A.11ClassWednesday2:30 PM - 4:00 PM7A.11ClassThursday10:00 AM - 12:00 PM3F.45Lab"
 			}
-		]
+		],
+		"number": "201-016-RE"
 	},
 	{
 		"title": "Calculus I",
-		"number": "201-103-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -55,11 +54,11 @@
 				"teacher": "Georgeana Bobos-Kristof",
 				"schedule": "Monday8:00 AM - 10:00 AM4A.2LabTuesday8:30 AM - 10:00 AM5A.12ClassFriday8:30 AM - 10:00 AM5A.12Class"
 			}
-		]
+		],
+		"number": "201-103-DW"
 	},
 	{
 		"title": "Linear Algebra",
-		"number": "201-105-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -86,11 +85,11 @@
 				"teacher": "Gilbert Honnouvo",
 				"schedule": "Tuesday2:00 PM - 4:00 PM4D.2LabWednesday1:00 PM - 2:30 PM4H.19ClassFriday1:00 PM - 2:30 PM4H.19Class"
 			}
-		]
+		],
+		"number": "201-105-DW"
 	},
 	{
 		"title": "Calculus II",
-		"number": "201-203-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -117,11 +116,11 @@
 				"teacher": "Oxana Cerba",
 				"schedule": "Tuesday8:30 AM - 10:00 AM4D.11ClassThursday8:00 AM - 10:00 AM4A.2LabFriday8:30 AM - 10:00 AM4D.11Class"
 			}
-		]
+		],
+		"number": "201-203-DW"
 	},
 	{
 		"title": "Statistics for Social Science",
-		"number": "201-401-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -133,17 +132,18 @@
 				"teacher": "Mehdi Moodi",
 				"schedule": "Tuesday8:30 AM - 10:00 AM7A.13ClassFriday8:30 AM - 10:00 AM7A.13Class"
 			}
-		]
+		],
+		"number": "201-401-DW"
 	},
 	{
 		"title": "Calculus II",
-		"number": "201-NYB-05",
 		"sections": [
 			{
 				"section": "00015",
 				"teacher": "Noushin Sabetghadam Haghighi",
 				"schedule": "Tuesday1:00 PM - 2:30 PM6B.13ClassThursday1:00 PM - 2:30 PM6B.13ClassFriday12:00 PM - 2:00 PM7B.4Lab"
 			}
-		]
+		],
+		"number": "201-NYB-05"
 	}
 ]

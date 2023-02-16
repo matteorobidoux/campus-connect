@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Knowledge",
-		"number": "345-101-MQ",
 		"sections": [
 			{
 				"section": "00001",
@@ -141,11 +140,11 @@
 				"teacher": "Jennifer Koopman",
 				"schedule": "Tuesday4:00 PM - 6:00 PM4H.23ClassThursday4:00 PM - 6:00 PM4H.23Class"
 			}
-		]
+		],
+		"number": "345-101-MQ"
 	},
 	{
 		"title": "World Views",
-		"number": "345-102-MQ",
 		"sections": [
 			{
 				"title": "Nietzsche and Dostoevsky",
@@ -428,11 +427,11 @@
 				"teacher": "Gray Miles, Rebecca Million",
 				"schedule": "Tuesday2:30 PM - 5:30 PM4E.13Class"
 			}
-		]
+		],
+		"number": "345-102-MQ"
 	},
 	{
 		"title": "Applied Ethics in Humanities",
-		"number": "345-BXH-DW",
 		"sections": [
 			{
 				"title": "Ethical Issues in Medicine and Health",
@@ -691,6 +690,7 @@
 				"teacher": "Gregory Polakoff, Jay Shea",
 				"schedule": "Thursday11:30 AM - 2:30 PM4E.13Class"
 			}
-		]
+		],
+		"number": "345-BXH-DW"
 	}
 ]

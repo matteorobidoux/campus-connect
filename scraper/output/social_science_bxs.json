@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Social Science, Ensemble 2",
-		"number": "381-BXS-DW",
 		"sections": [
 			{
 				"title": "Culture on Display (INTENSIVE)",
@@ -9,11 +8,11 @@
 				"teacher": "Sabrina Smofsky",
 				"schedule": "Friday, June 2, 2023"
 			}
-		]
+		],
+		"number": "381-BXS-DW"
 	},
 	{
 		"title": "Social science: introduction to business administration",
-		"number": "401-BXS-03",
 		"sections": [
 			{
 				"title": "Entrepreneurship",
@@ -21,11 +20,11 @@
 				"teacher": "Amanda Petriello",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "401-BXS-03"
 	},
 	{
 		"title": "Social science: applications in economics",
-		"number": "383-BXS-03",
 		"sections": [
 			{
 				"title": "The Economics of Sex and Drugs",
@@ -33,11 +32,11 @@
 				"teacher": "Ahmad Banki",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "383-BXS-03"
 	},
 	{
 		"title": "Applications in History",
-		"number": "330-BXS-03",
 		"sections": [
 			{
 				"title": "Snapshots of the 20th Century",
@@ -45,11 +44,11 @@
 				"teacher": "Deborah Shulman",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "330-BXS-03"
 	},
 	{
 		"title": "Applications in Psychology",
-		"number": "350-BXS-03",
 		"sections": [
 			{
 				"title": "Interaction and Communication (INTENSIVE)",
@@ -57,11 +56,11 @@
 				"teacher": "Marie-Pierre Gosselin",
 				"schedule": "Thursday, June 1, 2023"
 			}
-		]
+		],
+		"number": "350-BXS-03"
 	},
 	{
 		"title": "Social science: applications in religion studies",
-		"number": "370-BXS-03",
 		"sections": [
 			{
 				"title": "Contemporary Social Concerns: Sex, Gender and Religion",
@@ -69,6 +68,7 @@
 				"teacher": "Sonia Zylberberg",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "370-BXS-03"
 	}
 ]

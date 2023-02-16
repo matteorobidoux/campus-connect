@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Introduction to World Religions",
-		"number": "370-102-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -38,11 +37,11 @@
 				"teacher": "Ivan Freud",
 				"schedule": "Tuesday4:00 PM - 5:30 PM5A.12ClassThursday4:00 PM - 5:30 PM5A.12Class"
 			}
-		]
+		],
+		"number": "370-102-DW"
 	},
 	{
 		"title": "Exploring Religions",
-		"number": "370-318-DW",
 		"sections": [
 			{
 				"title": "Witches, Saints, Gurus, and Mystics",
@@ -50,6 +49,7 @@
 				"teacher": "Philip Lagace",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "370-318-DW"
 	}
 ]
