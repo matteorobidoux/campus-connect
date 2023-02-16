@@ -1,13 +1,8 @@
 .profileBar {
     background: var(--primary);
     color: var(--text-white);
-    position: absolute;
     height: 100%;
     padding: 1.25rem;
-    min-width: 300px;
-    bottom: 0;
-    width: 20%;
-    right: -30%;
     transition: right 0.2s;
     box-shadow: -3px 0px 8px 2px rgba(0, 0, 0, 0.2);
 
