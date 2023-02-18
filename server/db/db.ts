@@ -52,6 +52,11 @@ async getAllUsers(){
   console.log(result)
   return result;
 }
+async getAllEvents(){ 
+  const result= await Event.find()
+  console.log(result)
+  return result;
+}
 
 async addAllClasses(){
     const jsonsInDir = fs.readdirSync(config.scraperOutputLocation);
@@ -74,11 +79,10 @@ async addAllClasses(){
     })
   }
 }
-//Example of how it can be used
-// const b= new DbMongoose('test');
-// const date=new Date()
-// const description="Today I had an interview at 2pm but the Interviewer is making me wait and it 5h20pm already should I quit?"
-// b.addEvent("2",date,"Intership", description, "Section0003")
+
+const sex= new DbMongoose("test")
+sex.getAllUsers()
+
 export default DbMongoose;
 
 
