@@ -54,27 +54,25 @@ async getAllUsers(){
 }
 
 async addAllClasses(){
-  const jsonsInDir = fs.readdirSync(config.scraperOutputLocation);
-  jsonsInDir.forEach(file => {
-    const fileData = fs.readFileSync(path.join(config.scraperOutputLocation, file));
-    const json = JSON.parse(fileData.toString());
-    json.forEach((courseJSON: { title: any; number: any; sections: any[]; }) => {
-        const course = new Course({
-            "title": courseJSON.title,
-            "number": courseJSON.number,
-            "sections": []
-        })
-        course.save()
-        courseJSON.sections.forEach((sectionJSON: any) => {
-            const section = new Section(sectionJSON);
-            course.sections.push(section);
-            section.save();
-        });
+    const jsonsInDir = fs.readdirSync(config.scraperOutputLocation);
+    jsonsInDir.forEach(file => {
+      const fileData = fs.readFileSync(path.join(config.scraperOutputLocation, file));
+      const json = JSON.parse(fileData.toString());
+      json.forEach((courseJSON: { title: any; number: any; sections: any[]; }) => {
+          const course = new Course({
+              "title": courseJSON.title,
+              "number": courseJSON.number,
+              "sections": []
+          })
+          course.save()
+          courseJSON.sections.forEach((sectionJSON: any) => {
+              const section = new Section(sectionJSON);
+              course.sections.push(section);
+              section.save();
+          });
+      })
     })
-  })
-}
-
-
+  }
 }
 //Example of how it can be used
 // const b= new DbMongoose('test');
