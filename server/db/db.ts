@@ -80,16 +80,6 @@ addAllClasses(){
   }
 }
 
-const sex= new DbMongoose("test")
-sex.getAllUsers()
-
-//Example of how it can be used
-// const b= new DbMongoose('test');
-// const date=new Date()
-// const description="Today I had an interview at 2pm but the Interviewer is making me wait and it 5h20pm already should I quit?"
-// b.addEvent("2",date,"Intership", description, "Section0003")
-const b = new DbMongoose('test');
-b.addAllClasses();
 export default DbMongoose;
 
 
