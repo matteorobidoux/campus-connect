@@ -1,0 +1,50 @@
+[
+	{
+		"title": "Introduction to Philosophy",
+		"number": "340-101-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Gerardo Mosquera",
+				"schedule": "Tuesday10:00 AM - 11:30 AM4F.4ClassFriday10:00 AM - 11:30 AM4F.4Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Brian Redekopp",
+				"schedule": "Monday11:30 AM - 1:00 PM4P.10ClassThursday8:30 AM - 10:00 AM4P.10Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Gerardo Mosquera",
+				"schedule": "Wednesday11:30 AM - 1:00 PM4F.4ClassFriday11:30 AM - 1:00 PM4F.4Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Gerardo Mosquera",
+				"schedule": "Monday2:30 PM - 4:00 PM4A.7ClassWednesday2:30 PM - 4:00 PM4A.7Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "Jessica Lim",
+				"schedule": "Tuesday1:00 PM - 2:30 PM4D.17ClassThursday1:00 PM - 2:30 PM4D.17Class"
+			},
+			{
+				"section": "00006",
+				"teacher": "Sarah Allen",
+				"schedule": "Tuesday11:30 AM - 1:00 PM4F.4ClassThursday11:30 AM - 1:00 PM4F.4Class"
+			}
+		]
+	},
+	{
+		"title": "Topics in Philosophy",
+		"number": "340-219-DW",
+		"sections": [
+			{
+				"title": "Poetic Justice",
+				"section": "00001",
+				"teacher": "Gerardo Mosquera",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		]
+	}
+]

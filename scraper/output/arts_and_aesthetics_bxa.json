@@ -1,0 +1,86 @@
+[
+	{
+		"title": "Arts and Aesthetics II",
+		"number": "602-BXA-DW",
+		"sections": [
+			{
+				"title": "Production théâtre francophone: Domaine médical (INTENSIVE)",
+				"section": "00050",
+				"teacher": "Jacques Mélançon",
+				"schedule": "Tuesday, May 30, 2023"
+			}
+		]
+	},
+	{
+		"title": "Applications in the Art of Music",
+		"number": "550-BXA-03",
+		"sections": [
+			{
+				"title": "Introduction to Singing",
+				"section": "00001",
+				"teacher": "Sarah Rossy",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Vocal Expression",
+				"section": "00002",
+				"teacher": "Jacinta Luis",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Vocal Performance",
+				"section": "00003",
+				"teacher": "Jacinta Luis",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Guitar 1",
+				"section": "00004",
+				"teacher": "Vincenzo Lentini",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Guitar 2",
+				"section": "00005",
+				"teacher": "Vincenzo Lentini",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Comprehensive Guitar Techniques",
+				"section": "00006",
+				"teacher": "Vincenzo Lentini",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		]
+	},
+	{
+		"title": "Applications in Fine Arts",
+		"number": "511-BXA-03",
+		"sections": [
+			{
+				"title": "Painting and Creative Expression",
+				"section": "00001",
+				"teacher": "David Philip Hall",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Collage",
+				"section": "00002",
+				"teacher": "Maria Chronopoulos",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Drawing and Creative Expression",
+				"section": "00003",
+				"teacher": "Naomi London",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Graphic Novels and Artists' Books",
+				"section": "00004",
+				"teacher": "Julianna Joos",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		]
+	}
+]

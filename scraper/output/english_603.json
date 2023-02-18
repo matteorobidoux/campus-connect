@@ -1,0 +1,942 @@
+[
+	{
+		"title": "I.C.E.",
+		"number": "603-101-MQ",
+		"sections": [
+			{
+				"title": "Writing English",
+				"section": "00001",
+				"teacher": "Marie-Thérèse Blanc",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Writing English",
+				"section": "00002",
+				"teacher": "Lorne Roberts",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Writing English",
+				"section": "00003",
+				"teacher": "Robert J Rose",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Writing English",
+				"section": "00004",
+				"teacher": "TBA-603-B",
+				"schedule": "Tuesday4:00 PM - 6:00 PM2P.08ClassThursday4:00 PM - 6:00 PM2P.08Class"
+			},
+			{
+				"title": "Writing English",
+				"section": "00005",
+				"teacher": "Anna Lewton-Brain, Justin Pfefferle",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Effective Reading and Writing",
+				"section": "00025",
+				"teacher": "George Slobodzian",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Effective Reading and Writing",
+				"section": "00026",
+				"teacher": "George Slobodzian",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Effective Reading and Writing",
+				"section": "00027",
+				"teacher": "Lee Scott Young",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Effective Reading and Writing",
+				"section": "00028",
+				"teacher": "Lee Scott Young",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Effective Reading and Writing",
+				"section": "00029",
+				"teacher": "Matthew Taylor",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Effective Reading and Writing",
+				"section": "00030",
+				"teacher": "Anna-Maria Kibaris",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Effective Reading and Writing",
+				"section": "00031",
+				"teacher": "Andrew Williams",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Effective Reading and Writing",
+				"section": "00032",
+				"teacher": "Kathryn Hall",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Effective Reading and Writing",
+				"section": "00034",
+				"teacher": "Lorne Roberts",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Effective Reading and Writing",
+				"section": "00035",
+				"teacher": "TBA-603-A",
+				"schedule": "Tuesday8:00 AM - 10:00 AM2P.08ClassFriday8:00 AM - 10:00 AM2P.08Class"
+			},
+			{
+				"title": "Introduction to College English",
+				"section": "00065",
+				"teacher": "Alexander Flamenco, Jennifer Savard",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to College English",
+				"section": "00066",
+				"teacher": "Alexander Flamenco, Jennifer Savard",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to College English",
+				"section": "00067",
+				"teacher": "Mary Gossage",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to College English",
+				"section": "00068",
+				"teacher": "Shalon Nicole Noble",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to College English",
+				"section": "00069",
+				"teacher": "Sarah Gilbert",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to College English",
+				"section": "00070",
+				"teacher": "Trevor Rouse",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to College English",
+				"section": "00071",
+				"teacher": "TBA-603-A",
+				"schedule": "Monday12:00 PM - 2:00 PM4P.09ClassThursday8:00 AM - 10:00 AM4P.09Class"
+			},
+			{
+				"title": "Introduction to College English",
+				"section": "00072",
+				"teacher": "Trevor Rouse",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		]
+	},
+	{
+		"title": "Literary Genres",
+		"number": "603-102-MQ",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Alexander Flamenco, Jennifer Savard",
+				"schedule": "Tuesday12:00 PM - 2:00 PM3F.25ClassThursday12:00 PM - 2:00 PM3F.25Class"
+			},
+			{
+				"title": "Crime and Punishment",
+				"section": "00002",
+				"teacher": "Paul Hawkins",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Poetry Now",
+				"section": "00003",
+				"teacher": "Bryan Sentes",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Poetry Now",
+				"section": "00004",
+				"teacher": "Bryan Sentes",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Detective Fiction",
+				"section": "00005",
+				"teacher": "Seyed-Gholamreza Shafieesabet",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Modern and Contemporary Drama",
+				"section": "00006",
+				"teacher": "Louise Arsenault",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Poetry",
+				"section": "00007",
+				"teacher": "George Slobodzian",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Contemporary Short Fiction",
+				"section": "00008",
+				"teacher": "Mary Gossage",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Contemporary Short Fiction",
+				"section": "00009",
+				"teacher": "Mary Gossage",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Our Stories, Our Voices",
+				"section": "00010",
+				"teacher": "Lorne Roberts",
+				"schedule": "Monday10:00 AM - 12:00 PM4E.18ClassWednesday10:00 AM - 12:00 PM4E.18Class"
+			},
+			{
+				"title": "Modern and Contemporary Drama",
+				"section": "00011",
+				"teacher": "Louise Arsenault",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Irish Literature",
+				"section": "00012",
+				"teacher": "Alyson Grant",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Irish Literature",
+				"section": "00013",
+				"teacher": "Alyson Grant",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "The Novella",
+				"section": "00014",
+				"teacher": "Matthew Taylor",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "The Novella",
+				"section": "00015",
+				"teacher": "Matthew Taylor",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Shakespeare's Comedies",
+				"section": "00016",
+				"teacher": "Matt Bergbusch",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Shakespeare's Comedies",
+				"section": "00017",
+				"teacher": "Matt Bergbusch",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Crime Fiction",
+				"section": "00018",
+				"teacher": "Frank Runcie",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Greek Tragedy and the Modern World",
+				"section": "00019",
+				"teacher": "Robert J Rose",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Detective Fiction",
+				"section": "00020",
+				"teacher": "Rita Much",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Liberal Arts Poetry",
+				"section": "00021",
+				"teacher": "Susan Elmslie",
+				"schedule": "Monday10:00 AM - 12:00 PM3F.5ClassWednesday10:00 AM - 12:00 PM2P.08Class"
+			},
+			{
+				"title": "American Prose and Drama",
+				"section": "00022",
+				"teacher": "Anna-Maria Kibaris",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "American Prose and Drama",
+				"section": "00023",
+				"teacher": "Anna-Maria Kibaris",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"section": "00024",
+				"teacher": "Anna Lewton-Brain, Justin Pfefferle",
+				"schedule": "Tuesday12:00 PM - 2:00 PM4P.04ClassThursday12:00 PM - 2:00 PM4P.04Class"
+			},
+			{
+				"title": "Drama",
+				"section": "00025",
+				"teacher": "David Gelineau",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Tragedy",
+				"section": "00026",
+				"teacher": "Todd Starke-Meyerring",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Tragedy",
+				"section": "00027",
+				"teacher": "Todd Starke-Meyerring",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Contemporary Short Story",
+				"section": "00028",
+				"teacher": "Ursula Misztal",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Classical Myth and Modern Imagination",
+				"section": "00029",
+				"teacher": "Anne Thorpe",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Classical Myth and Modern Imagination",
+				"section": "00030",
+				"teacher": "Anne Thorpe",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Short Fiction",
+				"section": "00031",
+				"teacher": "Sabine Sautter-Leger",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Short Fiction",
+				"section": "00032",
+				"teacher": "Sabine Sautter-Leger",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Poetry Face-Off: Eliot and Larkin",
+				"section": "00033",
+				"teacher": "Tijana Stojkovic",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Poetry Face-Off: Eliot and Larkin",
+				"section": "00034",
+				"teacher": "Tijana Stojkovic",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Lyrical Ballads",
+				"section": "00035",
+				"teacher": "Shalon Nicole Noble",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "The Modern Short Story",
+				"section": "00036",
+				"teacher": "Tavish McDonell",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Weird Fiction",
+				"section": "00037",
+				"teacher": "Neil Hartlen",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Shakespearean Drama",
+				"section": "00038",
+				"teacher": "Amanda Cockburn",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "The Short Story",
+				"section": "00039",
+				"teacher": "Tracie Gemmel",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Crime Fiction",
+				"section": "00040",
+				"teacher": "Frank Runcie",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Coming of Age Fiction",
+				"section": "00041",
+				"teacher": "Robin E. Feenstra",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Authurian Romance",
+				"section": "00042",
+				"teacher": "Charlotte Hussey",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Postwar Literature",
+				"section": "00043",
+				"teacher": "Chad Lowe",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "The Autobiography",
+				"section": "00044",
+				"teacher": "Catherine Payne",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "The Autobiography",
+				"section": "00045",
+				"teacher": "Catherine Payne",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Poetry",
+				"section": "00046",
+				"teacher": "Kathryn Hall",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Domestic Gothic",
+				"section": "00047",
+				"teacher": "Luke Reid",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Domestic Gothic",
+				"section": "00048",
+				"teacher": "Luke Reid",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Detective Fiction",
+				"section": "00049",
+				"teacher": "Louisa Anne Hadley",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Poetry",
+				"section": "00050",
+				"teacher": "Kathryn Hall",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Greek Tragedy and the Modern World",
+				"section": "00051",
+				"teacher": "Robert J Rose",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Literature into Film",
+				"section": "00052",
+				"teacher": "Christian Charette",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Postwar Literature",
+				"section": "00053",
+				"teacher": "Chad Lowe",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"section": "00054",
+				"teacher": "TBA-603-A",
+				"schedule": "Monday8:00 AM - 10:00 AM4P.05ClassWednesday8:00 AM - 10:00 AM4P.05Class"
+			},
+			{
+				"title": "Detective Fiction",
+				"section": "00055",
+				"teacher": "Seyed-Gholamreza Shafieesabet",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Signifying Nothing: Pessimism and the Tragic World View",
+				"section": "18001",
+				"teacher": "Jay Shea, Mikaela Bobiy",
+				"schedule": "Friday11:30 AM - 2:30 PM4E.13Class"
+			},
+			{
+				"title": "The unseen world: Magic in Ritual, Fairy Tale, and Fantasy",
+				"section": "18002",
+				"teacher": "Gray Miles, Rebecca Million",
+				"schedule": "Thursday2:30 PM - 5:30 PM4E.13Class"
+			}
+		]
+	},
+	{
+		"title": "Literary Themes",
+		"number": "603-103-MQ",
+		"sections": [
+			{
+				"title": "Drama of Ibsen and Strindberg",
+				"section": "00001",
+				"teacher": "Roy Cartlidge",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Drama of Ibsen and Strindberg",
+				"section": "00002",
+				"teacher": "Roy Cartlidge",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Jane Austen",
+				"section": "00003",
+				"teacher": "Wendy Thatcher",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Gender Issues in Drama",
+				"section": "00004",
+				"teacher": "Louise Arsenault",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Family Dramas",
+				"section": "00005",
+				"teacher": "Alyson Grant",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Themes in Shakespeare",
+				"section": "00006",
+				"teacher": "Matt Bergbusch",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "21st Century Novels and Contexts",
+				"section": "00007",
+				"teacher": "Louise Slater",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Drama, Tragic to Absurd",
+				"section": "00008",
+				"teacher": "Rita Much",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Drama, Tragic to Absurd",
+				"section": "00009",
+				"teacher": "Rita Much",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Metamorphoses in Literature",
+				"section": "00010",
+				"teacher": "Liana Bellon",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "The Lord of the Rings",
+				"section": "00011",
+				"teacher": "Rebecca Million",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Augustan Satire",
+				"section": "00012",
+				"teacher": "David Gelineau",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Metamorphoses in Literature",
+				"section": "00013",
+				"teacher": "Liana Bellon",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "The Quest Pattern",
+				"section": "00014",
+				"teacher": "Marie-Thérèse Blanc",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "The Quest Pattern",
+				"section": "00015",
+				"teacher": "Marie-Thérèse Blanc",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Grief, Loss, and Magic",
+				"section": "00016",
+				"teacher": "Tijana Stojkovic",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "The Lord of the Rings",
+				"section": "00017",
+				"teacher": "Rebecca Million",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Words of Love",
+				"section": "00018",
+				"teacher": "Brent Devine",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Words of Love",
+				"section": "00019",
+				"teacher": "Brent Devine",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Windrush: Caribbean British Literature",
+				"section": "00020",
+				"teacher": "Frank Runcie",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Windrush: Caribbean British Literature",
+				"section": "00021",
+				"teacher": "Frank Runcie",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Women with Agency",
+				"section": "00022",
+				"teacher": "Gina Granter",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Year Zero: Writing Around Punk Rock",
+				"section": "00023",
+				"teacher": "Andrew Williams",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Year Zero: Writing Around Punk Rock",
+				"section": "00024",
+				"teacher": "Andrew Williams",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "The Past: Memory, History, and Narrative",
+				"section": "00025",
+				"teacher": "Luke Reid",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Writing the Great War",
+				"section": "00026",
+				"teacher": "Noah Weisberg",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"section": "00027",
+				"teacher": "TBA-603-A",
+				"schedule": "Wednesday12:00 PM - 2:00 PM4P.09ClassFriday12:00 PM - 2:00 PM4P.09Class"
+			},
+			{
+				"title": "Heroism and Culture",
+				"section": "00028",
+				"teacher": "Seyed-Gholamreza Shafieesabet",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		]
+	},
+	{
+		"title": "Applied Themes in English",
+		"number": "603-BXE-DW",
+		"sections": [
+			{
+				"title": "Rhetoric",
+				"section": "00001",
+				"teacher": "Roy Cartlidge",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Jordan Peterson's Rules for Life",
+				"section": "00002",
+				"teacher": "Paul Hawkins",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Jordan Peterson's Rules for Life",
+				"section": "00003",
+				"teacher": "Paul Hawkins",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Writing about the Novel",
+				"section": "00004",
+				"teacher": "Simon Fanning",
+				"schedule": "Monday10:00 AM - 12:00 PM3F.27ClassWednesday10:00 AM - 12:00 PM4A.5Class"
+			},
+			{
+				"title": "Food for Thought: From Farm to Table",
+				"section": "00005",
+				"teacher": "Wendy Thatcher",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Food for Thought: From Farm to Table",
+				"section": "00006",
+				"teacher": "Wendy Thatcher",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Critical Reading of Digital Culture",
+				"section": "00007",
+				"teacher": "Lee Scott Young",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Creative Nonfiction",
+				"section": "00008",
+				"teacher": "Michelle Syba",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Women and Anger",
+				"section": "00009",
+				"teacher": "Louise Slater",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Women and Anger",
+				"section": "00010",
+				"teacher": "Louise Slater",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Writing Work",
+				"section": "00011",
+				"teacher": "Susan Elmslie",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Inquiry-Based Writing",
+				"section": "00012",
+				"teacher": "Todd Starke-Meyerring",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Robot Visions",
+				"section": "00013",
+				"teacher": "Ursula Misztal",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Robot Visions",
+				"section": "00014",
+				"teacher": "Ursula Misztal",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Rhetorical Strategies",
+				"section": "00015",
+				"teacher": "Sabine Sautter-Leger",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Non-Fiction Workshop",
+				"section": "00016",
+				"teacher": "Noah Weisberg",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Non-Fiction Workshop",
+				"section": "00017",
+				"teacher": "Noah Weisberg",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "The Storytelling Animal",
+				"section": "00018",
+				"teacher": "Andrea Strudensky",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Culture and Rhetoric",
+				"section": "00019",
+				"teacher": "Tavish McDonell",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Culture and Rhetoric",
+				"section": "00020",
+				"teacher": "Tavish McDonell",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Writing about Film",
+				"section": "00021",
+				"teacher": "Neil Hartlen",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Writing about Film",
+				"section": "00022",
+				"teacher": "Neil Hartlen",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Text and the City: Writing Montreal",
+				"section": "00023",
+				"teacher": "Amanda Cockburn",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Text and the City: Writing Montreal",
+				"section": "00024",
+				"teacher": "Amanda Cockburn",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Literature and Ethics",
+				"section": "00025",
+				"teacher": "Brent Devine",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Rhetorical Strategies",
+				"section": "00026",
+				"teacher": "Tracie Gemmel",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Rhetorical Strategies",
+				"section": "00027",
+				"teacher": "Tracie Gemmel",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Humans, Animals, and the Environment",
+				"section": "00028",
+				"teacher": "Gina Granter",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"section": "00029",
+				"teacher": "Trevor Rouse",
+				"schedule": "Monday4:00 PM - 6:00 PM4P.08ClassWednesday4:00 PM - 6:00 PM4P.08Class"
+			},
+			{
+				"title": "Dystopian Fictions",
+				"section": "00030",
+				"teacher": "Robin E. Feenstra",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Dystopian Fictions",
+				"section": "00031",
+				"teacher": "Robin E. Feenstra",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "The Bigger Picture",
+				"section": "00032",
+				"teacher": "Jeffrey Gandell",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Creativity",
+				"section": "00033",
+				"teacher": "Charlotte Hussey",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Creativity",
+				"section": "00034",
+				"teacher": "Charlotte Hussey",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Literary Nonfiction and Social Critique",
+				"section": "00035",
+				"teacher": "Francis Lardy",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"section": "00036",
+				"teacher": "Seyed-Gholamreza Shafieesabet",
+				"schedule": "Tuesday2:00 PM - 4:00 PM2P.09ClassThursday2:00 PM - 4:00 PM2P.09Class"
+			},
+			{
+				"title": "Stranger Than Fiction? Memoir and Autobiography",
+				"section": "00037",
+				"teacher": "Leanne D'Antoni",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"section": "00038",
+				"teacher": "Trevor Rouse",
+				"schedule": "Monday12:00 PM - 2:00 PM4H.17ClassThursday8:00 AM - 10:00 AM4H.17Class"
+			},
+			{
+				"title": "The Storytelling Animal",
+				"section": "00039",
+				"teacher": "Andrea Strudensky",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Critical Reading of Popular Culture",
+				"section": "00040",
+				"teacher": "Bassel Atallah",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Reading the Classic Horror Film",
+				"section": "00042",
+				"teacher": "Jay Shea",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "World War II's Long Shadow",
+				"section": "00043",
+				"teacher": "Chad Lowe",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Literary Nonfiction and Social Critique",
+				"section": "00044",
+				"teacher": "Francis Lardy",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"section": "00045",
+				"teacher": "TBA-603-B",
+				"schedule": "Tuesday12:00 PM - 2:00 PM4P.07ClassThursday12:00 PM - 2:00 PM4P.07Class"
+			},
+			{
+				"title": "Investigating Story Value(s)",
+				"section": "12001",
+				"teacher": "Andrew Katz",
+				"schedule": "Tuesday4:00 PM - 8:00 PM3F.3Class"
+			},
+			{
+				"title": "Welcome to the Machine: An Introduction to Ethics and Sci-Fi",
+				"section": "18001",
+				"teacher": "Gregory Polakoff, Jay Shea",
+				"schedule": "Tuesday11:30 AM - 2:30 PM4E.13Class"
+			}
+		]
+	}
+]

@@ -1,0 +1,210 @@
+[
+	{
+		"title": "Design Studio 2",
+		"number": "570-270-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Michael Santella",
+				"schedule": "Wednesday8:00 AM - 12:00 PM1G.2LabWednesday8:00 AM - 12:00 PM4G.4LabWednesday8:00 AM - 12:00 PM4H.15Lab"
+			}
+		]
+	},
+	{
+		"title": "Presentation Layout II",
+		"number": "570-277-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Michel Seguin",
+				"schedule": "Thursday8:30 AM - 11:30 AM3F.1LabThursday8:30 AM - 11:30 AM4G.4Lab"
+			}
+		]
+	},
+	{
+		"title": "3D Computer Modeling II",
+		"number": "570-278-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "David Weeks",
+				"schedule": "Monday8:30 AM - 11:30 AM4G.4Lab"
+			}
+		]
+	},
+	{
+		"title": "Manufacturing Field Trips",
+		"number": "570-279-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Kim Anita Webb, Véronique Bibeau-Poissant",
+				"schedule": "Tuesday2:30 PM - 5:30 PM4H.12Lab"
+			}
+		]
+	},
+	{
+		"title": "Prototyping II",
+		"number": "570-27A-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "David Weeks",
+				"schedule": "Thursday3:00 PM - 6:00 PM1G.1LabThursday3:00 PM - 6:00 PM1G.2LabThursday3:00 PM - 6:00 PM1G.3Lab"
+			},
+			{
+				"section": "00002",
+				"teacher": "Kim Anita Webb",
+				"schedule": "Wednesday1:00 PM - 4:00 PM1G.2LabWednesday1:00 PM - 4:00 PM3E.6Lab"
+			}
+		]
+	},
+	{
+		"title": "Material and Manufacturing II",
+		"number": "570-27B-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Pascal Boissé",
+				"schedule": "Friday1:00 PM - 4:00 PM1G.2LabFriday1:00 PM - 4:00 PM3G.3LabFriday1:00 PM - 4:00 PM4G.2CLab"
+			}
+		]
+	},
+	{
+		"title": "Design Studio IV",
+		"number": "570-470-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Michel Seguin",
+				"schedule": "Friday8:30 AM - 12:30 PM1G.2LabFriday8:30 AM - 12:30 PM3G.3Lab"
+			}
+		]
+	},
+	{
+		"title": "Design Studio IV Support",
+		"number": "570-476-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Michel Seguin",
+				"schedule": "Tuesday2:00 PM - 6:00 PM1G.2LabTuesday2:00 PM - 6:00 PM4G.4LabTuesday2:00 PM - 6:00 PM4H.6Lab"
+			}
+		]
+	},
+	{
+		"title": "Product Design Semantics",
+		"number": "570-479-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Michael Santella",
+				"schedule": "Thursday8:30 AM - 11:30 AM1G.2LabThursday8:30 AM - 11:30 AM4E.7Lab"
+			}
+		]
+	},
+	{
+		"title": "Prototyping IV",
+		"number": "570-47A-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Pascal Boissé",
+				"schedule": "Wednesday10:00 AM - 1:00 PM1G.2LabWednesday10:00 AM - 1:00 PM3E.6Lab"
+			},
+			{
+				"section": "00002",
+				"teacher": "David Weeks",
+				"schedule": "Monday1:00 PM - 4:00 PM1G.2LabMonday1:00 PM - 4:00 PM3E.6Lab"
+			}
+		]
+	},
+	{
+		"title": "Presentation Layout IV",
+		"number": "570-47B-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Carlos Carpintero",
+				"schedule": "Thursday3:00 PM - 6:00 PM4G.4Lab"
+			}
+		]
+	},
+	{
+		"title": "3D Computer Modeling IV",
+		"number": "570-47D-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "David Weeks",
+				"schedule": "Friday1:30 PM - 5:30 PM4G.4Lab"
+			}
+		]
+	},
+	{
+		"title": "Product Ergonomics",
+		"number": "570-47E-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Kim Anita Webb",
+				"schedule": "Tuesday8:30 AM - 11:30 AM1G.2LabTuesday8:30 AM - 11:30 AM4E.7Lab"
+			}
+		]
+	},
+	{
+		"title": "Design Studio VI",
+		"number": "570-670-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Carlos Carpintero, Michael Santella, Véronique Bibeau-Poissant",
+				"schedule": "Monday2:00 PM - 5:00 PM1G.2LabMonday2:00 PM - 5:00 PM4G.4LabWednesday8:30 AM - 11:30 AM1G.2LabWednesday8:30 AM - 11:30 AM4G.4LabFriday8:30 AM - 1:30 PM1G.2LabFriday8:30 AM - 1:30 PM4G.4Lab"
+			}
+		]
+	},
+	{
+		"title": "Professional Portfolio",
+		"number": "570-675-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Kim Anita Webb",
+				"schedule": "Thursday3:00 PM - 6:00 PM4E.7LabThursday3:00 PM - 6:00 PM4G.2CLab"
+			}
+		]
+	},
+	{
+		"title": "3D Computer Modeling V",
+		"number": "570-678-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Kim Anita Webb",
+				"schedule": "Thursday11:30 AM - 2:30 PM4G.4Lab"
+			}
+		]
+	},
+	{
+		"title": "Prototyping V",
+		"number": "570-67A-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Michel Seguin",
+				"schedule": "Tuesday8:30 AM - 11:30 AM1G.2Lab"
+			}
+		]
+	},
+	{
+		"title": "Presentation Layout V",
+		"number": "570-67B-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Carlos Carpintero, Pascal Boissé",
+				"schedule": "Wednesday2:00 PM - 5:00 PM4G.4Lab"
+			}
+		]
+	}
+]

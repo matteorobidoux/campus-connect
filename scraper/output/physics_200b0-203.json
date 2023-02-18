@@ -1,0 +1,174 @@
+[
+	{
+		"title": "Astrophysics",
+		"number": "203-BZA-05",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Nadim Boukhira",
+				"schedule": "Monday10:00 AM - 11:30 AM7A.9ClassWednesday10:00 AM - 11:30 AM7A.11ClassThursday4:00 PM - 6:00 PM7A.9Lab"
+			},
+			{
+				"section": "00002",
+				"teacher": "Rim Dib",
+				"schedule": "Monday2:30 PM - 4:00 PM7A.7ClassWednesday2:30 PM - 4:00 PM4H.8ClassThursday2:00 PM - 4:00 PM7A.7Lab"
+			}
+		]
+	},
+	{
+		"title": "Engineering Physics",
+		"number": "203-BZE-05",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Manuel Toharia Zapata",
+				"schedule": "Monday8:30 AM - 10:00 AM7A.9ClassWednesday8:00 AM - 10:00 AM7A.6LabThursday8:30 AM - 10:00 AM7A.9Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Jean-François Brière",
+				"schedule": "Tuesday11:30 AM - 1:00 PM3H.10ClassThursday11:30 AM - 1:00 PM3H.6ClassFriday12:00 PM - 2:00 PM7A.2Lab"
+			}
+		]
+	},
+	{
+		"title": "Special Topics in Physics",
+		"number": "203-BZT-DW",
+		"sections": [
+			{
+				"title": "Introduction to Research in Brain Imaging",
+				"section": "00001",
+				"teacher": "Hélène Nadeau",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		]
+	},
+	{
+		"title": "Mechanics",
+		"number": "203-NYA-05",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Diana Glennie",
+				"schedule": "Tuesday2:00 PM - 4:00 PM7A.2LabWednesday1:00 PM - 2:30 PM3F.37ClassFriday1:00 PM - 2:30 PM3F.37Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Michelle Baryliuk-Raimbert",
+				"schedule": "Monday10:00 AM - 12:00 PM7A.2LabTuesday10:00 AM - 11:30 AM6B.13ClassFriday10:00 AM - 11:30 AM6B.13Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Basim Assaf",
+				"schedule": "Tuesday10:00 AM - 11:30 AM4H.19ClassWednesday11:00 AM - 1:00 PM7A.9LabFriday10:00 AM - 11:30 AM4H.19Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Basim Assaf",
+				"schedule": "Tuesday4:00 PM - 5:30 PM7B.6ClassWednesday2:00 PM - 4:00 PM7A.9LabThursday4:00 PM - 5:30 PM7B.6Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "Kibreab Mebrahtom Haile",
+				"schedule": "Monday1:00 PM - 2:30 PM7B.6ClassThursday10:00 AM - 11:30 AM7B.6ClassFriday12:30 PM - 2:30 PM7A.9Lab"
+			},
+			{
+				"section": "00007",
+				"teacher": "Diana Glennie",
+				"schedule": "Monday4:00 PM - 5:30 PM7B.4ClassTuesday10:00 AM - 12:00 PM7A.2LabWednesday4:00 PM - 5:30 PM7B.4Class"
+			}
+		]
+	},
+	{
+		"title": "Electricity and Magnetism",
+		"number": "203-NYB-05",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Chris Roderick",
+				"schedule": "Tuesday11:30 AM - 1:00 PM6B.13ClassThursday11:30 AM - 1:00 PM6B.13ClassFriday11:00 AM - 1:00 PM7A.7Lab"
+			},
+			{
+				"section": "00002",
+				"teacher": "Rim Dib",
+				"schedule": "Monday10:00 AM - 11:30 AM4P.25ClassWednesday10:00 AM - 11:30 AM4P.25ClassThursday11:00 AM - 1:00 PM7A.7Lab"
+			},
+			{
+				"section": "00003",
+				"teacher": "Nadim Boukhira",
+				"schedule": "Monday2:00 PM - 4:00 PM7A.9LabWednesday1:00 PM - 2:30 PM6B.13ClassFriday1:00 PM - 2:30 PM6B.13Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Maria Dikeakos",
+				"schedule": "Monday11:00 AM - 1:00 PM7A.7LabTuesday8:30 AM - 10:00 AM7A.11ClassFriday8:30 AM - 10:00 AM7A.11Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "Jamileh Naidj",
+				"schedule": "Tuesday10:00 AM - 12:00 PM7A.7LabWednesday11:30 AM - 1:00 PM3H.13ClassFriday11:30 AM - 1:00 PM3H.13Class"
+			},
+			{
+				"section": "00006",
+				"teacher": "Jamileh Naidj",
+				"schedule": "Tuesday12:00 PM - 2:00 PM7A.7LabWednesday1:00 PM - 2:30 PM3H.13ClassFriday1:00 PM - 2:30 PM3H.13Class"
+			},
+			{
+				"section": "00007",
+				"teacher": "Paul Duarte",
+				"schedule": "Tuesday4:00 PM - 5:30 PM7A.11ClassWednesday11:00 AM - 1:00 PM7A.7LabThursday4:00 PM - 5:30 PM7A.11Class"
+			},
+			{
+				"section": "00008",
+				"teacher": "Paul Duarte",
+				"schedule": "Tuesday10:00 AM - 11:30 AM7B.2ClassWednesday2:00 PM - 4:00 PM7A.7LabFriday10:00 AM - 11:30 AM7B.2Class"
+			}
+		]
+	},
+	{
+		"title": "Waves, Optics and Modern Physics",
+		"number": "203-NYC-05",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Chris Whittaker",
+				"schedule": "Monday10:00 AM - 11:30 AM4G.2AClassTuesday2:00 PM - 4:00 PM7A.6LabWednesday10:00 AM - 11:30 AM4G.2AClass"
+			},
+			{
+				"section": "00002",
+				"teacher": "Volodymyr Feshchenko",
+				"schedule": "Tuesday11:30 AM - 1:00 PM7A.11ClassWednesday10:00 AM - 12:00 PM7A.6LabThursday11:30 AM - 1:00 PM7A.11Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Volodymyr Feshchenko",
+				"schedule": "Tuesday2:30 PM - 4:00 PM7A.11ClassWednesday2:00 PM - 4:00 PM7A.6LabThursday2:30 PM - 4:00 PM7A.11Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Samad Rastikerdar",
+				"schedule": "Wednesday1:00 PM - 2:30 PM7B.6ClassThursday12:00 PM - 2:00 PM7A.6LabFriday1:00 PM - 2:30 PM7B.6Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "Samad Rastikerdar",
+				"schedule": "Monday10:00 AM - 11:30 AM6B.13ClassWednesday10:00 AM - 11:30 AM6B.13ClassThursday2:00 PM - 4:00 PM7A.6Lab"
+			},
+			{
+				"section": "00006",
+				"teacher": "Jaime Sandoval",
+				"schedule": "Tuesday1:00 PM - 2:30 PM7B.2ClassThursday1:00 PM - 2:30 PM7B.2ClassFriday10:00 AM - 12:00 PM7A.6Lab"
+			},
+			{
+				"section": "00007",
+				"teacher": "Jaime Sandoval",
+				"schedule": "Monday8:30 AM - 10:00 AM7B.2ClassWednesday8:30 AM - 10:00 AM7B.2ClassFriday12:00 PM - 2:00 PM7A.6Lab"
+			},
+			{
+				"section": "00008",
+				"teacher": "Alexandre Pronine",
+				"schedule": "Monday2:00 PM - 4:00 PM7A.6LabWednesday1:00 PM - 2:30 PM7A.11ClassFriday1:00 PM - 2:30 PM7A.11Class"
+			}
+		]
+	}
+]

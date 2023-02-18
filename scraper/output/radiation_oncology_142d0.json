@@ -1,0 +1,163 @@
+[
+	{
+		"title": "Fundamentals of Radiation Oncology",
+		"number": "142-231-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Radiation Oncology team McGill",
+				"schedule": "Thursday8:00 AM - 10:00 AM3A.10ClassThursday8:00 AM - 10:00 AM4A.14ClassThursday10:00 AM - 11:00 AM3A.10LabThursday10:00 AM - 11:00 AM3A.15LabThursday10:00 AM - 11:00 AM4A.14LabThursday10:00 AM - 11:00 AMHospitalLabThursday11:00 AM - 12:00 PM3A.10LabThursday11:00 AM - 12:00 PM3A.15LabThursday11:00 AM - 12:00 PM4A.14LabThursday11:00 AM - 12:00 PMHospitalLab"
+			}
+		]
+	},
+	{
+		"title": "Treatment Application 1",
+		"number": "142-241-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Jocelyne Napias-Pfeiffer, John Robert C. Battista",
+				"schedule": "Tuesday12:30 PM - 2:30 PM3A.10ClassTuesday12:30 PM - 2:30 PM4A.14ClassWednesday8:00 AM - 10:00 AM4A.4TutorialWednesday1:00 PM - 2:00 PM3A.12LabWednesday1:00 PM - 2:00 PM3A.15LabWednesday1:00 PM - 2:00 PM3A.21LabWednesday1:00 PM - 2:00 PM3A.6LabWednesday2:00 PM - 3:00 PM3A.12LabWednesday2:00 PM - 3:00 PM3A.15LabWednesday2:00 PM - 3:00 PM3A.21LabWednesday2:00 PM - 3:00 PM3A.6Lab"
+			},
+			{
+				"section": "00002",
+				"teacher": "Jocelyne Napias-Pfeiffer, John Robert C. Battista",
+				"schedule": "Tuesday12:30 PM - 2:30 PM3A.10ClassTuesday12:30 PM - 2:30 PM4A.14ClassWednesday8:00 AM - 10:00 AM4A.4TutorialWednesday2:00 PM - 3:00 PM3A.12LabWednesday2:00 PM - 3:00 PM3A.15LabWednesday2:00 PM - 3:00 PM3A.21LabWednesday2:00 PM - 3:00 PM3A.6Lab"
+			},
+			{
+				"section": "00003",
+				"teacher": "Jocelyne Napias-Pfeiffer, John Robert C. Battista",
+				"schedule": "Tuesday12:30 PM - 2:30 PM3A.10ClassTuesday12:30 PM - 2:30 PM4A.14ClassWednesday8:00 AM - 10:00 AM4A.4TutorialWednesday2:00 PM - 3:00 PM3A.12LabWednesday2:00 PM - 3:00 PM3A.15LabWednesday2:00 PM - 3:00 PM3A.21LabWednesday2:00 PM - 3:00 PM3A.6LabWednesday3:00 PM - 4:00 PM3A.12LabWednesday3:00 PM - 4:00 PM3A.15LabWednesday3:00 PM - 4:00 PM3A.21LabWednesday3:00 PM - 4:00 PM3A.6Lab"
+			}
+		]
+	},
+	{
+		"title": "Principles of Oncology 1",
+		"number": "142-251-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Jocelyne Napias-Pfeiffer",
+				"schedule": "Monday8:00 AM - 9:00 AM3A.15LabMonday8:00 AM - 9:00 AM3A.21LabMonday9:00 AM - 10:00 AM3A.15LabMonday9:00 AM - 10:00 AM3A.21LabMonday10:00 AM - 11:00 AM3A.15LabMonday10:00 AM - 11:00 AM3A.21LabWednesday10:00 AM - 12:00 PM3A.10ClassWednesday10:00 AM - 12:00 PM4A.14Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Jocelyne Napias-Pfeiffer",
+				"schedule": "Monday8:00 AM - 9:00 AM3A.15LabMonday8:00 AM - 9:00 AM3A.21LabMonday9:00 AM - 10:00 AM3A.15LabMonday9:00 AM - 10:00 AM3A.21LabMonday10:00 AM - 11:00 AM3A.15LabMonday10:00 AM - 11:00 AM3A.21LabWednesday10:00 AM - 12:00 PM3A.10ClassWednesday10:00 AM - 12:00 PM4A.14Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Jocelyne Napias-Pfeiffer",
+				"schedule": "Monday10:00 AM - 11:00 AM3A.15LabMonday10:00 AM - 11:00 AM3A.21LabMonday11:00 AM - 12:00 PM3A.15LabMonday11:00 AM - 12:00 PM3A.21LabWednesday10:00 AM - 12:00 PM3A.10ClassWednesday10:00 AM - 12:00 PM4A.14Class"
+			}
+		]
+	},
+	{
+		"title": "Internship 1",
+		"number": "142-901-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Elias Katsaros, Giovanna Miceli, Gita Ebrahimi, Isabelle Labbé, Jocelyne Napias-Pfeiffer, John Robert C. Battista",
+				"schedule": "MondayJun 05, 2023Jul 03, 20239:00 AM - 12:00 PMHospitalIntensiveMondayJun 05, 2023Jul 03, 20231:00 PM - 5:00 PMHospitalIntensiveTuesdayJun 06, 2023Jun 27, 20239:00 AM - 12:00 PMHospitalIntensiveTuesdayJun 06, 2023Jun 27, 20231:00 PM - 5:00 PMHospitalIntensiveWednesdayJun 07, 2023Jun 28, 20239:00 AM - 12:00 PMHospitalIntensiveWednesdayJun 07, 2023Jun 28, 20231:00 PM - 5:00 PMHospitalIntensiveThursdayJun 08, 2023Jun 29, 20239:00 AM - 12:00 PMHospitalIntensiveThursdayJun 08, 2023Jun 29, 20231:00 PM - 5:00 PMHospitalIntensiveFridayJun 09, 2023Jun 16, 20239:00 AM - 12:00 PMHospitalIntensiveFridayJun 09, 2023Jun 16, 20231:00 PM - 5:00 PMHospitalIntensiveTuesdayJul 04, 2023Jul 25, 20239:00 AM - 12:00 PMHospitalIntensiveTuesdayJul 04, 2023Jul 25, 20231:00 PM - 5:00 PMHospitalIntensiveWednesdayJul 05, 2023Jul 26, 20239:00 AM - 12:00 PMHospitalIntensiveWednesdayJul 05, 2023Jul 26, 20231:00 PM - 5:00 PMHospitalIntensiveThursdayJul 06, 2023Jul 27, 20239:00 AM - 12:00 PMHospitalIntensiveThursdayJul 06, 2023Jul 27, 20231:00 PM - 5:00 PMHospitalIntensiveFridayJul 07, 2023Jul 28, 20239:00 AM - 12:00 PMHospitalIntensiveFridayJul 07, 2023Jul 28, 20231:00 PM - 5:00 PMHospitalIntensiveMondayJul 10, 2023Jul 24, 20239:00 AM - 12:00 PMHospitalIntensiveMondayJul 10, 2023Jul 24, 20231:00 PM - 5:00 PMHospitalIntensive"
+			}
+		]
+	},
+	{
+		"title": "Radiation Effects and Safety 2",
+		"number": "142-401-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Jocelyne Napias-Pfeiffer",
+				"schedule": "Tuesday1:00 PM - 3:00 PM3A.10ClassTuesday1:00 PM - 3:00 PM3A.15ClassTuesday3:00 PM - 5:00 PM3A.10LabTuesday3:00 PM - 5:00 PM3A.15LabTuesday3:00 PM - 5:00 PM4A.11LabThursday10:00 AM - 12:00 PM3A.10Tutorial"
+			},
+			{
+				"section": "00002",
+				"teacher": "Jocelyne Napias-Pfeiffer",
+				"schedule": "Tuesday1:00 PM - 3:00 PM3A.10ClassTuesday1:00 PM - 3:00 PM3A.15ClassTuesday4:00 PM - 6:00 PM3A.10LabTuesday4:00 PM - 6:00 PM3A.15LabTuesday4:00 PM - 6:00 PM4A.11LabThursday10:00 AM - 12:00 PM3A.10Tutorial"
+			}
+		]
+	},
+	{
+		"title": "Patient Care 2",
+		"number": "142-411-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "John Robert C. Battista",
+				"schedule": "Monday10:00 AM - 12:00 PM3A.10ClassMonday10:00 AM - 12:00 PM4A.14ClassTuesday9:00 AM - 10:00 AM3A.21LabTuesday9:00 AM - 10:00 AM3A.6Lab"
+			},
+			{
+				"section": "00002",
+				"teacher": "John Robert C. Battista",
+				"schedule": "Monday10:00 AM - 12:00 PM3A.10ClassMonday10:00 AM - 12:00 PM4A.14ClassTuesday10:00 AM - 11:00 AM3A.21LabTuesday10:00 AM - 11:00 AM3A.6Lab"
+			}
+		]
+	},
+	{
+		"title": "Applied Dosimetry",
+		"number": "142-421-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Radiation Oncology team McGill",
+				"schedule": "Thursday1:00 PM - 3:00 PM3A.10ClassThursday1:00 PM - 3:00 PM3A.12ClassThursday1:00 PM - 3:00 PMHospitalClassThursday3:00 PM - 4:00 PM3A.10LabThursday3:00 PM - 4:00 PM3A.12LabThursday3:00 PM - 4:00 PMHospitalLabThursday4:00 PM - 5:00 PM3A.10LabThursday4:00 PM - 5:00 PM3A.12LabThursday4:00 PM - 5:00 PMHospitalLabThursday5:00 PM - 6:00 PM3A.10LabThursday5:00 PM - 6:00 PM3A.12LabThursday5:00 PM - 6:00 PMHospitalLab"
+			}
+		]
+	},
+	{
+		"title": "Treatment Application 2",
+		"number": "142-441-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Elias Katsaros",
+				"schedule": "Wednesday8:00 AM - 10:00 AM3A.10ClassWednesday8:00 AM - 10:00 AM3A.15ClassWednesday8:00 AM - 10:00 AM3A.6ClassWednesday8:00 AM - 10:00 AM4A.14ClassWednesday10:00 AM - 11:00 AM3A.12LabWednesday10:00 AM - 11:00 AM3A.15LabWednesday10:00 AM - 11:00 AM3A.21LabWednesday10:00 AM - 11:00 AM3A.6Lab"
+			},
+			{
+				"section": "00002",
+				"teacher": "Elias Katsaros",
+				"schedule": "Wednesday8:00 AM - 10:00 AM3A.10ClassWednesday8:00 AM - 10:00 AM3A.15ClassWednesday8:00 AM - 10:00 AM3A.6ClassWednesday8:00 AM - 10:00 AM4A.14ClassWednesday11:00 AM - 12:00 PM3A.12LabWednesday11:00 AM - 12:00 PM3A.15LabWednesday11:00 AM - 12:00 PM3A.21LabWednesday11:00 AM - 12:00 PM3A.6Lab"
+			}
+		]
+	},
+	{
+		"title": "Reflection on Professional Practice",
+		"number": "142-601-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Anabel Gratton",
+				"schedule": "Wednesday12:00 PM - 2:00 PM3A.10ClassWednesday12:00 PM - 2:00 PM3A.15ClassWednesday12:00 PM - 2:00 PM4A.14ClassWednesday2:00 PM - 4:00 PM3A.10LabWednesday2:00 PM - 4:00 PM3A.15LabWednesday2:00 PM - 4:00 PM4A.14Lab"
+			},
+			{
+				"section": "00002",
+				"teacher": "Anabel Gratton",
+				"schedule": "Wednesday12:00 PM - 2:00 PM3A.10ClassWednesday12:00 PM - 2:00 PM3A.15ClassWednesday12:00 PM - 2:00 PM4A.14ClassWednesday4:00 PM - 6:00 PM3A.10LabWednesday4:00 PM - 6:00 PM3A.15LabWednesday4:00 PM - 6:00 PM4A.14Lab"
+			}
+		]
+	},
+	{
+		"title": "Internship 4",
+		"number": "142-904-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Elias Katsaros, Giovanna Miceli, Gita Ebrahimi, Isabelle Labbé, Jocelyne Napias-Pfeiffer, John Robert C. Battista",
+				"schedule": "MondayJan 23, 2023Mar 16, 20238:00 AM - 12:00 PMHospitalLabMondayJan 23, 2023Mar 16, 20231:00 PM - 4:00 PMHospitalLabTuesdayJan 23, 2023Mar 16, 20238:00 AM - 12:00 PMHospitalLabTuesdayJan 23, 2023Mar 16, 20231:00 PM - 4:00 PMHospitalLabWednesdayJan 23, 2023Mar 16, 20238:00 AM - 9:00 AMHospitalIntensiveWednesdayJan 23, 2023Mar 16, 20239:00 AM - 12:00 PMHospitalIntensiveThursdayJan 23, 2023Mar 16, 20238:00 AM - 9:00 AMHospitalLabThursdayJan 23, 2023Mar 16, 20239:00 AM - 12:00 PMHospitalLabThursdayJan 23, 2023Mar 16, 20231:00 PM - 4:00 PMHospitalLabFridayJan 23, 2023Mar 16, 20238:00 AM - 12:00 PMHospitalLabFridayJan 23, 2023Mar 16, 20231:00 PM - 4:00 PMHospitalLab"
+			}
+		]
+	},
+	{
+		"title": "Internship 5",
+		"number": "142-905-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Elias Katsaros, Giovanna Miceli, Gita Ebrahimi, Isabelle Labbé, Jocelyne Napias-Pfeiffer, John Robert C. Battista",
+				"schedule": "MondayMar 20, 2023May 12, 20238:00 AM - 12:00 PMHospitalIntensiveMondayMar 20, 2023May 12, 20231:00 PM - 4:00 PMHospitalIntensiveTuesdayMar 20, 2023May 12, 20238:00 AM - 12:00 PMHospitalIntensiveTuesdayMar 20, 2023May 12, 20231:00 PM - 4:00 PMHospitalIntensiveWednesdayMar 20, 2023May 12, 20238:00 AM - 9:00 AMHospitalLabWednesdayMar 20, 2023May 12, 20239:00 AM - 12:00 PMHospitalLabThursdayMar 20, 2023May 12, 20238:00 AM - 9:00 AMHospitalIntensiveThursdayMar 20, 2023May 12, 20239:00 AM - 12:00 PMHospitalIntensiveThursdayMar 20, 2023May 12, 20231:00 PM - 4:00 PMHospitalIntensiveFridayMar 20, 2023May 12, 20238:00 AM - 12:00 PMHospitalIntensiveFridayMar 20, 2023May 12, 20231:00 PM - 4:00 PMHospitalIntensive"
+			}
+		]
+	}
+]

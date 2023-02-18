@@ -1,0 +1,55 @@
+[
+	{
+		"title": "Introduction to World Religions",
+		"number": "370-102-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Natalie Kepka",
+				"schedule": "Tuesday8:30 AM - 10:00 AM4F.4ClassFriday8:30 AM - 10:00 AM4F.4Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Natalie Kepka",
+				"schedule": "Tuesday1:00 PM - 2:30 PM4F.4ClassThursday1:00 PM - 2:30 PM4F.4Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Calogero Miceli",
+				"schedule": "Monday11:30 AM - 1:00 PM4F.4ClassThursday8:30 AM - 10:00 AM4F.4Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Ivan Freud",
+				"schedule": "Tuesday2:30 PM - 4:00 PM7B.11ClassThursday2:30 PM - 4:00 PM7B.11Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "Ivan Freud",
+				"schedule": "Tuesday11:30 AM - 1:00 PM7B.11ClassThursday11:30 AM - 1:00 PM7B.11Class"
+			},
+			{
+				"section": "00006",
+				"teacher": "Calogero Miceli",
+				"schedule": "Monday8:30 AM - 10:00 AM5D.2ClassWednesday8:30 AM - 10:00 AM5D.2Class"
+			},
+			{
+				"section": "00007",
+				"teacher": "Ivan Freud",
+				"schedule": "Tuesday4:00 PM - 5:30 PM5A.12ClassThursday4:00 PM - 5:30 PM5A.12Class"
+			}
+		]
+	},
+	{
+		"title": "Exploring Religions",
+		"number": "370-318-DW",
+		"sections": [
+			{
+				"title": "Witches, Saints, Gurus, and Mystics",
+				"section": "00001",
+				"teacher": "Philip Lagace",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		]
+	}
+]

@@ -1,0 +1,390 @@
+[
+	{
+		"title": "Biology of Medical Imaging",
+		"number": "101-922-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Andrew Wieczorek",
+				"schedule": "Monday12:00 PM - 2:00 PM5A.29LabWednesday2:30 PM - 4:00 PM5A.2ClassFriday2:30 PM - 4:00 PM5A.2Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Andrew Wieczorek",
+				"schedule": "Monday2:00 PM - 4:00 PM5A.29LabWednesday2:30 PM - 4:00 PM5A.2ClassFriday2:30 PM - 4:00 PM5A.2Class"
+			}
+		]
+	},
+	{
+		"title": "Radiographic Procedures 1",
+		"number": "142-B21-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Mary Ann Hoskin",
+				"schedule": "Wednesday8:00 AM - 10:00 AM4A.11LabWednesday10:00 AM - 12:00 PM4A.11LabWednesday10:00 AM - 12:00 PM4A.15LabWednesday10:00 AM - 12:00 PM4A.4LabThursday2:00 PM - 4:00 PM4A.14Class"
+			}
+		]
+	},
+	{
+		"title": "Radiographic Procedures 2",
+		"number": "142-B22-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Heidi Gumbley",
+				"schedule": "Monday8:00 AM - 10:00 AM4A.11LabMonday10:00 AM - 12:00 PM4A.11LabMonday10:00 AM - 12:00 PM4A.15LabMonday10:00 AM - 12:00 PM4A.4LabTuesday10:00 AM - 12:00 PM4A.14Class"
+			}
+		]
+	},
+	{
+		"title": "Patient Care and Health & Safety 2",
+		"number": "142-B23-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Maria Lavoie",
+				"schedule": "Tuesday1:00 PM - 2:30 PM4A.7ClassFriday10:00 AM - 11:30 AM4A.15LabFriday10:00 AM - 11:30 AM4A.4LabFriday11:30 AM - 1:00 PM4A.11Lab"
+			}
+		]
+	},
+	{
+		"title": "Medical Imaging Instrumentation",
+		"number": "142-B24-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Arnulfo Montiel",
+				"schedule": "Monday4:00 PM - 6:00 PM4A.14ClassThursday10:00 AM - 12:00 PM4A.11LabThursday10:00 AM - 12:00 PM4A.15LabThursday10:00 AM - 12:00 PM4A.3LabThursday10:00 AM - 12:00 PM4A.6Lab"
+			}
+		]
+	},
+	{
+		"title": "Clinical Practice 1 (Intensive)",
+		"number": "142-B2A-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "TBA-142-A, Christina Papathanasopoulos, Heidi Gumbley, Ho-Git Chan, Maria Motta, Mary Ann Hoskin, Peter Mikhail",
+				"schedule": "MondayMay 29, 2023May 29, 20239:00 AM - 12:00 PMHospitalIntensiveMondayMay 29, 2023May 29, 20231:00 PM - 4:00 PMHospitalIntensiveTuesdayMay 30, 2023May 30, 20239:00 AM - 12:00 PMHospitalIntensiveTuesdayMay 30, 2023May 30, 20231:00 PM - 4:00 PMHospitalIntensiveWednesdayMay 31, 2023May 31, 20239:00 AM - 12:00 PMHospitalIntensiveWednesdayMay 31, 2023May 31, 20231:00 PM - 4:00 PMHospitalIntensiveThursdayJun 01, 2023Jun 01, 20239:00 AM - 12:00 PMHospitalIntensiveThursdayJun 01, 2023Jun 01, 20231:00 PM - 4:00 PMHospitalIntensiveFridayJun 02, 2023Jun 02, 20239:00 AM - 12:00 PMHospitalIntensiveFridayJun 02, 2023Jun 02, 20231:00 PM - 4:00 PMHospitalIntensiveMondayJun 05, 2023Jun 05, 20239:00 AM - 12:00 PMHospitalIntensiveMondayJun 05, 2023Jun 05, 20231:00 PM - 4:00 PMHospitalIntensiveTuesdayJun 06, 2023Jun 06, 20239:00 AM - 12:00 PMHospitalIntensiveTuesdayJun 06, 2023Jun 06, 20231:00 PM - 4:00 PMHospitalIntensiveWednesdayJun 07, 2023Jun 07, 20239:00 AM - 12:00 PMHospitalIntensiveWednesdayJun 07, 2023Jun 07, 20231:00 PM - 4:00 PMHospitalIntensiveThursdayJun 08, 2023Jun 08, 20239:00 AM - 12:00 PMHospitalIntensiveThursdayJun 08, 2023Jun 08, 20231:00 PM - 4:00 PMHospitalIntensiveFridayJun 09, 2023Jun 09, 20239:00 AM - 12:00 PMHospitalIntensiveFridayJun 09, 2023Jun 09, 20231:00 PM - 4:00 PMHospitalIntensiveMondayJun 12, 2023Jun 12, 20239:00 AM - 12:00 PMHospitalIntensiveMondayJun 12, 2023Jun 12, 20231:00 PM - 4:00 PMHospitalIntensiveTuesdayJun 13, 2023Jun 13, 20239:00 AM - 12:00 PMHospitalIntensiveTuesdayJun 13, 2023Jun 13, 20231:00 PM - 4:00 PMHospitalIntensiveWednesdayJun 14, 2023Jun 14, 20239:00 AM - 12:00 PMHospitalIntensiveWednesdayJun 14, 2023Jun 14, 20231:00 PM - 4:00 PMHospitalIntensiveThursdayJun 15, 2023Jun 15, 20239:00 AM - 12:00 PMHospitalIntensiveThursdayJun 15, 2023Jun 15, 20231:00 PM - 4:00 PMHospitalIntensive"
+			}
+		]
+	},
+	{
+		"title": "Biology of Medical Imaging",
+		"number": "101-922-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Andrew Wieczorek",
+				"schedule": "Monday12:00 PM - 2:00 PM5A.29LabWednesday2:30 PM - 4:00 PM5A.2ClassFriday2:30 PM - 4:00 PM5A.2Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Andrew Wieczorek",
+				"schedule": "Monday2:00 PM - 4:00 PM5A.29LabWednesday2:30 PM - 4:00 PM5A.2ClassFriday2:30 PM - 4:00 PM5A.2Class"
+			}
+		]
+	},
+	{
+		"title": "Radiographic Procedures 1",
+		"number": "142-B21-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Mary Ann Hoskin",
+				"schedule": "Wednesday10:00 AM - 12:00 PM4A.11LabWednesday10:00 AM - 12:00 PM4A.15LabWednesday10:00 AM - 12:00 PM4A.4LabWednesday12:00 PM - 2:00 PM4A.11LabThursday2:00 PM - 4:00 PM4A.14Class"
+			}
+		]
+	},
+	{
+		"title": "Radiographic Procedures 2",
+		"number": "142-B22-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Heidi Gumbley",
+				"schedule": "Monday10:00 AM - 12:00 PM4A.11LabMonday10:00 AM - 12:00 PM4A.15LabMonday10:00 AM - 12:00 PM4A.4LabTuesday10:00 AM - 12:00 PM4A.14Class"
+			}
+		]
+	},
+	{
+		"title": "Patient Care and Health & Safety 2",
+		"number": "142-B23-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Maria Lavoie",
+				"schedule": "Tuesday1:00 PM - 2:30 PM4A.7ClassFriday10:00 AM - 11:30 AM4A.11LabFriday10:00 AM - 11:30 AM4A.15LabFriday10:00 AM - 11:30 AM4A.4Lab"
+			}
+		]
+	},
+	{
+		"title": "Medical Imaging Instrumentation",
+		"number": "142-B24-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Arnulfo Montiel",
+				"schedule": "Monday4:00 PM - 6:00 PM4A.14ClassThursday8:00 AM - 10:00 AM4A.11LabThursday8:00 AM - 10:00 AM4A.6LabThursday10:00 AM - 12:00 PM4A.11LabThursday10:00 AM - 12:00 PM4A.15LabThursday10:00 AM - 12:00 PM4A.3LabThursday10:00 AM - 12:00 PM4A.6Lab"
+			}
+		]
+	},
+	{
+		"title": "Clinical Practice 1 (Intensive)",
+		"number": "142-B2A-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "TBA-142-A, Christina Papathanasopoulos, Heidi Gumbley, Ho-Git Chan, Maria Motta, Mary Ann Hoskin, Peter Mikhail",
+				"schedule": "MondayMay 29, 2023May 29, 20239:00 AM - 12:00 PMHospitalIntensiveMondayMay 29, 2023May 29, 20231:00 PM - 4:00 PMHospitalIntensiveTuesdayMay 30, 2023May 30, 20239:00 AM - 12:00 PMHospitalIntensiveTuesdayMay 30, 2023May 30, 20231:00 PM - 4:00 PMHospitalIntensiveWednesdayMay 31, 2023May 31, 20239:00 AM - 12:00 PMHospitalIntensiveWednesdayMay 31, 2023May 31, 20231:00 PM - 4:00 PMHospitalIntensiveThursdayJun 01, 2023Jun 01, 20239:00 AM - 12:00 PMHospitalIntensiveThursdayJun 01, 2023Jun 01, 20231:00 PM - 4:00 PMHospitalIntensiveFridayJun 02, 2023Jun 02, 20239:00 AM - 12:00 PMHospitalIntensiveFridayJun 02, 2023Jun 02, 20231:00 PM - 4:00 PMHospitalIntensiveMondayJun 05, 2023Jun 05, 20239:00 AM - 12:00 PMHospitalIntensiveMondayJun 05, 2023Jun 05, 20231:00 PM - 4:00 PMHospitalIntensiveTuesdayJun 06, 2023Jun 06, 20239:00 AM - 12:00 PMHospitalIntensiveTuesdayJun 06, 2023Jun 06, 20231:00 PM - 4:00 PMHospitalIntensiveWednesdayJun 07, 2023Jun 07, 20239:00 AM - 12:00 PMHospitalIntensiveWednesdayJun 07, 2023Jun 07, 20231:00 PM - 4:00 PMHospitalIntensiveThursdayJun 08, 2023Jun 08, 20239:00 AM - 12:00 PMHospitalIntensiveThursdayJun 08, 2023Jun 08, 20231:00 PM - 4:00 PMHospitalIntensiveFridayJun 09, 2023Jun 09, 20239:00 AM - 12:00 PMHospitalIntensiveFridayJun 09, 2023Jun 09, 20231:00 PM - 4:00 PMHospitalIntensiveMondayJun 12, 2023Jun 12, 20239:00 AM - 12:00 PMHospitalIntensiveMondayJun 12, 2023Jun 12, 20231:00 PM - 4:00 PMHospitalIntensiveTuesdayJun 13, 2023Jun 13, 20239:00 AM - 12:00 PMHospitalIntensiveTuesdayJun 13, 2023Jun 13, 20231:00 PM - 4:00 PMHospitalIntensiveWednesdayJun 14, 2023Jun 14, 20239:00 AM - 12:00 PMHospitalIntensiveWednesdayJun 14, 2023Jun 14, 20231:00 PM - 4:00 PMHospitalIntensiveThursdayJun 15, 2023Jun 15, 20239:00 AM - 12:00 PMHospitalIntensiveThursdayJun 15, 2023Jun 15, 20231:00 PM - 4:00 PMHospitalIntensive"
+			}
+		]
+	},
+	{
+		"title": "Biology of Medical Imaging",
+		"number": "101-922-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Andrew Wieczorek",
+				"schedule": "Monday12:00 PM - 2:00 PM5A.29LabWednesday2:30 PM - 4:00 PM5A.2ClassFriday2:30 PM - 4:00 PM5A.2Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Andrew Wieczorek",
+				"schedule": "Monday2:00 PM - 4:00 PM5A.29LabWednesday2:30 PM - 4:00 PM5A.2ClassFriday2:30 PM - 4:00 PM5A.2Class"
+			}
+		]
+	},
+	{
+		"title": "Radiographic Procedures 1",
+		"number": "142-B21-DW",
+		"sections": [
+			{
+				"section": "00003",
+				"teacher": "Mary Ann Hoskin",
+				"schedule": "Wednesday10:00 AM - 12:00 PM4A.11LabWednesday10:00 AM - 12:00 PM4A.15LabWednesday10:00 AM - 12:00 PM4A.4LabThursday2:00 PM - 4:00 PM4A.14Class"
+			}
+		]
+	},
+	{
+		"title": "Radiographic Procedures 2",
+		"number": "142-B22-DW",
+		"sections": [
+			{
+				"section": "00003",
+				"teacher": "Heidi Gumbley",
+				"schedule": "Monday10:00 AM - 12:00 PM4A.11LabMonday10:00 AM - 12:00 PM4A.15LabMonday10:00 AM - 12:00 PM4A.4LabMonday12:00 PM - 2:00 PM4A.11LabTuesday10:00 AM - 12:00 PM4A.14Class"
+			}
+		]
+	},
+	{
+		"title": "Patient Care and Health & Safety 2",
+		"number": "142-B23-DW",
+		"sections": [
+			{
+				"section": "00003",
+				"teacher": "Maria Lavoie",
+				"schedule": "Tuesday1:00 PM - 2:30 PM4A.7ClassFriday10:00 AM - 11:30 AM4A.11LabFriday10:00 AM - 11:30 AM4A.15LabFriday10:00 AM - 11:30 AM4A.4LabFriday1:00 PM - 2:30 PM4A.11Lab"
+			}
+		]
+	},
+	{
+		"title": "Medical Imaging Instrumentation",
+		"number": "142-B24-DW",
+		"sections": [
+			{
+				"section": "00003",
+				"teacher": "Arnulfo Montiel",
+				"schedule": "Monday4:00 PM - 6:00 PM4A.14ClassThursday10:00 AM - 12:00 PM4A.11LabThursday10:00 AM - 12:00 PM4A.15LabThursday10:00 AM - 12:00 PM4A.3LabThursday10:00 AM - 12:00 PM4A.6LabThursday12:00 PM - 2:00 PM4A.11LabThursday12:00 PM - 2:00 PM4A.6Lab"
+			}
+		]
+	},
+	{
+		"title": "Clinical Practice 1 (Intensive)",
+		"number": "142-B2A-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "TBA-142-A, Christina Papathanasopoulos, Heidi Gumbley, Ho-Git Chan, Maria Motta, Mary Ann Hoskin, Peter Mikhail",
+				"schedule": "MondayMay 29, 2023May 29, 20239:00 AM - 12:00 PMHospitalIntensiveMondayMay 29, 2023May 29, 20231:00 PM - 4:00 PMHospitalIntensiveTuesdayMay 30, 2023May 30, 20239:00 AM - 12:00 PMHospitalIntensiveTuesdayMay 30, 2023May 30, 20231:00 PM - 4:00 PMHospitalIntensiveWednesdayMay 31, 2023May 31, 20239:00 AM - 12:00 PMHospitalIntensiveWednesdayMay 31, 2023May 31, 20231:00 PM - 4:00 PMHospitalIntensiveThursdayJun 01, 2023Jun 01, 20239:00 AM - 12:00 PMHospitalIntensiveThursdayJun 01, 2023Jun 01, 20231:00 PM - 4:00 PMHospitalIntensiveFridayJun 02, 2023Jun 02, 20239:00 AM - 12:00 PMHospitalIntensiveFridayJun 02, 2023Jun 02, 20231:00 PM - 4:00 PMHospitalIntensiveMondayJun 05, 2023Jun 05, 20239:00 AM - 12:00 PMHospitalIntensiveMondayJun 05, 2023Jun 05, 20231:00 PM - 4:00 PMHospitalIntensiveTuesdayJun 06, 2023Jun 06, 20239:00 AM - 12:00 PMHospitalIntensiveTuesdayJun 06, 2023Jun 06, 20231:00 PM - 4:00 PMHospitalIntensiveWednesdayJun 07, 2023Jun 07, 20239:00 AM - 12:00 PMHospitalIntensiveWednesdayJun 07, 2023Jun 07, 20231:00 PM - 4:00 PMHospitalIntensiveThursdayJun 08, 2023Jun 08, 20239:00 AM - 12:00 PMHospitalIntensiveThursdayJun 08, 2023Jun 08, 20231:00 PM - 4:00 PMHospitalIntensiveFridayJun 09, 2023Jun 09, 20239:00 AM - 12:00 PMHospitalIntensiveFridayJun 09, 2023Jun 09, 20231:00 PM - 4:00 PMHospitalIntensiveMondayJun 12, 2023Jun 12, 20239:00 AM - 12:00 PMHospitalIntensiveMondayJun 12, 2023Jun 12, 20231:00 PM - 4:00 PMHospitalIntensiveTuesdayJun 13, 2023Jun 13, 20239:00 AM - 12:00 PMHospitalIntensiveTuesdayJun 13, 2023Jun 13, 20231:00 PM - 4:00 PMHospitalIntensiveWednesdayJun 14, 2023Jun 14, 20239:00 AM - 12:00 PMHospitalIntensiveWednesdayJun 14, 2023Jun 14, 20231:00 PM - 4:00 PMHospitalIntensiveThursdayJun 15, 2023Jun 15, 20239:00 AM - 12:00 PMHospitalIntensiveThursdayJun 15, 2023Jun 15, 20231:00 PM - 4:00 PMHospitalIntensive"
+			}
+		]
+	},
+	{
+		"title": "Computed Tomography 2",
+		"number": "142-B41-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Maria Lavoie",
+				"schedule": "Monday8:00 AM - 10:00 AM3A.6LabMonday10:00 AM - 12:00 PM3A.6LabMonday10:00 AM - 12:00 PM4A.12LabMonday10:00 AM - 12:00 PM4A.3LabWednesday12:00 PM - 2:00 PM4A.4Class"
+			}
+		]
+	},
+	{
+		"title": "Magnetic Resonance Imaging 2",
+		"number": "142-B42-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Christina Papathanasopoulos",
+				"schedule": "Tuesday12:00 PM - 2:00 PM4A.3ClassThursday10:00 AM - 12:00 PM3A.19LabThursday10:00 AM - 12:00 PM4A.12LabThursday10:00 AM - 12:00 PM4A.4Lab"
+			}
+		]
+	},
+	{
+		"title": "Radiographic Procedures 4",
+		"number": "142-B44-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Mary Ann Hoskin",
+				"schedule": "Monday2:00 PM - 4:00 PM4A.14ClassTuesday8:00 AM - 10:00 AM4A.11LabTuesday10:00 AM - 12:00 PM4A.11LabTuesday10:00 AM - 12:00 PM4A.12LabTuesday10:00 AM - 12:00 PM4A.3Lab"
+			}
+		]
+	},
+	{
+		"title": "Imaging & Interventional Procedures 2",
+		"number": "142-B45-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Arnulfo Montiel",
+				"schedule": "Wednesday8:00 AM - 11:00 AM4A.3ClassFriday8:00 AM - 10:00 AM4A.6LabFriday10:00 AM - 12:00 PM4A.12LabFriday10:00 AM - 12:00 PM4A.14LabFriday10:00 AM - 12:00 PM4A.6Lab"
+			}
+		]
+	},
+	{
+		"title": "Computed Tomography 2",
+		"number": "142-B41-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Maria Lavoie",
+				"schedule": "Monday10:00 AM - 12:00 PM3A.6LabMonday10:00 AM - 12:00 PM4A.12LabMonday10:00 AM - 12:00 PM4A.3LabWednesday12:00 PM - 2:00 PM4A.4Class"
+			}
+		]
+	},
+	{
+		"title": "Magnetic Resonance Imaging 2",
+		"number": "142-B42-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Christina Papathanasopoulos",
+				"schedule": "Tuesday12:00 PM - 2:00 PM4A.3ClassThursday10:00 AM - 12:00 PM3A.19LabThursday10:00 AM - 12:00 PM4A.12LabThursday10:00 AM - 12:00 PM4A.4LabThursday12:00 PM - 2:00 PM3A.19Lab"
+			}
+		]
+	},
+	{
+		"title": "Radiographic Procedures 4",
+		"number": "142-B44-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Mary Ann Hoskin",
+				"schedule": "Monday2:00 PM - 4:00 PM4A.14ClassTuesday8:00 AM - 10:00 AM4A.11LabTuesday10:00 AM - 12:00 PM4A.11LabTuesday10:00 AM - 12:00 PM4A.12LabTuesday10:00 AM - 12:00 PM4A.3Lab"
+			},
+			{
+				"section": "00002",
+				"teacher": "Mary Ann Hoskin",
+				"schedule": "Monday2:00 PM - 4:00 PM4A.14ClassTuesday10:00 AM - 12:00 PM4A.11LabTuesday10:00 AM - 12:00 PM4A.12LabTuesday10:00 AM - 12:00 PM4A.3Lab"
+			}
+		]
+	},
+	{
+		"title": "Imaging & Interventional Procedures 2",
+		"number": "142-B45-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Arnulfo Montiel",
+				"schedule": "Wednesday8:00 AM - 11:00 AM4A.3ClassFriday10:00 AM - 12:00 PM4A.12LabFriday10:00 AM - 12:00 PM4A.14LabFriday10:00 AM - 12:00 PM4A.6LabFriday12:00 PM - 2:00 PM4A.6Lab"
+			}
+		]
+	},
+	{
+		"title": "Computed Tomography 2",
+		"number": "142-B41-DW",
+		"sections": [
+			{
+				"section": "00003",
+				"teacher": "Maria Lavoie",
+				"schedule": "Monday10:00 AM - 12:00 PM3A.6LabMonday10:00 AM - 12:00 PM4A.12LabMonday10:00 AM - 12:00 PM4A.3LabMonday12:00 PM - 2:00 PM3A.6LabWednesday12:00 PM - 2:00 PM4A.4Class"
+			}
+		]
+	},
+	{
+		"title": "Magnetic Resonance Imaging 2",
+		"number": "142-B42-DW",
+		"sections": [
+			{
+				"section": "00003",
+				"teacher": "Christina Papathanasopoulos",
+				"schedule": "Tuesday12:00 PM - 2:00 PM4A.3ClassThursday8:00 AM - 10:00 AM3A.19LabThursday10:00 AM - 12:00 PM3A.19LabThursday10:00 AM - 12:00 PM4A.12LabThursday10:00 AM - 12:00 PM4A.4Lab"
+			}
+		]
+	},
+	{
+		"title": "Radiographic Procedures 4",
+		"number": "142-B44-DW",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Mary Ann Hoskin",
+				"schedule": "Monday2:00 PM - 4:00 PM4A.14ClassTuesday10:00 AM - 12:00 PM4A.11LabTuesday10:00 AM - 12:00 PM4A.12LabTuesday10:00 AM - 12:00 PM4A.3Lab"
+			}
+		]
+	},
+	{
+		"title": "Imaging & Interventional Procedures 2",
+		"number": "142-B45-DW",
+		"sections": [
+			{
+				"section": "00003",
+				"teacher": "Arnulfo Montiel",
+				"schedule": "Wednesday8:00 AM - 11:00 AM4A.3ClassFriday10:00 AM - 12:00 PM4A.12LabFriday10:00 AM - 12:00 PM4A.14LabFriday10:00 AM - 12:00 PM4A.6Lab"
+			}
+		]
+	},
+	{
+		"title": "Professional Integration 2",
+		"number": "142-B61-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Christina Papathanasopoulos",
+				"schedule": "Wednesday1:00 PM - 2:00 PM4A.12ClassWednesday1:00 PM - 2:00 PM4A.3ClassWednesday2:00 PM - 4:00 PM4A.12LabWednesday2:00 PM - 4:00 PM4A.3Lab"
+			},
+			{
+				"section": "00002",
+				"teacher": "Christina Papathanasopoulos",
+				"schedule": "Wednesday1:00 PM - 2:00 PM4A.12ClassWednesday1:00 PM - 2:00 PM4A.3ClassWednesday4:00 PM - 6:00 PM4A.12LabWednesday4:00 PM - 6:00 PM4A.3Lab"
+			}
+		]
+	},
+	{
+		"title": "Clinical Practice 4",
+		"number": "142-B6D-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "TBA-142-A, Christina Papathanasopoulos, Heidi Gumbley, Ho-Git Chan, Maria Motta, Mary Ann Hoskin, Peter Mikhail, Vittoria Fusco",
+				"schedule": "WednesdayJan 04, 2023Jan 04, 20239:00 AM - 4:00 PMHospitalIntensiveThursdayJan 05, 2023Jan 05, 20239:00 AM - 4:00 PMHospitalIntensiveFridayJan 06, 2023Jan 06, 20239:00 AM - 4:00 PMHospitalIntensiveMondayJan 09, 2023Jan 09, 20239:00 AM - 4:00 PMHospitalIntensiveTuesdayJan 10, 2023Jan 10, 20239:00 AM - 4:00 PMHospitalIntensiveWednesdayJan 11, 2023Jan 11, 20239:00 AM - 4:00 PMHospitalIntensiveThursdayJan 12, 2023Jan 12, 20239:00 AM - 4:00 PMHospitalIntensiveFridayJan 13, 2023Jan 13, 20239:00 AM - 4:00 PMHospitalIntensiveMondayJan 16, 2023Jan 16, 20239:00 AM - 4:00 PMHospitalIntensiveTuesdayJan 17, 2023Jan 17, 20239:00 AM - 4:00 PMHospitalIntensiveMondayJan 18, 2023Mar 02, 20238:00 AM - 12:00 PMHospitalClassMondayJan 18, 2023Mar 02, 20231:00 PM - 4:00 PMHospitalLabTuesdayJan 18, 2023Mar 02, 20238:00 AM - 12:00 PMHospitalLabTuesdayJan 18, 2023Mar 02, 20231:00 PM - 4:00 PMHospitalLabWednesdayJan 18, 2023Mar 02, 20238:00 AM - 12:00 PMHospitalIntensiveThursdayJan 18, 2023Mar 02, 20238:00 AM - 9:00 AMHospitalClassThursdayJan 18, 2023Mar 02, 20239:00 AM - 12:00 PMHospitalLabThursdayJan 18, 2023Mar 02, 20231:00 PM - 4:00 PMHospitalLabFridayJan 18, 2023Mar 02, 20238:00 AM - 10:00 AMHospitalIntensiveFridayJan 18, 2023Mar 02, 202310:00 AM - 12:00 PMHospitalIntensiveFridayJan 18, 2023Mar 02, 20231:00 PM - 4:00 PMHospitalIntensive"
+			}
+		]
+	},
+	{
+		"title": "Clinical Practice 5",
+		"number": "142-B6E-DW",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "TBA-142-A, Christina Papathanasopoulos, Heidi Gumbley, Ho-Git Chan, Maria Motta, Mary Ann Hoskin, Peter Mikhail",
+				"schedule": "MondayMar 03, 2023May 02, 20238:00 AM - 1:00 PMHospitalIntensiveMondayMar 03, 2023May 02, 20231:00 PM - 4:00 PMHospitalIntensiveTuesdayMar 03, 2023May 02, 20238:00 AM - 12:00 PMHospitalIntensiveTuesdayMar 03, 2023May 02, 20231:00 PM - 4:00 PMHospitalIntensiveWednesdayMar 03, 2023May 02, 20238:00 AM - 12:00 PMHospitalLabThursdayMar 03, 2023May 02, 20238:00 AM - 9:00 AMHospitalIntensiveThursdayMar 03, 2023May 02, 20239:00 AM - 12:00 PMHospitalIntensiveThursdayMar 03, 2023May 02, 20231:00 PM - 4:00 PMHospitalIntensiveFridayMar 03, 2023May 02, 20238:00 AM - 10:00 AMHospitalClassFridayMar 03, 2023May 02, 202310:00 AM - 12:00 PMHospitalLabFridayMar 03, 2023May 02, 20231:00 PM - 4:00 PMHospitalLab"
+			}
+		]
+	}
+]
