@@ -6,7 +6,7 @@ const {Schema, model} = mongoose;
 const sectionSchema = new Schema({
     section: String,
     teacher: String,
-    schedule: [Slot.schema]
+    schedule: String
 }, {collection: 'Sections'});
 
 const Section = model('Section', sectionSchema);

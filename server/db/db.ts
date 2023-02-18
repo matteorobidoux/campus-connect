@@ -5,8 +5,8 @@ import Event from './models/event-schema';
 import Course from "./models/course-schema";
 import Section from "./models/section-schema";
 
-import fs from "fs"
-import path from "path"
+import fs = require('fs');
+import path = require("path");
 import * as config from "../../config.json"
 
 class DbMongoose{
@@ -53,7 +53,7 @@ async getAllUsers(){
   return result;
 }
 
-async addAllClasses(){
+addAllClasses(){
     const jsonsInDir = fs.readdirSync(config.scraperOutputLocation);
     jsonsInDir.forEach(file => {
       const fileData = fs.readFileSync(path.join(config.scraperOutputLocation, file));
@@ -79,6 +79,8 @@ async addAllClasses(){
 // const date=new Date()
 // const description="Today I had an interview at 2pm but the Interviewer is making me wait and it 5h20pm already should I quit?"
 // b.addEvent("2",date,"Intership", description, "Section0003")
+const b = new DbMongoose('test');
+b.addAllClasses();
 export default DbMongoose;
 
 
