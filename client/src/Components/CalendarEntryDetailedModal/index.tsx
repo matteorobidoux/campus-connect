@@ -2,7 +2,7 @@ import CalendarEvent from "../../../../types/Calendar"
 import styles from "./CalendarEntryDetailedModal.module.scss";
 import {ReactComponent as Background} from "./background.svg"
 import { useEffect, useState } from "react";
-import { useMutation, useQuery, useQueryClient } from "react-query";
+import { useMutation, useQueryClient } from "react-query";
 import { toast } from "react-toastify";
 
 export interface CalendarEntryDetailedModalProps {
@@ -10,7 +10,11 @@ export interface CalendarEntryDetailedModalProps {
   close: () => void;
 }
 
-// Sorry for this. Took from a guy on stak overflow
+// Sorry for this. Took from a guy on stackoverflow
+// https://stackoverflow.com/a/56250392
+//
+// This gets all variables that start with "--classes-" in the :root css so we can
+// use it to pick a color from our theme programatically.
 const colorVariables = Array
   .from(document.styleSheets)
   .filter(styleSheet => {

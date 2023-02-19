@@ -29,8 +29,7 @@ export default function CalendarEventRow({event}: CalendarEventRowProps) {
       </div>
 
       <Rodal visible={isVisible} onClose={() => setIsVisible(false)}
-        height={500}
-        customStyles={{"borderRadius": "25px", padding: 0}}
+        customStyles={{"borderRadius": "25px", padding: 0, height: "500px"}}
       >
         <CalendarEntryDetailedModal event={event} close={() => setIsVisible(false)}/>
       </Rodal>
