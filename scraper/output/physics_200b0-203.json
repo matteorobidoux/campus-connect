@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Astrophysics",
-		"number": "203-BZA-05",
 		"sections": [
 			{
 				"section": "00001",
@@ -13,11 +12,11 @@
 				"teacher": "Rim Dib",
 				"schedule": "Monday2:30 PM - 4:00 PM7A.7ClassWednesday2:30 PM - 4:00 PM4H.8ClassThursday2:00 PM - 4:00 PM7A.7Lab"
 			}
-		]
+		],
+		"number": "203-BZA-05"
 	},
 	{
 		"title": "Engineering Physics",
-		"number": "203-BZE-05",
 		"sections": [
 			{
 				"section": "00001",
@@ -29,11 +28,11 @@
 				"teacher": "Jean-François Brière",
 				"schedule": "Tuesday11:30 AM - 1:00 PM3H.10ClassThursday11:30 AM - 1:00 PM3H.6ClassFriday12:00 PM - 2:00 PM7A.2Lab"
 			}
-		]
+		],
+		"number": "203-BZE-05"
 	},
 	{
 		"title": "Special Topics in Physics",
-		"number": "203-BZT-DW",
 		"sections": [
 			{
 				"title": "Introduction to Research in Brain Imaging",
@@ -41,11 +40,11 @@
 				"teacher": "Hélène Nadeau",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "203-BZT-DW"
 	},
 	{
 		"title": "Mechanics",
-		"number": "203-NYA-05",
 		"sections": [
 			{
 				"section": "00001",
@@ -77,11 +76,11 @@
 				"teacher": "Diana Glennie",
 				"schedule": "Monday4:00 PM - 5:30 PM7B.4ClassTuesday10:00 AM - 12:00 PM7A.2LabWednesday4:00 PM - 5:30 PM7B.4Class"
 			}
-		]
+		],
+		"number": "203-NYA-05"
 	},
 	{
 		"title": "Electricity and Magnetism",
-		"number": "203-NYB-05",
 		"sections": [
 			{
 				"section": "00001",
@@ -123,11 +122,11 @@
 				"teacher": "Paul Duarte",
 				"schedule": "Tuesday10:00 AM - 11:30 AM7B.2ClassWednesday2:00 PM - 4:00 PM7A.7LabFriday10:00 AM - 11:30 AM7B.2Class"
 			}
-		]
+		],
+		"number": "203-NYB-05"
 	},
 	{
 		"title": "Waves, Optics and Modern Physics",
-		"number": "203-NYC-05",
 		"sections": [
 			{
 				"section": "00001",
@@ -169,6 +168,7 @@
 				"teacher": "Alexandre Pronine",
 				"schedule": "Monday2:00 PM - 4:00 PM7A.6LabWednesday1:00 PM - 2:30 PM7A.11ClassFriday1:00 PM - 2:30 PM7A.11Class"
 			}
-		]
+		],
+		"number": "203-NYC-05"
 	}
 ]

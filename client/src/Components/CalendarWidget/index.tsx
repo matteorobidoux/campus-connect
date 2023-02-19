@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CalendarEvent from "../../../types/Calendar";
+import CalendarEvent from "../../../../types/Calendar";
 import Calendar from "../Calendar";
 import CalendarEventRow from "../CalendarEntry";
 import { AddEventEntry } from "../CalendarEntry/AddEventEntry";
@@ -10,6 +10,7 @@ export interface CalendarWidgetProps {
 
 export function CalendarWidget({}: CalendarWidgetProps) {
   const [events, setEvents] = useState<CalendarEvent[]>([])
+
   return (
     <div className={styles.wrapper}>
       <Calendar onMonthChanged={(_, evs)=> setEvents(evs)}/>

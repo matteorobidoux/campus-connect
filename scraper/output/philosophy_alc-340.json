@@ -1,18 +1,17 @@
 [
 	{
 		"title": "Philosophy: Thinking for Ourselves",
-		"number": "340-303-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Jessica Lim",
 				"schedule": "Monday11:30 AM - 1:00 PM4D.3ClassThursday8:30 AM - 10:00 AM4D.3Class"
 			}
-		]
+		],
+		"number": "340-303-DW"
 	},
 	{
 		"title": "Philosophy and Culture",
-		"number": "340-913-DW",
 		"sections": [
 			{
 				"title": "Friedrich Nietzsche: Philosophy, Mythology and Art",
@@ -26,17 +25,18 @@
 				"teacher": "Susan-Judith Hoffmann",
 				"schedule": "Monday4:00 PM - 5:30 PM3E.9ClassWednesday4:00 PM - 5:30 PM3E.9Class"
 			}
-		]
+		],
+		"number": "340-913-DW"
 	},
 	{
 		"title": "Why Art Matters",
-		"number": "340-914-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Robert Stephens",
 				"schedule": "Wednesday11:30 AM - 1:00 PM3F.37ClassFriday11:30 AM - 1:00 PM3F.37Class"
 			}
-		]
+		],
+		"number": "340-914-DW"
 	}
 ]

@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Physical Geology",
-		"number": "205-BZG-05",
 		"sections": [
 			{
 				"section": "00001",
@@ -13,6 +12,7 @@
 				"teacher": "Catherine Pappas-Maenz",
 				"schedule": "Monday2:00 PM - 4:00 PM7B.5LabTuesday2:30 PM - 4:00 PM7B.5ClassThursday2:30 PM - 4:00 PM7B.5Class"
 			}
-		]
+		],
+		"number": "205-BZG-05"
 	}
 ]

@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Introduction to the Classical World",
-		"number": "332-101-DW",
 		"sections": [
 			{
 				"title": "Egypt, Greece, and Rome",
@@ -15,11 +14,11 @@
 				"teacher": "Michael Leon",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "332-101-DW"
 	},
 	{
 		"title": "Myths in Classical Society",
-		"number": "332-302-DW",
 		"sections": [
 			{
 				"title": "Ancient Gods, Monsters, and Encounters",
@@ -27,6 +26,7 @@
 				"teacher": "Jiri Tucker",
 				"schedule": "Tuesday10:00 AM - 11:30 AM3E.1ClassFriday10:00 AM - 11:30 AM3E.1Class"
 			}
-		]
+		],
+		"number": "332-302-DW"
 	}
 ]

@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Application in Computer Science",
-		"number": "420-BXC-03",
 		"sections": [
 			{
 				"title": "Web Site Creation",
@@ -45,6 +44,7 @@
 				"teacher": "Nasreddine Hallam",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "420-BXC-03"
 	}
 ]

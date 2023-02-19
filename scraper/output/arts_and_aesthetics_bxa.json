@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Arts and Aesthetics II",
-		"number": "602-BXA-DW",
 		"sections": [
 			{
 				"title": "Production théâtre francophone: Domaine médical (INTENSIVE)",
@@ -9,11 +8,11 @@
 				"teacher": "Jacques Mélançon",
 				"schedule": "Tuesday, May 30, 2023"
 			}
-		]
+		],
+		"number": "602-BXA-DW"
 	},
 	{
 		"title": "Applications in the Art of Music",
-		"number": "550-BXA-03",
 		"sections": [
 			{
 				"title": "Introduction to Singing",
@@ -51,11 +50,11 @@
 				"teacher": "Vincenzo Lentini",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "550-BXA-03"
 	},
 	{
 		"title": "Applications in Fine Arts",
-		"number": "511-BXA-03",
 		"sections": [
 			{
 				"title": "Painting and Creative Expression",
@@ -81,6 +80,7 @@
 				"teacher": "Julianna Joos",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "511-BXA-03"
 	}
 ]

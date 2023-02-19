@@ -1,18 +1,17 @@
 [
 	{
 		"title": "Human Biology",
-		"number": "101-921-DW",
 		"sections": [
 			{
 				"section": "00005",
 				"teacher": "Annie-Hélène Samson",
 				"schedule": "Monday4:00 PM - 5:30 PM5A.14LabWednesday2:30 PM - 4:00 PM4G.2AClass"
 			}
-		]
+		],
+		"number": "101-921-DW"
 	},
 	{
 		"title": "General Biology II",
-		"number": "101-BZE-05",
 		"sections": [
 			{
 				"section": "00001",
@@ -44,11 +43,11 @@
 				"teacher": "Joel Rubin",
 				"schedule": "Monday4:00 PM - 5:30 PM3H.15ClassTuesday2:30 PM - 5:30 PM5A.23LabWednesday4:00 PM - 5:30 PM3H.15Class"
 			}
-		]
+		],
+		"number": "101-BZE-05"
 	},
 	{
 		"title": "Human Anatomy and Physiology",
-		"number": "101-BZH-05",
 		"sections": [
 			{
 				"section": "00001",
@@ -80,11 +79,11 @@
 				"teacher": "Janet Wyman",
 				"schedule": "Monday4:00 PM - 5:30 PM5A.12ClassTuesday2:00 PM - 4:00 PM5A.29LabWednesday4:00 PM - 5:30 PM5A.12Class"
 			}
-		]
+		],
+		"number": "101-BZH-05"
 	},
 	{
 		"title": "General Biology I",
-		"number": "101-NYA-05",
 		"sections": [
 			{
 				"section": "00001",
@@ -156,6 +155,7 @@
 				"teacher": "Tonia De Bellis",
 				"schedule": "Monday11:00 AM - 1:00 PM5A.18LabTuesday11:30 AM - 1:00 PM7B.6ClassThursday11:30 AM - 1:00 PM7B.6Class"
 			}
-		]
+		],
+		"number": "101-NYA-05"
 	}
 ]

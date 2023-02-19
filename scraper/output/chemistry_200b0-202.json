@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Organic Chemistry I",
-		"number": "202-BZF-05",
 		"sections": [
 			{
 				"section": "00002",
@@ -23,22 +22,22 @@
 				"teacher": "Mohammed Imraun Haniff",
 				"schedule": "Monday2:30 PM - 4:00 PM6B.13ClassWednesday2:30 PM - 4:00 PM6B.13ClassFriday8:30 AM - 11:30 AM6A.13Lab"
 			}
-		]
+		],
+		"number": "202-BZF-05"
 	},
 	{
 		"title": "Organic Chemistry II",
-		"number": "202-BZG-05",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Yann Brouillette",
 				"schedule": "Monday1:00 PM - 4:00 PM6A.13LabTuesday2:30 PM - 4:00 PM3F.7ClassThursday2:30 PM - 4:00 PM3F.7Class"
 			}
-		]
+		],
+		"number": "202-BZG-05"
 	},
 	{
 		"title": "General Chemistry",
-		"number": "202-NYA-05",
 		"sections": [
 			{
 				"section": "00001",
@@ -70,11 +69,11 @@
 				"teacher": "Carmen Leung, Yann Brouillette",
 				"schedule": "Monday4:00 PM - 5:30 PM3F.7ClassTuesday2:00 PM - 4:00 PM6A.20LabWednesday4:00 PM - 5:30 PM3F.7Class"
 			}
-		]
+		],
+		"number": "202-NYA-05"
 	},
 	{
 		"title": "Chemistry of Solutions",
-		"number": "202-NYB-05",
 		"sections": [
 			{
 				"section": "00001",
@@ -201,6 +200,7 @@
 				"teacher": "Ciser Camilo Cabarcas Nunez",
 				"schedule": "Monday8:30 AM - 10:00 AM4H.12ClassWednesday8:30 AM - 10:00 AM4H.12ClassFriday2:00 PM - 4:00 PM6A.20Lab"
 			}
-		]
+		],
+		"number": "202-NYB-05"
 	}
 ]

@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Questions d'identite",
-		"number": "602-413-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -13,6 +12,7 @@
 				"teacher": "Christian Paré",
 				"schedule": "Tuesday10:00 AM - 11:30 AM5D.6ClassFriday10:00 AM - 11:30 AM5D.6Class"
 			}
-		]
+		],
+		"number": "602-413-DW"
 	}
 ]

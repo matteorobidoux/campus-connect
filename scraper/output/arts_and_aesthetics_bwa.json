@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Introduction to Cinema",
-		"number": "530-BWA-03",
 		"sections": [
 			{
 				"title": "Film Styles",
@@ -45,11 +44,11 @@
 				"teacher": "Cheryl Simon",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "530-BWA-03"
 	},
 	{
 		"title": "Imaging Technologies",
-		"number": "589-BWA-DW",
 		"sections": [
 			{
 				"title": "Advertising",
@@ -57,11 +56,11 @@
 				"teacher": "Magdalena Olszanowski",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "589-BWA-DW"
 	},
 	{
 		"title": "Introduction to the Art of Music",
-		"number": "550-BWA-03",
 		"sections": [
 			{
 				"title": "Appreciating Music",
@@ -81,11 +80,11 @@
 				"teacher": "Vincenzo Lentini",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "550-BWA-03"
 	},
 	{
 		"title": "Introduction to Philosophy",
-		"number": "340-BWA-03",
 		"sections": [
 			{
 				"title": "Why Art Matters",
@@ -93,11 +92,11 @@
 				"teacher": "Robert Stephens",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "340-BWA-03"
 	},
 	{
 		"title": "Arts and aesthetics: introduction to the visual arts",
-		"number": "570-BWA-03",
 		"sections": [
 			{
 				"title": "Digital Photography: Art and Techniques of Persuasion",
@@ -123,11 +122,11 @@
 				"teacher": "Robert Marcy",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "570-BWA-03"
 	},
 	{
 		"title": "Introduction to Art History",
-		"number": "520-BWA-03",
 		"sections": [
 			{
 				"title": "Photography: The Art and Influence",
@@ -171,6 +170,7 @@
 				"teacher": "Sarah Watson",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "520-BWA-03"
 	}
 ]

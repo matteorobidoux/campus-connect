@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Modern Languages: ",
-		"number": "613-BWL-03",
 		"sections": [
 			{
 				"title": "Chinese 1",
@@ -15,11 +14,11 @@
 				"teacher": "Joy Cheng Yu Lin",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "613-BWL-03"
 	},
 	{
 		"title": "Modern Languages",
-		"number": "609-BWL-03",
 		"sections": [
 			{
 				"title": "German 1",
@@ -27,11 +26,11 @@
 				"teacher": "Marie-France Lemay",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "609-BWL-03"
 	},
 	{
 		"title": "Modern Languages",
-		"number": "615-BWL-03",
 		"sections": [
 			{
 				"title": "Greek 1",
@@ -39,11 +38,11 @@
 				"teacher": "Irene Tourkomanoli",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "615-BWL-03"
 	},
 	{
 		"title": "Modern Languages",
-		"number": "611-BWL-03",
 		"sections": [
 			{
 				"title": "Hebrew 1",
@@ -51,11 +50,11 @@
 				"teacher": "Leila Roiter",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "611-BWL-03"
 	},
 	{
 		"title": "Modern Languages",
-		"number": "608-BWL-03",
 		"sections": [
 			{
 				"title": "Italian 1",
@@ -99,11 +98,11 @@
 				"teacher": "Giorgia Sottanelli",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "608-BWL-03"
 	},
 	{
 		"title": "Modern Languages",
-		"number": "607-BWL-03",
 		"sections": [
 			{
 				"title": "Spanish 1",
@@ -177,6 +176,7 @@
 				"teacher": "Francisco Goire",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "607-BWL-03"
 	}
 ]

@@ -1,376 +1,376 @@
 [
 	{
 		"title": "Sculpting Human Anatomy",
-		"number": "510-293-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Nina Dubois",
 				"schedule": "Monday8:00 AM - 12:00 PM1G.8Lab"
 			}
-		]
+		],
+		"number": "510-293-DW"
 	},
 	{
 		"title": "History of Film Production Techniques",
-		"number": "530-292-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Nancy Barnett",
 				"schedule": "Wednesday8:30 AM - 11:30 AM4C.8Class"
 			}
-		]
+		],
+		"number": "530-292-DW"
 	},
 	{
 		"title": "Principles of Animation II",
-		"number": "574-222-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Joelle Said",
 				"schedule": "Thursday8:30 AM - 11:30 AM4G.1Lab"
 			}
-		]
+		],
+		"number": "574-222-DW"
 	},
 	{
 		"title": "3D Animation Techniques",
-		"number": "574-232-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Beecher Andrew Pinet",
 				"schedule": "Wednesday3:00 PM - 4:00 PM4G.1LabWednesday4:00 PM - 6:00 PM4G.1LabWednesday4:00 PM - 6:00 PM5E.1Lab"
 			}
-		]
+		],
+		"number": "574-232-DW"
 	},
 	{
 		"title": "Digital Video and Photography",
-		"number": "574-241-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Alison Loader",
 				"schedule": "Thursday1:00 PM - 2:30 PM4G.1LabThursday1:00 PM - 2:30 PM5E.1LabThursday2:30 PM - 4:00 PM4G.1Lab"
 			}
-		]
+		],
+		"number": "574-241-DW"
 	},
 	{
 		"title": "Sketching Techniques for Animation",
-		"number": "574-251-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Raymon Fong",
 				"schedule": "Tuesday8:30 AM - 11:30 AM4G.1Lab"
 			}
-		]
+		],
+		"number": "574-251-DW"
 	},
 	{
 		"title": "Digital Colours and Textures",
-		"number": "574-261-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Elliott Creton",
 				"schedule": "Friday9:00 AM - 12:00 PM4G.1Lab"
 			}
-		]
+		],
+		"number": "574-261-DW"
 	},
 	{
 		"title": "Sculpting Human Anatomy",
-		"number": "510-293-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Rachel Echenberg",
 				"schedule": "Wednesday1:00 PM - 5:00 PM1G.8Lab"
 			}
-		]
+		],
+		"number": "510-293-DW"
 	},
 	{
 		"title": "History of Film Production Techniques",
-		"number": "530-292-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Nancy Barnett",
 				"schedule": "Monday11:30 AM - 2:30 PM4C.8Class"
 			}
-		]
+		],
+		"number": "530-292-DW"
 	},
 	{
 		"title": "Principles of Animation II",
-		"number": "574-222-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Joelle Said",
 				"schedule": "Thursday12:00 PM - 3:00 PM4F.5Lab"
 			}
-		]
+		],
+		"number": "574-222-DW"
 	},
 	{
 		"title": "3D Animation Techniques",
-		"number": "574-232-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Kelly Hynes",
 				"schedule": "Monday3:00 PM - 6:00 PM4F.5LabMonday3:00 PM - 6:00 PM5E.1Lab"
 			}
-		]
+		],
+		"number": "574-232-DW"
 	},
 	{
 		"title": "Digital Video and Photography",
-		"number": "574-241-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Alison Loader",
 				"schedule": "Tuesday12:30 PM - 1:30 PM4F.5LabTuesday1:30 PM - 3:30 PM4F.5LabTuesday1:30 PM - 3:30 PM5E.1Lab"
 			}
-		]
+		],
+		"number": "574-241-DW"
 	},
 	{
 		"title": "Sketching Techniques for Animation",
-		"number": "574-251-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Meinert Hansen",
 				"schedule": "Tuesday9:00 AM - 12:00 PM4F.5Lab"
 			}
-		]
+		],
+		"number": "574-251-DW"
 	},
 	{
 		"title": "Digital Colours and Textures",
-		"number": "574-261-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Elliott Creton",
 				"schedule": "Friday1:00 PM - 4:00 PM4G.1Lab"
 			}
-		]
+		],
+		"number": "574-261-DW"
 	},
 	{
 		"title": "Storytelling Techniques in Animated Films",
-		"number": "530-492-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Nancy Barnett",
 				"schedule": "Friday12:00 PM - 3:00 PM3B.6Class"
 			}
-		]
+		],
+		"number": "530-492-DW"
 	},
 	{
 		"title": "Expression and 3D Movement",
-		"number": "574-434-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Jakub Grzegorz Pazera",
 				"schedule": "Thursday8:00 AM - 11:00 AM4F.5Lab"
 			}
-		]
+		],
+		"number": "574-434-DW"
 	},
 	{
 		"title": "Storyboard",
-		"number": "574-453-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Geoff Carley",
 				"schedule": "Thursday2:30 PM - 5:30 PM4G.15Lab"
 			}
-		]
+		],
+		"number": "574-453-DW"
 	},
 	{
 		"title": "Character Modelling",
-		"number": "574-472-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Matthew McIver",
 				"schedule": "Wednesday9:00 AM - 2:00 PM4G.1Lab"
 			}
-		]
+		],
+		"number": "574-472-DW"
 	},
 	{
 		"title": "Character Rigging",
-		"number": "574-473-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Khadija Boulazhar",
 				"schedule": "Monday9:00 AM - 1:00 PM4G.1Lab"
 			}
-		]
+		],
+		"number": "574-473-DW"
 	},
 	{
 		"title": "Lights, Camera and Rendering II",
-		"number": "574-482-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Nabil E. Kachaami",
 				"schedule": "Wednesday3:00 PM - 6:00 PM4F.5Lab"
 			}
-		]
+		],
+		"number": "574-482-DW"
 	},
 	{
 		"title": "Storytelling Techniques in Animated Films",
-		"number": "530-492-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Nancy Barnett",
 				"schedule": "Tuesday3:00 PM - 6:00 PM3B.13Class"
 			}
-		]
+		],
+		"number": "530-492-DW"
 	},
 	{
 		"title": "Expression and 3D Movement",
-		"number": "574-434-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Josef Sy",
 				"schedule": "Thursday3:00 PM - 6:00 PM4F.5Lab"
 			}
-		]
+		],
+		"number": "574-434-DW"
 	},
 	{
 		"title": "Storyboard",
-		"number": "574-453-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Geoff Carley",
 				"schedule": "Thursday8:30 AM - 11:30 AM4G.15Lab"
 			}
-		]
+		],
+		"number": "574-453-DW"
 	},
 	{
 		"title": "Character Modelling",
-		"number": "574-472-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Matthew McIver",
 				"schedule": "Monday8:30 AM - 1:30 PM4F.5Lab"
 			}
-		]
+		],
+		"number": "574-472-DW"
 	},
 	{
 		"title": "Character Rigging",
-		"number": "574-473-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Khadija Boulazhar",
 				"schedule": "Monday2:00 PM - 6:00 PM4G.1Lab"
 			}
-		]
+		],
+		"number": "574-473-DW"
 	},
 	{
 		"title": "Lights, Camera and Rendering II",
-		"number": "574-482-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Nabil E. Kachaami",
 				"schedule": "Friday12:00 PM - 3:00 PM4F.5Lab"
 			}
-		]
+		],
+		"number": "574-482-DW"
 	},
 	{
 		"title": "Postproduction of Visual Effects",
-		"number": "574-602-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Raymon Fong",
 				"schedule": "Wednesday10:30 AM - 1:30 PM4G.3Lab"
 			}
-		]
+		],
+		"number": "574-602-DW"
 	},
 	{
 		"title": "Production Project",
-		"number": "574-613-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Alison Loader, Darcy Deegan, James Giberson, Matthew McIver",
 				"schedule": "Monday9:00 AM - 11:30 AM4G.3LabMonday2:00 PM - 3:30 PM4G.3LabTuesday8:30 AM - 12:00 PM4G.3LabWednesday3:00 PM - 6:00 PM4G.3LabFriday3:00 PM - 4:30 PM4G.3Lab"
 			}
-		]
+		],
+		"number": "574-613-DW"
 	},
 	{
 		"title": "Character Animation II",
-		"number": "574-636-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Omar Morsy",
 				"schedule": "Thursday10:30 AM - 3:30 PM4G.3Lab"
 			}
-		]
+		],
+		"number": "574-636-DW"
 	},
 	{
 		"title": "Career Development",
-		"number": "574-691-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Darcy Deegan, Geoff Carley, Raymon Fong, Stephanie Volpi",
 				"schedule": "Tuesday2:00 PM - 3:00 PM4G.3LabTuesday3:00 PM - 4:00 PM4G.3LabTuesday4:00 PM - 5:00 PM4G.3LabTuesday5:00 PM - 6:00 PM4G.3Lab"
 			}
-		]
+		],
+		"number": "574-691-DW"
 	},
 	{
 		"title": "Postproduction of Visual Effects",
-		"number": "574-602-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Raymon Fong",
 				"schedule": "Wednesday3:00 PM - 6:00 PM4F.3Lab"
 			}
-		]
+		],
+		"number": "574-602-DW"
 	},
 	{
 		"title": "Production Project",
-		"number": "574-613-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Alison Loader, Darcy Deegan, James Giberson, Matthew McIver",
 				"schedule": "Monday3:30 PM - 5:00 PM4F.3LabTuesday9:00 AM - 11:30 AM4F.3LabThursday12:00 PM - 3:30 PM4F.3LabFriday1:00 PM - 2:30 PM4F.3LabFriday3:00 PM - 6:00 PM4F.3Lab"
 			}
-		]
+		],
+		"number": "574-613-DW"
 	},
 	{
 		"title": "Character Animation II",
-		"number": "574-636-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Omar Morsy",
 				"schedule": "Wednesday8:30 AM - 1:30 PM4F.3Lab"
 			}
-		]
+		],
+		"number": "574-636-DW"
 	},
 	{
 		"title": "Career Development",
-		"number": "574-691-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Darcy Deegan, Geoff Carley, Raymon Fong, Stephanie Volpi",
 				"schedule": "Tuesday2:00 PM - 3:00 PM4F.3LabTuesday3:00 PM - 4:00 PM4F.3LabTuesday4:00 PM - 5:00 PM4F.3LabTuesday5:00 PM - 6:00 PM4F.3Lab"
 			}
-		]
+		],
+		"number": "574-691-DW"
 	}
 ]

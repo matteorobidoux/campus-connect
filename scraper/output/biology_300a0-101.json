@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Human Biology",
-		"number": "101-921-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -28,6 +27,7 @@
 				"teacher": "Annie-Hélène Samson",
 				"schedule": "Monday4:00 PM - 5:30 PM5A.14LabWednesday2:30 PM - 4:00 PM4G.2AClass"
 			}
-		]
+		],
+		"number": "101-921-DW"
 	}
 ]

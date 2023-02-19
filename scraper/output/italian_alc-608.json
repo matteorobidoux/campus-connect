@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Italian 1",
-		"number": "608-111-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -18,11 +17,11 @@
 				"teacher": "Santina Montagano",
 				"schedule": "Tuesday1:00 PM - 2:30 PM3D.2ClassThursday1:00 PM - 2:30 PM3D.2Class"
 			}
-		]
+		],
+		"number": "608-111-DW"
 	},
 	{
 		"title": "Italian Mother Tongue 1",
-		"number": "608-121-DW",
 		"sections": [
 			{
 				"title": "(FOR ITALIAN SPEAKERS)",
@@ -30,11 +29,11 @@
 				"teacher": "Giorgia Sottanelli",
 				"schedule": "Monday2:30 PM - 4:00 PM3D.2ClassWednesday2:30 PM - 4:00 PM3D.2Class"
 			}
-		]
+		],
+		"number": "608-121-DW"
 	},
 	{
 		"title": "Italian 2",
-		"number": "608-211-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -46,17 +45,18 @@
 				"teacher": "Giorgia Sottanelli",
 				"schedule": "Monday4:00 PM - 5:30 PM3D.2ClassWednesday4:00 PM - 5:30 PM3D.2Class"
 			}
-		]
+		],
+		"number": "608-211-DW"
 	},
 	{
 		"title": "Italian 4",
-		"number": "608-411-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Santina Montagano",
 				"schedule": "Monday8:30 AM - 10:00 AM4D.6ClassWednesday8:30 AM - 10:00 AM4D.6Class"
 			}
-		]
+		],
+		"number": "608-411-DW"
 	}
 ]

@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Introduction to Economics",
-		"number": "383-101-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -118,11 +117,11 @@
 				"teacher": "Lisa Di Marzo",
 				"schedule": "Tuesday4:00 PM - 5:30 PM5A.2ClassThursday4:00 PM - 5:30 PM5A.2Class"
 			}
-		]
+		],
+		"number": "383-101-DW"
 	},
 	{
 		"title": "Microeconomics",
-		"number": "383-201-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -144,11 +143,11 @@
 				"teacher": "Menouar Boulahfa",
 				"schedule": "Wednesday11:30 AM - 1:00 PM4H.8ClassFriday11:30 AM - 1:00 PM4H.8Class"
 			}
-		]
+		],
+		"number": "383-201-DW"
 	},
 	{
 		"title": "Economic Analysis",
-		"number": "383-218-DW",
 		"sections": [
 			{
 				"title": "The Economics of Personal Finance",
@@ -156,11 +155,11 @@
 				"teacher": "Carlo Catino",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "383-218-DW"
 	},
 	{
 		"title": "Macroeconomics",
-		"number": "383-302-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -172,17 +171,18 @@
 				"teacher": "Philippe Ghayad",
 				"schedule": "Tuesday4:00 PM - 5:30 PM4D.11ClassThursday4:00 PM - 5:30 PM4D.11Class"
 			}
-		]
+		],
+		"number": "383-302-DW"
 	},
 	{
 		"title": "International Economics",
-		"number": "383-330-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "James Roberts",
 				"schedule": "Tuesday11:30 AM - 1:00 PM4D.11ClassThursday11:30 AM - 1:00 PM4D.11Class"
 			}
-		]
+		],
+		"number": "383-330-DW"
 	}
 ]

@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Western Civilization",
-		"number": "330-101-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -123,17 +122,17 @@
 				"teacher": "Jan Alexandros Arvanitakis",
 				"schedule": "Tuesday2:30 PM - 4:00 PM4F.4ClassThursday2:30 PM - 4:00 PM4F.4Class"
 			}
-		]
+		],
+		"number": "330-101-DW"
 	},
 	{
 		"title": "Canadian History",
-		"number": "330-201-DW",
 		"sections": [
 			{
 				"title": "Crime and Injustices in Canada",
 				"section": "00001",
 				"teacher": "Catherine Braithwaite",
-				"schedule": "Tuesday10:00 AM - 11:30 AM3F.7ClassFriday10:00 AM - 11:30 AM3F.7Class"
+				"schedule": "Tuesday10:00 AM - 11:30 AM3F.37ClassFriday10:00 AM - 11:30 AM3F.37Class"
 			},
 			{
 				"title": "Crime and Society",
@@ -147,11 +146,11 @@
 				"teacher": "Catherine Braithwaite",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "330-201-DW"
 	},
 	{
 		"title": "20th Century History",
-		"number": "330-214-DW",
 		"sections": [
 			{
 				"title": "War and Conflict",
@@ -182,11 +181,11 @@
 				"teacher": "Jérémy Tétrault-Farber",
 				"schedule": "Monday10:00 AM - 11:30 AM4E.7ClassWednesday10:00 AM - 11:30 AM4E.7Class"
 			}
-		]
+		],
+		"number": "330-214-DW"
 	},
 	{
 		"title": "Third World History",
-		"number": "330-221-DW",
 		"sections": [
 			{
 				"title": "Colonization and Decolonization",
@@ -194,11 +193,11 @@
 				"teacher": "Diane Shea",
 				"schedule": "Monday10:00 AM - 11:30 AM3F.45ClassWednesday10:00 AM - 11:30 AM3F.5Class"
 			}
-		]
+		],
+		"number": "330-221-DW"
 	},
 	{
 		"title": "Applied Canadian History",
-		"number": "330-302-DW",
 		"sections": [
 			{
 				"title": "History of Indigenous Canada",
@@ -206,11 +205,11 @@
 				"teacher": "Michael Duckett",
 				"schedule": "Monday2:30 PM - 4:00 PM3E.13ClassWednesday2:30 PM - 4:00 PM3E.13Class"
 			}
-		]
+		],
+		"number": "330-302-DW"
 	},
 	{
 		"title": "Applied U.S. History",
-		"number": "330-306-DW",
 		"sections": [
 			{
 				"title": "A Nation Fractured: Social Conflicts in 20th Century USA",
@@ -218,11 +217,11 @@
 				"teacher": "Pierre L'Heureux",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "330-306-DW"
 	},
 	{
 		"title": "Applied 20th Century History",
-		"number": "330-314-DW",
 		"sections": [
 			{
 				"title": "Art and Power in the 20th Century",
@@ -230,11 +229,11 @@
 				"teacher": "Jocelyn Parr",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "330-314-DW"
 	},
 	{
 		"title": "Applied Social and Economic History",
-		"number": "330-325-DW",
 		"sections": [
 			{
 				"title": "The Family",
@@ -254,11 +253,11 @@
 				"teacher": "Julie Johnson",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "330-325-DW"
 	},
 	{
 		"title": "Advanced Studies in History",
-		"number": "330-401-DW",
 		"sections": [
 			{
 				"title": "The Global 1960s: Times of Change",
@@ -272,6 +271,7 @@
 				"teacher": "Pierre L'Heureux",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "330-401-DW"
 	}
 ]

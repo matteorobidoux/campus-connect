@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Mise à niveau pour Français, langue seconde de la 5e secondaire",
-		"number": "602-008-RE",
 		"sections": [
 			{
 				"section": "00001",
@@ -13,11 +12,11 @@
 				"teacher": "Francesca Roy",
 				"schedule": "Tuesday10:00 AM - 12:00 PM4E.18ClassFriday10:00 AM - 12:00 PM4E.18Class"
 			}
-		]
+		],
+		"number": "602-008-RE"
 	},
 	{
 		"title": "Mise à niveau pour français, accent sur l'écrit",
-		"number": "602-009-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -34,11 +33,11 @@
 				"teacher": "Francesca Roy",
 				"schedule": "Tuesday10:00 AM - 12:00 PM4E.18ClassFriday10:00 AM - 12:00 PM4E.18Class"
 			}
-		]
+		],
+		"number": "602-009-DW"
 	},
 	{
 		"title": "Basic French",
-		"number": "602-100-MQ",
 		"sections": [
 			{
 				"section": "00001",
@@ -81,11 +80,11 @@
 				"teacher": "Djemaa Maazouzi",
 				"schedule": "Tuesday, May 30, 2023"
 			}
-		]
+		],
+		"number": "602-100-MQ"
 	},
 	{
 		"title": "French Language and Communication",
-		"number": "602-101-MQ",
 		"sections": [
 			{
 				"section": "00001",
@@ -129,11 +128,11 @@
 				"teacher": "Véronique Millet",
 				"schedule": "Tuesday, May 30, 2023"
 			}
-		]
+		],
+		"number": "602-101-MQ"
 	},
 	{
 		"title": "French Language and Culture",
-		"number": "602-102-MQ",
 		"sections": [
 			{
 				"section": "00001",
@@ -222,11 +221,11 @@
 				"teacher": "Floriane Augustin",
 				"schedule": "Tuesday, May 30, 2023"
 			}
-		]
+		],
+		"number": "602-102-MQ"
 	},
 	{
 		"title": "French Culture and Literature",
-		"number": "602-103-MQ",
 		"sections": [
 			{
 				"title": "Introduction à la littérature",
@@ -318,11 +317,11 @@
 				"teacher": "Laurence Jeudy",
 				"schedule": "Tuesday, May 30, 2023"
 			}
-		]
+		],
+		"number": "602-103-MQ"
 	},
 	{
 		"title": "Comprendre et mieux s'exprimer",
-		"number": "602-BXB-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -361,11 +360,11 @@
 				"teacher": "Carmen-Silvia Cristea",
 				"schedule": "Tuesday, May 30, 2023"
 			}
-		]
+		],
+		"number": "602-BXB-DW"
 	},
 	{
 		"title": "Visions actuelles",
-		"number": "602-BXD-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -388,11 +387,11 @@
 				"teacher": "Lysanne Audy",
 				"schedule": "Tuesday, May 30, 2023"
 			}
-		]
+		],
+		"number": "602-BXD-DW"
 	},
 	{
 		"title": "Aspects de la science et des techniques",
-		"number": "602-BXF-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -420,11 +419,11 @@
 				"teacher": "Lysanne Audy",
 				"schedule": "Tuesday, May 30, 2023"
 			}
-		]
+		],
+		"number": "602-BXF-DW"
 	},
 	{
 		"title": "Actualités des sciences humaines",
-		"number": "602-BXG-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -457,11 +456,11 @@
 				"teacher": "Lysanne Audy",
 				"schedule": "Friday, May 12, 2023"
 			}
-		]
+		],
+		"number": "602-BXG-DW"
 	},
 	{
 		"title": "Regards sur la science et les techniques",
-		"number": "602-BXJ-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -494,11 +493,11 @@
 				"teacher": "Elisa Romano",
 				"schedule": "Tuesday, May 30, 2023"
 			}
-		]
+		],
+		"number": "602-BXJ-DW"
 	},
 	{
 		"title": "Regards sur les sciences humaines",
-		"number": "602-BXK-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -551,11 +550,11 @@
 				"teacher": "Elisa Romano",
 				"schedule": "Tuesday, May 30, 2023"
 			}
-		]
+		],
+		"number": "602-BXK-DW"
 	},
 	{
 		"title": "Découvertes et création",
-		"number": "602-BXN-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -594,11 +593,11 @@
 				"teacher": "Véronique Millet",
 				"schedule": "Wednesday11:30 AM - 1:00 PM4P.10ClassFriday11:30 AM - 1:00 PM4P.10Class"
 			}
-		]
+		],
+		"number": "602-BXN-DW"
 	},
 	{
 		"title": "Les sciences humaines en français",
-		"number": "602-BXU-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -637,11 +636,11 @@
 				"teacher": "Véronique Millet",
 				"schedule": "Wednesday11:30 AM - 1:00 PM4P.10ClassFriday11:30 AM - 1:00 PM4P.10Class"
 			}
-		]
+		],
+		"number": "602-BXU-DW"
 	},
 	{
 		"title": "En marge des mots",
-		"number": "602-BXY-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -679,11 +678,11 @@
 				"teacher": "Elisa Romano",
 				"schedule": "Tuesday, May 30, 2023"
 			}
-		]
+		],
+		"number": "602-BXY-DW"
 	},
 	{
 		"title": "Le français des sciences et des techniques",
-		"number": "602-BXZ-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -723,6 +722,7 @@
 				"teacher": "TBA-602-E",
 				"schedule": "WednesdayJan 25, 2023Jan 25, 20236:00 PM - 8:30 PM3H.17Important MeetingWednesdayMar 01, 2023Mar 01, 20236:00 PM - 8:30 PM3H.17Important MeetingWednesdayApr 05, 2023Apr 05, 20236:00 PM - 8:30 PM3H.17Important MeetingMondayMay 29, 2023May 29, 20239:00 AM - 12:00 PM4H.6IntensiveMondayMay 29, 2023May 29, 20231:00 PM - 3:30 PM4H.6IntensiveTuesdayMay 30, 2023May 30, 20239:00 AM - 12:00 PM4H.6IntensiveTuesdayMay 30, 2023May 30, 20231:00 PM - 3:30 PM4H.6IntensiveWednesdayMay 31, 2023May 31, 20239:00 AM - 12:00 PM4H.6IntensiveWednesdayMay 31, 2023May 31, 20231:00 PM - 3:30 PM4H.6IntensiveThursdayJun 01, 2023Jun 01, 20239:00 AM - 12:00 PM4H.6IntensiveThursdayJun 01, 2023Jun 01, 20231:00 PM - 3:30 PM4H.6IntensiveFridayJun 02, 2023Jun 02, 20239:00 AM - 12:00 PM4H.6IntensiveFridayJun 02, 2023Jun 02, 20231:00 PM - 3:30 PM4H.6IntensiveMondayJun 05, 2023Jun 05, 20239:00 AM - 12:00 PM4H.6IntensiveMondayJun 05, 2023Jun 05, 20231:00 PM - 3:30 PM4H.6IntensiveTuesdayJun 06, 2023Jun 06, 20239:00 AM - 12:00 PM4H.6IntensiveTuesdayJun 06, 2023Jun 06, 20231:00 PM - 3:30 PM4H.6Intensive"
 			}
-		]
+		],
+		"number": "602-BXZ-DW"
 	}
 ]

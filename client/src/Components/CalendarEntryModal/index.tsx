@@ -1,7 +1,7 @@
 import { Field, Form, Formik } from "formik";
 import { toast } from "react-toastify";
-import CalendarEvent from "../../../types/Calendar";
-import { useSections } from "../custom-query-hooks";
+import CalendarEvent from "../../../../types/Calendar";
+import { useSections } from "../../custom-query-hooks";
 import styles from "./CalendarEntryModal.module.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useMutation } from "react-query";

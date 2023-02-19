@@ -1,62 +1,61 @@
 [
 	{
 		"title": "Calculus I",
-		"number": "201-103-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Mehdi Moodi",
 				"schedule": "Monday8:30 AM - 10:00 AM7B.11ClassWednesday8:30 AM - 10:00 AM7B.11ClassFriday10:00 AM - 12:00 PM7A.13Lab"
 			}
-		]
+		],
+		"number": "201-103-DW"
 	},
 	{
 		"title": "Western Civilization",
-		"number": "330-101-DW",
 		"sections": [
 			{
 				"section": "00020",
 				"teacher": "Rachèle Caux",
 				"schedule": "Tuesday11:30 AM - 1:00 PM2P.04ClassThursday11:30 AM - 1:00 PM2P.04Class"
 			}
-		]
+		],
+		"number": "330-101-DW"
 	},
 	{
 		"title": "Introduction to Economics",
-		"number": "383-101-DW",
 		"sections": [
 			{
 				"section": "00009",
 				"teacher": "James Roberts",
 				"schedule": "Monday2:30 PM - 4:00 PM4D.11ClassWednesday2:30 PM - 4:00 PM4D.11Class"
 			}
-		]
+		],
+		"number": "383-101-DW"
 	},
 	{
 		"title": "Introduction to Business",
-		"number": "401-101-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Leslie Schiller",
 				"schedule": "Wednesday1:00 PM - 2:30 PM3E.9ClassFriday1:00 PM - 2:30 PM3E.9Class"
 			}
-		]
+		],
+		"number": "401-101-DW"
 	},
 	{
 		"title": "Linear Algebra",
-		"number": "201-105-DW",
 		"sections": [
 			{
 				"section": "00003",
 				"teacher": "Kheira Ameur",
 				"schedule": "Monday11:30 AM - 1:00 PM7B.2ClassTuesday8:00 AM - 10:00 AM7B.4LabThursday8:30 AM - 10:00 AM7B.2Class"
 			}
-		]
+		],
+		"number": "201-105-DW"
 	},
 	{
 		"title": "Research Methods",
-		"number": "300-300-DW",
 		"sections": [
 			{
 				"section": "00027",
@@ -68,44 +67,44 @@
 				"teacher": "Charles-Albert Ramsay",
 				"schedule": "Tuesday2:00 PM - 4:00 PM3A.4ClassThursday2:00 PM - 4:00 PM3A.4Class"
 			}
-		]
+		],
+		"number": "300-300-DW"
 	},
 	{
 		"title": "General Psychology",
-		"number": "350-101-DW",
 		"sections": [
 			{
 				"section": "00003",
 				"teacher": "Madelaine Côté",
 				"schedule": "Tuesday11:30 AM - 1:00 PM3F.7ClassThursday11:30 AM - 1:00 PM3F.7Class"
 			}
-		]
+		],
+		"number": "350-101-DW"
 	},
 	{
 		"title": "International Business",
-		"number": "401-205-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Kayrod Niamir",
 				"schedule": "Tuesday10:00 AM - 11:30 AM4P.25ClassFriday10:00 AM - 11:30 AM4P.25Class"
 			}
-		]
+		],
+		"number": "401-205-DW"
 	},
 	{
 		"title": "Linear Algebra",
-		"number": "201-105-DW",
 		"sections": [
 			{
 				"section": "00004",
 				"teacher": "Gilbert Honnouvo",
 				"schedule": "Tuesday4:00 PM - 6:00 PM4D.2LabWednesday11:30 AM - 1:00 PM4H.21ClassFriday11:30 AM - 1:00 PM4H.21Class"
 			}
-		]
+		],
+		"number": "201-105-DW"
 	},
 	{
 		"title": "Research Methods",
-		"number": "300-300-DW",
 		"sections": [
 			{
 				"section": "00004",
@@ -117,99 +116,99 @@
 				"teacher": "Charles-Albert Ramsay",
 				"schedule": "Tuesday2:00 PM - 4:00 PM3A.4ClassThursday2:00 PM - 4:00 PM3A.4Class"
 			}
-		]
+		],
+		"number": "300-300-DW"
 	},
 	{
 		"title": "General Psychology",
-		"number": "350-101-DW",
 		"sections": [
 			{
 				"section": "00008",
 				"teacher": "Susan Finch",
 				"schedule": "Monday2:30 PM - 4:00 PM4H.25ClassWednesday2:30 PM - 4:00 PM4H.25Class"
 			}
-		]
+		],
+		"number": "350-101-DW"
 	},
 	{
 		"title": "International Business",
-		"number": "401-205-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Kayrod Niamir",
 				"schedule": "Monday10:00 AM - 11:30 AM2P.04ClassWednesday10:00 AM - 11:30 AM2P.04Class"
 			}
-		]
+		],
+		"number": "401-205-DW"
 	},
 	{
 		"title": "Introduction to Geography and the Environment",
-		"number": "320-102-DW",
 		"sections": [
 			{
 				"section": "00004",
 				"teacher": "Lazar Konforti",
 				"schedule": "Wednesday1:00 PM - 2:30 PM4D.17ClassFriday1:00 PM - 2:30 PM4D.17Class"
 			}
-		]
+		],
+		"number": "320-102-DW"
 	},
 	{
 		"title": "Psychology in Business",
-		"number": "350-318-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Madelaine Côté",
 				"schedule": "Wednesday8:30 AM - 11:30 AM3H.10Class"
 			}
-		]
+		],
+		"number": "350-318-DW"
 	},
 	{
 		"title": "Quantitative Methods",
-		"number": "360-300-DW",
 		"sections": [
 			{
 				"section": "00010",
 				"teacher": "Roger Tabry",
 				"schedule": "Tuesday2:00 PM - 4:00 PM3H.17ClassThursday2:00 PM - 4:00 PM3H.17Class"
 			}
-		]
+		],
+		"number": "360-300-DW"
 	},
 	{
 		"title": "Macroeconomics",
-		"number": "383-302-DW",
 		"sections": [
 			{
 				"section": "00002",
 				"teacher": "Philippe Ghayad",
 				"schedule": "Tuesday4:00 PM - 5:30 PM4D.11ClassThursday4:00 PM - 5:30 PM4D.11Class"
 			}
-		]
+		],
+		"number": "383-302-DW"
 	},
 	{
 		"title": "International Economics",
-		"number": "383-330-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "James Roberts",
 				"schedule": "Tuesday11:30 AM - 1:00 PM4D.11ClassThursday11:30 AM - 1:00 PM4D.11Class"
 			}
-		]
+		],
+		"number": "383-330-DW"
 	},
 	{
 		"title": "Introduction to Politics",
-		"number": "385-101-DW",
 		"sections": [
 			{
 				"section": "00005",
 				"teacher": "Michel Fournier-Simard",
 				"schedule": "Tuesday10:00 AM - 11:30 AM4P.06ClassFriday10:00 AM - 11:30 AM4P.06Class"
 			}
-		]
+		],
+		"number": "385-101-DW"
 	},
 	{
 		"title": "Integrative Seminar",
-		"number": "300-303-DW",
 		"sections": [
 			{
 				"title": "Finding Your Passion",
@@ -217,11 +216,11 @@
 				"teacher": "Marc-André Girouard",
 				"schedule": "Monday8:30 AM - 11:30 AM4F.6Class"
 			}
-		]
+		],
+		"number": "300-303-DW"
 	},
 	{
 		"title": "Integrative Seminar",
-		"number": "300-308-DW",
 		"sections": [
 			{
 				"title": "Fashion Your Passion",
@@ -229,66 +228,66 @@
 				"teacher": "Ahmad Banki",
 				"schedule": "Tuesday2:00 PM - 4:00 PM3A.7ClassThursday2:00 PM - 4:00 PM3A.7Class"
 			}
-		]
+		],
+		"number": "300-308-DW"
 	},
 	{
 		"title": "Microeconomics",
-		"number": "383-201-DW",
 		"sections": [
 			{
 				"section": "00004",
 				"teacher": "Menouar Boulahfa",
 				"schedule": "Wednesday11:30 AM - 1:00 PM4H.8ClassFriday11:30 AM - 1:00 PM4H.8Class"
 			}
-		]
+		],
+		"number": "383-201-DW"
 	},
 	{
 		"title": "Macroeconomics",
-		"number": "383-302-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Michel Mayer",
 				"schedule": "Monday2:30 PM - 4:00 PM3H.15ClassWednesday2:30 PM - 4:00 PM3H.15Class"
 			}
-		]
+		],
+		"number": "383-302-DW"
 	},
 	{
 		"title": "Global Politics",
-		"number": "385-311-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Cynthia J. Martin",
 				"schedule": "Tuesday2:30 PM - 4:00 PM3E.13ClassThursday2:30 PM - 4:00 PM3E.13Class"
 			}
-		]
+		],
+		"number": "385-311-DW"
 	},
 	{
 		"title": "Global Marketing",
-		"number": "401-315-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Amanda Petriello",
 				"schedule": "Wednesday1:00 PM - 2:30 PM4H.21ClassFriday1:00 PM - 2:30 PM4H.21Class"
 			}
-		]
+		],
+		"number": "401-315-DW"
 	},
 	{
 		"title": "Integrative Seminar",
-		"number": "300-303-DW",
 		"sections": [
 			{
 				"section": "00006",
 				"teacher": "Frédéric Bastien",
 				"schedule": "Tuesday8:30 AM - 11:30 AM4F.6Class"
 			}
-		]
+		],
+		"number": "300-303-DW"
 	},
 	{
 		"title": "Integrative Seminar",
-		"number": "300-308-DW",
 		"sections": [
 			{
 				"title": "Fashion Your Passion",
@@ -296,50 +295,51 @@
 				"teacher": "Ahmad Banki",
 				"schedule": "Tuesday12:00 PM - 2:00 PM3A.7ClassThursday12:00 PM - 2:00 PM3A.7Class"
 			}
-		]
+		],
+		"number": "300-308-DW"
 	},
 	{
 		"title": "Microeconomics",
-		"number": "383-201-DW",
 		"sections": [
 			{
 				"section": "00004",
 				"teacher": "Menouar Boulahfa",
 				"schedule": "Wednesday11:30 AM - 1:00 PM4H.8ClassFriday11:30 AM - 1:00 PM4H.8Class"
 			}
-		]
+		],
+		"number": "383-201-DW"
 	},
 	{
 		"title": "Macroeconomics",
-		"number": "383-302-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Michel Mayer",
 				"schedule": "Monday2:30 PM - 4:00 PM3H.15ClassWednesday2:30 PM - 4:00 PM3H.15Class"
 			}
-		]
+		],
+		"number": "383-302-DW"
 	},
 	{
 		"title": "Global Politics",
-		"number": "385-311-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Cynthia J. Martin",
 				"schedule": "Tuesday2:30 PM - 4:00 PM3E.13ClassThursday2:30 PM - 4:00 PM3E.13Class"
 			}
-		]
+		],
+		"number": "385-311-DW"
 	},
 	{
 		"title": "Global Marketing",
-		"number": "401-315-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Amanda Petriello",
 				"schedule": "Wednesday1:00 PM - 2:30 PM4H.21ClassFriday1:00 PM - 2:30 PM4H.21Class"
 			}
-		]
+		],
+		"number": "401-315-DW"
 	}
 ]

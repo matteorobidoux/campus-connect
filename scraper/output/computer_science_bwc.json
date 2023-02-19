@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Introduction to Computer Science",
-		"number": "420-BWC-03",
 		"sections": [
 			{
 				"title": "Introduction to Computers",
@@ -33,6 +32,7 @@
 				"teacher": "Behnam Karimi",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "420-BWC-03"
 	}
 ]

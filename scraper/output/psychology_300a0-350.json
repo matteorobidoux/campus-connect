@@ -1,7 +1,6 @@
 [
 	{
 		"title": "General Psychology",
-		"number": "350-101-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -88,11 +87,11 @@
 				"teacher": "Sylvia Cox",
 				"schedule": "Monday10:00 AM - 11:30 AM3E.13ClassWednesday10:00 AM - 11:30 AM3E.13Class"
 			}
-		]
+		],
+		"number": "350-101-DW"
 	},
 	{
 		"title": "Developmental Psychology",
-		"number": "350-201-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -114,11 +113,11 @@
 				"teacher": "Joelle Dayan",
 				"schedule": "Monday8:30 AM - 10:00 AM5B.7ClassWednesday8:30 AM - 10:00 AM5B.7Class"
 			}
-		]
+		],
+		"number": "350-201-DW"
 	},
 	{
 		"title": "Abnormal Psychology",
-		"number": "350-211-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -155,11 +154,11 @@
 				"teacher": "Robin Joseph Gagnon",
 				"schedule": "Wednesday11:30 AM - 2:30 PM3H.21Class"
 			}
-		]
+		],
+		"number": "350-211-DW"
 	},
 	{
 		"title": "Psychology and the Law",
-		"number": "350-214-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -171,11 +170,11 @@
 				"teacher": "Caroline Chochol",
 				"schedule": "Friday11:30 AM - 2:30 PM3H.10Class"
 			}
-		]
+		],
+		"number": "350-214-DW"
 	},
 	{
 		"title": "Interaction and Communication",
-		"number": "350-302-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -187,11 +186,11 @@
 				"teacher": "Melanie Doyle",
 				"schedule": "Thursday11:30 AM - 2:30 PM5E.8Class"
 			}
-		]
+		],
+		"number": "350-302-DW"
 	},
 	{
 		"title": "Human Sexual Behaviour",
-		"number": "350-306-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -218,11 +217,11 @@
 				"teacher": "Sylvia Cox",
 				"schedule": "Thursday2:30 PM - 5:30 PM5E.8Class"
 			}
-		]
+		],
+		"number": "350-306-DW"
 	},
 	{
 		"title": "Cognitive Development",
-		"number": "350-313-DW",
 		"sections": [
 			{
 				"section": "00001",
@@ -239,22 +238,22 @@
 				"teacher": "Jonathan Ohayon",
 				"schedule": "Tuesday11:30 AM - 2:30 PM3E.13Class"
 			}
-		]
+		],
+		"number": "350-313-DW"
 	},
 	{
 		"title": "Psychology in Business",
-		"number": "350-318-DW",
 		"sections": [
 			{
 				"section": "00001",
 				"teacher": "Madelaine Côté",
 				"schedule": "Wednesday8:30 AM - 11:30 AM3H.10Class"
 			}
-		]
+		],
+		"number": "350-318-DW"
 	},
 	{
 		"title": "Applications of Psychology",
-		"number": "350-323-DW",
 		"sections": [
 			{
 				"title": "Social Psychology",
@@ -268,11 +267,11 @@
 				"teacher": "Stephane Gaskin",
 				"schedule": "Friday11:30 AM - 2:30 PM5E.8Class"
 			}
-		]
+		],
+		"number": "350-323-DW"
 	},
 	{
 		"title": "Advanced Studies in Psychology",
-		"number": "350-401-DW",
 		"sections": [
 			{
 				"title": "Thinking and Memory",
@@ -298,6 +297,7 @@
 				"teacher": "Rajesh Malik",
 				"schedule": "Monday10:00 AM - 11:30 AM3H.23ClassWednesday10:00 AM - 11:30 AM3H.23Class"
 			}
-		]
+		],
+		"number": "350-401-DW"
 	}
 ]

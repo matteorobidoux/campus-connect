@@ -1,7 +1,6 @@
 [
 	{
 		"title": "Modern Languages",
-		"number": "607-BXX-03",
 		"sections": [
 			{
 				"title": "Spanish 3",
@@ -9,6 +8,7 @@
 				"teacher": "Maria-Elena Grijalva-Barba",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		]
+		],
+		"number": "607-BXX-03"
 	}
 ]
