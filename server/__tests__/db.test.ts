@@ -7,7 +7,7 @@ describe('test mongoose User model', () => {
     const _doc = {
       name: 'nameOb',
       password: 'name123',
-      class: ["class1", "class2"]
+      classes: ["class1", "class2"]
     };
 
     mockingoose(User).toReturn(_doc, 'findOne');
