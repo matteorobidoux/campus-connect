@@ -8,17 +8,15 @@ import Section from "./models/section-schema";
 import fs = require('fs');
 import path = require("path");
 import * as config from "../../config.json"
-
+const dname= process.env.TEST === "test"
 class DbMongoose{
-  name: String
-  constructor(name: String){
-    this.name=name
+  constructor(){
     this.connectDb();
   }
 connectDb()
 {
   let dbOptions = {
-  dbName: ""+this.name
+  dbName: ""+dname
 }
 
   mongoose.connect("mongodb+srv://nenechi:nenechi12@exercise11.cfvsryo.mongodb.net/?retryWrites=true&w=majority", dbOptions);
@@ -29,19 +27,19 @@ disconnectdb(){
 }
 
 
-async addUser(nameUser:String, passwd:String, classes: String[]){
+async addUser(nameUser:string, passwd:string, classes: string[]){
   const abie= new User({ name:nameUser, password: passwd, class: classes })
   await abie.save();
  
 }
 
-async addEvent(id:String, date:Date, title: String, desc: String, sectionName:String){
+async addEvent(id:string, date:Date, title: string, desc: string, sectionName:string){
   const abie= new Event({ id:id, date: date, title: title, desc: desc, associatedSection: {name: sectionName}})
   console.log(abie)
   await abie.save();
 }
 
-async getUserByClasss(classname: String){
+async getUserByClasss(classname: string){
   const result= await User.find({class: classname})
   console.log(result)
   return result;
@@ -80,7 +78,7 @@ addAllClasses(){
   }
 }
 
-export default DbMongoose;
+export default new DbMongoose();
 
 
 
