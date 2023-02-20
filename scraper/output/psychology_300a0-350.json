@@ -1,0 +1,303 @@
+[
+	{
+		"title": "General Psychology",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Madelaine Côté",
+				"schedule": "Tuesday2:30 PM - 4:00 PM4P.25ClassThursday2:30 PM - 4:00 PM4P.25Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Jacob Nuselovici",
+				"schedule": "Tuesday10:00 AM - 11:30 AM4E.9ClassFriday10:00 AM - 11:30 AM4E.9Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Madelaine Côté",
+				"schedule": "Tuesday11:30 AM - 1:00 PM3F.7ClassThursday11:30 AM - 1:00 PM3F.7Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Madelaine Côté",
+				"schedule": "Wednesday1:00 PM - 2:30 PM3F.7ClassFriday1:00 PM - 2:30 PM3F.7Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "Jacob Nuselovici",
+				"schedule": "Tuesday11:30 AM - 1:00 PM4E.9ClassThursday11:30 AM - 1:00 PM4E.9Class"
+			},
+			{
+				"section": "00006",
+				"teacher": "Susan Finch",
+				"schedule": "Monday11:30 AM - 1:00 PM4H.21ClassThursday8:30 AM - 10:00 AM4H.21Class"
+			},
+			{
+				"section": "00007",
+				"teacher": "Jessica Chambers",
+				"schedule": "Tuesday8:30 AM - 10:00 AM4H.25ClassFriday8:30 AM - 10:00 AM4H.25Class"
+			},
+			{
+				"section": "00008",
+				"teacher": "Susan Finch",
+				"schedule": "Monday2:30 PM - 4:00 PM4H.25ClassWednesday2:30 PM - 4:00 PM4H.25Class"
+			},
+			{
+				"section": "00009",
+				"teacher": "Pavel Piterkin",
+				"schedule": "Monday2:30 PM - 4:00 PM4P.10ClassWednesday2:30 PM - 4:00 PM4P.10Class"
+			},
+			{
+				"section": "00010",
+				"teacher": "Pavel Piterkin",
+				"schedule": "Tuesday4:00 PM - 5:30 PM4P.22ClassThursday4:00 PM - 5:30 PM4P.22Class"
+			},
+			{
+				"section": "00011",
+				"teacher": "Robin Joseph Gagnon",
+				"schedule": "Monday1:00 PM - 2:30 PM3H.23ClassThursday10:00 AM - 11:30 AM3H.23Class"
+			},
+			{
+				"section": "00012",
+				"teacher": "Susan Finch",
+				"schedule": "Wednesday11:30 AM - 1:00 PM7B.13ClassFriday11:30 AM - 1:00 PM7B.13Class"
+			},
+			{
+				"section": "00013",
+				"teacher": "Pavel Piterkin",
+				"schedule": "Tuesday2:30 PM - 4:00 PM2P.04ClassThursday2:30 PM - 4:00 PM2P.04Class"
+			},
+			{
+				"section": "00014",
+				"teacher": "Jonathan Ohayon",
+				"schedule": "Monday4:00 PM - 5:30 PM2P.04ClassWednesday4:00 PM - 5:30 PM2P.04Class"
+			},
+			{
+				"section": "00015",
+				"teacher": "Robin Joseph Gagnon",
+				"schedule": "Monday11:30 AM - 1:00 PM3H.23ClassThursday8:30 AM - 10:00 AM3H.23Class"
+			},
+			{
+				"section": "00016",
+				"teacher": "Sylvia Cox",
+				"schedule": "Monday8:30 AM - 10:00 AM3E.13ClassWednesday8:30 AM - 10:00 AM3E.13Class"
+			},
+			{
+				"section": "00017",
+				"teacher": "Sylvia Cox",
+				"schedule": "Monday10:00 AM - 11:30 AM3E.13ClassWednesday10:00 AM - 11:30 AM3E.13Class"
+			}
+		],
+		"number": "350-101-DW"
+	},
+	{
+		"title": "Developmental Psychology",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Jacob Nuselovici",
+				"schedule": "Monday2:30 PM - 5:30 PM5E.8Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Jacob Nuselovici",
+				"schedule": "Wednesday11:30 AM - 2:30 PM5E.8Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Joelle Dayan",
+				"schedule": "Monday10:00 AM - 11:30 AM5B.7ClassWednesday10:00 AM - 11:30 AM5B.7Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Joelle Dayan",
+				"schedule": "Monday8:30 AM - 10:00 AM5B.7ClassWednesday8:30 AM - 10:00 AM5B.7Class"
+			}
+		],
+		"number": "350-201-DW"
+	},
+	{
+		"title": "Abnormal Psychology",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Evelyne Marcil",
+				"schedule": "Friday8:30 AM - 11:30 AM4H.12Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Rajesh Malik",
+				"schedule": "Tuesday8:30 AM - 10:00 AM3H.23ClassFriday8:30 AM - 10:00 AM3H.23Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Rajesh Malik",
+				"schedule": "Tuesday10:00 AM - 11:30 AM3H.23ClassFriday10:00 AM - 11:30 AM3H.23Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Anastasia P. Arvanitidis",
+				"schedule": "Thursday8:30 AM - 11:30 AM5E.8Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "Anastasia P. Arvanitidis",
+				"schedule": "Friday8:30 AM - 11:30 AM5E.8Class"
+			},
+			{
+				"section": "00006",
+				"teacher": "Anastasia P. Arvanitidis",
+				"schedule": "Monday11:30 AM - 2:30 PM5E.8Class"
+			},
+			{
+				"section": "00007",
+				"teacher": "Robin Joseph Gagnon",
+				"schedule": "Wednesday11:30 AM - 2:30 PM3H.21Class"
+			}
+		],
+		"number": "350-211-DW"
+	},
+	{
+		"title": "Psychology and the Law",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Caroline Chochol",
+				"schedule": "Wednesday11:30 AM - 2:30 PM3H.10Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Caroline Chochol",
+				"schedule": "Friday11:30 AM - 2:30 PM3H.10Class"
+			}
+		],
+		"number": "350-214-DW"
+	},
+	{
+		"title": "Interaction and Communication",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Melanie Doyle",
+				"schedule": "Tuesday11:30 AM - 2:30 PM5E.8Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Melanie Doyle",
+				"schedule": "Thursday11:30 AM - 2:30 PM5E.8Class"
+			}
+		],
+		"number": "350-302-DW"
+	},
+	{
+		"title": "Human Sexual Behaviour",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Anastasia P. Arvanitidis",
+				"schedule": "Tuesday8:30 AM - 11:30 AM5E.8Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Erin Hall",
+				"schedule": "Monday11:30 AM - 2:30 PM3H.10Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Sylvia Cox",
+				"schedule": "Tuesday2:30 PM - 5:30 PM5E.8Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Erin Hall",
+				"schedule": "Thursday8:30 AM - 11:30 AM3H.10Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "Sylvia Cox",
+				"schedule": "Thursday2:30 PM - 5:30 PM5E.8Class"
+			}
+		],
+		"number": "350-306-DW"
+	},
+	{
+		"title": "Cognitive Development",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Joelle Dayan",
+				"schedule": "Wednesday1:00 PM - 2:30 PM3H.23ClassFriday1:00 PM - 2:30 PM3H.23Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Joelle Dayan",
+				"schedule": "Monday2:30 PM - 4:00 PM3H.23ClassWednesday2:30 PM - 4:00 PM3H.23Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Jonathan Ohayon",
+				"schedule": "Tuesday11:30 AM - 2:30 PM3E.13Class"
+			}
+		],
+		"number": "350-313-DW"
+	},
+	{
+		"title": "Psychology in Business",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Madelaine Côté",
+				"schedule": "Wednesday8:30 AM - 11:30 AM3H.10Class"
+			}
+		],
+		"number": "350-318-DW"
+	},
+	{
+		"title": "Applications of Psychology",
+		"sections": [
+			{
+				"title": "Social Psychology",
+				"section": "00001",
+				"teacher": "Pavel Piterkin",
+				"schedule": "Friday11:30 AM - 2:30 PM4E.7Class"
+			},
+			{
+				"title": "Brain and Behavior",
+				"section": "00002",
+				"teacher": "Stephane Gaskin",
+				"schedule": "Friday11:30 AM - 2:30 PM5E.8Class"
+			}
+		],
+		"number": "350-323-DW"
+	},
+	{
+		"title": "Advanced Studies in Psychology",
+		"sections": [
+			{
+				"title": "Thinking and Memory",
+				"section": "00001",
+				"teacher": "Rajesh Malik",
+				"schedule": "Monday8:30 AM - 10:00 AM3H.23ClassWednesday8:30 AM - 10:00 AM3H.23Class"
+			},
+			{
+				"title": "Fundamentals of Learning",
+				"section": "00002",
+				"teacher": "Stephane Gaskin",
+				"schedule": "Wednesday8:30 AM - 11:30 AM5E.8Class"
+			},
+			{
+				"title": "Fundamentals of Learning",
+				"section": "00003",
+				"teacher": "Stephane Gaskin",
+				"schedule": "Monday8:30 AM - 11:30 AM5E.8Class"
+			},
+			{
+				"title": "Thinking and Memory",
+				"section": "00004",
+				"teacher": "Rajesh Malik",
+				"schedule": "Monday10:00 AM - 11:30 AM3H.23ClassWednesday10:00 AM - 11:30 AM3H.23Class"
+			}
+		],
+		"number": "350-401-DW"
+	}
+]

@@ -1,0 +1,33 @@
+[
+	{
+		"title": "Human Biology",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Man-Tze Mabel Chong",
+				"schedule": "Monday10:00 AM - 11:30 AM5A.14LabWednesday10:00 AM - 11:30 AM3E.9Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Richard Calvé",
+				"schedule": "Monday11:30 AM - 1:00 PM5A.14LabThursday10:00 AM - 11:30 AM4H.15Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Richard Calvé",
+				"schedule": "Monday1:00 PM - 2:30 PM5A.14LabThursday10:00 AM - 11:30 AM4H.15Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Annie-Hélène Samson",
+				"schedule": "Monday2:30 PM - 4:00 PM5A.14LabWednesday2:30 PM - 4:00 PM4G.2AClass"
+			},
+			{
+				"section": "00005",
+				"teacher": "Annie-Hélène Samson",
+				"schedule": "Monday4:00 PM - 5:30 PM5A.14LabWednesday2:30 PM - 4:00 PM4G.2AClass"
+			}
+		],
+		"number": "101-921-DW"
+	}
+]

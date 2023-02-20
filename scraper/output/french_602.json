@@ -1,0 +1,728 @@
+[
+	{
+		"title": "Mise à niveau pour Français, langue seconde de la 5e secondaire",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Floriane Augustin",
+				"schedule": "Tuesday8:00 AM - 10:00 AM4P.05ClassFriday8:00 AM - 10:00 AM4P.05Class"
+			},
+			{
+				"section": "00031",
+				"teacher": "Francesca Roy",
+				"schedule": "Tuesday10:00 AM - 12:00 PM4E.18ClassFriday10:00 AM - 12:00 PM4E.18Class"
+			}
+		],
+		"number": "602-008-RE"
+	},
+	{
+		"title": "Mise à niveau pour français, accent sur l'écrit",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Nejla El Solh",
+				"schedule": "Tuesday10:00 AM - 12:00 PM4G.2AClassFriday10:00 AM - 12:00 PM4G.2AClass"
+			},
+			{
+				"section": "00002",
+				"teacher": "Christine Murdock",
+				"schedule": "Tuesday8:00 AM - 10:00 AM5D.1ClassFriday8:00 AM - 10:00 AM5D.1Class"
+			},
+			{
+				"section": "00031",
+				"teacher": "Francesca Roy",
+				"schedule": "Tuesday10:00 AM - 12:00 PM4E.18ClassFriday10:00 AM - 12:00 PM4E.18Class"
+			}
+		],
+		"number": "602-009-DW"
+	},
+	{
+		"title": "Basic French",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Laurence Jeudy",
+				"schedule": "Tuesday10:00 AM - 11:30 AM5A.12ClassFriday10:00 AM - 11:30 AM5A.12Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Djemaa Maazouzi",
+				"schedule": "Wednesday11:30 AM - 1:00 PM3H.6ClassFriday11:30 AM - 1:00 PM3H.6Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "David Vaillant",
+				"schedule": "Tuesday2:30 PM - 4:00 PM7B.13ClassThursday2:30 PM - 4:00 PM7B.13Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Djemaa Maazouzi",
+				"schedule": "Tuesday8:30 AM - 10:00 AM2P.02ClassFriday8:30 AM - 10:00 AM2P.02Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "Isabelle Geoffrion",
+				"schedule": "Monday2:30 PM - 4:00 PM4E.7ClassWednesday2:30 PM - 4:00 PM4E.7Class"
+			},
+			{
+				"section": "00006",
+				"teacher": "Séraphine Askari Chirazi",
+				"schedule": "Tuesday4:00 PM - 5:30 PM3E.10ClassThursday4:00 PM - 5:30 PM3E.10Class"
+			},
+			{
+				"section": "00007",
+				"teacher": "David Vaillant",
+				"schedule": "Tuesday1:00 PM - 2:30 PM7B.13ClassThursday1:00 PM - 2:30 PM7B.13Class"
+			},
+			{
+				"title": "Basic French (INTENSIVE)",
+				"section": "00050",
+				"teacher": "Djemaa Maazouzi",
+				"schedule": "Tuesday, May 30, 2023"
+			}
+		],
+		"number": "602-100-MQ"
+	},
+	{
+		"title": "French Language and Communication",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Elyse Lemieux",
+				"schedule": "Monday10:00 AM - 11:30 AM5A.12ClassWednesday10:00 AM - 11:30 AM5A.12Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Laurent Duval",
+				"schedule": "Monday11:30 AM - 1:00 PM4A.7ClassThursday8:30 AM - 10:00 AM4A.7Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "Paul Langevin",
+				"schedule": "Wednesday1:00 PM - 2:30 PM4H.25ClassFriday1:00 PM - 2:30 PM4H.25Class"
+			},
+			{
+				"section": "00006",
+				"teacher": "Isabelle Geoffrion",
+				"schedule": "Wednesday11:30 AM - 1:00 PM6B.13ClassFriday11:30 AM - 1:00 PM6B.13Class"
+			},
+			{
+				"section": "00007",
+				"teacher": "Isabelle Geoffrion",
+				"schedule": "Tuesday8:30 AM - 10:00 AM3H.15ClassFriday8:30 AM - 10:00 AM3H.15Class"
+			},
+			{
+				"section": "00008",
+				"teacher": "Laure Galipeau",
+				"schedule": "Monday1:00 PM - 2:30 PM3F.37ClassThursday10:00 AM - 11:30 AM3F.37Class"
+			},
+			{
+				"title": "French Language and Communication (INTENSIVE)",
+				"section": "00050",
+				"teacher": "Paul Langevin",
+				"schedule": "Tuesday, May 30, 2023"
+			},
+			{
+				"title": "French Language and Communication (INTENSIVE)",
+				"section": "00051",
+				"teacher": "Véronique Millet",
+				"schedule": "Tuesday, May 30, 2023"
+			}
+		],
+		"number": "602-101-MQ"
+	},
+	{
+		"title": "French Language and Culture",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Jacques Mélançon",
+				"schedule": "Tuesday2:30 PM - 4:00 PM5D.6ClassThursday2:30 PM - 4:00 PM5D.6Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Christine Murdock",
+				"schedule": "Monday4:00 PM - 5:30 PM4H.19ClassWednesday4:00 PM - 5:30 PM4H.19Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Leila Ephrem El Boustani-Safi",
+				"schedule": "Monday1:00 PM - 2:30 PM7B.13ClassThursday10:00 AM - 11:30 AM7B.13Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Jacques Mélançon",
+				"schedule": "Tuesday1:00 PM - 2:30 PM5D.6ClassThursday1:00 PM - 2:30 PM5D.6Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "Elyse Lemieux",
+				"schedule": "Tuesday4:00 PM - 5:30 PM3E.4ClassThursday4:00 PM - 5:30 PM3E.4Class"
+			},
+			{
+				"section": "00006",
+				"teacher": "Paul Langevin",
+				"schedule": "Tuesday11:30 AM - 1:00 PM3B.11ClassThursday11:30 AM - 1:00 PM3B.11Class"
+			},
+			{
+				"section": "00007",
+				"teacher": "Christian Paré",
+				"schedule": "Wednesday11:30 AM - 1:00 PM5A.12ClassFriday11:30 AM - 1:00 PM5A.12Class"
+			},
+			{
+				"section": "00008",
+				"teacher": "Floriane Augustin",
+				"schedule": "Monday8:30 AM - 10:00 AM4P.22ClassWednesday8:30 AM - 10:00 AM4P.22Class"
+			},
+			{
+				"section": "00009",
+				"teacher": "Séraphine Askari Chirazi",
+				"schedule": "Wednesday1:00 PM - 2:30 PM5A.12ClassFriday1:00 PM - 2:30 PM5A.12Class"
+			},
+			{
+				"section": "00011",
+				"teacher": "Christian Paré",
+				"schedule": "Monday2:30 PM - 4:00 PM5D.6ClassWednesday2:30 PM - 4:00 PM5D.1Class"
+			},
+			{
+				"section": "00012",
+				"teacher": "Floriane Augustin",
+				"schedule": "Tuesday10:00 AM - 11:30 AM4P.26ClassFriday10:00 AM - 11:30 AM4P.26Class"
+			},
+			{
+				"section": "00013",
+				"teacher": "Séraphine Askari Chirazi",
+				"schedule": "Monday4:00 PM - 5:30 PM4H.8ClassWednesday4:00 PM - 5:30 PM4H.8Class"
+			},
+			{
+				"section": "00014",
+				"teacher": "Lyane Henrichon",
+				"schedule": "Monday10:00 AM - 11:30 AM3H.21ClassWednesday10:00 AM - 11:30 AM3H.21Class"
+			},
+			{
+				"section": "00015",
+				"teacher": "Leila Ephrem El Boustani-Safi",
+				"schedule": "Tuesday4:00 PM - 5:30 PM4P.10ClassThursday4:00 PM - 5:30 PM4P.10Class"
+			},
+			{
+				"section": "00016",
+				"teacher": "Paul Langevin",
+				"schedule": "Tuesday2:30 PM - 4:00 PM4P.22ClassThursday2:30 PM - 4:00 PM4P.22Class"
+			},
+			{
+				"title": "French Language and Culture (INTENSIVE)",
+				"section": "00050",
+				"teacher": "Leila Ephrem El Boustani-Safi",
+				"schedule": "Tuesday, May 30, 2023"
+			},
+			{
+				"title": "French Language and Culture (INTENSIVE)",
+				"section": "00051",
+				"teacher": "Floriane Augustin",
+				"schedule": "Tuesday, May 30, 2023"
+			}
+		],
+		"number": "602-102-MQ"
+	},
+	{
+		"title": "French Culture and Literature",
+		"sections": [
+			{
+				"title": "Introduction à la littérature",
+				"section": "00001",
+				"teacher": "Elisa Romano",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Littérature contemporaine",
+				"section": "00002",
+				"teacher": "Marie-Josée Roy",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction à la littérature contemporaine",
+				"section": "00004",
+				"teacher": "Leila Ephrem El Boustani-Safi",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Littérature contemporaine",
+				"section": "00005",
+				"teacher": "Marie-Josée Roy",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction à la littérature",
+				"section": "00006",
+				"teacher": "Laurent Duval",
+				"schedule": "Monday1:00 PM - 2:30 PM6B.13ClassThursday10:00 AM - 11:30 AM6B.13Class"
+			},
+			{
+				"title": "Introduction à la littérature",
+				"section": "00007",
+				"teacher": "Laurent Duval",
+				"schedule": "Tuesday11:30 AM - 1:00 PM4F.6ClassThursday11:30 AM - 1:00 PM4F.6Class"
+			},
+			{
+				"title": "Esthétiques du scandale",
+				"section": "00008",
+				"teacher": "Lyane Henrichon",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction à la littérature",
+				"section": "00009",
+				"teacher": "Nadia Rezzag Lebza",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction à la littérature",
+				"section": "00010",
+				"teacher": "Séraphine Askari Chirazi",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction à la littérature",
+				"section": "00011",
+				"teacher": "Laurence Jeudy",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction à la littérature",
+				"section": "00012",
+				"teacher": "Carmen-Silvia Cristea",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction à la littérature",
+				"section": "00013",
+				"teacher": "Adeline Caute",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction à la littérature",
+				"section": "00014",
+				"teacher": "Carmen-Silvia Cristea",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction à la littérature",
+				"section": "00015",
+				"teacher": "Elisa Romano",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction à la littérature contemporaine (INTENSIVE)",
+				"section": "00050",
+				"teacher": "Laurence Jeudy",
+				"schedule": "Tuesday, May 30, 2023"
+			}
+		],
+		"number": "602-103-MQ"
+	},
+	{
+		"title": "Comprendre et mieux s'exprimer",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Laure Galipeau",
+				"schedule": "Monday8:30 AM - 10:00 AM3F.37ClassWednesday8:30 AM - 10:00 AM3F.37Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Laure Galipeau",
+				"schedule": "Tuesday11:30 AM - 1:00 PM3F.37ClassThursday11:30 AM - 1:00 PM3F.37Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Laure Galipeau",
+				"schedule": "Monday2:30 PM - 4:00 PM3F.7ClassWednesday2:30 PM - 4:00 PM3F.7Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "David Vaillant",
+				"schedule": "Monday1:00 PM - 2:30 PM4H.21ClassThursday10:00 AM - 11:30 AM4H.21Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "David Vaillant",
+				"schedule": "Tuesday10:00 AM - 11:30 AM4P.22ClassFriday10:00 AM - 11:30 AM4P.22Class"
+			},
+			{
+				"title": "Comprendre et mieux s'exprimer (INTENSIVE)",
+				"section": "00050",
+				"teacher": "Christian Paré",
+				"schedule": "Tuesday, May 30, 2023"
+			},
+			{
+				"title": "Comprendre et mieux s'exprimer (INTENSIVE)",
+				"section": "00051",
+				"teacher": "Carmen-Silvia Cristea",
+				"schedule": "Tuesday, May 30, 2023"
+			}
+		],
+		"number": "602-BXB-DW"
+	},
+	{
+		"title": "Visions actuelles",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Véronique Millet",
+				"schedule": "Tuesday11:30 AM - 1:00 PM4P.25ClassThursday11:30 AM - 1:00 PM4P.25Class"
+			},
+			{
+				"section": "00040",
+				"teacher": "Adeline Caute",
+				"schedule": "Monday1:00 PM - 2:30 PM3B.11ClassThursday10:00 AM - 11:30 AM3B.11Class"
+			},
+			{
+				"section": "00041",
+				"teacher": "Isabelle Geoffrion",
+				"schedule": "Monday8:30 AM - 10:00 AM5D.6ClassWednesday8:30 AM - 10:00 AM5D.6Class"
+			},
+			{
+				"title": "Visions actuelles (INTENSIVE)",
+				"section": "12001",
+				"teacher": "Lysanne Audy",
+				"schedule": "Tuesday, May 30, 2023"
+			}
+		],
+		"number": "602-BXD-DW"
+	},
+	{
+		"title": "Aspects de la science et des techniques",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Catherine Soleil",
+				"schedule": "Tuesday10:00 AM - 11:30 AM4H.15ClassFriday10:00 AM - 11:30 AM4H.15Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Lysanne Audy",
+				"schedule": "Wednesday1:00 PM - 2:30 PM3H.6ClassFriday1:00 PM - 2:30 PM3H.6Class"
+			},
+			{
+				"section": "00040",
+				"teacher": "Adeline Caute",
+				"schedule": "Monday1:00 PM - 2:30 PM3B.11ClassThursday10:00 AM - 11:30 AM3B.11Class"
+			},
+			{
+				"section": "00041",
+				"teacher": "Isabelle Geoffrion",
+				"schedule": "Monday8:30 AM - 10:00 AM5D.6ClassWednesday8:30 AM - 10:00 AM5D.6Class"
+			},
+			{
+				"title": "Aspects de la science et des techniques (INTENSIVE)",
+				"section": "12001",
+				"teacher": "Lysanne Audy",
+				"schedule": "Tuesday, May 30, 2023"
+			}
+		],
+		"number": "602-BXF-DW"
+	},
+	{
+		"title": "Actualités des sciences humaines",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Lysanne Audy",
+				"schedule": "Monday2:30 PM - 4:00 PM3F.45ClassWednesday2:30 PM - 4:00 PM3F.45Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Chantale Giguère",
+				"schedule": "Tuesday1:00 PM - 2:30 PM3H.23ClassThursday1:00 PM - 2:30 PM3H.23Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Nadia Rezzag Lebza",
+				"schedule": "Monday11:30 AM - 1:00 PM3E.9ClassThursday8:30 AM - 10:00 AM3E.9Class"
+			},
+			{
+				"section": "00040",
+				"teacher": "Adeline Caute",
+				"schedule": "Monday1:00 PM - 2:30 PM3B.11ClassThursday10:00 AM - 11:30 AM3B.11Class"
+			},
+			{
+				"section": "00041",
+				"teacher": "Isabelle Geoffrion",
+				"schedule": "Monday8:30 AM - 10:00 AM5D.6ClassWednesday8:30 AM - 10:00 AM5D.6Class"
+			},
+			{
+				"title": "Actualités des sciences humaines (INTENSIVE)",
+				"section": "12001",
+				"teacher": "Lysanne Audy",
+				"schedule": "Friday, May 12, 2023"
+			}
+		],
+		"number": "602-BXG-DW"
+	},
+	{
+		"title": "Regards sur la science et les techniques",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Jacques Mélançon",
+				"schedule": "Tuesday10:00 AM - 11:30 AM4H.8ClassFriday10:00 AM - 11:30 AM4H.8Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Jacques Mélançon",
+				"schedule": "Tuesday4:00 PM - 5:30 PM4F.4ClassThursday4:00 PM - 5:30 PM4F.4Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Catherine Soleil",
+				"schedule": "Monday8:30 AM - 10:00 AM4D.3ClassWednesday8:30 AM - 10:00 AM4D.3Class"
+			},
+			{
+				"section": "00040",
+				"teacher": "Sonya Beaulne",
+				"schedule": "Tuesday2:30 PM - 4:00 PM4H.15ClassThursday2:30 PM - 4:00 PM4H.15Class"
+			},
+			{
+				"section": "00041",
+				"teacher": "Elisa Romano",
+				"schedule": "Monday10:00 AM - 11:30 AM7A.11ClassWednesday10:00 AM - 11:30 AM7A.13Class"
+			},
+			{
+				"title": "Regards sur la science et les techniques (INTENSIVE)",
+				"section": "00050",
+				"teacher": "Elisa Romano",
+				"schedule": "Tuesday, May 30, 2023"
+			}
+		],
+		"number": "602-BXJ-DW"
+	},
+	{
+		"title": "Regards sur les sciences humaines",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Elyse Lemieux",
+				"schedule": "Monday2:30 PM - 4:00 PM4H.21ClassWednesday2:30 PM - 4:00 PM4H.21Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Elyse Lemieux",
+				"schedule": "Tuesday1:00 PM - 2:30 PM5A.12ClassThursday1:00 PM - 2:30 PM5A.12Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Sonya Beaulne",
+				"schedule": "Tuesday10:00 AM - 11:30 AM4H.21ClassFriday10:00 AM - 11:30 AM4H.21Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Sonya Beaulne",
+				"schedule": "Tuesday1:00 PM - 2:30 PM7A.13ClassThursday1:00 PM - 2:30 PM7A.13Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "Catherine Soleil",
+				"schedule": "Wednesday11:30 AM - 1:00 PM4A.7ClassFriday11:30 AM - 1:00 PM4A.7Class"
+			},
+			{
+				"section": "00006",
+				"teacher": "Catherine Soleil",
+				"schedule": "Tuesday11:30 AM - 1:00 PM4H.25ClassThursday11:30 AM - 1:00 PM4H.25Class"
+			},
+			{
+				"section": "00007",
+				"teacher": "Catherine Soleil",
+				"schedule": "Monday11:30 AM - 1:00 PM4P.25ClassThursday8:30 AM - 10:00 AM4P.25Class"
+			},
+			{
+				"section": "00040",
+				"teacher": "Sonya Beaulne",
+				"schedule": "Tuesday2:30 PM - 4:00 PM4H.15ClassThursday2:30 PM - 4:00 PM4H.15Class"
+			},
+			{
+				"section": "00041",
+				"teacher": "Elisa Romano",
+				"schedule": "Monday10:00 AM - 11:30 AM7A.11ClassWednesday10:00 AM - 11:30 AM7A.13Class"
+			},
+			{
+				"title": "Regards sur les sciences humaines (INTENSIVE)",
+				"section": "00050",
+				"teacher": "Elisa Romano",
+				"schedule": "Tuesday, May 30, 2023"
+			}
+		],
+		"number": "602-BXK-DW"
+	},
+	{
+		"title": "Découvertes et création",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Ghayas Hachem",
+				"schedule": "Tuesday11:30 AM - 1:00 PM4D.1ClassThursday11:30 AM - 1:00 PM4D.1Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Ghayas Hachem",
+				"schedule": "Wednesday1:00 PM - 2:30 PM7B.13ClassFriday1:00 PM - 2:30 PM7B.13Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Leila Ephrem El Boustani-Safi",
+				"schedule": "Tuesday2:30 PM - 4:00 PM4P.10ClassThursday2:30 PM - 4:00 PM4P.10Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Anne-Laure Teichet",
+				"schedule": "Monday1:00 PM - 2:30 PM5D.6ClassThursday10:00 AM - 11:30 AM5D.6Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "Anne-Laure Teichet",
+				"schedule": "Monday8:30 AM - 10:00 AM4A.7ClassWednesday8:30 AM - 10:00 AM4A.7Class"
+			},
+			{
+				"title": "Relation d'aide à l'apprentissage",
+				"section": "00040",
+				"teacher": "Véronique Millet",
+				"schedule": "Tuesday1:00 PM - 2:30 PM4P.22ClassThursday1:00 PM - 2:30 PM4P.22Class"
+			},
+			{
+				"title": "Relation d'aide à l'apprentissage",
+				"section": "00041",
+				"teacher": "Véronique Millet",
+				"schedule": "Wednesday11:30 AM - 1:00 PM4P.10ClassFriday11:30 AM - 1:00 PM4P.10Class"
+			}
+		],
+		"number": "602-BXN-DW"
+	},
+	{
+		"title": "Les sciences humaines en français",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Ghayas Hachem",
+				"schedule": "Tuesday1:00 PM - 2:30 PM3H.15ClassThursday1:00 PM - 2:30 PM3H.15Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Ghayas Hachem",
+				"schedule": "Tuesday8:30 AM - 10:00 AM7B.13ClassFriday8:30 AM - 10:00 AM7B.13Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Anne-Laure Teichet",
+				"schedule": "Monday10:00 AM - 11:30 AM4A.7ClassWednesday10:00 AM - 11:30 AM4A.7Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Anne-Laure Teichet",
+				"schedule": "Monday2:30 PM - 4:00 PM4D.3ClassWednesday2:30 PM - 4:00 PM4D.3Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "Anne-Laure Teichet",
+				"schedule": "Tuesday8:30 AM - 10:00 AM4H.8ClassFriday8:30 AM - 10:00 AM4H.8Class"
+			},
+			{
+				"title": "Relation d'aide à l'apprentissage",
+				"section": "00040",
+				"teacher": "Véronique Millet",
+				"schedule": "Tuesday1:00 PM - 2:30 PM4P.22ClassThursday1:00 PM - 2:30 PM4P.22Class"
+			},
+			{
+				"title": "Relation d'aide à l'apprentissage",
+				"section": "00041",
+				"teacher": "Véronique Millet",
+				"schedule": "Wednesday11:30 AM - 1:00 PM4P.10ClassFriday11:30 AM - 1:00 PM4P.10Class"
+			}
+		],
+		"number": "602-BXU-DW"
+	},
+	{
+		"title": "En marge des mots",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Adeline Caute",
+				"schedule": "Tuesday11:30 AM - 1:00 PM4H.8ClassThursday11:30 AM - 1:00 PM4H.8Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Sonya Beaulne",
+				"schedule": "Monday1:00 PM - 2:30 PM4H.8ClassThursday10:00 AM - 11:30 AM4H.8Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Adeline Caute",
+				"schedule": "Monday4:00 PM - 5:30 PM4A.2ClassWednesday4:00 PM - 5:30 PM4A.2Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "Nadia Rezzag Lebza",
+				"schedule": "Monday8:30 AM - 10:00 AM3E.10ClassWednesday8:30 AM - 10:00 AM3E.10Class"
+			},
+			{
+				"section": "00040",
+				"teacher": "Sonya Beaulne",
+				"schedule": "Tuesday2:30 PM - 4:00 PM4H.15ClassThursday2:30 PM - 4:00 PM4H.15Class"
+			},
+			{
+				"section": "00041",
+				"teacher": "Elisa Romano",
+				"schedule": "Monday10:00 AM - 11:30 AM7A.11ClassWednesday10:00 AM - 11:30 AM7A.13Class"
+			},
+			{
+				"title": "En marge des mots (INTENSIVE)",
+				"section": "00050",
+				"teacher": "Elisa Romano",
+				"schedule": "Tuesday, May 30, 2023"
+			}
+		],
+		"number": "602-BXY-DW"
+	},
+	{
+		"title": "Le français des sciences et des techniques",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Marie-Josée Roy",
+				"schedule": "Monday8:30 AM - 10:00 AM5A.12ClassWednesday8:30 AM - 10:00 AM5A.12Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Marie-Josée Roy",
+				"schedule": "Tuesday10:00 AM - 11:30 AM5D.1ClassFriday10:00 AM - 11:30 AM5D.1Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Laurence Jeudy",
+				"schedule": "Monday4:00 PM - 5:30 PM4F.6ClassWednesday4:00 PM - 5:30 PM4F.6Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Djemaa Maazouzi",
+				"schedule": "Monday8:30 AM - 10:00 AM3F.45ClassWednesday8:30 AM - 10:00 AM3F.45Class"
+			},
+			{
+				"title": "Relation d'aide à l'apprentissage",
+				"section": "00040",
+				"teacher": "Véronique Millet",
+				"schedule": "Tuesday1:00 PM - 2:30 PM4P.22ClassThursday1:00 PM - 2:30 PM4P.22Class"
+			},
+			{
+				"title": "Relation d'aide à l'apprentissage",
+				"section": "00041",
+				"teacher": "Véronique Millet",
+				"schedule": "Wednesday11:30 AM - 1:00 PM4P.10ClassFriday11:30 AM - 1:00 PM4P.10Class"
+			},
+			{
+				"title": "Le français des sciences et des techniques (INTENSIVE)",
+				"section": "00070",
+				"teacher": "TBA-602-E",
+				"schedule": "WednesdayJan 25, 2023Jan 25, 20236:00 PM - 8:30 PM3H.17Important MeetingWednesdayMar 01, 2023Mar 01, 20236:00 PM - 8:30 PM3H.17Important MeetingWednesdayApr 05, 2023Apr 05, 20236:00 PM - 8:30 PM3H.17Important MeetingMondayMay 29, 2023May 29, 20239:00 AM - 12:00 PM4H.6IntensiveMondayMay 29, 2023May 29, 20231:00 PM - 3:30 PM4H.6IntensiveTuesdayMay 30, 2023May 30, 20239:00 AM - 12:00 PM4H.6IntensiveTuesdayMay 30, 2023May 30, 20231:00 PM - 3:30 PM4H.6IntensiveWednesdayMay 31, 2023May 31, 20239:00 AM - 12:00 PM4H.6IntensiveWednesdayMay 31, 2023May 31, 20231:00 PM - 3:30 PM4H.6IntensiveThursdayJun 01, 2023Jun 01, 20239:00 AM - 12:00 PM4H.6IntensiveThursdayJun 01, 2023Jun 01, 20231:00 PM - 3:30 PM4H.6IntensiveFridayJun 02, 2023Jun 02, 20239:00 AM - 12:00 PM4H.6IntensiveFridayJun 02, 2023Jun 02, 20231:00 PM - 3:30 PM4H.6IntensiveMondayJun 05, 2023Jun 05, 20239:00 AM - 12:00 PM4H.6IntensiveMondayJun 05, 2023Jun 05, 20231:00 PM - 3:30 PM4H.6IntensiveTuesdayJun 06, 2023Jun 06, 20239:00 AM - 12:00 PM4H.6IntensiveTuesdayJun 06, 2023Jun 06, 20231:00 PM - 3:30 PM4H.6Intensive"
+			}
+		],
+		"number": "602-BXZ-DW"
+	}
+]

@@ -1,0 +1,188 @@
+[
+	{
+		"title": "Introduction to Economics",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Carlo Catino",
+				"schedule": "Monday10:00 AM - 11:30 AM4D.11ClassWednesday10:00 AM - 11:30 AM4D.11Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Carlo Catino",
+				"schedule": "Monday4:00 PM - 5:30 PM4D.11ClassWednesday4:00 PM - 5:30 PM4D.11Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Jean Duclos Alegue Feugo",
+				"schedule": "Monday2:30 PM - 4:00 PM4P.22ClassWednesday2:30 PM - 4:00 PM4P.22Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Jean Duclos Alegue Feugo",
+				"schedule": "Tuesday1:00 PM - 2:30 PM4P.24ClassThursday1:00 PM - 2:30 PM4P.24Class"
+			},
+			{
+				"section": "00005",
+				"teacher": "Menouar Boulahfa",
+				"schedule": "Tuesday11:30 AM - 1:00 PM4H.19ClassThursday11:30 AM - 1:00 PM4H.19Class"
+			},
+			{
+				"section": "00006",
+				"teacher": "Roger Tabry",
+				"schedule": "Monday2:30 PM - 4:00 PM3H.13ClassWednesday2:30 PM - 4:00 PM3H.13Class"
+			},
+			{
+				"section": "00007",
+				"teacher": "Lisa Di Marzo",
+				"schedule": "Tuesday10:00 AM - 11:30 AM3H.13ClassFriday10:00 AM - 11:30 AM3H.13Class"
+			},
+			{
+				"section": "00008",
+				"teacher": "Menouar Boulahfa",
+				"schedule": "Tuesday10:00 AM - 11:30 AM4A.4ClassFriday10:00 AM - 11:30 AM5D.2Class"
+			},
+			{
+				"section": "00009",
+				"teacher": "James Roberts",
+				"schedule": "Monday2:30 PM - 4:00 PM4D.11ClassWednesday2:30 PM - 4:00 PM4D.11Class"
+			},
+			{
+				"section": "00010",
+				"teacher": "Islam Mohammad",
+				"schedule": "Monday11:30 AM - 1:00 PM4H.23ClassThursday8:30 AM - 10:00 AM4H.23Class"
+			},
+			{
+				"section": "00011",
+				"teacher": "James Roberts",
+				"schedule": "Wednesday11:30 AM - 1:00 PM4D.11ClassFriday11:30 AM - 1:00 PM4D.11Class"
+			},
+			{
+				"section": "00012",
+				"teacher": "Michel Mayer",
+				"schedule": "Monday10:00 AM - 11:30 AM3H.13ClassWednesday10:00 AM - 11:30 AM3H.13Class"
+			},
+			{
+				"section": "00013",
+				"teacher": "Islam Mohammad",
+				"schedule": "Tuesday11:30 AM - 1:00 PM7B.13ClassThursday11:30 AM - 1:00 PM7B.13Class"
+			},
+			{
+				"section": "00014",
+				"teacher": "James Roberts",
+				"schedule": "Tuesday1:00 PM - 2:30 PM4D.11ClassThursday1:00 PM - 2:30 PM4D.11Class"
+			},
+			{
+				"section": "00015",
+				"teacher": "Michel Mayer",
+				"schedule": "Monday1:00 PM - 2:30 PM3H.13ClassThursday10:00 AM - 11:30 AM3H.13Class"
+			},
+			{
+				"section": "00016",
+				"teacher": "Philippe Ghayad",
+				"schedule": "Tuesday2:30 PM - 4:00 PM4D.11ClassThursday2:30 PM - 4:00 PM4D.11Class"
+			},
+			{
+				"section": "00017",
+				"teacher": "Philippe Ghayad",
+				"schedule": "Monday1:00 PM - 2:30 PM4D.11ClassThursday10:00 AM - 11:30 AM4D.11Class"
+			},
+			{
+				"section": "00018",
+				"teacher": "Michel Mayer",
+				"schedule": "Monday8:30 AM - 10:00 AM3H.13ClassWednesday8:30 AM - 10:00 AM3H.13Class"
+			},
+			{
+				"section": "00019",
+				"teacher": "Charles-Albert Ramsay",
+				"schedule": "Tuesday8:30 AM - 10:00 AM3H.13ClassFriday8:30 AM - 10:00 AM3H.13Class"
+			},
+			{
+				"section": "00020",
+				"teacher": "Carlo Catino",
+				"schedule": "Wednesday1:00 PM - 2:30 PM4D.11ClassFriday1:00 PM - 2:30 PM4D.11Class"
+			},
+			{
+				"section": "00021",
+				"teacher": "Lisa Di Marzo",
+				"schedule": "Monday11:30 AM - 1:00 PM3H.13ClassThursday8:30 AM - 10:00 AM3H.13Class"
+			},
+			{
+				"section": "00022",
+				"teacher": "Lisa Di Marzo",
+				"schedule": "Tuesday1:00 PM - 2:30 PM4F.2ClassThursday1:00 PM - 2:30 PM4F.2Class"
+			},
+			{
+				"section": "00023",
+				"teacher": "Lisa Di Marzo",
+				"schedule": "Tuesday4:00 PM - 5:30 PM5A.2ClassThursday4:00 PM - 5:30 PM5A.2Class"
+			}
+		],
+		"number": "383-101-DW"
+	},
+	{
+		"title": "Microeconomics",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Sacha Des Rosiers",
+				"schedule": "Tuesday2:30 PM - 4:00 PM3H.15ClassThursday2:30 PM - 4:00 PM3H.15Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Sacha Des Rosiers",
+				"schedule": "Monday10:00 AM - 11:30 AM4P.26ClassWednesday10:00 AM - 11:30 AM4P.26Class"
+			},
+			{
+				"section": "00003",
+				"teacher": "Ahmad Banki",
+				"schedule": "Monday8:30 AM - 10:00 AM4D.11ClassWednesday8:30 AM - 10:00 AM4D.11Class"
+			},
+			{
+				"section": "00004",
+				"teacher": "Menouar Boulahfa",
+				"schedule": "Wednesday11:30 AM - 1:00 PM4H.8ClassFriday11:30 AM - 1:00 PM4H.8Class"
+			}
+		],
+		"number": "383-201-DW"
+	},
+	{
+		"title": "Economic Analysis",
+		"sections": [
+			{
+				"title": "The Economics of Personal Finance",
+				"section": "00001",
+				"teacher": "Carlo Catino",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		],
+		"number": "383-218-DW"
+	},
+	{
+		"title": "Macroeconomics",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Michel Mayer",
+				"schedule": "Monday2:30 PM - 4:00 PM3H.15ClassWednesday2:30 PM - 4:00 PM3H.15Class"
+			},
+			{
+				"section": "00002",
+				"teacher": "Philippe Ghayad",
+				"schedule": "Tuesday4:00 PM - 5:30 PM4D.11ClassThursday4:00 PM - 5:30 PM4D.11Class"
+			}
+		],
+		"number": "383-302-DW"
+	},
+	{
+		"title": "International Economics",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "James Roberts",
+				"schedule": "Tuesday11:30 AM - 1:00 PM4D.11ClassThursday11:30 AM - 1:00 PM4D.11Class"
+			}
+		],
+		"number": "383-330-DW"
+	}
+]

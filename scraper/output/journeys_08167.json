@@ -1,0 +1,93 @@
+[
+	{
+		"title": "World Views",
+		"sections": [
+			{
+				"title": "Justice 2 (Journeys)",
+				"section": "00012",
+				"teacher": "Anjali Choksi",
+				"schedule": "Tuesday2:30 PM - 4:00 PM4E.18ClassThursday2:30 PM - 4:00 PM4E.18Class"
+			}
+		],
+		"number": "345-102-MQ"
+	},
+	{
+		"title": "Contemporary Issues Set 2",
+		"sections": [
+			{
+				"title": "Learning Perspectives 2",
+				"section": "00001",
+				"teacher": "Amanda Lickers, Jocelyn Parr, Morgan Phillips",
+				"schedule": "Wednesday1:00 PM - 2:30 PM4E.18ClassFriday1:00 PM - 2:30 PM4E.18Class"
+			}
+		],
+		"number": "365-BXP-DW"
+	},
+	{
+		"title": "Mise à niveau pour Français, langue seconde de la 5e secondaire",
+		"sections": [
+			{
+				"section": "00031",
+				"teacher": "Francesca Roy",
+				"schedule": "Tuesday10:00 AM - 12:00 PM4E.18ClassFriday10:00 AM - 12:00 PM4E.18Class"
+			}
+		],
+		"number": "602-008-RE"
+	},
+	{
+		"title": "Mise à niveau pour français, accent sur l'écrit",
+		"sections": [
+			{
+				"section": "00031",
+				"teacher": "Francesca Roy",
+				"schedule": "Tuesday10:00 AM - 12:00 PM4E.18ClassFriday10:00 AM - 12:00 PM4E.18Class"
+			}
+		],
+		"number": "602-009-DW"
+	},
+	{
+		"title": "Pratique du français langue seconde 3",
+		"sections": [
+			{
+				"section": "00031",
+				"teacher": "Francesca Roy",
+				"schedule": "Tuesday10:00 AM - 12:00 PM4E.18ClassFriday10:00 AM - 12:00 PM4E.18Class"
+			}
+		],
+		"number": "602-03B-DW"
+	},
+	{
+		"title": "Pratique du français langue seconde 4",
+		"sections": [
+			{
+				"section": "00031",
+				"teacher": "Francesca Roy",
+				"schedule": "Tuesday10:00 AM - 12:00 PM4E.18ClassFriday10:00 AM - 12:00 PM4E.18Class"
+			}
+		],
+		"number": "602-04B-DW"
+	},
+	{
+		"title": "Pratique du français langue seconde 1 et 2",
+		"sections": [
+			{
+				"section": "00031",
+				"teacher": "Francesca Roy",
+				"schedule": "Tuesday10:00 AM - 12:00 PM4E.18ClassFriday10:00 AM - 12:00 PM4E.18Class"
+			}
+		],
+		"number": "602-FRA-DW"
+	},
+	{
+		"title": "Literary Genres",
+		"sections": [
+			{
+				"title": "Our Stories, Our Voices",
+				"section": "00010",
+				"teacher": "Lorne Roberts",
+				"schedule": "Monday10:00 AM - 12:00 PM4E.18ClassWednesday10:00 AM - 12:00 PM4E.18Class"
+			}
+		],
+		"number": "603-102-MQ"
+	}
+]

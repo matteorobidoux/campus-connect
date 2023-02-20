@@ -1,0 +1,354 @@
+[
+	{
+		"title": "Creative Process",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Joe Becker",
+				"schedule": "Tuesday11:30 AM - 2:30 PM3B.23Lab"
+			}
+		],
+		"number": "510-296-DW"
+	},
+	{
+		"title": "Photo Studio II",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Martin Segal, Patrizia Castiglione",
+				"schedule": "Monday8:00 AM - 10:00 AM1G.14ClassMonday8:00 AM - 10:00 AM4A.14ClassMonday10:30 AM - 2:30 PM1G.14LabMonday10:30 AM - 2:30 PM1G.9Lab"
+			}
+		],
+		"number": "570-204-DW"
+	},
+	{
+		"title": "Camera and Motion",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Kate Hutchinson",
+				"schedule": "Wednesday9:00 AM - 1:00 PM1G.18-5Lab"
+			}
+		],
+		"number": "570-215-DW"
+	},
+	{
+		"title": "Digital Lab II",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Claudio Calligaris",
+				"schedule": "Tuesday3:00 PM - 6:00 PM1G.18-5ClassFriday3:00 PM - 6:00 PM1G.18-5Lab"
+			}
+		],
+		"number": "570-225-DW"
+	},
+	{
+		"title": "Commercial Photographic Styles",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Peter Berra",
+				"schedule": "Thursday11:30 AM - 2:30 PM3H.10Class"
+			}
+		],
+		"number": "570-364-DW"
+	},
+	{
+		"title": "Creative Process",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Joe Becker",
+				"schedule": "Friday1:00 PM - 4:00 PM3B.23Lab"
+			}
+		],
+		"number": "510-296-DW"
+	},
+	{
+		"title": "Photo Studio II",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Martin Segal, Patrizia Castiglione",
+				"schedule": "Monday8:00 AM - 10:00 AM1G.14ClassMonday8:00 AM - 10:00 AM4A.14ClassWednesday9:00 AM - 1:00 PM1G.14LabWednesday9:00 AM - 1:00 PM1G.9Lab"
+			}
+		],
+		"number": "570-204-DW"
+	},
+	{
+		"title": "Camera and Motion",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Kate Hutchinson",
+				"schedule": "Tuesday11:00 AM - 3:00 PM1G.18-5Lab"
+			}
+		],
+		"number": "570-215-DW"
+	},
+	{
+		"title": "Digital Lab II",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Pierre Arsenault",
+				"schedule": "Monday12:00 PM - 3:00 PM1G.18-5ClassThursday8:00 AM - 11:00 AM1G.18-5Lab"
+			}
+		],
+		"number": "570-225-DW"
+	},
+	{
+		"title": "Commercial Photographic Styles",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Peter Berra",
+				"schedule": "Thursday11:30 AM - 2:30 PM3H.10Class"
+			}
+		],
+		"number": "570-364-DW"
+	},
+	{
+		"title": "Photo Studio IV",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Laurel Breidon",
+				"schedule": "Tuesday2:00 PM - 4:00 PM1G.14ClassTuesday2:00 PM - 4:00 PM4H.23ClassWednesday2:00 PM - 6:00 PM1G.14LabWednesday2:00 PM - 6:00 PM1G.9Lab"
+			}
+		],
+		"number": "570-405-DW"
+	},
+	{
+		"title": "Innovations in Image Making",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Peter Berra",
+				"schedule": "Friday1:00 PM - 3:00 PM1G.18-5LabFriday3:00 PM - 5:00 PM3F.45Lab"
+			}
+		],
+		"number": "570-415-DW"
+	},
+	{
+		"title": "Digital Lab IV",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Claudio Calligaris",
+				"schedule": "Monday3:00 PM - 6:00 PM1G.18-5ClassFriday8:00 AM - 11:00 AM1G.18-5Lab"
+			}
+		],
+		"number": "570-424-DW"
+	},
+	{
+		"title": "Photo Location II",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Pierre Arsenault",
+				"schedule": "Monday8:00 AM - 9:00 AM1G.14ClassMonday8:00 AM - 9:00 AM3E.6ClassMonday9:00 AM - 12:00 PM1G.14LabMonday9:00 AM - 12:00 PM4G.15Lab"
+			}
+		],
+		"number": "570-454-DW"
+	},
+	{
+		"title": "Concepts in Commercial Photography",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Nelly Dahan",
+				"schedule": "Tuesday8:30 AM - 11:30 AM1G.9LabTuesday8:30 AM - 11:30 AM4G.15Lab"
+			}
+		],
+		"number": "570-464-DW"
+	},
+	{
+		"title": "Photo Studio IV",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Laurel Breidon",
+				"schedule": "Tuesday2:00 PM - 4:00 PM1G.14ClassTuesday2:00 PM - 4:00 PM4H.23ClassThursday12:00 PM - 4:00 PM1G.14LabThursday12:00 PM - 4:00 PM1G.9Lab"
+			}
+		],
+		"number": "570-405-DW"
+	},
+	{
+		"title": "Innovations in Image Making",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Peter Berra",
+				"schedule": "Friday1:00 PM - 3:00 PM1G.18-5LabFriday3:00 PM - 5:00 PM3F.45Lab"
+			}
+		],
+		"number": "570-415-DW"
+	},
+	{
+		"title": "Digital Lab IV",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Claudio Calligaris",
+				"schedule": "Monday3:00 PM - 6:00 PM1G.18-5ClassFriday8:00 AM - 11:00 AM1G.18-5Lab"
+			}
+		],
+		"number": "570-424-DW"
+	},
+	{
+		"title": "Photo Location II",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Pierre Arsenault",
+				"schedule": "Monday8:00 AM - 9:00 AM1G.14ClassMonday8:00 AM - 9:00 AM3E.6ClassMonday9:00 AM - 12:00 PM1G.14LabMonday9:00 AM - 12:00 PM4G.15Lab"
+			}
+		],
+		"number": "570-454-DW"
+	},
+	{
+		"title": "Concepts in Commercial Photography",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Nelly Dahan",
+				"schedule": "Tuesday8:30 AM - 11:30 AM1G.9LabTuesday8:30 AM - 11:30 AM4G.15Lab"
+			}
+		],
+		"number": "570-464-DW"
+	},
+	{
+		"title": "New Venture Business Strategies",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Helen Stavaris",
+				"schedule": "Tuesday11:30 AM - 2:30 PM3F.45Class"
+			}
+		],
+		"number": "410-695-DW"
+	},
+	{
+		"title": "Photo Studio VI",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Valerie Simmons",
+				"schedule": "Thursday8:00 AM - 9:00 AM1G.14LabThursday8:00 AM - 9:00 AM1G.9LabThursday8:00 AM - 9:00 AM3E.6LabThursday9:00 AM - 12:00 PM1G.14LabThursday9:00 AM - 12:00 PM1G.9Lab"
+			}
+		],
+		"number": "570-604-DW"
+	},
+	{
+		"title": "Digital Lab VI",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Kate Hutchinson",
+				"schedule": "Monday12:30 PM - 5:30 PM1G.18-1Class"
+			}
+		],
+		"number": "570-625-DW"
+	},
+	{
+		"title": "Promotion Design II",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Patrizia Castiglione, Valerie Simmons",
+				"schedule": "Monday8:30 AM - 11:30 AM1G.18-1ClassMonday8:30 AM - 11:30 AM3H.10ClassThursday3:00 PM - 6:00 PM1G.18-1Lab"
+			}
+		],
+		"number": "570-664-DW"
+	},
+	{
+		"title": "Photo Production II",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Martin Segal, Nelly Dahan",
+				"schedule": "Tuesday3:00 PM - 6:00 PM1G.14LabTuesday3:00 PM - 6:00 PM1G.9LabFriday12:00 PM - 1:00 PM4A.2Class"
+			}
+		],
+		"number": "570-684-DW"
+	},
+	{
+		"title": "Production Printing II",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Peter Berra",
+				"schedule": "Wednesday2:30 PM - 5:30 PM1G.18-1Lab"
+			}
+		],
+		"number": "570-694-DW"
+	},
+	{
+		"title": "New Venture Business Strategies",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Helen Stavaris",
+				"schedule": "Tuesday11:30 AM - 2:30 PM3F.45Class"
+			}
+		],
+		"number": "410-695-DW"
+	},
+	{
+		"title": "Photo Studio VI",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Valerie Simmons",
+				"schedule": "Monday2:00 PM - 3:00 PM1G.14LabMonday2:00 PM - 3:00 PM1G.9LabMonday2:00 PM - 3:00 PM3E.4LabMonday3:00 PM - 6:00 PM1G.14LabMonday3:00 PM - 6:00 PM1G.9Lab"
+			}
+		],
+		"number": "570-604-DW"
+	},
+	{
+		"title": "Digital Lab VI",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Kate Hutchinson",
+				"schedule": "Thursday10:00 AM - 3:00 PM1G.18-1Class"
+			}
+		],
+		"number": "570-625-DW"
+	},
+	{
+		"title": "Promotion Design II",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Patrizia Castiglione, Valerie Simmons",
+				"schedule": "Wednesday2:30 PM - 5:30 PM3H.10ClassFriday8:30 AM - 10:00 AM1G.18-1LabFriday8:30 AM - 10:00 AM3H.10LabFriday10:00 AM - 11:30 AM1G.18-1Lab"
+			}
+		],
+		"number": "570-664-DW"
+	},
+	{
+		"title": "Photo Production II",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Martin Segal, Nelly Dahan",
+				"schedule": "Tuesday3:00 PM - 6:00 PM1G.14LabTuesday3:00 PM - 6:00 PM1G.9LabFriday12:00 PM - 1:00 PM4A.2Class"
+			}
+		],
+		"number": "570-684-DW"
+	},
+	{
+		"title": "Production Printing II",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Peter Berra",
+				"schedule": "Wednesday9:00 AM - 12:00 PM1G.18-1Lab"
+			}
+		],
+		"number": "570-694-DW"
+	}
+]

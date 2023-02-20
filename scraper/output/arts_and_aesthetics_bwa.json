@@ -1,0 +1,176 @@
+[
+	{
+		"title": "Introduction to Cinema",
+		"sections": [
+			{
+				"title": "Film Styles",
+				"section": "00001",
+				"teacher": "John Connolly",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Film Styles",
+				"section": "00002",
+				"teacher": "John Connolly",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Film and Culture",
+				"section": "00003",
+				"teacher": "Dipti Gupta",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Film and Culture",
+				"section": "00004",
+				"teacher": "Dipti Gupta",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Film and Culture",
+				"section": "00005",
+				"teacher": "Cheryl Simon",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Film Styles",
+				"section": "00006",
+				"teacher": "Nancy Barnett",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Film and Culture",
+				"section": "00007",
+				"teacher": "Cheryl Simon",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		],
+		"number": "530-BWA-03"
+	},
+	{
+		"title": "Imaging Technologies",
+		"sections": [
+			{
+				"title": "Advertising",
+				"section": "00001",
+				"teacher": "Magdalena Olszanowski",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		],
+		"number": "589-BWA-DW"
+	},
+	{
+		"title": "Introduction to the Art of Music",
+		"sections": [
+			{
+				"title": "Appreciating Music",
+				"section": "00001",
+				"teacher": "Jacinta Luis",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Appreciating Music",
+				"section": "00002",
+				"teacher": "Jacinta Luis",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Jazz Culture",
+				"section": "00003",
+				"teacher": "Vincenzo Lentini",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		],
+		"number": "550-BWA-03"
+	},
+	{
+		"title": "Introduction to Philosophy",
+		"sections": [
+			{
+				"title": "Why Art Matters",
+				"section": "00001",
+				"teacher": "Robert Stephens",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		],
+		"number": "340-BWA-03"
+	},
+	{
+		"title": "Arts and aesthetics: introduction to the visual arts",
+		"sections": [
+			{
+				"title": "Digital Photography: Art and Techniques of Persuasion",
+				"section": "00001",
+				"teacher": "Patrizia Castiglione",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Digital Photography: Art and Techniques of Persuasion",
+				"section": "00002",
+				"teacher": "Robert Marcy",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Digital Photography: Art and Techniques of Persuasion",
+				"section": "00003",
+				"teacher": "Pierre Arsenault",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Digital Photography: Art and Techniques of Persuasion",
+				"section": "00004",
+				"teacher": "Robert Marcy",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		],
+		"number": "570-BWA-03"
+	},
+	{
+		"title": "Introduction to Art History",
+		"sections": [
+			{
+				"title": "Photography: The Art and Influence",
+				"section": "00001",
+				"teacher": "Gwen Baddeley",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Baroque to the 20th Century",
+				"section": "00002",
+				"teacher": "Emma Doubt",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to Contemporary Indigenous Art",
+				"section": "00003",
+				"teacher": "Pohanna Feinberg",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Art and Place",
+				"section": "00004",
+				"teacher": "Pohanna Feinberg",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Visual Arts Since 1950",
+				"section": "00005",
+				"teacher": "Sarah Watson",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Canadian Art in Context",
+				"section": "00006",
+				"teacher": "Pohanna Feinberg",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Modernism and the Visual Arts",
+				"section": "00007",
+				"teacher": "Sarah Watson",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		],
+		"number": "520-BWA-03"
+	}
+]

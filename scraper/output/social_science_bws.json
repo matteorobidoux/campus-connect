@@ -1,0 +1,194 @@
+[
+	{
+		"title": "Introduction to Geography and the Environment",
+		"sections": [
+			{
+				"title": "Geography and the Environment",
+				"section": "00001",
+				"teacher": "Tesfa Aeisha Peterson",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Geography and the Environment",
+				"section": "00002",
+				"teacher": "Tesfa Aeisha Peterson",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Geography and the Environment",
+				"section": "00003",
+				"teacher": "Tesfa Aeisha Peterson",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Geography and the Environment",
+				"section": "00004",
+				"teacher": "Lazar Konforti",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Geography and the Environment",
+				"section": "00005",
+				"teacher": "Lazar Konforti",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Geography and the Environment",
+				"section": "00006",
+				"teacher": "Gisela Frias",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		],
+		"number": "320-BWS-03"
+	},
+	{
+		"title": "Introduction to History",
+		"sections": [
+			{
+				"title": "History of Science and Technology",
+				"section": "00001",
+				"teacher": "Benjamin Lander",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		],
+		"number": "330-BWS-03"
+	},
+	{
+		"title": "Introduction to Philosophy",
+		"sections": [
+			{
+				"title": "Introduction to Philosophy",
+				"section": "00001",
+				"teacher": "Gerardo Mosquera",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to Philosophy",
+				"section": "00002",
+				"teacher": "Brian Redekopp",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to Philosophy",
+				"section": "00003",
+				"teacher": "Gerardo Mosquera",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to Philosophy",
+				"section": "00004",
+				"teacher": "Gerardo Mosquera",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to Philosophy",
+				"section": "00005",
+				"teacher": "Jessica Lim",
+				"schedule": "Tuesday1:00 PM - 2:30 PM4D.17ClassThursday1:00 PM - 2:30 PM4D.17Class"
+			},
+			{
+				"title": "Introduction to Philosophy",
+				"section": "00006",
+				"teacher": "Sarah Allen",
+				"schedule": "Tuesday11:30 AM - 1:00 PM4F.4ClassThursday11:30 AM - 1:00 PM4F.4Class"
+			}
+		],
+		"number": "340-BWS-03"
+	},
+	{
+		"title": "Social science: introduction to psychology",
+		"sections": [
+			{
+				"title": "Psychology of Sexuality",
+				"section": "00001",
+				"teacher": "Jonathan Ohayon",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Psychology of Sexuality",
+				"section": "00002",
+				"teacher": "Jonathan Ohayon",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		],
+		"number": "350-BWS-03"
+	},
+	{
+		"title": "Introduction to Religion Studies",
+		"sections": [
+			{
+				"title": "Introduction to World Religions",
+				"section": "00001",
+				"teacher": "Natalie Kepka",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to World Religions",
+				"section": "00002",
+				"teacher": "Natalie Kepka",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to World Religions",
+				"section": "00003",
+				"teacher": "Calogero Miceli",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to World Religions",
+				"section": "00004",
+				"teacher": "Ivan Freud",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to World Religions",
+				"section": "00005",
+				"teacher": "Ivan Freud",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to World Religions",
+				"section": "00006",
+				"teacher": "Calogero Miceli",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Introduction to World Religions",
+				"section": "00007",
+				"teacher": "Ivan Freud",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		],
+		"number": "370-BWS-03"
+	},
+	{
+		"title": "Social Science 1",
+		"sections": [
+			{
+				"title": "The Power of Non-Violent Communication",
+				"section": "00001",
+				"teacher": "Alyssa Kuzmarov",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		],
+		"number": "388-BWS-DW"
+	},
+	{
+		"title": "Social science: introduction to sociology",
+		"sections": [
+			{
+				"title": "Individual and Society",
+				"section": "00001",
+				"teacher": "Marian Misdrahi Flores",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Individual and Society",
+				"section": "00002",
+				"teacher": "Kelly Phipps",
+				"schedule": "Tuesday, February 14, 2023"
+			}
+		],
+		"number": "387-BWS-03"
+	}
+]

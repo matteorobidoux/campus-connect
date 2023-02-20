@@ -1,0 +1,310 @@
+[
+	{
+		"title": "Anatomy and Physiology 2",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Brid Nic Niocaill",
+				"schedule": "Tuesday2:00 PM - 4:00 PM4A.3ClassFriday2:00 PM - 4:00 PM5A.29Lab"
+			}
+		],
+		"number": "101-920-DW"
+	},
+	{
+		"title": "Ultrasound Instrumentation and Quality Control",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Kieran David Bradshaw",
+				"schedule": "Monday10:00 AM - 12:00 PM2P.08ClassFriday10:00 AM - 12:00 PM2P.08LabFriday12:00 PM - 2:00 PM2P.30LabFriday12:00 PM - 2:00 PM2P.34Lab"
+			}
+		],
+		"number": "142-U21-DW"
+	},
+	{
+		"title": "Abdominal, Pelvic and Surface Ultrasound 1",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Gaelle Bambi Mpiana",
+				"schedule": "Monday2:00 PM - 4:00 PM2P.10ClassThursday8:00 AM - 10:00 AM2P.32LabThursday10:00 AM - 12:00 PM2P.08Lab"
+			}
+		],
+		"number": "142-U22-DW"
+	},
+	{
+		"title": "Medical Records of Ultrasound Patients",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Cassandra Mofford, Eleni Joannides",
+				"schedule": "Wednesday12:00 PM - 2:00 PM2P.14ClassThursday12:00 PM - 2:00 PM2P.30LabThursday2:00 PM - 4:00 PM2P.10Lab"
+			}
+		],
+		"number": "142-U23-DW"
+	},
+	{
+		"title": "Patient Care and Pharmacology",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Eleni Joannides",
+				"schedule": "Tuesday10:00 AM - 12:00 PM2P.14LabTuesday10:00 AM - 12:00 PM2P.24LabWednesday2:00 PM - 5:00 PM2P.14Class"
+			}
+		],
+		"number": "142-U24-DW"
+	},
+	{
+		"title": "Communication and Wellbeing in the Medical Ultrasound Profession",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Graça Fontes, Kimberly Lee-Louis",
+				"schedule": "Monday12:30 PM - 2:00 PM3H.6ClassWednesday10:00 AM - 11:30 AM3H.6Class"
+			}
+		],
+		"number": "388-920-DW"
+	},
+	{
+		"title": "Anatomy and Physiology 2",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Brid Nic Niocaill",
+				"schedule": "Tuesday2:00 PM - 4:00 PM4A.3ClassFriday2:00 PM - 4:00 PM5A.29Lab"
+			}
+		],
+		"number": "101-920-DW"
+	},
+	{
+		"title": "Ultrasound Instrumentation and Quality Control",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Kieran David Bradshaw",
+				"schedule": "Monday10:00 AM - 12:00 PM2P.08ClassFriday10:00 AM - 12:00 PM2P.08LabFriday10:00 AM - 12:00 PM2P.30LabFriday10:00 AM - 12:00 PM2P.34Lab"
+			}
+		],
+		"number": "142-U21-DW"
+	},
+	{
+		"title": "Abdominal, Pelvic and Surface Ultrasound 1",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Gaelle Bambi Mpiana",
+				"schedule": "Monday2:00 PM - 4:00 PM2P.10ClassThursday10:00 AM - 12:00 PM2P.08LabThursday10:00 AM - 12:00 PM2P.30LabThursday10:00 AM - 12:00 PM2P.32Lab"
+			}
+		],
+		"number": "142-U22-DW"
+	},
+	{
+		"title": "Medical Records of Ultrasound Patients",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Cassandra Mofford, Eleni Joannides",
+				"schedule": "Wednesday12:00 PM - 2:00 PM2P.14ClassThursday2:00 PM - 4:00 PM2P.10LabThursday2:00 PM - 4:00 PM2P.30Lab"
+			}
+		],
+		"number": "142-U23-DW"
+	},
+	{
+		"title": "Patient Care and Pharmacology",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Eleni Joannides",
+				"schedule": "Tuesday8:00 AM - 10:00 AM2P.24LabTuesday10:00 AM - 12:00 PM2P.14LabWednesday2:00 PM - 5:00 PM2P.14Class"
+			}
+		],
+		"number": "142-U24-DW"
+	},
+	{
+		"title": "Communication and Wellbeing in the Medical Ultrasound Profession",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Graça Fontes, Kimberly Lee-Louis",
+				"schedule": "Monday12:30 PM - 2:00 PM3H.6ClassWednesday10:00 AM - 11:30 AM3H.6Class"
+			}
+		],
+		"number": "388-920-DW"
+	},
+	{
+		"title": "Anatomy and Physiology 2",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Brid Nic Niocaill",
+				"schedule": "Tuesday2:00 PM - 4:00 PM4A.3ClassFriday2:00 PM - 4:00 PM5A.29Lab"
+			}
+		],
+		"number": "101-920-DW"
+	},
+	{
+		"title": "Ultrasound Instrumentation and Quality Control",
+		"sections": [
+			{
+				"section": "00003",
+				"teacher": "Kieran David Bradshaw",
+				"schedule": "Monday10:00 AM - 12:00 PM2P.08ClassFriday8:00 AM - 10:00 AM2P.30LabFriday8:00 AM - 10:00 AM2P.34LabFriday10:00 AM - 12:00 PM2P.08Lab"
+			}
+		],
+		"number": "142-U21-DW"
+	},
+	{
+		"title": "Abdominal, Pelvic and Surface Ultrasound 1",
+		"sections": [
+			{
+				"section": "00003",
+				"teacher": "Gaelle Bambi Mpiana",
+				"schedule": "Monday2:00 PM - 4:00 PM2P.10ClassThursday10:00 AM - 12:00 PM2P.08LabThursday12:00 PM - 2:00 PM2P.32Lab"
+			}
+		],
+		"number": "142-U22-DW"
+	},
+	{
+		"title": "Medical Records of Ultrasound Patients",
+		"sections": [
+			{
+				"section": "00003",
+				"teacher": "Cassandra Mofford, Eleni Joannides",
+				"schedule": "Wednesday12:00 PM - 2:00 PM2P.14ClassThursday8:00 AM - 10:00 AM2P.30LabThursday2:00 PM - 4:00 PM2P.10Lab"
+			}
+		],
+		"number": "142-U23-DW"
+	},
+	{
+		"title": "Patient Care and Pharmacology",
+		"sections": [
+			{
+				"section": "00003",
+				"teacher": "Eleni Joannides",
+				"schedule": "Tuesday10:00 AM - 12:00 PM2P.14LabTuesday12:00 PM - 2:00 PM2P.24LabWednesday2:00 PM - 5:00 PM2P.14Class"
+			}
+		],
+		"number": "142-U24-DW"
+	},
+	{
+		"title": "Communication and Wellbeing in the Medical Ultrasound Profession",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Graça Fontes, Kimberly Lee-Louis",
+				"schedule": "Monday12:30 PM - 2:00 PM3H.6ClassWednesday10:00 AM - 11:30 AM3H.6Class"
+			}
+		],
+		"number": "388-920-DW"
+	},
+	{
+		"title": "Obstetrical and Gynecological Ultrasound 2",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Cassandra Mofford",
+				"schedule": "Tuesday10:00 AM - 1:00 PM2P.02LabTuesday10:00 AM - 1:00 PM2P.30LabTuesday10:00 AM - 1:00 PM2P.32LabWednesday2:00 PM - 4:00 PM2P.02Class"
+			}
+		],
+		"number": "142-U41-DW"
+	},
+	{
+		"title": "Vascular Ultrasound",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Melanie Nash",
+				"schedule": "Monday10:00 AM - 12:00 PM2P.34LabMonday12:00 PM - 2:00 PM2P.02LabWednesday10:00 AM - 12:00 PM2P.02Class"
+			}
+		],
+		"number": "142-U42-DW"
+	},
+	{
+		"title": "Cardiac Ultrasound 2",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Kieran David Bradshaw",
+				"schedule": "Monday2:00 PM - 4:00 PM2P.08ClassThursday11:00 AM - 2:00 PM2P.10LabThursday11:00 AM - 2:00 PM2P.34Lab"
+			}
+		],
+		"number": "142-U43-DW"
+	},
+	{
+		"title": "Muscoloskeletal Ultrasound",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Diana Ranallo, Melanie Nash",
+				"schedule": "Thursday2:00 PM - 4:00 PM2P.02ClassFriday10:00 AM - 12:00 PM2P.32LabFriday12:00 PM - 2:00 PM2P.14Lab"
+			}
+		],
+		"number": "142-U44-DW"
+	},
+	{
+		"title": "Continuous Improvement of Ultrasound Practice",
+		"sections": [
+			{
+				"section": "00001",
+				"teacher": "Gaelle Bambi Mpiana",
+				"schedule": "Wednesday12:30 PM - 2:00 PM2P.02ClassFriday2:00 PM - 3:30 PM2P.02LabFriday2:00 PM - 3:30 PM2P.24LabFriday2:00 PM - 3:30 PM2P.30Lab"
+			}
+		],
+		"number": "142-U45-DW"
+	},
+	{
+		"title": "Obstetrical and Gynecological Ultrasound 2",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Cassandra Mofford",
+				"schedule": "Tuesday10:00 AM - 1:00 PM2P.02LabTuesday1:00 PM - 4:00 PM2P.30LabTuesday1:00 PM - 4:00 PM2P.32LabWednesday2:00 PM - 4:00 PM2P.02Class"
+			}
+		],
+		"number": "142-U41-DW"
+	},
+	{
+		"title": "Vascular Ultrasound",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Melanie Nash",
+				"schedule": "Monday12:00 PM - 2:00 PM2P.02LabMonday12:00 PM - 2:00 PM2P.34LabWednesday10:00 AM - 12:00 PM2P.02Class"
+			}
+		],
+		"number": "142-U42-DW"
+	},
+	{
+		"title": "Cardiac Ultrasound 2",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Kieran David Bradshaw",
+				"schedule": "Monday2:00 PM - 4:00 PM2P.08ClassThursday8:00 AM - 11:00 AM2P.34LabThursday11:00 AM - 2:00 PM2P.10Lab"
+			}
+		],
+		"number": "142-U43-DW"
+	},
+	{
+		"title": "Muscoloskeletal Ultrasound",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Diana Ranallo, Melanie Nash",
+				"schedule": "Thursday2:00 PM - 4:00 PM2P.02ClassFriday12:00 PM - 2:00 PM2P.14LabFriday12:00 PM - 2:00 PM2P.32Lab"
+			}
+		],
+		"number": "142-U44-DW"
+	},
+	{
+		"title": "Continuous Improvement of Ultrasound Practice",
+		"sections": [
+			{
+				"section": "00002",
+				"teacher": "Gaelle Bambi Mpiana",
+				"schedule": "Wednesday12:30 PM - 2:00 PM2P.02ClassFriday10:00 AM - 11:30 AM2P.24LabFriday10:00 AM - 11:30 AM2P.30LabFriday2:00 PM - 3:30 PM2P.02Lab"
+			}
+		],
+		"number": "142-U45-DW"
+	}
+]
