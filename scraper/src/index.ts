@@ -3,6 +3,9 @@ import fs from "node:fs";
 import { Logger, ILogObj } from "tslog";
 import { prompt } from 'enquirer';
 
+import Course from "../../types/Course";
+import Section from "../../types/Section"
+
 enum SectionDetail {
   TITLE,
   SECTION,
@@ -20,19 +23,6 @@ const log: Logger<ILogObj> = new Logger({
 type Education = {
   id: string,
   name: string,
-}
-
-type Course = {
-  title: string,
-  number: string,
-  sections: Section[],
-}
-
-type Section = {
-  title: string,
-  section: string,
-  teacher: string,
-  schedule: string,
 }
 
 type Schedule = {
