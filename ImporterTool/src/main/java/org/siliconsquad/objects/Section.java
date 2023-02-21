@@ -3,23 +3,23 @@ package org.siliconsquad.objects;
 public class Section {
     private String title;
 
-    private String section;
+    private String number;
     
     private String teacher;
 
     private String schedule;
     
 
-    public String getSection() {
-        return section;
+    public String getNumber() {
+        return number;
     }
 
     public String getTeacher() {
         return teacher;
     }
 
-    public void setSection(String section) {
-        this.section = section;
+    public void setNumber(String number) {
+        this.number = number;
     }
 
     public void setTeacher(String teacher) {
