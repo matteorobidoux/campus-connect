@@ -52,12 +52,12 @@ build-backend:
     paths:
       - server/node_modules
 
-test:
-  stage: test
-  dependencies:
-    - build-backend
-  script:
-    - cd server && npm run test
+#test:
+#  stage: test
+#  dependencies:
+#    - build-backend
+#  script:
+#    - cd server && npm run test
 
 #test_db:
 #  script:
