@@ -4,7 +4,7 @@ import User from "./models/user-schema"
 import Event from './models/event-schema';
 import Course from "./models/course-schema";
 import Section from "./models/section-schema";
-import usersect from './models/usersection'
+import Usersection from "../../types/Usersection"
 import fs = require('fs');
 import path = require("path");
 import * as config from "../../config.json"
@@ -26,21 +26,18 @@ class DbMongoose {
     mongoose.connection.close()
   }
 
-  async addUser(nameUser: string, passwd: string, classes: string[]) {
-    const abie = new User({ name: nameUser, password: passwd, classes: classes })
-    await abie.save();
 
-  }
-  async addUser2(nameUser: string, passwd: string, classes: string[]) {
-    const abie = new User({ name: nameUser, password: passwd, classes: classes })
-    await abie.save();
+  async addUser(nameUser: string, passwd: string, classes: string[],sectionsuser: Usersection[]) {
+    const usermodel = new User({ name: nameUser, password: passwd, classes: classes, sections: sectionsuser })
+    console.log(usermodel)
+    await usermodel.save();
 
   }
 
   async addEvent(id: string, date: Date, title: string, desc: string, sectionName: string) {
-    const abie = new Event({ id: id, date: date, title: title, desc: desc, associatedSection: { name: sectionName } })
-    console.log(abie)
-    await abie.save();
+    const eventmodel = new Event({ id: id, date: date, title: title, desc: desc, associatedSection: { name: sectionName } })
+    console.log(eventmodel)
+    await eventmodel.save();
   }
 
   async getUserByClasss(classname: string) {
@@ -51,6 +48,16 @@ class DbMongoose {
   async getUserClassses(nameUser: string) {
     const result = await User.find({ name: nameUser })
     const values= result[0].classes
+    console.log(values)
+    return values;
+  }
+  async getUserClassses2(nameUser: string) {
+    const result = await User.find({ name: nameUser })
+    const values= await result[0].sections
+    // let classlist: string[]
+    // values.forEach(function(value){
+    //   classlist.push(value.coursenumber)
+    // }) 
     console.log(values)
     return values;
   }
@@ -87,6 +94,13 @@ class DbMongoose {
     })
   }
 }
+
+const f= new DbMongoose()
+const semen1: Usersection[] =[{ coursenumber:"1234", sectionnumber:"weq2341"}, { coursenumber:"124", sectionnumber:"weq2341"}, { coursenumber:"12", sectionnumber:"weq2341"}]
+
+// f.addUser("Mike","mike2",["geo","math"],semen1)
+f.getUserClassses2("Mike")
+
 export default new DbMongoose();
 
 
