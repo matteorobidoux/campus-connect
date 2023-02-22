@@ -82,9 +82,6 @@ class DbMongoose {
     })
   }
 }
-
-const test= new DbMongoose()
-test.getUserClassses("abe")
 export default new DbMongoose();
 
 
