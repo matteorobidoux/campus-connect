@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "build": "tsc",
     "start": "cd client && npm run start"
 
   },
