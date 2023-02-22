@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "start": "cd client && npm start",
     "start:prod": "cd client && npm start"
 
   },
