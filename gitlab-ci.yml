@@ -1,0 +1,86 @@
+"appId": "9ada1129-4f0c-4336-88f1-f4d01c996aa2"
+"displayName": "azure-cli-2023-02-22-15-17-35"
+"password": "4Ls8Q~YFWtz9YJQEDYPVuuAvtMF3WHzffLZ.scDV"
+"tenant": "b6b66a7a-fbbb-42b8-a7c5-712342094eef"
+variables: 
+    AZ_SP_ID: "9ada1129-4f0c-4336-88f1-f4d01c996aa2"
+    AZ_SP_SECRET: "4Ls8Q~YFWtz9YJQEDYPVuuAvtMF3WHzffLZ.scDV"
+    AZ_TENANT: "b6b66a7a-fbbb-42b8-a7c5-712342094eef"
+    RESOURCE_GROUP_NAME: campus-connects_group
+    APP_NAME: campus-connects-test
+    WEBSITE_RUN_FROM_PACKAGE: 1
+
+image: node:latest
+
+stages:
+  - build
+  - test
+  - deploy
+
+
+build-frontend:
+  stage: build
+  cache:
+    key:
+      prefix: 'frontend'
+      files:
+        - 'client/package-lock.json'
+    paths:
+      - 'client/node_modules/'
+  script:
+    - cd client && npm install && CI=false npm run build
+  only:
+  artifacts:
+    expire_in: 1 days
+    when: on_success
+    paths:
+      - client/build
+      - client/node_modules
+
+build-backend:
+  stage: build
+  cache:
+    key:
+      prefix: 'backend'
+      files:
+        - 'api/package-lock.json'
+    paths:
+      - 'api/node_modules/'
+  script:
+    - cd api && npm install
+  artifacts:
+    expire_in: 1 days
+    when: on_success
+    paths:
+      - api/node_modules
+
+#test:
+#  stage: test
+#  variables:
+#    AZURE_SAS: $AzureSas
+#    MONGO_PASS: $MongoPass
+#  dependencies:
+#    - build-backend
+#  script:
+#    - cd api && npm run test
+
+#test_db:
+#  script:
+#    - npm install
+#    - node ./specs/start.js ./specs/db-postgres.spec.js
+
+deploy:
+  stage: deploy
+  image:  mcr.microsoft.com/azure-cli
+  dependencies:
+    - build-frontend
+    - build-backend
+  only:
+    - main
+    - staging
+  before_script:
+    - "az login --allow-no-subscriptions --service-principal -u $AZ_SP_ID -p $AZ_SP_SECRET --tenant $AZ_TENANT"
+  script:
+    - zip -r deploy.zip client/build api ./package.json
+##    - "az webapp config appsettings set --resource-group $RESOURCE_GROUP_NAME --name $APP_NAME --settings WEBSITE_RUN_FROM_PACKAGE='1'"
+    - "az webapp deployment source config-zip --resource-group $RESOURCE_GROUP_NAME --name $APP_NAME --src deploy.zip"
