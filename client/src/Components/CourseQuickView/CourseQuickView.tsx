@@ -19,8 +19,8 @@ export default function CourseQuickView(props: CourseQuickViewProps) {
                 setAnimateBubble(true)
                 setTimeout(() => { setAnimateBubble(false) }, animationDuration); //need to change this
             }}>
-                <h1>{props.course.sectionTitle}</h1>
-                <h3>{props.course.teacherName}</h3>
+                <h2>{props.course.sectionTitle}</h2>
+                <h4>{props.course.teacherName}</h4>
                 <div className={animateBubble ? [styles.bubble, styles.animationBubble].join(" ") : styles.bubble} style={{ background: `var(--classes-${props.color})`, animationDuration: `${animationDuration / 1000}s` }}></div>
             </div>
 

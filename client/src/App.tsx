@@ -49,8 +49,8 @@ export default function App() {
       <div className="app-container">
         <NavBar toggleSidebar={openProfileBar} />
         <div className="app-content-container">
-          <MainSidebar />
-          <Main courses={courses} />
+          <MainSidebar courses={courses} />
+          <Main />
         </div>
         <ProfileBar isOpen={isOpen} toggleFunc={openProfileBar} />
       </div>
