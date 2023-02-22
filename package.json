@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "tsc",
-    "start": "cd client && npm run build && serve -s build"
+    "start": "cd client && npm run start"
 
   },
   "dependencies": {
