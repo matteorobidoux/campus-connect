@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "export PORT=8080 && cd client && npm install && npm run start"
+    "start": "export PORT=8080 && cd client && npm run start"
 
   },
   "dependencies": {
