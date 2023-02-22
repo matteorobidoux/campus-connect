@@ -7,7 +7,7 @@ variables:
     APP_NAME: "campus-connects-test"
     WEBSITE_RUN_FROM_PACKAGE: 1
 
-image: node:latest
+image: node:18
 
 stages:
   - build
