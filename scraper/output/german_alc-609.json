@@ -4,7 +4,7 @@
 		"number": "609-111-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Marie-France Lemay",
 				"schedule": "Tuesday11:30 AM - 1:00 PM3E.3ClassThursday11:30 AM - 1:00 PM3E.3Class"
 			}
@@ -15,12 +15,12 @@
 		"number": "609-211-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Marie-France Lemay",
 				"schedule": "Monday1:00 PM - 2:30 PM3E.3ClassThursday10:00 AM - 11:30 AM3E.3Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Marie-France Lemay",
 				"schedule": "Tuesday2:30 PM - 4:00 PM3E.3ClassThursday2:30 PM - 4:00 PM3E.3Class"
 			}
@@ -31,7 +31,7 @@
 		"number": "609-411-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Nathalie Lachance",
 				"schedule": "Tuesday4:00 PM - 5:30 PM3E.3ClassThursday4:00 PM - 5:30 PM3E.3Class"
 			}

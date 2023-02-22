@@ -4,232 +4,232 @@
 		"number": "300-300-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Lazar Konforti",
 				"schedule": "Monday4:00 PM - 6:00 PM3E.7ClassWednesday4:00 PM - 6:00 PM3E.7Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Lazar Konforti",
 				"schedule": "Tuesday10:00 AM - 12:00 PM3H.19ClassFriday10:00 AM - 12:00 PM3H.19Class"
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Richard Soare",
 				"schedule": "Monday2:00 PM - 4:00 PM3A.9ClassThursday10:00 AM - 12:00 PM3A.9Class"
 			},
 			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Richard Soare",
 				"schedule": "Monday12:00 PM - 2:00 PM3H.19ClassThursday8:00 AM - 10:00 AM3H.19Class"
 			},
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Nadia Vracotas",
 				"schedule": "Wednesday12:00 PM - 2:00 PM5B.7ClassFriday12:00 PM - 2:00 PM5B.7Class"
 			},
 			{
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Nadia Vracotas",
 				"schedule": "Monday10:00 AM - 12:00 PM3A.7ClassWednesday10:00 AM - 12:00 PM3A.7Class"
 			},
 			{
-				"section": "00007",
+				"number": "00007",
 				"teacher": "Anick Legault",
 				"schedule": "Wednesday12:00 PM - 2:00 PM3A.7ClassFriday12:00 PM - 2:00 PM3A.7Class"
 			},
 			{
-				"section": "00008",
+				"number": "00008",
 				"teacher": "Anick Legault",
 				"schedule": "Tuesday12:00 PM - 2:00 PM3H.17ClassThursday12:00 PM - 2:00 PM3H.17Class"
 			},
 			{
-				"section": "00009",
+				"number": "00009",
 				"teacher": "Carolina Pineda",
 				"schedule": "Tuesday10:00 AM - 12:00 PM3A.9ClassFriday10:00 AM - 12:00 PM3A.9Class"
 			},
 			{
-				"section": "00010",
+				"number": "00010",
 				"teacher": "Carolina Pineda",
 				"schedule": "Tuesday4:00 PM - 6:00 PM3A.9ClassThursday4:00 PM - 6:00 PM3A.9Class"
 			},
 			{
-				"section": "00011",
+				"number": "00011",
 				"teacher": "Verity Whalen",
 				"schedule": "Tuesday12:00 PM - 2:00 PM3A.9ClassThursday12:00 PM - 2:00 PM3A.9Class"
 			},
 			{
-				"section": "00012",
+				"number": "00012",
 				"teacher": "Verity Whalen",
 				"schedule": "Monday12:00 PM - 2:00 PM3A.7ClassThursday8:00 AM - 10:00 AM3A.7Class"
 			},
 			{
-				"section": "00013",
+				"number": "00013",
 				"teacher": "Verity Whalen",
 				"schedule": "Monday10:00 AM - 12:00 PM5B.11ClassWednesday10:00 AM - 12:00 PM5B.11Class"
 			},
 			{
-				"section": "00014",
+				"number": "00014",
 				"teacher": "Dan Loomer",
 				"schedule": "Wednesday12:00 PM - 2:00 PM5B.11ClassFriday12:00 PM - 2:00 PM5B.11Class"
 			},
 			{
-				"section": "00015",
+				"number": "00015",
 				"teacher": "Dan Loomer",
 				"schedule": "Monday12:00 PM - 2:00 PM5B.11ClassThursday8:00 AM - 10:00 AM5B.11Class"
 			},
 			{
-				"section": "00016",
+				"number": "00016",
 				"teacher": "Rubens Lima Moraes",
 				"schedule": "Monday2:00 PM - 4:00 PM3A.7ClassThursday10:00 AM - 12:00 PM3A.7Class"
 			},
 			{
-				"section": "00017",
+				"number": "00017",
 				"teacher": "Francine Small",
 				"schedule": "Monday4:00 PM - 6:00 PM3A.7ClassWednesday4:00 PM - 6:00 PM3A.7Class"
 			},
 			{
-				"section": "00018",
+				"number": "00018",
 				"teacher": "Vanessa Gordon",
 				"schedule": "Monday2:00 PM - 4:00 PM3H.19ClassThursday10:00 AM - 12:00 PM3H.19Class"
 			},
 			{
-				"section": "00019",
+				"number": "00019",
 				"teacher": "Rubens Lima Moraes",
 				"schedule": "Monday8:00 AM - 10:00 AM3A.9ClassWednesday8:00 AM - 10:00 AM3A.9Class"
 			},
 			{
-				"section": "00020",
+				"number": "00020",
 				"teacher": "Francine Small",
 				"schedule": "Monday10:00 AM - 12:00 PM3A.4ClassWednesday10:00 AM - 12:00 PM3A.4Class"
 			},
 			{
-				"section": "00021",
+				"number": "00021",
 				"teacher": "Jean Duclos Alegue Feugo",
 				"schedule": "Tuesday10:00 AM - 12:00 PM3A.4ClassFriday10:00 AM - 12:00 PM3A.4Class"
 			},
 			{
-				"section": "00022",
+				"number": "00022",
 				"teacher": "Jean Duclos Alegue Feugo",
 				"schedule": "Tuesday4:00 PM - 6:00 PM3A.4ClassThursday4:00 PM - 6:00 PM3A.4Class"
 			},
 			{
-				"section": "00023",
+				"number": "00023",
 				"teacher": "Marc-André Girouard",
 				"schedule": "Tuesday8:00 AM - 10:00 AM3H.19ClassFriday8:00 AM - 10:00 AM3H.19Class"
 			},
 			{
-				"section": "00024",
+				"number": "00024",
 				"teacher": "Marc-André Girouard",
 				"schedule": "Wednesday12:00 PM - 2:00 PM3A.4ClassFriday12:00 PM - 2:00 PM3A.4Class"
 			},
 			{
-				"section": "00025",
+				"number": "00025",
 				"teacher": "Sacha Des Rosiers",
 				"schedule": "Tuesday8:00 AM - 10:00 AM3A.4ClassFriday8:00 AM - 10:00 AM3A.4Class"
 			},
 			{
-				"section": "00026",
+				"number": "00026",
 				"teacher": "Sacha Des Rosiers",
 				"schedule": "Monday12:00 PM - 2:00 PM3A.4ClassThursday8:00 AM - 10:00 AM3A.4Class"
 			},
 			{
-				"section": "00027",
+				"number": "00027",
 				"teacher": "Charles-Albert Ramsay",
 				"schedule": "Wednesday12:00 PM - 2:00 PM3H.17ClassFriday12:00 PM - 2:00 PM3H.17Class"
 			},
 			{
-				"section": "00028",
+				"number": "00028",
 				"teacher": "Charles-Albert Ramsay",
 				"schedule": "Tuesday2:00 PM - 4:00 PM3A.4ClassThursday2:00 PM - 4:00 PM3A.4Class"
 			},
 			{
-				"section": "00029",
+				"number": "00029",
 				"teacher": "Jan Alexandros Arvanitakis",
 				"schedule": "Tuesday8:00 AM - 10:00 AM3H.17ClassFriday8:00 AM - 10:00 AM3H.17Class"
 			},
 			{
-				"section": "00030",
+				"number": "00030",
 				"teacher": "Julian Nemeth",
 				"schedule": "Tuesday2:00 PM - 4:00 PM3H.21ClassThursday2:00 PM - 4:00 PM3H.21Class"
 			},
 			{
-				"section": "00031",
+				"number": "00031",
 				"teacher": "Cynthia De Luca",
 				"schedule": "Monday10:00 AM - 12:00 PM3E.7ClassWednesday10:00 AM - 12:00 PM3E.7Class"
 			},
 			{
-				"section": "00032",
+				"number": "00032",
 				"teacher": "Benjamin Lander",
 				"schedule": "Tuesday2:00 PM - 4:00 PM3E.7ClassThursday2:00 PM - 4:00 PM3E.7Class"
 			},
 			{
-				"section": "00033",
+				"number": "00033",
 				"teacher": "Mark Beauchamp",
 				"schedule": "Tuesday4:00 PM - 6:00 PM3F.5ClassThursday4:00 PM - 6:00 PM3F.5Class"
 			},
 			{
-				"section": "00034",
+				"number": "00034",
 				"teacher": "Maryann Farkas",
 				"schedule": "Tuesday4:00 PM - 6:00 PM3A.7ClassThursday4:00 PM - 6:00 PM3A.7Class"
 			},
 			{
-				"section": "00035",
+				"number": "00035",
 				"teacher": "Benjamin Lander",
 				"schedule": "Tuesday12:00 PM - 2:00 PM3E.7ClassThursday12:00 PM - 2:00 PM3E.7Class"
 			},
 			{
-				"section": "00036",
+				"number": "00036",
 				"teacher": "Jan Alexandros Arvanitakis",
 				"schedule": "Monday2:00 PM - 4:00 PM3H.17ClassThursday10:00 AM - 12:00 PM3H.17Class"
 			},
 			{
-				"section": "00037",
+				"number": "00037",
 				"teacher": "Lisa Steffen",
 				"schedule": "Wednesday12:00 PM - 2:00 PM4H.23ClassFriday12:00 PM - 2:00 PM4H.23Class"
 			},
 			{
-				"section": "00038",
+				"number": "00038",
 				"teacher": "Ray Claudio Pino",
 				"schedule": "Monday10:00 AM - 12:00 PM3H.19ClassWednesday10:00 AM - 12:00 PM3H.19Class"
 			},
 			{
-				"section": "00039",
+				"number": "00039",
 				"teacher": "Sara Louise Kendall",
 				"schedule": "Monday2:00 PM - 4:00 PM3E.7ClassThursday10:00 AM - 12:00 PM3E.7Class"
 			},
 			{
-				"section": "00040",
+				"number": "00040",
 				"teacher": "Laurence Nixon",
 				"schedule": "Monday2:00 PM - 4:00 PM5B.11ClassThursday10:00 AM - 12:00 PM5B.11Class"
 			},
 			{
-				"section": "00041",
+				"number": "00041",
 				"teacher": "Laurence Nixon",
 				"schedule": "Monday4:00 PM - 6:00 PM3A.9ClassWednesday4:00 PM - 6:00 PM3A.9Class"
 			},
 			{
-				"section": "00042",
+				"number": "00042",
 				"teacher": "Rubens Lima Moraes",
 				"schedule": "Tuesday8:00 AM - 10:00 AM3A.7ClassFriday8:00 AM - 10:00 AM3A.7Class"
 			},
 			{
-				"section": "00043",
+				"number": "00043",
 				"teacher": "Cynthia De Luca",
 				"schedule": "Monday8:00 AM - 10:00 AM3A.4ClassWednesday8:00 AM - 10:00 AM3A.4Class"
 			},
 			{
-				"section": "00044",
+				"number": "00044",
 				"teacher": "Carolina Pineda",
 				"schedule": "Monday4:00 PM - 6:00 PM3H.19ClassWednesday4:00 PM - 6:00 PM3H.19Class"
 			},
 			{
-				"section": "00045",
+				"number": "00045",
 				"teacher": "Ray Claudio Pino",
 				"schedule": "Monday12:00 PM - 2:00 PM3E.7ClassThursday8:00 AM - 10:00 AM3E.7Class"
 			},
 			{
-				"section": "00046",
+				"number": "00046",
 				"teacher": "Ray Claudio Pino",
 				"schedule": "Tuesday4:00 PM - 6:00 PM3H.17ClassThursday4:00 PM - 6:00 PM3H.17Class"
 			}

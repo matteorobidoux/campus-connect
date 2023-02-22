@@ -4,7 +4,7 @@
 		"number": "330-101-DW",
 		"sections": [
 			{
-				"section": "00014",
+				"number": "00014",
 				"teacher": "Gesche Peters",
 				"schedule": "Tuesday10:00 AM - 11:30 AM4E.20ClassFriday10:00 AM - 11:30 AM4E.20Class"
 			}
@@ -15,7 +15,7 @@
 		"number": "350-101-DW",
 		"sections": [
 			{
-				"section": "00007",
+				"number": "00007",
 				"teacher": "Jessica Chambers",
 				"schedule": "Tuesday8:30 AM - 10:00 AM4H.25ClassFriday8:30 AM - 10:00 AM4H.25Class"
 			}
@@ -26,7 +26,7 @@
 		"number": "387-101-DW",
 		"sections": [
 			{
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Elliot Kerr, Marian Misdrahi Flores",
 				"schedule": "Monday2:30 PM - 4:00 PM3F.3ClassWednesday2:30 PM - 4:00 PM3F.3Class"
 			}
@@ -37,112 +37,24 @@
 		"number": "300-300-DW",
 		"sections": [
 			{
-				"section": "00029",
+				"number": "00029",
 				"teacher": "Jan Alexandros Arvanitakis",
 				"schedule": "Tuesday8:00 AM - 10:00 AM3H.17ClassFriday8:00 AM - 10:00 AM3H.17Class"
 			},
 			{
-				"section": "00039",
+				"number": "00039",
 				"teacher": "Sara Louise Kendall",
 				"schedule": "Monday2:00 PM - 4:00 PM3E.7ClassThursday10:00 AM - 12:00 PM3E.7Class"
-			}
-		]
-	},
-	{
-		"title": "Cognitive Development",
-		"number": "350-313-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Joelle Dayan",
-				"schedule": "Wednesday1:00 PM - 2:30 PM3H.23ClassFriday1:00 PM - 2:30 PM3H.23Class"
-			}
-		]
-	},
-	{
-		"title": "Introduction to Anthropology",
-		"number": "381-101-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Katarzyna Wolfson",
-				"schedule": "Monday8:30 AM - 10:00 AM3D.23ClassWednesday8:30 AM - 10:00 AM3D.23Class"
-			}
-		]
-	},
-	{
-		"title": "Introduction to Economics",
-		"number": "383-101-DW",
-		"sections": [
-			{
-				"section": "00007",
-				"teacher": "Lisa Di Marzo",
-				"schedule": "Tuesday10:00 AM - 11:30 AM3H.13ClassFriday10:00 AM - 11:30 AM3H.13Class"
-			}
-		]
-	},
-	{
-		"title": "Research Methods",
-		"number": "300-300-DW",
-		"sections": [
-			{
-				"section": "00029",
-				"teacher": "Jan Alexandros Arvanitakis",
-				"schedule": "Tuesday8:00 AM - 10:00 AM3H.17ClassFriday8:00 AM - 10:00 AM3H.17Class"
 			},
 			{
-				"section": "00037",
+				"number": "00037",
 				"teacher": "Lisa Steffen",
 				"schedule": "Wednesday12:00 PM - 2:00 PM4H.23ClassFriday12:00 PM - 2:00 PM4H.23Class"
-			}
-		]
-	},
-	{
-		"title": "Cognitive Development",
-		"number": "350-313-DW",
-		"sections": [
+			},
 			{
-				"section": "00002",
-				"teacher": "Joelle Dayan",
-				"schedule": "Monday2:30 PM - 4:00 PM3H.23ClassWednesday2:30 PM - 4:00 PM3H.23Class"
-			}
-		]
-	},
-	{
-		"title": "Introduction to Anthropology",
-		"number": "381-101-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Katarzyna Wolfson",
-				"schedule": "Tuesday10:00 AM - 11:30 AM3D.23ClassFriday10:00 AM - 11:30 AM3D.23Class"
-			}
-		]
-	},
-	{
-		"title": "Introduction to Economics",
-		"number": "383-101-DW",
-		"sections": [
-			{
-				"section": "00015",
-				"teacher": "Michel Mayer",
-				"schedule": "Monday1:00 PM - 2:30 PM3H.13ClassThursday10:00 AM - 11:30 AM3H.13Class"
-			}
-		]
-	},
-	{
-		"title": "Research Methods",
-		"number": "300-300-DW",
-		"sections": [
-			{
-				"section": "00031",
+				"number": "00031",
 				"teacher": "Cynthia De Luca",
 				"schedule": "Monday10:00 AM - 12:00 PM3E.7ClassWednesday10:00 AM - 12:00 PM3E.7Class"
-			},
-			{
-				"section": "00037",
-				"teacher": "Lisa Steffen",
-				"schedule": "Wednesday12:00 PM - 2:00 PM4H.23ClassFriday12:00 PM - 2:00 PM4H.23Class"
 			}
 		]
 	},
@@ -151,7 +63,17 @@
 		"number": "350-313-DW",
 		"sections": [
 			{
-				"section": "00003",
+				"number": "00001",
+				"teacher": "Joelle Dayan",
+				"schedule": "Wednesday1:00 PM - 2:30 PM3H.23ClassFriday1:00 PM - 2:30 PM3H.23Class"
+			},
+			{
+				"number": "00002",
+				"teacher": "Joelle Dayan",
+				"schedule": "Monday2:30 PM - 4:00 PM3H.23ClassWednesday2:30 PM - 4:00 PM3H.23Class"
+			},
+			{
+				"number": "00003",
 				"teacher": "Jonathan Ohayon",
 				"schedule": "Tuesday11:30 AM - 2:30 PM3E.13Class"
 			}
@@ -162,7 +84,17 @@
 		"number": "381-101-DW",
 		"sections": [
 			{
-				"section": "00003",
+				"number": "00001",
+				"teacher": "Katarzyna Wolfson",
+				"schedule": "Monday8:30 AM - 10:00 AM3D.23ClassWednesday8:30 AM - 10:00 AM3D.23Class"
+			},
+			{
+				"number": "00002",
+				"teacher": "Katarzyna Wolfson",
+				"schedule": "Tuesday10:00 AM - 11:30 AM3D.23ClassFriday10:00 AM - 11:30 AM3D.23Class"
+			},
+			{
+				"number": "00003",
 				"teacher": "Katarzyna Wolfson",
 				"schedule": "Monday1:00 PM - 2:30 PM3D.23ClassThursday10:00 AM - 11:30 AM3D.23Class"
 			}
@@ -173,7 +105,17 @@
 		"number": "383-101-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00007",
+				"teacher": "Lisa Di Marzo",
+				"schedule": "Tuesday10:00 AM - 11:30 AM3H.13ClassFriday10:00 AM - 11:30 AM3H.13Class"
+			},
+			{
+				"number": "00015",
+				"teacher": "Michel Mayer",
+				"schedule": "Monday1:00 PM - 2:30 PM3H.13ClassThursday10:00 AM - 11:30 AM3H.13Class"
+			},
+			{
+				"number": "00002",
 				"teacher": "Carlo Catino",
 				"schedule": "Monday4:00 PM - 5:30 PM4D.11ClassWednesday4:00 PM - 5:30 PM4D.11Class"
 			}
@@ -184,30 +126,9 @@
 		"number": "101-921-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Richard Calvé",
 				"schedule": "Monday11:30 AM - 1:00 PM5A.14LabThursday10:00 AM - 11:30 AM4H.15Class"
-			}
-		]
-	},
-	{
-		"title": "Cognitive Development",
-		"number": "350-313-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Joelle Dayan",
-				"schedule": "Wednesday1:00 PM - 2:30 PM3H.23ClassFriday1:00 PM - 2:30 PM3H.23Class"
-			},
-			{
-				"section": "00002",
-				"teacher": "Joelle Dayan",
-				"schedule": "Monday2:30 PM - 4:00 PM3H.23ClassWednesday2:30 PM - 4:00 PM3H.23Class"
-			},
-			{
-				"section": "00003",
-				"teacher": "Jonathan Ohayon",
-				"schedule": "Tuesday11:30 AM - 2:30 PM3E.13Class"
 			}
 		]
 	},
@@ -216,7 +137,7 @@
 		"number": "360-300-DW",
 		"sections": [
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Anna De Aguayo",
 				"schedule": "Monday8:00 AM - 10:00 AM3E.7ClassWednesday8:00 AM - 10:00 AM3E.7Class"
 			}
@@ -227,7 +148,7 @@
 		"number": "387-216-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Elliot Kerr, Marian Misdrahi Flores",
 				"schedule": "Wednesday11:30 AM - 1:00 PM3F.3ClassFriday11:30 AM - 1:00 PM3F.3Class"
 			}
@@ -239,74 +160,15 @@
 		"sections": [
 			{
 				"title": "Youth and Neighborhood",
-				"section": "00037",
+				"number": "00037",
 				"teacher": "Nancy Rebelo",
 				"schedule": "Wednesday12:00 PM - 2:00 PM3E.7ClassFriday12:00 PM - 2:00 PM3E.7Class"
-			}
-		]
-	},
-	{
-		"title": "Applied Social and Economic History",
-		"number": "330-325-DW",
-		"sections": [
-			{
-				"title": "The Family",
-				"section": "00001",
-				"teacher": "Nancy Rebelo",
-				"schedule": "Tuesday8:30 AM - 10:00 AM2P.14ClassFriday8:30 AM - 10:00 AM2P.14Class"
-			}
-		]
-	},
-	{
-		"title": "Advanced Studies in Psychology",
-		"number": "350-401-DW",
-		"sections": [
-			{
-				"title": "Thinking and Memory",
-				"section": "00004",
-				"teacher": "Rajesh Malik",
-				"schedule": "Monday10:00 AM - 11:30 AM3H.23ClassWednesday10:00 AM - 11:30 AM3H.23Class"
-			}
-		]
-	},
-	{
-		"title": "Anthropology of Parenthood",
-		"number": "381-210-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Cornelia Howell",
-				"schedule": "Tuesday1:00 PM - 2:30 PM3D.23ClassThursday1:00 PM - 2:30 PM3D.23Class"
-			}
-		]
-	},
-	{
-		"title": "Advanced Studies in Sociology",
-		"number": "387-401-DW",
-		"sections": [
-			{
-				"title": "Food and the Environment",
-				"section": "00001",
-				"teacher": "Anna-Liisa Aunio",
-				"schedule": "Tuesday10:00 AM - 11:30 AM3H.10ClassFriday10:00 AM - 11:30 AM3H.10Class"
-			}
-		]
-	},
-	{
-		"title": "Integrative Seminar",
-		"number": "300-308-DW",
-		"sections": [
-			{
-				"title": "Education",
-				"section": "00030",
-				"teacher": "Cornelia Howell",
-				"schedule": "Tuesday4:00 PM - 6:00 PM2P.14ClassThursday4:00 PM - 6:00 PM2P.14Class"
 			},
 			{
-				"title": "Youth and Neighborhood",
-				"section": "00037",
-				"teacher": "Nancy Rebelo",
-				"schedule": "Wednesday12:00 PM - 2:00 PM3E.7ClassFriday12:00 PM - 2:00 PM3E.7Class"
+				"title": "Education",
+				"number": "00030",
+				"teacher": "Cornelia Howell",
+				"schedule": "Tuesday4:00 PM - 6:00 PM2P.14ClassThursday4:00 PM - 6:00 PM2P.14Class"
 			}
 		]
 	},
@@ -316,7 +178,13 @@
 		"sections": [
 			{
 				"title": "The Family",
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Nancy Rebelo",
+				"schedule": "Tuesday8:30 AM - 10:00 AM2P.14ClassFriday8:30 AM - 10:00 AM2P.14Class"
+			},
+			{
+				"title": "The Family",
+				"number": "00002",
 				"teacher": "Nancy Rebelo",
 				"schedule": "Monday8:30 AM - 10:00 AM2P.02ClassWednesday8:30 AM - 10:00 AM2P.02Class"
 			}
@@ -328,7 +196,7 @@
 		"sections": [
 			{
 				"title": "Thinking and Memory",
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Rajesh Malik",
 				"schedule": "Monday10:00 AM - 11:30 AM3H.23ClassWednesday10:00 AM - 11:30 AM3H.23Class"
 			}
@@ -339,7 +207,12 @@
 		"number": "381-210-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Cornelia Howell",
+				"schedule": "Tuesday1:00 PM - 2:30 PM3D.23ClassThursday1:00 PM - 2:30 PM3D.23Class"
+			},
+			{
+				"number": "00002",
 				"teacher": "Cornelia Howell",
 				"schedule": "Tuesday11:30 AM - 1:00 PM3D.23ClassThursday11:30 AM - 1:00 PM3D.23Class"
 			}
@@ -351,7 +224,7 @@
 		"sections": [
 			{
 				"title": "Food and the Environment",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Anna-Liisa Aunio",
 				"schedule": "Tuesday10:00 AM - 11:30 AM3H.10ClassFriday10:00 AM - 11:30 AM3H.10Class"
 			}

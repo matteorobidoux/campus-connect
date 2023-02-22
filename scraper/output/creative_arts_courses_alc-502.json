@@ -4,12 +4,12 @@
 		"number": "502-113-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Jesse Klein",
 				"schedule": "Thursday2:00 PM - 6:00 PM3B.13Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Kim Simard",
 				"schedule": "Wednesday10:00 AM - 2:00 PM3B.13Class"
 			}
@@ -20,17 +20,17 @@
 		"number": "502-232-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Leila Roiter",
 				"schedule": "Monday8:30 AM - 11:30 AM3G.3Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Nathalie Lachance",
 				"schedule": "Thursday11:30 AM - 2:30 PM5D.2Class"
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Nathalie Lachance",
 				"schedule": "Tuesday11:30 AM - 2:30 PM4H.12Class"
 			}
@@ -41,12 +41,12 @@
 		"number": "502-496-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Christina Chough",
 				"schedule": "Thursday12:00 PM - 4:00 PM4H.6Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Nathalie Lachance",
 				"schedule": "Wednesday12:00 PM - 4:00 PM4D.2Class"
 			}
@@ -57,12 +57,12 @@
 		"number": "502-498-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Stefanie L Buxton",
 				"schedule": "Wednesday12:00 PM - 4:00 PM5D.2Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Leslie Baker",
 				"schedule": "Thursday12:00 PM - 4:00 PM4D.2Class"
 			}
@@ -73,7 +73,7 @@
 		"number": "502-914-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Leila Roiter",
 				"schedule": "Wednesday8:30 AM - 11:30 AM3G.3Class"
 			}
@@ -84,7 +84,7 @@
 		"number": "502-917-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Francisco Goire",
 				"schedule": "Tuesday10:00 AM - 11:30 AM7B.6ClassFriday10:00 AM - 11:30 AM7B.6Class"
 			}
@@ -95,7 +95,7 @@
 		"number": "502-942-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Sarah Gilbert",
 				"schedule": "Tuesday10:00 AM - 11:30 AM4D.1ClassFriday10:00 AM - 11:30 AM2P.02Class"
 			}
@@ -106,12 +106,12 @@
 		"number": "502-944-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Michael Filtz",
 				"schedule": "Tuesday11:30 AM - 2:30 PM3B.6Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Michael Filtz",
 				"schedule": "Thursday8:30 AM - 11:30 AM3B.6Class"
 			}

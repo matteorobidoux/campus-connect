@@ -5,7 +5,7 @@
 		"sections": [
 			{
 				"title": "Chinese 2",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Joy Cheng Yu Lin",
 				"schedule": "Tuesday, February 14, 2023"
 			}
@@ -17,13 +17,13 @@
 		"sections": [
 			{
 				"title": "German 2",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Marie-France Lemay",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "German 2",
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Marie-France Lemay",
 				"schedule": "Tuesday, February 14, 2023"
 			}
@@ -35,7 +35,7 @@
 		"sections": [
 			{
 				"title": "Greek 2",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Irene Tourkomanoli",
 				"schedule": "Tuesday, February 14, 2023"
 			}
@@ -47,7 +47,7 @@
 		"sections": [
 			{
 				"title": "Hebrew 2",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Leila Roiter",
 				"schedule": "Tuesday, February 14, 2023"
 			}
@@ -59,13 +59,13 @@
 		"sections": [
 			{
 				"title": "Italian 2",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Nicola Martino",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Italian 2",
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Giorgia Sottanelli",
 				"schedule": "Tuesday, February 14, 2023"
 			}
@@ -77,19 +77,19 @@
 		"sections": [
 			{
 				"title": "Spanish 2",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Maria Fernanda Benavides",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Spanish 2",
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Nelly Muresan",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Spanish 2",
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Nelly Muresan",
 				"schedule": "Tuesday, February 14, 2023"
 			}

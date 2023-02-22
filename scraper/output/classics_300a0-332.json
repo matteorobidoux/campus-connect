@@ -5,13 +5,13 @@
 		"sections": [
 			{
 				"title": "Egypt, Greece, and Rome",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Jiri Tucker",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Egypt, Greece, and Rome",
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Michael Leon",
 				"schedule": "Tuesday, February 14, 2023"
 			}
@@ -23,7 +23,7 @@
 		"sections": [
 			{
 				"title": "Ancient Gods, Monsters, and Encounters",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Jiri Tucker",
 				"schedule": "Tuesday10:00 AM - 11:30 AM3E.1ClassFriday10:00 AM - 11:30 AM3E.1Class"
 			}

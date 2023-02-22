@@ -4,7 +4,7 @@
 		"number": "611-111-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Leila Roiter",
 				"schedule": "Tuesday1:00 PM - 2:30 PM4D.6ClassThursday1:00 PM - 2:30 PM4D.6Class"
 			}
@@ -15,7 +15,7 @@
 		"number": "611-211-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Leila Roiter",
 				"schedule": "Monday1:00 PM - 2:30 PM4E.9ClassThursday10:00 AM - 11:30 AM4E.9Class"
 			}

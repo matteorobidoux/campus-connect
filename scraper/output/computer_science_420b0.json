@@ -4,9 +4,14 @@
 		"number": "201-920-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Igor Gorelyshev",
 				"schedule": "Tuesday2:30 PM - 4:00 PM3H.23ClassThursday2:30 PM - 4:00 PM3H.23ClassFriday12:00 PM - 2:00 PM3H.21Lab"
+			},
+			{
+				"number": "00002",
+				"teacher": "Oxana Cerba",
+				"schedule": "Tuesday2:30 PM - 4:00 PM7A.13ClassThursday2:30 PM - 4:00 PM7A.13ClassFriday12:30 PM - 2:30 PM5A.2Lab"
 			}
 		]
 	},
@@ -16,7 +21,25 @@
 		"sections": [
 			{
 				"title": "Java II",
-				"section": "00001",
+				"number": "00001",
+				"teacher": "Eric Mayhew",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Java II",
+				"number": "00002",
+				"teacher": "Sriswetha Rajagopal",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Java II",
+				"number": "00003",
+				"teacher": "Sriswetha Rajagopal",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Java II",
+				"number": "00004",
 				"teacher": "Eric Mayhew",
 				"schedule": "Tuesday, February 14, 2023"
 			}
@@ -28,159 +51,25 @@
 		"sections": [
 			{
 				"title": "SQL",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Matthew Salaciak",
 				"schedule": "Tuesday, February 14, 2023"
-			}
-		]
-	},
-	{
-		"title": "Infrastructure II",
-		"number": "420-240-DW",
-		"sections": [
-			{
-				"title": "Linux I",
-				"section": "00001",
-				"teacher": "Mahsa Sadeghi Ghahroudi",
-				"schedule": "Tuesday, February 14, 2023"
-			}
-		]
-	},
-	{
-		"title": "Applied Mathematics for Computer Science",
-		"number": "201-920-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Oxana Cerba",
-				"schedule": "Tuesday2:30 PM - 4:00 PM7A.13ClassThursday2:30 PM - 4:00 PM7A.13ClassFriday12:30 PM - 2:30 PM5A.2Lab"
-			}
-		]
-	},
-	{
-		"title": "Programming II",
-		"number": "420-210-DW",
-		"sections": [
-			{
-				"title": "Java II",
-				"section": "00002",
-				"teacher": "Sriswetha Rajagopal",
-				"schedule": "Tuesday, February 14, 2023"
-			}
-		]
-	},
-	{
-		"title": "Database I",
-		"number": "420-231-DW",
-		"sections": [
+			},
 			{
 				"title": "SQL",
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Jean-Claude Desrosiers",
 				"schedule": "Tuesday, February 14, 2023"
-			}
-		]
-	},
-	{
-		"title": "Infrastructure II",
-		"number": "420-240-DW",
-		"sections": [
-			{
-				"title": "Linux I",
-				"section": "00002",
-				"teacher": "Victor Manuel Ponce Diaz",
-				"schedule": "Tuesday, February 14, 2023"
-			}
-		]
-	},
-	{
-		"title": "Calculus I",
-		"number": "201-NYA-05",
-		"sections": [
-			{
-				"section": "00008",
-				"teacher": "Mathilde Hitier",
-				"schedule": "Tuesday2:30 PM - 4:00 PM3F.37ClassThursday2:30 PM - 4:00 PM3F.37ClassFriday12:00 PM - 2:00 PM4G.2ALab"
-			}
-		]
-	},
-	{
-		"title": "Programming II",
-		"number": "420-210-DW",
-		"sections": [
-			{
-				"title": "Java II",
-				"section": "00003",
-				"teacher": "Sriswetha Rajagopal",
-				"schedule": "Tuesday, February 14, 2023"
-			}
-		]
-	},
-	{
-		"title": "Database I",
-		"number": "420-231-DW",
-		"sections": [
+			},
 			{
 				"title": "SQL",
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Jean-Claude Desrosiers",
 				"schedule": "Tuesday, February 14, 2023"
-			}
-		]
-	},
-	{
-		"title": "Infrastructure II",
-		"number": "420-240-DW",
-		"sections": [
-			{
-				"title": "Linux I",
-				"section": "00003",
-				"teacher": "Mahsa Sadeghi Ghahroudi",
-				"schedule": "Tuesday, February 14, 2023"
-			}
-		]
-	},
-	{
-		"title": "Applied Mathematics for Computer Science",
-		"number": "201-920-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Oxana Cerba",
-				"schedule": "Tuesday2:30 PM - 4:00 PM7A.13ClassThursday2:30 PM - 4:00 PM7A.13ClassFriday12:30 PM - 2:30 PM5A.2Lab"
-			}
-		]
-	},
-	{
-		"title": "Calculus I",
-		"number": "201-NYA-05",
-		"sections": [
-			{
-				"section": "00008",
-				"teacher": "Mathilde Hitier",
-				"schedule": "Tuesday2:30 PM - 4:00 PM3F.37ClassThursday2:30 PM - 4:00 PM3F.37ClassFriday12:00 PM - 2:00 PM4G.2ALab"
-			}
-		]
-	},
-	{
-		"title": "Programming II",
-		"number": "420-210-DW",
-		"sections": [
-			{
-				"title": "Java II",
-				"section": "00004",
-				"teacher": "Eric Mayhew",
-				"schedule": "Tuesday, February 14, 2023"
-			}
-		]
-	},
-	{
-		"title": "Database I",
-		"number": "420-231-DW",
-		"sections": [
+			},
 			{
 				"title": "SQL",
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Hanneli Andreazzi Tavante",
 				"schedule": "Tuesday, February 14, 2023"
 			}
@@ -192,64 +81,52 @@
 		"sections": [
 			{
 				"title": "Linux I",
-				"section": "00004",
+				"number": "00001",
+				"teacher": "Mahsa Sadeghi Ghahroudi",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Linux I",
+				"number": "00002",
+				"teacher": "Victor Manuel Ponce Diaz",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Linux I",
+				"number": "00003",
+				"teacher": "Mahsa Sadeghi Ghahroudi",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Linux I",
+				"number": "00004",
 				"teacher": "Giancarlo Franchi",
 				"schedule": "Tuesday, February 14, 2023"
 			}
 		]
 	},
 	{
+		"title": "Calculus I",
+		"number": "201-NYA-05",
+		"sections": [
+			{
+				"number": "00008",
+				"teacher": "Mathilde Hitier",
+				"schedule": "Tuesday2:30 PM - 4:00 PM3F.37ClassThursday2:30 PM - 4:00 PM3F.37ClassFriday12:00 PM - 2:00 PM4G.2ALab"
+			}
+		]
+	},
+	{
 		"title": "Programming IV",
 		"number": "420-410-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Andrew Bodzay",
 				"schedule": "Tuesday1:00 PM - 2:30 PM4E.11ClassTuesday2:30 PM - 4:00 PM2F.16LabThursday1:00 PM - 2:30 PM4E.11ClassThursday2:30 PM - 4:00 PM2F.16Lab"
-			}
-		]
-	},
-	{
-		"title": "Web Development III",
-		"number": "420-420-DW",
-		"sections": [
+			},
 			{
-				"title": "Server-side Programming",
-				"section": "00001",
-				"teacher": "Dirk Dubois",
-				"schedule": "Tuesday, February 14, 2023"
-			}
-		]
-	},
-	{
-		"title": "Infrastructure III",
-		"number": "420-440-DW",
-		"sections": [
-			{
-				"title": "Linux II",
-				"section": "00001",
-				"teacher": "Ellie Bodzay",
-				"schedule": "Tuesday, February 14, 2023"
-			}
-		]
-	},
-	{
-		"title": "Applied Mathematics for Computer Science",
-		"number": "201-920-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Oxana Cerba",
-				"schedule": "Tuesday2:30 PM - 4:00 PM7A.13ClassThursday2:30 PM - 4:00 PM7A.13ClassFriday12:30 PM - 2:30 PM5A.2Lab"
-			}
-		]
-	},
-	{
-		"title": "Programming IV",
-		"number": "420-410-DW",
-		"sections": [
-			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Andrew Bodzay",
 				"schedule": "Tuesday8:30 AM - 10:00 AM6B.13ClassTuesday10:00 AM - 11:00 AM2F.14LabFriday8:30 AM - 10:00 AM6B.13ClassFriday10:00 AM - 12:00 PM2F.14Lab"
 			}
@@ -261,7 +138,13 @@
 		"sections": [
 			{
 				"title": "Server-side Programming",
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Dirk Dubois",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Server-side Programming",
+				"number": "00002",
 				"teacher": "Dirk Dubois",
 				"schedule": "Tuesday, February 14, 2023"
 			}
@@ -273,7 +156,13 @@
 		"sections": [
 			{
 				"title": "Linux II",
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Ellie Bodzay",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Linux II",
+				"number": "00002",
 				"teacher": "Ellie Bodzay",
 				"schedule": "Tuesday, February 14, 2023"
 			}
@@ -285,53 +174,13 @@
 		"sections": [
 			{
 				"title": "Web Development Project",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Daniel Pomerantz",
 				"schedule": "Monday10:00 AM - 11:30 AM3E.10ClassMonday11:30 AM - 1:00 PM2F.16LabWednesday10:00 AM - 11:30 AM3E.10ClassWednesday11:30 AM - 1:00 PM2F.16LabThursday11:30 AM - 2:30 PM2F.16Lab"
-			}
-		]
-	},
-	{
-		"title": "Infrastructure IV",
-		"number": "420-640-DW",
-		"sections": [
-			{
-				"title": "Software Deployment",
-				"section": "00001",
-				"teacher": "Maja Frydrychowicz",
-				"schedule": "Monday1:00 PM - 2:30 PM3E.10ClassTuesday1:00 PM - 4:00 PM2F.14LabThursday2:30 PM - 4:00 PM3E.10ClassFriday10:00 AM - 11:30 AM2F.16Lab"
-			}
-		]
-	},
-	{
-		"title": "Working in the Profession",
-		"number": "420-652-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Lei Lopez",
-				"schedule": "Tuesday11:30 AM - 1:00 PM3E.10ClassWednesday2:30 PM - 4:00 PM2F.18LabFriday11:30 AM - 1:00 PM3E.10Class"
-			}
-		]
-	},
-	{
-		"title": "Internship",
-		"number": "420-653-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Carlton Davis, Myles Burgess",
-				"schedule": "MondayJan 18, 2023May 26, 20234:00 PM - 5:30 PM4E.1ClassFridayMay 12, 2023May 12, 20239:00 AM - 4:00 PMStageIntensiveMondayMay 15, 2023May 15, 20239:00 AM - 4:00 PMStageIntensiveTuesdayMay 16, 2023May 16, 20239:00 AM - 4:00 PMStageIntensiveWednesdayMay 17, 2023May 17, 20239:00 AM - 4:00 PMStageIntensiveThursdayMay 18, 2023May 18, 20239:00 AM - 4:00 PMStageIntensiveFridayMay 19, 2023May 19, 20239:00 AM - 4:00 PMStageIntensiveTuesdayMay 23, 2023May 23, 20239:00 AM - 4:00 PMStageIntensiveWednesdayMay 24, 2023May 24, 20239:00 AM - 4:00 PMStageIntensiveThursdayMay 25, 2023May 25, 20239:00 AM - 4:00 PMStageIntensiveFridayMay 26, 2023May 26, 20239:00 AM - 4:00 PMStageIntensive"
-			}
-		]
-	},
-	{
-		"title": "Web Development V",
-		"number": "420-620-DW",
-		"sections": [
+			},
 			{
 				"title": "Web Development Project",
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Jaya Nilakantan",
 				"schedule": "Monday10:00 AM - 11:30 AM4E.11ClassMonday11:30 AM - 1:00 PM2F.18LabWednesday8:30 AM - 10:00 AM4E.11ClassWednesday10:00 AM - 11:30 AM2F.18LabThursday11:30 AM - 2:30 PM2F.18Lab"
 			}
@@ -343,7 +192,13 @@
 		"sections": [
 			{
 				"title": "Software Deployment",
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Maja Frydrychowicz",
+				"schedule": "Monday1:00 PM - 2:30 PM3E.10ClassTuesday1:00 PM - 4:00 PM2F.14LabThursday2:30 PM - 4:00 PM3E.10ClassFriday10:00 AM - 11:30 AM2F.16Lab"
+			},
+			{
+				"title": "Software Deployment",
+				"number": "00002",
 				"teacher": "Maja Frydrychowicz",
 				"schedule": "Monday2:30 PM - 4:00 PM3E.10ClassTuesday11:30 AM - 1:00 PM2F.18LabThursday10:00 AM - 11:30 AM3E.10ClassFriday11:30 AM - 2:30 PM2F.18Lab"
 			}
@@ -354,7 +209,12 @@
 		"number": "420-652-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Lei Lopez",
+				"schedule": "Tuesday11:30 AM - 1:00 PM3E.10ClassWednesday2:30 PM - 4:00 PM2F.18LabFriday11:30 AM - 1:00 PM3E.10Class"
+			},
+			{
+				"number": "00002",
 				"teacher": "Lei Lopez",
 				"schedule": "Tuesday10:00 AM - 11:30 AM3E.10ClassWednesday11:30 AM - 1:00 PM2F.18LabFriday10:00 AM - 11:30 AM3E.10Class"
 			}
@@ -365,7 +225,12 @@
 		"number": "420-653-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Carlton Davis, Myles Burgess",
+				"schedule": "MondayJan 18, 2023May 26, 20234:00 PM - 5:30 PM4E.1ClassFridayMay 12, 2023May 12, 20239:00 AM - 4:00 PMStageIntensiveMondayMay 15, 2023May 15, 20239:00 AM - 4:00 PMStageIntensiveTuesdayMay 16, 2023May 16, 20239:00 AM - 4:00 PMStageIntensiveWednesdayMay 17, 2023May 17, 20239:00 AM - 4:00 PMStageIntensiveThursdayMay 18, 2023May 18, 20239:00 AM - 4:00 PMStageIntensiveFridayMay 19, 2023May 19, 20239:00 AM - 4:00 PMStageIntensiveTuesdayMay 23, 2023May 23, 20239:00 AM - 4:00 PMStageIntensiveWednesdayMay 24, 2023May 24, 20239:00 AM - 4:00 PMStageIntensiveThursdayMay 25, 2023May 25, 20239:00 AM - 4:00 PMStageIntensiveFridayMay 26, 2023May 26, 20239:00 AM - 4:00 PMStageIntensive"
+			},
+			{
+				"number": "00002",
 				"teacher": "Carlton Davis, Myles Burgess",
 				"schedule": "MondayJan 18, 2023May 26, 20234:00 PM - 5:30 PM4E.1ClassFridayMay 12, 2023May 12, 20239:00 AM - 4:00 PMStageIntensiveMondayMay 15, 2023May 15, 20239:00 AM - 4:00 PMStageIntensiveTuesdayMay 16, 2023May 16, 20239:00 AM - 4:00 PMStageIntensiveWednesdayMay 17, 2023May 17, 20239:00 AM - 4:00 PMStageIntensiveThursdayMay 18, 2023May 18, 20239:00 AM - 4:00 PMStageIntensiveFridayMay 19, 2023May 19, 20239:00 AM - 4:00 PMStageIntensiveTuesdayMay 23, 2023May 23, 20239:00 AM - 4:00 PMStageIntensiveWednesdayMay 24, 2023May 24, 20239:00 AM - 4:00 PMStageIntensiveThursdayMay 25, 2023May 25, 20239:00 AM - 4:00 PMStageIntensiveFridayMay 26, 2023May 26, 20239:00 AM - 4:00 PMStageIntensive"
 			}

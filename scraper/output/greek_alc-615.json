@@ -4,7 +4,7 @@
 		"number": "615-111-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Irene Tourkomanoli",
 				"schedule": "Tuesday2:30 PM - 4:00 PM3D.2ClassThursday2:30 PM - 4:00 PM3D.2Class"
 			}
@@ -15,7 +15,7 @@
 		"number": "615-211-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Irene Tourkomanoli",
 				"schedule": "Tuesday4:00 PM - 5:30 PM3D.2ClassThursday4:00 PM - 5:30 PM3D.2Class"
 			}

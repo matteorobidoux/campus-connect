@@ -4,144 +4,27 @@
 		"number": "101-986-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Caroline Robert",
 				"schedule": "Monday10:00 AM - 11:30 AM4D.3ClassThursday10:00 AM - 12:00 PM5A.14LabFriday11:30 AM - 1:00 PM4E.11Class"
-			}
-		]
-	},
-	{
-		"title": "Nursing the Hospitalized Adult",
-		"number": "180-212-DW",
-		"sections": [
+			},
 			{
-				"section": "00001",
-				"teacher": "Cecilia Poleon, Charlie Myriam Julien, Christina Wagner, Devin Katrina Smith, Jian Ning Li, Judith Peterkin, Lauren Elisabeth Haughton, Lucien Chiasson, Lynette Robinson, Magdalena Mlek, Merben Tongco, Natalie Turner, Rhizlane Bougrine, Sabrina Zaman, Sawsan Ibrahim, Sherry McMillan, Youngnam Hwang",
-				"schedule": "MondayJan 17, 2023May 11, 20232:00 PM - 4:00 PM4A.2ClassTuesdayJan 17, 2023Jan 17, 20238:00 AM - 5:00 PM6B.3IntensiveTuesdayJan 17, 2023Jan 17, 20238:00 AM - 5:00 PMHospitalIntensiveTuesdayJan 17, 2023May 11, 20238:00 AM - 5:00 PM6B.1LabTuesdayJan 17, 2023May 11, 20238:00 AM - 5:00 PM6B.11LabTuesdayJan 17, 2023May 11, 20238:00 AM - 5:00 PMHospitalLabThursdayJan 17, 2023May 11, 20238:00 AM - 10:00 AM5A.2Class"
-			}
-		]
-	},
-	{
-		"title": "Basic Health Assessment",
-		"number": "180-214-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Charlie Myriam Julien, Devin Katrina Smith, Jian Ning Li, Magdalena Mlek, Natalie Turner, Sherry McMillan",
-				"schedule": "Wednesday2:30 PM - 3:30 PM3E.10ClassFriday8:00 AM - 10:00 AM6B.1Lab"
-			}
-		]
-	},
-	{
-		"title": "Psychology: Human Development",
-		"number": "350-980-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Marie-Pierre Gosselin",
-				"schedule": "Wednesday10:00 AM - 1:00 PM3F.38Class"
-			}
-		]
-	},
-	{
-		"title": "Human Body for Nurses II",
-		"number": "101-986-DW",
-		"sections": [
-			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Caroline Robert",
 				"schedule": "Monday10:00 AM - 11:30 AM4D.3ClassThursday1:00 PM - 3:00 PM5A.14LabFriday11:30 AM - 1:00 PM4E.11Class"
-			}
-		]
-	},
-	{
-		"title": "Nursing the Hospitalized Adult",
-		"number": "180-212-DW",
-		"sections": [
+			},
 			{
-				"section": "00001",
-				"teacher": "Cecilia Poleon, Charlie Myriam Julien, Christina Wagner, Devin Katrina Smith, Jian Ning Li, Judith Peterkin, Lauren Elisabeth Haughton, Lucien Chiasson, Lynette Robinson, Magdalena Mlek, Merben Tongco, Natalie Turner, Rhizlane Bougrine, Sabrina Zaman, Sawsan Ibrahim, Sherry McMillan, Youngnam Hwang",
-				"schedule": "MondayJan 17, 2023May 11, 20232:00 PM - 4:00 PM4A.2ClassTuesdayJan 17, 2023Jan 17, 20238:00 AM - 5:00 PM6B.3IntensiveTuesdayJan 17, 2023Jan 17, 20238:00 AM - 5:00 PMHospitalIntensiveTuesdayJan 17, 2023May 11, 20238:00 AM - 5:00 PM6B.1LabTuesdayJan 17, 2023May 11, 20238:00 AM - 5:00 PM6B.11LabTuesdayJan 17, 2023May 11, 20238:00 AM - 5:00 PMHospitalLabThursdayJan 17, 2023May 11, 20238:00 AM - 10:00 AM5A.2Class"
-			}
-		]
-	},
-	{
-		"title": "Basic Health Assessment",
-		"number": "180-214-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Charlie Myriam Julien, Devin Katrina Smith, Jian Ning Li, Magdalena Mlek, Natalie Turner, Sherry McMillan",
-				"schedule": "Wednesday2:30 PM - 3:30 PM3E.10ClassFriday8:00 AM - 10:00 AM6B.1Lab"
-			}
-		]
-	},
-	{
-		"title": "Psychology: Human Development",
-		"number": "350-980-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Marie-Pierre Gosselin",
-				"schedule": "Wednesday10:00 AM - 1:00 PM3F.38Class"
-			}
-		]
-	},
-	{
-		"title": "Human Body for Nurses II",
-		"number": "101-986-DW",
-		"sections": [
-			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Man-Tze Mabel Chong",
 				"schedule": "Tuesday2:30 PM - 4:00 PM4D.3ClassThursday2:30 PM - 4:00 PM4D.3ClassFriday2:00 PM - 4:00 PM5A.14Lab"
-			}
-		]
-	},
-	{
-		"title": "Nursing the Hospitalized Adult",
-		"number": "180-212-DW",
-		"sections": [
+			},
 			{
-				"section": "00002",
-				"teacher": "Cecilia Poleon, Charlie Myriam Julien, Christina Wagner, Devin Katrina Smith, Jian Ning Li, Judith Peterkin, Lauren Elisabeth Haughton, Lucien Chiasson, Lynette Robinson, Magdalena Mlek, Merben Tongco, Natalie Turner, Rhizlane Bougrine, Sabrina Zaman, Sawsan Ibrahim, Sherry McMillan, Youngnam Hwang",
-				"schedule": "Monday10:00 AM - 12:00 PM4C.1ClassWednesday8:00 AM - 5:00 PM6B.1LabWednesday8:00 AM - 5:00 PM6B.11LabWednesday8:00 AM - 5:00 PMHospitalLabThursday10:00 AM - 12:00 PM4E.1Class"
-			}
-		]
-	},
-	{
-		"title": "Basic Health Assessment",
-		"number": "180-214-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Charlie Myriam Julien, Devin Katrina Smith, Jian Ning Li, Magdalena Mlek, Natalie Turner, Sherry McMillan",
-				"schedule": "TuesdayJan 17, 2023Jan 17, 20239:00 AM - 10:00 AM4C.1IntensiveMondayJan 18, 2023May 11, 20239:00 AM - 10:00 AM4C.1ClassFridayJan 18, 2023May 11, 202312:00 PM - 2:00 PM6B.1Lab"
-			}
-		]
-	},
-	{
-		"title": "Psychology: Human Development",
-		"number": "350-980-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Marie-Pierre Gosselin",
-				"schedule": "Monday1:00 PM - 4:00 PM3F.38Class"
-			}
-		]
-	},
-	{
-		"title": "Human Body for Nurses II",
-		"number": "101-986-DW",
-		"sections": [
-			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Man-Tze Mabel Chong",
 				"schedule": "Tuesday2:30 PM - 4:00 PM4D.3ClassThursday8:00 AM - 10:00 AM5A.14LabThursday2:30 PM - 4:00 PM4D.3Class"
 			},
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Christine Lafleur",
 				"schedule": "Tuesday2:30 PM - 4:00 PM5A.2ClassThursday2:30 PM - 4:00 PM5A.2ClassFriday8:00 AM - 10:00 AM5A.14Lab"
 			}
@@ -152,7 +35,12 @@
 		"number": "180-212-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Cecilia Poleon, Charlie Myriam Julien, Christina Wagner, Devin Katrina Smith, Jian Ning Li, Judith Peterkin, Lauren Elisabeth Haughton, Lucien Chiasson, Lynette Robinson, Magdalena Mlek, Merben Tongco, Natalie Turner, Rhizlane Bougrine, Sabrina Zaman, Sawsan Ibrahim, Sherry McMillan, Youngnam Hwang",
+				"schedule": "MondayJan 17, 2023May 11, 20232:00 PM - 4:00 PM4A.2ClassTuesdayJan 17, 2023Jan 17, 20238:00 AM - 5:00 PM6B.3IntensiveTuesdayJan 17, 2023Jan 17, 20238:00 AM - 5:00 PMHospitalIntensiveTuesdayJan 17, 2023May 11, 20238:00 AM - 5:00 PM6B.1LabTuesdayJan 17, 2023May 11, 20238:00 AM - 5:00 PM6B.11LabTuesdayJan 17, 2023May 11, 20238:00 AM - 5:00 PMHospitalLabThursdayJan 17, 2023May 11, 20238:00 AM - 10:00 AM5A.2Class"
+			},
+			{
+				"number": "00002",
 				"teacher": "Cecilia Poleon, Charlie Myriam Julien, Christina Wagner, Devin Katrina Smith, Jian Ning Li, Judith Peterkin, Lauren Elisabeth Haughton, Lucien Chiasson, Lynette Robinson, Magdalena Mlek, Merben Tongco, Natalie Turner, Rhizlane Bougrine, Sabrina Zaman, Sawsan Ibrahim, Sherry McMillan, Youngnam Hwang",
 				"schedule": "Monday10:00 AM - 12:00 PM4C.1ClassWednesday8:00 AM - 5:00 PM6B.1LabWednesday8:00 AM - 5:00 PM6B.11LabWednesday8:00 AM - 5:00 PMHospitalLabThursday10:00 AM - 12:00 PM4E.1Class"
 			}
@@ -163,12 +51,17 @@
 		"number": "180-214-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Charlie Myriam Julien, Devin Katrina Smith, Jian Ning Li, Magdalena Mlek, Natalie Turner, Sherry McMillan",
+				"schedule": "Wednesday2:30 PM - 3:30 PM3E.10ClassFriday8:00 AM - 10:00 AM6B.1Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Charlie Myriam Julien, Devin Katrina Smith, Jian Ning Li, Magdalena Mlek, Natalie Turner, Sherry McMillan",
 				"schedule": "TuesdayJan 17, 2023Jan 17, 20239:00 AM - 10:00 AM4C.1IntensiveMondayJan 18, 2023May 11, 20239:00 AM - 10:00 AM4C.1ClassFridayJan 18, 2023May 11, 202312:00 PM - 2:00 PM6B.1Lab"
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Charlie Myriam Julien, Devin Katrina Smith, Jian Ning Li, Magdalena Mlek, Natalie Turner, Sherry McMillan",
 				"schedule": "TuesdayJan 17, 2023Jan 17, 20239:00 AM - 10:00 AM4C.1IntensiveMondayJan 18, 2023May 11, 20239:00 AM - 10:00 AM4C.1ClassFridayJan 18, 2023May 11, 20232:00 PM - 4:00 PM6B.1Lab"
 			}
@@ -179,7 +72,12 @@
 		"number": "350-980-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Marie-Pierre Gosselin",
+				"schedule": "Wednesday10:00 AM - 1:00 PM3F.38Class"
+			},
+			{
+				"number": "00002",
 				"teacher": "Marie-Pierre Gosselin",
 				"schedule": "Monday1:00 PM - 4:00 PM3F.38Class"
 			}
@@ -190,14 +88,24 @@
 		"number": "101-988-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Gina Gentile",
 				"schedule": "Monday2:00 PM - 4:00 PM4D.2ClassTuesday12:00 PM - 2:00 PM5A.14Lab"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Gina Gentile",
 				"schedule": "Monday2:00 PM - 4:00 PM4D.2ClassTuesday3:00 PM - 5:00 PM5A.14Lab"
+			},
+			{
+				"number": "00003",
+				"teacher": "Gina Gentile",
+				"schedule": "Monday10:00 AM - 12:00 PM4A.5ClassTuesday9:00 AM - 11:00 AM5A.14Lab"
+			},
+			{
+				"number": "00004",
+				"teacher": "Gina Gentile",
+				"schedule": "Monday10:00 AM - 12:00 PM4A.5ClassWednesday10:00 AM - 12:00 PM5A.14Lab"
 			}
 		]
 	},
@@ -206,7 +114,7 @@
 		"number": "180-434-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Anouchka Lemoine, Devin Katrina Smith, Marie-Christine Borruel, Meggie Carpel, Natalie Morin, Natalie Turner, Shafiqa Awj Allahyar, Sherry McMillan",
 				"schedule": "MondayJan 16, 2023Jan 16, 20238:00 AM - 4:00 PM6B.1IntensiveMondayJan 16, 2023Jan 16, 20238:00 AM - 4:00 PM6B.11IntensiveMondayJan 16, 2023May 11, 202310:00 AM - 12:30 PM4H.6ClassWednesdayJan 16, 2023May 11, 202310:00 AM - 12:30 PM4H.6ClassThursdayJan 16, 2023May 11, 20238:00 AM - 5:00 PM6B.11LabThursdayJan 16, 2023May 11, 20238:00 AM - 5:00 PMHospitalLabFridayJan 16, 2023May 11, 20238:00 AM - 5:00 PM6B.11LabFridayJan 16, 2023May 11, 20238:00 AM - 5:00 PMHospitalLabTuesdayJan 17, 2023Jan 17, 20238:00 AM - 4:00 PM6B.1IntensiveTuesdayJan 17, 2023Jan 17, 20238:00 AM - 4:00 PM6B.11Intensive"
 			}
@@ -217,25 +125,14 @@
 		"number": "180-441-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "TBA-180-D, Devin Katrina Smith, Geneviève McCaughey, Marie-Christine Borruel, Meggie Carpel, Natalie Morin, Natalie Turner, Patricia Bondu, Sherry McMillan, Yvette Marks",
 				"schedule": "Tuesday8:00 AM - 11:00 AM5D.2Class"
-			}
-		]
-	},
-	{
-		"title": "Human Body for Nurses IV",
-		"number": "101-988-DW",
-		"sections": [
-			{
-				"section": "00003",
-				"teacher": "Gina Gentile",
-				"schedule": "Monday10:00 AM - 12:00 PM4A.5ClassTuesday9:00 AM - 11:00 AM5A.14Lab"
 			},
 			{
-				"section": "00004",
-				"teacher": "Gina Gentile",
-				"schedule": "Monday10:00 AM - 12:00 PM4A.5ClassWednesday10:00 AM - 12:00 PM5A.14Lab"
+				"number": "00002",
+				"teacher": "TBA-180-D, Devin Katrina Smith, Geneviève McCaughey, Marie-Christine Borruel, Meggie Carpel, Natalie Morin, Natalie Turner, Patricia Bondu, Sherry McMillan, Yvette Marks",
+				"schedule": "Tuesday11:30 AM - 2:30 PM5D.2Class"
 			}
 		]
 	},
@@ -244,20 +141,9 @@
 		"number": "180-424-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Devin Katrina Smith, Geneviève McCaughey, Giovanna Primerano, Jocelyne Blondeau, Natalie Turner, Patricia Bondu, Sherry McMillan, Yvette Marks",
 				"schedule": "Monday1:00 PM - 3:30 PM4H.6ClassWednesday1:00 PM - 3:30 PM4H.6ClassThursday8:00 AM - 5:00 PM6B.1LabThursday8:00 AM - 5:00 PMHospitalLabFriday8:00 AM - 5:00 PM6B.1LabFriday8:00 AM - 5:00 PMHospitalLab"
-			}
-		]
-	},
-	{
-		"title": "Collaborative Therapies in Health and Illness II",
-		"number": "180-441-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "TBA-180-D, Devin Katrina Smith, Geneviève McCaughey, Marie-Christine Borruel, Meggie Carpel, Natalie Morin, Natalie Turner, Patricia Bondu, Sherry McMillan, Yvette Marks",
-				"schedule": "Tuesday11:30 AM - 2:30 PM5D.2Class"
 			}
 		]
 	},
@@ -266,7 +152,7 @@
 		"number": "180-617-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Alfi Riffat Mahbub, Atif Abbas, Christina Craighead, Debra Goldstein, Devin Katrina Smith, Hélène Lefebvre, Khaleda Begum, Melanie Zseder, Natalie Turner, Sarah Bolivar, Sarah Robertson, Sherry McMillan, Uliana Grebenuk Roy, Yael Hoffman",
 				"schedule": "MondayJan 16, 2023Jan 16, 20237:00 AM - 8:00 PMStageIntensiveMondayJan 16, 2023May 11, 20238:00 AM - 5:00 PMHospitalLabTuesdayJan 16, 2023May 11, 20238:00 AM - 5:00 PMHospitalLabWednesdayJan 16, 2023May 11, 20238:00 AM - 5:00 PMHospitalLabThursdayJan 16, 2023May 11, 20238:00 AM - 5:00 PMHospitalLabFridayJan 16, 2023May 11, 20238:30 AM - 11:30 AM4C.1ClassFridayJan 16, 2023May 11, 202312:30 PM - 3:30 PM4C.1ClassTuesdayJan 17, 2023Jan 17, 20237:00 AM - 8:00 PMStageIntensive"
 			}

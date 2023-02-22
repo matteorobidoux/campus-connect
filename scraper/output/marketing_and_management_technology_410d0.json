@@ -4,95 +4,17 @@
 		"number": "410-205-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Leslie Schiller",
 				"schedule": "Tuesday4:00 PM - 5:30 PM5D.6ClassThursday4:00 PM - 5:30 PM5D.6Class"
-			}
-		]
-	},
-	{
-		"title": "Global Business",
-		"number": "410-211-DW",
-		"sections": [
+			},
 			{
-				"section": "00001",
-				"teacher": "Steven Assaf",
-				"schedule": "Monday10:00 AM - 11:30 AM4P.22ClassWednesday10:00 AM - 11:30 AM4H.8Class"
-			}
-		]
-	},
-	{
-		"title": "Marketing Fundamentals",
-		"number": "410-241-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Diana Serafini",
-				"schedule": "Monday2:00 PM - 4:00 PM3F.25ClassThursday10:00 AM - 12:00 PM3F.25Class"
-			}
-		]
-	},
-	{
-		"title": "Financial Accounting 1",
-		"number": "410-261-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Neveen Asham",
-				"schedule": "Tuesday2:00 PM - 4:00 PM2F.20ClassThursday2:00 PM - 4:00 PM2F.20Class"
-			}
-		]
-	},
-	{
-		"title": "Business Law",
-		"number": "410-205-DW",
-		"sections": [
-			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Nick Papatheodorakos",
 				"schedule": "Tuesday4:00 PM - 5:30 PM4H.19ClassThursday4:00 PM - 5:30 PM4H.19Class"
-			}
-		]
-	},
-	{
-		"title": "Global Business",
-		"number": "410-211-DW",
-		"sections": [
+			},
 			{
-				"section": "00002",
-				"teacher": "Carmen Kuczewski, Vimala Naidoo",
-				"schedule": "Wednesday11:30 AM - 1:00 PM2P.04ClassFriday11:30 AM - 1:00 PM2P.04Class"
-			}
-		]
-	},
-	{
-		"title": "Marketing Fundamentals",
-		"number": "410-241-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Carmen Kuczewski",
-				"schedule": "Monday4:00 PM - 6:00 PM4P.05ClassWednesday4:00 PM - 6:00 PM4P.05Class"
-			}
-		]
-	},
-	{
-		"title": "Financial Accounting 1",
-		"number": "410-261-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Charles Bierbrier",
-				"schedule": "Tuesday2:00 PM - 4:00 PM3G.2ClassThursday2:00 PM - 4:00 PM3G.2Class"
-			}
-		]
-	},
-	{
-		"title": "Business Law",
-		"number": "410-205-DW",
-		"sections": [
-			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Nick Papatheodorakos",
 				"schedule": "Tuesday1:00 PM - 2:30 PM4P.10ClassThursday1:00 PM - 2:30 PM4P.10Class"
 			}
@@ -103,7 +25,17 @@
 		"number": "410-211-DW",
 		"sections": [
 			{
-				"section": "00003",
+				"number": "00001",
+				"teacher": "Steven Assaf",
+				"schedule": "Monday10:00 AM - 11:30 AM4P.22ClassWednesday10:00 AM - 11:30 AM4H.8Class"
+			},
+			{
+				"number": "00002",
+				"teacher": "Carmen Kuczewski, Vimala Naidoo",
+				"schedule": "Wednesday11:30 AM - 1:00 PM2P.04ClassFriday11:30 AM - 1:00 PM2P.04Class"
+			},
+			{
+				"number": "00003",
 				"teacher": "Patrice Blais, Vimala Naidoo",
 				"schedule": "Monday4:00 PM - 5:30 PM4H.6ClassWednesday4:00 PM - 5:30 PM4H.6Class"
 			}
@@ -114,7 +46,17 @@
 		"number": "410-241-DW",
 		"sections": [
 			{
-				"section": "00003",
+				"number": "00001",
+				"teacher": "Diana Serafini",
+				"schedule": "Monday2:00 PM - 4:00 PM3F.25ClassThursday10:00 AM - 12:00 PM3F.25Class"
+			},
+			{
+				"number": "00002",
+				"teacher": "Carmen Kuczewski",
+				"schedule": "Monday4:00 PM - 6:00 PM4P.05ClassWednesday4:00 PM - 6:00 PM4P.05Class"
+			},
+			{
+				"number": "00003",
 				"teacher": "Carmen Kuczewski",
 				"schedule": "Monday2:00 PM - 4:00 PM4P.02ClassThursday10:00 AM - 12:00 PM4P.02Class"
 			}
@@ -125,7 +67,17 @@
 		"number": "410-261-DW",
 		"sections": [
 			{
-				"section": "00003",
+				"number": "00001",
+				"teacher": "Neveen Asham",
+				"schedule": "Tuesday2:00 PM - 4:00 PM5B.3ClassThursday2:00 PM - 4:00 PM5B.3Class"
+			},
+			{
+				"number": "00002",
+				"teacher": "Charles Bierbrier",
+				"schedule": "Tuesday2:00 PM - 4:00 PM3G.2ClassThursday2:00 PM - 4:00 PM3G.2Class"
+			},
+			{
+				"number": "00003",
 				"teacher": "Charles Bierbrier",
 				"schedule": "Monday12:00 PM - 2:00 PM3F.25ClassThursday8:00 AM - 10:00 AM3F.25Class"
 			}
@@ -136,61 +88,12 @@
 		"number": "410-307-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Diana Serafini",
 				"schedule": "Tuesday8:00 AM - 10:00 AM3F.27ClassFriday8:00 AM - 10:00 AM3F.27Class"
-			}
-		]
-	},
-	{
-		"title": "Consumer Behaviour",
-		"number": "410-409-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Carmen Kuczewski",
-				"schedule": "Monday10:00 AM - 11:30 AM4H.25ClassWednesday10:00 AM - 11:30 AM4H.25Class"
-			}
-		]
-	},
-	{
-		"title": "Inventory and Operations Management",
-		"number": "410-412-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Martin Namour",
-				"schedule": "Tuesday12:00 PM - 2:00 PM3F.27ClassThursday12:00 PM - 2:00 PM3F.27Class"
 			},
 			{
-				"section": "00002",
-				"teacher": "Martin Namour",
-				"schedule": "Wednesday12:00 PM - 2:00 PM3F.27ClassFriday12:00 PM - 2:00 PM3F.27Class"
-			},
-			{
-				"section": "00003",
-				"teacher": "Christos Theodorakakos",
-				"schedule": "Monday8:00 AM - 10:00 AM3G.2ClassWednesday8:00 AM - 10:00 AM3G.2Class"
-			}
-		]
-	},
-	{
-		"title": "Retail Marketing",
-		"number": "410-414-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Angelo Papadatos",
-				"schedule": "Tuesday10:00 AM - 12:00 PM2F.20ClassFriday10:00 AM - 12:00 PM2F.20Class"
-			}
-		]
-	},
-	{
-		"title": "Marketing Research",
-		"number": "410-307-DW",
-		"sections": [
-			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Diana Serafini",
 				"schedule": "Monday10:00 AM - 12:00 PM3F.25ClassWednesday10:00 AM - 12:00 PM3F.25Class"
 			}
@@ -201,7 +104,12 @@
 		"number": "410-409-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Carmen Kuczewski",
+				"schedule": "Monday10:00 AM - 11:30 AM4H.25ClassWednesday10:00 AM - 11:30 AM4H.25Class"
+			},
+			{
+				"number": "00002",
 				"teacher": "Carmen Kuczewski",
 				"schedule": "Tuesday4:00 PM - 5:30 PM4A.7ClassThursday4:00 PM - 5:30 PM4A.7Class"
 			}
@@ -212,12 +120,17 @@
 		"number": "410-412-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Martin Namour",
+				"schedule": "Tuesday12:00 PM - 2:00 PM3F.27ClassThursday12:00 PM - 2:00 PM3F.27Class"
+			},
+			{
+				"number": "00002",
 				"teacher": "Martin Namour",
 				"schedule": "Wednesday12:00 PM - 2:00 PM3F.27ClassFriday12:00 PM - 2:00 PM3F.27Class"
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Christos Theodorakakos",
 				"schedule": "Monday8:00 AM - 10:00 AM3G.2ClassWednesday8:00 AM - 10:00 AM3G.2Class"
 			}
@@ -228,9 +141,14 @@
 		"number": "410-414-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
 				"teacher": "Angelo Papadatos",
-				"schedule": "Tuesday2:00 PM - 4:00 PM5B.3ClassThursday2:00 PM - 4:00 PM5B.3Class"
+				"schedule": "Tuesday10:00 AM - 12:00 PM2F.20ClassFriday10:00 AM - 12:00 PM2F.20Class"
+			},
+			{
+				"number": "00002",
+				"teacher": "Angelo Papadatos",
+				"schedule": "Tuesday2:00 PM - 4:00 PM2F.20ClassThursday2:00 PM - 4:00 PM2F.20Class"
 			}
 		]
 	},
@@ -239,7 +157,7 @@
 		"number": "410-403-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Neveen Asham",
 				"schedule": "Monday8:00 AM - 10:00 AM3F.25ClassWednesday8:00 AM - 10:00 AM3F.25Class"
 			}
@@ -250,7 +168,7 @@
 		"number": "410-601-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Maria Blazkiewicz",
 				"schedule": "Monday12:00 PM - 4:00 PM4F.6Class"
 			}
@@ -261,7 +179,7 @@
 		"number": "410-607-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Robert Soroka",
 				"schedule": "Thursday8:30 AM - 11:30 AM4H.12ClassThursday12:00 PM - 2:00 PM4A.3Class"
 			}
@@ -272,7 +190,7 @@
 		"number": "410-614-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Amanda Petriello, Carmen Kuczewski, Charles Bierbrier, Helen Stavaris, Jim Parthimos, Leslie Schiller, Maria Blazkiewicz, Martin Namour, Nick Papatheodorakos, Robert Soroka, Rosario Lo Raso, Steven Assaf",
 				"schedule": "FridayMay 12, 2023May 12, 20239:00 AM - 4:00 PMStageIntensiveMondayMay 15, 2023May 15, 20239:00 AM - 4:00 PMStageIntensiveTuesdayMay 16, 2023May 16, 20239:00 AM - 4:00 PMStageIntensiveWednesdayMay 17, 2023May 17, 20239:00 AM - 4:00 PMStageIntensiveThursdayMay 18, 2023May 18, 20239:00 AM - 4:00 PMStageIntensiveFridayMay 19, 2023May 19, 20239:00 AM - 4:00 PMStageIntensive"
 			}
@@ -283,7 +201,7 @@
 		"number": "410-617-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Fabienne Cyrius",
 				"schedule": "Tuesday10:00 AM - 12:00 PM3F.25ClassFriday11:30 AM - 2:30 PM4A.4Class"
 			}
@@ -294,7 +212,7 @@
 		"number": "410-618-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Steven Assaf",
 				"schedule": "Wednesday11:30 AM - 2:30 PM4H.12ClassFriday8:00 AM - 10:00 AM4A.3Class"
 			}

@@ -4,17 +4,17 @@
 		"number": "360-420-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Jeremie Choquette, Nasreddine Hallam, Sameer Bhatnagar",
 				"schedule": "Tuesday8:30 AM - 10:00 AM2F.16ClassWednesday8:00 AM - 10:00 AM2F.14LabFriday8:30 AM - 10:00 AM2F.16Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Jeremie Choquette, Patricia Campbell, Sameer Bhatnagar",
 				"schedule": "Monday4:00 PM - 6:00 PM2F.14LabTuesday11:30 AM - 1:00 PM2F.14ClassThursday11:30 AM - 1:00 PM2F.24Class"
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Jeremie Choquette, Sameer Bhatnagar, Victor Manuel Ponce Diaz",
 				"schedule": "Monday11:30 AM - 1:00 PM2F.14ClassWednesday10:00 AM - 12:00 PM2F.14LabThursday8:30 AM - 10:00 AM2F.14Class"
 			}

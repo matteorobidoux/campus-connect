@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Rodal from "rodal";
-import CalendarEvent from "../../../types/Calendar"
+import CalendarEvent from "../../../../types/Calendar"
+import { CalendarEntryDetailedModal } from "../CalendarEntryDetailedModal";
 import styles from "./CalendarEntry.module.scss"
 
 export interface CalendarEventRowProps {
@@ -27,8 +28,10 @@ export default function CalendarEventRow({event}: CalendarEventRowProps) {
         </div>
       </div>
 
-      <Rodal visible={isVisible} onClose={() => setIsVisible(false)} height={500}>
-        <h1> detailed view of event </h1>
+      <Rodal visible={isVisible} onClose={() => setIsVisible(false)}
+        customStyles={{"borderRadius": "25px", padding: 0, height: "500px"}}
+      >
+        <CalendarEntryDetailedModal event={event} close={() => setIsVisible(false)}/>
       </Rodal>
 
     </>

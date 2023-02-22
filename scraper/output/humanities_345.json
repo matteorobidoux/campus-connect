@@ -4,140 +4,140 @@
 		"number": "345-101-MQ",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Mariam Sambe",
 				"schedule": "Monday4:00 PM - 6:00 PM3F.37ClassWednesday4:00 PM - 6:00 PM3F.37Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Martine Gosselin",
 				"schedule": "Monday10:00 AM - 12:00 PM3E.1ClassWednesday10:00 AM - 12:00 PM4E.9Class"
 			},
 			{
 				"title": "States of Nature",
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Sean Elliott",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Darwin's Tea Party",
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Gabriel Tordjman",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Native Ways of Knowing",
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Aditya Kumar Dewan",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Knowledge Beyond Good and Evil",
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Gregory Polakoff",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Greek Mythology",
-				"section": "00007",
+				"number": "00007",
 				"teacher": "Anne Thorpe",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "“That's Not Art!\": An Introduction to Art and Philosophy",
-				"section": "00008",
+				"number": "00008",
 				"teacher": "Mikaela Bobiy",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Philosophical Dilemmas",
-				"section": "00009",
+				"number": "00009",
 				"teacher": "Shi Chen",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Know Thyself",
-				"section": "00010",
+				"number": "00010",
 				"teacher": "Daniel Goldsmith",
 				"schedule": "Monday8:00 AM - 10:00 AM4G.2AClassWednesday8:00 AM - 10:00 AM4G.2AClass"
 			},
 			{
 				"title": "Art: Interpreting the Past and the Present",
-				"section": "00011",
+				"number": "00011",
 				"teacher": "Leanne D'Antoni",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Art: Interpreting the Past and the Present",
-				"section": "00012",
+				"number": "00012",
 				"teacher": "Leanne D'Antoni",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Judging Monarchs",
-				"section": "00013",
+				"number": "00013",
 				"teacher": "Timothy Slonosky",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Evolution",
-				"section": "00014",
+				"number": "00014",
 				"teacher": "Rui De Sousa",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "The Poetics of Philosophy",
-				"section": "00015",
+				"number": "00015",
 				"teacher": "Maia Johnson-Stepenberg",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Critical Thinking and Communication",
-				"section": "00016",
+				"number": "00016",
 				"teacher": "Abid Bahar",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Thinking About Knowledge",
-				"section": "00017",
+				"number": "00017",
 				"teacher": "Mendel Kramer",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Lord of the Rings and Critical Thinking",
-				"section": "00018",
+				"number": "00018",
 				"teacher": "Mark Butorac",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Reading the Past",
-				"section": "00019",
+				"number": "00019",
 				"teacher": "Michael Wood",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Thinking About Knowledge",
-				"section": "00020",
+				"number": "00020",
 				"teacher": "Mendel Kramer",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
-				"section": "00021",
+				"number": "00021",
 				"teacher": "Jared Toney",
 				"schedule": "Tuesday8:00 AM - 10:00 AM4P.07ClassFriday8:00 AM - 10:00 AM4P.07Class"
 			},
 			{
-				"section": "00022",
+				"number": "00022",
 				"teacher": "Jennifer Koopman",
 				"schedule": "Tuesday12:00 PM - 2:00 PM4H.23ClassThursday12:00 PM - 2:00 PM4H.23Class"
 			},
 			{
-				"section": "00023",
+				"number": "00023",
 				"teacher": "Jennifer Koopman",
 				"schedule": "Monday4:00 PM - 6:00 PM4E.7ClassWednesday4:00 PM - 6:00 PM4E.7Class"
 			},
 			{
-				"section": "00024",
+				"number": "00024",
 				"teacher": "Jennifer Koopman",
 				"schedule": "Tuesday4:00 PM - 6:00 PM4H.23ClassThursday4:00 PM - 6:00 PM4H.23Class"
 			}
@@ -149,282 +149,282 @@
 		"sections": [
 			{
 				"title": "Nietzsche and Dostoevsky",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Maia Johnson-Stepenberg",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Early Childhood Education",
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Abid Bahar",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "The Death of Homo Economicus",
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Gray Miles",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Money",
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Noah Brender",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Early Childhood Education",
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Abid Bahar",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "An Introduction to Ideologies",
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Sean Elliott",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "An Introduction to Ideologies",
-				"section": "00007",
+				"number": "00007",
 				"teacher": "Sean Elliott",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Worldviews of Indigenous Peoples",
-				"section": "00008",
+				"number": "00008",
 				"teacher": "Aditya Kumar Dewan",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "An Introduction to Ideologies",
-				"section": "00009",
+				"number": "00009",
 				"teacher": "Sean Elliott",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Problems in Modern Political Thought",
-				"section": "00010",
+				"number": "00010",
 				"teacher": "Michelle Braiden",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Diversity in Women’s Movements",
-				"section": "00011",
+				"number": "00011",
 				"teacher": "Gloria Lalonde",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Justice 2 (Journeys)",
-				"section": "00012",
+				"number": "00012",
 				"teacher": "Anjali Choksi",
 				"schedule": "Tuesday2:30 PM - 4:00 PM4E.18ClassThursday2:30 PM - 4:00 PM4E.18Class"
 			},
 			{
 				"title": "Understanding Culture Through Artworks and Artifacts",
-				"section": "00013",
+				"number": "00013",
 				"teacher": "Beverly Sing",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Art, Film, and Media Witnessing",
-				"section": "00014",
+				"number": "00014",
 				"teacher": "John Hunting",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Bad Attitudes: An Introduction to Pessimism and Skepticism",
-				"section": "00015",
+				"number": "00015",
 				"teacher": "Mikaela Bobiy",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Art, Film, and Media Witnessing",
-				"section": "00016",
+				"number": "00016",
 				"teacher": "John Hunting",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Cultural Identity and Cultural Rights",
-				"section": "00018",
+				"number": "00018",
 				"teacher": "Anjali Choksi",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Worldviews of Indigenous Peoples",
-				"section": "00019",
+				"number": "00019",
 				"teacher": "Aditya Kumar Dewan",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Classic Ideas Revisited through the Contemporary Lens",
-				"section": "00020",
+				"number": "00020",
 				"teacher": "Eric Van Der Wee",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Public Stories: Journalism, Democracy, and the Media",
-				"section": "00021",
+				"number": "00021",
 				"teacher": "Joseph Rosen",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Nietzsche and Dostoevsky",
-				"section": "00022",
+				"number": "00022",
 				"teacher": "Maia Johnson-Stepenberg",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Money",
-				"section": "00023",
+				"number": "00023",
 				"teacher": "Noah Brender",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "The Enlightenment and Romanticism",
-				"section": "00024",
+				"number": "00024",
 				"teacher": "Jean Coléno",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Weird, Wonderful, and Persuasive: The World Views of Western Philosophers",
-				"section": "00025",
+				"number": "00025",
 				"teacher": "Derrick Farnham",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Nietzsche and Dostoevsky",
-				"section": "00026",
+				"number": "00026",
 				"teacher": "Maia Johnson-Stepenberg",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Worldviews in 1968",
-				"section": "00027",
+				"number": "00027",
 				"teacher": "Eliza Wood",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Public Stories: Journalism, Democracy, and the Media",
-				"section": "00028",
+				"number": "00028",
 				"teacher": "Joseph Rosen",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Classic Ideas Revisited through the Contemporary Lens",
-				"section": "00029",
+				"number": "00029",
 				"teacher": "Eric Van Der Wee",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Diversity in Women’s Movements",
-				"section": "00030",
+				"number": "00030",
 				"teacher": "Gloria Lalonde",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "The Death of Homo Economicus",
-				"section": "00031",
+				"number": "00031",
 				"teacher": "Gray Miles",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Worldviews in 1968",
-				"section": "00032",
+				"number": "00032",
 				"teacher": "Eliza Wood",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Political Worldviews",
-				"section": "00033",
+				"number": "00033",
 				"teacher": "Shi Chen",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Public Stories: Journalism, Democracy, and the Media",
-				"section": "00034",
+				"number": "00034",
 				"teacher": "Joseph Rosen",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Weird, Wonderful, and Persuasive: The World Views of Western Philosophers",
-				"section": "00035",
+				"number": "00035",
 				"teacher": "Derrick Farnham",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Worldviews of the Ancients",
-				"section": "00036",
+				"number": "00036",
 				"teacher": "Rui De Sousa",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Political Worldviews",
-				"section": "00037",
+				"number": "00037",
 				"teacher": "Shi Chen",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Worldviews of the Ancients",
-				"section": "00038",
+				"number": "00038",
 				"teacher": "Rui De Sousa",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Worldviews of Indigenous Peoples",
-				"section": "00039",
+				"number": "00039",
 				"teacher": "Aditya Kumar Dewan",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Political Worldviews",
-				"section": "00040",
+				"number": "00040",
 				"teacher": "Shi Chen",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Early Childhood Education",
-				"section": "00041",
+				"number": "00041",
 				"teacher": "Abid Bahar",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Understanding Culture Through Artworks and Artifacts",
-				"section": "00042",
+				"number": "00042",
 				"teacher": "Beverly Sing",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Justice, Development, and Change",
-				"section": "00043",
+				"number": "00043",
 				"teacher": "Isabelle Johnston, Mari Heywood",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Justice, Development, and Change",
-				"section": "00044",
+				"number": "00044",
 				"teacher": "Isabelle Johnston, Mari Heywood",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
-				"section": "00045",
+				"number": "00045",
 				"teacher": "Mariam Sambe",
 				"schedule": "Monday10:00 AM - 11:30 AM3F.7ClassWednesday10:00 AM - 11:30 AM3F.7Class"
 			},
 			{
 				"title": "Violence and Nonviolence",
-				"section": "12001",
+				"number": "12001",
 				"teacher": "Kim Simard, Patricia Romano",
 				"schedule": "Tuesday1:00 PM - 2:30 PM3E.9ClassThursday1:00 PM - 2:30 PM3E.9Class"
 			},
 			{
 				"title": "Signifying Nothing: Pessimism and the Tragic World View",
-				"section": "18001",
+				"number": "18001",
 				"teacher": "Jay Shea, Mikaela Bobiy",
 				"schedule": "Wednesday11:30 AM - 2:30 PM4E.13Class"
 			},
 			{
 				"title": "The unseen world: Magic in Ritual, Fairy Tale and Fantasy",
-				"section": "18002",
+				"number": "18002",
 				"teacher": "Gray Miles, Rebecca Million",
 				"schedule": "Tuesday2:30 PM - 5:30 PM4E.13Class"
 			}
@@ -436,258 +436,258 @@
 		"sections": [
 			{
 				"title": "Ethical Issues in Medicine and Health",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Mendel Kramer",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Ethical Issues in Medicine and Health",
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Mendel Kramer",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "The Universe on Your Plate",
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Daniel Goldsmith",
 				"schedule": "Tuesday11:30 AM - 1:00 PM3F.38ClassThursday11:30 AM - 1:00 PM3F.38Class"
 			},
 			{
 				"title": "Science Fiction and Ethics",
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Gregory Polakoff",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Science Fiction and Ethics",
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Gregory Polakoff",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Ethics: Between the Self and Other",
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Joseph Rosen",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Applied Ethics",
-				"section": "00007",
+				"number": "00007",
 				"teacher": "Mark Butorac",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Society and the Other",
-				"section": "00008",
+				"number": "00008",
 				"teacher": "John Hunting",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Applied Ethics: Contemporary Issues",
-				"section": "00009",
+				"number": "00009",
 				"teacher": "Michelle Braiden",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "The Universe on Your Plate",
-				"section": "00010",
+				"number": "00010",
 				"teacher": "Daniel Goldsmith",
 				"schedule": "Monday11:30 AM - 1:00 PM3F.38ClassThursday8:30 AM - 10:00 AM3F.38Class"
 			},
 			{
 				"title": "Buddhist Ethics",
-				"section": "00011",
+				"number": "00011",
 				"teacher": "Julian Nemeth",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "The Individual and State",
-				"section": "00012",
+				"number": "00012",
 				"teacher": "Timothy Slonosky",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Applied Ethics: Contemporary Issues",
-				"section": "00013",
+				"number": "00013",
 				"teacher": "Michelle Braiden",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Introduction to Ethics",
-				"section": "00014",
+				"number": "00014",
 				"teacher": "Martine Gosselin",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "The Individual and State",
-				"section": "00015",
+				"number": "00015",
 				"teacher": "Timothy Slonosky",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Applied Ethics: Contemporary Issues",
-				"section": "00016",
+				"number": "00016",
 				"teacher": "Michelle Braiden",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Applied Ethics",
-				"section": "00017",
+				"number": "00017",
 				"teacher": "Mark Butorac",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Applied Ethics",
-				"section": "00018",
+				"number": "00018",
 				"teacher": "Mark Butorac",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Society and the Other",
-				"section": "00020",
+				"number": "00020",
 				"teacher": "John Hunting",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Happily Ever After",
-				"section": "00021",
+				"number": "00021",
 				"teacher": "Derrick Farnham",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Buddhist Ethics",
-				"section": "00022",
+				"number": "00022",
 				"teacher": "Julian Nemeth",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "The Ethics of the Past: Archaeology, Ownership, and the Antiquities Trade",
-				"section": "00023",
+				"number": "00023",
 				"teacher": "Michael Wood",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Introduction to Ethics",
-				"section": "00024",
+				"number": "00024",
 				"teacher": "Martine Gosselin",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "The Ethics of the Past: Archaeology, Ownership, and the Antiquities Trade",
-				"section": "00025",
+				"number": "00025",
 				"teacher": "Michael Wood",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "From Cruelty to Forgiveness",
-				"section": "00026",
+				"number": "00026",
 				"teacher": "Patricia Romano",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "The Individual and State",
-				"section": "00027",
+				"number": "00027",
 				"teacher": "Timothy Slonosky",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Buddhist Ethics",
-				"section": "00028",
+				"number": "00028",
 				"teacher": "Julian Nemeth",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "The Universe on Your Plate",
-				"section": "00029",
+				"number": "00029",
 				"teacher": "Daniel Goldsmith",
 				"schedule": "Tuesday1:00 PM - 2:30 PM3F.38ClassThursday1:00 PM - 2:30 PM3F.38Class"
 			},
 			{
-				"section": "00030",
+				"number": "00030",
 				"teacher": "Martine Gosselin",
 				"schedule": "Monday8:30 AM - 10:00 AM3E.11ClassWednesday8:30 AM - 10:00 AM3E.11Class"
 			},
 			{
 				"title": "Who Does the Law Serve?",
-				"section": "00031",
+				"number": "00031",
 				"teacher": "Isabelle Johnston, Mari Heywood",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Moral Issues in Law (Liberal Arts)",
-				"section": "00032",
+				"number": "00032",
 				"teacher": "Robert Stephens",
 				"schedule": "Wednesday1:00 PM - 2:30 PM3F.38ClassFriday1:00 PM - 2:30 PM3F.38Class"
 			},
 			{
 				"title": "The Ethics of the Past: Archaeology, Ownership, and the Antiquities Trade",
-				"section": "00033",
+				"number": "00033",
 				"teacher": "Michael Wood",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Modern Mythology: Human Values through a Comic Book Panel",
-				"section": "00034",
+				"number": "00034",
 				"teacher": "Eric Van Der Wee",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Ethical Issues",
-				"section": "00035",
+				"number": "00035",
 				"teacher": "Jean Coléno",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Introduction to Ethics",
-				"section": "00037",
+				"number": "00037",
 				"teacher": "Sarah Allen",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Ethical Issues",
-				"section": "00038",
+				"number": "00038",
 				"teacher": "Jean Coléno",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Introduction to Ethics",
-				"section": "00039",
+				"number": "00039",
 				"teacher": "Sarah Allen",
 				"schedule": "Wednesday11:30 AM - 1:00 PM7B.11ClassFriday11:30 AM - 1:00 PM7B.11Class"
 			},
 			{
 				"title": "Modern Mythology: Human Values through a Comic Book Panel",
-				"section": "00040",
+				"number": "00040",
 				"teacher": "Eric Van Der Wee",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Ethical Issues",
-				"section": "00041",
+				"number": "00041",
 				"teacher": "Jean Coléno",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Happily Ever After",
-				"section": "00042",
+				"number": "00042",
 				"teacher": "Derrick Farnham",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Issues in Bioethics",
-				"section": "00043",
+				"number": "00043",
 				"teacher": "Gabriel Tordjman",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Investigating Story Value(s)",
-				"section": "12001",
+				"number": "12001",
 				"teacher": "Gray Miles",
 				"schedule": "Monday4:00 PM - 5:30 PM3F.3ClassWednesday4:00 PM - 5:30 PM3F.3Class"
 			},
 			{
 				"title": "Welcome to the Machine: An Introduction to Ethics and Sci-Fi",
-				"section": "18001",
+				"number": "18001",
 				"teacher": "Gregory Polakoff, Jay Shea",
 				"schedule": "Thursday11:30 AM - 2:30 PM4E.13Class"
 			}

@@ -4,7 +4,7 @@
 		"number": "201-103-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Garry Ka Lok Chu",
 				"schedule": "Monday11:30 AM - 1:00 PM3F.37ClassWednesday12:00 PM - 2:00 PM3F.45LabThursday8:30 AM - 10:00 AM3F.37Class"
 			}
@@ -15,7 +15,7 @@
 		"number": "350-101-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Jacob Nuselovici",
 				"schedule": "Tuesday10:00 AM - 11:30 AM4E.9ClassFriday10:00 AM - 11:30 AM4E.9Class"
 			}
@@ -26,7 +26,7 @@
 		"number": "383-101-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Carlo Catino",
 				"schedule": "Monday10:00 AM - 11:30 AM4D.11ClassWednesday10:00 AM - 11:30 AM4D.11Class"
 			}
@@ -37,7 +37,7 @@
 		"number": "401-101-DW",
 		"sections": [
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Helen Stavaris",
 				"schedule": "Monday2:30 PM - 4:00 PM4H.8ClassWednesday2:30 PM - 4:00 PM4H.17Class"
 			}
@@ -48,165 +48,22 @@
 		"number": "201-203-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Ijaz Ahmad Rajput",
 				"schedule": "Tuesday10:00 AM - 11:30 AM4D.3ClassThursday12:00 PM - 2:00 PM4A.5LabFriday10:00 AM - 11:30 AM4D.3Class"
-			}
-		]
-	},
-	{
-		"title": "Research Methods",
-		"number": "300-300-DW",
-		"sections": [
-			{
-				"section": "00022",
-				"teacher": "Jean Duclos Alegue Feugo",
-				"schedule": "Tuesday4:00 PM - 6:00 PM3A.4ClassThursday4:00 PM - 6:00 PM3A.4Class"
 			},
 			{
-				"section": "00025",
-				"teacher": "Sacha Des Rosiers",
-				"schedule": "Tuesday8:00 AM - 10:00 AM3A.4ClassFriday8:00 AM - 10:00 AM3A.4Class"
-			}
-		]
-	},
-	{
-		"title": "Western Civilization",
-		"number": "330-101-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Frédéric Bastien",
-				"schedule": "Monday10:00 AM - 11:30 AM4H.23ClassWednesday10:00 AM - 11:30 AM4H.23Class"
-			}
-		]
-	},
-	{
-		"title": "Basics of Marketing",
-		"number": "401-201-DW",
-		"sections": [
-			{
-				"section": "00003",
-				"teacher": "Kayrod Niamir",
-				"schedule": "Monday1:00 PM - 2:30 PM4H.19ClassThursday10:00 AM - 11:30 AM4H.19Class"
-			}
-		]
-	},
-	{
-		"title": "Calculus II",
-		"number": "201-203-DW",
-		"sections": [
-			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Ijaz Ahmad Rajput",
 				"schedule": "Monday2:30 PM - 4:00 PM7B.13ClassWednesday2:30 PM - 4:00 PM7B.13ClassThursday4:00 PM - 6:00 PM4A.3Lab"
-			}
-		]
-	},
-	{
-		"title": "Research Methods",
-		"number": "300-300-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Lazar Konforti",
-				"schedule": "Tuesday10:00 AM - 12:00 PM3H.19ClassFriday10:00 AM - 12:00 PM3H.19Class"
 			},
 			{
-				"section": "00024",
-				"teacher": "Marc-André Girouard",
-				"schedule": "Wednesday12:00 PM - 2:00 PM3A.4ClassFriday12:00 PM - 2:00 PM3A.4Class"
-			}
-		]
-	},
-	{
-		"title": "Western Civilization",
-		"number": "330-101-DW",
-		"sections": [
-			{
-				"section": "00010",
-				"teacher": "Julie Johnson",
-				"schedule": "Monday4:00 PM - 5:30 PM3H.13ClassWednesday4:00 PM - 5:30 PM3H.13Class"
-			}
-		]
-	},
-	{
-		"title": "Basics of Marketing",
-		"number": "401-201-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Maria Blazkiewicz",
-				"schedule": "Tuesday8:30 AM - 10:00 AM5B.7ClassFriday8:30 AM - 10:00 AM5B.7Class"
-			}
-		]
-	},
-	{
-		"title": "Calculus II",
-		"number": "201-203-DW",
-		"sections": [
-			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Olga E. Veres",
 				"schedule": "Monday10:00 AM - 11:30 AM7B.2ClassTuesday10:00 AM - 12:00 PM7B.4LabWednesday10:00 AM - 11:30 AM7B.2Class"
-			}
-		]
-	},
-	{
-		"title": "Calculus II",
-		"number": "201-NYB-05",
-		"sections": [
-			{
-				"section": "00015",
-				"teacher": "Noushin Sabetghadam Haghighi",
-				"schedule": "Tuesday1:00 PM - 2:30 PM6B.13ClassThursday1:00 PM - 2:30 PM6B.13ClassFriday12:00 PM - 2:00 PM7B.4Lab"
-			}
-		]
-	},
-	{
-		"title": "Research Methods",
-		"number": "300-300-DW",
-		"sections": [
-			{
-				"section": "00023",
-				"teacher": "Marc-André Girouard",
-				"schedule": "Tuesday8:00 AM - 10:00 AM3H.19ClassFriday8:00 AM - 10:00 AM3H.19Class"
 			},
 			{
-				"section": "00026",
-				"teacher": "Sacha Des Rosiers",
-				"schedule": "Monday12:00 PM - 2:00 PM3A.4ClassThursday8:00 AM - 10:00 AM3A.4Class"
-			}
-		]
-	},
-	{
-		"title": "Western Civilization",
-		"number": "330-101-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Frédéric Bastien",
-				"schedule": "Monday8:30 AM - 10:00 AM4H.21ClassWednesday8:30 AM - 10:00 AM4H.21Class"
-			}
-		]
-	},
-	{
-		"title": "Basics of Marketing",
-		"number": "401-201-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Kayrod Niamir",
-				"schedule": "Monday4:00 PM - 5:30 PM3E.10ClassWednesday4:00 PM - 5:30 PM3E.10Class"
-			}
-		]
-	},
-	{
-		"title": "Calculus II",
-		"number": "201-203-DW",
-		"sections": [
-			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Olga E. Veres",
 				"schedule": "Monday2:00 PM - 4:00 PM7B.4LabWednesday1:00 PM - 2:30 PM7B.2ClassFriday1:00 PM - 2:30 PM7B.2Class"
 			}
@@ -217,61 +74,37 @@
 		"number": "300-300-DW",
 		"sections": [
 			{
-				"section": "00023",
-				"teacher": "Marc-André Girouard",
-				"schedule": "Tuesday8:00 AM - 10:00 AM3H.19ClassFriday8:00 AM - 10:00 AM3H.19Class"
+				"number": "00022",
+				"teacher": "Jean Duclos Alegue Feugo",
+				"schedule": "Tuesday4:00 PM - 6:00 PM3A.4ClassThursday4:00 PM - 6:00 PM3A.4Class"
 			},
 			{
-				"section": "00025",
+				"number": "00025",
 				"teacher": "Sacha Des Rosiers",
 				"schedule": "Tuesday8:00 AM - 10:00 AM3A.4ClassFriday8:00 AM - 10:00 AM3A.4Class"
-			}
-		]
-	},
-	{
-		"title": "Western Civilization",
-		"number": "330-101-DW",
-		"sections": [
+			},
 			{
-				"section": "00011",
-				"teacher": "Mark Theriault",
-				"schedule": "Monday8:30 AM - 10:00 AM4H.23ClassWednesday8:30 AM - 10:00 AM4H.23Class"
-			}
-		]
-	},
-	{
-		"title": "Basics of Marketing",
-		"number": "401-201-DW",
-		"sections": [
-			{
-				"section": "00004",
-				"teacher": "Rosario Lo Raso",
-				"schedule": "Tuesday1:00 PM - 2:30 PM4P.26ClassThursday1:00 PM - 2:30 PM4P.26Class"
-			}
-		]
-	},
-	{
-		"title": "Calculus I",
-		"number": "201-103-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Garry Ka Lok Chu",
-				"schedule": "Monday11:30 AM - 1:00 PM3F.37ClassWednesday12:00 PM - 2:00 PM3F.45LabThursday8:30 AM - 10:00 AM3F.37Class"
-			}
-		]
-	},
-	{
-		"title": "Research Methods",
-		"number": "300-300-DW",
-		"sections": [
-			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Lazar Konforti",
 				"schedule": "Tuesday10:00 AM - 12:00 PM3H.19ClassFriday10:00 AM - 12:00 PM3H.19Class"
 			},
 			{
-				"section": "00021",
+				"number": "00024",
+				"teacher": "Marc-André Girouard",
+				"schedule": "Wednesday12:00 PM - 2:00 PM3A.4ClassFriday12:00 PM - 2:00 PM3A.4Class"
+			},
+			{
+				"number": "00023",
+				"teacher": "Marc-André Girouard",
+				"schedule": "Tuesday8:00 AM - 10:00 AM3H.19ClassFriday8:00 AM - 10:00 AM3H.19Class"
+			},
+			{
+				"number": "00026",
+				"teacher": "Sacha Des Rosiers",
+				"schedule": "Monday12:00 PM - 2:00 PM3A.4ClassThursday8:00 AM - 10:00 AM3A.4Class"
+			},
+			{
+				"number": "00021",
 				"teacher": "Jean Duclos Alegue Feugo",
 				"schedule": "Tuesday10:00 AM - 12:00 PM3A.4ClassFriday10:00 AM - 12:00 PM3A.4Class"
 			}
@@ -282,7 +115,27 @@
 		"number": "330-101-DW",
 		"sections": [
 			{
-				"section": "00018",
+				"number": "00001",
+				"teacher": "Frédéric Bastien",
+				"schedule": "Monday10:00 AM - 11:30 AM4H.23ClassWednesday10:00 AM - 11:30 AM4H.23Class"
+			},
+			{
+				"number": "00010",
+				"teacher": "Julie Johnson",
+				"schedule": "Monday4:00 PM - 5:30 PM3H.13ClassWednesday4:00 PM - 5:30 PM3H.13Class"
+			},
+			{
+				"number": "00002",
+				"teacher": "Frédéric Bastien",
+				"schedule": "Monday8:30 AM - 10:00 AM4H.21ClassWednesday8:30 AM - 10:00 AM4H.21Class"
+			},
+			{
+				"number": "00011",
+				"teacher": "Mark Theriault",
+				"schedule": "Monday8:30 AM - 10:00 AM4H.23ClassWednesday8:30 AM - 10:00 AM4H.23Class"
+			},
+			{
+				"number": "00018",
 				"teacher": "Rachèle Caux",
 				"schedule": "Monday1:00 PM - 2:30 PM4P.25ClassThursday10:00 AM - 11:30 AM4P.25Class"
 			}
@@ -293,51 +146,54 @@
 		"number": "401-201-DW",
 		"sections": [
 			{
-				"section": "00005",
+				"number": "00003",
+				"teacher": "Kayrod Niamir",
+				"schedule": "Monday1:00 PM - 2:30 PM4H.19ClassThursday10:00 AM - 11:30 AM4H.19Class"
+			},
+			{
+				"number": "00001",
+				"teacher": "Maria Blazkiewicz",
+				"schedule": "Tuesday8:30 AM - 10:00 AM5B.7ClassFriday8:30 AM - 10:00 AM5B.7Class"
+			},
+			{
+				"number": "00002",
+				"teacher": "Kayrod Niamir",
+				"schedule": "Monday4:00 PM - 5:30 PM3E.10ClassWednesday4:00 PM - 5:30 PM3E.10Class"
+			},
+			{
+				"number": "00004",
+				"teacher": "Rosario Lo Raso",
+				"schedule": "Tuesday1:00 PM - 2:30 PM4P.26ClassThursday1:00 PM - 2:30 PM4P.26Class"
+			},
+			{
+				"number": "00005",
 				"teacher": "Rosario Lo Raso",
 				"schedule": "Monday8:30 AM - 10:00 AM3F.6ClassWednesday8:30 AM - 10:00 AM3F.6Class"
 			}
 		]
 	},
 	{
+		"title": "Calculus II",
+		"number": "201-NYB-05",
+		"sections": [
+			{
+				"number": "00015",
+				"teacher": "Noushin Sabetghadam Haghighi",
+				"schedule": "Tuesday1:00 PM - 2:30 PM6B.13ClassThursday1:00 PM - 2:30 PM6B.13ClassFriday12:00 PM - 2:00 PM7B.4Lab"
+			}
+		]
+	},
+	{
 		"title": "Linear Algebra",
 		"number": "201-105-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Olga Zlotchevskaia",
 				"schedule": "Monday12:00 PM - 2:00 PM4D.2LabWednesday1:00 PM - 2:30 PM3B.11ClassFriday1:00 PM - 2:30 PM3B.11Class"
-			}
-		]
-	},
-	{
-		"title": "Quantitative Methods",
-		"number": "360-300-DW",
-		"sections": [
+			},
 			{
-				"section": "00009",
-				"teacher": "Worku Aberra",
-				"schedule": "Tuesday12:00 PM - 2:00 PM3A.4ClassThursday12:00 PM - 2:00 PM3A.4Class"
-			}
-		]
-	},
-	{
-		"title": "Microeconomics",
-		"number": "383-201-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Sacha Des Rosiers",
-				"schedule": "Tuesday2:30 PM - 4:00 PM3H.15ClassThursday2:30 PM - 4:00 PM3H.15Class"
-			}
-		]
-	},
-	{
-		"title": "Linear Algebra",
-		"number": "201-105-DW",
-		"sections": [
-			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Olga Zlotchevskaia",
 				"schedule": "Tuesday8:30 AM - 10:00 AM3E.9ClassThursday8:00 AM - 10:00 AM4E.11LabFriday8:30 AM - 10:00 AM3E.9Class"
 			}
@@ -348,7 +204,12 @@
 		"number": "360-300-DW",
 		"sections": [
 			{
-				"section": "00005",
+				"number": "00009",
+				"teacher": "Worku Aberra",
+				"schedule": "Tuesday12:00 PM - 2:00 PM3A.4ClassThursday12:00 PM - 2:00 PM3A.4Class"
+			},
+			{
+				"number": "00005",
 				"teacher": "Worku Aberra",
 				"schedule": "Wednesday12:00 PM - 2:00 PM3H.19ClassFriday12:00 PM - 2:00 PM3H.19Class"
 			}
@@ -359,7 +220,12 @@
 		"number": "383-201-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Sacha Des Rosiers",
+				"schedule": "Tuesday2:30 PM - 4:00 PM3H.15ClassThursday2:30 PM - 4:00 PM3H.15Class"
+			},
+			{
+				"number": "00002",
 				"teacher": "Sacha Des Rosiers",
 				"schedule": "Monday10:00 AM - 11:30 AM4P.26ClassWednesday10:00 AM - 11:30 AM4P.26Class"
 			}
@@ -370,223 +236,35 @@
 		"number": "300-303-DW",
 		"sections": [
 			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Carlos Velasquez Buritica, Elliot Kerr",
 				"schedule": "Thursday8:30 AM - 11:30 AM4F.6Class"
 			},
 			{
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Frédéric Bastien",
 				"schedule": "Tuesday8:30 AM - 11:30 AM4F.6Class"
-			}
-		]
-	},
-	{
-		"title": "Macroeconomics",
-		"number": "383-302-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Philippe Ghayad",
-				"schedule": "Tuesday4:00 PM - 5:30 PM4D.11ClassThursday4:00 PM - 5:30 PM4D.11Class"
-			}
-		]
-	},
-	{
-		"title": "Basic Financial Management",
-		"number": "401-301-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Jim Parthimos",
-				"schedule": "Tuesday8:30 AM - 10:00 AM3H.21ClassFriday8:30 AM - 10:00 AM3H.21Class"
-			}
-		]
-	},
-	{
-		"title": "Linear Algebra",
-		"number": "201-105-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Olga Zlotchevskaia",
-				"schedule": "Monday12:00 PM - 2:00 PM4D.2LabWednesday1:00 PM - 2:30 PM3B.11ClassFriday1:00 PM - 2:30 PM3B.11Class"
-			}
-		]
-	},
-	{
-		"title": "Integrative Seminar",
-		"number": "300-303-DW",
-		"sections": [
-			{
-				"section": "00004",
-				"teacher": "Carlos Velasquez Buritica, Elliot Kerr",
-				"schedule": "Thursday8:30 AM - 11:30 AM4F.6Class"
 			},
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Elliot Kerr, Marian Misdrahi Flores",
 				"schedule": "Wednesday8:30 AM - 11:30 AM4F.6Class"
-			}
-		]
-	},
-	{
-		"title": "Macroeconomics",
-		"number": "383-302-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Michel Mayer",
-				"schedule": "Monday2:30 PM - 4:00 PM3H.15ClassWednesday2:30 PM - 4:00 PM3H.15Class"
 			},
-			{
-				"section": "00002",
-				"teacher": "Philippe Ghayad",
-				"schedule": "Tuesday4:00 PM - 5:30 PM4D.11ClassThursday4:00 PM - 5:30 PM4D.11Class"
-			}
-		]
-	},
-	{
-		"title": "Basic Financial Management",
-		"number": "401-301-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Jim Parthimos",
-				"schedule": "Tuesday8:30 AM - 10:00 AM3H.21ClassFriday8:30 AM - 10:00 AM3H.21Class"
-			},
-			{
-				"section": "00002",
-				"teacher": "Jim Parthimos",
-				"schedule": "Monday2:30 PM - 4:00 PM3H.21ClassWednesday2:30 PM - 4:00 PM3H.21Class"
-			}
-		]
-	},
-	{
-		"title": "Linear Algebra",
-		"number": "201-105-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Olga Zlotchevskaia",
-				"schedule": "Tuesday8:30 AM - 10:00 AM3E.9ClassThursday8:00 AM - 10:00 AM4E.11LabFriday8:30 AM - 10:00 AM3E.9Class"
-			}
-		]
-	},
-	{
-		"title": "Integrative Seminar",
-		"number": "300-303-DW",
-		"sections": [
 			{
 				"title": "Entrepreneurship",
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Menouar Boulahfa",
 				"schedule": "Thursday2:30 PM - 5:30 PM4F.6Class"
 			},
 			{
-				"section": "00005",
-				"teacher": "Elliot Kerr, Marian Misdrahi Flores",
-				"schedule": "Wednesday8:30 AM - 11:30 AM4F.6Class"
-			}
-		]
-	},
-	{
-		"title": "Macroeconomics",
-		"number": "383-302-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Michel Mayer",
-				"schedule": "Monday2:30 PM - 4:00 PM3H.15ClassWednesday2:30 PM - 4:00 PM3H.15Class"
-			}
-		]
-	},
-	{
-		"title": "Basic Financial Management",
-		"number": "401-301-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Jim Parthimos",
-				"schedule": "Monday2:30 PM - 4:00 PM3H.21ClassWednesday2:30 PM - 4:00 PM3H.21Class"
-			}
-		]
-	},
-	{
-		"title": "Linear Algebra",
-		"number": "201-105-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Olga Zlotchevskaia",
-				"schedule": "Tuesday8:30 AM - 10:00 AM3E.9ClassThursday8:00 AM - 10:00 AM4E.11LabFriday8:30 AM - 10:00 AM3E.9Class"
-			}
-		]
-	},
-	{
-		"title": "Integrative Seminar",
-		"number": "300-303-DW",
-		"sections": [
-			{
 				"title": "Finding Your Passion",
-				"section": "00001",
-				"teacher": "Marc-André Girouard",
-				"schedule": "Tuesday2:30 PM - 5:30 PM4F.6Class"
-			},
-			{
-				"title": "Entrepreneurship",
-				"section": "00003",
-				"teacher": "Menouar Boulahfa",
-				"schedule": "Thursday2:30 PM - 5:30 PM4F.6Class"
-			}
-		]
-	},
-	{
-		"title": "Macroeconomics",
-		"number": "383-302-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Michel Mayer",
-				"schedule": "Monday2:30 PM - 4:00 PM3H.15ClassWednesday2:30 PM - 4:00 PM3H.15Class"
-			}
-		]
-	},
-	{
-		"title": "Basic Financial Management",
-		"number": "401-301-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Jim Parthimos",
-				"schedule": "Monday2:30 PM - 4:00 PM3H.21ClassWednesday2:30 PM - 4:00 PM3H.21Class"
-			}
-		]
-	},
-	{
-		"title": "Linear Algebra",
-		"number": "201-105-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Olga Zlotchevskaia",
-				"schedule": "Monday12:00 PM - 2:00 PM4D.2LabWednesday1:00 PM - 2:30 PM3B.11ClassFriday1:00 PM - 2:30 PM3B.11Class"
-			}
-		]
-	},
-	{
-		"title": "Integrative Seminar",
-		"number": "300-303-DW",
-		"sections": [
-			{
-				"title": "Finding Your Passion",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Marc-André Girouard",
 				"schedule": "Tuesday2:30 PM - 5:30 PM4F.6Class"
 			},
 			{
 				"title": "Finding Your Passion",
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Marc-André Girouard",
 				"schedule": "Monday8:30 AM - 11:30 AM4F.6Class"
 			}
@@ -597,9 +275,14 @@
 		"number": "383-302-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Philippe Ghayad",
 				"schedule": "Tuesday4:00 PM - 5:30 PM4D.11ClassThursday4:00 PM - 5:30 PM4D.11Class"
+			},
+			{
+				"number": "00001",
+				"teacher": "Michel Mayer",
+				"schedule": "Monday2:30 PM - 4:00 PM3H.15ClassWednesday2:30 PM - 4:00 PM3H.15Class"
 			}
 		]
 	},
@@ -608,9 +291,14 @@
 		"number": "401-301-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Jim Parthimos",
 				"schedule": "Tuesday8:30 AM - 10:00 AM3H.21ClassFriday8:30 AM - 10:00 AM3H.21Class"
+			},
+			{
+				"number": "00002",
+				"teacher": "Jim Parthimos",
+				"schedule": "Monday2:30 PM - 4:00 PM3H.21ClassWednesday2:30 PM - 4:00 PM3H.21Class"
 			}
 		]
 	}

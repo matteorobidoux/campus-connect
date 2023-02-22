@@ -1,31 +1,13 @@
-class Events {
-  id: String;
-  title: String;
-  deadline: Date;
-  desc: String;
-  associatedSection: {
-    name: String
-  };
-  constructor(id: String, theTtitle :String, theDealine: Date, theDesc: String, sectionName: String){
-    this.title=theTtitle;
-    this.id=id;
-    this.deadline= theDealine;
-    this.desc= theDesc;
-    this.associatedSection= {name:sectionName}
-  }
+type AssociatedSection ={
+  name:string
+}
 
-  deadLine(){
-    return this.deadLine
-  }
-  description(){
-    return this.desc
-  }
-  eventTitle(){
-    return this.title
-  }
-  associatedSec(){
-    return this.associatedSection.name
-  }
+interface Events{
+id: string;
+title:string;
+deadline: Date;
+desc: string;
+associatedSect: AssociatedSection;
 }
 
 export default Events;

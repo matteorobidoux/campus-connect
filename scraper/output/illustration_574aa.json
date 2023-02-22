@@ -4,84 +4,12 @@
 		"number": "574-202-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Neal Armstrong",
 				"schedule": "Monday12:00 PM - 3:00 PM3B.25Lab"
-			}
-		]
-	},
-	{
-		"title": "Illustrative Drawing 2",
-		"number": "574-242-DW",
-		"sections": [
+			},
 			{
-				"section": "00001",
-				"teacher": "Xin Ran Liu",
-				"schedule": "Friday8:30 AM - 11:30 AM3G.17Lab"
-			}
-		]
-	},
-	{
-		"title": "Design Concepts for Illustration 2",
-		"number": "574-252-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Stéphanie Aubin",
-				"schedule": "Thursday1:30 PM - 4:30 PM3G.17Lab"
-			}
-		]
-	},
-	{
-		"title": "Technical Illustration 2",
-		"number": "574-263-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Mark Sy",
-				"schedule": "Monday8:30 AM - 11:30 AM3G.17Lab"
-			}
-		]
-	},
-	{
-		"title": "Illustration Techniques 2",
-		"number": "574-272-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Jennifer Phelan",
-				"schedule": "Thursday8:30 AM - 12:30 PM3G.15Lab"
-			}
-		]
-	},
-	{
-		"title": "3D Illustration 1",
-		"number": "574-281-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Chantal Chapson",
-				"schedule": "Tuesday9:00 AM - 12:00 PM3G.17Lab"
-			}
-		]
-	},
-	{
-		"title": "Photography for Illustration",
-		"number": "574-721-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "James Giberson",
-				"schedule": "Wednesday8:30 AM - 11:30 AM3G.17Lab"
-			}
-		]
-	},
-	{
-		"title": "Drawing Principles and Practices",
-		"number": "574-202-DW",
-		"sections": [
-			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Neal Armstrong",
 				"schedule": "Monday8:30 AM - 11:30 AM3B.25Lab"
 			}
@@ -92,7 +20,12 @@
 		"number": "574-242-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Xin Ran Liu",
+				"schedule": "Friday8:30 AM - 11:30 AM3G.17Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Xin Ran Liu",
 				"schedule": "Friday1:00 PM - 4:00 PM3G.17Lab"
 			}
@@ -103,7 +36,12 @@
 		"number": "574-252-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Stéphanie Aubin",
+				"schedule": "Thursday1:30 PM - 4:30 PM3G.17Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Chantal Chapson",
 				"schedule": "Thursday9:30 AM - 12:30 PM3G.17Lab"
 			}
@@ -114,7 +52,12 @@
 		"number": "574-263-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Mark Sy",
+				"schedule": "Monday8:30 AM - 11:30 AM3G.17Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Mark Sy",
 				"schedule": "Monday12:30 PM - 3:30 PM3G.17Lab"
 			}
@@ -125,7 +68,12 @@
 		"number": "574-272-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Jennifer Phelan",
+				"schedule": "Thursday8:30 AM - 12:30 PM3G.15Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Paul Turgeon",
 				"schedule": "Thursday1:30 PM - 5:30 PM3G.15Lab"
 			}
@@ -136,7 +84,12 @@
 		"number": "574-281-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Chantal Chapson",
+				"schedule": "Tuesday9:00 AM - 12:00 PM3G.17Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Chantal Chapson",
 				"schedule": "Tuesday1:00 PM - 4:00 PM3G.17Lab"
 			}
@@ -147,7 +100,12 @@
 		"number": "574-721-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "James Giberson",
+				"schedule": "Wednesday8:30 AM - 11:30 AM3G.17Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "James Giberson",
 				"schedule": "Wednesday1:00 PM - 4:00 PM3G.17Lab"
 			}
@@ -158,73 +116,12 @@
 		"number": "360-499-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Maria Chronopoulos, Stéphanie Aubin",
 				"schedule": "Tuesday8:30 AM - 11:30 AM2G.13LabTuesday8:30 AM - 11:30 AM3G.15Lab"
-			}
-		]
-	},
-	{
-		"title": "Illustrative Drawing 4",
-		"number": "574-444-DW",
-		"sections": [
+			},
 			{
-				"section": "00001",
-				"teacher": "Meinert Hansen",
-				"schedule": "Friday2:00 PM - 5:00 PM3G.15Lab"
-			}
-		]
-	},
-	{
-		"title": "Design Concepts for Illustration 4",
-		"number": "574-454-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Marc-Andre Cright",
-				"schedule": "Monday12:30 PM - 3:30 PM3G.15Lab"
-			}
-		]
-	},
-	{
-		"title": "Technical Illustration 4",
-		"number": "574-465-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Jennifer Phelan, Mark Sy",
-				"schedule": "Wednesday8:30 AM - 11:30 AM3G.15Lab"
-			}
-		]
-	},
-	{
-		"title": "3D Illustration 3",
-		"number": "574-483-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Nabil E. Kachaami",
-				"schedule": "Friday8:30 AM - 11:30 AM-2H.25Lab"
-			}
-		]
-	},
-	{
-		"title": "Visual Storytelling and Sequential Art 2",
-		"number": "574-492-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Geoff Carley",
-				"schedule": "Wednesday2:30 PM - 5:30 PM4G.8Lab"
-			}
-		]
-	},
-	{
-		"title": "New Directions in Illustration: Alternative Techniques",
-		"number": "360-499-DW",
-		"sections": [
-			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Maria Chronopoulos, Stéphanie Aubin",
 				"schedule": "Tuesday2:30 PM - 5:30 PM2G.13LabTuesday2:30 PM - 5:30 PM3G.15Lab"
 			}
@@ -235,7 +132,12 @@
 		"number": "574-444-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Meinert Hansen",
+				"schedule": "Friday2:00 PM - 5:00 PM3G.15Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Meinert Hansen",
 				"schedule": "Friday8:30 AM - 11:30 AM3G.15Lab"
 			}
@@ -246,7 +148,12 @@
 		"number": "574-454-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Marc-Andre Cright",
+				"schedule": "Monday12:30 PM - 3:30 PM3G.15Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Marc-Andre Cright",
 				"schedule": "Monday8:30 AM - 11:30 AM3G.15Lab"
 			}
@@ -257,7 +164,12 @@
 		"number": "574-465-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Jennifer Phelan, Mark Sy",
+				"schedule": "Wednesday8:30 AM - 11:30 AM3G.15Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Jennifer Phelan, Mark Sy",
 				"schedule": "Wednesday2:00 PM - 5:00 PM3G.15Lab"
 			}
@@ -268,7 +180,12 @@
 		"number": "574-483-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Nabil E. Kachaami",
+				"schedule": "Friday8:30 AM - 11:30 AM-2H.25Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Nabil E. Kachaami",
 				"schedule": "Tuesday8:30 AM - 11:30 AM-2H.25Lab"
 			}
@@ -279,7 +196,12 @@
 		"number": "574-492-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Geoff Carley",
+				"schedule": "Wednesday2:30 PM - 5:30 PM4G.8Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Geoff Carley",
 				"schedule": "Wednesday8:30 AM - 11:30 AM4G.15Lab"
 			}
@@ -290,62 +212,12 @@
 		"number": "574-646-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Neal Armstrong",
 				"schedule": "Wednesday9:00 AM - 12:00 PM2G.10Lab"
-			}
-		]
-	},
-	{
-		"title": "Projects for Portfolio",
-		"number": "574-761-DW",
-		"sections": [
+			},
 			{
-				"section": "00001",
-				"teacher": "Mark Sy, Nabil E. Kachaami, Neal Armstrong, Xin Ran Liu",
-				"schedule": "Thursday9:00 AM - 12:00 PM2G.10LabThursday1:00 PM - 4:00 PM2G.8LabFriday1:00 PM - 4:00 PM2G.10Lab"
-			}
-		]
-	},
-	{
-		"title": "Projects for Industry",
-		"number": "574-762-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Jennifer Phelan, John A. Singer, Meinert Hansen",
-				"schedule": "Monday8:30 AM - 12:30 PM2G.8LabMonday1:30 PM - 4:30 PM2G.10LabTuesday1:30 PM - 5:30 PM2G.8Lab"
-			}
-		]
-	},
-	{
-		"title": "Production and Presentation",
-		"number": "574-763-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Stéphanie Aubin",
-				"schedule": "Friday9:00 AM - 12:00 PM2G.8Lab"
-			}
-		]
-	},
-	{
-		"title": "Professional Practice",
-		"number": "574-764-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Marc-Andre Cright",
-				"schedule": "Tuesday9:00 AM - 12:00 PM2G.10Lab"
-			}
-		]
-	},
-	{
-		"title": "Illustrative Drawing 6",
-		"number": "574-646-DW",
-		"sections": [
-			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Neal Armstrong",
 				"schedule": "Wednesday1:30 PM - 4:30 PM2G.10Lab"
 			}
@@ -356,7 +228,12 @@
 		"number": "574-761-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Mark Sy, Nabil E. Kachaami, Neal Armstrong, Xin Ran Liu",
+				"schedule": "Thursday9:00 AM - 12:00 PM2G.10LabThursday1:00 PM - 4:00 PM2G.8LabFriday1:00 PM - 4:00 PM2G.10Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Mark Sy, Nabil E. Kachaami, Neal Armstrong, Xin Ran Liu",
 				"schedule": "Thursday9:00 AM - 12:00 PM2G.8LabThursday1:00 PM - 4:00 PM2G.10LabFriday9:00 AM - 12:00 PM2G.10Lab"
 			}
@@ -367,7 +244,12 @@
 		"number": "574-762-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Jennifer Phelan, John A. Singer, Meinert Hansen",
+				"schedule": "Monday8:30 AM - 12:30 PM2G.8LabMonday1:30 PM - 4:30 PM2G.10LabTuesday1:30 PM - 5:30 PM2G.8Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Jennifer Phelan, John A. Singer, Meinert Hansen",
 				"schedule": "Monday9:00 AM - 12:00 PM2G.10LabTuesday8:30 AM - 12:30 PM2G.8LabWednesday8:30 AM - 12:30 PM2G.8Lab"
 			}
@@ -378,7 +260,12 @@
 		"number": "574-763-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Stéphanie Aubin",
+				"schedule": "Friday9:00 AM - 12:00 PM2G.8Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Stéphanie Aubin",
 				"schedule": "Friday1:00 PM - 4:00 PM2G.8Lab"
 			}
@@ -389,7 +276,12 @@
 		"number": "574-764-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Marc-Andre Cright",
+				"schedule": "Tuesday9:00 AM - 12:00 PM2G.10Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Marc-Andre Cright",
 				"schedule": "Tuesday1:30 PM - 4:30 PM2G.10Lab"
 			}

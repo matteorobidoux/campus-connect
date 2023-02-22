@@ -4,7 +4,7 @@
 		"number": "560-914-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Matt Holland",
 				"schedule": "Thursday11:30 AM - 2:30 PM3E.13Class"
 			}
@@ -15,7 +15,7 @@
 		"number": "560-915-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Arianna Bardesono",
 				"schedule": "Tuesday3:00 PM - 6:00 PM4E.20Class"
 			}

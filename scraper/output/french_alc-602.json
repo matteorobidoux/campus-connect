@@ -4,12 +4,12 @@
 		"number": "602-413-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Christian Paré",
 				"schedule": "Monday10:00 AM - 11:30 AM5D.6ClassWednesday10:00 AM - 11:30 AM5D.6Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Christian Paré",
 				"schedule": "Tuesday10:00 AM - 11:30 AM5D.6ClassFriday10:00 AM - 11:30 AM5D.6Class"
 			}

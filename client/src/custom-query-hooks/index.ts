@@ -23,13 +23,13 @@ export const useCalendarEvents = () => {
         date: afterTomorrow,
         associatedSection: { name: "Software Deployment" } ,
         title: 'Submit thingy two',
-        description: 'Description two'
+        description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas"
       }
     ]
     return cEvents;
   }
 
-  return useQuery(['events'], getCalendarEvents)
+  return useQuery(['events'], getCalendarEvents, {staleTime: Infinity})
 }
 
 export const useSections = () => {

@@ -4,12 +4,12 @@
 		"number": "550-901-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Jacinta Luis",
 				"schedule": "Wednesday2:30 PM - 5:30 PM8A.3Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Jacinta Luis",
 				"schedule": "Thursday2:30 PM - 5:30 PM8A.3Class"
 			}
@@ -20,7 +20,7 @@
 		"number": "550-902-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Vincenzo Lentini",
 				"schedule": "Wednesday11:30 AM - 1:00 PM8A.3ClassFriday11:30 AM - 1:00 PM8A.3Class"
 			}
@@ -31,7 +31,7 @@
 		"number": "550-921-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Sarah Rossy",
 				"schedule": "Monday11:30 AM - 1:00 PM8A.3ClassThursday8:30 AM - 10:00 AM8A.3Class"
 			}
@@ -42,7 +42,7 @@
 		"number": "550-922-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Jacinta Luis",
 				"schedule": "Wednesday1:00 PM - 2:30 PM8A.3ClassFriday1:00 PM - 2:30 PM8A.3Class"
 			}
@@ -53,7 +53,7 @@
 		"number": "550-924-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Jacinta Luis",
 				"schedule": "Friday2:30 PM - 5:30 PM8A.3Class"
 			}
@@ -64,7 +64,7 @@
 		"number": "550-931-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Vincenzo Lentini",
 				"schedule": "Monday1:00 PM - 2:30 PM8A.3ClassThursday10:00 AM - 11:30 AM8A.3Class"
 			}
@@ -75,7 +75,7 @@
 		"number": "550-932-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Vincenzo Lentini",
 				"schedule": "Tuesday10:00 AM - 11:30 AM8A.3ClassFriday10:00 AM - 11:30 AM8A.3Class"
 			}
@@ -86,7 +86,7 @@
 		"number": "550-933-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Vincenzo Lentini",
 				"schedule": "Tuesday11:30 AM - 1:00 PM8A.3ClassThursday11:30 AM - 1:00 PM8A.3Class"
 			}

@@ -4,32 +4,32 @@
 		"number": "381-101-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Katarzyna Wolfson",
 				"schedule": "Monday8:30 AM - 10:00 AM3D.23ClassWednesday8:30 AM - 10:00 AM3D.23Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Katarzyna Wolfson",
 				"schedule": "Tuesday10:00 AM - 11:30 AM3D.23ClassFriday10:00 AM - 11:30 AM3D.23Class"
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Katarzyna Wolfson",
 				"schedule": "Monday1:00 PM - 2:30 PM3D.23ClassThursday10:00 AM - 11:30 AM3D.23Class"
 			},
 			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Anna De Aguayo",
 				"schedule": "Monday2:30 PM - 4:00 PM3D.23ClassWednesday2:30 PM - 4:00 PM3D.23Class"
 			},
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Anna De Aguayo",
 				"schedule": "Monday11:30 AM - 1:00 PM3D.23ClassThursday8:30 AM - 10:00 AM3D.23Class"
 			},
 			{
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Verity Whalen",
 				"schedule": "Monday4:00 PM - 5:30 PM3D.23ClassWednesday4:00 PM - 5:30 PM3D.23Class"
 			}
@@ -40,12 +40,12 @@
 		"number": "381-201-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Maciej Domanski",
 				"schedule": "Wednesday1:00 PM - 2:30 PM3D.23ClassFriday1:00 PM - 2:30 PM3D.23Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Maciej Domanski",
 				"schedule": "Tuesday2:30 PM - 4:00 PM3D.23ClassThursday2:30 PM - 4:00 PM3D.23Class"
 			}
@@ -56,17 +56,17 @@
 		"number": "381-210-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Cornelia Howell",
 				"schedule": "Tuesday1:00 PM - 2:30 PM3D.23ClassThursday1:00 PM - 2:30 PM3D.23Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Cornelia Howell",
 				"schedule": "Tuesday11:30 AM - 1:00 PM3D.23ClassThursday11:30 AM - 1:00 PM3D.23Class"
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Sabrina Smofsky",
 				"schedule": "Tuesday4:00 PM - 5:30 PM3E.7ClassThursday4:00 PM - 5:30 PM3E.7Class"
 			}
@@ -78,7 +78,7 @@
 		"sections": [
 			{
 				"title": "Culture and Environment",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Maciej Domanski",
 				"schedule": "Tuesday, February 14, 2023"
 			}
@@ -90,7 +90,7 @@
 		"sections": [
 			{
 				"title": "Visual Anthropology",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Katarzyna Wolfson",
 				"schedule": "Tuesday, February 14, 2023"
 			}
@@ -102,7 +102,7 @@
 		"sections": [
 			{
 				"title": "Material Culture",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Maciej Domanski",
 				"schedule": "Tuesday, February 14, 2023"
 			}

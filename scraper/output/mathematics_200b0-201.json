@@ -4,12 +4,12 @@
 		"number": "201-015-RE",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Andrea Gambioli",
 				"schedule": "Monday2:00 PM - 4:00 PM4H.23ClassWednesday2:00 PM - 4:00 PM4H.23ClassFriday12:00 PM - 2:00 PM4D.2Lab"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Igor Gorelyshev",
 				"schedule": "Tuesday8:00 AM - 10:00 AM5B.3ClassThursday12:00 PM - 2:00 PM5B.3LabFriday8:00 AM - 10:00 AM5B.3Class"
 			}
@@ -20,7 +20,7 @@
 		"number": "201-016-RE",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Garry Ka Lok Chu",
 				"schedule": "Monday2:30 PM - 4:00 PM7A.11ClassWednesday2:30 PM - 4:00 PM7A.11ClassThursday10:00 AM - 12:00 PM3F.45Lab"
 			}
@@ -31,17 +31,17 @@
 		"number": "201-103-DW",
 		"sections": [
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Stefan M. Soltuz",
 				"schedule": "Monday8:00 AM - 10:00 AM4D.2LabTuesday10:00 AM - 11:30 AM4H.25ClassFriday10:00 AM - 11:30 AM4H.25Class"
 			},
 			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Georgeana Bobos-Kristof",
 				"schedule": "Monday11:30 AM - 1:00 PM4H.25ClassTuesday2:00 PM - 4:00 PM4A.2LabThursday8:30 AM - 10:00 AM4H.25Class"
 			},
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Georgeana Bobos-Kristof",
 				"schedule": "Monday8:00 AM - 10:00 AM4A.2LabTuesday8:30 AM - 10:00 AM5A.12ClassFriday8:30 AM - 10:00 AM5A.12Class"
 			}
@@ -52,7 +52,7 @@
 		"number": "201-105-DW",
 		"sections": [
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Gilbert Honnouvo",
 				"schedule": "Tuesday2:00 PM - 4:00 PM4D.2LabWednesday1:00 PM - 2:30 PM4H.19ClassFriday1:00 PM - 2:30 PM4H.19Class"
 			}
@@ -63,7 +63,7 @@
 		"number": "201-203-DW",
 		"sections": [
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Oxana Cerba",
 				"schedule": "Tuesday8:30 AM - 10:00 AM4D.11ClassThursday8:00 AM - 10:00 AM4A.2LabFriday8:30 AM - 10:00 AM4D.11Class"
 			}
@@ -74,12 +74,12 @@
 		"number": "201-BZF-05",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Parviz Haggi-Mani",
 				"schedule": "Tuesday2:00 PM - 4:00 PM7B.4LabWednesday11:30 AM - 1:00 PM4D.3ClassFriday11:30 AM - 1:00 PM4D.3Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Alexander Hariton",
 				"schedule": "Monday10:00 AM - 11:30 AM4H.19ClassWednesday10:00 AM - 11:30 AM4H.19ClassThursday4:00 PM - 6:00 PM4H.6Lab"
 			}
@@ -90,12 +90,12 @@
 		"number": "201-BZS-05",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Shahab Shahabi",
 				"schedule": "Tuesday8:30 AM - 10:00 AM3E.10ClassWednesday8:00 AM - 10:00 AM4A.2LabFriday8:30 AM - 10:00 AM3E.10Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Andrea Gambioli",
 				"schedule": "Monday12:00 PM - 2:00 PM4A.3LabTuesday11:30 AM - 1:00 PM5D.6ClassThursday11:30 AM - 1:00 PM5D.6Class"
 			}
@@ -107,7 +107,7 @@
 		"sections": [
 			{
 				"title": "Discrete Mathematics",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Shahab Shahabi",
 				"schedule": "Tuesday, February 14, 2023"
 			}
@@ -118,22 +118,22 @@
 		"number": "201-NYA-05",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Kourosh Adl-Zarabi",
 				"schedule": "Monday2:30 PM - 4:00 PM4P.24ClassWednesday2:30 PM - 4:00 PM4P.24ClassFriday12:00 PM - 2:00 PM4H.15Lab"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Mehdi Moodi",
 				"schedule": "Monday2:30 PM - 4:00 PM3E.9ClassWednesday2:30 PM - 4:00 PM3E.9ClassThursday2:00 PM - 4:00 PM4A.5Lab"
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Stefan M. Soltuz",
 				"schedule": "Monday10:00 AM - 11:30 AM7B.13ClassWednesday10:00 AM - 11:30 AM7B.13ClassFriday8:00 AM - 10:00 AM4D.2Lab"
 			},
 			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Stefan M. Soltuz",
 				"schedule": "Tuesday8:00 AM - 10:00 AM4A.2LabWednesday1:00 PM - 2:30 PM4P.25ClassFriday1:00 PM - 2:30 PM4P.25Class"
 			}
@@ -144,72 +144,72 @@
 		"number": "201-NYB-05",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Thirulogasanthar Kengatharam",
 				"schedule": "Tuesday8:30 AM - 10:00 AM5D.6ClassThursday10:00 AM - 12:00 PM4A.5LabFriday8:30 AM - 10:00 AM5D.6Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Bogdan Szczepara",
 				"schedule": "Tuesday8:30 AM - 10:00 AM7B.2ClassThursday10:00 AM - 12:00 PM7B.4LabFriday8:30 AM - 10:00 AM7B.2Class"
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Yann Lamontagne",
 				"schedule": "Monday8:00 AM - 10:00 AM4E.7LabTuesday1:00 PM - 2:30 PM4F.6ClassThursday1:00 PM - 2:30 PM4F.6Class"
 			},
 			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Kourosh Adl-Zarabi",
 				"schedule": "Monday1:00 PM - 2:30 PM2P.04ClassTuesday4:00 PM - 6:00 PM4A.3LabThursday10:00 AM - 11:30 AM2P.04Class"
 			},
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Thirulogasanthar Kengatharam",
 				"schedule": "Tuesday2:00 PM - 4:00 PM2P.10LabWednesday1:00 PM - 2:30 PM4H.8ClassFriday1:00 PM - 2:30 PM4H.8Class"
 			},
 			{
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Varuzhan Ohanyan",
 				"schedule": "Tuesday1:00 PM - 2:30 PM7B.6ClassThursday1:00 PM - 2:30 PM7B.6ClassFriday8:00 AM - 10:00 AM7B.6Lab"
 			},
 			{
-				"section": "00007",
+				"number": "00007",
 				"teacher": "Parviz Haggi-Mani",
 				"schedule": "Monday8:30 AM - 10:00 AM4P.25ClassWednesday8:30 AM - 10:00 AM4P.25ClassThursday10:00 AM - 12:00 PM4D.2Lab"
 			},
 			{
-				"section": "00008",
+				"number": "00008",
 				"teacher": "Parviz Haggi-Mani",
 				"schedule": "Monday11:30 AM - 1:00 PM6B.13ClassTuesday8:00 AM - 10:00 AM4A.5LabThursday8:30 AM - 10:00 AM6B.13Class"
 			},
 			{
-				"section": "00009",
+				"number": "00009",
 				"teacher": "Alberto Jimenez",
 				"schedule": "Monday2:00 PM - 4:00 PM4A.4LabWednesday11:30 AM - 1:00 PM3B.11ClassFriday11:30 AM - 1:00 PM3B.11Class"
 			},
 			{
-				"section": "00010",
+				"number": "00010",
 				"teacher": "Audrey Juhasz",
 				"schedule": "Monday2:30 PM - 4:00 PM7B.2ClassWednesday2:30 PM - 4:00 PM7B.2ClassThursday2:00 PM - 4:00 PM7B.4Lab"
 			},
 			{
-				"section": "00011",
+				"number": "00011",
 				"teacher": "Mohamad-Ahed Hindawi",
 				"schedule": "Monday4:00 PM - 5:30 PM5D.6ClassWednesday4:00 PM - 5:30 PM5D.6ClassThursday4:00 PM - 6:00 PM4D.2Lab"
 			},
 			{
-				"section": "00012",
+				"number": "00012",
 				"teacher": "Audrey Juhasz",
 				"schedule": "Monday10:00 AM - 12:00 PM7B.4LabTuesday4:00 PM - 5:30 PM7B.4ClassThursday4:00 PM - 5:30 PM7B.4Class"
 			},
 			{
-				"section": "00013",
+				"number": "00013",
 				"teacher": "Mohamad-Ahed Hindawi",
 				"schedule": "Monday1:00 PM - 2:30 PM4A.5ClassTuesday12:00 PM - 2:00 PM4A.2LabThursday10:00 AM - 11:30 AM4A.7Class"
 			},
 			{
-				"section": "00014",
+				"number": "00014",
 				"teacher": "Mathilde Hitier",
 				"schedule": "Tuesday10:00 AM - 11:30 AM3F.38ClassThursday12:00 PM - 2:00 PM4G.2ALabFriday10:00 AM - 11:30 AM3F.38Class"
 			}
@@ -220,42 +220,42 @@
 		"number": "201-NYC-05",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Yann Lamontagne",
 				"schedule": "Monday11:30 AM - 1:00 PM5D.6ClassWednesday10:00 AM - 12:00 PM4D.2LabThursday8:30 AM - 10:00 AM5D.6Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Bogdan Szczepara",
 				"schedule": "Tuesday2:30 PM - 4:00 PM4H.8ClassWednesday2:00 PM - 4:00 PM4A.4LabThursday2:30 PM - 4:00 PM4H.8Class"
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Varuzhan Ohanyan",
 				"schedule": "Monday11:30 AM - 1:00 PM4D.1ClassTuesday8:00 AM - 10:00 AM7B.6LabThursday8:30 AM - 10:00 AM7B.6Class"
 			},
 			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Kheira Ameur",
 				"schedule": "Monday8:00 AM - 10:00 AM7B.4LabTuesday2:30 PM - 4:00 PM7B.2ClassThursday2:30 PM - 4:00 PM7B.2Class"
 			},
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Noushin Sabetghadam Haghighi",
 				"schedule": "Monday8:30 AM - 10:00 AM6B.13ClassWednesday8:30 AM - 10:00 AM6B.13ClassFriday8:00 AM - 10:00 AM7B.4Lab"
 			},
 			{
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Alberto Jimenez",
 				"schedule": "Monday10:00 AM - 12:00 PM7A.13LabTuesday1:00 PM - 2:30 PM4D.3ClassThursday1:00 PM - 2:30 PM4D.3Class"
 			},
 			{
-				"section": "00007",
+				"number": "00007",
 				"teacher": "Bogdan Szczepara",
 				"schedule": "Monday12:00 PM - 2:00 PM7B.4LabWednesday11:30 AM - 1:00 PM7B.2ClassFriday11:30 AM - 1:00 PM7B.2Class"
 			},
 			{
-				"section": "00008",
+				"number": "00008",
 				"teacher": "Febina Blaise Fonseca",
 				"schedule": "Monday8:00 AM - 10:00 AM4A.3LabTuesday1:00 PM - 2:30 PM3H.13ClassThursday1:00 PM - 2:30 PM3H.13Class"
 			}

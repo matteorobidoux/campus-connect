@@ -4,29 +4,12 @@
 		"number": "350-101-DW",
 		"sections": [
 			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Madelaine Côté",
 				"schedule": "Wednesday1:00 PM - 2:30 PM3F.7ClassFriday1:00 PM - 2:30 PM3F.7Class"
-			}
-		]
-	},
-	{
-		"title": "Introduction to Economics",
-		"number": "383-101-DW",
-		"sections": [
+			},
 			{
-				"section": "00010",
-				"teacher": "Islam Mohammad",
-				"schedule": "Monday11:30 AM - 1:00 PM4H.23ClassThursday8:30 AM - 10:00 AM4H.23Class"
-			}
-		]
-	},
-	{
-		"title": "General Psychology",
-		"number": "350-101-DW",
-		"sections": [
-			{
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Susan Finch",
 				"schedule": "Monday11:30 AM - 1:00 PM4H.21ClassThursday8:30 AM - 10:00 AM4H.21Class"
 			}
@@ -37,7 +20,12 @@
 		"number": "383-101-DW",
 		"sections": [
 			{
-				"section": "00013",
+				"number": "00010",
+				"teacher": "Islam Mohammad",
+				"schedule": "Monday11:30 AM - 1:00 PM4H.23ClassThursday8:30 AM - 10:00 AM4H.23Class"
+			},
+			{
+				"number": "00013",
 				"teacher": "Islam Mohammad",
 				"schedule": "Tuesday11:30 AM - 1:00 PM7B.13ClassThursday11:30 AM - 1:00 PM7B.13Class"
 			}
@@ -48,337 +36,42 @@
 		"number": "300-300-DW",
 		"sections": [
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Nadia Vracotas",
 				"schedule": "Wednesday12:00 PM - 2:00 PM5B.7ClassFriday12:00 PM - 2:00 PM5B.7Class"
 			},
 			{
-				"section": "00006",
-				"teacher": "Nadia Vracotas",
-				"schedule": "Monday10:00 AM - 12:00 PM3A.7ClassWednesday10:00 AM - 12:00 PM3A.7Class"
-			}
-		]
-	},
-	{
-		"title": "Western Civilization",
-		"number": "330-101-DW",
-		"sections": [
-			{
-				"section": "00005",
-				"teacher": "Diane Shea",
-				"schedule": "Tuesday1:00 PM - 2:30 PM3F.3ClassThursday1:00 PM - 2:30 PM3F.3Class"
-			}
-		]
-	},
-	{
-		"title": "Developmental Psychology",
-		"number": "350-201-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Jacob Nuselovici",
-				"schedule": "Monday2:30 PM - 5:30 PM5E.8Class"
-			}
-		]
-	},
-	{
-		"title": "Abnormal Psychology",
-		"number": "350-211-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Rajesh Malik",
-				"schedule": "Tuesday8:30 AM - 10:00 AM3H.23ClassFriday8:30 AM - 10:00 AM3H.23Class"
-			},
-			{
-				"section": "00003",
-				"teacher": "Rajesh Malik",
-				"schedule": "Tuesday10:00 AM - 11:30 AM3H.23ClassFriday10:00 AM - 11:30 AM3H.23Class"
-			}
-		]
-	},
-	{
-		"title": "Individual and Society",
-		"number": "387-101-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Francine Small",
-				"schedule": "Tuesday11:30 AM - 1:00 PM4P.24ClassThursday11:30 AM - 1:00 PM4P.24Class"
-			}
-		]
-	},
-	{
-		"title": "Research Methods",
-		"number": "300-300-DW",
-		"sections": [
-			{
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Nadia Vracotas",
 				"schedule": "Monday10:00 AM - 12:00 PM3A.7ClassWednesday10:00 AM - 12:00 PM3A.7Class"
 			},
 			{
-				"section": "00007",
-				"teacher": "Anick Legault",
-				"schedule": "Wednesday12:00 PM - 2:00 PM3A.7ClassFriday12:00 PM - 2:00 PM3A.7Class"
-			}
-		]
-	},
-	{
-		"title": "Western Civilization",
-		"number": "330-101-DW",
-		"sections": [
-			{
-				"section": "00006",
-				"teacher": "Gemma Albanese",
-				"schedule": "Tuesday2:30 PM - 4:00 PM3H.13ClassThursday2:30 PM - 4:00 PM3H.13Class"
-			}
-		]
-	},
-	{
-		"title": "Developmental Psychology",
-		"number": "350-201-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Jacob Nuselovici",
-				"schedule": "Monday2:30 PM - 5:30 PM5E.8Class"
-			}
-		]
-	},
-	{
-		"title": "Abnormal Psychology",
-		"number": "350-211-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Rajesh Malik",
-				"schedule": "Tuesday8:30 AM - 10:00 AM3H.23ClassFriday8:30 AM - 10:00 AM3H.23Class"
-			},
-			{
-				"section": "00003",
-				"teacher": "Rajesh Malik",
-				"schedule": "Tuesday10:00 AM - 11:30 AM3H.23ClassFriday10:00 AM - 11:30 AM3H.23Class"
-			}
-		]
-	},
-	{
-		"title": "Individual and Society",
-		"number": "387-101-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Laura Shea",
-				"schedule": "Tuesday1:00 PM - 2:30 PM5D.1ClassThursday1:00 PM - 2:30 PM5D.1Class"
-			}
-		]
-	},
-	{
-		"title": "Research Methods",
-		"number": "300-300-DW",
-		"sections": [
-			{
-				"section": "00007",
+				"number": "00007",
 				"teacher": "Anick Legault",
 				"schedule": "Wednesday12:00 PM - 2:00 PM3A.7ClassFriday12:00 PM - 2:00 PM3A.7Class"
 			},
 			{
-				"section": "00008",
+				"number": "00008",
 				"teacher": "Anick Legault",
 				"schedule": "Tuesday12:00 PM - 2:00 PM3H.17ClassThursday12:00 PM - 2:00 PM3H.17Class"
-			}
-		]
-	},
-	{
-		"title": "Western Civilization",
-		"number": "330-101-DW",
-		"sections": [
-			{
-				"section": "00008",
-				"teacher": "Gemma Albanese",
-				"schedule": "Monday1:00 PM - 2:30 PM5A.2ClassThursday10:00 AM - 11:30 AM5A.2Class"
-			}
-		]
-	},
-	{
-		"title": "Developmental Psychology",
-		"number": "350-201-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Jacob Nuselovici",
-				"schedule": "Monday2:30 PM - 5:30 PM5E.8Class"
-			}
-		]
-	},
-	{
-		"title": "Abnormal Psychology",
-		"number": "350-211-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Rajesh Malik",
-				"schedule": "Tuesday8:30 AM - 10:00 AM3H.23ClassFriday8:30 AM - 10:00 AM3H.23Class"
 			},
 			{
-				"section": "00003",
-				"teacher": "Rajesh Malik",
-				"schedule": "Tuesday10:00 AM - 11:30 AM3H.23ClassFriday10:00 AM - 11:30 AM3H.23Class"
-			}
-		]
-	},
-	{
-		"title": "Individual and Society",
-		"number": "387-101-DW",
-		"sections": [
-			{
-				"section": "00003",
-				"teacher": "Laura Shea",
-				"schedule": "Monday10:00 AM - 11:30 AM5D.1ClassWednesday10:00 AM - 11:30 AM5D.1Class"
-			}
-		]
-	},
-	{
-		"title": "Research Methods",
-		"number": "300-300-DW",
-		"sections": [
-			{
-				"section": "00011",
+				"number": "00011",
 				"teacher": "Verity Whalen",
 				"schedule": "Tuesday12:00 PM - 2:00 PM3A.9ClassThursday12:00 PM - 2:00 PM3A.9Class"
 			},
 			{
-				"section": "00012",
-				"teacher": "Verity Whalen",
-				"schedule": "Monday12:00 PM - 2:00 PM3A.7ClassThursday8:00 AM - 10:00 AM3A.7Class"
-			}
-		]
-	},
-	{
-		"title": "Western Civilization",
-		"number": "330-101-DW",
-		"sections": [
-			{
-				"section": "00009",
-				"teacher": "Gesche Peters",
-				"schedule": "Monday10:00 AM - 11:30 AM3E.11ClassWednesday10:00 AM - 11:30 AM3E.11Class"
-			}
-		]
-	},
-	{
-		"title": "Developmental Psychology",
-		"number": "350-201-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Jacob Nuselovici",
-				"schedule": "Wednesday11:30 AM - 2:30 PM5E.8Class"
-			}
-		]
-	},
-	{
-		"title": "Abnormal Psychology",
-		"number": "350-211-DW",
-		"sections": [
-			{
-				"section": "00005",
-				"teacher": "Anastasia P. Arvanitidis",
-				"schedule": "Friday8:30 AM - 11:30 AM5E.8Class"
-			},
-			{
-				"section": "00007",
-				"teacher": "Robin Joseph Gagnon",
-				"schedule": "Wednesday11:30 AM - 2:30 PM3H.21Class"
-			}
-		]
-	},
-	{
-		"title": "Individual and Society",
-		"number": "387-101-DW",
-		"sections": [
-			{
-				"section": "00004",
-				"teacher": "Laura Shea",
-				"schedule": "Monday8:30 AM - 10:00 AM5D.1ClassWednesday8:30 AM - 10:00 AM5D.1Class"
-			}
-		]
-	},
-	{
-		"title": "Research Methods",
-		"number": "300-300-DW",
-		"sections": [
-			{
-				"section": "00012",
+				"number": "00012",
 				"teacher": "Verity Whalen",
 				"schedule": "Monday12:00 PM - 2:00 PM3A.7ClassThursday8:00 AM - 10:00 AM3A.7Class"
 			},
 			{
-				"section": "00016",
-				"teacher": "Rubens Lima Moraes",
-				"schedule": "Monday2:00 PM - 4:00 PM3A.7ClassThursday10:00 AM - 12:00 PM3A.7Class"
-			}
-		]
-	},
-	{
-		"title": "Western Civilization",
-		"number": "330-101-DW",
-		"sections": [
-			{
-				"section": "00013",
-				"teacher": "Gesche Peters",
-				"schedule": "Monday4:00 PM - 5:30 PM4E.20ClassWednesday4:00 PM - 5:30 PM4E.20Class"
-			}
-		]
-	},
-	{
-		"title": "Developmental Psychology",
-		"number": "350-201-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Jacob Nuselovici",
-				"schedule": "Wednesday11:30 AM - 2:30 PM5E.8Class"
-			}
-		]
-	},
-	{
-		"title": "Abnormal Psychology",
-		"number": "350-211-DW",
-		"sections": [
-			{
-				"section": "00005",
-				"teacher": "Anastasia P. Arvanitidis",
-				"schedule": "Friday8:30 AM - 11:30 AM5E.8Class"
-			},
-			{
-				"section": "00007",
-				"teacher": "Robin Joseph Gagnon",
-				"schedule": "Wednesday11:30 AM - 2:30 PM3H.21Class"
-			}
-		]
-	},
-	{
-		"title": "Individual and Society",
-		"number": "387-101-DW",
-		"sections": [
-			{
-				"section": "00007",
-				"teacher": "Sarah Beer",
-				"schedule": "Tuesday4:00 PM - 5:30 PM3H.13ClassThursday4:00 PM - 5:30 PM3H.13Class"
-			}
-		]
-	},
-	{
-		"title": "Research Methods",
-		"number": "300-300-DW",
-		"sections": [
-			{
-				"section": "00016",
+				"number": "00016",
 				"teacher": "Rubens Lima Moraes",
 				"schedule": "Monday2:00 PM - 4:00 PM3A.7ClassThursday10:00 AM - 12:00 PM3A.7Class"
 			},
 			{
-				"section": "00017",
+				"number": "00017",
 				"teacher": "Francine Small",
 				"schedule": "Monday4:00 PM - 6:00 PM3A.7ClassWednesday4:00 PM - 6:00 PM3A.7Class"
 			}
@@ -389,7 +82,32 @@
 		"number": "330-101-DW",
 		"sections": [
 			{
-				"section": "00016",
+				"number": "00005",
+				"teacher": "Diane Shea",
+				"schedule": "Tuesday1:00 PM - 2:30 PM3F.3ClassThursday1:00 PM - 2:30 PM3F.3Class"
+			},
+			{
+				"number": "00006",
+				"teacher": "Gemma Albanese",
+				"schedule": "Tuesday2:30 PM - 4:00 PM3H.13ClassThursday2:30 PM - 4:00 PM3H.13Class"
+			},
+			{
+				"number": "00008",
+				"teacher": "Gemma Albanese",
+				"schedule": "Monday1:00 PM - 2:30 PM5A.2ClassThursday10:00 AM - 11:30 AM5A.2Class"
+			},
+			{
+				"number": "00009",
+				"teacher": "Gesche Peters",
+				"schedule": "Monday10:00 AM - 11:30 AM3E.11ClassWednesday10:00 AM - 11:30 AM3E.11Class"
+			},
+			{
+				"number": "00013",
+				"teacher": "Gesche Peters",
+				"schedule": "Monday4:00 PM - 5:30 PM4E.20ClassWednesday4:00 PM - 5:30 PM4E.20Class"
+			},
+			{
+				"number": "00016",
 				"teacher": "Rachèle Caux",
 				"schedule": "Tuesday2:30 PM - 4:00 PM4H.21ClassThursday2:30 PM - 4:00 PM4H.21Class"
 			}
@@ -400,7 +118,12 @@
 		"number": "350-201-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Jacob Nuselovici",
+				"schedule": "Monday2:30 PM - 5:30 PM5E.8Class"
+			},
+			{
+				"number": "00002",
 				"teacher": "Jacob Nuselovici",
 				"schedule": "Wednesday11:30 AM - 2:30 PM5E.8Class"
 			}
@@ -411,12 +134,22 @@
 		"number": "350-211-DW",
 		"sections": [
 			{
-				"section": "00005",
+				"number": "00002",
+				"teacher": "Rajesh Malik",
+				"schedule": "Tuesday8:30 AM - 10:00 AM3H.23ClassFriday8:30 AM - 10:00 AM3H.23Class"
+			},
+			{
+				"number": "00003",
+				"teacher": "Rajesh Malik",
+				"schedule": "Tuesday10:00 AM - 11:30 AM3H.23ClassFriday10:00 AM - 11:30 AM3H.23Class"
+			},
+			{
+				"number": "00005",
 				"teacher": "Anastasia P. Arvanitidis",
 				"schedule": "Friday8:30 AM - 11:30 AM5E.8Class"
 			},
 			{
-				"section": "00007",
+				"number": "00007",
 				"teacher": "Robin Joseph Gagnon",
 				"schedule": "Wednesday11:30 AM - 2:30 PM3H.21Class"
 			}
@@ -427,7 +160,32 @@
 		"number": "387-101-DW",
 		"sections": [
 			{
-				"section": "00008",
+				"number": "00001",
+				"teacher": "Francine Small",
+				"schedule": "Tuesday11:30 AM - 1:00 PM4P.24ClassThursday11:30 AM - 1:00 PM4P.24Class"
+			},
+			{
+				"number": "00002",
+				"teacher": "Laura Shea",
+				"schedule": "Tuesday1:00 PM - 2:30 PM5D.1ClassThursday1:00 PM - 2:30 PM5D.1Class"
+			},
+			{
+				"number": "00003",
+				"teacher": "Laura Shea",
+				"schedule": "Monday10:00 AM - 11:30 AM5D.1ClassWednesday10:00 AM - 11:30 AM5D.1Class"
+			},
+			{
+				"number": "00004",
+				"teacher": "Laura Shea",
+				"schedule": "Monday8:30 AM - 10:00 AM5D.1ClassWednesday8:30 AM - 10:00 AM5D.1Class"
+			},
+			{
+				"number": "00007",
+				"teacher": "Sarah Beer",
+				"schedule": "Tuesday4:00 PM - 5:30 PM3H.13ClassThursday4:00 PM - 5:30 PM3H.13Class"
+			},
+			{
+				"number": "00008",
 				"teacher": "Sarah Beer",
 				"schedule": "Tuesday1:00 PM - 2:30 PM4H.21ClassThursday1:00 PM - 2:30 PM4H.21Class"
 			}
@@ -438,129 +196,27 @@
 		"number": "101-921-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Richard Calvé",
 				"schedule": "Monday11:30 AM - 1:00 PM5A.14LabThursday10:00 AM - 11:30 AM4H.15Class"
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Richard Calvé",
 				"schedule": "Monday1:00 PM - 2:30 PM5A.14LabThursday10:00 AM - 11:30 AM4H.15Class"
-			}
-		]
-	},
-	{
-		"title": "Human Sexual Behaviour",
-		"number": "350-306-DW",
-		"sections": [
-			{
-				"section": "00003",
-				"teacher": "Sylvia Cox",
-				"schedule": "Tuesday2:30 PM - 5:30 PM5E.8Class"
-			}
-		]
-	},
-	{
-		"title": "Applications of Psychology",
-		"number": "350-323-DW",
-		"sections": [
-			{
-				"title": "Social Psychology",
-				"section": "00001",
-				"teacher": "Pavel Piterkin",
-				"schedule": "Friday11:30 AM - 2:30 PM4E.7Class"
 			},
 			{
-				"title": "Brain and Behavior",
-				"section": "00002",
-				"teacher": "Stephane Gaskin",
-				"schedule": "Friday11:30 AM - 2:30 PM5E.8Class"
-			}
-		]
-	},
-	{
-		"title": "Quantitative Methods",
-		"number": "360-300-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Erin Hall",
-				"schedule": "Monday8:00 AM - 10:00 AM3H.17ClassWednesday8:00 AM - 10:00 AM3H.17Class"
-			},
-			{
-				"section": "00002",
-				"teacher": "Erin Hall",
-				"schedule": "Tuesday12:00 PM - 2:00 PM5B.11ClassThursday12:00 PM - 2:00 PM5B.11Class"
-			}
-		]
-	},
-	{
-		"title": "Human Biology",
-		"number": "101-921-DW",
-		"sections": [
-			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Annie-Hélène Samson",
 				"schedule": "Monday2:30 PM - 4:00 PM5A.14LabWednesday2:30 PM - 4:00 PM4G.2AClass"
 			},
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Annie-Hélène Samson",
 				"schedule": "Monday4:00 PM - 5:30 PM5A.14LabWednesday2:30 PM - 4:00 PM4G.2AClass"
-			}
-		]
-	},
-	{
-		"title": "Human Sexual Behaviour",
-		"number": "350-306-DW",
-		"sections": [
-			{
-				"section": "00003",
-				"teacher": "Sylvia Cox",
-				"schedule": "Tuesday2:30 PM - 5:30 PM5E.8Class"
-			}
-		]
-	},
-	{
-		"title": "Applications of Psychology",
-		"number": "350-323-DW",
-		"sections": [
-			{
-				"title": "Social Psychology",
-				"section": "00001",
-				"teacher": "Pavel Piterkin",
-				"schedule": "Friday11:30 AM - 2:30 PM4E.7Class"
 			},
 			{
-				"title": "Brain and Behavior",
-				"section": "00002",
-				"teacher": "Stephane Gaskin",
-				"schedule": "Friday11:30 AM - 2:30 PM5E.8Class"
-			}
-		]
-	},
-	{
-		"title": "Quantitative Methods",
-		"number": "360-300-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Erin Hall",
-				"schedule": "Tuesday12:00 PM - 2:00 PM5B.11ClassThursday12:00 PM - 2:00 PM5B.11Class"
-			},
-			{
-				"section": "00012",
-				"teacher": "Michael Wasser",
-				"schedule": "Monday12:00 PM - 2:00 PM3H.17ClassThursday8:00 AM - 10:00 AM3H.17Class"
-			}
-		]
-	},
-	{
-		"title": "Human Biology",
-		"number": "101-921-DW",
-		"sections": [
-			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Man-Tze Mabel Chong",
 				"schedule": "Monday10:00 AM - 11:30 AM5A.14LabWednesday10:00 AM - 11:30 AM3E.9Class"
 			}
@@ -571,7 +227,7 @@
 		"number": "350-306-DW",
 		"sections": [
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Sylvia Cox",
 				"schedule": "Tuesday2:30 PM - 5:30 PM5E.8Class"
 			}
@@ -583,13 +239,13 @@
 		"sections": [
 			{
 				"title": "Social Psychology",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Pavel Piterkin",
 				"schedule": "Friday11:30 AM - 2:30 PM4E.7Class"
 			},
 			{
 				"title": "Brain and Behavior",
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Stephane Gaskin",
 				"schedule": "Friday11:30 AM - 2:30 PM5E.8Class"
 			}
@@ -600,12 +256,17 @@
 		"number": "360-300-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Erin Hall",
 				"schedule": "Monday8:00 AM - 10:00 AM3H.17ClassWednesday8:00 AM - 10:00 AM3H.17Class"
 			},
 			{
-				"section": "00012",
+				"number": "00002",
+				"teacher": "Erin Hall",
+				"schedule": "Tuesday12:00 PM - 2:00 PM5B.11ClassThursday12:00 PM - 2:00 PM5B.11Class"
+			},
+			{
+				"number": "00012",
 				"teacher": "Michael Wasser",
 				"schedule": "Monday12:00 PM - 2:00 PM3H.17ClassThursday8:00 AM - 10:00 AM3H.17Class"
 			}
@@ -616,9 +277,14 @@
 		"number": "201-401-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Mohamad-Ahed Hindawi",
 				"schedule": "Tuesday2:30 PM - 4:00 PM3F.45ClassThursday2:30 PM - 4:00 PM5D.2Class"
+			},
+			{
+				"number": "00002",
+				"teacher": "Mehdi Moodi",
+				"schedule": "Tuesday8:30 AM - 10:00 AM7A.13ClassFriday8:30 AM - 10:00 AM7A.13Class"
 			}
 		]
 	},
@@ -628,159 +294,31 @@
 		"sections": [
 			{
 				"title": "Controversial Issues",
-				"section": "00023",
+				"number": "00023",
 				"teacher": "Melanie Doyle",
 				"schedule": "Tuesday4:00 PM - 6:00 PM3H.19ClassThursday4:00 PM - 6:00 PM3H.19Class"
 			},
 			{
 				"title": "Controversial Issues",
-				"section": "00024",
+				"number": "00024",
 				"teacher": "Melanie Doyle",
 				"schedule": "Monday12:00 PM - 2:00 PM3H.21ClassThursday8:00 AM - 10:00 AM3H.21Class"
-			}
-		]
-	},
-	{
-		"title": "Advanced Studies in Psychology",
-		"number": "350-401-DW",
-		"sections": [
-			{
-				"title": "Thinking and Memory",
-				"section": "00001",
-				"teacher": "Rajesh Malik",
-				"schedule": "Monday8:30 AM - 10:00 AM3H.23ClassWednesday8:30 AM - 10:00 AM3H.23Class"
-			},
-			{
-				"title": "Fundamentals of Learning",
-				"section": "00002",
-				"teacher": "Stephane Gaskin",
-				"schedule": "Wednesday8:30 AM - 11:30 AM5E.8Class"
-			}
-		]
-	},
-	{
-		"title": "Statistics for Social Science",
-		"number": "201-401-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Mohamad-Ahed Hindawi",
-				"schedule": "Tuesday2:30 PM - 4:00 PM3F.45ClassThursday2:30 PM - 4:00 PM5D.2Class"
-			},
-			{
-				"section": "00002",
-				"teacher": "Mehdi Moodi",
-				"schedule": "Tuesday8:30 AM - 10:00 AM7A.13ClassFriday8:30 AM - 10:00 AM7A.13Class"
-			}
-		]
-	},
-	{
-		"title": "Integrative Seminar",
-		"number": "300-308-DW",
-		"sections": [
-			{
-				"title": "Controversial Issues",
-				"section": "00023",
-				"teacher": "Melanie Doyle",
-				"schedule": "Tuesday4:00 PM - 6:00 PM3H.19ClassThursday4:00 PM - 6:00 PM3H.19Class"
 			},
 			{
 				"title": "Victuals",
-				"section": "00025",
-				"teacher": "Caroline Chochol",
-				"schedule": "Monday4:00 PM - 6:00 PM4G.2AClassWednesday4:00 PM - 6:00 PM4G.2AClass"
-			}
-		]
-	},
-	{
-		"title": "Advanced Studies in Psychology",
-		"number": "350-401-DW",
-		"sections": [
-			{
-				"title": "Thinking and Memory",
-				"section": "00001",
-				"teacher": "Rajesh Malik",
-				"schedule": "Monday8:30 AM - 10:00 AM3H.23ClassWednesday8:30 AM - 10:00 AM3H.23Class"
-			},
-			{
-				"title": "Fundamentals of Learning",
-				"section": "00002",
-				"teacher": "Stephane Gaskin",
-				"schedule": "Wednesday8:30 AM - 11:30 AM5E.8Class"
-			}
-		]
-	},
-	{
-		"title": "Statistics for Social Science",
-		"number": "201-401-DW",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Mehdi Moodi",
-				"schedule": "Tuesday8:30 AM - 10:00 AM7A.13ClassFriday8:30 AM - 10:00 AM7A.13Class"
-			}
-		]
-	},
-	{
-		"title": "Integrative Seminar",
-		"number": "300-308-DW",
-		"sections": [
-			{
-				"title": "Victuals",
-				"section": "00025",
+				"number": "00025",
 				"teacher": "Caroline Chochol",
 				"schedule": "Monday4:00 PM - 6:00 PM4G.2AClassWednesday4:00 PM - 6:00 PM4G.2AClass"
 			},
 			{
 				"title": "Social Justice Movements",
-				"section": "00039",
-				"teacher": "Mark Beauchamp",
-				"schedule": "Tuesday12:00 PM - 2:00 PM3H.19ClassThursday12:00 PM - 2:00 PM3H.19Class"
-			}
-		]
-	},
-	{
-		"title": "Advanced Studies in Psychology",
-		"number": "350-401-DW",
-		"sections": [
-			{
-				"title": "Thinking and Memory",
-				"section": "00001",
-				"teacher": "Rajesh Malik",
-				"schedule": "Monday8:30 AM - 10:00 AM3H.23ClassWednesday8:30 AM - 10:00 AM3H.23Class"
-			},
-			{
-				"title": "Fundamentals of Learning",
-				"section": "00003",
-				"teacher": "Stephane Gaskin",
-				"schedule": "Monday8:30 AM - 11:30 AM5E.8Class"
-			}
-		]
-	},
-	{
-		"title": "Statistics for Social Science",
-		"number": "201-401-DW",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Mohamad-Ahed Hindawi",
-				"schedule": "Tuesday2:30 PM - 4:00 PM3F.45ClassThursday2:30 PM - 4:00 PM5D.2Class"
-			}
-		]
-	},
-	{
-		"title": "Integrative Seminar",
-		"number": "300-308-DW",
-		"sections": [
-			{
-				"title": "Social Justice Movements",
-				"section": "00039",
+				"number": "00039",
 				"teacher": "Mark Beauchamp",
 				"schedule": "Tuesday12:00 PM - 2:00 PM3H.19ClassThursday12:00 PM - 2:00 PM3H.19Class"
 			},
 			{
 				"title": "Indigenous Canada",
-				"section": "00040",
+				"number": "00040",
 				"teacher": "Michael Duckett",
 				"schedule": "Tuesday10:00 AM - 12:00 PM3A.7ClassFriday10:00 AM - 12:00 PM3A.7Class"
 			}
@@ -792,13 +330,19 @@
 		"sections": [
 			{
 				"title": "Thinking and Memory",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Rajesh Malik",
 				"schedule": "Monday8:30 AM - 10:00 AM3H.23ClassWednesday8:30 AM - 10:00 AM3H.23Class"
 			},
 			{
 				"title": "Fundamentals of Learning",
-				"section": "00003",
+				"number": "00002",
+				"teacher": "Stephane Gaskin",
+				"schedule": "Wednesday8:30 AM - 11:30 AM5E.8Class"
+			},
+			{
+				"title": "Fundamentals of Learning",
+				"number": "00003",
 				"teacher": "Stephane Gaskin",
 				"schedule": "Monday8:30 AM - 11:30 AM5E.8Class"
 			}
