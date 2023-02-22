@@ -4,7 +4,7 @@ import User from "./models/user-schema"
 import Event from './models/event-schema';
 import Course from "./models/course-schema";
 import Section from "./models/section-schema";
-
+import usersect from './models/usersection'
 import fs = require('fs');
 import path = require("path");
 import * as config from "../../config.json"
@@ -27,7 +27,12 @@ class DbMongoose {
   }
 
   async addUser(nameUser: string, passwd: string, classes: string[]) {
-    const abie = new User({ name: nameUser, password: passwd, class: classes })
+    const abie = new User({ name: nameUser, password: passwd, classes: classes })
+    await abie.save();
+
+  }
+  async addUser2(nameUser: string, passwd: string, classes: string[]) {
+    const abie = new User({ name: nameUser, password: passwd, classes: classes })
     await abie.save();
 
   }
