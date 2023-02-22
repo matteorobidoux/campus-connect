@@ -1,277 +1,277 @@
 [
 	{
 		"title": "Western Civilization",
+		"number": "330-101-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Frédéric Bastien",
 				"schedule": "Monday10:00 AM - 11:30 AM4H.23ClassWednesday10:00 AM - 11:30 AM4H.23Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Frédéric Bastien",
 				"schedule": "Monday8:30 AM - 10:00 AM4H.21ClassWednesday8:30 AM - 10:00 AM4H.21Class"
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Frédéric Bastien",
 				"schedule": "Monday4:00 PM - 5:30 PM4H.21ClassWednesday4:00 PM - 5:30 PM4H.21Class"
 			},
 			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Michael Leon",
 				"schedule": "Monday1:00 PM - 2:30 PM5A.12ClassThursday10:00 AM - 11:30 AM5A.12Class"
 			},
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Diane Shea",
 				"schedule": "Tuesday1:00 PM - 2:30 PM3F.3ClassThursday1:00 PM - 2:30 PM3F.3Class"
 			},
 			{
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Gemma Albanese",
 				"schedule": "Tuesday2:30 PM - 4:00 PM3H.13ClassThursday2:30 PM - 4:00 PM3H.13Class"
 			},
 			{
-				"section": "00007",
+				"number": "00007",
 				"teacher": "Michael Leon",
 				"schedule": "Wednesday1:00 PM - 2:30 PM5D.1ClassFriday1:00 PM - 2:30 PM5D.1Class"
 			},
 			{
-				"section": "00008",
+				"number": "00008",
 				"teacher": "Gemma Albanese",
 				"schedule": "Monday1:00 PM - 2:30 PM5A.2ClassThursday10:00 AM - 11:30 AM5A.2Class"
 			},
 			{
-				"section": "00009",
+				"number": "00009",
 				"teacher": "Gesche Peters",
 				"schedule": "Monday10:00 AM - 11:30 AM3E.11ClassWednesday10:00 AM - 11:30 AM3E.11Class"
 			},
 			{
-				"section": "00010",
+				"number": "00010",
 				"teacher": "Julie Johnson",
 				"schedule": "Monday4:00 PM - 5:30 PM3H.13ClassWednesday4:00 PM - 5:30 PM3H.13Class"
 			},
 			{
-				"section": "00011",
+				"number": "00011",
 				"teacher": "Mark Theriault",
 				"schedule": "Monday8:30 AM - 10:00 AM4H.23ClassWednesday8:30 AM - 10:00 AM4H.23Class"
 			},
 			{
-				"section": "00012",
+				"number": "00012",
 				"teacher": "Ray Claudio Pino",
 				"schedule": "Tuesday2:30 PM - 4:00 PM4F.2ClassThursday2:30 PM - 4:00 PM4F.2Class"
 			},
 			{
-				"section": "00013",
+				"number": "00013",
 				"teacher": "Gesche Peters",
 				"schedule": "Monday4:00 PM - 5:30 PM4E.20ClassWednesday4:00 PM - 5:30 PM4E.20Class"
 			},
 			{
-				"section": "00014",
+				"number": "00014",
 				"teacher": "Gesche Peters",
 				"schedule": "Tuesday10:00 AM - 11:30 AM4E.20ClassFriday10:00 AM - 11:30 AM4E.20Class"
 			},
 			{
-				"section": "00015",
+				"number": "00015",
 				"teacher": "Pierre L'Heureux",
 				"schedule": "Tuesday8:30 AM - 10:00 AM4P.24ClassFriday8:30 AM - 10:00 AM4P.24Class"
 			},
 			{
-				"section": "00016",
+				"number": "00016",
 				"teacher": "Rachèle Caux",
 				"schedule": "Tuesday2:30 PM - 4:00 PM4H.21ClassThursday2:30 PM - 4:00 PM4H.21Class"
 			},
 			{
-				"section": "00017",
+				"number": "00017",
 				"teacher": "Julie Johnson",
 				"schedule": "Monday10:00 AM - 11:30 AM3F.6ClassWednesday10:00 AM - 11:30 AM3F.6Class"
 			},
 			{
-				"section": "00018",
+				"number": "00018",
 				"teacher": "Rachèle Caux",
 				"schedule": "Monday1:00 PM - 2:30 PM4P.25ClassThursday10:00 AM - 11:30 AM4P.25Class"
 			},
 			{
-				"section": "00019",
+				"number": "00019",
 				"teacher": "Jan Alexandros Arvanitakis",
 				"schedule": "Tuesday1:00 PM - 2:30 PM4E.20ClassThursday1:00 PM - 2:30 PM4E.20Class"
 			},
 			{
-				"section": "00020",
+				"number": "00020",
 				"teacher": "Rachèle Caux",
 				"schedule": "Tuesday11:30 AM - 1:00 PM2P.04ClassThursday11:30 AM - 1:00 PM2P.04Class"
 			},
 			{
-				"section": "00021",
+				"number": "00021",
 				"teacher": "Michael Leon",
 				"schedule": "Monday4:00 PM - 5:30 PM5D.1ClassWednesday4:00 PM - 5:30 PM5D.1Class"
 			},
 			{
-				"section": "00022",
+				"number": "00022",
 				"teacher": "Pierre L'Heureux",
 				"schedule": "Monday11:30 AM - 1:00 PM7B.13ClassThursday8:30 AM - 10:00 AM7B.13Class"
 			},
 			{
-				"section": "00023",
+				"number": "00023",
 				"teacher": "Mark Theriault",
 				"schedule": "Tuesday8:30 AM - 10:00 AM4H.19ClassFriday8:30 AM - 10:00 AM4H.19Class"
 			},
 			{
-				"section": "00024",
+				"number": "00024",
 				"teacher": "Jan Alexandros Arvanitakis",
 				"schedule": "Tuesday2:30 PM - 4:00 PM4F.4ClassThursday2:30 PM - 4:00 PM4F.4Class"
 			}
-		],
-		"number": "330-101-DW"
+		]
 	},
 	{
 		"title": "Canadian History",
+		"number": "330-201-DW",
 		"sections": [
 			{
 				"title": "Crime and Injustices in Canada",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Catherine Braithwaite",
 				"schedule": "Tuesday10:00 AM - 11:30 AM3F.37ClassFriday10:00 AM - 11:30 AM3F.37Class"
 			},
 			{
 				"title": "Crime and Society",
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Rachèle Caux",
 				"schedule": "Tuesday4:00 PM - 5:30 PM4H.15ClassThursday4:00 PM - 5:30 PM4H.15Class"
 			},
 			{
 				"title": "Crime and Injustices in Canada",
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Catherine Braithwaite",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		],
-		"number": "330-201-DW"
+		]
 	},
 	{
 		"title": "20th Century History",
+		"number": "330-214-DW",
 		"sections": [
 			{
 				"title": "War and Conflict",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Michael Wasser",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Ideology, Technology, and Conflict",
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Mark Theriault",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Snapshots of the 20th Century",
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Deborah Shulman",
 				"schedule": "Monday8:30 AM - 10:00 AM3E.9ClassWednesday8:30 AM - 10:00 AM3E.9Class"
 			},
 			{
 				"title": "Snapshots of the 20th Century",
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Diane Shea",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Jérémy Tétrault-Farber",
 				"schedule": "Monday10:00 AM - 11:30 AM4E.7ClassWednesday10:00 AM - 11:30 AM4E.7Class"
 			}
-		],
-		"number": "330-214-DW"
+		]
 	},
 	{
 		"title": "Third World History",
+		"number": "330-221-DW",
 		"sections": [
 			{
 				"title": "Colonization and Decolonization",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Diane Shea",
 				"schedule": "Monday10:00 AM - 11:30 AM3F.45ClassWednesday10:00 AM - 11:30 AM3F.5Class"
 			}
-		],
-		"number": "330-221-DW"
+		]
 	},
 	{
 		"title": "Applied Canadian History",
+		"number": "330-302-DW",
 		"sections": [
 			{
 				"title": "History of Indigenous Canada",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Michael Duckett",
 				"schedule": "Monday2:30 PM - 4:00 PM3E.13ClassWednesday2:30 PM - 4:00 PM3E.13Class"
 			}
-		],
-		"number": "330-302-DW"
+		]
 	},
 	{
 		"title": "Applied U.S. History",
+		"number": "330-306-DW",
 		"sections": [
 			{
 				"title": "A Nation Fractured: Social Conflicts in 20th Century USA",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Pierre L'Heureux",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		],
-		"number": "330-306-DW"
+		]
 	},
 	{
 		"title": "Applied 20th Century History",
+		"number": "330-314-DW",
 		"sections": [
 			{
 				"title": "Art and Power in the 20th Century",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Jocelyn Parr",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		],
-		"number": "330-314-DW"
+		]
 	},
 	{
 		"title": "Applied Social and Economic History",
+		"number": "330-325-DW",
 		"sections": [
 			{
 				"title": "The Family",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Nancy Rebelo",
 				"schedule": "Tuesday8:30 AM - 10:00 AM2P.14ClassFriday8:30 AM - 10:00 AM2P.14Class"
 			},
 			{
 				"title": "The Family",
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Nancy Rebelo",
 				"schedule": "Monday8:30 AM - 10:00 AM2P.02ClassWednesday8:30 AM - 10:00 AM2P.02Class"
 			},
 			{
 				"title": "Art and Ideas: 1850-1950",
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Julie Johnson",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		],
-		"number": "330-325-DW"
+		]
 	},
 	{
 		"title": "Advanced Studies in History",
+		"number": "330-401-DW",
 		"sections": [
 			{
 				"title": "The Global 1960s: Times of Change",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Maryann Farkas",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Right Wing Politics in the USA: KKK to Trump",
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Pierre L'Heureux",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		],
-		"number": "330-401-DW"
+		]
 	}
 ]

@@ -1,32 +1,32 @@
 [
 	{
 		"title": "Contemporary Issues Set 2",
+		"number": "365-BXP-DW",
 		"sections": [
 			{
 				"title": "Learning Perspectives 2",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Amanda Lickers, Jocelyn Parr, Morgan Phillips",
 				"schedule": "Wednesday1:00 PM - 2:30 PM4E.18ClassFriday1:00 PM - 2:30 PM4E.18Class"
 			},
 			{
 				"title": "S.P.A.C.E.: Make Things That Matter",
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Joel Trudeau",
 				"schedule": "Tuesday3:00 PM - 6:00 PM3H.10Class"
 			},
 			{
 				"title": "Introduction to Research in Neuroscience",
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Hélène Nadeau",
 				"schedule": "Monday4:00 PM - 5:30 PM3F.38ClassWednesday4:00 PM - 5:30 PM3F.38Class"
 			},
 			{
 				"title": "Imaging Violence and Nonviolence",
-				"section": "12001",
+				"number": "12001",
 				"teacher": "Kim Simard, Patricia Romano",
 				"schedule": "Thursday2:30 PM - 5:30 PM3B.6Class"
 			}
-		],
-		"number": "365-BXP-DW"
+		]
 	}
 ]

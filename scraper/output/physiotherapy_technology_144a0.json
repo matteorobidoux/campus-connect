@@ -1,304 +1,199 @@
 [
 	{
 		"title": "Human Biology II",
+		"number": "101-9P2-DW",
 		"sections": [
 			{
-				"section": "00001",
-				"teacher": "Virginia Hock",
-				"schedule": "Wednesday2:30 PM - 3:30 PM5A.14LabFriday2:00 PM - 4:00 PM4A.3Class"
-			}
-		],
-		"number": "101-9P2-DW"
-	},
-	{
-		"title": "Kinesiology",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Sharon Patricia Clegg",
-				"schedule": "Wednesday12:30 PM - 2:30 PM2P.16LabThursday2:00 PM - 4:00 PM2P.14Class"
-			}
-		],
-		"number": "144-P21-DW"
-	},
-	{
-		"title": "Anatomy II",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Erika Hasler",
-				"schedule": "Friday9:30 AM - 11:30 AM2P.12LabFriday12:00 PM - 2:00 PM2P.02Class"
-			}
-		],
-		"number": "144-P22-DW"
-	},
-	{
-		"title": "Principles of Electrophysical Agents",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Maureen MacMahon",
-				"schedule": "Monday2:00 PM - 4:00 PM2P.14ClassTuesday12:30 PM - 3:30 PM2P.16Lab"
-			}
-		],
-		"number": "144-P23-DW"
-	},
-	{
-		"title": "Principles of Data Collection and Intervention",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Krista Gem Bulow",
-				"schedule": "MondayJan 18, 2023May 11, 20232:00 PM - 4:00 PM2P.14IntensiveTuesdayJan 18, 2023May 11, 20239:00 AM - 12:00 PM2P.18Lab"
-			}
-		],
-		"number": "144-P24-DW"
-	},
-	{
-		"title": "Human Biology II",
-		"sections": [
-			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Virginia Hock",
 				"schedule": "Wednesday2:30 PM - 3:30 PM5A.14LabFriday2:00 PM - 4:00 PM4A.3Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Virginia Hock",
 				"schedule": "Wednesday4:30 PM - 5:30 PM5A.14LabFriday2:00 PM - 4:00 PM4A.3Class"
 			}
-		],
-		"number": "101-9P2-DW"
+		]
 	},
 	{
 		"title": "Kinesiology",
+		"number": "144-P21-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Sharon Patricia Clegg",
+				"schedule": "Wednesday12:30 PM - 2:30 PM2P.16LabThursday2:00 PM - 4:00 PM2P.14Class"
+			},
+			{
+				"number": "00002",
 				"teacher": "Sharon Patricia Clegg",
 				"schedule": "Wednesday10:00 AM - 12:00 PM2P.16LabThursday2:00 PM - 4:00 PM2P.14Class"
-			}
-		],
-		"number": "144-P21-DW"
-	},
-	{
-		"title": "Anatomy II",
-		"sections": [
+			},
 			{
-				"section": "00002",
-				"teacher": "Erika Hasler",
-				"schedule": "Wednesday12:30 PM - 2:30 PM2P.12LabFriday12:00 PM - 2:00 PM2P.02Class"
-			}
-		],
-		"number": "144-P22-DW"
-	},
-	{
-		"title": "Principles of Electrophysical Agents",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Maureen MacMahon",
-				"schedule": "Monday2:00 PM - 4:00 PM2P.14ClassTuesday9:00 AM - 12:00 PM2P.16Lab"
-			}
-		],
-		"number": "144-P23-DW"
-	},
-	{
-		"title": "Principles of Data Collection and Intervention",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Krista Gem Bulow",
-				"schedule": "MondayJan 18, 2023May 11, 20232:00 PM - 4:00 PM2P.14IntensiveFridayJan 18, 2023May 11, 20238:30 AM - 11:30 AM2P.18Lab"
-			}
-		],
-		"number": "144-P24-DW"
-	},
-	{
-		"title": "Human Biology II",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Virginia Hock",
-				"schedule": "Wednesday4:30 PM - 5:30 PM5A.14LabFriday2:00 PM - 4:00 PM4A.3Class"
-			}
-		],
-		"number": "101-9P2-DW"
-	},
-	{
-		"title": "Kinesiology",
-		"sections": [
-			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Sharon Patricia Clegg",
 				"schedule": "Wednesday2:30 PM - 4:30 PM2P.16LabThursday2:00 PM - 4:00 PM2P.14Class"
 			}
-		],
-		"number": "144-P21-DW"
+		]
 	},
 	{
 		"title": "Anatomy II",
+		"number": "144-P22-DW",
 		"sections": [
 			{
-				"section": "00003",
+				"number": "00001",
+				"teacher": "Erika Hasler",
+				"schedule": "Friday9:30 AM - 11:30 AM2P.12LabFriday12:00 PM - 2:00 PM2P.02Class"
+			},
+			{
+				"number": "00002",
+				"teacher": "Erika Hasler",
+				"schedule": "Wednesday12:30 PM - 2:30 PM2P.12LabFriday12:00 PM - 2:00 PM2P.02Class"
+			},
+			{
+				"number": "00003",
 				"teacher": "Erika Hasler",
 				"schedule": "Wednesday10:00 AM - 12:00 PM2P.12LabFriday12:00 PM - 2:00 PM2P.02Class"
 			}
-		],
-		"number": "144-P22-DW"
+		]
 	},
 	{
 		"title": "Principles of Electrophysical Agents",
+		"number": "144-P23-DW",
 		"sections": [
 			{
-				"section": "00003",
+				"number": "00001",
+				"teacher": "Maureen MacMahon",
+				"schedule": "Monday2:00 PM - 4:00 PM2P.14ClassTuesday12:30 PM - 3:30 PM2P.16Lab"
+			},
+			{
+				"number": "00002",
+				"teacher": "Maureen MacMahon",
+				"schedule": "Monday2:00 PM - 4:00 PM2P.14ClassTuesday9:00 AM - 12:00 PM2P.16Lab"
+			},
+			{
+				"number": "00003",
 				"teacher": "Maureen MacMahon",
 				"schedule": "Monday2:00 PM - 4:00 PM2P.14ClassFriday8:30 AM - 11:30 AM2P.16Lab"
 			}
-		],
-		"number": "144-P23-DW"
+		]
 	},
 	{
 		"title": "Principles of Data Collection and Intervention",
+		"number": "144-P24-DW",
 		"sections": [
 			{
-				"section": "00003",
+				"number": "00001",
+				"teacher": "Krista Gem Bulow",
+				"schedule": "MondayJan 18, 2023May 11, 20232:00 PM - 4:00 PM2P.14IntensiveTuesdayJan 18, 2023May 11, 20239:00 AM - 12:00 PM2P.18Lab"
+			},
+			{
+				"number": "00002",
+				"teacher": "Krista Gem Bulow",
+				"schedule": "MondayJan 18, 2023May 11, 20232:00 PM - 4:00 PM2P.14IntensiveFridayJan 18, 2023May 11, 20238:30 AM - 11:30 AM2P.18Lab"
+			},
+			{
+				"number": "00003",
 				"teacher": "Krista Gem Bulow",
 				"schedule": "MondayJan 18, 2023May 11, 20232:00 PM - 4:00 PM2P.14IntensiveTuesdayJan 18, 2023May 11, 202312:30 PM - 3:30 PM2P.18Lab"
 			}
-		],
-		"number": "144-P24-DW"
+		]
 	},
 	{
 		"title": "Orthopedic Rehabilitation: Extremities",
+		"number": "144-451-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Krista Gem Bulow",
 				"schedule": "Thursday8:00 AM - 10:00 AM2P.14ClassThursday2:30 PM - 4:30 PM2P.16Lab"
-			}
-		],
-		"number": "144-451-DW"
-	},
-	{
-		"title": "Orthopedic Rehabilitation: Spine and Pelvis",
-		"sections": [
+			},
 			{
-				"section": "00001",
-				"teacher": "Erika Hasler",
-				"schedule": "Thursday10:00 AM - 12:00 PM2P.14ClassThursday12:30 PM - 2:30 PM2P.12Lab"
-			}
-		],
-		"number": "144-452-DW"
-	},
-	{
-		"title": "Neurology",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Gloria Thevasagayam",
-				"schedule": "Tuesday12:00 PM - 2:00 PM2P.14ClassTuesday2:00 PM - 4:00 PM2P.24Lab"
-			}
-		],
-		"number": "144-453-DW"
-	},
-	{
-		"title": "Clinical Education I",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Catherine Joyal, Michael Pilon-Piquette, Michèle Sajous-Theagène, Vanessa Beaumont",
-				"schedule": "Monday8:30 AM - 12:00 PMOff Campus LocationLabWednesday8:30 AM - 12:00 PMOff Campus LocationLabFriday8:30 AM - 12:00 PMOff Campus LocationLab"
-			}
-		],
-		"number": "144-491-DW"
-	},
-	{
-		"title": "Communication and Interpersonal Interaction",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Susan Finch",
-				"schedule": "Tuesday8:30 AM - 11:30 AM4P.10Class"
-			}
-		],
-		"number": "350-944-DW"
-	},
-	{
-		"title": "Orthopedic Rehabilitation: Extremities",
-		"sections": [
-			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Krista Gem Bulow",
 				"schedule": "Thursday8:00 AM - 10:00 AM2P.14ClassThursday12:30 PM - 2:30 PM2P.16Lab"
 			}
-		],
-		"number": "144-451-DW"
+		]
 	},
 	{
 		"title": "Orthopedic Rehabilitation: Spine and Pelvis",
+		"number": "144-452-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Erika Hasler",
+				"schedule": "Thursday10:00 AM - 12:00 PM2P.14ClassThursday12:30 PM - 2:30 PM2P.12Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Erika Hasler",
 				"schedule": "Thursday10:00 AM - 12:00 PM2P.14ClassThursday2:30 PM - 4:30 PM2P.12Lab"
 			}
-		],
-		"number": "144-452-DW"
+		]
 	},
 	{
 		"title": "Neurology",
+		"number": "144-453-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Gloria Thevasagayam",
+				"schedule": "Tuesday12:00 PM - 2:00 PM2P.14ClassTuesday2:00 PM - 4:00 PM2P.24Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Gloria Thevasagayam",
 				"schedule": "Tuesday12:00 PM - 2:00 PM2P.14ClassTuesday4:00 PM - 6:00 PM2P.24Lab"
 			}
-		],
-		"number": "144-453-DW"
+		]
 	},
 	{
 		"title": "Clinical Education I",
+		"number": "144-491-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Catherine Joyal, Michael Pilon-Piquette, Michèle Sajous-Theagène, Vanessa Beaumont",
+				"schedule": "Monday8:30 AM - 12:00 PMOff Campus LocationLabWednesday8:30 AM - 12:00 PMOff Campus LocationLabFriday8:30 AM - 12:00 PMOff Campus LocationLab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Catherine Joyal, Michael Pilon-Piquette, Michèle Sajous-Theagène, Vanessa Beaumont",
 				"schedule": "Monday12:30 PM - 4:00 PMOff Campus LocationLabWednesday12:30 PM - 4:00 PMOff Campus LocationLabFriday12:30 PM - 4:00 PMOff Campus LocationLab"
 			}
-		],
-		"number": "144-491-DW"
+		]
 	},
 	{
 		"title": "Communication and Interpersonal Interaction",
+		"number": "350-944-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Susan Finch",
 				"schedule": "Tuesday8:30 AM - 11:30 AM4P.10Class"
 			}
-		],
-		"number": "350-944-DW"
+		]
 	},
 	{
 		"title": "Internship I",
+		"number": "144-698-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Catherine Roy, Erika Hasler, Krista Gem Bulow, Mark Mattei, Maureen MacMahon, Michèle Sajous-Theagène, Sharon Patricia Clegg, Vanessa Beaumont",
 				"schedule": "MondayJan 09, 2023Jan 16, 20238:00 AM - 12:00 PMStageIntensiveMondayJan 09, 2023Jan 16, 20231:00 PM - 4:30 PMStageIntensiveTuesdayJan 10, 2023Jan 17, 20238:00 AM - 12:00 PMStageIntensiveTuesdayJan 10, 2023Jan 17, 20231:00 PM - 4:30 PMStageIntensiveWednesdayJan 11, 2023Jan 11, 20238:00 AM - 12:00 PMStageIntensiveWednesdayJan 11, 2023Jan 11, 20231:00 PM - 4:30 PMStageIntensiveMondayJan 18, 2023Mar 22, 20238:00 AM - 12:00 PMStageLabMondayJan 18, 2023Mar 22, 20231:00 PM - 4:30 PMStageLabTuesdayJan 18, 2023Mar 22, 20238:00 AM - 12:00 PMStageLabTuesdayJan 18, 2023Mar 22, 20231:00 PM - 4:30 PMStageLabWednesdayJan 18, 2023Mar 22, 20238:00 AM - 12:00 PMStageLabWednesdayJan 18, 2023Mar 22, 20231:00 PM - 4:30 PMStageLab"
 			}
-		],
-		"number": "144-698-DW"
+		]
 	},
 	{
 		"title": "Internship II",
+		"number": "144-699-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Catherine Roy, Krista Gem Bulow, Mark Mattei, Michèle Sajous-Theagène, Sharon Patricia Clegg, Vanessa Beaumont, Vanessa Gangai",
 				"schedule": "ThursdayMar 30, 2023May 11, 20238:00 AM - 12:00 PMStageLabThursdayMar 30, 2023May 11, 20231:00 PM - 4:30 PMStageLabFridayMar 30, 2023May 11, 20238:00 AM - 12:00 PMStageLabFridayMar 30, 2023May 11, 20231:00 PM - 4:30 PMStageLabSaturdayMar 30, 2023May 11, 20238:00 AM - 12:00 PMStageLabSaturdayMar 30, 2023May 11, 20231:00 PM - 4:30 PMStageLabFridayMay 12, 2023Jun 09, 20238:00 AM - 12:00 PMStageIntensiveFridayMay 12, 2023Jun 09, 20231:00 PM - 4:30 PMStageIntensiveSaturdayMay 13, 2023Jun 10, 20238:00 AM - 12:00 PMStageIntensiveSaturdayMay 13, 2023Jun 10, 20231:00 PM - 4:30 PMStageIntensiveThursdayMay 18, 2023Jun 08, 20238:00 AM - 12:00 PMStageIntensiveThursdayMay 18, 2023Jun 08, 20231:00 PM - 4:30 PMStageIntensive"
 			}
-		],
-		"number": "144-699-DW"
+		]
 	}
 ]

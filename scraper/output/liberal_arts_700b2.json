@@ -1,151 +1,151 @@
 [
 	{
 		"title": "Post-Classical History",
+		"number": "330-270-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Gesche Peters",
 				"schedule": "Monday2:30 PM - 4:00 PM4E.20ClassWednesday2:30 PM - 4:00 PM4E.20Class"
 			}
-		],
-		"number": "330-270-DW"
+		]
 	},
 	{
 		"title": "Modern Philosophy",
+		"number": "340-912-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Susan-Judith Hoffmann",
 				"schedule": "Tuesday4:00 PM - 5:30 PM3E.9ClassThursday4:00 PM - 5:30 PM3E.9Class"
 			}
-		],
-		"number": "340-912-DW"
+		]
 	},
 	{
 		"title": "Principles of Mathematics and Logic",
+		"number": "360-124-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Brian Redekopp",
 				"schedule": "Tuesday10:00 AM - 11:30 AM4H.12ClassThursday12:00 PM - 2:00 PM3F.45LabFriday10:00 AM - 11:30 AM7A.11Class"
 			}
-		],
-		"number": "360-124-DW"
+		]
 	},
 	{
 		"title": "Renaissance to Baroque Art",
+		"number": "520-903-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Sarah Watson",
 				"schedule": "Friday11:30 AM - 2:30 PM5D.2Class"
 			}
-		],
-		"number": "520-903-DW"
+		]
 	},
 	{
 		"title": "Literary Genres",
+		"number": "603-102-MQ",
 		"sections": [
 			{
 				"title": "Liberal Arts Poetry",
-				"section": "00021",
+				"number": "00021",
 				"teacher": "Susan Elmslie",
 				"schedule": "Monday10:00 AM - 12:00 PM3F.5ClassWednesday10:00 AM - 12:00 PM2P.08Class"
 			}
-		],
-		"number": "603-102-MQ"
+		]
 	},
 	{
 		"title": "20th Century History",
+		"number": "330-214-DW",
 		"sections": [
 			{
 				"title": "Snapshots of the 20th Century",
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Deborah Shulman",
 				"schedule": "Monday8:30 AM - 10:00 AM3E.9ClassWednesday8:30 AM - 10:00 AM3E.9Class"
 			}
-		],
-		"number": "330-214-DW"
+		]
 	},
 	{
 		"title": "Applied Canadian History",
+		"number": "330-302-DW",
 		"sections": [
 			{
 				"title": "History of Indigenous Canada",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Michael Duckett",
 				"schedule": "Monday2:30 PM - 4:00 PM3E.13ClassWednesday2:30 PM - 4:00 PM3E.13Class"
 			}
-		],
-		"number": "330-302-DW"
+		]
 	},
 	{
 		"title": "Myths in Classical Society",
+		"number": "332-302-DW",
 		"sections": [
 			{
 				"title": "Ancient Gods, Monsters, and Encounters",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Jiri Tucker",
 				"schedule": "Tuesday10:00 AM - 11:30 AM3E.1ClassFriday10:00 AM - 11:30 AM3E.1Class"
 			}
-		],
-		"number": "332-302-DW"
+		]
 	},
 	{
 		"title": "Applied Ethics in Humanities",
+		"number": "345-BXH-DW",
 		"sections": [
 			{
 				"title": "Moral Issues in Law (Liberal Arts)",
-				"section": "00032",
+				"number": "00032",
 				"teacher": "Robert Stephens",
 				"schedule": "Wednesday1:00 PM - 2:30 PM3F.38ClassFriday1:00 PM - 2:30 PM3F.38Class"
 			}
-		],
-		"number": "345-BXH-DW"
+		]
 	},
 	{
 		"title": "Integrative Seminar for Liberal Arts",
+		"number": "360-199-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Beverly Sing, Susan-Judith Hoffmann",
 				"schedule": "Tuesday2:00 PM - 4:00 PM4C.1ClassThursday2:00 PM - 4:00 PM4C.1Class"
 			}
-		],
-		"number": "360-199-DW"
+		]
 	},
 	{
 		"title": "Work and Society",
+		"number": "387-229-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Jennifer Sigouin",
 				"schedule": "Monday4:00 PM - 5:30 PM4D.3ClassWednesday4:00 PM - 5:30 PM4D.3Class"
 			}
-		],
-		"number": "387-229-DW"
+		]
 	},
 	{
 		"title": "Sexuality and Society",
+		"number": "387-314-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Sarah Beer",
 				"schedule": "Tuesday11:30 AM - 1:00 PM4D.3ClassThursday11:30 AM - 1:00 PM4D.3Class"
 			}
-		],
-		"number": "387-314-DW"
+		]
 	},
 	{
 		"title": "Applied Themes in English",
+		"number": "603-BXE-DW",
 		"sections": [
 			{
 				"title": "Writing about the Novel",
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Simon Fanning",
 				"schedule": "Monday10:00 AM - 12:00 PM3F.27ClassWednesday10:00 AM - 12:00 PM4A.5Class"
 			}
-		],
-		"number": "603-BXE-DW"
+		]
 	}
 ]

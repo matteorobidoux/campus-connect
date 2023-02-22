@@ -1,210 +1,175 @@
 [
 	{
 		"title": "Fieldwork 1",
+		"number": "391-123-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Debbie Resurreccion, Heather Martin, Kyle Zacharie, Lara Falquero, Marc Laurent Sauvé, Myka Taylor, Sarah Cartier, Simeon Pompey",
 				"schedule": "Tuesday1:00 PM - 2:00 PM3F.2-4Class"
 			}
-		],
-		"number": "391-123-DW"
+		]
 	},
 	{
 		"title": "Creativity",
+		"number": "391-201-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Sarah Cartier",
 				"schedule": "Tuesday10:00 AM - 1:00 PM3F.2-4Class"
-			}
-		],
-		"number": "391-201-DW"
-	},
-	{
-		"title": "Group Leadership : Theory and Practice 1",
-		"sections": [
+			},
 			{
-				"section": "00001",
-				"teacher": "Debbie Resurreccion, Marc Laurent Sauvé, Myka Taylor, Sarah Cartier",
-				"schedule": "MondayJan 09, 2023Jan 09, 20239:00 AM - 5:00 PM3F.2IntensiveMondayJan 09, 2023Jan 09, 20239:00 AM - 5:00 PM3F.2-4IntensiveTuesdayJan 10, 2023Jan 10, 20239:00 AM - 12:00 PM3F.2IntensiveTuesdayJan 10, 2023Jan 10, 20239:00 AM - 12:00 PM3F.2-4IntensiveTuesdayJan 10, 2023Jan 10, 20231:00 PM - 10:00 PMParkside RanchIntensiveWednesdayJan 11, 2023Jan 11, 20238:00 AM - 10:00 PMParkside RanchIntensiveThursdayJan 12, 2023Jan 12, 20238:00 AM - 10:00 PMParkside RanchIntensiveFridayJan 13, 2023Jan 13, 20238:00 AM - 5:00 PMParkside RanchIntensive"
-			}
-		],
-		"number": "391-210-DW"
-	},
-	{
-		"title": "Clientele : Consumer Needs",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Kyle Zacharie, Lara Falquero",
-				"schedule": "Monday10:00 AM - 1:00 PM3F.2ClassMonday10:00 AM - 1:00 PM3F.2-4ClassMonday10:00 AM - 1:00 PM3F.4Class"
-			}
-		],
-		"number": "391-211-DW"
-	},
-	{
-		"title": "Business Administration in Recreation",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Amanda Petriello",
-				"schedule": "Thursday10:00 AM - 1:00 PM3F.4Class"
-			}
-		],
-		"number": "401-990-DW"
-	},
-	{
-		"title": "Fieldwork 1",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Debbie Resurreccion, Heather Martin, Kyle Zacharie, Lara Falquero, Marc Laurent Sauvé, Myka Taylor, Sarah Cartier, Simeon Pompey",
-				"schedule": "Tuesday1:00 PM - 2:00 PM3F.2-4Class"
-			}
-		],
-		"number": "391-123-DW"
-	},
-	{
-		"title": "Creativity",
-		"sections": [
-			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Debbie Resurreccion",
 				"schedule": "Thursday10:00 AM - 1:00 PM3F.2-4Class"
 			}
-		],
-		"number": "391-201-DW"
+		]
 	},
 	{
 		"title": "Group Leadership : Theory and Practice 1",
+		"number": "391-210-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Debbie Resurreccion, Marc Laurent Sauvé, Myka Taylor, Sarah Cartier",
+				"schedule": "MondayJan 09, 2023Jan 09, 20239:00 AM - 5:00 PM3F.2IntensiveMondayJan 09, 2023Jan 09, 20239:00 AM - 5:00 PM3F.2-4IntensiveTuesdayJan 10, 2023Jan 10, 20239:00 AM - 12:00 PM3F.2IntensiveTuesdayJan 10, 2023Jan 10, 20239:00 AM - 12:00 PM3F.2-4IntensiveTuesdayJan 10, 2023Jan 10, 20231:00 PM - 10:00 PMParkside RanchIntensiveWednesdayJan 11, 2023Jan 11, 20238:00 AM - 10:00 PMParkside RanchIntensiveThursdayJan 12, 2023Jan 12, 20238:00 AM - 10:00 PMParkside RanchIntensiveFridayJan 13, 2023Jan 13, 20238:00 AM - 5:00 PMParkside RanchIntensive"
+			},
+			{
+				"number": "00002",
 				"teacher": "Debbie Resurreccion, Marc Laurent Sauvé, Myka Taylor, Sarah Cartier",
 				"schedule": "MondayJan 09, 2023Jan 09, 20239:00 AM - 5:00 PM3F.2IntensiveMondayJan 09, 2023Jan 09, 20239:00 AM - 5:00 PM3F.2-4IntensiveTuesdayJan 10, 2023Jan 10, 20239:00 AM - 12:00 PM3F.2IntensiveTuesdayJan 10, 2023Jan 10, 20239:00 AM - 12:00 PM3F.2-4IntensiveTuesdayJan 10, 2023Jan 10, 20231:00 PM - 10:00 PMParkside RanchIntensiveWednesdayJan 11, 2023Jan 11, 20238:00 AM - 10:00 PMParkside RanchIntensiveThursdayJan 12, 2023Jan 12, 20238:00 AM - 10:00 PMParkside RanchIntensiveFridayJan 13, 2023Jan 13, 20238:00 AM - 5:00 PMParkside RanchIntensive"
 			}
-		],
-		"number": "391-210-DW"
+		]
 	},
 	{
 		"title": "Clientele : Consumer Needs",
+		"number": "391-211-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Kyle Zacharie, Lara Falquero",
+				"schedule": "Monday10:00 AM - 1:00 PM3F.2ClassMonday10:00 AM - 1:00 PM3F.2-4ClassMonday10:00 AM - 1:00 PM3F.4Class"
+			},
+			{
+				"number": "00002",
 				"teacher": "Kyle Zacharie, Lara Falquero",
 				"schedule": "Monday10:00 AM - 1:00 PM3F.2ClassMonday10:00 AM - 1:00 PM3F.2-4ClassMonday10:00 AM - 1:00 PM3F.4Class"
 			}
-		],
-		"number": "391-211-DW"
+		]
 	},
 	{
 		"title": "Business Administration in Recreation",
+		"number": "401-990-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Amanda Petriello",
+				"schedule": "Thursday10:00 AM - 1:00 PM3F.4Class"
+			},
+			{
+				"number": "00002",
 				"teacher": "Amanda Petriello",
 				"schedule": "Tuesday10:00 AM - 1:00 PM3F.4Class"
 			}
-		],
-		"number": "401-990-DW"
+		]
 	},
 	{
 		"title": "Fieldwork 2",
+		"number": "391-128-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Debbie Resurreccion, Heather Martin, Lara Falquero, Marc Laurent Sauvé, Myka Taylor, Sarah Cartier, Simeon Pompey",
 				"schedule": "Monday1:30 PM - 2:30 PM3F.2-4ClassWednesday1:00 PM - 2:00 PM3F.2-4Class"
 			}
-		],
-		"number": "391-128-DW"
+		]
 	},
 	{
 		"title": "Organization and Management of Recreation Programs",
+		"number": "391-184-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Marc Laurent Sauvé, Myka Taylor",
 				"schedule": "Tuesday10:00 AM - 1:00 PM3F.2ClassTuesday10:00 AM - 1:00 PM3F.6Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Marc Laurent Sauvé, Myka Taylor",
 				"schedule": "Tuesday10:00 AM - 1:00 PM3F.2ClassTuesday10:00 AM - 1:00 PM3F.6Class"
 			}
-		],
-		"number": "391-184-DW"
+		]
 	},
 	{
 		"title": "Program Design 1",
+		"number": "391-401-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Heather Martin, Myka Taylor",
 				"schedule": "Wednesday10:00 AM - 1:00 PM3F.2ClassWednesday10:00 AM - 1:00 PM3F.2-4ClassWednesday10:00 AM - 1:00 PM3F.4Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Heather Martin, Myka Taylor",
 				"schedule": "Wednesday10:00 AM - 1:00 PM3F.2ClassWednesday10:00 AM - 1:00 PM3F.2-4ClassWednesday10:00 AM - 1:00 PM3F.4Class"
 			}
-		],
-		"number": "391-401-DW"
+		]
 	},
 	{
 		"title": "Winter Outdoor Experience",
+		"number": "391-402-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Heather Martin, Lara Falquero, Marc Laurent Sauvé, Myka Taylor",
 				"schedule": "FridayJan 27, 2023Jan 27, 20239:00 AM - 4:00 PM3F.2-4IntensiveWednesdayFeb 08, 2023Feb 08, 20236:00 PM - 10:00 PMParkside RanchIntensiveThursdayFeb 09, 2023Feb 09, 20238:00 AM - 10:00 PMParkside RanchIntensiveFridayFeb 10, 2023Feb 10, 20238:00 AM - 10:00 PMParkside RanchIntensiveSaturdayFeb 11, 2023Feb 11, 20238:00 AM - 10:00 PMParkside RanchIntensiveSundayFeb 12, 2023Feb 12, 20238:00 AM - 4:00 PMParkside RanchIntensive"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Heather Martin, Lara Falquero, Marc Laurent Sauvé, Myka Taylor",
 				"schedule": "FridayJan 27, 2023Jan 27, 20239:00 AM - 4:00 PM3F.2-4IntensiveWednesdayFeb 08, 2023Feb 08, 20236:00 PM - 10:00 PMParkside RanchIntensiveThursdayFeb 09, 2023Feb 09, 20238:00 AM - 10:00 PMParkside RanchIntensiveFridayFeb 10, 2023Feb 10, 20238:00 AM - 10:00 PMParkside RanchIntensiveSaturdayFeb 11, 2023Feb 11, 20238:00 AM - 10:00 PMParkside RanchIntensiveSundayFeb 12, 2023Feb 12, 20238:00 AM - 4:00 PMParkside RanchIntensive"
 			}
-		],
-		"number": "391-402-DW"
+		]
 	},
 	{
 		"title": "Principles of Fundraising",
+		"number": "391-525-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Debbie Resurreccion, Simeon Pompey",
 				"schedule": "Monday10:00 AM - 1:00 PM4F.2Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Debbie Resurreccion, Simeon Pompey",
 				"schedule": "Monday10:00 AM - 1:00 PM4F.2Class"
 			}
-		],
-		"number": "391-525-DW"
+		]
 	},
 	{
 		"title": "Internship",
+		"number": "391-651-DW",
 		"sections": [
 			{
 				"title": "Fieldwork 3",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Debbie Resurreccion, Heather Martin, Lara Falquero, Marc Laurent Sauvé, Myka Taylor, Sarah Cartier, Simeon Pompey",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		],
-		"number": "391-651-DW"
+		]
 	},
 	{
 		"title": "Integrative Seminar",
+		"number": "391-652-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Sarah Cartier",
 				"schedule": "Monday10:00 AM - 1:00 PM4H.8Class"
 			}
-		],
-		"number": "391-652-DW"
+		]
 	}
 ]

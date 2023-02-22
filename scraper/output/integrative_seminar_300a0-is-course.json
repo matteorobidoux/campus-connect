@@ -1,167 +1,167 @@
 [
 	{
 		"title": "Integrative Seminar",
+		"number": "300-303-DW",
 		"sections": [
 			{
 				"title": "Finding Your Passion",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Marc-André Girouard",
 				"schedule": "Tuesday2:30 PM - 5:30 PM4F.6Class"
 			},
 			{
 				"title": "Finding Your Passion",
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Marc-André Girouard",
 				"schedule": "Monday8:30 AM - 11:30 AM4F.6Class"
 			},
 			{
 				"title": "Entrepreneurship",
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Menouar Boulahfa",
 				"schedule": "Thursday2:30 PM - 5:30 PM4F.6Class"
 			},
 			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Carlos Velasquez Buritica, Elliot Kerr",
 				"schedule": "Thursday8:30 AM - 11:30 AM4F.6Class"
 			},
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Elliot Kerr, Marian Misdrahi Flores",
 				"schedule": "Wednesday8:30 AM - 11:30 AM4F.6Class"
 			},
 			{
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Frédéric Bastien",
 				"schedule": "Tuesday8:30 AM - 11:30 AM4F.6Class"
 			}
-		],
-		"number": "300-303-DW"
+		]
 	},
 	{
 		"title": "Integrative Seminar",
+		"number": "300-308-DW",
 		"sections": [
 			{
 				"title": "North-South Field Trip: The Integration of Knowledge and Experience",
-				"section": "00021",
+				"number": "00021",
 				"teacher": "Gisela Frias",
 				"schedule": "Tuesday12:00 PM - 2:00 PM3H.21ClassThursday12:00 PM - 2:00 PM3H.21Class"
 			},
 			{
 				"title": "The X-Files: The Truth about Belief",
-				"section": "00022",
+				"number": "00022",
 				"teacher": "Richard Soare",
 				"schedule": "Tuesday8:00 AM - 10:00 AM3A.9ClassFriday8:00 AM - 10:00 AM3A.9Class"
 			},
 			{
 				"title": "Controversial Issues",
-				"section": "00023",
+				"number": "00023",
 				"teacher": "Melanie Doyle",
 				"schedule": "Tuesday4:00 PM - 6:00 PM3H.19ClassThursday4:00 PM - 6:00 PM3H.19Class"
 			},
 			{
 				"title": "Controversial Issues",
-				"section": "00024",
+				"number": "00024",
 				"teacher": "Melanie Doyle",
 				"schedule": "Monday12:00 PM - 2:00 PM3H.21ClassThursday8:00 AM - 10:00 AM3H.21Class"
 			},
 			{
 				"title": "Victuals",
-				"section": "00025",
+				"number": "00025",
 				"teacher": "Caroline Chochol",
 				"schedule": "Monday4:00 PM - 6:00 PM4G.2AClassWednesday4:00 PM - 6:00 PM4G.2AClass"
 			},
 			{
 				"title": "Vaccine Hesitancy and Belief in Conspiracy Theories",
-				"section": "00026",
+				"number": "00026",
 				"teacher": "Robin Joseph Gagnon",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Ethical Issues in Canada",
-				"section": "00027",
+				"number": "00027",
 				"teacher": "Calogero Miceli",
 				"schedule": "Tuesday2:00 PM - 4:00 PM5B.11ClassThursday2:00 PM - 4:00 PM5B.11Class"
 			},
 			{
 				"title": "Ethical Issues in Canada",
-				"section": "00028",
+				"number": "00028",
 				"teacher": "Calogero Miceli",
 				"schedule": "Tuesday10:00 AM - 12:00 PM5B.11ClassFriday10:00 AM - 12:00 PM5B.11Class"
 			},
 			{
 				"title": "Education",
-				"section": "00030",
+				"number": "00030",
 				"teacher": "Cornelia Howell",
 				"schedule": "Tuesday4:00 PM - 6:00 PM2P.14ClassThursday4:00 PM - 6:00 PM2P.14Class"
 			},
 			{
 				"title": "Fashion Your Passion",
-				"section": "00031",
+				"number": "00031",
 				"teacher": "Ahmad Banki",
 				"schedule": "Tuesday2:00 PM - 4:00 PM3A.7ClassThursday2:00 PM - 4:00 PM3A.7Class"
 			},
 			{
 				"title": "Fashion Your Passion",
-				"section": "00032",
+				"number": "00032",
 				"teacher": "Ahmad Banki",
 				"schedule": "Tuesday12:00 PM - 2:00 PM3A.7ClassThursday12:00 PM - 2:00 PM3A.7Class"
 			},
 			{
 				"title": "Contemporary Threats to Liberal Democracy",
-				"section": "00033",
+				"number": "00033",
 				"teacher": "Donal Gill",
 				"schedule": "Monday12:00 PM - 2:00 PM3A.9ClassThursday8:00 AM - 10:00 AM3A.9Class"
 			},
 			{
 				"title": "Global Justice Issues?",
-				"section": "00034",
+				"number": "00034",
 				"teacher": "Catherine Braithwaite",
 				"schedule": "Wednesday12:00 PM - 2:00 PM3A.9ClassFriday12:00 PM - 2:00 PM3A.9Class"
 			},
 			{
 				"title": "Indigenous Canada",
-				"section": "00035",
+				"number": "00035",
 				"teacher": "Michael Duckett",
 				"schedule": "Tuesday8:00 AM - 10:00 AM5B.11ClassFriday8:00 AM - 10:00 AM5B.11Class"
 			},
 			{
 				"title": "Indigenous Canada",
-				"section": "00036",
+				"number": "00036",
 				"teacher": "Michael Duckett",
 				"schedule": "Monday8:00 AM - 10:00 AM3A.7ClassWednesday8:00 AM - 10:00 AM3A.7Class"
 			},
 			{
 				"title": "Youth and Neighborhood",
-				"section": "00037",
+				"number": "00037",
 				"teacher": "Nancy Rebelo",
 				"schedule": "Wednesday12:00 PM - 2:00 PM3E.7ClassFriday12:00 PM - 2:00 PM3E.7Class"
 			},
 			{
 				"title": "Social Justice Movements",
-				"section": "00039",
+				"number": "00039",
 				"teacher": "Mark Beauchamp",
 				"schedule": "Tuesday12:00 PM - 2:00 PM3H.19ClassThursday12:00 PM - 2:00 PM3H.19Class"
 			},
 			{
 				"title": "Indigenous Canada",
-				"section": "00040",
+				"number": "00040",
 				"teacher": "Michael Duckett",
 				"schedule": "Tuesday10:00 AM - 12:00 PM3A.7ClassFriday10:00 AM - 12:00 PM3A.7Class"
 			},
 			{
 				"title": "Global Justice Issues?",
-				"section": "00041",
+				"number": "00041",
 				"teacher": "Catherine Braithwaite",
 				"schedule": "Monday10:00 AM - 12:00 PM3A.9ClassWednesday10:00 AM - 12:00 PM3A.9Class"
 			},
 			{
 				"title": "Contemporary Threats to Liberal Democracy",
-				"section": "00042",
+				"number": "00042",
 				"teacher": "Donal Gill",
 				"schedule": "Monday4:00 PM - 6:00 PM5B.11ClassWednesday4:00 PM - 6:00 PM5B.11Class"
 			}
-		],
-		"number": "300-308-DW"
+		]
 	}
 ]

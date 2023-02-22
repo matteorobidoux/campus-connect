@@ -1,370 +1,217 @@
 [
 	{
 		"title": "Abnormal Psychology",
+		"number": "350-982-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Davina Mill",
 				"schedule": "Tuesday2:30 PM - 5:30 PM3F.39Class"
+			},
+			{
+				"number": "00002",
+				"teacher": "Davina Mill",
+				"schedule": "Monday2:30 PM - 5:30 PM4E.11Class"
 			}
-		],
-		"number": "350-982-DW"
+		]
 	},
 	{
 		"title": "Introduction to Intervention",
+		"number": "388-102-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Patricia Murphy",
 				"schedule": "Wednesday1:00 PM - 4:00 PM3F.5Lab"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Graça Fontes, Kimberly Lee-Louis",
 				"schedule": "Wednesday12:30 PM - 3:30 PM4G.2BLab"
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Cindy Mitchell, Felicia D'Orve",
 				"schedule": "Wednesday12:30 PM - 3:30 PM4H.10Lab"
 			}
-		],
-		"number": "388-102-DW"
+		]
 	},
 	{
 		"title": "Fieldwork 1",
+		"number": "388-211-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Alyssa Kuzmarov",
 				"schedule": "Tuesday12:00 PM - 2:00 PM4H.6ClassThursday9:00 AM - 12:00 PMOff Campus LocationLabThursday1:00 PM - 4:00 PMOff Campus LocationLab"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Yaffa Elling",
 				"schedule": "Tuesday12:00 PM - 2:00 PM3H.6ClassThursday9:00 AM - 12:00 PMOff Campus LocationLabThursday1:00 PM - 4:00 PMOff Campus LocationLab"
-			}
-		],
-		"number": "388-211-DW"
-	},
-	{
-		"title": "Groupwork 1",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Patricia Murphy",
-				"schedule": "MondayJan 09, 2023Jan 09, 20238:30 AM - 12:30 PM3F.3IntensiveMondayJan 09, 2023Jan 09, 20231:30 PM - 5:00 PM3F.3IntensiveTuesdayJan 10, 2023Jan 10, 20238:30 AM - 12:30 PM3F.3IntensiveTuesdayJan 10, 2023Jan 10, 20231:30 PM - 5:00 PM3F.3IntensiveWednesdayJan 11, 2023Jan 11, 20238:30 AM - 12:30 PM3F.3IntensiveWednesdayJan 11, 2023Jan 11, 20231:30 PM - 5:00 PM3F.3IntensiveThursdayJan 12, 2023Jan 12, 20238:30 AM - 12:30 PM3F.3IntensiveThursdayJan 12, 2023Jan 12, 20231:30 PM - 5:00 PM3F.3IntensiveFridayJan 13, 2023Jan 13, 20238:30 AM - 12:30 PM3F.3IntensiveFridayJan 13, 2023Jan 13, 20231:30 PM - 5:00 PM3F.3IntensiveMondayJan 16, 2023Jan 16, 20238:30 AM - 12:30 PM3F.3IntensiveMondayJan 16, 2023Jan 16, 20231:30 PM - 5:00 PM3F.3Intensive"
 			},
 			{
-				"section": "00002",
-				"teacher": "Marti Miller",
-				"schedule": "MondayJan 09, 2023Jan 09, 20238:30 AM - 12:30 PM3F.5IntensiveMondayJan 09, 2023Jan 09, 20231:30 PM - 5:00 PM3F.5IntensiveTuesdayJan 10, 2023Jan 10, 20238:30 AM - 12:30 PM3F.5IntensiveTuesdayJan 10, 2023Jan 10, 20231:30 PM - 5:00 PM3F.5IntensiveWednesdayJan 11, 2023Jan 11, 20238:30 AM - 12:30 PM3F.5IntensiveWednesdayJan 11, 2023Jan 11, 20231:30 PM - 5:00 PM3F.5IntensiveThursdayJan 12, 2023Jan 12, 20238:30 AM - 12:30 PM3F.5IntensiveThursdayJan 12, 2023Jan 12, 20231:30 PM - 5:00 PM3F.5IntensiveFridayJan 13, 2023Jan 13, 20238:30 AM - 12:30 PM3F.5IntensiveFridayJan 13, 2023Jan 13, 20231:30 PM - 5:00 PM3F.5IntensiveMondayJan 16, 2023Jan 16, 20238:30 AM - 12:30 PM3F.5IntensiveMondayJan 16, 2023Jan 16, 20231:30 PM - 5:00 PM3F.5Intensive"
-			}
-		],
-		"number": "388-212-DW"
-	},
-	{
-		"title": "Addressing Social Problems 2",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Marti Miller",
-				"schedule": "Monday12:30 PM - 3:30 PM4G.2BClass"
-			}
-		],
-		"number": "388-215-DW"
-	},
-	{
-		"title": "Abnormal Psychology",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Davina Mill",
-				"schedule": "Monday2:30 PM - 5:30 PM4E.11Class"
-			}
-		],
-		"number": "350-982-DW"
-	},
-	{
-		"title": "Introduction to Intervention",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Patricia Murphy",
-				"schedule": "Wednesday1:00 PM - 4:00 PM3F.5Lab"
-			},
-			{
-				"section": "00002",
-				"teacher": "Graça Fontes, Kimberly Lee-Louis",
-				"schedule": "Wednesday12:30 PM - 3:30 PM4G.2BLab"
-			},
-			{
-				"section": "00003",
-				"teacher": "Cindy Mitchell, Felicia D'Orve",
-				"schedule": "Wednesday12:30 PM - 3:30 PM4H.10Lab"
-			}
-		],
-		"number": "388-102-DW"
-	},
-	{
-		"title": "Fieldwork 1",
-		"sections": [
-			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Marti Miller",
 				"schedule": "Tuesday12:00 PM - 2:00 PM4G.2BClassThursday9:00 AM - 12:00 PMOff Campus LocationLabThursday1:00 PM - 4:00 PMOff Campus LocationLab"
 			},
 			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "David Spinner, Rachel Deutsch",
 				"schedule": "Tuesday12:00 PM - 2:00 PM4H.10ClassThursday9:00 AM - 12:00 PMOff Campus LocationLabThursday1:00 PM - 4:00 PMOff Campus LocationLab"
 			}
-		],
-		"number": "388-211-DW"
+		]
 	},
 	{
 		"title": "Groupwork 1",
+		"number": "388-212-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Patricia Murphy",
 				"schedule": "MondayJan 09, 2023Jan 09, 20238:30 AM - 12:30 PM3F.3IntensiveMondayJan 09, 2023Jan 09, 20231:30 PM - 5:00 PM3F.3IntensiveTuesdayJan 10, 2023Jan 10, 20238:30 AM - 12:30 PM3F.3IntensiveTuesdayJan 10, 2023Jan 10, 20231:30 PM - 5:00 PM3F.3IntensiveWednesdayJan 11, 2023Jan 11, 20238:30 AM - 12:30 PM3F.3IntensiveWednesdayJan 11, 2023Jan 11, 20231:30 PM - 5:00 PM3F.3IntensiveThursdayJan 12, 2023Jan 12, 20238:30 AM - 12:30 PM3F.3IntensiveThursdayJan 12, 2023Jan 12, 20231:30 PM - 5:00 PM3F.3IntensiveFridayJan 13, 2023Jan 13, 20238:30 AM - 12:30 PM3F.3IntensiveFridayJan 13, 2023Jan 13, 20231:30 PM - 5:00 PM3F.3IntensiveMondayJan 16, 2023Jan 16, 20238:30 AM - 12:30 PM3F.3IntensiveMondayJan 16, 2023Jan 16, 20231:30 PM - 5:00 PM3F.3Intensive"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Marti Miller",
 				"schedule": "MondayJan 09, 2023Jan 09, 20238:30 AM - 12:30 PM3F.5IntensiveMondayJan 09, 2023Jan 09, 20231:30 PM - 5:00 PM3F.5IntensiveTuesdayJan 10, 2023Jan 10, 20238:30 AM - 12:30 PM3F.5IntensiveTuesdayJan 10, 2023Jan 10, 20231:30 PM - 5:00 PM3F.5IntensiveWednesdayJan 11, 2023Jan 11, 20238:30 AM - 12:30 PM3F.5IntensiveWednesdayJan 11, 2023Jan 11, 20231:30 PM - 5:00 PM3F.5IntensiveThursdayJan 12, 2023Jan 12, 20238:30 AM - 12:30 PM3F.5IntensiveThursdayJan 12, 2023Jan 12, 20231:30 PM - 5:00 PM3F.5IntensiveFridayJan 13, 2023Jan 13, 20238:30 AM - 12:30 PM3F.5IntensiveFridayJan 13, 2023Jan 13, 20231:30 PM - 5:00 PM3F.5IntensiveMondayJan 16, 2023Jan 16, 20238:30 AM - 12:30 PM3F.5IntensiveMondayJan 16, 2023Jan 16, 20231:30 PM - 5:00 PM3F.5Intensive"
 			}
-		],
-		"number": "388-212-DW"
+		]
 	},
 	{
 		"title": "Addressing Social Problems 2",
+		"number": "388-215-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Marti Miller",
+				"schedule": "Monday12:30 PM - 3:30 PM4G.2BClass"
+			},
+			{
+				"number": "00002",
 				"teacher": "Marti Miller",
 				"schedule": "Tuesday2:30 PM - 5:30 PM3H.6Class"
 			}
-		],
-		"number": "388-215-DW"
+		]
 	},
 	{
 		"title": "Multicultural Montreal",
+		"number": "387-903-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Francine Small",
 				"schedule": "Thursday2:30 PM - 5:30 PM4H.12Class"
 			}
-		],
-		"number": "387-903-DW"
+		]
 	},
 	{
 		"title": "Social Service Research",
+		"number": "388-411-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Yaffa Elling",
 				"schedule": "Friday12:30 PM - 3:30 PM4H.6Lab"
 			}
-		],
-		"number": "388-411-DW"
+		]
 	},
 	{
 		"title": "Understanding Families 2",
+		"number": "388-413-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Marie-Eve Dufour",
 				"schedule": "Monday11:30 AM - 2:30 PM4H.10Class"
-			}
-		],
-		"number": "388-413-DW"
-	},
-	{
-		"title": "Fieldwork 3",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Rachel Deutsch, Vanessa Eve Robillard",
-				"schedule": "Tuesday9:00 AM - 12:00 PMStageLabTuesday1:00 PM - 4:00 PMStageLabThursday10:00 AM - 12:00 PM3E.11Class"
 			},
 			{
-				"section": "00002",
-				"teacher": "Patricia Murphy",
-				"schedule": "Tuesday9:00 AM - 12:00 PMStageLabTuesday1:00 PM - 4:00 PMStageLabThursday10:00 AM - 12:00 PM4H.10Class"
-			},
-			{
-				"section": "00003",
-				"teacher": "Marie-Eve Dufour",
-				"schedule": "Tuesday9:00 AM - 12:00 PMStageLabTuesday1:00 PM - 4:00 PMStageLabThursday10:00 AM - 12:00 PM2P.02Class"
-			}
-		],
-		"number": "388-424-DW"
-	},
-	{
-		"title": "Topics in Understanding Intervention 2",
-		"sections": [
-			{
-				"title": "Addiction, Disability, and Homelessness",
-				"section": "00001",
-				"teacher": "Cindy Mitchell, Terry Ubaldi",
-				"schedule": "Tuesday, February 14, 2023"
-			}
-		],
-		"number": "388-425-DW"
-	},
-	{
-		"title": "Multicultural Montreal",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Francine Small",
-				"schedule": "Thursday2:30 PM - 5:30 PM4H.12Class"
-			}
-		],
-		"number": "387-903-DW"
-	},
-	{
-		"title": "Social Service Research",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Yaffa Elling",
-				"schedule": "Friday12:30 PM - 3:30 PM4H.6Lab"
-			}
-		],
-		"number": "388-411-DW"
-	},
-	{
-		"title": "Understanding Families 2",
-		"sections": [
-			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Marie-Eve Dufour",
 				"schedule": "Friday8:30 AM - 11:30 AM4H.10Class"
 			}
-		],
-		"number": "388-413-DW"
+		]
 	},
 	{
 		"title": "Fieldwork 3",
+		"number": "388-424-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Rachel Deutsch, Vanessa Eve Robillard",
 				"schedule": "Tuesday9:00 AM - 12:00 PMStageLabTuesday1:00 PM - 4:00 PMStageLabThursday10:00 AM - 12:00 PM3E.11Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Patricia Murphy",
 				"schedule": "Tuesday9:00 AM - 12:00 PMStageLabTuesday1:00 PM - 4:00 PMStageLabThursday10:00 AM - 12:00 PM4H.10Class"
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Marie-Eve Dufour",
 				"schedule": "Tuesday9:00 AM - 12:00 PMStageLabTuesday1:00 PM - 4:00 PMStageLabThursday10:00 AM - 12:00 PM2P.02Class"
 			}
-		],
-		"number": "388-424-DW"
+		]
 	},
 	{
 		"title": "Topics in Understanding Intervention 2",
+		"number": "388-425-DW",
 		"sections": [
 			{
 				"title": "Addiction, Disability, and Homelessness",
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Cindy Mitchell, Terry Ubaldi",
+				"schedule": "Tuesday, February 14, 2023"
+			},
+			{
+				"title": "Addiction, Disability, and Homelessness",
+				"number": "00002",
 				"teacher": "Yaffa Elling",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		],
-		"number": "388-425-DW"
+		]
 	},
 	{
 		"title": "Developing Services and Resources",
+		"number": "388-613-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Marie-Eve Dufour",
 				"schedule": "Tuesday8:30 AM - 11:30 AM3F.45Lab"
 			}
-		],
-		"number": "388-613-DW"
+		]
 	},
 	{
 		"title": "Fieldwork 5",
+		"number": "388-614-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Cindy Mitchell, Terry Ubaldi",
 				"schedule": "Monday9:00 AM - 12:00 PMStageLabMonday1:00 PM - 4:00 PMStageLabTuesday12:00 PM - 2:00 PM3E.11ClassWednesday9:00 AM - 12:00 PMStageLabWednesday1:00 PM - 4:00 PMStageLabThursday9:00 AM - 12:00 PMStageLabThursday1:00 PM - 4:00 PMStageLab"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Felicia D'Orve",
 				"schedule": "Monday9:00 AM - 12:00 PMOff Campus LocationLabMonday1:00 PM - 4:00 PMOff Campus LocationLabTuesday12:00 PM - 2:00 PM4D.2ClassWednesday9:00 AM - 12:00 PMOff Campus LocationLabWednesday1:00 PM - 4:00 PMOff Campus LocationLabThursday9:00 AM - 12:00 PMOff Campus LocationLabThursday1:00 PM - 4:00 PMOff Campus LocationLab"
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Graça Fontes, Kimberly Lee-Louis",
 				"schedule": "Monday9:00 AM - 12:00 PMOff Campus LocationLabMonday1:00 PM - 4:00 PMOff Campus LocationLabTuesday12:00 PM - 2:00 PM3F.5ClassWednesday9:00 AM - 12:00 PMOff Campus LocationLabWednesday1:00 PM - 4:00 PMOff Campus LocationLabThursday9:00 AM - 12:00 PMOff Campus LocationLabThursday1:00 PM - 4:00 PMOff Campus LocationLab"
 			}
-		],
-		"number": "388-614-DW"
+		]
 	},
 	{
 		"title": "Community Intervention",
+		"number": "388-624-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Alyssa Kuzmarov",
 				"schedule": "Friday9:00 AM - 12:00 PM4F.2Class"
 			}
-		],
-		"number": "388-624-DW"
-	},
-	{
-		"title": "Developing Services and Resources",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Marie-Eve Dufour",
-				"schedule": "Tuesday8:30 AM - 11:30 AM3F.45Lab"
-			}
-		],
-		"number": "388-613-DW"
-	},
-	{
-		"title": "Fieldwork 5",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Cindy Mitchell, Terry Ubaldi",
-				"schedule": "Monday9:00 AM - 12:00 PMStageLabMonday1:00 PM - 4:00 PMStageLabTuesday12:00 PM - 2:00 PM3E.11ClassWednesday9:00 AM - 12:00 PMStageLabWednesday1:00 PM - 4:00 PMStageLabThursday9:00 AM - 12:00 PMStageLabThursday1:00 PM - 4:00 PMStageLab"
-			},
-			{
-				"section": "00002",
-				"teacher": "Felicia D'Orve",
-				"schedule": "Monday9:00 AM - 12:00 PMOff Campus LocationLabMonday1:00 PM - 4:00 PMOff Campus LocationLabTuesday12:00 PM - 2:00 PM4D.2ClassWednesday9:00 AM - 12:00 PMOff Campus LocationLabWednesday1:00 PM - 4:00 PMOff Campus LocationLabThursday9:00 AM - 12:00 PMOff Campus LocationLabThursday1:00 PM - 4:00 PMOff Campus LocationLab"
-			},
-			{
-				"section": "00003",
-				"teacher": "Graça Fontes, Kimberly Lee-Louis",
-				"schedule": "Monday9:00 AM - 12:00 PMOff Campus LocationLabMonday1:00 PM - 4:00 PMOff Campus LocationLabTuesday12:00 PM - 2:00 PM3F.5ClassWednesday9:00 AM - 12:00 PMOff Campus LocationLabWednesday1:00 PM - 4:00 PMOff Campus LocationLabThursday9:00 AM - 12:00 PMOff Campus LocationLabThursday1:00 PM - 4:00 PMOff Campus LocationLab"
-			}
-		],
-		"number": "388-614-DW"
-	},
-	{
-		"title": "Community Intervention",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Alyssa Kuzmarov",
-				"schedule": "Friday9:00 AM - 12:00 PM4F.2Class"
-			}
-		],
-		"number": "388-624-DW"
+		]
 	}
 ]
