@@ -8,7 +8,7 @@ import Section from "./models/section-schema";
 import fs = require('fs');
 import path = require("path");
 import * as config from "../../config.json"
-const dname= process.env.NAME || 'test'
+const dname = process.env.NAME || 'test'
 
 class DbMongoose {
   constructor() {
@@ -42,6 +42,12 @@ class DbMongoose {
     const result = await User.find({ class: classname })
     console.log(result)
     return result;
+  }
+  async getUserClassses(nameUser: string) {
+    const result = await User.find({ name: nameUser })
+    const values= result[0].classes
+    console.log(values)
+    return values;
   }
 
   async getAllUsers() {
@@ -77,6 +83,8 @@ class DbMongoose {
   }
 }
 
+const test= new DbMongoose()
+test.getUserClassses("abe")
 export default new DbMongoose();
 
 
