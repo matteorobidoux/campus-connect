@@ -1,29 +1,29 @@
 [
 	{
 		"title": "Religion and Popular Culture",
+		"number": "370-215-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Sonia Zylberberg",
 				"schedule": "Monday1:00 PM - 2:30 PM4H.25ClassThursday10:00 AM - 11:30 AM4H.25Class"
 			}
-		],
-		"number": "370-215-DW"
+		]
 	},
 	{
 		"title": "Cults and Culture",
+		"number": "370-917-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Johanne Rabbat",
 				"schedule": "Tuesday10:00 AM - 11:30 AM3E.9ClassFriday10:00 AM - 11:30 AM3E.9Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Johanne Rabbat",
 				"schedule": "Wednesday11:30 AM - 1:00 PM3E.9ClassFriday11:30 AM - 1:00 PM3E.9Class"
 			}
-		],
-		"number": "370-917-DW"
+		]
 	}
 ]

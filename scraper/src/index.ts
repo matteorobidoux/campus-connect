@@ -153,7 +153,7 @@ async function fetchCourseSpecificInformation(params: CourseFetchSearchParams): 
 
       return {
         title: rows[SectionDetail.TITLE + offset]?.text,
-        section: rows[SectionDetail.SECTION + offset].text,
+        number: rows[SectionDetail.SECTION + offset].text,
         teacher: rows[SectionDetail.TEACHER + offset].text,
         schedule: rows[SectionDetail.SCHEDULE + offset]?.text ?? rows[4].text,
       }
@@ -162,20 +162,46 @@ async function fetchCourseSpecificInformation(params: CourseFetchSearchParams): 
     const clas = classes.get({ title: cTitle, number: cNumber });
     if (!clas) {
       classes.set({ title: cTitle, number: cNumber}, courseData);
-    } else {
+    } else  {
       clas.push(...courseData);
     }
-  })
+  });
 
-  return [...classes.keys()].map(entry => {
+  // [...classes.keys()].reduce();
+
+  const grouped = [...classes.keys()].map(entry => {
     return {
       title: entry.title,
       sections: classes.get(entry)!,
       number: entry.number,
     }
-  })
+  });
 
+  return groupBy(grouped);
 }
+
+function groupBy(list: Course[]): Course[] {
+  const map = new Map<string, {title: string, sections: Section[]}>();
+  list.forEach((item) => {
+    const key = item.number;
+    const collection = map.get(key);
+    if (!collection) {
+      map.set(key, {title: item.title, sections: item.sections});
+    } else {
+      // Remove duplicate sections
+      item.sections = item.sections.filter(i => !collection.sections.some(v => v.number == i.number));
+      collection.sections.push(...item.sections);
+      map.set(key, {title: item.title, sections: collection.sections});
+    }
+  });
+
+  return [...map.entries()].map(([k, v])=> ({
+    title: v.title,
+    number: k,
+    sections: v.sections,
+  }))
+}
+
 
 let things = getAllSections();
 let specific_ed = things[0];
