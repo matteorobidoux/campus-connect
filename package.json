@@ -1,7 +1,6 @@
 {
   "scripts": {
     "start": "export PORT=8080 && cd client && npm run start"
-
   },
   "dependencies": {
     "@types/react-calendar": "^3.9.0",
