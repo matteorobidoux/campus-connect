@@ -54,14 +54,19 @@ class DbMongoose {
   async getUserClassses2(nameUser: string) {
     const result = await User.find({ name: nameUser })
     const values= await result[0].sections
-    // let classlist: string[]
-    // values.forEach(function(value){
-    //   classlist.push(value.coursenumber)
-    // }) 
-    console.log(values)
+    let classlist: string[] = []
+    values.forEach(function(value){
+      classlist.push(value.coursenumber)
+    }) 
+    console.log(classlist)
     return values;
   }
-
+  async getClass(courseNumber:string, sectionNumber:string){
+    const result= await Course.find({number: courseNumber})
+    const title= result[0].title
+    console.log(title)
+    return title;
+  }
   async getAllUsers() {
     const result = await User.find()
     console.log(result)
@@ -95,12 +100,11 @@ class DbMongoose {
   }
 }
 
-const f= new DbMongoose()
-const semen1: Usersection[] =[{ coursenumber:"1234", sectionnumber:"weq2341"}, { coursenumber:"124", sectionnumber:"weq2341"}, { coursenumber:"12", sectionnumber:"weq2341"}]
-
+// const f= new DbMongoose()
+// const semen1: Usersection[] =[{ coursenumber:"1234", sectionnumber:"weq2341"}, { coursenumber:"124", sectionnumber:"weq2341"}, { coursenumber:"12", sectionnumber:"weq2341"}]
 // f.addUser("Mike","mike2",["geo","math"],semen1)
-f.getUserClassses2("Mike")
-
+// f.getUserClassses2("Mike")
+// f.getClass("574-473-DW","aa")
 export default new DbMongoose();
 
 
