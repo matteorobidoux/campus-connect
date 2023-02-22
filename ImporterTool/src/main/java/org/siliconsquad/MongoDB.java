@@ -33,15 +33,17 @@ public class MongoDB
     {
         MongoClient mongoClient = connect();
         MongoDatabase database = mongoClient.getDatabase("test");
-        MongoCollection<Course> courses = database.getCollection("Courses",Course.class);
+        MongoCollection<Course> courses = database.getCollection("Coursetest",Course.class);
         ObjectMapper mapper = new ObjectMapper();
         JSONParser parser = new JSONParser();
+        System.out.println("Inserting scraped data into MongoDB...");
         for (File file : getScraperFiles()) {
             Object obj = parser.parse(new FileReader(file));
             JSONArray jsonObject = (JSONArray) obj;
             List<Course> courseList = Arrays.asList(mapper.readValue(jsonObject.toJSONString(), Course[].class));
             courses.insertMany(courseList);
         }
+        System.out.println("Inserted scraped data into MongoDB!");
     }
 
     /*
@@ -49,10 +51,12 @@ public class MongoDB
      * @return MongoClient object
      */
     public static MongoClient connect(){
+        System.out.println("Connecting to MongoDB...");
         ConnectionString connectionString = new ConnectionString("mongodb+srv://nenechi:nenechi12@exercise11.cfvsryo.mongodb.net/test");
         CodecRegistry pojoCodecRegistry = CodecRegistries.fromProviders(PojoCodecProvider.builder().automatic(true).build());
         CodecRegistry codecRegistry = CodecRegistries.fromRegistries(MongoClientSettings.getDefaultCodecRegistry(),pojoCodecRegistry);
         MongoClientSettings clientSettings = MongoClientSettings.builder().applyConnectionString(connectionString).codecRegistry(codecRegistry).build();
+        System.out.println("Connected to MongoDB!");
         return MongoClients.create(clientSettings);
     }
 
