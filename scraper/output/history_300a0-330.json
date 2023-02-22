@@ -6,122 +6,578 @@
 			{
 				"number": "00001",
 				"teacher": "Frédéric Bastien",
-				"schedule": "Monday10:00 AM - 11:30 AM4H.23ClassWednesday10:00 AM - 11:30 AM4H.23Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Frédéric Bastien",
-				"schedule": "Monday8:30 AM - 10:00 AM4H.21ClassWednesday8:30 AM - 10:00 AM4H.21Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00003",
 				"teacher": "Frédéric Bastien",
-				"schedule": "Monday4:00 PM - 5:30 PM4H.21ClassWednesday4:00 PM - 5:30 PM4H.21Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00004",
 				"teacher": "Michael Leon",
-				"schedule": "Monday1:00 PM - 2:30 PM5A.12ClassThursday10:00 AM - 11:30 AM5A.12Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00005",
 				"teacher": "Diane Shea",
-				"schedule": "Tuesday1:00 PM - 2:30 PM3F.3ClassThursday1:00 PM - 2:30 PM3F.3Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00006",
 				"teacher": "Gemma Albanese",
-				"schedule": "Tuesday2:30 PM - 4:00 PM3H.13ClassThursday2:30 PM - 4:00 PM3H.13Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00007",
 				"teacher": "Michael Leon",
-				"schedule": "Wednesday1:00 PM - 2:30 PM5D.1ClassFriday1:00 PM - 2:30 PM5D.1Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00008",
 				"teacher": "Gemma Albanese",
-				"schedule": "Monday1:00 PM - 2:30 PM5A.2ClassThursday10:00 AM - 11:30 AM5A.2Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00009",
 				"teacher": "Gesche Peters",
-				"schedule": "Monday10:00 AM - 11:30 AM3E.11ClassWednesday10:00 AM - 11:30 AM3E.11Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00010",
 				"teacher": "Julie Johnson",
-				"schedule": "Monday4:00 PM - 5:30 PM3H.13ClassWednesday4:00 PM - 5:30 PM3H.13Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00011",
 				"teacher": "Mark Theriault",
-				"schedule": "Monday8:30 AM - 10:00 AM4H.23ClassWednesday8:30 AM - 10:00 AM4H.23Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00012",
 				"teacher": "Ray Claudio Pino",
-				"schedule": "Tuesday2:30 PM - 4:00 PM4F.2ClassThursday2:30 PM - 4:00 PM4F.2Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00013",
 				"teacher": "Gesche Peters",
-				"schedule": "Monday4:00 PM - 5:30 PM4E.20ClassWednesday4:00 PM - 5:30 PM4E.20Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00014",
 				"teacher": "Gesche Peters",
-				"schedule": "Tuesday10:00 AM - 11:30 AM4E.20ClassFriday10:00 AM - 11:30 AM4E.20Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00015",
 				"teacher": "Pierre L'Heureux",
-				"schedule": "Tuesday8:30 AM - 10:00 AM4P.24ClassFriday8:30 AM - 10:00 AM4P.24Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00016",
 				"teacher": "Rachèle Caux",
-				"schedule": "Tuesday2:30 PM - 4:00 PM4H.21ClassThursday2:30 PM - 4:00 PM4H.21Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00017",
 				"teacher": "Julie Johnson",
-				"schedule": "Monday10:00 AM - 11:30 AM3F.6ClassWednesday10:00 AM - 11:30 AM3F.6Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00018",
 				"teacher": "Rachèle Caux",
-				"schedule": "Monday1:00 PM - 2:30 PM4P.25ClassThursday10:00 AM - 11:30 AM4P.25Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00019",
 				"teacher": "Jan Alexandros Arvanitakis",
-				"schedule": "Tuesday1:00 PM - 2:30 PM4E.20ClassThursday1:00 PM - 2:30 PM4E.20Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00020",
 				"teacher": "Rachèle Caux",
-				"schedule": "Tuesday11:30 AM - 1:00 PM2P.04ClassThursday11:30 AM - 1:00 PM2P.04Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00021",
 				"teacher": "Michael Leon",
-				"schedule": "Monday4:00 PM - 5:30 PM5D.1ClassWednesday4:00 PM - 5:30 PM5D.1Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00022",
 				"teacher": "Pierre L'Heureux",
-				"schedule": "Monday11:30 AM - 1:00 PM7B.13ClassThursday8:30 AM - 10:00 AM7B.13Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00023",
 				"teacher": "Mark Theriault",
-				"schedule": "Tuesday8:30 AM - 10:00 AM4H.19ClassFriday8:30 AM - 10:00 AM4H.19Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00024",
 				"teacher": "Jan Alexandros Arvanitakis",
-				"schedule": "Tuesday2:30 PM - 4:00 PM4F.4ClassThursday2:30 PM - 4:00 PM4F.4Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -133,19 +589,76 @@
 				"title": "Crime and Injustices in Canada",
 				"number": "00001",
 				"teacher": "Catherine Braithwaite",
-				"schedule": "Tuesday10:00 AM - 11:30 AM3F.37ClassFriday10:00 AM - 11:30 AM3F.37Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Crime and Society",
 				"number": "00002",
 				"teacher": "Rachèle Caux",
-				"schedule": "Tuesday4:00 PM - 5:30 PM4H.15ClassThursday4:00 PM - 5:30 PM4H.15Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Crime and Injustices in Canada",
 				"number": "00003",
 				"teacher": "Catherine Braithwaite",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -157,30 +670,125 @@
 				"title": "War and Conflict",
 				"number": "00001",
 				"teacher": "Michael Wasser",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Ideology, Technology, and Conflict",
 				"number": "00002",
 				"teacher": "Mark Theriault",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Snapshots of the 20th Century",
 				"number": "00003",
 				"teacher": "Deborah Shulman",
-				"schedule": "Monday8:30 AM - 10:00 AM3E.9ClassWednesday8:30 AM - 10:00 AM3E.9Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Snapshots of the 20th Century",
 				"number": "00004",
 				"teacher": "Diane Shea",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00005",
 				"teacher": "Jérémy Tétrault-Farber",
-				"schedule": "Monday10:00 AM - 11:30 AM4E.7ClassWednesday10:00 AM - 11:30 AM4E.7Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -192,7 +800,26 @@
 				"title": "Colonization and Decolonization",
 				"number": "00001",
 				"teacher": "Diane Shea",
-				"schedule": "Monday10:00 AM - 11:30 AM3F.45ClassWednesday10:00 AM - 11:30 AM3F.5Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -204,7 +831,26 @@
 				"title": "History of Indigenous Canada",
 				"number": "00001",
 				"teacher": "Michael Duckett",
-				"schedule": "Monday2:30 PM - 4:00 PM3E.13ClassWednesday2:30 PM - 4:00 PM3E.13Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -216,7 +862,26 @@
 				"title": "A Nation Fractured: Social Conflicts in 20th Century USA",
 				"number": "00001",
 				"teacher": "Pierre L'Heureux",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -228,7 +893,26 @@
 				"title": "Art and Power in the 20th Century",
 				"number": "00001",
 				"teacher": "Jocelyn Parr",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -240,19 +924,76 @@
 				"title": "The Family",
 				"number": "00001",
 				"teacher": "Nancy Rebelo",
-				"schedule": "Tuesday8:30 AM - 10:00 AM2P.14ClassFriday8:30 AM - 10:00 AM2P.14Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "The Family",
 				"number": "00002",
 				"teacher": "Nancy Rebelo",
-				"schedule": "Monday8:30 AM - 10:00 AM2P.02ClassWednesday8:30 AM - 10:00 AM2P.02Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Art and Ideas: 1850-1950",
 				"number": "00003",
 				"teacher": "Julie Johnson",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -264,13 +1005,51 @@
 				"title": "The Global 1960s: Times of Change",
 				"number": "00001",
 				"teacher": "Maryann Farkas",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Right Wing Politics in the USA: KKK to Trump",
 				"number": "00002",
 				"teacher": "Pierre L'Heureux",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	}

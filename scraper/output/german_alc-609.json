@@ -6,7 +6,26 @@
 			{
 				"number": "00001",
 				"teacher": "Marie-France Lemay",
-				"schedule": "Tuesday11:30 AM - 1:00 PM3E.3ClassThursday11:30 AM - 1:00 PM3E.3Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -17,12 +36,50 @@
 			{
 				"number": "00001",
 				"teacher": "Marie-France Lemay",
-				"schedule": "Monday1:00 PM - 2:30 PM3E.3ClassThursday10:00 AM - 11:30 AM3E.3Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Marie-France Lemay",
-				"schedule": "Tuesday2:30 PM - 4:00 PM3E.3ClassThursday2:30 PM - 4:00 PM3E.3Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -33,7 +90,26 @@
 			{
 				"number": "00001",
 				"teacher": "Nathalie Lachance",
-				"schedule": "Tuesday4:00 PM - 5:30 PM3E.3ClassThursday4:00 PM - 5:30 PM3E.3Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	}

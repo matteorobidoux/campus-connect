@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "test": "cd client && npm run testing"
+  },
   "dependencies": {
     "@types/react-calendar": "^3.9.0",
     "sass": "^1.58.0"

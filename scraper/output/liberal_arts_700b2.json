@@ -6,7 +6,26 @@
 			{
 				"number": "00001",
 				"teacher": "Gesche Peters",
-				"schedule": "Monday2:30 PM - 4:00 PM4E.20ClassWednesday2:30 PM - 4:00 PM4E.20Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -17,7 +36,26 @@
 			{
 				"number": "00001",
 				"teacher": "Susan-Judith Hoffmann",
-				"schedule": "Tuesday4:00 PM - 5:30 PM3E.9ClassThursday4:00 PM - 5:30 PM3E.9Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -28,7 +66,35 @@
 			{
 				"number": "00001",
 				"teacher": "Brian Redekopp",
-				"schedule": "Tuesday10:00 AM - 11:30 AM4H.12ClassThursday12:00 PM - 2:00 PM3F.45LabFriday10:00 AM - 11:30 AM7A.11Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -39,7 +105,17 @@
 			{
 				"number": "00001",
 				"teacher": "Sarah Watson",
-				"schedule": "Friday11:30 AM - 2:30 PM5D.2Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -51,7 +127,26 @@
 				"title": "Liberal Arts Poetry",
 				"number": "00021",
 				"teacher": "Susan Elmslie",
-				"schedule": "Monday10:00 AM - 12:00 PM3F.5ClassWednesday10:00 AM - 12:00 PM2P.08Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -63,7 +158,26 @@
 				"title": "Snapshots of the 20th Century",
 				"number": "00003",
 				"teacher": "Deborah Shulman",
-				"schedule": "Monday8:30 AM - 10:00 AM3E.9ClassWednesday8:30 AM - 10:00 AM3E.9Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -75,7 +189,26 @@
 				"title": "History of Indigenous Canada",
 				"number": "00001",
 				"teacher": "Michael Duckett",
-				"schedule": "Monday2:30 PM - 4:00 PM3E.13ClassWednesday2:30 PM - 4:00 PM3E.13Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -87,7 +220,26 @@
 				"title": "Ancient Gods, Monsters, and Encounters",
 				"number": "00001",
 				"teacher": "Jiri Tucker",
-				"schedule": "Tuesday10:00 AM - 11:30 AM3E.1ClassFriday10:00 AM - 11:30 AM3E.1Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -99,7 +251,26 @@
 				"title": "Moral Issues in Law (Liberal Arts)",
 				"number": "00032",
 				"teacher": "Robert Stephens",
-				"schedule": "Wednesday1:00 PM - 2:30 PM3F.38ClassFriday1:00 PM - 2:30 PM3F.38Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -110,7 +281,26 @@
 			{
 				"number": "00001",
 				"teacher": "Beverly Sing, Susan-Judith Hoffmann",
-				"schedule": "Tuesday2:00 PM - 4:00 PM4C.1ClassThursday2:00 PM - 4:00 PM4C.1Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -121,7 +311,26 @@
 			{
 				"number": "00001",
 				"teacher": "Jennifer Sigouin",
-				"schedule": "Monday4:00 PM - 5:30 PM4D.3ClassWednesday4:00 PM - 5:30 PM4D.3Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -132,7 +341,26 @@
 			{
 				"number": "00001",
 				"teacher": "Sarah Beer",
-				"schedule": "Tuesday11:30 AM - 1:00 PM4D.3ClassThursday11:30 AM - 1:00 PM4D.3Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -144,7 +372,26 @@
 				"title": "Writing about the Novel",
 				"number": "00004",
 				"teacher": "Simon Fanning",
-				"schedule": "Monday10:00 AM - 12:00 PM3F.27ClassWednesday10:00 AM - 12:00 PM4A.5Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	}

@@ -6,7 +6,35 @@
 			{
 				"number": "00001",
 				"teacher": "Garry Ka Lok Chu",
-				"schedule": "Monday11:30 AM - 1:00 PM3F.37ClassWednesday12:00 PM - 2:00 PM3F.45LabThursday8:30 AM - 10:00 AM3F.37Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -17,7 +45,26 @@
 			{
 				"number": "00002",
 				"teacher": "Jacob Nuselovici",
-				"schedule": "Tuesday10:00 AM - 11:30 AM4E.9ClassFriday10:00 AM - 11:30 AM4E.9Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -28,7 +75,26 @@
 			{
 				"number": "00001",
 				"teacher": "Carlo Catino",
-				"schedule": "Monday10:00 AM - 11:30 AM4D.11ClassWednesday10:00 AM - 11:30 AM4D.11Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -39,7 +105,26 @@
 			{
 				"number": "00003",
 				"teacher": "Helen Stavaris",
-				"schedule": "Monday2:30 PM - 4:00 PM4H.8ClassWednesday2:30 PM - 4:00 PM4H.17Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -50,22 +135,134 @@
 			{
 				"number": "00001",
 				"teacher": "Ijaz Ahmad Rajput",
-				"schedule": "Tuesday10:00 AM - 11:30 AM4D.3ClassThursday12:00 PM - 2:00 PM4A.5LabFriday10:00 AM - 11:30 AM4D.3Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Ijaz Ahmad Rajput",
-				"schedule": "Monday2:30 PM - 4:00 PM7B.13ClassWednesday2:30 PM - 4:00 PM7B.13ClassThursday4:00 PM - 6:00 PM4A.3Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00003",
 				"teacher": "Olga E. Veres",
-				"schedule": "Monday10:00 AM - 11:30 AM7B.2ClassTuesday10:00 AM - 12:00 PM7B.4LabWednesday10:00 AM - 11:30 AM7B.2Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00004",
 				"teacher": "Olga E. Veres",
-				"schedule": "Monday2:00 PM - 4:00 PM7B.4LabWednesday1:00 PM - 2:30 PM7B.2ClassFriday1:00 PM - 2:30 PM7B.2Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -76,37 +273,170 @@
 			{
 				"number": "00022",
 				"teacher": "Jean Duclos Alegue Feugo",
-				"schedule": "Tuesday4:00 PM - 6:00 PM3A.4ClassThursday4:00 PM - 6:00 PM3A.4Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00025",
 				"teacher": "Sacha Des Rosiers",
-				"schedule": "Tuesday8:00 AM - 10:00 AM3A.4ClassFriday8:00 AM - 10:00 AM3A.4Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Lazar Konforti",
-				"schedule": "Tuesday10:00 AM - 12:00 PM3H.19ClassFriday10:00 AM - 12:00 PM3H.19Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00024",
 				"teacher": "Marc-André Girouard",
-				"schedule": "Wednesday12:00 PM - 2:00 PM3A.4ClassFriday12:00 PM - 2:00 PM3A.4Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00023",
 				"teacher": "Marc-André Girouard",
-				"schedule": "Tuesday8:00 AM - 10:00 AM3H.19ClassFriday8:00 AM - 10:00 AM3H.19Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00026",
 				"teacher": "Sacha Des Rosiers",
-				"schedule": "Monday12:00 PM - 2:00 PM3A.4ClassThursday8:00 AM - 10:00 AM3A.4Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00021",
 				"teacher": "Jean Duclos Alegue Feugo",
-				"schedule": "Tuesday10:00 AM - 12:00 PM3A.4ClassFriday10:00 AM - 12:00 PM3A.4Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -117,27 +447,122 @@
 			{
 				"number": "00001",
 				"teacher": "Frédéric Bastien",
-				"schedule": "Monday10:00 AM - 11:30 AM4H.23ClassWednesday10:00 AM - 11:30 AM4H.23Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00010",
 				"teacher": "Julie Johnson",
-				"schedule": "Monday4:00 PM - 5:30 PM3H.13ClassWednesday4:00 PM - 5:30 PM3H.13Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Frédéric Bastien",
-				"schedule": "Monday8:30 AM - 10:00 AM4H.21ClassWednesday8:30 AM - 10:00 AM4H.21Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00011",
 				"teacher": "Mark Theriault",
-				"schedule": "Monday8:30 AM - 10:00 AM4H.23ClassWednesday8:30 AM - 10:00 AM4H.23Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00018",
 				"teacher": "Rachèle Caux",
-				"schedule": "Monday1:00 PM - 2:30 PM4P.25ClassThursday10:00 AM - 11:30 AM4P.25Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -148,27 +573,122 @@
 			{
 				"number": "00003",
 				"teacher": "Kayrod Niamir",
-				"schedule": "Monday1:00 PM - 2:30 PM4H.19ClassThursday10:00 AM - 11:30 AM4H.19Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00001",
 				"teacher": "Maria Blazkiewicz",
-				"schedule": "Tuesday8:30 AM - 10:00 AM5B.7ClassFriday8:30 AM - 10:00 AM5B.7Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Kayrod Niamir",
-				"schedule": "Monday4:00 PM - 5:30 PM3E.10ClassWednesday4:00 PM - 5:30 PM3E.10Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00004",
 				"teacher": "Rosario Lo Raso",
-				"schedule": "Tuesday1:00 PM - 2:30 PM4P.26ClassThursday1:00 PM - 2:30 PM4P.26Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00005",
 				"teacher": "Rosario Lo Raso",
-				"schedule": "Monday8:30 AM - 10:00 AM3F.6ClassWednesday8:30 AM - 10:00 AM3F.6Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -179,7 +699,35 @@
 			{
 				"number": "00015",
 				"teacher": "Noushin Sabetghadam Haghighi",
-				"schedule": "Tuesday1:00 PM - 2:30 PM6B.13ClassThursday1:00 PM - 2:30 PM6B.13ClassFriday12:00 PM - 2:00 PM7B.4Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -190,12 +738,68 @@
 			{
 				"number": "00002",
 				"teacher": "Olga Zlotchevskaia",
-				"schedule": "Monday12:00 PM - 2:00 PM4D.2LabWednesday1:00 PM - 2:30 PM3B.11ClassFriday1:00 PM - 2:30 PM3B.11Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00001",
 				"teacher": "Olga Zlotchevskaia",
-				"schedule": "Tuesday8:30 AM - 10:00 AM3E.9ClassThursday8:00 AM - 10:00 AM4E.11LabFriday8:30 AM - 10:00 AM3E.9Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -206,12 +810,50 @@
 			{
 				"number": "00009",
 				"teacher": "Worku Aberra",
-				"schedule": "Tuesday12:00 PM - 2:00 PM3A.4ClassThursday12:00 PM - 2:00 PM3A.4Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00005",
 				"teacher": "Worku Aberra",
-				"schedule": "Wednesday12:00 PM - 2:00 PM3H.19ClassFriday12:00 PM - 2:00 PM3H.19Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -222,12 +864,50 @@
 			{
 				"number": "00001",
 				"teacher": "Sacha Des Rosiers",
-				"schedule": "Tuesday2:30 PM - 4:00 PM3H.15ClassThursday2:30 PM - 4:00 PM3H.15Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Sacha Des Rosiers",
-				"schedule": "Monday10:00 AM - 11:30 AM4P.26ClassWednesday10:00 AM - 11:30 AM4P.26Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -238,35 +918,95 @@
 			{
 				"number": "00004",
 				"teacher": "Carlos Velasquez Buritica, Elliot Kerr",
-				"schedule": "Thursday8:30 AM - 11:30 AM4F.6Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00006",
 				"teacher": "Frédéric Bastien",
-				"schedule": "Tuesday8:30 AM - 11:30 AM4F.6Class"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00005",
 				"teacher": "Elliot Kerr, Marian Misdrahi Flores",
-				"schedule": "Wednesday8:30 AM - 11:30 AM4F.6Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Entrepreneurship",
 				"number": "00003",
 				"teacher": "Menouar Boulahfa",
-				"schedule": "Thursday2:30 PM - 5:30 PM4F.6Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Finding Your Passion",
 				"number": "00001",
 				"teacher": "Marc-André Girouard",
-				"schedule": "Tuesday2:30 PM - 5:30 PM4F.6Class"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Finding Your Passion",
 				"number": "00002",
 				"teacher": "Marc-André Girouard",
-				"schedule": "Monday8:30 AM - 11:30 AM4F.6Class"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -277,12 +1017,50 @@
 			{
 				"number": "00002",
 				"teacher": "Philippe Ghayad",
-				"schedule": "Tuesday4:00 PM - 5:30 PM4D.11ClassThursday4:00 PM - 5:30 PM4D.11Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00001",
 				"teacher": "Michel Mayer",
-				"schedule": "Monday2:30 PM - 4:00 PM3H.15ClassWednesday2:30 PM - 4:00 PM3H.15Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -293,12 +1071,50 @@
 			{
 				"number": "00001",
 				"teacher": "Jim Parthimos",
-				"schedule": "Tuesday8:30 AM - 10:00 AM3H.21ClassFriday8:30 AM - 10:00 AM3H.21Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Jim Parthimos",
-				"schedule": "Monday2:30 PM - 4:00 PM3H.21ClassWednesday2:30 PM - 4:00 PM3H.21Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	}

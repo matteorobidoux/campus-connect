@@ -6,12 +6,68 @@
 			{
 				"number": "00001",
 				"teacher": "Penny Smith",
-				"schedule": "Tuesday10:00 AM - 12:00 PM4H.6ClassTuesday2:30 PM - 4:00 PM5A.4LabWednesday12:30 PM - 2:00 PM5A.4Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:30 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Penny Smith",
-				"schedule": "Tuesday10:00 AM - 12:00 PM4H.6ClassTuesday12:30 PM - 2:00 PM5A.4LabWednesday2:30 PM - 4:00 PM5A.4Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "12:30 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -22,12 +78,50 @@
 			{
 				"number": "00001",
 				"teacher": "Daniel P. Vescio",
-				"schedule": "Wednesday10:00 AM - 12:00 PM3F.45ClassFriday10:30 AM - 1:30 PM5A.1Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:30 AM",
+						"end": "1:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Daniel P. Vescio",
-				"schedule": "Wednesday10:00 AM - 12:00 PM3F.45ClassFriday2:00 PM - 5:00 PM5A.1Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -38,12 +132,50 @@
 			{
 				"number": "00001",
 				"teacher": "Andrew Wieczorek",
-				"schedule": "Tuesday8:00 AM - 10:00 AM3E.4ClassThursday12:00 PM - 2:00 PM5A.5Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Andrew Wieczorek",
-				"schedule": "Tuesday8:00 AM - 10:00 AM3E.4ClassThursday2:30 PM - 4:30 PM5A.5Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -54,12 +186,50 @@
 			{
 				"number": "00001",
 				"teacher": "Hannah Heath-Engel",
-				"schedule": "Monday10:00 AM - 12:00 PM3H.6ClassThursday2:30 PM - 4:30 PM5A.1Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Hannah Heath-Engel",
-				"schedule": "Monday10:00 AM - 12:00 PM3H.6ClassThursday12:00 PM - 2:00 PM5A.1Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -70,12 +240,86 @@
 			{
 				"number": "00001",
 				"teacher": "Penny Smith",
-				"schedule": "Wednesday11:00 AM - 12:00 PM7B.4ClassThursday12:30 PM - 2:30 PM5A.4LabFriday10:00 AM - 11:00 AM4E.7ClassFriday2:30 PM - 3:30 PM5A.4Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "2:30 PM",
+						"end": "3:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "12:30 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "11:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Penny Smith",
-				"schedule": "Wednesday11:00 AM - 12:00 PM7B.4ClassThursday2:30 PM - 4:30 PM5A.4LabFriday10:00 AM - 11:00 AM4E.7ClassFriday11:30 AM - 12:30 PM5A.4Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "12:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "11:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -86,12 +330,50 @@
 			{
 				"number": "00001",
 				"teacher": "Paraskevi Siandris",
-				"schedule": "Tuesday10:00 AM - 11:00 AM3E.6ClassWednesday9:00 AM - 11:00 AM5A.5Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "9:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Paraskevi Siandris",
-				"schedule": "Tuesday10:00 AM - 11:00 AM3E.6ClassWednesday12:00 PM - 2:00 PM5A.5Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -102,12 +384,50 @@
 			{
 				"number": "00001",
 				"teacher": "Heleni Siandris",
-				"schedule": "Tuesday2:00 PM - 4:00 PM5A.5LabThursday10:00 AM - 12:00 PM3E.6Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Heleni Siandris",
-				"schedule": "Tuesday11:30 AM - 1:30 PM5A.5LabThursday10:00 AM - 12:00 PM3E.6Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "1:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -118,12 +438,50 @@
 			{
 				"number": "00001",
 				"teacher": "Hannah Heath-Engel",
-				"schedule": "Tuesday11:30 AM - 1:30 PM5A.1LabThursday8:00 AM - 10:00 AM3H.6Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "1:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Hannah Heath-Engel",
-				"schedule": "Tuesday2:00 PM - 4:00 PM5A.1LabThursday8:00 AM - 10:00 AM3H.6Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -134,12 +492,50 @@
 			{
 				"number": "00001",
 				"teacher": "Vincenza C. Pascale",
-				"schedule": "Monday8:00 AM - 10:00 AM4A.4ClassMonday2:00 PM - 5:00 PM5A.5Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Vincenza C. Pascale",
-				"schedule": "Monday8:00 AM - 10:00 AM4A.4ClassMonday10:30 AM - 1:30 PM5A.5Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:30 AM",
+						"end": "1:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -150,7 +546,7 @@
 			{
 				"number": "00001",
 				"teacher": "Daniel P. Vescio",
-				"schedule": "ThursdayMay 25, 2023May 25, 20239:00 AM - 5:00 PMHospitalIntensiveFridayMay 26, 2023May 26, 20239:00 AM - 5:00 PMHospitalIntensiveMondayMay 29, 2023May 29, 20239:00 AM - 5:00 PMHospitalIntensiveTuesdayMay 30, 2023May 30, 20239:00 AM - 5:00 PMHospitalIntensiveWednesdayMay 31, 2023May 31, 20239:00 AM - 5:00 PMHospitalIntensiveThursdayJun 01, 2023Jun 01, 20239:00 AM - 5:00 PMHospitalIntensiveFridayJun 02, 2023Jun 02, 20239:00 AM - 5:00 PMHospitalIntensiveMondayJun 05, 2023Jun 05, 20239:00 AM - 5:00 PMHospitalIntensiveTuesdayJun 06, 2023Jun 06, 20239:00 AM - 5:00 PMHospitalIntensiveWednesdayJun 07, 2023Jun 07, 20239:00 AM - 5:00 PMHospitalIntensiveThursdayJun 08, 2023Jun 08, 20239:00 AM - 5:00 PMHospitalIntensiveFridayJun 09, 2023Jun 09, 20239:00 AM - 5:00 PMHospitalIntensive"
+				"schedule": []
 			}
 		]
 	},
@@ -161,7 +557,17 @@
 			{
 				"number": "00001",
 				"teacher": "Luigi Bruno",
-				"schedule": "Monday9:00 AM - 2:00 PM3E.4Class"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "9:00 AM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 5,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -172,7 +578,26 @@
 			{
 				"number": "00001",
 				"teacher": "Andrew Wieczorek, Carmela Di Grappa",
-				"schedule": "Friday8:00 AM - 11:00 AM3E.4ClassFriday9:00 AM - 4:00 PM3E.4Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "9:00 AM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 7,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -183,7 +608,26 @@
 			{
 				"number": "00001",
 				"teacher": "Daniel P. Vescio, Vincenza C. Pascale",
-				"schedule": "Tuesday10:00 AM - 4:00 PM3E.4ClassThursday10:00 AM - 3:00 PM3E.4Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 5,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 6,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -194,7 +638,17 @@
 			{
 				"number": "00001",
 				"teacher": "Heleni Siandris",
-				"schedule": "Friday9:00 AM - 3:00 PM3E.6Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "9:00 AM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 6,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -205,7 +659,7 @@
 			{
 				"number": "00001",
 				"teacher": "Daniel P. Vescio, Luigi Bruno",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": []
 			}
 		]
 	}
