@@ -7,7 +7,7 @@ import Section from "./models/section-schema";
 
 import fs = require('fs');
 import path = require("path");
-import * as config from "../../config.json"
+// import * as config from "../../config.json"
 const dname = process.env.NAME || 'test'
 
 class DbMongoose {
@@ -61,26 +61,26 @@ class DbMongoose {
     return result;
   }
 
-  addAllClasses() {
-    const jsonsInDir = fs.readdirSync(config.scraperOutputLocation);
-    jsonsInDir.forEach(file => {
-      const fileData = fs.readFileSync(path.join(config.scraperOutputLocation, file));
-      const json = JSON.parse(fileData.toString());
-      json.forEach((courseJSON: { title: any; number: any; sections: any[]; }) => {
-        const course = new Course({
-          "title": courseJSON.title,
-          "number": courseJSON.number,
-          "sections": []
-        })
-        course.save()
-        courseJSON.sections.forEach((sectionJSON: any) => {
-          const section = new Section(sectionJSON);
-          course.sections.push(section);
-          section.save();
-        });
-      })
-    })
-  }
+  // addAllClasses() {
+  //   const jsonsInDir = fs.readdirSync(config.scraperOutputLocation);
+  //   jsonsInDir.forEach(file => {
+  //     const fileData = fs.readFileSync(path.join(config.scraperOutputLocation, file));
+  //     const json = JSON.parse(fileData.toString());
+  //     json.forEach((courseJSON: { title: any; number: any; sections: any[]; }) => {
+  //       const course = new Course({
+  //         "title": courseJSON.title,
+  //         "number": courseJSON.number,
+  //         "sections": []
+  //       })
+  //       course.save()
+  //       courseJSON.sections.forEach((sectionJSON: any) => {
+  //         const section = new Section(sectionJSON);
+  //         course.sections.push(section);
+  //         section.save();
+  //       });
+  //     })
+  //   })
+  // }
 }
 export default new DbMongoose();
 
