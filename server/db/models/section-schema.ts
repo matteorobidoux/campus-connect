@@ -4,7 +4,8 @@ import Slot from './slot-schema';
 const {Schema, model} = mongoose;
 
 const sectionSchema = new Schema({
-    section: String,
+    title: String,
+    number: String,
     teacher: String,
     schedule: String
 }, {collection: 'Sections'});
