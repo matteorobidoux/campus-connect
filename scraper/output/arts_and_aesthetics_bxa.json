@@ -7,7 +7,7 @@
 				"title": "Production théâtre francophone: Domaine médical (INTENSIVE)",
 				"number": "00050",
 				"teacher": "Jacques Mélançon",
-				"schedule": "Tuesday, May 30, 2023"
+				"schedule": []
 			}
 		]
 	},
@@ -19,37 +19,142 @@
 				"title": "Introduction to Singing",
 				"number": "00001",
 				"teacher": "Sarah Rossy",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Vocal Expression",
 				"number": "00002",
 				"teacher": "Jacinta Luis",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Vocal Performance",
 				"number": "00003",
 				"teacher": "Jacinta Luis",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Guitar 1",
 				"number": "00004",
 				"teacher": "Vincenzo Lentini",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Guitar 2",
 				"number": "00005",
 				"teacher": "Vincenzo Lentini",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Comprehensive Guitar Techniques",
 				"number": "00006",
 				"teacher": "Vincenzo Lentini",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -61,25 +166,65 @@
 				"title": "Painting and Creative Expression",
 				"number": "00001",
 				"teacher": "David Philip Hall",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Collage",
 				"number": "00002",
 				"teacher": "Maria Chronopoulos",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Drawing and Creative Expression",
 				"number": "00003",
 				"teacher": "Naomi London",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Graphic Novels and Artists' Books",
 				"number": "00004",
 				"teacher": "Julianna Joos",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	}

@@ -6,12 +6,32 @@
 			{
 				"number": "00001",
 				"teacher": "John Connolly",
-				"schedule": "Monday2:30 PM - 5:30 PM3B.4Class"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Adam Basanta",
-				"schedule": "Wednesday2:30 PM - 5:30 PM3B.4Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -22,7 +42,17 @@
 			{
 				"number": "00001",
 				"teacher": "John Connolly",
-				"schedule": "Thursday2:00 PM - 6:00 PM3B.4Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -33,7 +63,17 @@
 			{
 				"number": "00001",
 				"teacher": "Bérengère Marin Dubuard",
-				"schedule": "Monday10:00 AM - 2:00 PM3B.4Class"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -44,12 +84,32 @@
 			{
 				"number": "00001",
 				"teacher": "Shawn Bell",
-				"schedule": "Thursday8:30 AM - 11:30 AM3B.4Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Shawn Bell",
-				"schedule": "Wednesday8:30 AM - 11:30 AM3B.4Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -60,7 +120,17 @@
 			{
 				"number": "00001",
 				"teacher": "Adam Basanta, Shawn Bell",
-				"schedule": "Tuesday2:30 PM - 5:30 PM3B.4Class"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -71,7 +141,17 @@
 			{
 				"number": "00001",
 				"teacher": "Bérengère Marin Dubuard",
-				"schedule": "Wednesday11:30 AM - 2:30 PM3B.4Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -82,7 +162,17 @@
 			{
 				"number": "00001",
 				"teacher": "Bérengère Marin Dubuard",
-				"schedule": "Tuesday11:30 AM - 2:30 PM3B.4Class"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	}

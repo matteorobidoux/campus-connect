@@ -6,7 +6,35 @@
 			{
 				"number": "00006",
 				"teacher": "Alexander Hariton",
-				"schedule": "Tuesday1:00 PM - 2:30 PM3E.10ClassWednesday12:00 PM - 2:00 PM4A.5LabFriday1:00 PM - 2:30 PM5D.6Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -17,12 +45,68 @@
 			{
 				"number": "00001",
 				"teacher": "Sharon Shasha",
-				"schedule": "Monday10:00 AM - 11:30 AM3B.11ClassWednesday10:00 AM - 11:30 AM3B.11ClassFriday9:30 AM - 12:30 PM2H.09Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "9:30 AM",
+						"end": "12:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Sharon Shasha",
-				"schedule": "Monday10:00 AM - 11:30 AM3B.11ClassTuesday9:30 AM - 12:30 PM2H.09LabWednesday10:00 AM - 11:30 AM3B.11Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "9:30 AM",
+						"end": "12:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -33,12 +117,68 @@
 			{
 				"number": "00001",
 				"teacher": "Jay-Hsing Wu",
-				"schedule": "Tuesday9:30 AM - 12:30 PM2H.11LabTuesday2:30 PM - 4:00 PM4A.14ClassThursday1:00 PM - 2:30 PM3B.11Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "9:30 AM",
+						"end": "12:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Alan Philip Rich, Jay-Hsing Wu",
-				"schedule": "Tuesday2:30 PM - 4:00 PM4A.14ClassThursday1:00 PM - 2:30 PM3B.11ClassFriday9:30 AM - 12:30 PM2H.11Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "9:30 AM",
+						"end": "12:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -49,7 +189,26 @@
 			{
 				"number": "00001",
 				"teacher": "Nick Markou",
-				"schedule": "Monday11:30 AM - 1:30 PM2F.22LabThursday12:00 PM - 2:00 PM2H.09Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "11:30 AM",
+						"end": "1:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -60,7 +219,17 @@
 			{
 				"number": "00001",
 				"teacher": "Sharon Shasha",
-				"schedule": "Friday1:00 PM - 4:00 PM2H.11Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -71,7 +240,26 @@
 			{
 				"number": "00001",
 				"teacher": "Boris Lorkovic",
-				"schedule": "Wednesday12:00 PM - 2:00 PM2H.5ClassWednesday12:00 PM - 2:00 PM7B.4ClassFriday9:00 AM - 12:00 PM2H.5Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "9:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -82,7 +270,26 @@
 			{
 				"number": "00001",
 				"teacher": "Nick Markou",
-				"schedule": "Tuesday2:30 PM - 4:30 PM2F.24ClassTuesday2:30 PM - 4:30 PM2H.5ClassThursday2:30 PM - 4:30 PM2H.5Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -93,7 +300,26 @@
 			{
 				"number": "00001",
 				"teacher": "Jay-Hsing Wu",
-				"schedule": "Wednesday2:30 PM - 4:00 PM2H.11ClassWednesday2:30 PM - 4:00 PM3E.4ClassThursday8:30 AM - 10:00 AM2H.11ClassThursday8:30 AM - 10:00 AM3E.4Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -104,7 +330,26 @@
 			{
 				"number": "00001",
 				"teacher": "Jimmy Plaitis",
-				"schedule": "Monday9:00 AM - 11:00 AM2H.09LabMonday9:00 AM - 11:00 AM2H.3LabWednesday8:30 AM - 11:30 AM2H.09ClassWednesday8:30 AM - 11:30 AM2H.11Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "9:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -115,7 +360,26 @@
 			{
 				"number": "00001",
 				"teacher": "Daniel Lavoie",
-				"schedule": "Tuesday2:30 PM - 5:30 PM-2H.12LabThursday2:00 PM - 4:00 PM2H.09Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -126,7 +390,35 @@
 			{
 				"number": "00001",
 				"teacher": "Boris Lorkovic",
-				"schedule": "Monday9:00 AM - 11:00 AM2H.5LabWednesday9:00 AM - 11:00 AM2H.5ClassThursday12:00 PM - 2:00 PM2H.5Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "9:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "9:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -137,7 +429,26 @@
 			{
 				"number": "00001",
 				"teacher": "Daniel Lavoie",
-				"schedule": "Monday12:00 PM - 2:00 PM2H.11ClassWednesday12:00 PM - 4:00 PM2F.22Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -148,7 +459,26 @@
 			{
 				"number": "00001",
 				"teacher": "Nick Markou",
-				"schedule": "Tuesday10:00 AM - 2:00 PM2F.22LabFriday10:00 AM - 1:00 PM-2H.12LabFriday10:00 AM - 1:00 PM2F.22Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -159,7 +489,26 @@
 			{
 				"number": "00001",
 				"teacher": "Neveen Asham",
-				"schedule": "Tuesday8:30 AM - 10:00 AM2F.24ClassFriday8:30 AM - 10:00 AM2F.24Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -170,7 +519,17 @@
 			{
 				"number": "00001",
 				"teacher": "Sharon Shasha",
-				"schedule": "Tuesday1:30 PM - 4:30 PM2H.09Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "1:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -181,7 +540,26 @@
 			{
 				"number": "00001",
 				"teacher": "Daniel Lavoie",
-				"schedule": "Tuesday10:00 AM - 1:00 PM-2H.12LabThursday12:00 PM - 2:00 PM2H.11Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -192,7 +570,35 @@
 			{
 				"number": "00001",
 				"teacher": "Jay-Hsing Wu",
-				"schedule": "Thursday2:30 PM - 4:00 PM2H.11ClassFriday10:00 AM - 11:30 AM4H.6ClassFriday1:00 PM - 3:00 PM2H.7Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -203,7 +609,26 @@
 			{
 				"number": "00001",
 				"teacher": "Boris Lorkovic, Chris Williams",
-				"schedule": "Monday2:00 PM - 4:00 PM2H.09ClassWednesday1:00 PM - 4:00 PM2H.09Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -214,7 +639,26 @@
 			{
 				"number": "00001",
 				"teacher": "Alan Philip Rich",
-				"schedule": "Monday9:00 AM - 1:00 PM2H.7LabWednesday9:00 AM - 12:00 PM-2H.12LabWednesday9:00 AM - 12:00 PM2H.7Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "9:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "9:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	}

@@ -7,43 +7,176 @@
 				"title": "Web Site Creation",
 				"number": "00001",
 				"teacher": "Behnam Karimi",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Web Site Creation",
 				"number": "00002",
 				"teacher": "Chaviva Lifson",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Web Site Creation",
 				"number": "00003",
 				"teacher": "Eric Mayhew",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Introduction to Programming",
 				"number": "00004",
 				"teacher": "Jean-Claude Desrosiers",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Web Site Creation",
 				"number": "00005",
 				"teacher": "Nasreddine Hallam",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Web Site Creation",
 				"number": "00006",
 				"teacher": "Nasreddine Hallam",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Web Site Creation",
 				"number": "00007",
 				"teacher": "Nasreddine Hallam",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	}

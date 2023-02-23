@@ -7,43 +7,113 @@
 				"title": "Film Styles",
 				"number": "00001",
 				"teacher": "John Connolly",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Film Styles",
 				"number": "00002",
 				"teacher": "John Connolly",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Film and Culture",
 				"number": "00003",
 				"teacher": "Dipti Gupta",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Film and Culture",
 				"number": "00004",
 				"teacher": "Dipti Gupta",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Film and Culture",
 				"number": "00005",
 				"teacher": "Cheryl Simon",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Film Styles",
 				"number": "00006",
 				"teacher": "Nancy Barnett",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Film and Culture",
 				"number": "00007",
 				"teacher": "Cheryl Simon",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -55,7 +125,17 @@
 				"title": "Advertising",
 				"number": "00001",
 				"teacher": "Magdalena Olszanowski",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -67,19 +147,58 @@
 				"title": "Appreciating Music",
 				"number": "00001",
 				"teacher": "Jacinta Luis",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Appreciating Music",
 				"number": "00002",
 				"teacher": "Jacinta Luis",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Jazz Culture",
 				"number": "00003",
 				"teacher": "Vincenzo Lentini",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -91,7 +210,26 @@
 				"title": "Why Art Matters",
 				"number": "00001",
 				"teacher": "Robert Stephens",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -103,25 +241,101 @@
 				"title": "Digital Photography: Art and Techniques of Persuasion",
 				"number": "00001",
 				"teacher": "Patrizia Castiglione",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Digital Photography: Art and Techniques of Persuasion",
 				"number": "00002",
 				"teacher": "Robert Marcy",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Digital Photography: Art and Techniques of Persuasion",
 				"number": "00003",
 				"teacher": "Pierre Arsenault",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Digital Photography: Art and Techniques of Persuasion",
 				"number": "00004",
 				"teacher": "Robert Marcy",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -133,43 +347,113 @@
 				"title": "Photography: The Art and Influence",
 				"number": "00001",
 				"teacher": "Gwen Baddeley",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Baroque to the 20th Century",
 				"number": "00002",
 				"teacher": "Emma Doubt",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Introduction to Contemporary Indigenous Art",
 				"number": "00003",
 				"teacher": "Pohanna Feinberg",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Art and Place",
 				"number": "00004",
 				"teacher": "Pohanna Feinberg",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Visual Arts Since 1950",
 				"number": "00005",
 				"teacher": "Sarah Watson",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Canadian Art in Context",
 				"number": "00006",
 				"teacher": "Pohanna Feinberg",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Modernism and the Visual Arts",
 				"number": "00007",
 				"teacher": "Sarah Watson",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	}

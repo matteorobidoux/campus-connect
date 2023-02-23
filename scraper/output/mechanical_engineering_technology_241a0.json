@@ -6,12 +6,50 @@
 			{
 				"number": "00001",
 				"teacher": "Jaime Sandoval",
-				"schedule": "Monday1:00 PM - 2:30 PM7A.2LabThursday10:00 AM - 11:30 AM7B.2Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Jeremie Choquette",
-				"schedule": "Monday1:00 PM - 2:30 PM3F.7ClassThursday10:00 AM - 11:30 AM7A.6Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -22,12 +60,50 @@
 			{
 				"number": "00001",
 				"teacher": "John Tomasik",
-				"schedule": "Wednesday10:00 AM - 12:00 PM-2H.11LabWednesday1:00 PM - 6:00 PM-2H.11Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 5,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "John Tomasik",
-				"schedule": "Tuesday10:00 AM - 12:00 PM-2H.11LabTuesday1:00 PM - 6:00 PM-2H.11Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 5,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -38,12 +114,32 @@
 			{
 				"number": "00001",
 				"teacher": "Gabriel McFern",
-				"schedule": "Friday2:00 PM - 6:00 PM-2H.14Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Gabriel McFern",
-				"schedule": "Thursday2:00 PM - 6:00 PM-2H.14Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -54,12 +150,32 @@
 			{
 				"number": "00001",
 				"teacher": "Michael Leon",
-				"schedule": "Thursday1:00 PM - 5:00 PM-2H.13Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Michael Leon",
-				"schedule": "Friday2:00 PM - 6:00 PM-2H.13Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -70,12 +186,32 @@
 			{
 				"number": "00001",
 				"teacher": "Vincent Di Pietro",
-				"schedule": "Tuesday1:00 PM - 5:00 PM-2H.13Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Vincent Di Pietro",
-				"schedule": "Wednesday1:00 PM - 5:00 PM-2H.13Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -86,12 +222,32 @@
 			{
 				"number": "00001",
 				"teacher": "Robert Mole",
-				"schedule": "Monday3:00 PM - 6:00 PM-2H.5LabMonday3:00 PM - 6:00 PM-2H.7Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Robert Mole",
-				"schedule": "Friday10:00 AM - 1:00 PM-2H.5LabFriday10:00 AM - 1:00 PM-2H.7Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -102,7 +258,35 @@
 			{
 				"number": "00001",
 				"teacher": "Maria Dikeakos",
-				"schedule": "Tuesday10:00 AM - 12:00 PM7A.9ClassWednesday10:00 AM - 11:30 AM7A.2LabFriday10:00 AM - 11:30 AM7A.2Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -113,12 +297,50 @@
 			{
 				"number": "00001",
 				"teacher": "TBA-241-B, Darren Narine",
-				"schedule": "Monday10:00 AM - 12:00 PM-2H.11LabMonday1:00 PM - 6:00 PM-2H.11Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 5,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "TBA-241-B, Darren Narine",
-				"schedule": "Thursday10:00 AM - 12:00 PM-2H.11LabThursday1:00 PM - 6:00 PM-2H.11Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 5,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -129,12 +351,32 @@
 			{
 				"number": "00001",
 				"teacher": "Darren Narine",
-				"schedule": "Wednesday1:00 PM - 5:00 PM-2H.19LabWednesday1:00 PM - 5:00 PM-2H.23Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "TBA-241-B, Darren Narine",
-				"schedule": "Tuesday2:00 PM - 6:00 PM-2H.19LabTuesday2:00 PM - 6:00 PM-2H.23Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -145,12 +387,32 @@
 			{
 				"number": "00001",
 				"teacher": "Adam Kingsland",
-				"schedule": "Thursday9:00 AM - 2:00 PM-2H.14Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "9:00 AM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 5,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Adam Kingsland",
-				"schedule": "Monday1:00 PM - 6:00 PM-2H.25Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 5,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -161,12 +423,50 @@
 			{
 				"number": "00001",
 				"teacher": "Robert Mole",
-				"schedule": "Tuesday1:00 PM - 4:00 PM-2H.7LabFriday2:00 PM - 4:00 PM-2H.7Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Robert Mole",
-				"schedule": "Monday10:00 AM - 12:00 PM-2H.7LabWednesday3:00 PM - 6:00 PM-2H.7Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -177,7 +477,17 @@
 			{
 				"number": "00001",
 				"teacher": "Bryn Hughes",
-				"schedule": "Thursday12:00 PM - 6:00 PM-2H.19LabThursday12:00 PM - 6:00 PM-2H.23Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 6,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -188,7 +498,17 @@
 			{
 				"number": "00001",
 				"teacher": "Michael Leon",
-				"schedule": "Wednesday1:00 PM - 6:00 PM-2H.14Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 5,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -199,7 +519,17 @@
 			{
 				"number": "00001",
 				"teacher": "Adam Kingsland",
-				"schedule": "Tuesday1:00 PM - 5:00 PM-2H.25Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -210,7 +540,17 @@
 			{
 				"number": "00001",
 				"teacher": "Shoukry Socrates Aboulehaf",
-				"schedule": "Friday1:00 PM - 6:00 PM-2H.11LabFriday1:00 PM - 6:00 PM-2H.23Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 5,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -221,7 +561,17 @@
 			{
 				"number": "00001",
 				"teacher": "Adam Kingsland",
-				"schedule": "Friday8:30 AM - 12:30 PM-2H.23Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "12:30 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -232,7 +582,26 @@
 			{
 				"number": "00001",
 				"teacher": "Bryn Hughes",
-				"schedule": "Wednesday1:00 PM - 4:00 PM-2H.25LabFriday1:00 PM - 4:00 PM-2H.25Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -243,7 +612,17 @@
 			{
 				"number": "00001",
 				"teacher": "Michael Leon",
-				"schedule": "Tuesday1:00 PM - 6:00 PM-2H.14Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 5,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -254,7 +633,17 @@
 			{
 				"number": "00001",
 				"teacher": "Shoukry Socrates Aboulehaf",
-				"schedule": "Thursday1:00 PM - 6:00 PM-2H.25Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 5,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	}

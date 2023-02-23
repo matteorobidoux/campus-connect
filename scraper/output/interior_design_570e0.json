@@ -6,7 +6,17 @@
 			{
 				"number": "00001",
 				"teacher": "Emma Doubt",
-				"schedule": "Friday12:00 PM - 3:00 PM4F.2Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -17,12 +27,32 @@
 			{
 				"number": "00001",
 				"teacher": "Jill Hogan",
-				"schedule": "Monday12:00 PM - 3:00 PM3G.4Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Jill Hogan",
-				"schedule": "Tuesday8:30 AM - 11:30 AM3G.8Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -33,12 +63,50 @@
 			{
 				"number": "00001",
 				"teacher": "Kurt Holfeld, Scott Millar",
-				"schedule": "Tuesday8:30 AM - 11:30 AM3G.21LabTuesday12:00 PM - 3:00 PM3G.21Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Adolphe Tinling",
-				"schedule": "Monday8:30 AM - 11:30 AM3G.21LabMonday12:00 PM - 3:00 PM3G.21Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -49,12 +117,32 @@
 			{
 				"number": "00001",
 				"teacher": "Philip Fontaine",
-				"schedule": "Wednesday12:30 PM - 3:30 PM3G.4Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:30 PM",
+						"end": "3:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Philip Fontaine",
-				"schedule": "Wednesday8:30 AM - 11:30 AM3G.4Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -65,12 +153,32 @@
 			{
 				"number": "00001",
 				"teacher": "Mark Lance Lipson",
-				"schedule": "Friday8:30 AM - 11:30 AM3G.8Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Mark Lance Lipson",
-				"schedule": "Thursday8:30 AM - 11:30 AM3G.8Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -81,12 +189,32 @@
 			{
 				"number": "00001",
 				"teacher": "Adolphe Tinling, James McCallan",
-				"schedule": "Thursday8:30 AM - 11:30 AM1G.14LabThursday8:30 AM - 11:30 AM3G.21Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Adolphe Tinling, Philip Fontaine",
-				"schedule": "Thursday12:30 PM - 3:30 PM1G.14LabThursday12:30 PM - 3:30 PM3G.21Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:30 PM",
+						"end": "3:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -97,12 +225,68 @@
 			{
 				"number": "00001",
 				"teacher": "Anne-Marie Legault",
-				"schedule": "Tuesday1:00 PM - 3:00 PM3G.4LabFriday9:00 AM - 12:00 PM3G.4LabFriday12:30 PM - 3:30 PM3G.4Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "9:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "12:30 PM",
+						"end": "3:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Jill Hogan",
-				"schedule": "Wednesday8:30 AM - 11:30 AM3G.8LabWednesday12:00 PM - 3:00 PM3G.8LabFriday10:00 AM - 12:00 PM3G.21Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -113,12 +297,32 @@
 			{
 				"number": "00001",
 				"teacher": "Mark Lance Lipson",
-				"schedule": "Monday3:00 PM - 6:00 PM3G.4Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Philip Fontaine",
-				"schedule": "Tuesday3:00 PM - 6:00 PM3G.21Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -129,12 +333,32 @@
 			{
 				"number": "00001",
 				"teacher": "James McCallan",
-				"schedule": "Tuesday8:30 AM - 12:30 PM3G.4Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "12:30 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "James McCallan",
-				"schedule": "Friday12:30 PM - 4:30 PM3G.21Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "12:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -145,12 +369,32 @@
 			{
 				"number": "00001",
 				"teacher": "Adolphe Tinling",
-				"schedule": "Wednesday3:00 PM - 6:00 PM3G.8Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Anne-Marie Legault",
-				"schedule": "Monday2:30 PM - 5:30 PM3H.10Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -161,12 +405,86 @@
 			{
 				"number": "00001",
 				"teacher": "Kurt Holfeld, Scott Millar",
-				"schedule": "Thursday10:00 AM - 1:00 PM3G.4LabThursday1:30 PM - 4:30 PM3G.4LabFriday11:30 AM - 2:30 PM3G.8LabFriday3:00 PM - 6:00 PM3G.8Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "1:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Mark Lance Lipson, Sandra Signe Schmitke",
-				"schedule": "Tuesday11:30 AM - 2:30 PM3G.8LabTuesday3:00 PM - 6:00 PM3G.8LabThursday11:30 AM - 2:30 PM3G.8LabThursday3:00 PM - 6:00 PM3G.8Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -177,12 +495,32 @@
 			{
 				"number": "00001",
 				"teacher": "Scott Millar",
-				"schedule": "Monday1:00 PM - 5:00 PM3G.8Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Philip Fontaine",
-				"schedule": "Monday8:30 AM - 12:30 PM3G.8Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "12:30 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -193,7 +531,7 @@
 			{
 				"number": "00001",
 				"teacher": "Sandra Signe Schmitke",
-				"schedule": "WednesdayJan 18, 2023May 11, 20238:30 AM - 11:30 AM3G.21LabWednesdayJan 18, 2023May 11, 202312:00 PM - 3:00 PM3G.21Intensive"
+				"schedule": []
 			}
 		]
 	},
@@ -204,7 +542,7 @@
 			{
 				"number": "00001",
 				"teacher": "James McCallan",
-				"schedule": "WednesdayJan 18, 2023May 11, 20238:30 AM - 12:30 PM3G.21IntensiveWednesdayJan 18, 2023May 11, 20231:30 PM - 5:30 PM3G.21Lab"
+				"schedule": []
 			}
 		]
 	}

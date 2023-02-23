@@ -6,12 +6,32 @@
 			{
 				"number": "00001",
 				"teacher": "Natalie Olanick",
-				"schedule": "Tuesday8:30 AM - 11:30 AM3B.25Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Antoinetta Grassi",
-				"schedule": "Wednesday2:30 PM - 5:30 PM3B.25Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -22,12 +42,32 @@
 			{
 				"number": "00001",
 				"teacher": "Nina Dubois",
-				"schedule": "Thursday8:30 AM - 11:30 AM1G.3LabThursday8:30 AM - 11:30 AM1G.5Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Nina Dubois",
-				"schedule": "Thursday12:00 PM - 3:00 PM1G.3LabThursday12:00 PM - 3:00 PM1G.5Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -38,12 +78,32 @@
 			{
 				"number": "00001",
 				"teacher": "François Martin",
-				"schedule": "Monday3:00 PM - 6:00 PM4G.10LabMonday3:00 PM - 6:00 PM4G.19Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Benoit Deschamps",
-				"schedule": "Tuesday8:30 AM - 11:30 AM4G.19LabTuesday8:30 AM - 11:30 AM4G.8Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -54,12 +114,32 @@
 			{
 				"number": "00001",
 				"teacher": "Nelly Dahan",
-				"schedule": "Monday11:30 AM - 2:30 PM4G.13LabMonday11:30 AM - 2:30 PM4H.12Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Nelly Dahan",
-				"schedule": "Friday2:00 PM - 5:00 PM4A.14LabFriday2:00 PM - 5:00 PM4G.15Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -70,12 +150,32 @@
 			{
 				"number": "00001",
 				"teacher": "Luc Parent",
-				"schedule": "Thursday12:00 PM - 3:00 PM4G.19LabThursday12:00 PM - 3:00 PM4G.8Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Suzanne Côté",
-				"schedule": "Thursday8:30 AM - 11:30 AM3G.3LabThursday8:30 AM - 11:30 AM4G.10Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -86,12 +186,32 @@
 			{
 				"number": "00001",
 				"teacher": "Suzanne Côté",
-				"schedule": "Tuesday12:00 PM - 3:00 PM4G.10LabTuesday12:00 PM - 3:00 PM4G.19Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Suzanne Côté",
-				"schedule": "Monday12:00 PM - 3:00 PM4G.10LabMonday12:00 PM - 3:00 PM4G.19Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -102,12 +222,32 @@
 			{
 				"number": "00001",
 				"teacher": "Laurence Pilon",
-				"schedule": "Friday1:00 PM - 4:00 PM4G.10Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Laurence Pilon",
-				"schedule": "Friday8:30 AM - 11:30 AM4G.10Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -118,12 +258,32 @@
 			{
 				"number": "00001",
 				"teacher": "Maya Saikali",
-				"schedule": "Wednesday8:30 AM - 11:30 AM4G.8Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Maya Saikali",
-				"schedule": "Wednesday1:00 PM - 4:00 PM4G.15Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -134,12 +294,32 @@
 			{
 				"number": "00001",
 				"teacher": "Suzanne Côté",
-				"schedule": "Wednesday1:30 PM - 4:30 PM4G.13Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "1:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Suzanne Côté",
-				"schedule": "Monday8:30 AM - 11:30 AM4G.13Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -150,12 +330,32 @@
 			{
 				"number": "00001",
 				"teacher": "Luc Parent",
-				"schedule": "Tuesday1:00 PM - 4:00 PM3E.6LabTuesday1:00 PM - 4:00 PM4G.8Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Benoit Deschamps",
-				"schedule": "Monday2:30 PM - 5:30 PM3G.3LabMonday2:30 PM - 5:30 PM4G.8Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -166,12 +366,32 @@
 			{
 				"number": "00001",
 				"teacher": "Pierre-Antoine Robitaille",
-				"schedule": "Monday2:30 PM - 5:30 PM2G.13LabMonday2:30 PM - 5:30 PM4G.13Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Pierre-Antoine Robitaille",
-				"schedule": "Friday12:00 PM - 3:00 PM2G.13LabFriday12:00 PM - 3:00 PM4G.13Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -182,12 +402,32 @@
 			{
 				"number": "00001",
 				"teacher": "Tania Chiarotto",
-				"schedule": "Friday1:00 PM - 4:00 PM4G.19LabFriday1:00 PM - 4:00 PM4G.8Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Tania Chiarotto",
-				"schedule": "Wednesday9:00 AM - 12:00 PM4G.10LabWednesday9:00 AM - 12:00 PM4G.19Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "9:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -198,12 +438,32 @@
 			{
 				"number": "00001",
 				"teacher": "François Martin",
-				"schedule": "Monday9:00 AM - 12:00 PM4G.10LabMonday9:00 AM - 12:00 PM4G.19Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "9:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "François Martin",
-				"schedule": "Thursday3:00 PM - 6:00 PM4G.13LabThursday3:00 PM - 6:00 PM4G.19Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -214,12 +474,41 @@
 			{
 				"number": "00001",
 				"teacher": "Laurence Pilon",
-				"schedule": "Thursday11:30 AM - 2:30 PM4G.15Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Étienne Després",
-				"schedule": "Tuesday2:30 PM - 3:00 PM4G.15LabTuesday3:00 PM - 5:30 PM4G.15LabTuesday3:00 PM - 5:30 PM4G.19Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 0,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "3:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -230,12 +519,32 @@
 			{
 				"number": "00001",
 				"teacher": "Pierre-Antoine Robitaille",
-				"schedule": "Tuesday8:30 AM - 11:30 AM4G.10Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Pierre-Antoine Robitaille",
-				"schedule": "Thursday8:30 AM - 11:30 AM4G.19LabThursday8:30 AM - 11:30 AM4G.8Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -246,12 +555,50 @@
 			{
 				"number": "00001",
 				"teacher": "Tania Chiarotto",
-				"schedule": "Thursday9:00 AM - 12:00 PM4G.17LabThursday1:00 PM - 4:00 PM4G.17Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "9:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Tania Chiarotto",
-				"schedule": "Monday9:30 AM - 12:30 PM4G.17LabMonday1:30 PM - 4:30 PM4G.17Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "9:30 AM",
+						"end": "12:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -262,12 +609,32 @@
 			{
 				"number": "00001",
 				"teacher": "François Martin",
-				"schedule": "Friday9:00 AM - 12:00 PM4G.17Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "9:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "François Martin",
-				"schedule": "Friday1:00 PM - 4:00 PM4G.17Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -278,12 +645,50 @@
 			{
 				"number": "00001",
 				"teacher": "Gyula Zoltan Gefin",
-				"schedule": "Wednesday9:30 AM - 12:30 PM4G.17LabWednesday1:30 PM - 4:30 PM4G.17Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "9:30 AM",
+						"end": "12:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Marvin Harder",
-				"schedule": "Tuesday9:00 AM - 12:00 PM4G.17LabTuesday1:00 PM - 4:00 PM4G.17Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "9:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -294,12 +699,32 @@
 			{
 				"number": "00001",
 				"teacher": "Gyula Zoltan Gefin",
-				"schedule": "Monday11:30 AM - 2:30 PM3G.3LabMonday11:30 AM - 2:30 PM4G.8Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Pierre-Antoine Robitaille",
-				"schedule": "Friday8:30 AM - 11:30 AM4G.19LabFriday8:30 AM - 11:30 AM4G.8Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -310,12 +735,41 @@
 			{
 				"number": "00001",
 				"teacher": "Marvin Harder",
-				"schedule": "Monday3:00 PM - 6:00 PM4G.15Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Marvin Harder",
-				"schedule": "Wednesday11:30 AM - 12:00 PM4G.8LabWednesday12:00 PM - 2:30 PM4G.19LabWednesday12:00 PM - 2:30 PM4G.8Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "11:30 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 0,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	}
