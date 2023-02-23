@@ -3,6 +3,7 @@ type Section = {
   teacher: string;
   number: string;
   title: string;
+  students:string[]
 }
 
 export default Section;

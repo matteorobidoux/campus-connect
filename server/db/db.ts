@@ -5,10 +5,11 @@ import Event from './models/event-schema';
 import Course from "./models/course-schema";
 import Section from "./models/section-schema";
 import Usersection from "../../types/Usersection"
+import Userclasse from "../../types/Userclass"
 import fs = require('fs');
 import path = require("path");
 import * as config from "../../config.json"
-const dname = process.env.NAME || 'test'
+const dname = process.env.NAME || 'CampusConnect'
 
 class DbMongoose {
   constructor() {
@@ -40,6 +41,13 @@ class DbMongoose {
     await eventmodel.save();
   }
 
+  // async addUsertoSection(coursenumb:string) {
+  //   Course.findOne({number: coursenumb}, function(err, course) {
+  //     course.sections[0].students.push("ho")
+  //     course.save()
+  //   })
+  // }
+
   async getUserByClasss(classname: string) {
     const result = await User.find({ class: classname })
     console.log(result)
@@ -54,18 +62,44 @@ class DbMongoose {
   async getUserClassses2(nameUser: string) {
     const result = await User.find({ name: nameUser })
     const values= await result[0].sections
-    let classlist: string[] = []
-    values.forEach(function(value){
-      classlist.push(value.coursenumber)
+    let classlist: Userclasse[] = []
+
+
+    values.forEach(async function(value){
+      
+      const result= await Course.find({number: value.coursenumber})
+    const title= result[0].title
+    const sections= result[0].sections
+    let classes: Userclasse ;
+    sections.forEach(section => {
+      if(section.number == value.sectionnumber){
+        classes.coursenumber=value.coursenumber;
+        classes.teacher= section.teacher
+        classes.coursetitle=section.title
+      }
+    });
+    console.log(classes)
+    
+      classlist.push(classes)
     }) 
     console.log(classlist)
-    return values;
+    return classlist;
   }
   async getClass(courseNumber:string, sectionNumber:string){
     const result= await Course.find({number: courseNumber})
     const title= result[0].title
-    console.log(title)
-    return title;
+    const sections= result[0].sections
+    let classes: Userclasse ;
+   
+    sections.forEach(section => {
+      if(section.number == sectionNumber){
+        classes.coursenumber=courseNumber;
+        classes.teacher= section.teacher
+        classes.coursetitle=section.title
+      }
+    });
+    console.log(classes)
+    return classes;
   }
   async getAllUsers() {
     const result = await User.find()
@@ -78,34 +112,17 @@ class DbMongoose {
     return result;
   }
 
-  addAllClasses() {
-    const jsonsInDir = fs.readdirSync(config.scraperOutputLocation);
-    jsonsInDir.forEach(file => {
-      const fileData = fs.readFileSync(path.join(config.scraperOutputLocation, file));
-      const json = JSON.parse(fileData.toString());
-      json.forEach((courseJSON: { title: any; number: any; sections: any[]; }) => {
-        const course = new Course({
-          "title": courseJSON.title,
-          "number": courseJSON.number,
-          "sections": []
-        })
-        course.save()
-        courseJSON.sections.forEach((sectionJSON: any) => {
-          const section = new Section(sectionJSON);
-          course.sections.push(section);
-          section.save();
-        });
-      })
-    })
-  }
+ 
 }
 
-// const f= new DbMongoose()
+const f= new DbMongoose()
 // const semen1: Usersection[] =[{ coursenumber:"1234", sectionnumber:"weq2341"}, { coursenumber:"124", sectionnumber:"weq2341"}, { coursenumber:"12", sectionnumber:"weq2341"}]
 // f.addUser("Mike","mike2",["geo","math"],semen1)
 // f.getUserClassses2("Mike")
-// f.getClass("574-473-DW","aa")
+// f.getClass("410-241-DW","00002")
+
 export default new DbMongoose();
+
 
 
 

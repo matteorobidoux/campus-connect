@@ -8,7 +8,8 @@ const sectionSchema = new Schema<Sections>({
     number: String,
     teacher: String,
     schedule: String,
-    title: String
+    title: String,
+    students: [String]
 }, {collection: 'Sections'});
 
 const Section = model('Section', sectionSchema);
