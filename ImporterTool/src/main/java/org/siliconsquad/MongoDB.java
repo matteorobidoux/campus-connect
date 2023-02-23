@@ -32,8 +32,8 @@ public class MongoDB
     public static void main( String[] args ) throws IOException, ParseException
     {
         MongoClient mongoClient = connect();
-        MongoDatabase database = mongoClient.getDatabase("test");
-        MongoCollection<Course> courses = database.getCollection("Coursetest",Course.class);
+        MongoDatabase database = mongoClient.getDatabase("CampusConnect");
+        MongoCollection<Course> courses = database.getCollection("Courses",Course.class);
         ObjectMapper mapper = new ObjectMapper();
         JSONParser parser = new JSONParser();
         System.out.println("Inserting scraped data into MongoDB...");
