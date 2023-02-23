@@ -1,9 +1,12 @@
 {
+  "name": "campusconnect",
+  "version": "1.0.0",
   "scripts": {
-    "test": "cd client && npm run testing"
+    "install:all": "cd ./client && npm i && cd ../server && npm i",
+    "start": "cd ./client && npm run start"
   },
-  "dependencies": {
-    "@types/react-calendar": "^3.9.0",
-    "sass": "^1.58.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/dawson2223/620-w23/s01/TeamB/campus-connect.git"
   }
 }
