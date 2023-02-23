@@ -7,7 +7,7 @@ variables:
     APP_NAME: "campus-connects-test"
     WEBSITE_RUN_FROM_PACKAGE: 1
 
-image: node:18
+image: node:latest
 
 stages:
   - build
@@ -21,11 +21,22 @@ build-frontend:
     - test
   script:
     - cd client && npm install && CI=false npm run build
+  artifacts:
+    expire_in: 1 days
+    when: on_success
+    paths:
+      - client/build
+      - client/node_modules
 
 build-backend:
   stage: build
   script:
     - cd server && npm install
+  artifacts:
+    expire_in: 1 days
+    when: on_success
+    paths:
+      - server/node_modules
 
 #test:
 #  stage: test
@@ -58,3 +69,4 @@ deploy:
     when: on_success
     paths:
       - deploy.zip
+
