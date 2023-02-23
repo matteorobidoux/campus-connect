@@ -1,10 +1,10 @@
 import mongoose from 'mongoose';
 import Slot from './slot-schema';
-import Section from '../../../types/Section'
+import Sections from '../../../types/Section'
 
 const {Schema, model} = mongoose;
 
-const sectionSchema = new Schema<Section>({
+const sectionSchema = new Schema<Sections>({
     number: String,
     teacher: String,
     schedule: String,

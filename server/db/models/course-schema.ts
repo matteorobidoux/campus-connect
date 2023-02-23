@@ -1,11 +1,11 @@
 import mongoose from 'mongoose';
 import Section from './section-schema';
-import Course from '../../../types/Course'
+import Courses from '../../../types/Course'
 
 const {Schema, model} = mongoose;
 
 
-const courseSchema = new Schema<Course>({
+const courseSchema = new Schema<Courses>({
     title: String,
     number: String,
     sections: [Section.schema]
