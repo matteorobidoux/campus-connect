@@ -1,6 +1,7 @@
 package org.siliconsquad.objects;
 
 import java.util.List;
+import org.bson.codecs.pojo.annotations.BsonProperty;
 
 public class Section {
     private String title;
@@ -9,7 +10,16 @@ public class Section {
     
     private String teacher;
 
-    private String schedule;
+    @BsonProperty(value="schedule")
+    private List<Slot> schedule;
+
+    public List<Slot> getSchedule() {
+        return schedule;
+    }
+
+    public void setSchedule(List<Slot> schedule) {
+        this.schedule = schedule;
+    }
 
     private List<String> students;
 
@@ -27,14 +37,6 @@ public class Section {
 
     public void setTeacher(String teacher) {
         this.teacher = teacher;
-    }
-
-    public String getSchedule() {
-        return schedule;
-    }
-
-    public void setSchedule(String schedule) {
-        this.schedule = schedule;
     }
 
     public String getTitle() {
