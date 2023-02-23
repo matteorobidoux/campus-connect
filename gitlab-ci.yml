@@ -20,14 +20,13 @@ build-frontend:
   only: 
     - test
   cache:
-    key:
       prefix: 'frontend'
       files:
         - 'client/package-lock.json'
     paths:
       - 'client/node_modules/'
   script:
-    - cd client && npm install && CI=false npm run build
+    - cd client && npm install
   artifacts:
     expire_in: 1 days
     when: on_success
@@ -75,7 +74,7 @@ deploy:
   before_script:
     - "az login --allow-no-subscriptions --service-principal -u $AZ_SP_ID -p $AZ_SP_SECRET --tenant $AZ_TENANT"
   script:
-    - zip -r deploy.zip client/build server ./package.json
+    - zip -r deploy.zip client/build ./server ./package.json
 ##    - "az webapp config appsettings set --resource-group $RESOURCE_GROUP_NAME --name $APP_NAME --settings WEBSITE_RUN_FROM_PACKAGE='1'"
     - "az webapp deployment source config-zip --resource-group $RESOURCE_GROUP_NAME --name $APP_NAME --src deploy.zip"
   artifacts:
