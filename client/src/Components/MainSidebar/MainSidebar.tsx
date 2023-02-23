@@ -2,7 +2,6 @@ import Course from "../../../../types/Course"
 import CourseQuickViewContainer from "../CourseQuickViewContainer/CourseQuickViewContainer"
 import styles from "./MainSidebar.module.scss"
 
-
 type MainSidebarProps = {
     courses: Course[]
 }
