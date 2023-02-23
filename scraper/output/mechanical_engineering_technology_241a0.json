@@ -1,332 +1,261 @@
 [
 	{
 		"title": "Engineering Physics I",
+		"number": "203-943-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Jaime Sandoval",
 				"schedule": "Monday1:00 PM - 2:30 PM7A.2LabThursday10:00 AM - 11:30 AM7B.2Class"
-			}
-		],
-		"number": "203-943-DW"
-	},
-	{
-		"title": "Machine Tools I",
-		"sections": [
+			},
 			{
-				"section": "00001",
-				"teacher": "John Tomasik",
-				"schedule": "Wednesday10:00 AM - 12:00 PM-2H.11LabWednesday1:00 PM - 6:00 PM-2H.11Lab"
-			}
-		],
-		"number": "241-202-DW"
-	},
-	{
-		"title": "CAD I",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Gabriel McFern",
-				"schedule": "Friday2:00 PM - 6:00 PM-2H.14Lab"
-			}
-		],
-		"number": "241-226-DW"
-	},
-	{
-		"title": "Mechanical Components I",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Michael Leon",
-				"schedule": "Thursday1:00 PM - 5:00 PM-2H.13Lab"
-			}
-		],
-		"number": "241-331-DW"
-	},
-	{
-		"title": "Quality Control",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Vincent Di Pietro",
-				"schedule": "Tuesday1:00 PM - 5:00 PM-2H.13Lab"
-			}
-		],
-		"number": "241-381-DW"
-	},
-	{
-		"title": "Heat Treatment",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Robert Mole",
-				"schedule": "Monday3:00 PM - 6:00 PM-2H.5LabMonday3:00 PM - 6:00 PM-2H.7Lab"
-			}
-		],
-		"number": "270-213-DW"
-	},
-	{
-		"title": "Engineering Physics I",
-		"sections": [
-			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Jeremie Choquette",
 				"schedule": "Monday1:00 PM - 2:30 PM3F.7ClassThursday10:00 AM - 11:30 AM7A.6Lab"
 			}
-		],
-		"number": "203-943-DW"
+		]
 	},
 	{
 		"title": "Machine Tools I",
+		"number": "241-202-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "John Tomasik",
+				"schedule": "Wednesday10:00 AM - 12:00 PM-2H.11LabWednesday1:00 PM - 6:00 PM-2H.11Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "John Tomasik",
 				"schedule": "Tuesday10:00 AM - 12:00 PM-2H.11LabTuesday1:00 PM - 6:00 PM-2H.11Lab"
 			}
-		],
-		"number": "241-202-DW"
+		]
 	},
 	{
 		"title": "CAD I",
+		"number": "241-226-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Gabriel McFern",
+				"schedule": "Friday2:00 PM - 6:00 PM-2H.14Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Gabriel McFern",
 				"schedule": "Thursday2:00 PM - 6:00 PM-2H.14Lab"
 			}
-		],
-		"number": "241-226-DW"
+		]
 	},
 	{
 		"title": "Mechanical Components I",
+		"number": "241-331-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Michael Leon",
+				"schedule": "Thursday1:00 PM - 5:00 PM-2H.13Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Michael Leon",
 				"schedule": "Friday2:00 PM - 6:00 PM-2H.13Lab"
 			}
-		],
-		"number": "241-331-DW"
+		]
 	},
 	{
 		"title": "Quality Control",
+		"number": "241-381-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Vincent Di Pietro",
+				"schedule": "Tuesday1:00 PM - 5:00 PM-2H.13Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Vincent Di Pietro",
 				"schedule": "Wednesday1:00 PM - 5:00 PM-2H.13Lab"
 			}
-		],
-		"number": "241-381-DW"
+		]
 	},
 	{
 		"title": "Heat Treatment",
+		"number": "270-213-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Robert Mole",
+				"schedule": "Monday3:00 PM - 6:00 PM-2H.5LabMonday3:00 PM - 6:00 PM-2H.7Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Robert Mole",
 				"schedule": "Friday10:00 AM - 1:00 PM-2H.5LabFriday10:00 AM - 1:00 PM-2H.7Lab"
 			}
-		],
-		"number": "270-213-DW"
+		]
 	},
 	{
 		"title": "Engineering Physics II",
+		"number": "203-944-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Maria Dikeakos",
 				"schedule": "Tuesday10:00 AM - 12:00 PM7A.9ClassWednesday10:00 AM - 11:30 AM7A.2LabFriday10:00 AM - 11:30 AM7A.2Lab"
 			}
-		],
-		"number": "203-944-DW"
+		]
 	},
 	{
 		"title": "Tooling Manufacturing",
+		"number": "241-406-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "TBA-241-B, Darren Narine",
 				"schedule": "Monday10:00 AM - 12:00 PM-2H.11LabMonday1:00 PM - 6:00 PM-2H.11Lab"
-			}
-		],
-		"number": "241-406-DW"
-	},
-	{
-		"title": "CNC Operation",
-		"sections": [
+			},
 			{
-				"section": "00001",
-				"teacher": "Darren Narine",
-				"schedule": "Wednesday1:00 PM - 5:00 PM-2H.19LabWednesday1:00 PM - 5:00 PM-2H.23Lab"
-			}
-		],
-		"number": "241-421-DW"
-	},
-	{
-		"title": "CAD III",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Adam Kingsland",
-				"schedule": "Thursday9:00 AM - 2:00 PM-2H.14Lab"
-			}
-		],
-		"number": "241-426-DW"
-	},
-	{
-		"title": "Mechanical Components II",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Robert Mole",
-				"schedule": "Tuesday1:00 PM - 4:00 PM-2H.7LabFriday2:00 PM - 4:00 PM-2H.7Lab"
-			}
-		],
-		"number": "241-433-DW"
-	},
-	{
-		"title": "Engineering Physics II",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Maria Dikeakos",
-				"schedule": "Tuesday10:00 AM - 12:00 PM7A.9ClassWednesday10:00 AM - 11:30 AM7A.2LabFriday10:00 AM - 11:30 AM7A.2Lab"
-			}
-		],
-		"number": "203-944-DW"
-	},
-	{
-		"title": "Tooling Manufacturing",
-		"sections": [
-			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "TBA-241-B, Darren Narine",
 				"schedule": "Thursday10:00 AM - 12:00 PM-2H.11LabThursday1:00 PM - 6:00 PM-2H.11Lab"
 			}
-		],
-		"number": "241-406-DW"
+		]
 	},
 	{
 		"title": "CNC Operation",
+		"number": "241-421-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Darren Narine",
+				"schedule": "Wednesday1:00 PM - 5:00 PM-2H.19LabWednesday1:00 PM - 5:00 PM-2H.23Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "TBA-241-B, Darren Narine",
 				"schedule": "Tuesday2:00 PM - 6:00 PM-2H.19LabTuesday2:00 PM - 6:00 PM-2H.23Lab"
 			}
-		],
-		"number": "241-421-DW"
+		]
 	},
 	{
 		"title": "CAD III",
+		"number": "241-426-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Adam Kingsland",
+				"schedule": "Thursday9:00 AM - 2:00 PM-2H.14Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Adam Kingsland",
 				"schedule": "Monday1:00 PM - 6:00 PM-2H.25Lab"
 			}
-		],
-		"number": "241-426-DW"
+		]
 	},
 	{
 		"title": "Mechanical Components II",
+		"number": "241-433-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Robert Mole",
+				"schedule": "Tuesday1:00 PM - 4:00 PM-2H.7LabFriday2:00 PM - 4:00 PM-2H.7Lab"
+			},
+			{
+				"number": "00002",
 				"teacher": "Robert Mole",
 				"schedule": "Monday10:00 AM - 12:00 PM-2H.7LabWednesday3:00 PM - 6:00 PM-2H.7Lab"
 			}
-		],
-		"number": "241-433-DW"
+		]
 	},
 	{
 		"title": "Graphic Programming",
+		"number": "241-623-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Bryn Hughes",
 				"schedule": "Thursday12:00 PM - 6:00 PM-2H.19LabThursday12:00 PM - 6:00 PM-2H.23Lab"
 			}
-		],
-		"number": "241-623-DW"
+		]
 	},
 	{
 		"title": "Automated Circuits II",
+		"number": "241-673-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Michael Leon",
 				"schedule": "Wednesday1:00 PM - 6:00 PM-2H.14Lab"
 			}
-		],
-		"number": "241-673-DW"
+		]
 	},
 	{
 		"title": "Industrial Systems",
+		"number": "241-674-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Adam Kingsland",
 				"schedule": "Tuesday1:00 PM - 5:00 PM-2H.25Lab"
 			}
-		],
-		"number": "241-674-DW"
+		]
 	},
 	{
 		"title": "Manufacturing Project",
+		"number": "241-693-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Shoukry Socrates Aboulehaf",
 				"schedule": "Friday1:00 PM - 6:00 PM-2H.11LabFriday1:00 PM - 6:00 PM-2H.23Lab"
 			}
-		],
-		"number": "241-693-DW"
+		]
 	},
 	{
 		"title": "Emerging Technologies",
+		"number": "241-602-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Adam Kingsland",
 				"schedule": "Friday8:30 AM - 12:30 PM-2H.23Lab"
 			}
-		],
-		"number": "241-602-DW"
+		]
 	},
 	{
 		"title": "3D Modeling",
+		"number": "241-656-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Bryn Hughes",
 				"schedule": "Wednesday1:00 PM - 4:00 PM-2H.25LabFriday1:00 PM - 4:00 PM-2H.25Lab"
 			}
-		],
-		"number": "241-656-DW"
+		]
 	},
 	{
 		"title": "System Design II",
+		"number": "241-663-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Michael Leon",
 				"schedule": "Tuesday1:00 PM - 6:00 PM-2H.14Lab"
 			}
-		],
-		"number": "241-663-DW"
+		]
 	},
 	{
 		"title": "Design Project",
+		"number": "241-692-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Shoukry Socrates Aboulehaf",
 				"schedule": "Thursday1:00 PM - 6:00 PM-2H.25Lab"
 			}
-		],
-		"number": "241-692-DW"
+		]
 	}
 ]

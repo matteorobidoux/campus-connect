@@ -1,87 +1,87 @@
 [
 	{
 		"title": "Introduction to Politics",
+		"number": "385-101-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Michel Fournier-Simard",
 				"schedule": "Tuesday4:00 PM - 5:30 PM4H.8ClassThursday4:00 PM - 5:30 PM4H.8Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Donal Gill",
 				"schedule": "Tuesday8:30 AM - 10:00 AM4H.21ClassFriday8:30 AM - 10:00 AM4H.21Class"
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Vanessa Gordon",
 				"schedule": "Monday11:30 AM - 1:00 PM3F.3ClassThursday8:30 AM - 10:00 AM3F.3Class"
 			},
 			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Vanessa Gordon",
 				"schedule": "Monday8:30 AM - 10:00 AM3F.3ClassWednesday8:30 AM - 10:00 AM3F.3Class"
 			},
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Michel Fournier-Simard",
 				"schedule": "Tuesday10:00 AM - 11:30 AM4P.06ClassFriday10:00 AM - 11:30 AM4P.06Class"
 			},
 			{
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Vanessa Gordon",
 				"schedule": "Wednesday1:00 PM - 2:30 PM3F.3ClassFriday1:00 PM - 2:30 PM3F.3Class"
 			},
 			{
-				"section": "00007",
+				"number": "00007",
 				"teacher": "Antonia Fikkert",
 				"schedule": "Monday8:30 AM - 10:00 AM4H.19ClassWednesday8:30 AM - 10:00 AM4H.19Class"
 			},
 			{
-				"section": "00008",
+				"number": "00008",
 				"teacher": "Michel Fournier-Simard",
 				"schedule": "Monday2:30 PM - 4:00 PM3F.39ClassWednesday2:30 PM - 4:00 PM3F.39Class"
 			}
-		],
-		"number": "385-101-DW"
+		]
 	},
 	{
 		"title": "Canadian Democracy",
+		"number": "385-306-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Cynthia J. Martin",
 				"schedule": "Tuesday11:30 AM - 1:00 PM4E.20ClassThursday11:30 AM - 1:00 PM4E.20Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Michel Fournier-Simard",
 				"schedule": "Tuesday11:30 AM - 1:00 PM4P.22ClassThursday11:30 AM - 1:00 PM4P.22Class"
 			}
-		],
-		"number": "385-306-DW"
+		]
 	},
 	{
 		"title": "Global Politics",
+		"number": "385-311-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Cynthia J. Martin",
 				"schedule": "Tuesday2:30 PM - 4:00 PM3E.13ClassThursday2:30 PM - 4:00 PM3E.13Class"
 			}
-		],
-		"number": "385-311-DW"
+		]
 	},
 	{
 		"title": "Advanced Studies in Politics",
+		"number": "385-401-DW",
 		"sections": [
 			{
 				"title": "Abortion, Prostitution, and Drugs: Supreme Court and the Law",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Marianne Pelton",
 				"schedule": "Tuesday11:30 AM - 1:00 PM3E.9ClassThursday11:30 AM - 1:00 PM3E.9Class"
 			}
-		],
-		"number": "385-401-DW"
+		]
 	}
 ]
