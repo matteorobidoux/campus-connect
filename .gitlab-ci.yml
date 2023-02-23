@@ -20,9 +20,10 @@ build-frontend:
   only: 
   - test
   cache:
-    prefix: 'frontend'
-    files:
-      - 'client/package-lock.json'
+    key:
+      prefix: 'frontend'
+      files:
+        - 'client/package-lock.json'
     paths:
       - 'client/node_modules/'
 
