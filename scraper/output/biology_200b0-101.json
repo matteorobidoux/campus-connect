@@ -1,161 +1,161 @@
 [
 	{
 		"title": "Human Biology",
+		"number": "101-921-DW",
 		"sections": [
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Annie-Hélène Samson",
 				"schedule": "Monday4:00 PM - 5:30 PM5A.14LabWednesday2:30 PM - 4:00 PM4G.2AClass"
 			}
-		],
-		"number": "101-921-DW"
+		]
 	},
 	{
 		"title": "General Biology II",
+		"number": "101-BZE-05",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Rami Hanna",
 				"schedule": "Monday2:30 PM - 5:30 PM5A.23LabTuesday4:00 PM - 5:30 PM3H.15ClassThursday4:00 PM - 5:30 PM3H.15Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Rami Hanna",
 				"schedule": "Monday10:00 AM - 1:00 PM5A.23LabTuesday4:00 PM - 5:30 PM3H.15ClassThursday4:00 PM - 5:30 PM3H.15Class"
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Brian Mader",
 				"schedule": "Tuesday11:30 AM - 1:00 PM3H.15ClassWednesday10:00 AM - 1:00 PM5A.23LabThursday11:30 AM - 1:00 PM3H.15Class"
 			},
 			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Brian Mader",
 				"schedule": "Tuesday11:30 AM - 1:00 PM3H.15ClassWednesday2:30 PM - 5:30 PM5A.23LabThursday11:30 AM - 1:00 PM3H.15Class"
 			},
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Joel Rubin",
 				"schedule": "Monday4:00 PM - 5:30 PM3H.15ClassTuesday10:00 AM - 1:00 PM5A.23LabWednesday4:00 PM - 5:30 PM3H.15Class"
 			},
 			{
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Joel Rubin",
 				"schedule": "Monday4:00 PM - 5:30 PM3H.15ClassTuesday2:30 PM - 5:30 PM5A.23LabWednesday4:00 PM - 5:30 PM3H.15Class"
 			}
-		],
-		"number": "101-BZE-05"
+		]
 	},
 	{
 		"title": "Human Anatomy and Physiology",
+		"number": "101-BZH-05",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Janet Wyman",
 				"schedule": "Monday2:30 PM - 4:00 PM5A.12ClassWednesday2:30 PM - 4:00 PM5A.12ClassThursday2:00 PM - 4:00 PM5A.29Lab"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Janet Wyman",
 				"schedule": "Monday2:30 PM - 4:00 PM5A.12ClassWednesday2:30 PM - 4:00 PM5A.12ClassThursday11:00 AM - 1:00 PM5A.29Lab"
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Rami Hanna",
 				"schedule": "Tuesday11:30 AM - 1:00 PM4H.15ClassWednesday11:00 AM - 1:00 PM5A.29LabThursday11:30 AM - 1:00 PM4H.15Class"
 			},
 			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Rami Hanna",
 				"schedule": "Tuesday11:30 AM - 1:00 PM4H.15ClassWednesday2:00 PM - 4:00 PM5A.29LabThursday11:30 AM - 1:00 PM4H.15Class"
 			},
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Janet Wyman",
 				"schedule": "Monday4:00 PM - 5:30 PM5A.12ClassTuesday11:00 AM - 1:00 PM5A.29LabWednesday4:00 PM - 5:30 PM5A.12Class"
 			},
 			{
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Janet Wyman",
 				"schedule": "Monday4:00 PM - 5:30 PM5A.12ClassTuesday2:00 PM - 4:00 PM5A.29LabWednesday4:00 PM - 5:30 PM5A.12Class"
 			}
-		],
-		"number": "101-BZH-05"
+		]
 	},
 	{
 		"title": "General Biology I",
+		"number": "101-NYA-05",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Richard Calvé",
 				"schedule": "Monday10:00 AM - 11:30 AM3H.15ClassTuesday2:00 PM - 4:00 PM5A.18LabWednesday10:00 AM - 11:30 AM3H.15Class"
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Richard Calvé",
 				"schedule": "Monday10:00 AM - 11:30 AM3H.15ClassWednesday10:00 AM - 11:30 AM3H.15ClassThursday2:00 PM - 4:00 PM5A.18Lab"
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Jeffrey K. L. Eng",
 				"schedule": "Tuesday8:00 AM - 10:00 AM5A.18LabWednesday1:00 PM - 2:30 PM3H.15ClassFriday1:00 PM - 2:30 PM3H.15Class"
 			},
 			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Jeffrey K. L. Eng",
 				"schedule": "Tuesday11:00 AM - 1:00 PM5A.18LabWednesday1:00 PM - 2:30 PM3H.15ClassFriday1:00 PM - 2:30 PM3H.15Class"
 			},
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Virginia Hock",
 				"schedule": "Monday1:00 PM - 2:30 PM4P.24ClassWednesday8:00 AM - 10:00 AM5A.18LabThursday10:00 AM - 11:30 AM4P.24Class"
 			},
 			{
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Virginia Hock",
 				"schedule": "Monday1:00 PM - 2:30 PM4P.24ClassWednesday11:00 AM - 1:00 PM5A.18LabThursday10:00 AM - 11:30 AM4P.24Class"
 			},
 			{
-				"section": "00007",
+				"number": "00007",
 				"teacher": "Jeffrey K. L. Eng",
 				"schedule": "Monday2:30 PM - 4:00 PM5B.7ClassWednesday2:30 PM - 4:00 PM5B.7ClassThursday8:00 AM - 10:00 AM5A.18Lab"
 			},
 			{
-				"section": "00008",
+				"number": "00008",
 				"teacher": "Jeffrey K. L. Eng",
 				"schedule": "Monday2:30 PM - 4:00 PM5B.7ClassWednesday2:30 PM - 4:00 PM5B.7ClassThursday11:00 AM - 1:00 PM5A.18Lab"
 			},
 			{
-				"section": "00009",
+				"number": "00009",
 				"teacher": "Joel Rubin",
 				"schedule": "Monday1:00 PM - 2:30 PM4P.10ClassThursday10:00 AM - 11:30 AM4P.10ClassFriday11:00 AM - 1:00 PM5A.18Lab"
 			},
 			{
-				"section": "00010",
+				"number": "00010",
 				"teacher": "Joel Rubin",
 				"schedule": "Monday1:00 PM - 2:30 PM4P.10ClassThursday10:00 AM - 11:30 AM4P.10ClassFriday2:00 PM - 4:00 PM5A.18Lab"
 			},
 			{
-				"section": "00012",
+				"number": "00012",
 				"teacher": "Suzanne Kunicki",
 				"schedule": "Monday2:00 PM - 4:00 PM5A.18LabTuesday1:00 PM - 2:30 PM4H.15ClassThursday1:00 PM - 2:30 PM4H.15Class"
 			},
 			{
-				"section": "00013",
+				"number": "00013",
 				"teacher": "Suzanne Kunicki",
 				"schedule": "Tuesday1:00 PM - 2:30 PM4H.15ClassWednesday2:00 PM - 4:00 PM5A.18LabThursday1:00 PM - 2:30 PM4H.15Class"
 			},
 			{
-				"section": "00014",
+				"number": "00014",
 				"teacher": "Tonia De Bellis",
 				"schedule": "Monday8:00 AM - 10:00 AM5A.18LabTuesday11:30 AM - 1:00 PM7B.6ClassThursday11:30 AM - 1:00 PM7B.6Class"
 			},
 			{
-				"section": "00015",
+				"number": "00015",
 				"teacher": "Tonia De Bellis",
 				"schedule": "Monday11:00 AM - 1:00 PM5A.18LabTuesday11:30 AM - 1:00 PM7B.6ClassThursday11:30 AM - 1:00 PM7B.6Class"
 			}
-		],
-		"number": "101-NYA-05"
+		]
 	}
 ]

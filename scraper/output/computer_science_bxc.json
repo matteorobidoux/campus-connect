@@ -1,50 +1,50 @@
 [
 	{
 		"title": "Application in Computer Science",
+		"number": "420-BXC-03",
 		"sections": [
 			{
 				"title": "Web Site Creation",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Behnam Karimi",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Web Site Creation",
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Chaviva Lifson",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Web Site Creation",
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Eric Mayhew",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Introduction to Programming",
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Jean-Claude Desrosiers",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Web Site Creation",
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Nasreddine Hallam",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Web Site Creation",
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Nasreddine Hallam",
 				"schedule": "Tuesday, February 14, 2023"
 			},
 			{
 				"title": "Web Site Creation",
-				"section": "00007",
+				"number": "00007",
 				"teacher": "Nasreddine Hallam",
 				"schedule": "Tuesday, February 14, 2023"
 			}
-		],
-		"number": "420-BXC-03"
+		]
 	}
 ]

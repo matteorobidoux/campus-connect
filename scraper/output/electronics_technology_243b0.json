@@ -1,266 +1,221 @@
 [
 	{
 		"title": "Calculus I",
+		"number": "201-NYA-05",
 		"sections": [
 			{
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Alexander Hariton",
 				"schedule": "Tuesday1:00 PM - 2:30 PM3E.10ClassWednesday12:00 PM - 2:00 PM4A.5LabFriday1:00 PM - 2:30 PM5D.6Class"
 			}
-		],
-		"number": "201-NYA-05"
+		]
 	},
 	{
 		"title": "Sequential Circuits",
+		"number": "243-212-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Sharon Shasha",
 				"schedule": "Monday10:00 AM - 11:30 AM3B.11ClassWednesday10:00 AM - 11:30 AM3B.11ClassFriday9:30 AM - 12:30 PM2H.09Lab"
-			}
-		],
-		"number": "243-212-DW"
-	},
-	{
-		"title": "Alternating Current Circuits",
-		"sections": [
+			},
 			{
-				"section": "00001",
-				"teacher": "Jay-Hsing Wu",
-				"schedule": "Tuesday9:30 AM - 12:30 PM2H.11LabTuesday2:30 PM - 4:00 PM4A.14ClassThursday1:00 PM - 2:30 PM3B.11Class"
-			}
-		],
-		"number": "243-216-DW"
-	},
-	{
-		"title": "Calculus I",
-		"sections": [
-			{
-				"section": "00006",
-				"teacher": "Alexander Hariton",
-				"schedule": "Tuesday1:00 PM - 2:30 PM3E.10ClassWednesday12:00 PM - 2:00 PM4A.5LabFriday1:00 PM - 2:30 PM5D.6Class"
-			}
-		],
-		"number": "201-NYA-05"
-	},
-	{
-		"title": "Sequential Circuits",
-		"sections": [
-			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Sharon Shasha",
 				"schedule": "Monday10:00 AM - 11:30 AM3B.11ClassTuesday9:30 AM - 12:30 PM2H.09LabWednesday10:00 AM - 11:30 AM3B.11Class"
 			}
-		],
-		"number": "243-212-DW"
+		]
 	},
 	{
 		"title": "Alternating Current Circuits",
+		"number": "243-216-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
+				"teacher": "Jay-Hsing Wu",
+				"schedule": "Tuesday9:30 AM - 12:30 PM2H.11LabTuesday2:30 PM - 4:00 PM4A.14ClassThursday1:00 PM - 2:30 PM3B.11Class"
+			},
+			{
+				"number": "00002",
 				"teacher": "Alan Philip Rich, Jay-Hsing Wu",
 				"schedule": "Tuesday2:30 PM - 4:00 PM4A.14ClassThursday1:00 PM - 2:30 PM3B.11ClassFriday9:30 AM - 12:30 PM2H.11Lab"
 			}
-		],
-		"number": "243-216-DW"
-	},
-	{
-		"title": "Calculus I",
-		"sections": [
-			{
-				"section": "00006",
-				"teacher": "Alexander Hariton",
-				"schedule": "Tuesday1:00 PM - 2:30 PM3E.10ClassWednesday12:00 PM - 2:00 PM4A.5LabFriday1:00 PM - 2:30 PM5D.6Class"
-			}
-		],
-		"number": "201-NYA-05"
+		]
 	},
 	{
 		"title": "Embedded System Programming",
+		"number": "243-413-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Nick Markou",
 				"schedule": "Monday11:30 AM - 1:30 PM2F.22LabThursday12:00 PM - 2:00 PM2H.09Class"
 			}
-		],
-		"number": "243-413-DW"
+		]
 	},
 	{
 		"title": "Power Supplies",
+		"number": "243-416-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Sharon Shasha",
 				"schedule": "Friday1:00 PM - 4:00 PM2H.11Lab"
 			}
-		],
-		"number": "243-416-DW"
+		]
 	},
 	{
 		"title": "Network  Routing",
+		"number": "243-421-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Boris Lorkovic",
 				"schedule": "Wednesday12:00 PM - 2:00 PM2H.5ClassWednesday12:00 PM - 2:00 PM7B.4ClassFriday9:00 AM - 12:00 PM2H.5Lab"
 			}
-		],
-		"number": "243-421-DW"
+		]
 	},
 	{
 		"title": "Unix II",
+		"number": "243-442-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Nick Markou",
 				"schedule": "Tuesday2:30 PM - 4:30 PM2F.24ClassTuesday2:30 PM - 4:30 PM2H.5ClassThursday2:30 PM - 4:30 PM2H.5Lab"
 			}
-		],
-		"number": "243-442-DW"
+		]
 	},
 	{
 		"title": "Telephony",
+		"number": "243-451-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Jay-Hsing Wu",
 				"schedule": "Wednesday2:30 PM - 4:00 PM2H.11ClassWednesday2:30 PM - 4:00 PM3E.4ClassThursday8:30 AM - 10:00 AM2H.11ClassThursday8:30 AM - 10:00 AM3E.4Class"
 			}
-		],
-		"number": "243-451-DW"
+		]
 	},
 	{
 		"title": "PC Hardware and Software",
+		"number": "243-462-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Jimmy Plaitis",
 				"schedule": "Monday9:00 AM - 11:00 AM2H.09LabMonday9:00 AM - 11:00 AM2H.3LabWednesday8:30 AM - 11:30 AM2H.09ClassWednesday8:30 AM - 11:30 AM2H.11Class"
 			}
-		],
-		"number": "243-462-DW"
+		]
 	},
 	{
 		"title": "Network Planning",
+		"number": "243-621-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Daniel Lavoie",
 				"schedule": "Tuesday2:30 PM - 5:30 PM-2H.12LabThursday2:00 PM - 4:00 PM2H.09Class"
 			}
-		],
-		"number": "243-621-DW"
+		]
 	},
 	{
 		"title": "Wide Area Networks",
+		"number": "243-623-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Boris Lorkovic",
 				"schedule": "Monday9:00 AM - 11:00 AM2H.5LabWednesday9:00 AM - 11:00 AM2H.5ClassThursday12:00 PM - 2:00 PM2H.5Lab"
 			}
-		],
-		"number": "243-623-DW"
+		]
 	},
 	{
 		"title": "Network Security",
+		"number": "243-675-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Daniel Lavoie",
 				"schedule": "Monday12:00 PM - 2:00 PM2H.11ClassWednesday12:00 PM - 4:00 PM2F.22Lab"
 			}
-		],
-		"number": "243-675-DW"
+		]
 	},
 	{
 		"title": "Computer Network Project",
+		"number": "243-698-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Nick Markou",
 				"schedule": "Tuesday10:00 AM - 2:00 PM2F.22LabFriday10:00 AM - 1:00 PM-2H.12LabFriday10:00 AM - 1:00 PM2F.22Lab"
 			}
-		],
-		"number": "243-698-DW"
+		]
 	},
 	{
 		"title": "Communication in the Workplace",
+		"number": "410-963-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Neveen Asham",
 				"schedule": "Tuesday8:30 AM - 10:00 AM2F.24ClassFriday8:30 AM - 10:00 AM2F.24Class"
 			}
-		],
-		"number": "410-963-DW"
+		]
 	},
 	{
 		"title": "New Wireless Systems",
+		"number": "243-631-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Sharon Shasha",
 				"schedule": "Tuesday1:30 PM - 4:30 PM2H.09Lab"
 			}
-		],
-		"number": "243-631-DW"
+		]
 	},
 	{
 		"title": "Installation of Systems",
+		"number": "243-632-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Daniel Lavoie",
 				"schedule": "Tuesday10:00 AM - 1:00 PM-2H.12LabThursday12:00 PM - 2:00 PM2H.11Class"
 			}
-		],
-		"number": "243-632-DW"
+		]
 	},
 	{
 		"title": "Electromagnetic Fundamentals",
+		"number": "243-674-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Jay-Hsing Wu",
 				"schedule": "Thursday2:30 PM - 4:00 PM2H.11ClassFriday10:00 AM - 11:30 AM4H.6ClassFriday1:00 PM - 3:00 PM2H.7Lab"
 			}
-		],
-		"number": "243-674-DW"
+		]
 	},
 	{
 		"title": "Fibre Optic Systems",
+		"number": "243-682-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Boris Lorkovic, Chris Williams",
 				"schedule": "Monday2:00 PM - 4:00 PM2H.09ClassWednesday1:00 PM - 4:00 PM2H.09Lab"
 			}
-		],
-		"number": "243-682-DW"
+		]
 	},
 	{
 		"title": "Telecommunications Project",
+		"number": "243-699-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Alan Philip Rich",
 				"schedule": "Monday9:00 AM - 1:00 PM2H.7LabWednesday9:00 AM - 12:00 PM-2H.12LabWednesday9:00 AM - 12:00 PM2H.7Lab"
 			}
-		],
-		"number": "243-699-DW"
-	},
-	{
-		"title": "Communication in the Workplace",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Neveen Asham",
-				"schedule": "Tuesday8:30 AM - 10:00 AM2F.24ClassFriday8:30 AM - 10:00 AM2F.24Class"
-			}
-		],
-		"number": "410-963-DW"
+		]
 	}
 ]
