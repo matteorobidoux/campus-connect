@@ -1,5 +1,7 @@
 package org.siliconsquad.objects;
 
+import java.util.List;
+
 public class Section {
     private String title;
 
@@ -8,7 +10,8 @@ public class Section {
     private String teacher;
 
     private String schedule;
-    
+
+    private List<String> students;
 
     public String getNumber() {
         return number;
@@ -40,6 +43,14 @@ public class Section {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public List<String> getStudents() {
+        return students;
+    }
+
+    public void setStudents(List<String> students) {
+        this.students = students;
     }
 
     
