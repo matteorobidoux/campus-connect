@@ -7,7 +7,7 @@ import Section from "./models/section-schema";
 import Usersection from "../../types/Usersection"
 import Userclasse from "../../types/Userclass"
 // const dname = process.env.NAME || 'CampusConnect'
-const dname= process.env.NAME || 'test'
+const dname = process.env.NAME || 'CampusConnect'
 
 class DbMongoose {
   constructor() {
@@ -26,7 +26,7 @@ class DbMongoose {
   }
 
 
-  async addUser(nameUser: string, passwd: string, classes: string[],sectionsuser: Usersection[]) {
+  async addUser(nameUser: string, passwd: string, classes: string[], sectionsuser: Usersection[]) {
     const usermodel = new User({ name: nameUser, password: passwd, classes: classes, sections: sectionsuser })
     console.log(usermodel)
     await usermodel.save();
@@ -46,59 +46,54 @@ class DbMongoose {
   //   })
   // }
 
-  async getUserByClasss(classname: string) {
-    const result = await User.find({ class: classname })
-    console.log(result)
-    return result;
-  }
+
   async getUserClassses(nameUser: string) {
     const result = await User.find({ name: nameUser })
-    const values= result[0].classes
-    console.log(values)
-    return values;
-  }
-  async getUserClassses2(nameUser: string) {
-    const result = await User.find({ name: nameUser })
-    const values= await result[0].sections
+    const values = await result[0].sections
     let classlist: Userclasse[] = []
 
+    values.forEach(async function (value) {
 
-    values.forEach(async function(value){
+      const result = await Course.find({ number: value.coursenumber })
+      const title = result[0].title
+      const sections = result[0].sections
       
-      const result= await Course.find({number: value.coursenumber})
-    const title= result[0].title
-    const sections= result[0].sections
-    let classes: Userclasse ;
-    sections.forEach(section => {
-      if(section.number == value.sectionnumber){
-        classes.coursenumber=value.coursenumber;
-        classes.teacher= section.teacher
-        classes.coursetitle=section.title
-      }
-    });
-    console.log(classes)
-    
-      classlist.push(classes)
-    }) 
+      sections.forEach(section => {
+        if (section.number == value.sectionnumber) {
+          let classes: Userclasse={
+            coursenumber: value.coursenumber,
+            teacher: section.teacher,
+            coursetitle: title,
+            sectionnumber: value.sectionnumber
+          };
+          console.log(classes)
+          classlist.push(classes)
+          
+        }
+      });  
+    })
     console.log(classlist)
     return classlist;
   }
-  async getClass(courseNumber:string, sectionNumber:string){
-    const result= await Course.find({number: courseNumber})
-    const title= result[0].title
-    const sections= result[0].sections
-    let classes: Userclasse ;
-   
+
+  async getClass(courseNumber: string, sectionNumber: string) {
+    const result = await Course.find({ number: courseNumber })
+    const title = result[0].title
+    const sections = result[0].sections
+    let classes: Userclasse;
+
     sections.forEach(section => {
-      if(section.number == sectionNumber){
-        classes.coursenumber=courseNumber;
-        classes.teacher= section.teacher
-        classes.coursetitle=section.title
+      if (section.number == sectionNumber) {
+        classes.coursenumber = courseNumber;
+        classes.teacher = section.teacher
+        classes.coursetitle = section.title
       }
     });
     console.log(classes)
     return classes;
   }
+
+
   async getAllUsers() {
     const result = await User.find()
     console.log(result)
@@ -111,11 +106,11 @@ class DbMongoose {
   }
 }
 
-const f= new DbMongoose()
-// const semen1: Usersection[] =[{ coursenumber:"1234", sectionnumber:"weq2341"}, { coursenumber:"124", sectionnumber:"weq2341"}, { coursenumber:"12", sectionnumber:"weq2341"}]
+const f = new DbMongoose()
+// const semen1: Usersection[] =[{ coursenumber:"410-241-DW", sectionnumber:"00002"}, { coursenumber:"530-292-DW", sectionnumber:"00001"}, { coursenumber:"574-222-DW", sectionnumber:"00001"}]
 // f.addUser("Mike","mike2",["geo","math"],semen1)
 // f.getUserClassses2("Mike")
-// f.getClass("410-241-DW","00002")
+f.getUserClassses("Mike")
 
 export default new DbMongoose();
 
