@@ -48,49 +48,66 @@ class DbMongoose {
 
 
   async getUserClassses(nameUser: string) {
-    const result = await User.find({ name: nameUser })
-    const values = await result[0].sections
-    let classlist: Userclasse[] = []
+    try{
 
-    values.forEach(async function (value) {
-
-      const result = await Course.find({ number: value.coursenumber })
-      const title = result[0].title
-      const sections = result[0].sections
-      
-      sections.forEach(section => {
-        if (section.number == value.sectionnumber) {
-          let classes: Userclasse={
-            coursenumber: value.coursenumber,
-            teacher: section.teacher,
-            coursetitle: title,
-            sectionnumber: value.sectionnumber
-          };
-          console.log(classes)
-          classlist.push(classes)
-          
-        }
-      });  
-    })
-    console.log(classlist)
-    return classlist;
+      const result = await User.find({ name: nameUser })
+      const values = await result[0].sections
+     
+      let arrayclass: Userclasse[] =[];
+      let classlist=arrayclass;
+      const test = async()=>{
+        let arrayclass: Userclasse[] =[];
+        let classlist=arrayclass;
+        for( const x of values){
+          const result = await Course.find({ number: x.coursenumber });
+          const title = result[0].title;
+          const sections = result[0].sections;
+          let userclass: Userclasse;
+          sections.forEach(section => {
+            if (section.number == x.sectionnumber) {
+              let classes: Userclasse = {
+                coursenumber: x.coursenumber,
+                teacher: section.teacher,
+                coursetitle: title,
+                sectionnumber: x.sectionnumber
+              };
+              userclass = classes;
+              // console.log(classes)
+              classlist.push(classes);
+              console.log(classlist.length);
+  
+            }
+        });            
+      }
+     return classlist;
+    }
+      classlist=await test()
+      return classlist
+  }catch(err){
+      console.log(err)
+    }
   }
-
+ 
   async getClass(courseNumber: string, sectionNumber: string) {
     const result = await Course.find({ number: courseNumber })
     const title = result[0].title
     const sections = result[0].sections
-    let classes: Userclasse;
+    
 
     sections.forEach(section => {
       if (section.number == sectionNumber) {
-        classes.coursenumber = courseNumber;
-        classes.teacher = section.teacher
-        classes.coursetitle = section.title
+        let classes: Userclasse={
+          coursenumber: courseNumber,
+          teacher: section.teacher,
+          coursetitle: title,
+          sectionnumber: sectionNumber
+        };
+        console.log(classes) 
+        return classes;
       }
     });
-    console.log(classes)
-    return classes;
+   
+   
   }
 
 
@@ -110,7 +127,7 @@ const f = new DbMongoose()
 // const semen1: Usersection[] =[{ coursenumber:"410-241-DW", sectionnumber:"00002"}, { coursenumber:"530-292-DW", sectionnumber:"00001"}, { coursenumber:"574-222-DW", sectionnumber:"00001"}]
 // f.addUser("Mike","mike2",["geo","math"],semen1)
 // f.getUserClassses2("Mike")
-f.getUserClassses("Mike")
+// f.getUserClassses("Mike")
 
 export default new DbMongoose();
 
