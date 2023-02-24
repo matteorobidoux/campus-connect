@@ -1,384 +1,920 @@
 [
 	{
 		"title": "Civil Engineering Physics I",
+		"number": "203-912-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Andrew Stewart",
-				"schedule": "Tuesday10:00 AM - 12:00 PM7A.6ClassThursday10:00 AM - 12:00 PM7A.9Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "203-912-DW"
+		]
 	},
 	{
 		"title": "Construction II",
+		"number": "221-242-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Hussein Farhat",
-				"schedule": "Friday10:00 AM - 12:00 PM4A.5ClassFriday12:00 PM - 2:00 PM4A.5Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Stephen Hinton",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "221-242-DW"
+		]
 	},
 	{
 		"title": "Surveying II",
+		"number": "221-253-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Caroline Harvey",
-				"schedule": "Wednesday8:00 AM - 9:30 AM3E.6ClassWednesday10:30 AM - 1:30 PMONCAMPUSLab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "9:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "10:30 AM",
+						"end": "1:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Caroline Harvey",
-				"schedule": "Wednesday8:00 AM - 9:30 AM3E.6ClassWednesday1:30 PM - 4:30 PMONCAMPUSLab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "9:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00003",
+				"teacher": "Caroline Harvey",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "9:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "10:30 AM",
+						"end": "1:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00004",
+				"teacher": "Caroline Harvey",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "9:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "1:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "221-253-DW"
+		]
 	},
 	{
 		"title": "Soils I",
+		"number": "221-364-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Gloria Colaneri, Xiaolu Jade Lin",
-				"schedule": "Monday10:00 AM - 12:00 PM7B.6ClassMonday12:00 PM - 2:00 PM2F.13Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Gloria Colaneri, Xiaolu Jade Lin",
-				"schedule": "Monday10:00 AM - 12:00 PM7B.6ClassMonday2:00 PM - 4:00 PM2F.13Lab"
-			}
-		],
-		"number": "221-364-DW"
-	},
-	{
-		"title": "Civil Engineering Physics I",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Andrew Stewart",
-				"schedule": "Tuesday10:00 AM - 12:00 PM7A.6ClassThursday10:00 AM - 12:00 PM7A.9Lab"
-			}
-		],
-		"number": "203-912-DW"
-	},
-	{
-		"title": "Construction II",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Stephen Hinton",
-				"schedule": "Monday10:00 AM - 12:00 PM4A.2ClassMonday12:00 PM - 2:00 PM4A.14Lab"
-			}
-		],
-		"number": "221-242-DW"
-	},
-	{
-		"title": "Surveying II",
-		"sections": [
-			{
-				"section": "00003",
-				"teacher": "Caroline Harvey",
-				"schedule": "Friday8:00 AM - 9:30 AM4D.1ClassFriday10:30 AM - 1:30 PMONCAMPUSLab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
-				"section": "00004",
-				"teacher": "Caroline Harvey",
-				"schedule": "Friday8:00 AM - 9:30 AM4D.1ClassFriday1:30 PM - 4:30 PMONCAMPUSLab"
-			}
-		],
-		"number": "221-253-DW"
-	},
-	{
-		"title": "Soils I",
-		"sections": [
-			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Gloria Colaneri",
-				"schedule": "Thursday8:00 AM - 10:00 AM4H.6ClassThursday12:00 PM - 2:00 PM2F.13Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Gloria Colaneri",
-				"schedule": "Thursday8:00 AM - 10:00 AM4H.6ClassThursday2:00 PM - 4:00 PM2F.13Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "221-364-DW"
+		]
 	},
 	{
 		"title": "Estimating I",
+		"number": "221-444-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Gloria Colaneri",
-				"schedule": "Friday8:00 AM - 12:00 PM-2H.27Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Carmelo Curiale",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "221-444-DW"
+		]
 	},
 	{
 		"title": "Bituminous Mix",
+		"number": "221-462-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Hussein Farhat",
-				"schedule": "Tuesday8:00 AM - 10:00 AM3E.6ClassTuesday10:00 AM - 1:00 PM2F.13Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Hussein Farhat",
-				"schedule": "Tuesday8:00 AM - 10:00 AM3E.6ClassTuesday1:30 PM - 4:30 PM2F.13Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00003",
+				"teacher": "Hussein Farhat",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00004",
+				"teacher": "Hussein Farhat",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "221-462-DW"
+		]
 	},
 	{
 		"title": "Municipal Engineering II",
+		"number": "221-477-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Sofia Babarutsi",
-				"schedule": "Monday10:00 AM - 12:00 PM4D.2ClassMonday12:00 PM - 2:00 PM-2H.27Lab"
-			}
-		],
-		"number": "221-477-DW"
-	},
-	{
-		"title": "Structural Analysis",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Xiaolu Jade Lin",
-				"schedule": "Wednesday10:00 AM - 12:00 PM4A.2ClassWednesday12:00 PM - 2:00 PM-2H.27Lab"
-			}
-		],
-		"number": "221-481-DW"
-	},
-	{
-		"title": "Stage Preparation",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Gloria Colaneri",
-				"schedule": "Friday2:00 PM - 3:00 PM4D.1ClassFriday3:00 PM - 6:00 PM3E.10Lab"
-			}
-		],
-		"number": "221-491-DW"
-	},
-	{
-		"title": "Estimating I",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Carmelo Curiale",
-				"schedule": "Monday8:00 AM - 12:00 PM-2H.27Lab"
-			}
-		],
-		"number": "221-444-DW"
-	},
-	{
-		"title": "Bituminous Mix",
-		"sections": [
-			{
-				"section": "00003",
-				"teacher": "Hussein Farhat",
-				"schedule": "Wednesday8:00 AM - 10:00 AM4A.5ClassWednesday10:00 AM - 1:00 PM2F.13Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
-				"section": "00004",
-				"teacher": "Hussein Farhat",
-				"schedule": "Wednesday8:00 AM - 10:00 AM4A.5ClassWednesday1:30 PM - 4:30 PM2F.13Lab"
-			}
-		],
-		"number": "221-462-DW"
-	},
-	{
-		"title": "Municipal Engineering II",
-		"sections": [
-			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Sofia Babarutsi",
-				"schedule": "Thursday8:00 AM - 10:00 AM4A.3ClassThursday10:00 AM - 12:00 PM-2H.27Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "221-477-DW"
+		]
 	},
 	{
 		"title": "Structural Analysis",
+		"number": "221-481-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
 				"teacher": "Xiaolu Jade Lin",
-				"schedule": "Monday2:00 PM - 4:00 PM4A.3ClassMonday4:00 PM - 6:00 PM-2H.27Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Xiaolu Jade Lin",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "221-481-DW"
+		]
 	},
 	{
 		"title": "Stage Preparation",
+		"number": "221-491-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Gloria Colaneri",
-				"schedule": "Friday2:00 PM - 3:00 PM4D.1ClassFriday3:00 PM - 6:00 PM3E.10Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "221-491-DW"
+		]
 	},
 	{
 		"title": "Project Management II",
+		"number": "221-648-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Carmelo Curiale",
-				"schedule": "Wednesday12:00 PM - 2:00 PM4A.2ClassWednesday2:00 PM - 3:00 PM-2H.27Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Carmelo Curiale",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "3:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "221-648-DW"
+		]
 	},
 	{
 		"title": "Inspections",
+		"number": "221-649-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Carmelo Curiale",
-				"schedule": "Monday1:00 PM - 4:00 PM5D.1LabThursday8:00 AM - 10:00 AM4A.5Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "221-649-DW"
+		]
 	},
 	{
 		"title": "Roads II",
+		"number": "221-655-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Stephen Hinton",
-				"schedule": "Tuesday8:00 AM - 10:00 AM4A.14ClassTuesday2:00 PM - 4:00 PM-2H.27Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Stephen Hinton",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "221-655-DW"
+		]
 	},
 	{
 		"title": "Engineering and Environment",
+		"number": "221-674-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Sofia Babarutsi",
-				"schedule": "Friday8:00 AM - 10:00 AM4A.14ClassFriday12:00 PM - 2:00 PM2F.13Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Sofia Babarutsi",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "2:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "221-674-DW"
+		]
 	},
 	{
 		"title": "Building Systems",
+		"number": "221-677-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Sofia Babarutsi",
-				"schedule": "Wednesday8:00 AM - 10:00 AM4D.2ClassWednesday10:00 AM - 11:00 AM-2H.27Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Sofia Babarutsi",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "11:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "221-677-DW"
+		]
 	},
 	{
 		"title": "Steel Structures",
+		"number": "221-685-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Xiaolu Jade Lin",
-				"schedule": "Thursday10:00 AM - 12:00 PM4H.6ClassThursday2:00 PM - 4:00 PM-2H.27Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Xiaolu Jade Lin",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "221-685-DW"
+		]
 	},
 	{
 		"title": "Wood Structures",
+		"number": "221-686-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Alex Brisbois",
-				"schedule": "Friday10:00 AM - 11:00 AM4E.11ClassFriday2:00 PM - 4:00 PM-2H.27Lab"
-			}
-		],
-		"number": "221-686-DW"
-	},
-	{
-		"title": "Project Management II",
-		"sections": [
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
 			{
-				"section": "00002",
-				"teacher": "Carmelo Curiale",
-				"schedule": "Wednesday12:00 PM - 2:00 PM4A.2ClassWednesday3:00 PM - 4:00 PM-2H.27Lab"
-			}
-		],
-		"number": "221-648-DW"
-	},
-	{
-		"title": "Inspections",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Carmelo Curiale",
-				"schedule": "Monday1:00 PM - 4:00 PM5D.1LabThursday8:00 AM - 10:00 AM4A.5Class"
-			}
-		],
-		"number": "221-649-DW"
-	},
-	{
-		"title": "Roads II",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Stephen Hinton",
-				"schedule": "Tuesday8:00 AM - 10:00 AM4A.14ClassTuesday12:00 PM - 2:00 PM-2H.27Lab"
-			}
-		],
-		"number": "221-655-DW"
-	},
-	{
-		"title": "Engineering and Environment",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Sofia Babarutsi",
-				"schedule": "Friday8:00 AM - 10:00 AM4A.14ClassFriday2:30 PM - 4:30 PM2F.13Lab"
-			}
-		],
-		"number": "221-674-DW"
-	},
-	{
-		"title": "Building Systems",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Sofia Babarutsi",
-				"schedule": "Wednesday8:00 AM - 10:00 AM4D.2ClassWednesday11:00 AM - 12:00 PM-2H.27Lab"
-			}
-		],
-		"number": "221-677-DW"
-	},
-	{
-		"title": "Steel Structures",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Xiaolu Jade Lin",
-				"schedule": "Thursday10:00 AM - 12:00 PM4H.6ClassThursday4:00 PM - 6:00 PM-2H.27Lab"
-			}
-		],
-		"number": "221-685-DW"
-	},
-	{
-		"title": "Wood Structures",
-		"sections": [
-			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Alex Brisbois",
-				"schedule": "Friday10:00 AM - 11:00 AM4E.11ClassFriday12:00 PM - 2:00 PM-2H.27Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "221-686-DW"
+		]
 	}
 ]

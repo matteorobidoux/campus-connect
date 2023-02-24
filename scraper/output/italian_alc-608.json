@@ -1,62 +1,195 @@
 [
 	{
 		"title": "Italian 1",
+		"number": "608-111-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Nicola Martino",
-				"schedule": "Monday8:30 AM - 10:00 AM3E.3ClassWednesday8:30 AM - 10:00 AM3E.3Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Nicola Martino",
-				"schedule": "Wednesday1:00 PM - 2:30 PM3E.3ClassFriday1:00 PM - 2:30 PM3E.3Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Santina Montagano",
-				"schedule": "Tuesday1:00 PM - 2:30 PM3D.2ClassThursday1:00 PM - 2:30 PM3D.2Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
-		],
-		"number": "608-111-DW"
+		]
 	},
 	{
 		"title": "Italian Mother Tongue 1",
+		"number": "608-121-DW",
 		"sections": [
 			{
 				"title": "(FOR ITALIAN SPEAKERS)",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Giorgia Sottanelli",
-				"schedule": "Monday2:30 PM - 4:00 PM3D.2ClassWednesday2:30 PM - 4:00 PM3D.2Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
-		],
-		"number": "608-121-DW"
+		]
 	},
 	{
 		"title": "Italian 2",
+		"number": "608-211-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Nicola Martino",
-				"schedule": "Monday11:30 AM - 1:00 PM3E.3ClassThursday8:30 AM - 10:00 AM3E.3Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Giorgia Sottanelli",
-				"schedule": "Monday4:00 PM - 5:30 PM3D.2ClassWednesday4:00 PM - 5:30 PM3D.2Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
-		],
-		"number": "608-211-DW"
+		]
 	},
 	{
 		"title": "Italian 4",
+		"number": "608-411-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Santina Montagano",
-				"schedule": "Monday8:30 AM - 10:00 AM4D.6ClassWednesday8:30 AM - 10:00 AM4D.6Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
-		],
-		"number": "608-411-DW"
+		]
 	}
 ]

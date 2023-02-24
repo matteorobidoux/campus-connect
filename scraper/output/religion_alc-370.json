@@ -1,29 +1,86 @@
 [
 	{
 		"title": "Religion and Popular Culture",
+		"number": "370-215-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Sonia Zylberberg",
-				"schedule": "Monday1:00 PM - 2:30 PM4H.25ClassThursday10:00 AM - 11:30 AM4H.25Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
-		],
-		"number": "370-215-DW"
+		]
 	},
 	{
 		"title": "Cults and Culture",
+		"number": "370-917-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Johanne Rabbat",
-				"schedule": "Tuesday10:00 AM - 11:30 AM3E.9ClassFriday10:00 AM - 11:30 AM3E.9Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Johanne Rabbat",
-				"schedule": "Wednesday11:30 AM - 1:00 PM3E.9ClassFriday11:30 AM - 1:00 PM3E.9Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
-		],
-		"number": "370-917-DW"
+		]
 	}
 ]

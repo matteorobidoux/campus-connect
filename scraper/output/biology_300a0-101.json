@@ -1,33 +1,128 @@
 [
 	{
 		"title": "Human Biology",
+		"number": "101-921-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Man-Tze Mabel Chong",
-				"schedule": "Monday10:00 AM - 11:30 AM5A.14LabWednesday10:00 AM - 11:30 AM3E.9Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Richard Calvé",
-				"schedule": "Monday11:30 AM - 1:00 PM5A.14LabThursday10:00 AM - 11:30 AM4H.15Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Richard Calvé",
-				"schedule": "Monday1:00 PM - 2:30 PM5A.14LabThursday10:00 AM - 11:30 AM4H.15Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Annie-Hélène Samson",
-				"schedule": "Monday2:30 PM - 4:00 PM5A.14LabWednesday2:30 PM - 4:00 PM4G.2AClass"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Annie-Hélène Samson",
-				"schedule": "Monday4:00 PM - 5:30 PM5A.14LabWednesday2:30 PM - 4:00 PM4G.2AClass"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
-		],
-		"number": "101-921-DW"
+		]
 	}
 ]

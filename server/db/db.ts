@@ -6,10 +6,8 @@ import Course from "./models/course-schema";
 import Section from "./models/section-schema";
 import Usersection from "../../types/Usersection"
 import Userclasse from "../../types/Userclass"
-import fs = require('fs');
-import path = require("path");
-import * as config from "../../config.json"
-const dname = process.env.NAME || 'CampusConnect'
+// const dname = process.env.NAME || 'CampusConnect'
+const dname= process.env.NAME || 'test'
 
 class DbMongoose {
   constructor() {
@@ -111,8 +109,6 @@ class DbMongoose {
     console.log(result)
     return result;
   }
-
- 
 }
 
 const f= new DbMongoose()

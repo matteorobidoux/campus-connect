@@ -1,18 +1,56 @@
 [
 	{
 		"title": "Questions d'identite",
+		"number": "602-413-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Christian Paré",
-				"schedule": "Monday10:00 AM - 11:30 AM5D.6ClassWednesday10:00 AM - 11:30 AM5D.6Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Christian Paré",
-				"schedule": "Tuesday10:00 AM - 11:30 AM5D.6ClassFriday10:00 AM - 11:30 AM5D.6Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
-		],
-		"number": "602-413-DW"
+		]
 	}
 ]

@@ -1,59 +1,135 @@
 [
 	{
 		"title": "Research Methods",
+		"number": "300-300-DW",
 		"sections": [
 			{
-				"section": "00033",
+				"number": "00033",
 				"teacher": "Mark Beauchamp",
-				"schedule": "Tuesday4:00 PM - 6:00 PM3F.5ClassThursday4:00 PM - 6:00 PM3F.5Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "300-300-DW"
+		]
 	},
 	{
 		"title": "Third World History",
+		"number": "330-221-DW",
 		"sections": [
 			{
 				"title": "Colonization and Decolonization",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Diane Shea",
-				"schedule": "Monday10:00 AM - 11:30 AM3F.45ClassWednesday10:00 AM - 11:30 AM3F.5Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
-		],
-		"number": "330-221-DW"
+		]
 	},
 	{
 		"title": "Introduction to Politics",
+		"number": "385-101-DW",
 		"sections": [
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Vanessa Gordon",
-				"schedule": "Monday11:30 AM - 1:00 PM3F.3ClassThursday8:30 AM - 10:00 AM3F.3Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
-		],
-		"number": "385-101-DW"
+		]
 	},
 	{
 		"title": "Integrative Seminar",
+		"number": "300-308-DW",
 		"sections": [
 			{
 				"title": "North-South Field Trip: The Integration of Knowledge and Experience",
-				"section": "00021",
+				"number": "00021",
 				"teacher": "Gisela Frias",
-				"schedule": "Tuesday12:00 PM - 2:00 PM3H.21ClassThursday12:00 PM - 2:00 PM3H.21Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "300-308-DW"
+		]
 	},
 	{
 		"title": "Field Experience in a Developing Country",
+		"number": "360-321-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Sara Louise Kendall",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": []
 			}
-		],
-		"number": "360-321-DW"
+		]
 	}
 ]

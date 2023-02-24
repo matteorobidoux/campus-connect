@@ -1,50 +1,183 @@
 [
 	{
 		"title": "Introduction to Philosophy",
+		"number": "340-101-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Gerardo Mosquera",
-				"schedule": "Tuesday10:00 AM - 11:30 AM4F.4ClassFriday10:00 AM - 11:30 AM4F.4Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Brian Redekopp",
-				"schedule": "Monday11:30 AM - 1:00 PM4P.10ClassThursday8:30 AM - 10:00 AM4P.10Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Gerardo Mosquera",
-				"schedule": "Wednesday11:30 AM - 1:00 PM4F.4ClassFriday11:30 AM - 1:00 PM4F.4Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Gerardo Mosquera",
-				"schedule": "Monday2:30 PM - 4:00 PM4A.7ClassWednesday2:30 PM - 4:00 PM4A.7Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Jessica Lim",
-				"schedule": "Tuesday1:00 PM - 2:30 PM4D.17ClassThursday1:00 PM - 2:30 PM4D.17Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Sarah Allen",
-				"schedule": "Tuesday11:30 AM - 1:00 PM4F.4ClassThursday11:30 AM - 1:00 PM4F.4Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
-		],
-		"number": "340-101-DW"
+		]
 	},
 	{
 		"title": "Topics in Philosophy",
+		"number": "340-219-DW",
 		"sections": [
 			{
 				"title": "Poetic Justice",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Gerardo Mosquera",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
-		],
-		"number": "340-219-DW"
+		]
 	}
 ]
