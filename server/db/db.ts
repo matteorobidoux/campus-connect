@@ -48,17 +48,17 @@ class DbMongoose {
 
 
   async getUserClassses(nameUser: string) {
-    try{
+    try {
 
       const result = await User.find({ name: nameUser })
       const values = await result[0].sections
-     
-      let arrayclass: Userclasse[] =[];
-      let classlist=arrayclass;
-      const test = async()=>{
-        let arrayclass: Userclasse[] =[];
-        let classlist=arrayclass;
-        for( const x of values){
+
+      let arrayclass: Userclasse[] = [];
+      let classlist = arrayclass;
+      const test = async () => {
+        let arrayclass: Userclasse[] = [];
+        let classlist = arrayclass;
+        for (const x of values) {
           const result = await Course.find({ number: x.coursenumber });
           const title = result[0].title;
           const sections = result[0].sections;
@@ -75,39 +75,37 @@ class DbMongoose {
               // console.log(classes)
               classlist.push(classes);
               console.log(classlist.length);
-  
+
             }
-        });            
+          });
+        }
+        return classlist;
       }
-     return classlist;
-    }
-      classlist=await test()
+      classlist = await test()
       return classlist
-  }catch(err){
+    } catch (err) {
       console.log(err)
     }
   }
- 
+
+
+  //Experimental to keep My need to remove Later
   async getClass(courseNumber: string, sectionNumber: string) {
     const result = await Course.find({ number: courseNumber })
     const title = result[0].title
     const sections = result[0].sections
-    
-
     sections.forEach(section => {
       if (section.number == sectionNumber) {
-        let classes: Userclasse={
+        let classes: Userclasse = {
           coursenumber: courseNumber,
           teacher: section.teacher,
           coursetitle: title,
           sectionnumber: sectionNumber
         };
-        console.log(classes) 
+        console.log(classes)
         return classes;
       }
     });
-   
-   
   }
 
 
@@ -123,7 +121,9 @@ class DbMongoose {
   }
 }
 
-const f = new DbMongoose()
+
+//Keeping for Debugging
+// const f = new DbMongoose()
 // const semen1: Usersection[] =[{ coursenumber:"410-241-DW", sectionnumber:"00002"}, { coursenumber:"530-292-DW", sectionnumber:"00001"}, { coursenumber:"574-222-DW", sectionnumber:"00001"}]
 // f.addUser("Mike","mike2",["geo","math"],semen1)
 // f.getUserClassses2("Mike")
