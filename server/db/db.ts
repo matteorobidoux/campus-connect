@@ -47,12 +47,12 @@ class DbMongoose {
   // }
 
 
+  //Get all the classes for the user
   async getUserClassses(nameUser: string) {
     try {
 
       const result = await User.find({ name: nameUser })
       const values = await result[0].sections
-
       let arrayclass: Userclasse[] = [];
       let classlist = arrayclass;
       const test = async () => {
@@ -69,13 +69,11 @@ class DbMongoose {
                 coursenumber: x.coursenumber,
                 teacher: section.teacher,
                 coursetitle: title,
-                sectionnumber: x.sectionnumber
+                sectionnumber: x.sectionnumber,
+                classevents: section.events
               };
               userclass = classes;
-              // console.log(classes)
               classlist.push(classes);
-              console.log(classlist.length);
-
             }
           });
         }
@@ -100,14 +98,14 @@ class DbMongoose {
           coursenumber: courseNumber,
           teacher: section.teacher,
           coursetitle: title,
-          sectionnumber: sectionNumber
+          sectionnumber: sectionNumber,
+          classevents: section.events
         };
         console.log(classes)
         return classes;
       }
     });
   }
-
 
   async getAllUsers() {
     const result = await User.find()
