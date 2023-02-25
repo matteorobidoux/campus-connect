@@ -47,7 +47,7 @@ class DbMongoose {
   // }
 
 
-  //Get all the classes for the user
+  //Get all the classes for the user based on user Name
   async getUserClassses(nameUser: string) {
     try {
 
@@ -107,25 +107,19 @@ class DbMongoose {
     });
   }
 
+  //Get All Users
   async getAllUsers() {
     const result = await User.find()
     console.log(result)
     return result;
   }
+  //Get all Events
   async getAllEvents() {
     const result = await Event.find()
     console.log(result)
     return result;
   }
 }
-
-
-//Keeping for Debugging
-// const f = new DbMongoose()
-// const semen1: Usersection[] =[{ coursenumber:"410-241-DW", sectionnumber:"00002"}, { coursenumber:"530-292-DW", sectionnumber:"00001"}, { coursenumber:"574-222-DW", sectionnumber:"00001"}]
-// f.addUser("Mike","mike2",["geo","math"],semen1)
-// f.getUserClassses2("Mike")
-// f.getUserClassses("Mike")
 
 export default new DbMongoose();
 

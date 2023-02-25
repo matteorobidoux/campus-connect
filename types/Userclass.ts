@@ -5,7 +5,7 @@ type Userclass = {
   teacher: string;
   coursetitle: string;
   sectionnumber: string;
-  classevent: Events[]
+  classevents: Events[]
 }
 
 export default Userclass;
