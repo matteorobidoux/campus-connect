@@ -3,9 +3,8 @@ import mongoose from 'mongoose';
 import User from "./models/user-schema"
 import Event from './models/event-schema';
 import Course from "./models/course-schema";
-import Section from "./models/section-schema";
-import Usersection from "../../types/Usersection"
-import Userclasse from "../../types/Userclass"
+import Usersection from "../../../types/Usersection"
+import UserClass from "../../../types/Userclass"
 // const dname = process.env.NAME || 'CampusConnect'
 const dname = process.env.NAME || 'CampusConnect'
 
@@ -47,32 +46,30 @@ class DbMongoose {
   // }
 
 
-  //Get all the classes for the user based on user Name
+  //Get all the classes for the user based on UserName
   async getUserClassses(nameUser: string) {
     try {
 
       const result = await User.find({ name: nameUser })
-      const values = await result[0].sections
-      let arrayclass: Userclasse[] = [];
+      const values = result[0].sections
+      let arrayclass: UserClass[] = [];
       let classlist = arrayclass;
       const test = async () => {
-        let arrayclass: Userclasse[] = [];
+        let arrayclass: UserClass[] = [];
         let classlist = arrayclass;
         for (const x of values) {
           const result = await Course.find({ number: x.coursenumber });
           const title = result[0].title;
           const sections = result[0].sections;
-          let userclass: Userclasse;
           sections.forEach(section => {
             if (section.number == x.sectionnumber) {
-              let classes: Userclasse = {
+              let classes: UserClass = {
                 coursenumber: x.coursenumber,
                 teacher: section.teacher,
                 coursetitle: title,
                 sectionnumber: x.sectionnumber,
                 classevents: section.events
               };
-              userclass = classes;
               classlist.push(classes);
             }
           });
@@ -94,7 +91,7 @@ class DbMongoose {
     const sections = result[0].sections
     sections.forEach(section => {
       if (section.number == sectionNumber) {
-        let classes: Userclasse = {
+        let classes: UserClass = {
           coursenumber: courseNumber,
           teacher: section.teacher,
           coursetitle: title,

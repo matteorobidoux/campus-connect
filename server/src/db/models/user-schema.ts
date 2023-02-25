@@ -1,12 +1,12 @@
 import mongoose from 'mongoose';
 const { Schema, model } = mongoose;
-import usersection from './usersection';
+import UserSection from './usersection';
 
 const userSchema = new Schema({
   name: String,
   password: String,
-  classes:[String],
-  sections:[usersection]
+  classes: [String],
+  sections: [UserSection]
 }, { collection: "users" });
 
 const User = model('User', userSchema);

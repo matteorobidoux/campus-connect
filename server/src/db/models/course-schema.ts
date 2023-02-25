@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 import Section from './section-schema';
-import Courses from '../../../types/Course'
+import Courses from '../../../../types/Course'
 
 const {Schema, model} = mongoose;
 
