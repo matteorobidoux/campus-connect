@@ -1,5 +1,29 @@
-import { useQuery } from "react-query";
+import axios from "axios";
+import { useMutation, useQuery } from "react-query";
 import CalendarEvents from "../../../types/Calendar"
+import GetAllCoursesResponse from "../../../types/Queries/GetAllCourses"
+import CreateUserBodyParams from "../../../types/Queries/CreateUser"
+
+export const useGetAllCourses = () => {
+  async function queryFunction() {
+    const fetch = await axios.get<GetAllCoursesResponse>('/api/allCourses');
+    return fetch.data;
+  } 
+
+  return useQuery<GetAllCoursesResponse>('allClasses', queryFunction, {staleTime: Infinity});
+}
+
+export const useAddUserMutataion = () => {
+  async function addUser(body: CreateUserBodyParams) {
+    const resp = await axios.post('/api/addUser', body);
+    return resp.data;
+  }
+
+  return useMutation<unknown, unknown, CreateUserBodyParams>({
+    mutationFn: (data) => addUser(data),
+    onSuccess: (data) => console.log(data)
+  })
+}
 
 export const useCalendarEvents = () => {
   async function getCalendarEvents() {
