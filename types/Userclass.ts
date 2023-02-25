@@ -1,11 +1,11 @@
 import Events from "./Eventsection";
 
 type Userclass = {
-  coursenumber: string;
+  courseNumber: string;
   teacher: string;
-  coursetitle: string;
-  sectionnumber: string;
-  classevents: Events[]
+  courseTitle: string;
+  sectionNumber: string;
+  classEvents: Events[]
 }
 
 export default Userclass;

@@ -29,16 +29,16 @@ class DbMongoose {
 
 
   async addUser({nameUser, passwd, classes, sectionsuser}: CreateUserBodyParams): Promise<string> {
-    const usermodel = new User({ name: nameUser, password: passwd, classes: classes, sections: sectionsuser })
-    console.log(usermodel)
-    const resp = await usermodel.save();
+    const userModel = new User({ name: nameUser, password: passwd, classes: classes, sections: sectionsuser })
+    console.log(userModel)
+    const resp = await userModel.save();
     return resp.id!
   }
 
   async addEvent(id: string, date: Date, title: string, desc: string, sectionName: string) {
-    const eventmodel = new Event({ id: id, date: date, title: title, desc: desc, associatedSection: { name: sectionName } })
-    console.log(eventmodel)
-    await eventmodel.save();
+    const eventModel = new Event({ id: id, date: date, title: title, desc: desc, associatedSection: { name: sectionName } })
+    console.log(eventModel)
+    await eventModel.save();
   }
 
   // async addUsertoSection(coursenumb:string) {
@@ -55,32 +55,32 @@ class DbMongoose {
 
       const result = await User.find({ name: nameUser })
       const values = result[0].sections
-      let arrayclass: UserClass[] = [];
-      let classlist = arrayclass;
+      let arrayClass: UserClass[] = [];
+      let classList = arrayClass;
       const test = async () => {
-        let arrayclass: UserClass[] = [];
-        let classlist = arrayclass;
+        let arrayClass: UserClass[] = [];
+        let classList = arrayClass;
         for (const x of values) {
-          const result = await Course.find({ number: x.coursenumber });
+          const result = await Course.find({ number: x.courseNumber });
           const title = result[0].title;
           const sections = result[0].sections;
           sections.forEach(section => {
-            if (section.number == x.sectionnumber) {
+            if (section.number == x.sectionNumber) {
               let classes: UserClass = {
-                coursenumber: x.coursenumber,
+                courseNumber: x.courseNumber,
                 teacher: section.teacher,
-                coursetitle: title,
-                sectionnumber: x.sectionnumber,
-                classevents: section.events
+                courseTitle: title,
+                sectionNumber: x.sectionNumber,
+                classEvents: section.events
               };
-              classlist.push(classes);
+              classList.push(classes);
             }
           });
         }
-        return classlist;
+        return classList;
       }
-      classlist = await test()
-      return classlist
+      classList = await test()
+      return classList
     } catch (err) {
       console.log(err)
     }
@@ -95,11 +95,11 @@ class DbMongoose {
     sections.forEach(section => {
       if (section.number == sectionNumber) {
         let classes: UserClass = {
-          coursenumber: courseNumber,
+          courseNumber: courseNumber,
           teacher: section.teacher,
-          coursetitle: title,
-          sectionnumber: sectionNumber,
-          classevents: section.events
+          courseTitle: title,
+          sectionNumber: sectionNumber,
+          classEvents: section.events
         };
         console.log(classes)
         return classes;
