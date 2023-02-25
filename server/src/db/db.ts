@@ -3,8 +3,11 @@ import mongoose from 'mongoose';
 import User from "./models/user-schema"
 import Event from './models/event-schema';
 import Course from "./models/course-schema";
-import Usersection from "../../../types/Usersection"
+import UserSection from "../../../types/Usersection"
 import UserClass from "../../../types/Userclass"
+import GetAllCoursesResponse from "../../../types/Queries/GetAllCourses"
+import CreateUserBodyParams from "../../../types/Queries/CreateUser";
+//
 // const dname = process.env.NAME || 'CampusConnect'
 const dname = process.env.NAME || 'CampusConnect'
 
@@ -25,11 +28,11 @@ class DbMongoose {
   }
 
 
-  async addUser(nameUser: string, passwd: string, classes: string[], sectionsuser: Usersection[]) {
+  async addUser({nameUser, passwd, classes, sectionsuser}: CreateUserBodyParams): Promise<string> {
     const usermodel = new User({ name: nameUser, password: passwd, classes: classes, sections: sectionsuser })
     console.log(usermodel)
-    await usermodel.save();
-
+    const resp = await usermodel.save();
+    return resp.id!
   }
 
   async addEvent(id: string, date: Date, title: string, desc: string, sectionName: string) {
@@ -116,10 +119,20 @@ class DbMongoose {
     console.log(result)
     return result;
   }
+
+  async getAllCourses(): Promise<GetAllCoursesResponse> {
+    const mongoResp = await Course.find();
+    const result = mongoResp.map(r => ({
+      title: r.title,
+      sections: r.sections.map(s => ({teacher: s.teacher, number: s.number})),
+      id: r.id as string,
+    }))
+
+    console.log(result);
+
+    return result;
+  }
+
 }
 
 export default new DbMongoose();
-
-
-
-
