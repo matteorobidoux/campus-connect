@@ -7,13 +7,51 @@
 				"title": "Chinese 1",
 				"number": "00001",
 				"teacher": "Joy Cheng Yu Lin",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Chinese 1",
 				"number": "00002",
 				"teacher": "Joy Cheng Yu Lin",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -25,7 +63,26 @@
 				"title": "German 1",
 				"number": "00001",
 				"teacher": "Marie-France Lemay",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -37,7 +94,26 @@
 				"title": "Greek 1",
 				"number": "00001",
 				"teacher": "Irene Tourkomanoli",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -49,7 +125,26 @@
 				"title": "Hebrew 1",
 				"number": "00001",
 				"teacher": "Leila Roiter",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -61,43 +156,176 @@
 				"title": "Italian 1",
 				"number": "00001",
 				"teacher": "Nicola Martino",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Italian 1",
 				"number": "00002",
 				"teacher": "Nicola Martino",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Italian 1",
 				"number": "00003",
 				"teacher": "Santina Montagano",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Italian 1",
 				"number": "00004",
 				"teacher": "Nicola Martino",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Italian 1",
 				"number": "00005",
 				"teacher": "Santina Montagano",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Italian 1",
 				"number": "00006",
 				"teacher": "Santina Montagano",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Italian Mother Tongue 1 (FOR ITALIAN SPEAKERS)",
 				"number": "00007",
 				"teacher": "Giorgia Sottanelli",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -109,73 +337,301 @@
 				"title": "Spanish 1",
 				"number": "00001",
 				"teacher": "Christina Chough",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Spanish 1",
 				"number": "00002",
 				"teacher": "Nelly Muresan",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Spanish 1",
 				"number": "00003",
 				"teacher": "Maria Fernanda Benavides",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Spanish 1",
 				"number": "00004",
 				"teacher": "Maria-Elena Grijalva-Barba",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Spanish 1",
 				"number": "00005",
 				"teacher": "Maria-Elena Grijalva-Barba",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Spanish 1",
 				"number": "00006",
 				"teacher": "Christina Chough",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Spanish 1",
 				"number": "00007",
 				"teacher": "Nelly Muresan",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Spanish 1",
 				"number": "00008",
 				"teacher": "Maria Fernanda Benavides",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Spanish 1",
 				"number": "00009",
 				"teacher": "Maria Fernanda Benavides",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Spanish 1",
 				"number": "00010",
 				"teacher": "Francisco Goire",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Spanish 1",
 				"number": "00011",
 				"teacher": "Maria-Elena Grijalva-Barba",
-				"schedule": "Tuesday10:00 AM - 11:30 AM3E.3ClassFriday10:00 AM - 11:30 AM3E.3Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"title": "Spanish 1",
 				"number": "00012",
 				"teacher": "Francisco Goire",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	}

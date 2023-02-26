@@ -6,7 +6,26 @@
 			{
 				"number": "00001",
 				"teacher": "Irene Tourkomanoli",
-				"schedule": "Tuesday2:30 PM - 4:00 PM3D.2ClassThursday2:30 PM - 4:00 PM3D.2Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -17,7 +36,26 @@
 			{
 				"number": "00001",
 				"teacher": "Irene Tourkomanoli",
-				"schedule": "Tuesday4:00 PM - 5:30 PM3D.2ClassThursday4:00 PM - 5:30 PM3D.2Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	}

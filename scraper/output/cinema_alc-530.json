@@ -6,7 +6,17 @@
 			{
 				"number": "00001",
 				"teacher": "Jesse Hunter",
-				"schedule": "Tuesday10:00 AM - 2:00 PM3B.13Class"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -17,27 +27,77 @@
 			{
 				"number": "00001",
 				"teacher": "Magdalena Olszanowski",
-				"schedule": "Tuesday8:30 AM - 11:30 AM4C.8Class"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "George Alexander Milton",
-				"schedule": "Tuesday2:30 PM - 5:30 PM4C.8Class"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00003",
 				"teacher": "Sarah Del Seronde",
-				"schedule": "Friday11:30 AM - 2:30 PM4C.8Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00004",
 				"teacher": "Sarah Del Seronde",
-				"schedule": "Thursday2:30 PM - 5:30 PM4C.8Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00005",
 				"teacher": "George Alexander Milton",
-				"schedule": "Wednesday11:30 AM - 2:30 PM4C.8Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -48,7 +108,17 @@
 			{
 				"number": "00001",
 				"teacher": "Myriam Rafla",
-				"schedule": "Monday11:30 AM - 2:30 PM3B.6Class"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -59,7 +129,17 @@
 			{
 				"number": "00001",
 				"teacher": "Jesse Hunter",
-				"schedule": "Thursday10:00 AM - 2:00 PM3B.13Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -70,27 +150,77 @@
 			{
 				"number": "00001",
 				"teacher": "Justine McLellan",
-				"schedule": "Tuesday2:00 PM - 6:00 PM3B.1Class"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Myriam Rafla",
-				"schedule": "Thursday2:00 PM - 6:00 PM3B.1Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00003",
 				"teacher": "Reisa Levine",
-				"schedule": "Wednesday10:00 AM - 2:00 PM3B.1Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00004",
 				"teacher": "George Alexander Milton",
-				"schedule": "Monday10:00 AM - 2:00 PM3B.1Class"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00005",
 				"teacher": "Stephane Calce",
-				"schedule": "Friday2:00 PM - 6:00 PM3B.1Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -101,27 +231,77 @@
 			{
 				"number": "00001",
 				"teacher": "Terryll Loffler",
-				"schedule": "Friday10:00 AM - 2:00 PM3B.1Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "George Alexander Milton",
-				"schedule": "Thursday10:00 AM - 2:00 PM3B.1Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00003",
 				"teacher": "Jesse Klein",
-				"schedule": "Tuesday10:00 AM - 2:00 PM3B.1Class"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00004",
 				"teacher": "Sarah Del Seronde",
-				"schedule": "Wednesday10:00 AM - 2:00 PM3B.6Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00005",
 				"teacher": "Stephane Calce",
-				"schedule": "Monday2:00 PM - 6:00 PM3B.1Class"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -132,7 +312,17 @@
 			{
 				"number": "00001",
 				"teacher": "Justine McLellan",
-				"schedule": "Friday11:30 AM - 2:30 PM3B.13Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -143,22 +333,62 @@
 			{
 				"number": "00001",
 				"teacher": "Dipti Gupta",
-				"schedule": "Thursday11:30 AM - 2:30 PM4C.8Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Reisa Levine",
-				"schedule": "Friday11:30 AM - 2:30 PM4C.4Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00003",
 				"teacher": "Jesse Klein",
-				"schedule": "Monday8:30 AM - 11:30 AM3B.13Class"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00004",
 				"teacher": "Jesse Klein",
-				"schedule": "Thursday8:30 AM - 11:30 AM4C.4Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -169,7 +399,17 @@
 			{
 				"number": "00001",
 				"teacher": "Michael Filtz",
-				"schedule": "Monday8:30 AM - 11:30 AM3B.6Class"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -180,17 +420,47 @@
 			{
 				"number": "00001",
 				"teacher": "Terryll Loffler",
-				"schedule": "Monday2:30 PM - 5:30 PM3B.6Class"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Terryll Loffler",
-				"schedule": "Wednesday2:30 PM - 5:30 PM3B.1Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00003",
 				"teacher": "Reisa Levine",
-				"schedule": "Thursday11:30 AM - 2:30 PM3B.6Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -201,12 +471,32 @@
 			{
 				"number": "00001",
 				"teacher": "Michael Filtz",
-				"schedule": "Wednesday8:30 AM - 11:30 AM4C.4Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Michael Filtz",
-				"schedule": "Wednesday2:30 PM - 5:30 PM4C.4Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -217,12 +507,32 @@
 			{
 				"number": "00001",
 				"teacher": "Justine McLellan",
-				"schedule": "Tuesday8:30 AM - 11:30 AM4C.4Class"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Justine McLellan",
-				"schedule": "Thursday8:30 AM - 11:30 AM4C.8Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -233,7 +543,17 @@
 			{
 				"number": "00001",
 				"teacher": "Terryll Loffler",
-				"schedule": "Tuesday11:30 AM - 2:30 PM4C.4Class"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -244,7 +564,17 @@
 			{
 				"number": "00001",
 				"teacher": "Dipti Gupta",
-				"schedule": "Wednesday2:30 PM - 5:30 PM3B.6Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	}
