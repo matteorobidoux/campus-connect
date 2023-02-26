@@ -1,9 +1,9 @@
 import Section from "./Section";
 
-type Course = {
+export type Course = {
   title: string;
   number: string;
   sections: Section[];
 }
 
-export default Course;
+export type ColoredCourse = Course & { color: string }
