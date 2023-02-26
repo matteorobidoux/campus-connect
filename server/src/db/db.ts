@@ -61,17 +61,17 @@ class DbMongoose {
         let arrayClass: UserClass[] = [];
         let classList = arrayClass;
         for (const x of values) {
-          const result = await Course.find({ number: x.courseNumber });
+          const result = await Course.find({ number: x.coursenumber });
           const title = result[0].title;
           const sections = result[0].sections;
           sections.forEach(section => {
-            if (section.number == x.sectionNumber) {
+            if (section.number == x.sectionnumber) {
               let classes: UserClass = {
-                courseNumber: x.courseNumber,
+                coursenumber: x.coursenumber,
                 teacher: section.teacher,
-                courseTitle: title,
-                sectionNumber: x.sectionNumber,
-                classEvents: section.events
+                coursetitle: title,
+                sectionnumber: x.sectionnumber,
+                classevents: section.events
               };
               classList.push(classes);
             }
@@ -95,11 +95,11 @@ class DbMongoose {
     sections.forEach(section => {
       if (section.number == sectionNumber) {
         let classes: UserClass = {
-          courseNumber: courseNumber,
+          coursenumber: courseNumber,
           teacher: section.teacher,
-          courseTitle: title,
-          sectionNumber: sectionNumber,
-          classEvents: section.events
+          coursetitle: title,
+          sectionnumber: sectionNumber,
+          classevents: section.events
         };
         console.log(classes)
         return classes;

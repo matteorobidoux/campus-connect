@@ -1,6 +1,6 @@
 type Usersection = {
-  courseNumber: string;
-  sectionNumber: string;
+  coursenumber: string;
+  sectionnumber: string;
 }
 
 export default Usersection;
