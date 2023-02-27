@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import CalendarEvent from "../../../../types/Calendar";
 import Calendar from "../Calendar";
 import CalendarEventRow from "../CalendarEntry";
@@ -8,7 +8,7 @@ import styles from "./CalendarWidget.module.scss";
 export interface CalendarWidgetProps {
 }
 
-const months = ["January", "February", "March", "April", "May"];
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 export function CalendarWidget({}: CalendarWidgetProps) {
   const [events, setEvents] = useState<CalendarEvent[]>([])
