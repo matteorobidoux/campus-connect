@@ -7,6 +7,7 @@ variables:
     APP_NAME: "campus-connects-test"
     WEBSITE_RUN_FROM_PACKAGE: 1
     ATLAS_URI: "mongodb+srv://nenechi:nenechi12@exercise11.cfvsryo.mongodb.net/?retryWrites=true&w=majority"
+    
 
 image: node:latest
 
