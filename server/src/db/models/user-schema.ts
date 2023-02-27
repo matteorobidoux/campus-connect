@@ -1,13 +1,14 @@
 import mongoose from 'mongoose';
-const { Schema, model } = mongoose;
-import UserSection from './usersection';
+import { userClassSectionSchema } from './user-section-schema';
+import { User } from "../../../../types/User";
 
-const userSchema = new Schema({
+const { Schema, model } = mongoose;
+
+const userSchema = new Schema<User>({
   name: String,
   password: String,
-  classes: [String],
-  sections: [UserSection]
+  sections: [userClassSectionSchema]
 }, { collection: "users" });
 
-const User = model('User', userSchema);
-export default User;
+const userModel = model('User', userSchema);
+export default userModel;

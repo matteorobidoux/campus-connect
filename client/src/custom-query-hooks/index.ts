@@ -1,16 +1,16 @@
 import axios from "axios";
 import { useMutation, useQuery } from "react-query";
 import CalendarEvents from "../../../types/Calendar"
-import GetAllCoursesResponse from "../../../types/Queries/GetAllCourses"
+import { GetAllSectionsRequest, GetAllSectionsResponse} from "../../../types/Queries/GetAllCourses"
 import CreateUserBodyParams from "../../../types/Queries/CreateUser"
 
-export const useGetAllCourses = () => {
-  async function queryFunction() {
-    const fetch = await axios.get<GetAllCoursesResponse>('/api/allCourses');
-    return fetch.data;
+export const useGetAllCourses = (classes: GetAllSectionsRequest) => {
+  async function queryFunction(params: GetAllSectionsRequest) {
+    const data = await axios.get<GetAllSectionsResponse>('/api/getAllSections', {params});
+    return data.data;
   } 
 
-  return useQuery<GetAllCoursesResponse>('allClasses', queryFunction, {staleTime: Infinity});
+  return useQuery<GetAllSectionsResponse>(['getAllCourses', classes], () => queryFunction(classes), {staleTime: Infinity});
 }
 
 export const useAddUserMutataion = () => {

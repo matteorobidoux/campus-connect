@@ -1,10 +1,9 @@
-import UserSection from "../Usersection"
+import {UserClassSection} from "../UserClassSection"
 
 type CreateUserBodyParams = {
-  nameUser: string,
-  passwd: string,
-  classes: string[],
-  sectionsuser: UserSection[]
+  name: string,
+  password: string,
+  sections: UserClassSection[]
 }
 
 export default CreateUserBodyParams;

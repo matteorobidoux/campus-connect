@@ -1,5 +1,3 @@
-import { randomUUID } from "crypto";
-import { useMutation } from "react-query"
 import { useAddUserMutataion } from "../../custom-query-hooks"
 import styles from "./MainSidebar.module.scss"
 
@@ -9,10 +7,9 @@ export default function MainSidebar() {
   const onSubmit = () => {
 
     addUser.mutate({
-      sectionsuser: [{coursenumber: "530-292-DW", sectionnumber: "00001"}],
-      classes: [], // TODO remove this
-      nameUser: "testUser",
-      passwd: "testPasswd"
+      sections: [{courseNumber: "530-292-DW", sectionNumber: "00001"}],
+      name: "testUser",
+      password: "testPasswd",
     })
 
   }

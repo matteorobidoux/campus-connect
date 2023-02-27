@@ -1,4 +1,5 @@
-type GetAllCoursesResponse = {
+import { UserClassSection } from "../UserClassSection";
+type GetAllSectionsResponse = {
   title: string;
   sections: {
     teacher: string;
@@ -7,4 +8,8 @@ type GetAllCoursesResponse = {
   id: string;
 }[]
 
-export default GetAllCoursesResponse;
+type GetAllSectionsRequest = {
+  userClassSections: UserClassSection[]
+}
+
+export {GetAllSectionsRequest, GetAllSectionsResponse} ;

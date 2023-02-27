@@ -3,11 +3,13 @@ import mongoose from 'mongoose';
 import User from "./models/user-schema"
 import Event from './models/event-schema';
 import Course from "./models/course-schema";
-import UserSection from "../../../types/Usersection"
-import UserClass from "../../../types/Userclass"
-import GetAllCoursesResponse from "../../../types/Queries/GetAllCourses"
+import UserClass from "../../../types/UserClass"
 import CreateUserBodyParams from "../../../types/Queries/CreateUser";
-//
+import { UserClassSection } from "../../../types/UserClassSection"
+import { GetAllSectionsResponse } from "../../../types/Queries/GetAllCourses"
+import { LoginRequest, LoginResponse } from "../../../types/Queries/Login";
+import userModel from './models/user-schema';
+
 // const dname = process.env.NAME || 'CampusConnect'
 const dname = process.env.NAME || 'CampusConnect'
 
@@ -27,9 +29,19 @@ class DbMongoose {
     mongoose.connection.close()
   }
 
+  async login({name, password}: LoginRequest): Promise<LoginResponse> {
+    const user = await userModel.findOne({name: name, password: password});
 
-  async addUser({nameUser, passwd, classes, sectionsuser}: CreateUserBodyParams): Promise<string> {
-    const userModel = new User({ name: nameUser, password: passwd, classes: classes, sections: sectionsuser })
+    if (user) {
+      return { data: user };
+    } else {
+      return { data: null };
+    }
+
+  }
+
+  async addUser({name, password, sections}: CreateUserBodyParams): Promise<string> {
+    const userModel = new User({ name, password, sections })
     console.log(userModel)
     const resp = await userModel.save();
     return resp.id!
@@ -49,62 +61,18 @@ class DbMongoose {
   // }
 
 
-  //Get all the classes for the user based on UserName
-  async getUserClassses(nameUser: string) {
-    try {
-
-      const result = await User.find({ name: nameUser })
-      const values = result[0].sections
-      let arrayClass: UserClass[] = [];
-      let classList = arrayClass;
-      const test = async () => {
-        let arrayClass: UserClass[] = [];
-        let classList = arrayClass;
-        for (const x of values) {
-          const result = await Course.find({ number: x.coursenumber });
-          const title = result[0].title;
-          const sections = result[0].sections;
-          sections.forEach(section => {
-            if (section.number == x.sectionnumber) {
-              let classes: UserClass = {
-                coursenumber: x.coursenumber,
-                teacher: section.teacher,
-                coursetitle: title,
-                sectionnumber: x.sectionnumber,
-                classevents: section.events
-              };
-              classList.push(classes);
-            }
-          });
-        }
-        return classList;
-      }
-      classList = await test()
-      return classList
-    } catch (err) {
-      console.log(err)
-    }
-  }
-
-
-  //Experimental to keep My need to remove Later
-  async getClass(courseNumber: string, sectionNumber: string) {
-    const result = await Course.find({ number: courseNumber })
-    const title = result[0].title
-    const sections = result[0].sections
-    sections.forEach(section => {
-      if (section.number == sectionNumber) {
-        let classes: UserClass = {
-          coursenumber: courseNumber,
-          teacher: section.teacher,
-          coursetitle: title,
-          sectionnumber: sectionNumber,
-          classevents: section.events
-        };
-        console.log(classes)
-        return classes;
+  async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
+    const courses = userSections.map(async userCourse=> {
+      const course = (await Course.findOne({ number: userCourse.courseNumber }))!.toObject();
+      const section = course.sections.find(fullSection => fullSection.number == userCourse.sectionNumber)!;
+      return {
+          ...section,
+          courseNumber: course.number,
+          courseTitle: course.title,
       }
     });
+
+    return await Promise.all(courses);
   }
 
   //Get All Users
@@ -120,7 +88,7 @@ class DbMongoose {
     return result;
   }
 
-  async getAllCourses(): Promise<GetAllCoursesResponse> {
+  async getAllSections(): Promise<GetAllSectionsResponse> {
     const mongoResp = await Course.find();
     const result = mongoResp.map(r => ({
       title: r.title,

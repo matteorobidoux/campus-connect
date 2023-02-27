@@ -4,7 +4,12 @@ import { useEffect } from "react";
 import { useGetAllCourses } from "../../custom-query-hooks";
 
 export default function Main() {
-  const query = useGetAllCourses();
+  const query = useGetAllCourses({userClassSections: [
+    {
+      courseNumber: "574-251-DW",
+      sectionNumber: "00001",
+    }
+  ]});
 
   useEffect(() => {
     console.log(query.data)
