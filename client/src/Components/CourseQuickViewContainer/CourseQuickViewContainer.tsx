@@ -13,9 +13,7 @@ export default function CourseQuickViewContainer(props: CourseQuickViewContainer
 				{
 					props.courses.map((course, key) => {
 						return (
-							<div key={key}>
-								<CourseQuickView color={course.color} title={course.title} number={course.number} sections={course.sections} />
-							</div>
+							<CourseQuickView key={key} color={course.color} title={course.title} number={course.number} sections={course.sections} />
 						)
 					})
 				}

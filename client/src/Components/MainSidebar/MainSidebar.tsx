@@ -78,8 +78,6 @@ export default function MainSidebar() {
     <>
       <div className={styles["main-sidebar-container"]}>
         <div className={[styles["sidebar-section"], styles["links"]].join(" ")}>
-          <h2>Classes</h2>
-          <h2>GroupChats</h2>
           <h2>Bookstore</h2>
           <h2>Calendar</h2>
         </div>
