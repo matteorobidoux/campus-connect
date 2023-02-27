@@ -1,8 +1,7 @@
 import mongoose from 'mongoose';
-import Slot from './slot-schema';
-import Sections from '../../../types/Section'
-import Schedule from '../../../types/Schedule'
-import Events from '../../../types/Eventsection';
+import Sections from '../../../../types/Section'
+import Schedule from '../../../../types/Schedule'
+import Events from '../../../../types/Event';
 const {Schema, model} = mongoose;
 
 const sectionSchema = new Schema<Sections>({

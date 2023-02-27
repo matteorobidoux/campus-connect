@@ -1,3 +1,4 @@
+import Event from "../../../../types/Event";
 import mongoose from 'mongoose';
 const { Schema, model } = mongoose;
 
