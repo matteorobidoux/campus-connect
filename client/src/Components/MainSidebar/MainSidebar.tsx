@@ -11,200 +11,201 @@ export default function MainSidebar() {
       const defaultColor = "salmon"
       let colors = [{ value: defaultColor }]
       // Need to fetch courses here
-      const courses: Course[] = [
-        {
-          title: "Organic Chemistry I",
-          number: "202-BZF-05",
-          sections: [
-            {
-              events: [],
-              number: "00002",
-              teacher: "Carmen Leung",
-              schedule: [
-                {
-                  day: "Monday",
-                  begin: "8:30",
-                  end: "10:00",
-                  duration: {
-                    hours: 1,
-                    minutes: 30
-                  }
-                },
-                {
-                  day: "Wednesday",
-                  begin: "8:30",
-                  end: "10:00",
-                  duration: {
-                    hours: 1,
-                    minutes: 30
-                  }
-                }
-              ],
-              students: []
-            }
-          ]
-        },
-        {
-          title: "Mise à niveau pour Français, langue seconde de la 5e secondaire",
-          number: "602-008-RE",
-          sections: [
-            {
-              events: [],
-              number: "00031",
-              teacher: "Francesca Roy",
-              schedule: [
-                {
-                  day: "Monday",
-                  begin: "8:30",
-                  end: "10:00",
-                  duration: {
-                    hours: 1,
-                    minutes: 30
-                  }
-                },
-                {
-                  day: "Wednesday",
-                  begin: "8:30",
-                  end: "10:00",
-                  duration: {
-                    hours: 1,
-                    minutes: 30
-                  }
-                }
-              ],
-              students: []
-            }
-          ]
-        },
-        {
-          title: "Linear Algebra",
-          number: "201-105-DW",
-          sections: [
-            {
-              events: [],
-              number: "00005",
-              teacher: "Gilbert Honnouvo",
-              schedule: [
-                {
-                  day: "Monday",
-                  begin: "8:30",
-                  end: "10:00",
-                  duration: {
-                    hours: 1,
-                    minutes: 30
-                  }
-                },
-                {
-                  day: "Wednesday",
-                  begin: "8:30",
-                  end: "10:00",
-                  duration: {
-                    hours: 1,
-                    minutes: 30
-                  }
-                }
-              ],
-              students: []
-            }
-          ]
-        },
-        {
-          title: "Organic Chemistry I",
-          number: "202-BZF-05",
-          sections: [
-            {
-              events: [],
-              number: "00002",
-              teacher: "Carmen Leung",
-              schedule: [
-                {
-                  day: "Monday",
-                  begin: "8:30",
-                  end: "10:00",
-                  duration: {
-                    hours: 1,
-                    minutes: 30
-                  }
-                },
-                {
-                  day: "Wednesday",
-                  begin: "8:30",
-                  end: "10:00",
-                  duration: {
-                    hours: 1,
-                    minutes: 30
-                  }
-                }
-              ],
-              students: []
-            }
-          ]
-        },
-        {
-          title: "Mise à niveau pour Français, langue seconde de la 5e secondaire",
-          number: "602-008-RE",
-          sections: [
-            {
-              events: [],
-              number: "00031",
-              teacher: "Francesca Roy",
-              schedule: [
-                {
-                  day: "Monday",
-                  begin: "8:30",
-                  end: "10:00",
-                  duration: {
-                    hours: 1,
-                    minutes: 30
-                  }
-                },
-                {
-                  day: "Wednesday",
-                  begin: "8:30",
-                  end: "10:00",
-                  duration: {
-                    hours: 1,
-                    minutes: 30
-                  }
-                }
-              ],
-              students: []
-            }
-          ]
-        },
-        {
-          title: "Linear Algebra",
-          number: "201-105-DW",
-          sections: [
-            {
-              events: [],
-              number: "00005",
-              teacher: "Gilbert Honnouvo",
-              schedule: [
-                {
-                  day: "Monday",
-                  begin: "8:30",
-                  end: "10:00",
-                  duration: {
-                    hours: 1,
-                    minutes: 30
-                  }
-                },
-                {
-                  day: "Wednesday",
-                  begin: "8:30",
-                  end: "10:00",
-                  duration: {
-                    hours: 1,
-                    minutes: 30
-                  }
-                }
-              ],
-              students: []
-            }
-          ]
-        }
-      ]
+      // const courses: Course[] = [
+      //   {
+      //     title: "Organic Chemistry I",
+      //     number: "202-BZF-05",
+      //     sections: [
+      //       {
+      //         events: [],
+      //         number: "00002",
+      //         teacher: "Carmen Leung",
+      //         schedule: [
+      //           {
+      //             day: "Monday",
+      //             begin: "8:30",
+      //             end: "10:00",
+      //             duration: {
+      //               hours: 1,
+      //               minutes: 30
+      //             }
+      //           },
+      //           {
+      //             day: "Wednesday",
+      //             begin: "8:30",
+      //             end: "10:00",
+      //             duration: {
+      //               hours: 1,
+      //               minutes: 30
+      //             }
+      //           }
+      //         ],
+      //         students: []
+      //       }
+      //     ]
+      //   },
+      //   {
+      //     title: "Mise à niveau pour Français, langue seconde de la 5e secondaire",
+      //     number: "602-008-RE",
+      //     sections: [
+      //       {
+      //         events: [],
+      //         number: "00031",
+      //         teacher: "Francesca Roy",
+      //         schedule: [
+      //           {
+      //             day: "Monday",
+      //             begin: "8:30",
+      //             end: "10:00",
+      //             duration: {
+      //               hours: 1,
+      //               minutes: 30
+      //             }
+      //           },
+      //           {
+      //             day: "Wednesday",
+      //             begin: "8:30",
+      //             end: "10:00",
+      //             duration: {
+      //               hours: 1,
+      //               minutes: 30
+      //             }
+      //           }
+      //         ],
+      //         students: []
+      //       }
+      //     ]
+      //   },
+      //   {
+      //     title: "Linear Algebra",
+      //     number: "201-105-DW",
+      //     sections: [
+      //       {
+      //         events: [],
+      //         number: "00005",
+      //         teacher: "Gilbert Honnouvo",
+      //         schedule: [
+      //           {
+      //             day: "Monday",
+      //             begin: "8:30",
+      //             end: "10:00",
+      //             duration: {
+      //               hours: 1,
+      //               minutes: 30
+      //             }
+      //           },
+      //           {
+      //             day: "Wednesday",
+      //             begin: "8:30",
+      //             end: "10:00",
+      //             duration: {
+      //               hours: 1,
+      //               minutes: 30
+      //             }
+      //           }
+      //         ],
+      //         students: []
+      //       }
+      //     ]
+      //   },
+      //   {
+      //     title: "Organic Chemistry I",
+      //     number: "202-BZF-05",
+      //     sections: [
+      //       {
+      //         events: [],
+      //         number: "00002",
+      //         teacher: "Carmen Leung",
+      //         schedule: [
+      //           {
+      //             day: "Monday",
+      //             begin: "8:30",
+      //             end: "10:00",
+      //             duration: {
+      //               hours: 1,
+      //               minutes: 30
+      //             }
+      //           },
+      //           {
+      //             day: "Wednesday",
+      //             begin: "8:30",
+      //             end: "10:00",
+      //             duration: {
+      //               hours: 1,
+      //               minutes: 30
+      //             }
+      //           }
+      //         ],
+      //         students: []
+      //       }
+      //     ]
+      //   },
+      //   {
+      //     title: "Mise à niveau pour Français, langue seconde de la 5e secondaire",
+      //     number: "602-008-RE",
+      //     sections: [
+      //       {
+      //         events: [],
+      //         number: "00031",
+      //         teacher: "Francesca Roy",
+      //         schedule: [
+      //           {
+      //             day: "Monday",
+      //             begin: "8:30",
+      //             end: "10:00",
+      //             duration: {
+      //               hours: 1,
+      //               minutes: 30
+      //             }
+      //           },
+      //           {
+      //             day: "Wednesday",
+      //             begin: "8:30",
+      //             end: "10:00",
+      //             duration: {
+      //               hours: 1,
+      //               minutes: 30
+      //             }
+      //           }
+      //         ],
+      //         students: []
+      //       }
+      //     ]
+      //   },
+      //   {
+      //     title: "Linear Algebra",
+      //     number: "201-105-DW",
+      //     sections: [
+      //       {
+      //         events: [],
+      //         number: "00005",
+      //         teacher: "Gilbert Honnouvo",
+      //         schedule: [
+      //           {
+      //             day: "Monday",
+      //             begin: "8:30",
+      //             end: "10:00",
+      //             duration: {
+      //               hours: 1,
+      //               minutes: 30
+      //             }
+      //           },
+      //           {
+      //             day: "Wednesday",
+      //             begin: "8:30",
+      //             end: "10:00",
+      //             duration: {
+      //               hours: 1,
+      //               minutes: 30
+      //             }
+      //           }
+      //         ],
+      //         students: []
+      //       }
+      //     ]
+      //   }
+      // ]
+      const courses: ColoredCourse[] = []
       let coloredCourses = courses as ColoredCourse[]
       try {
         colors = []
@@ -247,9 +248,8 @@ export default function MainSidebar() {
   return (
     <>
       <div className={styles["main-sidebar-container"]}>
-        <div className={styles["sidebar-section"]}>
-          <button onClick={() => onSubmit()}> Create testUser </button>
-        </div>
+        {/* This is temporary - Marian - 27/02/2023 */}
+        <button onClick={() => onSubmit()}> Create testUser </button> 
         <div className={[styles["sidebar-section"], styles["classes"]].join(" ")}>
           <CourseQuickViewContainer courses={data} />
         </div>

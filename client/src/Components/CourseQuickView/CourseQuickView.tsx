@@ -17,7 +17,8 @@ export default function CourseQuickView(props: CourseQuickViewProps) {
         setTimeout(() => { setAnimateBubble(false) }, animationDuration); //need to change this
       }}>
         <h2>{props.title}</h2>
-        <h4>{props.sections[0]?.teacher || "TBA"}</h4>
+        {/* Keep TBA but pririotize passed section teacher prop */}
+        <h4>{(props.sections && props.sections[0]?.teacher) || "TBA"}</h4>
         <div className={animateBubble ? [styles.bubble, styles.animationBubble].join(" ") : styles.bubble} style={{ background: `var(--classes-${props.color})`, animationDuration: `${animationDuration / 1000}s` }}></div>
       </div>
     </>
