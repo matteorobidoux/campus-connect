@@ -1,1064 +1,2554 @@
 [
 	{
 		"title": "Physical Activity and Health",
+		"number": "109-101-MQ",
 		"sections": [
 			{
 				"title": "Outdoor Fitness (COMPRESSED)",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Caroline Haddad",
-				"schedule": "Wednesday, February 8, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Fitness Walking (COMPRESSED)",
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Angela Corinthios",
-				"schedule": "Wednesday, April 12, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Fitness Walking (COMPRESSED)",
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Angela Corinthios",
-				"schedule": "Thursday, April 13, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Urban Hiking (COMPRESSED)",
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Cory Deegan",
-				"schedule": "Thursday, February 16, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Fitness Walking (COMPRESSED)",
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Venere Di Genova",
-				"schedule": "Monday, January 30, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Introduction to Outdoor Education (COMPRESSED)",
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Jonathan Egan",
-				"schedule": "Wednesday, March 8, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Combative Fitness",
-				"section": "00007",
+				"number": "00007",
 				"teacher": "Ricky Lew",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Combative Fitness",
-				"section": "00008",
+				"number": "00008",
 				"teacher": "Ricky Lew",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Combative Fitness",
-				"section": "00009",
+				"number": "00009",
 				"teacher": "Venere Di Genova",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Combative Fitness",
-				"section": "00010",
+				"number": "00010",
 				"teacher": "Ricky Lew",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Dance Fitness",
-				"section": "00011",
+				"number": "00011",
 				"teacher": "Patricia Walker",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Dance Fitness",
-				"section": "00012",
+				"number": "00012",
 				"teacher": "Patricia Walker",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Dance Fitness",
-				"section": "00013",
+				"number": "00013",
 				"teacher": "Patricia Walker",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Dance Fitness",
-				"section": "00014",
+				"number": "00014",
 				"teacher": "Chantal St-Pierre",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Dance Fitness",
-				"section": "00015",
+				"number": "00015",
 				"teacher": "Karina Palacio",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Dance Fitness",
-				"section": "00016",
+				"number": "00016",
 				"teacher": "Karina Palacio",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness",
-				"section": "00017",
+				"number": "00017",
 				"teacher": "Marcela Donoso",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness",
-				"section": "00018",
+				"number": "00018",
 				"teacher": "Marcela Donoso",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness",
-				"section": "00019",
+				"number": "00019",
 				"teacher": "Patrick Burkhard",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness",
-				"section": "00020",
+				"number": "00020",
 				"teacher": "Patrick Burkhard",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness",
-				"section": "00021",
+				"number": "00021",
 				"teacher": "Chantal St-Pierre",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness",
-				"section": "00022",
+				"number": "00022",
 				"teacher": "André Armand Gear",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness",
-				"section": "00023",
+				"number": "00023",
 				"teacher": "André Armand Gear",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness",
-				"section": "00024",
+				"number": "00024",
 				"teacher": "Karina Palacio",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness",
-				"section": "00025",
+				"number": "00025",
 				"teacher": "Layal Nakhlé",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Resistance Training",
-				"section": "00026",
+				"number": "00026",
 				"teacher": "Matthew Potter",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Sport Fitness",
-				"section": "00027",
+				"number": "00027",
 				"teacher": "Marcela Donoso",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Resistance Training",
-				"section": "00028",
+				"number": "00028",
 				"teacher": "Jonathan Egan",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Resistance Training",
-				"section": "00029",
+				"number": "00029",
 				"teacher": "Douglas Smyth",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Resistance Training",
-				"section": "00030",
+				"number": "00030",
 				"teacher": "Douglas Smyth",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Resistance Training",
-				"section": "00031",
+				"number": "00031",
 				"teacher": "James Brasseur",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Resistance Training",
-				"section": "00032",
+				"number": "00032",
 				"teacher": "Linda Benjamin",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Resistance Training",
-				"section": "00033",
+				"number": "00033",
 				"teacher": "Linda Benjamin",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Resistance Training",
-				"section": "00034",
+				"number": "00034",
 				"teacher": "James Brasseur",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Introduction to Outdoor Education",
-				"section": "00035",
+				"number": "00035",
 				"teacher": "Cory Deegan",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness",
-				"section": "00036",
+				"number": "00036",
 				"teacher": "James Brasseur",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Games Fitness",
-				"section": "00037",
+				"number": "00037",
 				"teacher": "Angela Corinthios",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Sport Fitness",
-				"section": "00038",
+				"number": "00038",
 				"teacher": "Marcela Donoso",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Sport Fitness",
-				"section": "00039",
+				"number": "00039",
 				"teacher": "Patrick Burkhard",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Sport Fitness",
-				"section": "00040",
+				"number": "00040",
 				"teacher": "Richard Montreuil",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Sport Fitness",
-				"section": "00041",
+				"number": "00041",
 				"teacher": "Richard Montreuil",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Sport Fitness",
-				"section": "00042",
+				"number": "00042",
 				"teacher": "Rona Joan Brodie",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Sport Fitness",
-				"section": "00043",
+				"number": "00043",
 				"teacher": "Rona Joan Brodie",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Walking",
-				"section": "00044",
+				"number": "00044",
 				"teacher": "Cindy Cantin-Starzenski",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Walking",
-				"section": "00045",
+				"number": "00045",
 				"teacher": "Cindy Cantin-Starzenski",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Walking",
-				"section": "00046",
+				"number": "00046",
 				"teacher": "Cindy Cantin-Starzenski",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Walking",
-				"section": "00047",
+				"number": "00047",
 				"teacher": "Caroline Haddad",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Walking",
-				"section": "00048",
+				"number": "00048",
 				"teacher": "Caroline Haddad",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Walking",
-				"section": "00049",
+				"number": "00049",
 				"teacher": "Patricia Armeni",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Mind-Body Wellness",
-				"section": "00050",
+				"number": "00050",
 				"teacher": "Carrie Markin",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Eco Landscaping (COMPRESSED)",
-				"section": "00051",
+				"number": "00051",
 				"teacher": "Paul Wasacz",
-				"schedule": "Thursday, March 9, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Fitness Walking",
-				"section": "00052",
+				"number": "00052",
 				"teacher": "Paul Wasacz",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Resistance Training",
-				"section": "00053",
+				"number": "00053",
 				"teacher": "Alessandro Tirelli",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness",
-				"section": "00054",
+				"number": "00054",
 				"teacher": "Alessandro Tirelli",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Games Fitness",
-				"section": "00055",
+				"number": "00055",
 				"teacher": "James Brasseur",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness",
-				"section": "00056",
+				"number": "00056",
 				"teacher": "Holly McIntyre",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "109-101-MQ"
+		]
 	},
 	{
 		"title": "Physical Activity and Effectiveness",
+		"number": "109-102-MQ",
 		"sections": [
 			{
 				"title": "Dance Styles",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Patricia Walker",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Basketball (PRE-SEMESTER)",
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Linda Benjamin",
-				"schedule": "Wednesday, January 11, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Volleyball  (PRE-SEMESTER)",
-				"section": "00003",
+				"number": "00003",
 				"teacher": "Rona Joan Brodie",
-				"schedule": "Wednesday, January 11, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Downhill Skiing (INTENSIVE)",
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Richard Montreuil",
-				"schedule": "Friday, February 3, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Tennis (INTENSIVE)",
-				"section": "00005",
+				"number": "00005",
 				"teacher": "Patricia Walker",
-				"schedule": "Wednesday, May 10, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Downhill Skiing/Snowboarding (INTENSIVE)",
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Richard Montreuil",
-				"schedule": "Thursday, January 26, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Sport Participation Contract (INTENSIVE)",
-				"section": "00007",
+				"number": "00007",
 				"teacher": "Matthew Potter",
-				"schedule": "Friday, March 24, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Kung Fu",
-				"section": "00008",
+				"number": "00008",
 				"teacher": "Ricky Lew",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Kung Fu",
-				"section": "00009",
+				"number": "00009",
 				"teacher": "Ricky Lew",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Karate",
-				"section": "00010",
+				"number": "00010",
 				"teacher": "Venere Di Genova",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Karate",
-				"section": "00011",
+				"number": "00011",
 				"teacher": "Venere Di Genova",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Karate",
-				"section": "00012",
+				"number": "00012",
 				"teacher": "Venere Di Genova",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Karate",
-				"section": "00013",
+				"number": "00013",
 				"teacher": "Venere Di Genova",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Dance Styles",
-				"section": "00014",
+				"number": "00014",
 				"teacher": "Patricia Walker",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Dance Styles",
-				"section": "00015",
+				"number": "00015",
 				"teacher": "Carrie Markin",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Dance Styles",
-				"section": "00016",
+				"number": "00016",
 				"teacher": "Karina Palacio",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Dance Styles",
-				"section": "00017",
+				"number": "00017",
 				"teacher": "Karina Palacio",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Pilates",
-				"section": "00018",
+				"number": "00018",
 				"teacher": "Chantal St-Pierre",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Pilates",
-				"section": "00019",
+				"number": "00019",
 				"teacher": "Chantal St-Pierre",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Posture, Stability, and Mobility Skills",
-				"section": "00020",
+				"number": "00020",
 				"teacher": "André Armand Gear",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Posture, Stability, and Mobility Skills",
-				"section": "00021",
+				"number": "00021",
 				"teacher": "André Armand Gear",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Weight Training Skills",
-				"section": "00022",
+				"number": "00022",
 				"teacher": "Matthew Potter",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Weight Training Skills",
-				"section": "00023",
+				"number": "00023",
 				"teacher": "Matthew Potter",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Weight Training Skills",
-				"section": "00024",
+				"number": "00024",
 				"teacher": "Linda Benjamin",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Weight Training Skills",
-				"section": "00025",
+				"number": "00025",
 				"teacher": "Linda Benjamin",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Weight Training Skills",
-				"section": "00026",
+				"number": "00026",
 				"teacher": "James Brasseur",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Weight Training Skills",
-				"section": "00027",
+				"number": "00027",
 				"teacher": "Paul Wasacz",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Weight Training Skills",
-				"section": "00028",
+				"number": "00028",
 				"teacher": "Holly McIntyre",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Weight Training Skills",
-				"section": "00029",
+				"number": "00029",
 				"teacher": "Alessandro Tirelli",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Badminton",
-				"section": "00030",
+				"number": "00030",
 				"teacher": "Marcela Donoso",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Rock Climbing",
-				"section": "00031",
+				"number": "00031",
 				"teacher": "Cory Deegan",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Rock Climbing",
-				"section": "00032",
+				"number": "00032",
 				"teacher": "Cory Deegan",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Badminton",
-				"section": "00033",
+				"number": "00033",
 				"teacher": "Angela Corinthios",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Golf",
-				"section": "00034",
+				"number": "00034",
 				"teacher": "Douglas Smyth",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Golf",
-				"section": "00035",
+				"number": "00035",
 				"teacher": "Douglas Smyth",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Rock Climbing",
-				"section": "00036",
+				"number": "00036",
 				"teacher": "Cindy Cantin-Starzenski",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Rock Climbing",
-				"section": "00037",
+				"number": "00037",
 				"teacher": "Jonathan Egan",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Rock Climbing",
-				"section": "00038",
+				"number": "00038",
 				"teacher": "Cindy Cantin-Starzenski",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Rock Climbing",
-				"section": "00039",
+				"number": "00039",
 				"teacher": "Jonathan Egan",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Rock Climbing",
-				"section": "00040",
+				"number": "00040",
 				"teacher": "Jonathan Egan",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Badminton",
-				"section": "00041",
+				"number": "00041",
 				"teacher": "Patrick Burkhard",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Basketball",
-				"section": "00042",
+				"number": "00042",
 				"teacher": "Marcela Donoso",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Basketball",
-				"section": "00043",
+				"number": "00043",
 				"teacher": "Marcela Donoso",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Volleyball",
-				"section": "00044",
+				"number": "00044",
 				"teacher": "Patricia Armeni",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Volleyball",
-				"section": "00045",
+				"number": "00045",
 				"teacher": "Patrick Burkhard",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Volleyball",
-				"section": "00046",
+				"number": "00046",
 				"teacher": "Patrick Burkhard",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Volleyball",
-				"section": "00047",
+				"number": "00047",
 				"teacher": "Rona Joan Brodie",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Soccer",
-				"section": "00048",
+				"number": "00048",
 				"teacher": "Angela Corinthios",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Stress Coping Skills",
-				"section": "00049",
+				"number": "00049",
 				"teacher": "Paul Wasacz",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Stress Coping Skills",
-				"section": "00050",
+				"number": "00050",
 				"teacher": "Paul Wasacz",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Basketball",
-				"section": "00051",
+				"number": "00051",
 				"teacher": "Paul Wasacz",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Stress Coping Skills",
-				"section": "00052",
+				"number": "00052",
 				"teacher": "Layal Nakhlé",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Stress Coping Skills",
-				"section": "00053",
+				"number": "00053",
 				"teacher": "Layal Nakhlé",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Yoga",
-				"section": "00054",
+				"number": "00054",
 				"teacher": "Chantal St-Pierre",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Yoga",
-				"section": "00055",
+				"number": "00055",
 				"teacher": "Caroline Haddad",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Yoga",
-				"section": "00056",
+				"number": "00056",
 				"teacher": "Caroline Haddad",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Yoga",
-				"section": "00057",
+				"number": "00057",
 				"teacher": "André Armand Gear",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Weight Training Skills",
-				"section": "00058",
+				"number": "00058",
 				"teacher": "Alessandro Tirelli",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Weight Training Skills",
-				"section": "00059",
+				"number": "00059",
 				"teacher": "Alessandro Tirelli",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Weight Training Skills",
-				"section": "00060",
+				"number": "00060",
 				"teacher": "Alessandro Tirelli",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Weight Training Skills",
-				"section": "00061",
+				"number": "00061",
 				"teacher": "Holly McIntyre",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "109-102-MQ"
+		]
 	},
 	{
 		"title": "Physical Activity and Autonomy",
+		"number": "109-103-MQ",
 		"sections": [
 			{
 				"title": "Combative Activities",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Ricky Lew",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Activities (PRE-SEMESTER)",
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Venere Di Genova",
-				"schedule": "Thursday, January 12, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Yoga Lifestyles",
-				"section": "00003",
+				"number": "00003",
 				"teacher": "André Armand Gear",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Walking Activities (COMPRESSED)",
-				"section": "00004",
+				"number": "00004",
 				"teacher": "Caroline Haddad",
-				"schedule": "Thursday, February 2, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Outdoor Education Activities (INTENSIVE)",
-				"section": "00006",
+				"number": "00006",
 				"teacher": "Cindy Cantin-Starzenski",
-				"schedule": "Monday, February 20, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Winter Camping (INTENSIVE)",
-				"section": "00007",
+				"number": "00007",
 				"teacher": "Jonathan Egan",
-				"schedule": "Tuesday, February 7, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Backpack Hiking (INTENSIVE)",
-				"section": "00008",
+				"number": "00008",
 				"teacher": "Jonathan Egan",
-				"schedule": "Tuesday, May 2, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Outdoor Education Activities (INTENSIVE)",
-				"section": "00009",
+				"number": "00009",
 				"teacher": "Richard Montreuil",
-				"schedule": "Wednesday, February 8, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Outdoor Education Activities (INTENSIVE)",
-				"section": "00010",
+				"number": "00010",
 				"teacher": "Layal Nakhlé",
-				"schedule": "Thursday, February 9, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Nature Retreat (INTENSIVE)",
-				"section": "00011",
+				"number": "00011",
 				"teacher": "Layal Nakhlé",
-				"schedule": "Friday, February 3, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Yoga Retreat (INTENSIVE)",
-				"section": "00012",
+				"number": "00012",
 				"teacher": "André Armand Gear",
-				"schedule": "Tuesday, February 21, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Martial Arts Retreat (INTENSIVE)",
-				"section": "00013",
+				"number": "00013",
 				"teacher": "Ricky Lew",
-				"schedule": "Friday, January 27, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Bike Explorations (INTENSIVE)",
-				"section": "00014",
+				"number": "00014",
 				"teacher": "Cory Deegan",
-				"schedule": "Tuesday, March 21, 2023"
+				"schedule": []
 			},
 			{
 				"title": "Fitness Activities",
-				"section": "00015",
+				"number": "00015",
 				"teacher": "Paul Wasacz",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Activities",
-				"section": "00016",
+				"number": "00016",
 				"teacher": "Holly McIntyre",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Combative Activities",
-				"section": "00017",
+				"number": "00017",
 				"teacher": "Venere Di Genova",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Combative Activities",
-				"section": "00018",
+				"number": "00018",
 				"teacher": "Ricky Lew",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Dance Activities",
-				"section": "00019",
+				"number": "00019",
 				"teacher": "Patricia Walker",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Dance Activities",
-				"section": "00020",
+				"number": "00020",
 				"teacher": "Patricia Walker",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Dance Activities",
-				"section": "00021",
+				"number": "00021",
 				"teacher": "Chantal St-Pierre",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Activities",
-				"section": "00022",
+				"number": "00022",
 				"teacher": "Chantal St-Pierre",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Dance Activities",
-				"section": "00023",
+				"number": "00023",
 				"teacher": "Karina Palacio",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Active Living",
-				"section": "00024",
+				"number": "00024",
 				"teacher": "Cory Deegan",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Active Living",
-				"section": "00025",
+				"number": "00025",
 				"teacher": "Cory Deegan",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Active Living",
-				"section": "00026",
+				"number": "00026",
 				"teacher": "Patricia Armeni",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Activities",
-				"section": "00027",
+				"number": "00027",
 				"teacher": "Cindy Cantin-Starzenski",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Activities",
-				"section": "00028",
+				"number": "00028",
 				"teacher": "Douglas Smyth",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Activities",
-				"section": "00029",
+				"number": "00029",
 				"teacher": "Patrick Burkhard",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Activities",
-				"section": "00030",
+				"number": "00030",
 				"teacher": "James Brasseur",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Activities",
-				"section": "00031",
+				"number": "00031",
 				"teacher": "Chantal St-Pierre",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Activities",
-				"section": "00032",
+				"number": "00032",
 				"teacher": "Karina Palacio",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Activities",
-				"section": "00033",
+				"number": "00033",
 				"teacher": "Karina Palacio",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Outdoor Ed Activities",
-				"section": "00034",
+				"number": "00034",
 				"teacher": "Cory Deegan",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Activities",
-				"section": "00035",
+				"number": "00035",
 				"teacher": "Layal Nakhlé",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Sport Performance Training",
-				"section": "00036",
+				"number": "00036",
 				"teacher": "Matthew Potter",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Sport Performance Training",
-				"section": "00037",
+				"number": "00037",
 				"teacher": "Matthew Potter",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Sport Performance Training",
-				"section": "00038",
+				"number": "00038",
 				"teacher": "Matthew Potter",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Active Living (Indoor Cycling)",
-				"section": "00039",
+				"number": "00039",
 				"teacher": "Jonathan Egan",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Sport Performance Training",
-				"section": "00040",
+				"number": "00040",
 				"teacher": "André Armand Gear",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Sport Performance Training",
-				"section": "00041",
+				"number": "00041",
 				"teacher": "Linda Benjamin",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Sport Performance Training",
-				"section": "00042",
+				"number": "00042",
 				"teacher": "Linda Benjamin",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Sport Performance Training",
-				"section": "00043",
+				"number": "00043",
 				"teacher": "Linda Benjamin",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Sport Performance Training",
-				"section": "00044",
+				"number": "00044",
 				"teacher": "Matthew Potter",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Team Sports",
-				"section": "00045",
+				"number": "00045",
 				"teacher": "Angela Corinthios",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Team Sports",
-				"section": "00046",
+				"number": "00046",
 				"teacher": "Patrick Burkhard",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Team Sports",
-				"section": "00047",
+				"number": "00047",
 				"teacher": "Angela Corinthios",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Team Sports",
-				"section": "00048",
+				"number": "00048",
 				"teacher": "Angela Corinthios",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Team Sports",
-				"section": "00049",
+				"number": "00049",
 				"teacher": "Rona Joan Brodie",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Team Sports",
-				"section": "00050",
+				"number": "00050",
 				"teacher": "Rona Joan Brodie",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Activities",
-				"section": "00051",
+				"number": "00051",
 				"teacher": "James Brasseur",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Activities",
-				"section": "00052",
+				"number": "00052",
 				"teacher": "James Brasseur",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Yoga Lifestyles",
-				"section": "00053",
+				"number": "00053",
 				"teacher": "Carrie Markin",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Activities",
-				"section": "00054",
+				"number": "00054",
 				"teacher": "Paul Wasacz",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Activities",
-				"section": "00055",
+				"number": "00055",
 				"teacher": "Alessandro Tirelli",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Activities",
-				"section": "00056",
+				"number": "00056",
 				"teacher": "Alessandro Tirelli",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Fitness Activities",
-				"section": "00057",
+				"number": "00057",
 				"teacher": "Holly McIntyre",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"title": "Canoe Camping (INTENSIVE)",
-				"section": "12001",
+				"number": "12001",
 				"teacher": "Cindy Cantin-Starzenski",
-				"schedule": "Friday, March 24, 2023"
+				"schedule": []
 			}
-		],
-		"number": "109-103-MQ"
+		]
 	}
 ]

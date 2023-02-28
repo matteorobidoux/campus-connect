@@ -1,8 +1,3 @@
-#THIS IS A TEST BUILD, DOESNT MATTER IF ANYONE HAS ACCESS TO IT, PRODUCTION WILL BE KEPT SECRET
-variables: 
-    ATLAS_URI: "mongodb+srv://nenechi:nenechi12@exercise11.cfvsryo.mongodb.net/?retryWrites=true&w=majority"
-    
-
 image: node:latest
 
 stages:
@@ -65,19 +60,19 @@ build-backend:
 #    - node ./specs/start.js ./specs/db-postgres.spec.js
 
 deploy:
-  stage: production
+  stage: deploy
   image:  mcr.microsoft.com/azure-cli
   dependencies:
     - build-frontend
     - build-backend
   only:
-    - test
+    - production
   before_script:
     - "az login --allow-no-subscriptions --service-principal -u $AZ_SP_ID -p $AZ_SP_SECRET --tenant $AZ_TENANT"
   script:
     - zip -r deploy.zip ./client ./server ./types ./package.json
 ##    - "az webapp config appsettings set --resource-group $RESOURCE_GROUP_NAME --name $APP_NAME --settings WEBSITE_RUN_FROM_PACKAGE='1'"
-    - "az webapp config appsettings set --resource-group $RESOURCE_GROUP_NAME --name $APP_NAME --settings ATLAS_URI=$ATLAS_URI"
+    ##- "az webapp config appsettings set --resource-group $RESOURCE_GROUP_NAME --name $APP_NAME --settings ATLAS_URI=$ATLAS_URI"
     - "az webapp deployment source config-zip --resource-group $RESOURCE_GROUP_NAME --name $APP_NAME --src deploy.zip"
   artifacts:
     expire_in: 1 days

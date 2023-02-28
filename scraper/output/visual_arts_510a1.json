@@ -1,254 +1,383 @@
 [
 	{
 		"title": "Drawing 2",
+		"number": "510-213-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Bahar Taheri",
-				"schedule": "Monday3:00 PM - 6:00 PM2G.4Lab"
-			}
-		],
-		"number": "510-213-DW"
-	},
-	{
-		"title": "Painting 2",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Kristi Ropeleski",
-				"schedule": "Tuesday8:30 AM - 11:30 AM2G.4Lab"
-			}
-		],
-		"number": "510-214-DW"
-	},
-	{
-		"title": "Sculpture 2",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "David Baumflek",
-				"schedule": "Wednesday2:30 PM - 5:30 PM1G.1LabWednesday2:30 PM - 5:30 PM1G.3LabWednesday2:30 PM - 5:30 PM1G.5Lab"
-			}
-		],
-		"number": "510-215-DW"
-	},
-	{
-		"title": "Art History 2",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Amanda Beattie",
-				"schedule": "Thursday2:30 PM - 5:30 PM3F.39Class"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
-				"section": "00002",
-				"teacher": "Bettina Perez Martinez",
-				"schedule": "Thursday2:30 PM - 5:30 PM4E.11Class"
-			}
-		],
-		"number": "520-202-DW"
-	},
-	{
-		"title": "Photography",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Martin Segal",
-				"schedule": "Thursday8:30 AM - 11:30 AM3B.23LabThursday8:30 AM - 11:30 AM4G.13Lab"
-			}
-		],
-		"number": "570-951-DW"
-	},
-	{
-		"title": "Drawing 2",
-		"sections": [
-			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "David Philip Hall",
-				"schedule": "Thursday8:30 AM - 11:30 AM2G.4Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "510-213-DW"
+		]
 	},
 	{
 		"title": "Painting 2",
+		"number": "510-214-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
 				"teacher": "Kristi Ropeleski",
-				"schedule": "Monday12:00 PM - 3:00 PM2G.4Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Kristi Ropeleski",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "510-214-DW"
+		]
 	},
 	{
 		"title": "Sculpture 2",
+		"number": "510-215-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
 				"teacher": "David Baumflek",
-				"schedule": "Friday12:00 PM - 3:00 PM1G.1LabFriday12:00 PM - 3:00 PM1G.3LabFriday12:00 PM - 3:00 PM1G.5Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "David Baumflek",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "510-215-DW"
+		]
 	},
 	{
 		"title": "Art History 2",
+		"number": "520-202-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Amanda Beattie",
-				"schedule": "Thursday2:30 PM - 5:30 PM3F.39Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Bettina Perez Martinez",
-				"schedule": "Thursday2:30 PM - 5:30 PM4E.11Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "520-202-DW"
+		]
 	},
 	{
 		"title": "Photography",
+		"number": "570-951-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
 				"teacher": "Martin Segal",
-				"schedule": "Tuesday8:30 AM - 11:30 AM3B.23LabTuesday8:30 AM - 11:30 AM4G.13Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Martin Segal",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "570-951-DW"
+		]
 	},
 	{
 		"title": "Drawing 4",
+		"number": "510-413-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Kristi Ropeleski",
-				"schedule": "Monday8:30 AM - 11:30 AM2G.15LabMonday8:30 AM - 11:30 AM2G.4Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Bahar Taheri",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "510-413-DW"
+		]
 	},
 	{
 		"title": "Painting 4",
+		"number": "510-414-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "David Philip Hall",
-				"schedule": "Wednesday2:30 PM - 5:30 PM2G.15Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "David Philip Hall",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "510-414-DW"
+		]
 	},
 	{
 		"title": "Sculpture 4",
+		"number": "510-415-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Rachel Echenberg",
-				"schedule": "Tuesday2:30 PM - 5:30 PM1G.1LabTuesday2:30 PM - 5:30 PM1G.3LabTuesday2:30 PM - 5:30 PM1G.4LabTuesday2:30 PM - 5:30 PM1G.5LabTuesday2:30 PM - 5:30 PM1G.8Lab"
-			}
-		],
-		"number": "510-415-DW"
-	},
-	{
-		"title": "Printmaking 2",
-		"sections": [
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
 			{
-				"section": "00001",
-				"teacher": "Maria Chronopoulos",
-				"schedule": "Thursday2:30 PM - 5:30 PM2G.13LabThursday2:30 PM - 5:30 PM4G.10Lab"
-			}
-		],
-		"number": "510-416-DW"
-	},
-	{
-		"title": "Integrating Studio Practices",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "David Baumflek, Joe Becker",
-				"schedule": "Friday8:30 AM - 11:30 AM1G.1LabFriday8:30 AM - 11:30 AM1G.3LabFriday8:30 AM - 11:30 AM1G.4LabFriday8:30 AM - 11:30 AM1G.5LabFriday8:30 AM - 11:30 AM1G.8Lab"
-			}
-		],
-		"number": "510-417-DW"
-	},
-	{
-		"title": "Art Now",
-		"sections": [
-			{
-				"section": "00001",
-				"teacher": "Gwen Baddeley",
-				"schedule": "Friday2:30 PM - 5:30 PM4H.15Class"
-			}
-		],
-		"number": "520-402-DW"
-	},
-	{
-		"title": "Drawing 4",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "Bahar Taheri",
-				"schedule": "Thursday2:30 PM - 5:30 PM2G.15Lab"
-			}
-		],
-		"number": "510-413-DW"
-	},
-	{
-		"title": "Painting 4",
-		"sections": [
-			{
-				"section": "00002",
-				"teacher": "David Philip Hall",
-				"schedule": "Wednesday8:30 AM - 11:30 AM2G.15Lab"
-			}
-		],
-		"number": "510-414-DW"
-	},
-	{
-		"title": "Sculpture 4",
-		"sections": [
-			{
-				"section": "00002",
+				"number": "00002",
 				"teacher": "Naomi London",
-				"schedule": "Tuesday8:30 AM - 11:30 AM1G.1LabTuesday8:30 AM - 11:30 AM1G.3LabTuesday8:30 AM - 11:30 AM1G.4LabTuesday8:30 AM - 11:30 AM1G.5LabTuesday8:30 AM - 11:30 AM1G.8Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "510-415-DW"
+		]
 	},
 	{
 		"title": "Printmaking 2",
+		"number": "510-416-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
 				"teacher": "Maria Chronopoulos",
-				"schedule": "Wednesday2:30 PM - 5:30 PM2G.13LabWednesday2:30 PM - 5:30 PM4G.10Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Maria Chronopoulos",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "510-416-DW"
+		]
 	},
 	{
 		"title": "Integrating Studio Practices",
+		"number": "510-417-DW",
 		"sections": [
 			{
-				"section": "00002",
+				"number": "00001",
 				"teacher": "David Baumflek, Joe Becker",
-				"schedule": "Friday8:30 AM - 11:30 AM2G.13LabFriday8:30 AM - 11:30 AM2G.15LabFriday8:30 AM - 11:30 AM4G.15Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "David Baumflek, Joe Becker",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "510-417-DW"
+		]
 	},
 	{
 		"title": "Art Now",
+		"number": "520-402-DW",
 		"sections": [
 			{
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Gwen Baddeley",
-				"schedule": "Friday2:30 PM - 5:30 PM4H.15Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
-		],
-		"number": "520-402-DW"
+		]
 	}
 ]

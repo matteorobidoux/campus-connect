@@ -3,6 +3,10 @@ import fs from "node:fs";
 import { Logger, ILogObj } from "tslog";
 import { prompt } from 'enquirer';
 
+import Course from "../../types/Course";
+import Section from "../../types/Section"
+import getSlot from './schedules';
+
 enum SectionDetail {
   TITLE,
   SECTION,
@@ -20,26 +24,6 @@ const log: Logger<ILogObj> = new Logger({
 type Education = {
   id: string,
   name: string,
-}
-
-type Course = {
-  title: string,
-  number: string,
-  sections: Section[],
-}
-
-type Section = {
-  title: string,
-  section: string,
-  teacher: string,
-  schedule: string,
-}
-
-type Schedule = {
-  day: string,
-  startTime: string;
-  duration: number;
-  room?: string;
 }
 
 function getAllSections() {
@@ -66,54 +50,6 @@ interface CourseFetchSearchParams {
 
 let cookie = "";
 let nonce = "";
-
-function scheduleToJSON(schedule: String){
-  let jsonSlots: Schedule[] = []
-  let slots: String[] = [];
-  slots = schedule.split(/Class|Lab|StageIntensive/);
-  slots.pop()
-  for(let i = 0; i < slots.length; i++){
-    let slot = slots[i];
-    let day: any = slot.match(/^(\D*)/g);
-    let time: any = slot.match(/(\d{1,2}:\d{2} [AP]M)/g);
-    let duration: number = 0;
-    let start: number = 0;
-    let end: number = 0;
-    time.forEach((t: { match: (arg0: RegExp) => string; includes: (arg0: string) => any; }) => {
-      let num: any = t.match(/(\d{1,2}:\d{2})/g);
-      num = num[0].split(":");
-      num = parseInt(num[0]) * 100 + parseInt(num[1]);
-      if(t.includes("PM")){
-        num += 1200;
-      }
-      if(start == 0){
-        start = num;
-      } else{
-        end = num;
-      }
-    });
-    duration = Number(((end - start)/100).toFixed(2));
-    let durationString = duration.toString();
-    if(durationString.includes(".3")){
-      durationString = durationString.replace(".3",".5")
-    }
-    duration = Number(durationString);
-    let room: any = slot.match(/(\d\D\.\d*)/g);
-    let json = {
-      day: day[0],
-      startTime: time[0],
-      duration: duration,
-      room: room?.[0]
-    };
-
-    if (!json.room) {
-      console.log("No room.");
-    }
-
-    jsonSlots.push(json);      
-  }
-  return jsonSlots;
-}
 
 async function fetchCourseSpecificInformation(params: CourseFetchSearchParams): Promise<Course[]> {
   const name = Object.entries(params).find(s => s[1] != undefined);
@@ -161,31 +97,61 @@ async function fetchCourseSpecificInformation(params: CourseFetchSearchParams): 
       const hasTitle = !rows[SectionDetail.TITLE].text.startsWith("0");
       const offset = hasTitle ? 0 : -1;
 
+      if (getSlot(rows[SectionDetail.SCHEDULE + offset]?.text ?? rows[5]?.text ?? rows[4]?.text).length == 0) {
+        console.log(rows[SectionDetail.SCHEDULE + offset]?.text ?? rows[4].text);
+        console.log(rows.map(r => r.text));
+      }
       return {
         title: rows[SectionDetail.TITLE + offset]?.text,
-        section: rows[SectionDetail.SECTION + offset].text,
+        number: rows[SectionDetail.SECTION + offset].text,
         teacher: rows[SectionDetail.TEACHER + offset].text,
-        schedule: rows[SectionDetail.SCHEDULE + offset]?.text ?? rows[4].text,
+        schedule: getSlot(rows[SectionDetail.SCHEDULE + offset]?.text ?? rows[5]?.text ?? rows[4]?.text)
       }
     })
 
     const clas = classes.get({ title: cTitle, number: cNumber });
     if (!clas) {
       classes.set({ title: cTitle, number: cNumber}, courseData);
-    } else {
+    } else  {
       clas.push(...courseData);
     }
-  })
+  });
 
-  return [...classes.keys()].map(entry => {
+  // [...classes.keys()].reduce();
+
+  const grouped = [...classes.keys()].map(entry => {
     return {
       title: entry.title,
       sections: classes.get(entry)!,
       number: entry.number,
     }
-  })
+  });
 
+  return groupBy(grouped);
 }
+
+function groupBy(list: Course[]): Course[] {
+  const map = new Map<string, {title: string, sections: Section[]}>();
+  list.forEach((item) => {
+    const key = item.number;
+    const collection = map.get(key);
+    if (!collection) {
+      map.set(key, {title: item.title, sections: item.sections});
+    } else {
+      // Remove duplicate sections
+      item.sections = item.sections.filter(i => !collection.sections.some(v => v.number == i.number));
+      collection.sections.push(...item.sections);
+      map.set(key, {title: item.title, sections: collection.sections});
+    }
+  });
+
+  return [...map.entries()].map(([k, v])=> ({
+    title: v.title,
+    number: k,
+    sections: v.sections,
+  }))
+}
+
 
 let things = getAllSections();
 let specific_ed = things[0];

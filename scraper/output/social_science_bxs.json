@@ -1,74 +1,150 @@
 [
 	{
 		"title": "Social Science, Ensemble 2",
+		"number": "381-BXS-DW",
 		"sections": [
 			{
 				"title": "Culture on Display (INTENSIVE)",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Sabrina Smofsky",
-				"schedule": "Friday, June 2, 2023"
+				"schedule": []
 			}
-		],
-		"number": "381-BXS-DW"
+		]
 	},
 	{
 		"title": "Social science: introduction to business administration",
+		"number": "401-BXS-03",
 		"sections": [
 			{
 				"title": "Entrepreneurship",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Amanda Petriello",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
-		],
-		"number": "401-BXS-03"
+		]
 	},
 	{
 		"title": "Social science: applications in economics",
+		"number": "383-BXS-03",
 		"sections": [
 			{
 				"title": "The Economics of Sex and Drugs",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Ahmad Banki",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
-		],
-		"number": "383-BXS-03"
+		]
 	},
 	{
 		"title": "Applications in History",
+		"number": "330-BXS-03",
 		"sections": [
 			{
 				"title": "Snapshots of the 20th Century",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Deborah Shulman",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
-		],
-		"number": "330-BXS-03"
+		]
 	},
 	{
 		"title": "Applications in Psychology",
+		"number": "350-BXS-03",
 		"sections": [
 			{
 				"title": "Interaction and Communication (INTENSIVE)",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Marie-Pierre Gosselin",
-				"schedule": "Thursday, June 1, 2023"
+				"schedule": []
 			}
-		],
-		"number": "350-BXS-03"
+		]
 	},
 	{
 		"title": "Social science: applications in religion studies",
+		"number": "370-BXS-03",
 		"sections": [
 			{
 				"title": "Contemporary Social Concerns: Sex, Gender and Religion",
-				"section": "00001",
+				"number": "00001",
 				"teacher": "Sonia Zylberberg",
-				"schedule": "Tuesday, February 14, 2023"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
-		],
-		"number": "370-BXS-03"
+		]
 	}
 ]
