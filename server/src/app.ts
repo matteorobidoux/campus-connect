@@ -3,9 +3,13 @@ import CreateUserBodyParams from "../../types/Queries/CreateUser";
 import DbMongoose from "./db/db"
 import { GetAllSectionsRequest } from "../../types/Queries/GetAllCourses";
 import { LoginRequest } from "../../types/Queries/Login";
+import { generateAuthUrl } from "./oauth";
+import cors from "cors";
+import GAuth from "./oauth/gauth-endpoint";
 const app = express();
 const port = 8081
 
+app.use(cors())
 app.use(express.json())
 
 app.get("/users", async (_,res) => {
@@ -34,7 +38,6 @@ app.post('/api/addUser', async (req, res) => {
 
 app.get("/api/getAllSections", async (req, res) => {
   const { userClassSections } = req.query as Partial<GetAllSectionsRequest>;
-  console.log('here.');
   if (Array.isArray(userClassSections)) {
     const result = await DbMongoose.getUserClasses(userClassSections);
     res.json(result)
@@ -43,7 +46,17 @@ app.get("/api/getAllSections", async (req, res) => {
   }
 })
 
-app.use(express.static('../client/build/'))
+app.get("/gauth", async (req, res) => {
+  console.log("calling gauth.");
+  GAuth(req, res);
+})
+
+app.get("/api/authenticate", async (req, res) => {
+  generateAuthUrl(res);
+})
+
+
+app.use(express.static('../client/build/'));
 
 app.use(function (_, res) {
   res.status(404).send("404 NOT FOUND");

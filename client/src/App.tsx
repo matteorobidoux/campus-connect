@@ -4,17 +4,23 @@ import { QueryClient, QueryClientProvider, useQuery } from 'react-query';
 import { ToastContainer } from 'react-toastify';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCircleNotch } from '@fortawesome/free-solid-svg-icons'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Main from './Components/Main/Main';
 import MainSidebar from './Components/MainSidebar/MainSidebar';
 import NavBar from './Components/NavBar/NavBar';
 import ProfileBar from './Components/ProfileBar/ProfileBar';
+import { useGoogleOAuth } from './custom-query-hooks/useGoogleOAuth';
 
-const queryClient = new QueryClient()
 library.add(faCircleNotch)
 
 export default function App() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const query = useGoogleOAuth()
+  useEffect(() => {
+    console.log(query.data);
+  }, [query])
+
 
   // TODO: what should the type of e be?
   function openProfileBar() {
@@ -22,7 +28,7 @@ export default function App() {
   }
 
   return (
-    <QueryClientProvider client={queryClient}>
+    <>
       <ToastContainer />
       <div className="app-container">
         <NavBar toggleSidebar={openProfileBar} />
@@ -32,6 +38,6 @@ export default function App() {
         </div>
         <ProfileBar isOpen={isOpen} toggleFunc={openProfileBar} />
       </div>
-    </QueryClientProvider>
+    </>
   );
 }
