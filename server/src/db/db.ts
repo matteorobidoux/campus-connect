@@ -64,7 +64,7 @@ class DbMongoose {
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
     const courses = userSections.map(async userCourse=> {
       const course = (await Course.findOne({ number: userCourse.courseNumber }))!.toObject();
-      const section = course.sections.find(fullSection => fullSection.number == userCourse.sectionNumber)!;
+      const section = course.sections.find((fullSection: { number: string; }) => fullSection.number == userCourse.sectionNumber)!;
       return {
           ...section,
           courseNumber: course.number,
@@ -92,7 +92,7 @@ class DbMongoose {
     const mongoResp = await Course.find();
     const result = mongoResp.map(r => ({
       title: r.title,
-      sections: r.sections.map(s => ({teacher: s.teacher, number: s.number})),
+      sections: r.sections.map((s: { teacher: any; number: any; }) => ({teacher: s.teacher, number: s.number})),
       id: r.id as string,
     }))
 
