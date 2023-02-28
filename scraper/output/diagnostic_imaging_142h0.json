@@ -6,12 +6,68 @@
 			{
 				"number": "00001",
 				"teacher": "Andrew Wieczorek",
-				"schedule": "Monday12:00 PM - 2:00 PM5A.29LabWednesday2:30 PM - 4:00 PM5A.2ClassFriday2:30 PM - 4:00 PM5A.2Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Andrew Wieczorek",
-				"schedule": "Monday2:00 PM - 4:00 PM5A.29LabWednesday2:30 PM - 4:00 PM5A.2ClassFriday2:30 PM - 4:00 PM5A.2Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -22,17 +78,92 @@
 			{
 				"number": "00001",
 				"teacher": "Mary Ann Hoskin",
-				"schedule": "Wednesday8:00 AM - 10:00 AM4A.11LabWednesday10:00 AM - 12:00 PM4A.11LabWednesday10:00 AM - 12:00 PM4A.15LabWednesday10:00 AM - 12:00 PM4A.4LabThursday2:00 PM - 4:00 PM4A.14Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Mary Ann Hoskin",
-				"schedule": "Wednesday10:00 AM - 12:00 PM4A.11LabWednesday10:00 AM - 12:00 PM4A.15LabWednesday10:00 AM - 12:00 PM4A.4LabWednesday12:00 PM - 2:00 PM4A.11LabThursday2:00 PM - 4:00 PM4A.14Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00003",
 				"teacher": "Mary Ann Hoskin",
-				"schedule": "Wednesday10:00 AM - 12:00 PM4A.11LabWednesday10:00 AM - 12:00 PM4A.15LabWednesday10:00 AM - 12:00 PM4A.4LabThursday2:00 PM - 4:00 PM4A.14Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -43,17 +174,92 @@
 			{
 				"number": "00001",
 				"teacher": "Heidi Gumbley",
-				"schedule": "Monday8:00 AM - 10:00 AM4A.11LabMonday10:00 AM - 12:00 PM4A.11LabMonday10:00 AM - 12:00 PM4A.15LabMonday10:00 AM - 12:00 PM4A.4LabTuesday10:00 AM - 12:00 PM4A.14Class"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Heidi Gumbley",
-				"schedule": "Monday10:00 AM - 12:00 PM4A.11LabMonday10:00 AM - 12:00 PM4A.15LabMonday10:00 AM - 12:00 PM4A.4LabTuesday10:00 AM - 12:00 PM4A.14Class"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00003",
 				"teacher": "Heidi Gumbley",
-				"schedule": "Monday10:00 AM - 12:00 PM4A.11LabMonday10:00 AM - 12:00 PM4A.15LabMonday10:00 AM - 12:00 PM4A.4LabMonday12:00 PM - 2:00 PM4A.11LabTuesday10:00 AM - 12:00 PM4A.14Class"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -64,17 +270,92 @@
 			{
 				"number": "00001",
 				"teacher": "Maria Lavoie",
-				"schedule": "Tuesday1:00 PM - 2:30 PM4A.7ClassFriday10:00 AM - 11:30 AM4A.15LabFriday10:00 AM - 11:30 AM4A.4LabFriday11:30 AM - 1:00 PM4A.11Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Maria Lavoie",
-				"schedule": "Tuesday1:00 PM - 2:30 PM4A.7ClassFriday10:00 AM - 11:30 AM4A.11LabFriday10:00 AM - 11:30 AM4A.15LabFriday10:00 AM - 11:30 AM4A.4Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			},
 			{
 				"number": "00003",
 				"teacher": "Maria Lavoie",
-				"schedule": "Tuesday1:00 PM - 2:30 PM4A.7ClassFriday10:00 AM - 11:30 AM4A.11LabFriday10:00 AM - 11:30 AM4A.15LabFriday10:00 AM - 11:30 AM4A.4LabFriday1:00 PM - 2:30 PM4A.11Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
 			}
 		]
 	},
@@ -85,17 +366,92 @@
 			{
 				"number": "00001",
 				"teacher": "Arnulfo Montiel",
-				"schedule": "Monday4:00 PM - 6:00 PM4A.14ClassThursday10:00 AM - 12:00 PM4A.11LabThursday10:00 AM - 12:00 PM4A.15LabThursday10:00 AM - 12:00 PM4A.3LabThursday10:00 AM - 12:00 PM4A.6Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Arnulfo Montiel",
-				"schedule": "Monday4:00 PM - 6:00 PM4A.14ClassThursday8:00 AM - 10:00 AM4A.11LabThursday8:00 AM - 10:00 AM4A.6LabThursday10:00 AM - 12:00 PM4A.11LabThursday10:00 AM - 12:00 PM4A.15LabThursday10:00 AM - 12:00 PM4A.3LabThursday10:00 AM - 12:00 PM4A.6Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00003",
 				"teacher": "Arnulfo Montiel",
-				"schedule": "Monday4:00 PM - 6:00 PM4A.14ClassThursday10:00 AM - 12:00 PM4A.11LabThursday10:00 AM - 12:00 PM4A.15LabThursday10:00 AM - 12:00 PM4A.3LabThursday10:00 AM - 12:00 PM4A.6LabThursday12:00 PM - 2:00 PM4A.11LabThursday12:00 PM - 2:00 PM4A.6Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -106,7 +462,7 @@
 			{
 				"number": "00001",
 				"teacher": "TBA-142-A, Christina Papathanasopoulos, Heidi Gumbley, Ho-Git Chan, Maria Motta, Mary Ann Hoskin, Peter Mikhail",
-				"schedule": "MondayMay 29, 2023May 29, 20239:00 AM - 12:00 PMHospitalIntensiveMondayMay 29, 2023May 29, 20231:00 PM - 4:00 PMHospitalIntensiveTuesdayMay 30, 2023May 30, 20239:00 AM - 12:00 PMHospitalIntensiveTuesdayMay 30, 2023May 30, 20231:00 PM - 4:00 PMHospitalIntensiveWednesdayMay 31, 2023May 31, 20239:00 AM - 12:00 PMHospitalIntensiveWednesdayMay 31, 2023May 31, 20231:00 PM - 4:00 PMHospitalIntensiveThursdayJun 01, 2023Jun 01, 20239:00 AM - 12:00 PMHospitalIntensiveThursdayJun 01, 2023Jun 01, 20231:00 PM - 4:00 PMHospitalIntensiveFridayJun 02, 2023Jun 02, 20239:00 AM - 12:00 PMHospitalIntensiveFridayJun 02, 2023Jun 02, 20231:00 PM - 4:00 PMHospitalIntensiveMondayJun 05, 2023Jun 05, 20239:00 AM - 12:00 PMHospitalIntensiveMondayJun 05, 2023Jun 05, 20231:00 PM - 4:00 PMHospitalIntensiveTuesdayJun 06, 2023Jun 06, 20239:00 AM - 12:00 PMHospitalIntensiveTuesdayJun 06, 2023Jun 06, 20231:00 PM - 4:00 PMHospitalIntensiveWednesdayJun 07, 2023Jun 07, 20239:00 AM - 12:00 PMHospitalIntensiveWednesdayJun 07, 2023Jun 07, 20231:00 PM - 4:00 PMHospitalIntensiveThursdayJun 08, 2023Jun 08, 20239:00 AM - 12:00 PMHospitalIntensiveThursdayJun 08, 2023Jun 08, 20231:00 PM - 4:00 PMHospitalIntensiveFridayJun 09, 2023Jun 09, 20239:00 AM - 12:00 PMHospitalIntensiveFridayJun 09, 2023Jun 09, 20231:00 PM - 4:00 PMHospitalIntensiveMondayJun 12, 2023Jun 12, 20239:00 AM - 12:00 PMHospitalIntensiveMondayJun 12, 2023Jun 12, 20231:00 PM - 4:00 PMHospitalIntensiveTuesdayJun 13, 2023Jun 13, 20239:00 AM - 12:00 PMHospitalIntensiveTuesdayJun 13, 2023Jun 13, 20231:00 PM - 4:00 PMHospitalIntensiveWednesdayJun 14, 2023Jun 14, 20239:00 AM - 12:00 PMHospitalIntensiveWednesdayJun 14, 2023Jun 14, 20231:00 PM - 4:00 PMHospitalIntensiveThursdayJun 15, 2023Jun 15, 20239:00 AM - 12:00 PMHospitalIntensiveThursdayJun 15, 2023Jun 15, 20231:00 PM - 4:00 PMHospitalIntensive"
+				"schedule": []
 			}
 		]
 	},
@@ -117,17 +473,92 @@
 			{
 				"number": "00001",
 				"teacher": "Maria Lavoie",
-				"schedule": "Monday8:00 AM - 10:00 AM3A.6LabMonday10:00 AM - 12:00 PM3A.6LabMonday10:00 AM - 12:00 PM4A.12LabMonday10:00 AM - 12:00 PM4A.3LabWednesday12:00 PM - 2:00 PM4A.4Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Maria Lavoie",
-				"schedule": "Monday10:00 AM - 12:00 PM3A.6LabMonday10:00 AM - 12:00 PM4A.12LabMonday10:00 AM - 12:00 PM4A.3LabWednesday12:00 PM - 2:00 PM4A.4Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00003",
 				"teacher": "Maria Lavoie",
-				"schedule": "Monday10:00 AM - 12:00 PM3A.6LabMonday10:00 AM - 12:00 PM4A.12LabMonday10:00 AM - 12:00 PM4A.3LabMonday12:00 PM - 2:00 PM3A.6LabWednesday12:00 PM - 2:00 PM4A.4Class"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -138,17 +569,92 @@
 			{
 				"number": "00001",
 				"teacher": "Christina Papathanasopoulos",
-				"schedule": "Tuesday12:00 PM - 2:00 PM4A.3ClassThursday10:00 AM - 12:00 PM3A.19LabThursday10:00 AM - 12:00 PM4A.12LabThursday10:00 AM - 12:00 PM4A.4Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Christina Papathanasopoulos",
-				"schedule": "Tuesday12:00 PM - 2:00 PM4A.3ClassThursday10:00 AM - 12:00 PM3A.19LabThursday10:00 AM - 12:00 PM4A.12LabThursday10:00 AM - 12:00 PM4A.4LabThursday12:00 PM - 2:00 PM3A.19Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00003",
 				"teacher": "Christina Papathanasopoulos",
-				"schedule": "Tuesday12:00 PM - 2:00 PM4A.3ClassThursday8:00 AM - 10:00 AM3A.19LabThursday10:00 AM - 12:00 PM3A.19LabThursday10:00 AM - 12:00 PM4A.12LabThursday10:00 AM - 12:00 PM4A.4Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -159,12 +665,59 @@
 			{
 				"number": "00001",
 				"teacher": "Mary Ann Hoskin",
-				"schedule": "Monday2:00 PM - 4:00 PM4A.14ClassTuesday8:00 AM - 10:00 AM4A.11LabTuesday10:00 AM - 12:00 PM4A.11LabTuesday10:00 AM - 12:00 PM4A.12LabTuesday10:00 AM - 12:00 PM4A.3Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Mary Ann Hoskin",
-				"schedule": "Monday2:00 PM - 4:00 PM4A.14ClassTuesday10:00 AM - 12:00 PM4A.11LabTuesday10:00 AM - 12:00 PM4A.12LabTuesday10:00 AM - 12:00 PM4A.3Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -175,17 +728,92 @@
 			{
 				"number": "00001",
 				"teacher": "Arnulfo Montiel",
-				"schedule": "Wednesday8:00 AM - 11:00 AM4A.3ClassFriday8:00 AM - 10:00 AM4A.6LabFriday10:00 AM - 12:00 PM4A.12LabFriday10:00 AM - 12:00 PM4A.14LabFriday10:00 AM - 12:00 PM4A.6Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Arnulfo Montiel",
-				"schedule": "Wednesday8:00 AM - 11:00 AM4A.3ClassFriday10:00 AM - 12:00 PM4A.12LabFriday10:00 AM - 12:00 PM4A.14LabFriday10:00 AM - 12:00 PM4A.6LabFriday12:00 PM - 2:00 PM4A.6Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00003",
 				"teacher": "Arnulfo Montiel",
-				"schedule": "Wednesday8:00 AM - 11:00 AM4A.3ClassFriday10:00 AM - 12:00 PM4A.12LabFriday10:00 AM - 12:00 PM4A.14LabFriday10:00 AM - 12:00 PM4A.6Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -196,12 +824,50 @@
 			{
 				"number": "00001",
 				"teacher": "Christina Papathanasopoulos",
-				"schedule": "Wednesday1:00 PM - 2:00 PM4A.12ClassWednesday1:00 PM - 2:00 PM4A.3ClassWednesday2:00 PM - 4:00 PM4A.12LabWednesday2:00 PM - 4:00 PM4A.3Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Christina Papathanasopoulos",
-				"schedule": "Wednesday1:00 PM - 2:00 PM4A.12ClassWednesday1:00 PM - 2:00 PM4A.3ClassWednesday4:00 PM - 6:00 PM4A.12LabWednesday4:00 PM - 6:00 PM4A.3Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -212,7 +878,7 @@
 			{
 				"number": "00001",
 				"teacher": "TBA-142-A, Christina Papathanasopoulos, Heidi Gumbley, Ho-Git Chan, Maria Motta, Mary Ann Hoskin, Peter Mikhail, Vittoria Fusco",
-				"schedule": "WednesdayJan 04, 2023Jan 04, 20239:00 AM - 4:00 PMHospitalIntensiveThursdayJan 05, 2023Jan 05, 20239:00 AM - 4:00 PMHospitalIntensiveFridayJan 06, 2023Jan 06, 20239:00 AM - 4:00 PMHospitalIntensiveMondayJan 09, 2023Jan 09, 20239:00 AM - 4:00 PMHospitalIntensiveTuesdayJan 10, 2023Jan 10, 20239:00 AM - 4:00 PMHospitalIntensiveWednesdayJan 11, 2023Jan 11, 20239:00 AM - 4:00 PMHospitalIntensiveThursdayJan 12, 2023Jan 12, 20239:00 AM - 4:00 PMHospitalIntensiveFridayJan 13, 2023Jan 13, 20239:00 AM - 4:00 PMHospitalIntensiveMondayJan 16, 2023Jan 16, 20239:00 AM - 4:00 PMHospitalIntensiveTuesdayJan 17, 2023Jan 17, 20239:00 AM - 4:00 PMHospitalIntensiveMondayJan 18, 2023Mar 02, 20238:00 AM - 12:00 PMHospitalClassMondayJan 18, 2023Mar 02, 20231:00 PM - 4:00 PMHospitalLabTuesdayJan 18, 2023Mar 02, 20238:00 AM - 12:00 PMHospitalLabTuesdayJan 18, 2023Mar 02, 20231:00 PM - 4:00 PMHospitalLabWednesdayJan 18, 2023Mar 02, 20238:00 AM - 12:00 PMHospitalIntensiveThursdayJan 18, 2023Mar 02, 20238:00 AM - 9:00 AMHospitalClassThursdayJan 18, 2023Mar 02, 20239:00 AM - 12:00 PMHospitalLabThursdayJan 18, 2023Mar 02, 20231:00 PM - 4:00 PMHospitalLabFridayJan 18, 2023Mar 02, 20238:00 AM - 10:00 AMHospitalIntensiveFridayJan 18, 2023Mar 02, 202310:00 AM - 12:00 PMHospitalIntensiveFridayJan 18, 2023Mar 02, 20231:00 PM - 4:00 PMHospitalIntensive"
+				"schedule": []
 			}
 		]
 	},
@@ -223,7 +889,7 @@
 			{
 				"number": "00001",
 				"teacher": "TBA-142-A, Christina Papathanasopoulos, Heidi Gumbley, Ho-Git Chan, Maria Motta, Mary Ann Hoskin, Peter Mikhail",
-				"schedule": "MondayMar 03, 2023May 02, 20238:00 AM - 1:00 PMHospitalIntensiveMondayMar 03, 2023May 02, 20231:00 PM - 4:00 PMHospitalIntensiveTuesdayMar 03, 2023May 02, 20238:00 AM - 12:00 PMHospitalIntensiveTuesdayMar 03, 2023May 02, 20231:00 PM - 4:00 PMHospitalIntensiveWednesdayMar 03, 2023May 02, 20238:00 AM - 12:00 PMHospitalLabThursdayMar 03, 2023May 02, 20238:00 AM - 9:00 AMHospitalIntensiveThursdayMar 03, 2023May 02, 20239:00 AM - 12:00 PMHospitalIntensiveThursdayMar 03, 2023May 02, 20231:00 PM - 4:00 PMHospitalIntensiveFridayMar 03, 2023May 02, 20238:00 AM - 10:00 AMHospitalClassFridayMar 03, 2023May 02, 202310:00 AM - 12:00 PMHospitalLabFridayMar 03, 2023May 02, 20231:00 PM - 4:00 PMHospitalLab"
+				"schedule": []
 			}
 		]
 	}

@@ -1,6 +1,7 @@
 import { useQuery } from "react-query"
 import { Course, ColoredCourse } from "../../../../types/Course"
 import { colorVariables } from "../../cssUtils"
+import { useAddUserMutation } from "../../custom-query-hooks"
 import CourseQuickViewContainer from "../CourseQuickViewContainer/CourseQuickViewContainer"
 import styles from "./MainSidebar.module.scss"
 
@@ -16,10 +17,30 @@ export default function MainSidebar() {
           number: "202-BZF-05",
           sections: [
             {
-              title: "Organic Chemistry I",
+              events: [],
               number: "00002",
               teacher: "Carmen Leung",
-              schedule: "Tuesday8:30 AM - 10:00 AM3F.7ClassWednesday10:00 AM - 1:00 PM6A.13LabFriday8:30 AM - 10:00 AM3F.7Class"
+              schedule: [
+                {
+                  day: "Monday",
+                  begin: "8:30",
+                  end: "10:00",
+                  duration: {
+                    hours: 1,
+                    minutes: 30
+                  }
+                },
+                {
+                  day: "Wednesday",
+                  begin: "8:30",
+                  end: "10:00",
+                  duration: {
+                    hours: 1,
+                    minutes: 30
+                  }
+                }
+              ],
+              students: []
             }
           ]
         },
@@ -28,10 +49,30 @@ export default function MainSidebar() {
           number: "602-008-RE",
           sections: [
             {
-              title: "Mise à niveau pour Français, langue seconde de la 5e secondaire",
+              events: [],
               number: "00031",
               teacher: "Francesca Roy",
-              schedule: "Tuesday10:00 AM - 12:00 PM4E.18ClassFriday10:00 AM - 12:00 PM4E.18Class"
+              schedule: [
+                {
+                  day: "Monday",
+                  begin: "8:30",
+                  end: "10:00",
+                  duration: {
+                    hours: 1,
+                    minutes: 30
+                  }
+                },
+                {
+                  day: "Wednesday",
+                  begin: "8:30",
+                  end: "10:00",
+                  duration: {
+                    hours: 1,
+                    minutes: 30
+                  }
+                }
+              ],
+              students: []
             }
           ]
         },
@@ -40,10 +81,30 @@ export default function MainSidebar() {
           number: "201-105-DW",
           sections: [
             {
-              title: "Linear Algebra",
+              events: [],
               number: "00005",
               teacher: "Gilbert Honnouvo",
-              schedule: "Tuesday2:00 PM - 4:00 PM4D.2LabWednesday1:00 PM - 2:30 PM4H.19ClassFriday1:00 PM - 2:30 PM4H.19Class"
+              schedule: [
+                {
+                  day: "Monday",
+                  begin: "8:30",
+                  end: "10:00",
+                  duration: {
+                    hours: 1,
+                    minutes: 30
+                  }
+                },
+                {
+                  day: "Wednesday",
+                  begin: "8:30",
+                  end: "10:00",
+                  duration: {
+                    hours: 1,
+                    minutes: 30
+                  }
+                }
+              ],
+              students: []
             }
           ]
         },
@@ -52,10 +113,30 @@ export default function MainSidebar() {
           number: "202-BZF-05",
           sections: [
             {
-              title: "Organic Chemistry I",
+              events: [],
               number: "00002",
               teacher: "Carmen Leung",
-              schedule: "Tuesday8:30 AM - 10:00 AM3F.7ClassWednesday10:00 AM - 1:00 PM6A.13LabFriday8:30 AM - 10:00 AM3F.7Class"
+              schedule: [
+                {
+                  day: "Monday",
+                  begin: "8:30",
+                  end: "10:00",
+                  duration: {
+                    hours: 1,
+                    minutes: 30
+                  }
+                },
+                {
+                  day: "Wednesday",
+                  begin: "8:30",
+                  end: "10:00",
+                  duration: {
+                    hours: 1,
+                    minutes: 30
+                  }
+                }
+              ],
+              students: []
             }
           ]
         },
@@ -64,10 +145,30 @@ export default function MainSidebar() {
           number: "602-008-RE",
           sections: [
             {
-              title: "Mise à niveau pour Français, langue seconde de la 5e secondaire",
+              events: [],
               number: "00031",
               teacher: "Francesca Roy",
-              schedule: "Tuesday10:00 AM - 12:00 PM4E.18ClassFriday10:00 AM - 12:00 PM4E.18Class"
+              schedule: [
+                {
+                  day: "Monday",
+                  begin: "8:30",
+                  end: "10:00",
+                  duration: {
+                    hours: 1,
+                    minutes: 30
+                  }
+                },
+                {
+                  day: "Wednesday",
+                  begin: "8:30",
+                  end: "10:00",
+                  duration: {
+                    hours: 1,
+                    minutes: 30
+                  }
+                }
+              ],
+              students: []
             }
           ]
         },
@@ -76,10 +177,30 @@ export default function MainSidebar() {
           number: "201-105-DW",
           sections: [
             {
-              title: "Linear Algebra",
+              events: [],
               number: "00005",
               teacher: "Gilbert Honnouvo",
-              schedule: "Tuesday2:00 PM - 4:00 PM4D.2LabWednesday1:00 PM - 2:30 PM4H.19ClassFriday1:00 PM - 2:30 PM4H.19Class"
+              schedule: [
+                {
+                  day: "Monday",
+                  begin: "8:30",
+                  end: "10:00",
+                  duration: {
+                    hours: 1,
+                    minutes: 30
+                  }
+                },
+                {
+                  day: "Wednesday",
+                  begin: "8:30",
+                  end: "10:00",
+                  duration: {
+                    hours: 1,
+                    minutes: 30
+                  }
+                }
+              ],
+              students: []
             }
           ]
         }
@@ -107,12 +228,28 @@ export default function MainSidebar() {
     }
   )
 
+  const addUser = useAddUserMutation();
+
   if (isLoading) return <> <span>Loading...</span> </>
   if (isError || data === undefined) return <> <span>Couldn't load data</span> </>
+
+
+  const onSubmit = () => {
+
+    addUser.mutate({
+      sections: [{ courseNumber: "530-292-DW", sectionNumber: "00001" }],
+      name: "testUser",
+      password: "testPasswd",
+    })
+
+  }
 
   return (
     <>
       <div className={styles["main-sidebar-container"]}>
+        <div className={styles["sidebar-section"]}>
+          <button onClick={() => onSubmit()}> Create testUser </button>
+        </div>
         <div className={[styles["sidebar-section"], styles["classes"]].join(" ")}>
           <CourseQuickViewContainer courses={data} />
         </div>
