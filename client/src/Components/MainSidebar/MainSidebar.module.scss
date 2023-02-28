@@ -1,5 +1,5 @@
 .main-sidebar-container {
-  height: min-content;
+  height: fit-content;
   margin: 1rem;
   padding: .75rem;
   border-radius: 10px;
@@ -16,30 +16,30 @@
   .sidebar-section {
     background-color: var(--background);
     box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
-    margin: 1rem;
     padding: .75rem;
+    height: 100%;
     border-radius: 10px;
   }
 
-  .links {
-    display: flex;
-    flex-direction: column;
+  // .links {
+  //   display: flex;
+  //   flex-direction: column;
 
-    h2 {
-      padding: 0.4rem;
-      font-weight: 400;
-      border-bottom: 1px solid var(--faded-black);
+  //   h2 {
+  //     padding: 0.4rem;
+  //     font-weight: 400;
+  //     border-bottom: 1px solid var(--faded-black);
 
-      &:last-child {
-        border-bottom: none;
-      }
+  //     &:last-child {
+  //       border-bottom: none;
+  //     }
 
-      &:hover {
-        box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
-          rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-      }
-    }
-  }
+  //     &:hover {
+  //       box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+  //         rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  //     }
+  //   }
+  // }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -48,6 +48,7 @@
     max-width: 30%;
     width: 30%;
     margin: 0;
+    margin-left: 1rem;
   }
 }
 
