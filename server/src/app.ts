@@ -4,7 +4,7 @@ import DbMongoose from "./db/db"
 import { GetAllSectionsRequest } from "../../types/Queries/GetAllCourses";
 import { LoginRequest } from "../../types/Queries/Login";
 const app = express();
-const port = 8081
+const port = 8080
 
 app.use(express.json())
 
