@@ -1,8 +1,9 @@
 import { useState } from "react"
-import { ColoredSection } from "../../../../types/Section"
+import { UserClass } from "../../../../types/UserClass"
 import styles from "./CourseQuickView.module.scss"
 
-type CourseQuickViewProps = ColoredSection & {
+type CourseQuickViewProps = {
+  course: UserClass
   key: number
 }
 
@@ -16,10 +17,10 @@ export default function CourseQuickView(props: CourseQuickViewProps) {
         setAnimateBubble(true)
         setTimeout(() => { setAnimateBubble(false) }, animationDuration); //need to change this
       }}>
-        <h2>{props.}</h2>
+        <h2>{props.course.courseTitle}</h2>
         {/* Keep TBA but pririotize passed section teacher prop */}
-        <h4>{(props.sections && props.sections[0]?.teacher) || "TBA"}</h4>
-        <div className={animateBubble ? [styles.bubble, styles.animationBubble].join(" ") : styles.bubble} style={{ background: `var(--classes-${props.color})`, animationDuration: `${animationDuration / 1000}s` }}></div>
+        <h4>{props.course.teacher || "TBA"}</h4>
+        <div className={animateBubble ? [styles.bubble, styles.animationBubble].join(" ") : styles.bubble} style={{ background: `var(--classes-salmon)`, animationDuration: `${animationDuration / 1000}s` }}></div>
       </div>
     </>
   )

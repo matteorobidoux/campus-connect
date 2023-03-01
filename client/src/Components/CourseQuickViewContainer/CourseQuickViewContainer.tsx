@@ -1,19 +1,24 @@
-import { ColoredCourse } from "../../../../types/Course"
+import { UserClass } from "../../../../types/UserClass"
 import CourseQuickView from "../CourseQuickView/CourseQuickView"
 import styles from "./CourseQuickViewContainer.module.scss"
 
 type CourseQuickViewContainerProps = {
-	courses: ColoredCourse[]
+	data: UserClass[]
 }
 
 export default function CourseQuickViewContainer(props: CourseQuickViewContainerProps) {
+
+	if (!props.data) {
+		return null
+	}
+
 	return (
 		<>
 			<div className={styles["course-quick-view-container"]}>
 				{
-					props.courses.map((course, key) => {
+					props.data.map((course, key) => {
 						return (
-							<CourseQuickView key={key} color={course.color} title={course.title} number={course.number} sections={course.sections} />
+							<CourseQuickView course={course} key={key} />
 						)
 					})
 				}
