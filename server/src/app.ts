@@ -31,9 +31,13 @@ app.post('/api/addUser', async (req, res) => {
 
 
 app.post('/api/addCompletedEvent', async (req,res)=>{
-  const body = req.body as CompletedEventBodyParams;
-  console.log(body);
-  res.json({id: await DbMongoose.addCompletedEvent(body.userName, body.completedEvent)})
+  const {userName , completedEvent} = req.body as Partial<CompletedEventBodyParams>;
+  if (!userName || !completedEvent) {
+    res.sendStatus(400);
+  } else {
+    res.json({id: await DbMongoose.addCompletedEvent({userName, completedEvent})})
+  }
+  
 })
 
 // app.get('/api/allSections', async (_, res) => {

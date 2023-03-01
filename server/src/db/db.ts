@@ -55,13 +55,19 @@ class DbMongoose {
   }
 
   async addCompletedEvent({userName, completedEvent}:CompletedEventBodyParams){ 
-    let resp;
-    User.findOne({ name: userName }, async function (err, user) {
-      user.completedEvents.push(completedEvent)
-      resp= await user.save()
-    })
+    // let resp;
+    // User.findOne({ name: userName }, async function (err, user) {
+    //   user.completedEvents.push(completedEvent)
+    //   resp= await user.save()
+    // })
+    const user = await userModel.findOne({ name: userName});
+    user.completedEvents.push(completedEvent);
+    const resp= await user.save()
     return resp.id!  
   }
+
+
+
   //Matteos Solution
   // async addUsertoSection(coursenumb:string) {
   //   Course.findOne({number: coursenumb}, function(err, course) {
@@ -113,4 +119,10 @@ class DbMongoose {
 
 }
 
+const f= new DbMongoose()
+const comp : CompletedEventBodyParams = {
+  userName:"Octavio",
+  completedEvent: {id:"999999999", date: new Date()}
+}
+f.addCompletedEvent(comp)
 export default new DbMongoose();
