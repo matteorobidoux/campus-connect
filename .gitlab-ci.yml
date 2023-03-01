@@ -30,7 +30,7 @@ build-frontend:
       - 'client/node_modules/'
 
   script:
-    - cd client && npm install && npm run build
+    - cd client && npm install && npm run build CI=false
   artifacts:
     expire_in: 1 days
     when: on_success
@@ -50,7 +50,7 @@ build-backend:
       - 'server/node_modules/'
 
   script:
-    - cd server && npm install && npm run build
+    - cd server && npm install && npm run build CI=false
   artifacts:
     expire_in: 1 days
     when: on_success
