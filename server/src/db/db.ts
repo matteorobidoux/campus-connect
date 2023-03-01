@@ -55,10 +55,12 @@ class DbMongoose {
   }
 
   async addCompletedEvent({userName, completedEvent}:CompletedEventBodyParams){ 
-    User.findOne({ name: userName }, function (err, user) {
+    let resp;
+    User.findOne({ name: userName }, async function (err, user) {
       user.completedEvents.push(completedEvent)
-       user.save()
-    })  
+      resp= await user.save()
+    })
+    return resp.id!  
   }
   //Matteos Solution
   // async addUsertoSection(coursenumb:string) {
