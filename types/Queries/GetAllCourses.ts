@@ -1,12 +1,9 @@
 import { UserClassSection } from "../UserClassSection";
+import UserClass from "../UserClass";
+
 type GetAllSectionsResponse = {
-  title: string;
-  sections: {
-    teacher: string;
-    number: string;
-  }[];
-  id: string;
-}[]
+  response: UserClass[]
+}
 
 type GetAllSectionsRequest = {
   userClassSections: UserClassSection[]

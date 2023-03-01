@@ -29,7 +29,7 @@ app.post("/api/login", async (req, res) => {
 app.post('/api/addUser', async (req, res) => {
   const body = req.body as CreateUserBodyParams;
   console.log(body);
-  res.json({id: await DbMongoose.addUser(body)});
+  res.json(await DbMongoose.addUser(body));
 })
 //
 // app.get('/api/allSections', async (_, res) => {
@@ -48,7 +48,7 @@ app.get("/api/getAllSections", async (req, res) => {
 
 app.get("/gauth", async (req, res) => {
   console.log("calling gauth.");
-  GAuth(req, res);
+  await GAuth(req, res);
 })
 
 app.get("/api/authenticate", async (req, res) => {
