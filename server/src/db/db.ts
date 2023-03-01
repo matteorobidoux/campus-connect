@@ -8,6 +8,7 @@ import CreateUserBodyParams from "../../../types/Queries/CreateUser";
 import { UserClassSection } from "../../../types/UserClassSection"
 import { GetAllSectionsResponse } from "../../../types/Queries/GetAllCourses"
 import { LoginRequest, LoginResponse } from "../../../types/Queries/Login";
+import  CompletedEventBodyParams  from '../../../types/Queries/CompletedEvent';
 import userModel from './models/user-schema';
 
 // const dname = process.env.NAME || 'CampusConnect'
@@ -29,8 +30,8 @@ class DbMongoose {
     mongoose.connection.close()
   }
 
-  async login({name, password}: LoginRequest): Promise<LoginResponse> {
-    const user = await userModel.findOne({name: name, password: password});
+  async login({ name, password }: LoginRequest): Promise<LoginResponse> {
+    const user = await userModel.findOne({ name: name, password: password });
 
     if (user) {
       return { data: user };
@@ -40,7 +41,7 @@ class DbMongoose {
 
   }
 
-  async addUser({name, password, sections}: CreateUserBodyParams): Promise<string> {
+  async addUser({ name, password, sections }: CreateUserBodyParams): Promise<string> {
     const userModel = new User({ name, password, sections })
     console.log(userModel)
     const resp = await userModel.save();
@@ -53,6 +54,15 @@ class DbMongoose {
     await eventModel.save();
   }
 
+  async addCompletedEvent({userName, completedEvent}:CompletedEventBodyParams){
+    
+    User.findOne({ name: userName }, function (err, user) {
+      user.completedEvents.push(completedEvent)
+       user.save()
+    })
+    
+  }
+  //Matteos Solution
   // async addUsertoSection(coursenumb:string) {
   //   Course.findOne({number: coursenumb}, function(err, course) {
   //     course.sections[0].students.push("ho")
@@ -62,13 +72,13 @@ class DbMongoose {
 
 
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
-    const courses = userSections.map(async userCourse=> {
+    const courses = userSections.map(async userCourse => {
       const course = (await Course.findOne({ number: userCourse.courseNumber }))!.toObject();
       const section = course.sections.find(fullSection => fullSection.number == userCourse.sectionNumber)!;
       return {
-          ...section,
-          courseNumber: course.number,
-          courseTitle: course.title,
+        ...section,
+        courseNumber: course.number,
+        courseTitle: course.title,
       }
     });
 
@@ -92,7 +102,7 @@ class DbMongoose {
     const mongoResp = await Course.find();
     const result = mongoResp.map(r => ({
       title: r.title,
-      sections: r.sections.map(s => ({teacher: s.teacher, number: s.number})),
+      sections: r.sections.map(s => ({ teacher: s.teacher, number: s.number })),
       id: r.id as string,
     }))
 

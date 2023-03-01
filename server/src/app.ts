@@ -1,5 +1,6 @@
 import express from "express";
 import CreateUserBodyParams from "../../types/Queries/CreateUser";
+import CompletedEventBodyParams from "../../types/Queries/CompletedEvent"
 import DbMongoose from "./db/db"
 import { GetAllSectionsRequest } from "../../types/Queries/GetAllCourses";
 import { LoginRequest } from "../../types/Queries/Login";
@@ -27,6 +28,13 @@ app.post('/api/addUser', async (req, res) => {
   console.log(body);
   res.json({id: await DbMongoose.addUser(body)});
 })
+
+//To confirm with gui
+// app.post('/api/addCompletedEvent', async (req,res)=>{
+//   const body = req.body as CompletedEventBodyParams;
+//   console.log(body);
+//   res.json({id: await DbMongoose.addCompletedEvent(body.userName, body.completedEvent)})
+// })
 //
 // app.get('/api/allSections', async (_, res) => {
 //   res.json(await DbMongoose.getAllSections())
