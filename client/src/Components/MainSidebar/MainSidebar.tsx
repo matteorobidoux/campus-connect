@@ -44,7 +44,7 @@ export default function MainSidebar() {
         <div className={[styles["sidebar-section"], styles["classes"]].join(" ")}>
           {
             isLoading ? <span>Loading...</span> :
-              (data !== undefined && isSuccess) ? <CourseQuickViewContainer data={data.response} /> :
+              isSuccess ? <CourseQuickViewContainer data={data} /> :
                 <span>Couldn't load data</span>
           }
         </div>
