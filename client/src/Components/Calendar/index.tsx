@@ -11,6 +11,7 @@ import CalendarEvent from "../../../../types/Calendar";
 
 export interface CalendarProps {
   onMonthChanged?: (month: number, events: CalendarEvents[]) => void;
+  onScopeChanged?: (scope: "month" | "day", date: Date) => void;
 }
 
 const isSameDayAndMonth = (d1: Date, d2: Date) => d1.getMonth() == d2.getMonth() && d2.getDate() == d1.getDate();
@@ -20,7 +21,7 @@ const getCEvClassName = (d1: Date, usedDates: Date[]) => usedDates.some(d => isS
  * TODO: Implement API call to fetch all the calendar events.
  * Wrapper for React-Calendar.
 */
-export default function Calendar({onMonthChanged}: CalendarProps) {
+export default function Calendar({onMonthChanged, onScopeChanged}: CalendarProps) {
   const [clickedDayRef, setClickedDayRef] = useState<EventTarget | null>(null)
   const [currentDate, setCurrentDate] = useState<Date>(new Date());
   
@@ -39,6 +40,7 @@ export default function Calendar({onMonthChanged}: CalendarProps) {
       setCurrentDay(null);
       setCurrentDate(new Date());
       setClickedDayRef(null);
+      onScopeChanged?.("month", date);
       return;
     }
 
@@ -46,6 +48,7 @@ export default function Calendar({onMonthChanged}: CalendarProps) {
     setCurrentDay(clickedDay);
     setClickedDayRef(ev.currentTarget);
     setCurrentDate(date);
+    onScopeChanged?.("day", date);
   }
 
   const filterByDayAndMonth = (cEv: CalendarEvent) => {
@@ -82,7 +85,7 @@ export default function Calendar({onMonthChanged}: CalendarProps) {
       tileClassName={(p) => queryEvents.data ? getCEvClassName(p.date, queryEvents.data.map(e => e.date)) : null} 
       onActiveStartDateChange={handleActiveStartDateChange}
       minDetail={'year'}
-      showFixedNumberOfWeeks={true}
+      showFixedNumberOfWeeks
       value={currentDate}
     />
   </div>

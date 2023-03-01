@@ -21,7 +21,6 @@ export default function App() {
     setIsOpen(!isOpen)
   }
 
-
   return (
     <QueryClientProvider client={queryClient}>
       <ToastContainer />

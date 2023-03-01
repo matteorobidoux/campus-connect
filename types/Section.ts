@@ -1,5 +1,5 @@
 import Schedule from "./Schedule";
-import Events from "./Eventsection"
+import Events from "./Event";
 type Section = {
   schedule: Schedule[];
   teacher: string;
