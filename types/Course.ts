@@ -5,5 +5,3 @@ export type Course = {
   number: string;
   sections: Section[];
 }
-
-export type ColoredCourse = Course & { color: string }
