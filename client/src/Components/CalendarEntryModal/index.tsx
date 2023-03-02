@@ -1,27 +1,32 @@
 import { Field, Form, Formik } from "formik";
 import { toast } from "react-toastify";
-import CalendarEvent from "../../../../types/Calendar";
-import { useSections } from "../../custom-query-hooks";
+import { useGetAllSections } from "../../custom-query-hooks";
 import styles from "./CalendarEntryModal.module.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useMutation } from "react-query";
+import { AddEventBody } from "../../../../types/Queries/AddEvent";
+import axios from "axios";
 
 export interface CalendarEntryModalProps {
   onClose: () => void;
 }
 
-export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {
-  const sectionsQuery = useSections();
-  const mutation = useMutation(async (arg: Omit<CalendarEvent, 'id'>) => {
-    console.log(arg);
-    await new Promise(r => setTimeout(r, 2000));
-  })
+export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {  
+  
+  const sections = useGetAllSections({userClassSections: [
+    {courseNumber: "hgcd", sectionNumber: "00001"},
+  ]});
+  
+  const mutation = useMutation(async (arg: Omit<AddEventBody, 'id'>) => {
+    axios.post('/api/addEvent', arg)
+  });
 
-  const initialValues: Omit<CalendarEvent, 'id' | 'associatedSection'> & {courseTitle: string} = {
-    date: new Date(),
-    title: '',
-    description: '',
-    courseTitle: '',
+
+  const initialValues = {
+    title: "",
+    desc: "",
+    courseTitle: "",
+    date: new Date()
   }
 
   return (
@@ -31,20 +36,35 @@ export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {
         initialValues={initialValues}
         onSubmit={async (values) => {
           toast.loading("Adding event...", {toastId: 'addingEvent'});
-          await mutation.mutateAsync({...values, associatedSection: {name: values.courseTitle}});
+          const courseNumber = sections!.data!.find(s => s.title === values.courseTitle)!.id;;
+          await mutation.mutateAsync({
+            ...values,
+            section: {
+              courseNumber: courseNumber,
+              sectionNumber: ""
+            },
+            event: {
+              ownerId: "",
+              date: values.date,
+              title: values.courseTitle,
+              desc: values.desc
+            }
+          });
           toast.done('addingEvent');
           onClose();
         }}
         validate={values => {
           const errors: {[key: string]: string} = {};
+          // eslint-disable-next-line eqeqeq
           if (values.title == "") {
             errors.title = "Name can't be empty.";
           }
 
-          if (values.description == "") {
+          // eslint-disable-next-line eqeqeq
+          if (values.desc == "") {
             errors.description = "Please add a description.";
           }
-
+          // eslint-disable-next-line eqeqeq
           if (values.courseTitle == "") {
             errors.courseTitle = "Please pick a course.";
           }
@@ -64,14 +84,14 @@ export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {
             <div className={styles.formEntry}>
               <label htmlFor="description"> Description </label>
               <Field id="description" name="description" />
-              <p> {errors.description ? errors.description : null} </p>
+              <p> {errors.desc ? errors.desc : null} </p>
             </div>
 
             <div className={styles.formEntry}>
               <label htmlFor="courseTitle"> Class </label>
               <Field as="select" id="courseTitle" name="courseTitle" value={'DEFAULT'}>
                 <option value="DEFAULT" disabled>Pick a class</option>
-                {sectionsQuery.data?.map(s => <option key={s.title}> {s.title} </option>)}
+                {sections.data?.map(s => <option key={s.title}> {s.title} </option>)}
               </Field>
               <p> {errors.courseTitle ? errors.courseTitle : null} </p>
             </div>

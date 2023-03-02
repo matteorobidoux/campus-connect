@@ -9,6 +9,8 @@ import { UserClassSection } from "../../../types/UserClassSection"
 import { GetAllSectionsResponse } from "../../../types/Queries/GetAllCourses"
 import { LoginRequest, LoginResponse } from "../../../types/Queries/Login";
 import userModel from './models/user-schema';
+import Section from './models/section-schema';
+import { Events } from '../../../types/Event';
 
 // const dname = process.env.NAME || 'CampusConnect'
 const dname = process.env.NAME || 'CampusConnect'
@@ -59,6 +61,13 @@ class DbMongoose {
   //     course.save()
   //   })
   // }
+
+  async addEventtoSection(courseNumber: string, sectionNumber:string, event: Events) {
+      const course = (await Course.findOne({ number: courseNumber }))!;
+      const section = course.sections.find(s => s.number == sectionNumber)!;
+      section.events.push(event);
+      await course.save();
+  }
 
 
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {

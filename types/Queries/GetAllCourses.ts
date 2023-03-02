@@ -12,4 +12,4 @@ type GetAllSectionsRequest = {
   userClassSections: UserClassSection[]
 }
 
-export {GetAllSectionsRequest, GetAllSectionsResponse} ;
+export type {GetAllSectionsRequest, GetAllSectionsResponse} ;

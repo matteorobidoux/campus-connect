@@ -4,7 +4,7 @@ import CalendarEvents from "../../../types/Calendar"
 import { GetAllSectionsRequest, GetAllSectionsResponse} from "../../../types/Queries/GetAllCourses"
 import CreateUserBodyParams from "../../../types/Queries/CreateUser"
 
-export const useGetAllCourses = (classes: GetAllSectionsRequest) => {
+export const useGetAllSections = (classes: GetAllSectionsRequest) => {
   async function queryFunction(params: GetAllSectionsRequest) {
     const data = await axios.get<GetAllSectionsResponse>('/api/getAllSections', {params});
     return data.data;
@@ -54,45 +54,4 @@ export const useCalendarEvents = () => {
   }
 
   return useQuery(['events'], getCalendarEvents, {staleTime: Infinity})
-}
-
-export const useSections = () => {
-  const getClasses = async () => {
-    await new Promise(r => setTimeout(r, 1000));
-    const classes = [{
-      title: "Web Development",
-      section: "00001",
-      teacher: "Daniel Pomerantz",
-      schedule: [{
-        day: "Monday",
-        startTime: "4:00 PM",
-        endTime: "6:00 PM",
-        classroom: "3E.7"
-      }, {
-          day: "Wednesday",
-          startTime: "4:00 PM",
-          endTime: "6:00 PM",
-          classroom: "3E.7"
-        }
-      ]},
-      {
-        title: "Software Development",
-        section: "00001",
-        teacher: "Maya Sspogjas",
-        schedule: [{
-          day: "Monday",
-          startTime: "4:00 PM",
-          endTime: "6:00 PM",
-          classroom: "3E.7"
-        }, {
-            day: "Wednesday",
-            startTime: "4:00 PM",
-            endTime: "6:00 PM",
-            classroom: "3E.7"
-          }
-        ]},
-    ]
-    return classes;
-  }
-  return useQuery(['sections'], getClasses)
 }
