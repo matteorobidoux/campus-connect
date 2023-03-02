@@ -9,7 +9,7 @@ import MainSidebar from './Components/MainSidebar/MainSidebar';
 import NavBar from './Components/NavBar/NavBar';
 import ProfileBar from './Components/ProfileBar/ProfileBar';
 import { useGoogleOAuth } from './custom-query-hooks/useGoogleOAuth';
-import { useAddUserMutataion } from './custom-query-hooks';
+import { useAddUserMutation } from './custom-query-hooks';
 import { RegisterInfo } from '../../types/Queries/GAuth';
 
 library.add(faCircleNotch)
@@ -18,7 +18,7 @@ export default function App() {
   const query = useGoogleOAuth();
   const [isOpen, setIsOpen] = useState(false);
   const [isReturningFromGoogleAuth, setIsReturningFromGoogleAuth] = useState(false);
-  const addUser = useAddUserMutataion();
+  const addUser = useAddUserMutation();
 
   useEffect(() => {
     if (query.isSuccess) {

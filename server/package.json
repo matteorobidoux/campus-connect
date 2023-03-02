@@ -2,7 +2,8 @@
   "scripts": {
     "dev": "nodemon src/app.ts",
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "start:prod": "node ./build/server/src/app.js"
   },
   "dependencies": {
     "@types/cors": "^2.8.13",

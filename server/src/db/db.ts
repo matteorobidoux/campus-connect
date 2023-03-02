@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import User from "./models/user-schema"
 import Event from './models/event-schema';
 import Course from "./models/course-schema";
-import UserClass from "../../../types/UserClass"
+import { UserClass } from "../../../types/UserClass"
 import CreateUserBodyParams from "../../../types/Queries/CreateUser";
 import { UserClassSection } from "../../../types/UserClassSection"
 import { GetAllSectionsResponse } from "../../../types/Queries/GetAllCourses"
@@ -31,8 +31,8 @@ class DbMongoose {
     mongoose.connection.close()
   }
 
-  async login({name, password}: LoginRequest): Promise<LoginResponse> {
-    const user = await userModel.findOne({name: name, password: password});
+  async login({ name, password }: LoginRequest): Promise<LoginResponse> {
+    const user = await userModel.findOne({ name: name, password: password });
 
     if (user) {
       return { data: user };
@@ -56,13 +56,13 @@ class DbMongoose {
   }
 
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
-    const courses = userSections.map(async userCourse=> {
+    const courses = userSections.map(async userCourse => {
       const course = (await Course.findOne({ number: userCourse.courseNumber }))!.toObject();
       const section = course.sections.find(fullSection => fullSection.number == userCourse.sectionNumber)!;
       return {
-          ...section,
-          courseNumber: course.number,
-          courseTitle: course.title,
+        ...section,
+        courseNumber: course.number,
+        courseTitle: course.title,
       }
     });
 
@@ -81,19 +81,6 @@ class DbMongoose {
     console.log(result)
     return result;
   }
-
-  // async getAllSections(): Promise<GetAllSectionsResponse> {
-  //   const mongoResp = await Course.find();
-  //   const result = mongoResp.map(r => ({
-  //     title: r.title,
-  //     sections: r.sections.map(s => ({teacher: s.teacher, number: s.number})),
-  //     id: r.id as string,
-  //   }))
-  //
-  //   console.log(result);
-  //
-  //   return {response: result};
-  // }
 
 }
 

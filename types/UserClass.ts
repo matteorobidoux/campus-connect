@@ -5,4 +5,4 @@ type UserClass = {
   courseTitle: string;
 } & Section;
 
-export default UserClass;
+export type { UserClass };

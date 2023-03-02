@@ -1,5 +1,5 @@
 import { UserClassSection } from "../UserClassSection";
-import UserClass from "../UserClass";
+import { UserClass } from "../UserClass";
 
 type GetAllSectionsResponse = {
   response: UserClass[]
@@ -9,4 +9,4 @@ type GetAllSectionsRequest = {
   userClassSections: UserClassSection[]
 }
 
-export {GetAllSectionsRequest, GetAllSectionsResponse} ;
+export type { GetAllSectionsRequest, GetAllSectionsResponse };

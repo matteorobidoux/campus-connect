@@ -1,17 +1,21 @@
 import { Field, Form, Formik } from "formik";
 import { toast } from "react-toastify";
 import CalendarEvent from "../../../../types/Calendar";
-import { useSections } from "../../custom-query-hooks";
 import styles from "./CalendarEntryModal.module.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useMutation } from "react-query";
+import { useSections } from "../../custom-query-hooks";
 
 export interface CalendarEntryModalProps {
   onClose: () => void;
 }
 
 export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {
+  // const sections = useGetAllSections({userClassSections: [
+  //   {courseNumber: "ajskdpfk", sectionNumber: "00001"}
+  // ]});
   const sectionsQuery = useSections();
+
   const mutation = useMutation(async (arg: Omit<CalendarEvent, 'id'>) => {
     console.log(arg);
     await new Promise(r => setTimeout(r, 2000));
