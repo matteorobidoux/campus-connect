@@ -8,10 +8,9 @@ import CreateUserBodyParams from "../../../types/Queries/CreateUser";
 import { UserClassSection } from "../../../types/UserClassSection"
 import { GetAllSectionsResponse } from "../../../types/Queries/GetAllCourses"
 import { LoginRequest, LoginResponse } from "../../../types/Queries/Login";
-import  CompletedEventBodyParams  from '../../../types/Queries/CompletedEvent';
+import CompletedEventBodyParams from '../../../types/Queries/CompletedEvent';
 import userModel from './models/user-schema';
 
-// const dname = process.env.NAME || 'CampusConnect'
 const dname = process.env.NAME || 'CampusConnect'
 
 class DbMongoose {
@@ -54,29 +53,19 @@ class DbMongoose {
     await eventModel.save();
   }
 
-  async addCompletedEvent({userName, completedEvent}:CompletedEventBodyParams){ 
-    const user = await userModel.findOne({ name: userName});
+  async addCompletedEvent({ userName, completedEvent }: CompletedEventBodyParams) {
+    const user = await userModel.findOne({ name: userName });
     user.completedEvents.push(completedEvent);
-    const resp= await user.save()
-    return resp.id!  
+    const resp = await user.save()
+    return resp.id!
   }
 
-  async removeEvent(userId:string, courseNumber:string, courseSection:string){
-    const course = await Course.findOne({number: courseNumber});
+  async removeEvent(userId: string, courseNumber: string, courseSection: string) {
+    const course = await Course.findOne({ number: courseNumber });
     const section = course.sections.find(section => section.number == courseSection)!;
-    section.events= section.events.filter((section, i)=> section.ownerId !== userId)
+    section.events = section.events.filter((section, i) => section.ownerId !== userId)
     course.save()
   }
-
-
-
-  //Matteos Solution
-  // async addUsertoSection(coursenumb:string) {
-  //   Course.findOne({number: coursenumb}, function(err, course) {
-  //     course.sections[0].students.push("ho")
-  //     course.save()
-  //   })
-  // }
 
 
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
@@ -121,14 +110,4 @@ class DbMongoose {
 
 }
 
-const f= new DbMongoose()
-const comp : CompletedEventBodyParams = {
-  userName:"Octavio",
-  completedEvent: {id:"999999999", date: new Date()}
-}
-const coursem="574-251-DW"
-const objeid="63fee62b7f7fccd5f1f264f8"
-const section="00001"
-// f.addCompletedEvent(comp)
-f.removeEvent(objeid, coursem,section)
 export default new DbMongoose();
