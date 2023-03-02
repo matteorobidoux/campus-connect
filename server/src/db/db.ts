@@ -61,8 +61,11 @@ class DbMongoose {
     return resp.id!  
   }
 
-  async removeEvent(userId:string, eventId:string){
-    
+  async removeEvent(userId:string, courseNumber:string, courseSection:string){
+    const course = await Course.findOne({number: courseNumber});
+    const section = course.sections.find(section => section.number == courseSection)!;
+    section.events= section.events.filter((section, i)=> section.ownerId !== userId)
+    course.save()
   }
 
 
@@ -123,5 +126,9 @@ const comp : CompletedEventBodyParams = {
   userName:"Octavio",
   completedEvent: {id:"999999999", date: new Date()}
 }
-f.addCompletedEvent(comp)
+const coursem="574-251-DW"
+const objeid="63fee62b7f7fccd5f1f264f8"
+const section="00001"
+// f.addCompletedEvent(comp)
+f.removeEvent(objeid, coursem,section)
 export default new DbMongoose();
