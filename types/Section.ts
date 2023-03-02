@@ -8,4 +8,4 @@ type Section = {
   students:string[]
 }
 
-export default Section;
+export default Section
