@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2%;
+  margin-left: auto;
+  margin-right: auto;
+
+  .calendarEventsWrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    gap: 0.3em;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    align-content: center;
+
+    .header {
+
+      h2 {
+        text-align: center;
+        font-weight: 300;
+      }
+
+    }
+  }
+
+}
