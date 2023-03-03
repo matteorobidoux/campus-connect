@@ -1,11 +1,11 @@
 import { CalendarWidget } from "../CalendarWidget"
 import styles from "./Main.module.scss"
 import { useEffect } from "react";
-import { useGetAllCourses } from "../../custom-query-hooks";
+import { useGetAllSections } from "../../custom-query-hooks";
 
 
 export default function Main() {
-  const query = useGetAllCourses({userClassSections: [
+  const query = useGetAllSections({userClassSections: [
     {
       courseNumber: "574-251-DW",
       sectionNumber: "00001",

@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { colorVariables } from "../../cssUtils"
-import { useAddUserMutation, useGetAllCourses } from "../../custom-query-hooks"
+import { useAddUserMutation, useGetAllSections } from "../../custom-query-hooks"
 import CourseQuickViewContainer from "../CourseQuickViewContainer/CourseQuickViewContainer"
 import styles from "./MainSidebar.module.scss"
 
@@ -19,7 +19,7 @@ export default function MainSidebar() {
     ]
   }
 
-  const { isLoading, isSuccess, data } = useGetAllCourses(fetchedCourses)
+  const { isLoading, isSuccess, data } = useGetAllSections(fetchedCourses)
 
   const defaultColor = "salmon"
   let colors = [{ value: defaultColor }]
