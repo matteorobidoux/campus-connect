@@ -9,12 +9,14 @@ import Main from './Components/Main/Main';
 import MainSidebar from './Components/MainSidebar/MainSidebar';
 import NavBar from './Components/NavBar/NavBar';
 import ProfileBar from './Components/ProfileBar/ProfileBar';
+import Login from './Components/Login/Login';
 
 const queryClient = new QueryClient()
 library.add(faCircleNotch)
 
 export default function App() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
 
   // TODO: what should the type of e be?
   function openProfileBar() {
@@ -27,8 +29,13 @@ export default function App() {
       <div className="app-container">
         <NavBar toggleSidebar={openProfileBar} />
         <div className="app-content-container">
-          <MainSidebar />
-          <Main />
+          {
+            isLoggedIn ? <>
+              <MainSidebar />
+              <Main />
+            </> :
+              <Login />
+          }
         </div>
         <ProfileBar isOpen={isOpen} toggleFunc={openProfileBar} />
       </div>
