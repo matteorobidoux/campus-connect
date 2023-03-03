@@ -14,9 +14,6 @@ export default function CourseEntryWidget() {
   const [isAdding, setIsAdding] = useState(false)
 
   const handleRemoveCourse = (key: number) => {
-    console.log("key", key);
-    console.log("course", selectedCourses[key]);
-
     setSelectedCourses(selectedCourses.filter(course => { return course !== selectedCourses[key] }))
   }
 
@@ -25,8 +22,6 @@ export default function CourseEntryWidget() {
       setSelectedCourses([...selectedCourses, course])
       return
     }
-    console.log(course, selectedCourses, selectedCourses.indexOf(course));
-
     if (selectedCourses.indexOf(course) === -1) {
       setSelectedCourses([...selectedCourses, course])
     } else {
@@ -36,6 +31,7 @@ export default function CourseEntryWidget() {
   }
 
   const handleFinishedAddingCourses = () => {
+    // TODO: connect with API
     console.log("Add courses", selectedCourses);
   }
 
