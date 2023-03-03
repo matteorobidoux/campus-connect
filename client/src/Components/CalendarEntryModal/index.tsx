@@ -14,7 +14,7 @@ export interface CalendarEntryModalProps {
 export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {  
   
   const sections = useGetAllSections({userClassSections: [
-    {courseNumber: "hgcd", sectionNumber: "00001"},
+    {courseNumber: "tempCourseNumber", sectionNumber: "tempSectionNumber"},
   ]});
   
   const mutation = useMutation(async (arg: Omit<AddEventBody, 'id'>) => {
@@ -36,15 +36,15 @@ export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {
         initialValues={initialValues}
         onSubmit={async (values) => {
           toast.loading("Adding event...", {toastId: 'addingEvent'});
-          const courseNumber = sections!.data!.find(s => s.title === values.courseTitle)!.id;;
+          const course = sections!.data!.response!.find(s => s.courseTitle === values.courseTitle)
           await mutation.mutateAsync({
             ...values,
             section: {
-              courseNumber: courseNumber,
-              sectionNumber: ""
+              courseNumber: course!.courseNumber,
+              sectionNumber: course!.number
             },
             event: {
-              ownerId: "",
+              ownerId: "tempOwnerID",
               date: values.date,
               title: values.courseTitle,
               desc: values.desc
@@ -91,7 +91,7 @@ export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {
               <label htmlFor="courseTitle"> Class </label>
               <Field as="select" id="courseTitle" name="courseTitle" value={'DEFAULT'}>
                 <option value="DEFAULT" disabled>Pick a class</option>
-                {sections.data?.map(s => <option key={s.title}> {s.title} </option>)}
+                {sections.data?.response!.map(s => <option key={s.courseTitle}> {s.courseTitle} </option>)}
               </Field>
               <p> {errors.courseTitle ? errors.courseTitle : null} </p>
             </div>
