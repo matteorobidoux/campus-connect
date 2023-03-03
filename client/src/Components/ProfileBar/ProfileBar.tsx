@@ -1,5 +1,5 @@
 import styles from "./ProfileBar.module.scss"
-import closeImg from "../../close.png"
+import closeImg from "../../assets/close.png"
 import Rodal from "rodal"
 
 //fix type script stuff
