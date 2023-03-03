@@ -1,4 +1,5 @@
 import { SelectedCourse } from "../CourseEntryWidget"
+import styles from "./ChosenCourseEntry.module.scss"
 
 type ChosenCourseEntryProps = {
   setIsAdding: (state: boolean) => void,
@@ -7,7 +8,7 @@ type ChosenCourseEntryProps = {
 
 export default function ChosenCourseEntry(props: ChosenCourseEntryProps) {
   return (
-    <div>
+    <div className={styles["entry-container"]}>
       <p>Select course</p>
       <p>Select section</p>
       <button onClick={(e) => {

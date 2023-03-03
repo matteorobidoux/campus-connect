@@ -1,6 +1,7 @@
 .course-entry-widget-container {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 
   .title {
     font-size: 20px;
@@ -8,6 +9,10 @@
     margin-bottom: 1rem;
   }
 
-  .add {}
+  .entered-courses {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
 
 }

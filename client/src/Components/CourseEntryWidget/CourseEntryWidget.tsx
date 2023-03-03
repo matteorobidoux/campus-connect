@@ -38,13 +38,15 @@ export default function CourseEntryWidget() {
   return (
     <div className={styles["course-entry-widget-container"]}>
       <span className={styles.title}>Choose your courses:</span>
-      {
-        selectedCourses.map((course, key) => {
-          return (
-            <ChosenCourse course={course} key={key} courseKey={key} handleRemove={handleRemoveCourse} />
-          )
-        })
-      }
+      <div className={styles["entered-courses"]}>
+        {
+          selectedCourses.map((course, key) => {
+            return (
+              <ChosenCourse course={course} key={key} courseKey={key} handleRemove={handleRemoveCourse} />
+            )
+          })
+        }
+      </div>
       {
         selectedCourses.length < 8 ?
           <>
@@ -52,7 +54,7 @@ export default function CourseEntryWidget() {
               isAdding ?
                 <ChosenCourseEntry setIsAdding={setIsAdding} handleAddCourse={handleAddCourse} />
                 :
-                <button onClick={e => { e.preventDefault(); setIsAdding(true) }}>Add Course</button>
+                <button className={styles["add-course"]} onClick={e => { e.preventDefault(); setIsAdding(true) }}>Add Course</button>
             }
           </>
           : null
