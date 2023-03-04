@@ -1,6 +1,7 @@
 import express, { Response } from "express";
 import CreateUserBodyParams from "../../types/Queries/CreateUser";
 import CompletedEventBodyParams from "../../types/Queries/CompletedEvent"
+import RemoveEventBodyParams from "../../types/Queries/RemoveEvent"
 import DbMongoose from "./db/db"
 import { GetAllSectionsRequest, GetAllSectionsResponse } from "../../types/Queries/GetAllCourses";
 import { LoginRequest } from "../../types/Queries/Login";
@@ -36,6 +37,16 @@ app.post('/api/addCompletedEvent', async (req,res)=>{
     res.sendStatus(400);
   } else {
     res.json({id: await DbMongoose.addCompletedEvent({userName, completedEvent})})
+  }
+  
+})
+
+app.delete('/api/removeEvent', async (req,res)=>{
+  const {userId , courseNumber, courseSection} = req.body as Partial<RemoveEventBodyParams>;
+  if (!userId || !courseNumber || !courseSection) {
+    res.sendStatus(400);
+  } else {
+    res.json({id: await DbMongoose.removeEvent({userId, courseNumber, courseSection})})
   }
   
 })

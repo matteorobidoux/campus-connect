@@ -9,6 +9,7 @@ import { UserClassSection } from "../../../types/UserClassSection"
 import { GetAllSectionsResponse } from "../../../types/Queries/GetAllCourses"
 import { LoginRequest, LoginResponse } from "../../../types/Queries/Login";
 import CompletedEventBodyParams from '../../../types/Queries/CompletedEvent';
+import RemoveEventBodyParams from '../../../types/Queries/RemoveEvent';
 import userModel from './models/user-schema';
 
 const dname = process.env.NAME || 'CampusConnect'
@@ -60,7 +61,7 @@ class DbMongoose {
     return resp.id!
   }
 
-  async removeEvent(userId: string, courseNumber: string, courseSection: string) {
+  async removeEvent({userId, courseNumber, courseSection}: RemoveEventBodyParams) {
     const course = await Course.findOne({ number: courseNumber });
     const section = course.sections.find(section => section.number == courseSection)!;
     section.events = section.events.filter((section, i) => section.ownerId !== userId)
