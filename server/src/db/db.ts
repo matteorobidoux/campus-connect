@@ -11,6 +11,8 @@ import { LoginRequest, LoginResponse } from "../../../types/Queries/Login";
 import userModel from './models/user-schema';
 import Section from './models/section-schema';
 import { Events } from '../../../types/Event';
+import { generateOAuthClient } from "../oauth/"; 
+import { google } from 'googleapis';
 
 // const dname = process.env.NAME || 'CampusConnect'
 const dname = process.env.NAME || 'CampusConnect'
@@ -42,11 +44,11 @@ class DbMongoose {
 
   }
 
-  async addUser({ name, password, sections }: CreateUserBodyParams): Promise<string> {
-    const userModel = new User({ name, password, sections })
+  async addUser({name, sections, googleTokens, email, gid}: CreateUserBodyParams): Promise<string> {
+    const userModel = new User({ name, sections, googleTokens, email, gid });
     console.log(userModel)
-    const resp = await userModel.save();
-    return resp.id!
+    await userModel.save();
+    return userModel.toObject()
   }
 
   async addEvent(id: string, date: Date, title: string, desc: string, sectionName: string) {
@@ -84,6 +86,19 @@ class DbMongoose {
     return await Promise.all(courses);
   }
 
+  async getAllStrippedCourses() {
+    const result = await Course.find()
+      .select({
+        _id: 1,
+        title: 1,
+        number: 1,
+        'sections.number': 1,
+        'sections.teacher': 1
+      })
+    console.log(result);
+    return result;
+  }
+
   //Get All Users
   async getAllUsers() {
     const result = await User.find()
@@ -96,19 +111,6 @@ class DbMongoose {
     console.log(result)
     return result;
   }
-
-  // async getAllSections(): Promise<GetAllSectionsResponse> {
-  //   const mongoResp = await Course.find();
-  //   const result = mongoResp.map(r => ({
-  //     title: r.title,
-  //     sections: r.sections.map(s => ({ teacher: s.teacher, number: s.number })),
-  //     id: r.id as string,
-  //   }))
-
-  //   console.log(result);
-
-  //   return {response: result};
-  // }
 
 }
 

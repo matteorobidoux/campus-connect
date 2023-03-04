@@ -1,4 +1,4 @@
-import profileImg from "../../profile.png"
+import profileImg from "../../assets/profile.png"
 import styles from "./NavBar.module.scss";
 
 //Fix type script BS

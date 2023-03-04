@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "install:all": "cd ./client && npm i && cd ../server && npm i",
-    "start": "cd ./client && npm run start"
+    "dev": "cd ./client && npm run start && cd ../server && npm run dev ",
+    "build": "cd ./client && npm run build && cd ../server && npm run build",
+    "start": "cd ./server && npm run start:prod"
   },
   "repository": {
     "type": "git",

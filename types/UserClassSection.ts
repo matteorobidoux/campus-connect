@@ -3,5 +3,5 @@ type UserClassSection = {
   sectionNumber: string;
 }
 
-export { UserClassSection };
+export type { UserClassSection };
 

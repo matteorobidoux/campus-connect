@@ -1,10 +1,10 @@
-import CalendarEvent from "../../../../types/Calendar"
+import CalendarEvent from "../../../../../types/Calendar"
 import styles from "./CalendarEntryDetailedModal.module.scss";
 import { ReactComponent as Background } from "./background.svg"
 import { useEffect, useState } from "react";
 import { useMutation, useQueryClient } from "react-query";
 import { toast } from "react-toastify";
-import { getRandomColor } from "../../cssUtils";
+import { getRandomColor } from "../../../cssUtils";
 
 export interface CalendarEntryDetailedModalProps {
   event: CalendarEvent;
