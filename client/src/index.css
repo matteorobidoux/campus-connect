@@ -27,6 +27,7 @@ code {
 }
 
 .rodal-fade-enter {
+  -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
 }
 

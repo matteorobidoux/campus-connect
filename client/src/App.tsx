@@ -11,6 +11,8 @@ import ProfileBar from './Components/ProfileBar/ProfileBar';
 import { useGoogleOAuth } from './custom-query-hooks/useGoogleOAuth';
 import { useAddUserMutation, useUser } from './custom-query-hooks';
 import { RegisterInfo } from '../../types/Queries/GAuth';
+import Login from './Components/Login/Login';
+import CourseEntryWidget from './Components/CourseEntryWidget/CourseEntryWidget';
 
 library.add(faCircleNotch)
 
@@ -19,19 +21,27 @@ export default function App() {
   const addUser = useAddUserMutation();
   const [isOpen, setIsOpen] = useState(false);
   const [isReturningFromGoogleAuth, setIsReturningFromGoogleAuth] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(query.data?._id)
 
   const user = useUser();
 
   useEffect(() => {
     if (query.isSuccess) {
       if (query.data) {
+        setIsLoggedIn(typeof query.data._id !== "undefined")
         window.history.pushState('', 'Index', '/');
         setIsReturningFromGoogleAuth(true);
         return;
       }
       setIsReturningFromGoogleAuth(false);
     }
-  }, [query.data])
+  }, [query.data, query.isSuccess])
+
+  useEffect(() => {
+    if (isLoggedIn) {
+      setIsReturningFromGoogleAuth(false);
+    }
+  }, [isLoggedIn])
 
 
   // TODO: what should the type of e be?
@@ -61,18 +71,20 @@ export default function App() {
       <ToastContainer />
       <div className={"login-section"}>
         <h1> Returning ? {"" + isReturningFromGoogleAuth } </h1>
+        <h1> Logged in ? { "" + isLoggedIn }</h1>
         { isReturningFromGoogleAuth && (
           <>
           <button onClick={() => onSubmit(query.data as RegisterInfo)}> Create testUser </button>
-          User id {user._id}
+          User {JSON.stringify(user)}
           </>
         )}
       </div>
       <div className="app-container">
         <NavBar toggleSidebar={openProfileBar} />
         <div className="app-content-container">
-          <MainSidebar />
-          <Main />
+          { isLoggedIn && <> <MainSidebar /> <Main /> </>}
+          { isReturningFromGoogleAuth && ( <CourseEntryWidget />)}
+          { !isReturningFromGoogleAuth && !isLoggedIn && <Login />}
         </div>
         <ProfileBar isOpen={isOpen} toggleFunc={openProfileBar} />
       </div>

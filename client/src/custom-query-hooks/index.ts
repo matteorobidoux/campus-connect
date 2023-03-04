@@ -1,3 +1,4 @@
+import { GetAllStrippedCourses } from './../../../types/Queries/Register';
 import axios from "axios";
 import { useMutation, useQuery, useQueryClient } from "react-query";
 import CalendarEvents from "../../../types/Calendar"
@@ -7,31 +8,9 @@ import { User } from "../../../types/User";
 import { getUser } from "./useGoogleOAuth";
 
 export function useUser() {
-  const qc = useQueryClient();
-  const userQuery = qc.getQueryCache().find('user');
-  let user = (userQuery?.state.data ?? getUser()) as ((User & {_id: string}) | undefined);
+  let user = getUser() as ((User & {_id: string}) | undefined);
   if (!user) {
-    user = {
-      "_id": "63fe8ebc4a2894b9e4977209",
-      "name": "testUser",
-      "sections": [
-          {
-              "courseNumber": "530-292-DW",
-              "sectionNumber": "00001",
-              "_id": "63fe8ebc4a2894b9e497720a"
-          }
-      ],
-      "email": "guilhermesamore@gmail.com",
-      "gid": "101212078495527538517",
-      "googleTokens": {
-          "refresh_token": "this won't work",
-          "access_token": "this won't work",
-          "_id": "63fe8ebc4a2894b9e497720b"
-      },
-      "__v": 0
-    } as any
     console.warn("Be alert that calling useUser without the user being logged in will result in side effects!");
-    console.warn("Defaulting to Gui's user as a kill-switch.");
   }
   return user!;
 }
@@ -47,15 +26,30 @@ export const useSections = (classes: GetAllSectionsRequest) => {
     () => queryFunction(classes), { staleTime: Infinity });
 }
 
+export const useCourseInfo = () => {
+  async function queryFunction() {
+    const data = await axios.get<GetAllStrippedCourses>('/api/getAllStrippedCourses')
+    return data.data
+  }
+
+  return useQuery<GetAllStrippedCourses>(['getAllStrippedCourses'], () => queryFunction(), { staleTime: Infinity })
+}
+
 export const useAddUserMutation = () => {
   async function addUser(body: CreateUserBodyParams) {
     const resp = await axios.post('/api/addUser', body);
     return resp.data;
   }
 
+  const qc = useQueryClient();
+
   return useMutation<unknown, unknown, CreateUserBodyParams>({
     mutationFn: (data) => addUser(data),
-    onSuccess: (data) => console.log(data)
+    onSuccess: async (data) => {
+      console.log('here.');
+      await qc.invalidateQueries(['user']);
+      debugger;
+    }
   })
 }
 

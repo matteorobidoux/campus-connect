@@ -69,6 +69,19 @@ class DbMongoose {
     return await Promise.all(courses);
   }
 
+  async getAllStrippedCourses() {
+    const result = await Course.find()
+      .select({
+        _id: 1,
+        title: 1,
+        number: 1,
+        'sections.number': 1,
+        'sections.teacher': 1
+      })
+    console.log(result);
+    return result;
+  }
+
   //Get All Users
   async getAllUsers() {
     const result = await User.find()

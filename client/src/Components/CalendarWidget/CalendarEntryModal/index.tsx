@@ -1,10 +1,10 @@
 import { Field, Form, Formik } from "formik";
 import { toast } from "react-toastify";
-import CalendarEvent from "../../../../types/Calendar";
+import CalendarEvent from "../../../../../types/Calendar";
 import styles from "./CalendarEntryModal.module.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useMutation } from "react-query";
-import { useSections, useUser } from "../../custom-query-hooks";
+import { useSections, useUser } from "../../../custom-query-hooks";
 
 export interface CalendarEntryModalProps {
   onClose: () => void;

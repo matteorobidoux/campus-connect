@@ -1,3 +1,4 @@
+import { GetAllStrippedCourses } from './../../types/Queries/Register';
 import express, { Response } from "express";
 import CreateUserBodyParams from "../../types/Queries/CreateUser";
 import DbMongoose from "./db/db"
@@ -51,8 +52,16 @@ app.get("/api/authenticate", async (req, res) => {
   generateAuthUrl(res);
 })
 
+app.get("/api/getAllStrippedCourses", async (req, res: Response<GetAllStrippedCourses>) => {
+  const result = await DbMongoose.getAllStrippedCourses()
+  if (result && Array.isArray(result) && result.length > 0) {
+    res.json({ response: result })
+  } else {
+    res.sendStatus(400);
+  }
+})
 
-app.use(express.static('../client/build/'));
+app.use(express.static('../client/build/'))
 
 app.use(function (_, res) {
   res.status(404).send("404 NOT FOUND");
