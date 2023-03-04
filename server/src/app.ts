@@ -48,7 +48,6 @@ app.delete('/api/removeEvent', async (req,res)=>{
   } else {
     res.json({id: await DbMongoose.removeEvent({userId, courseNumber, courseSection})})
   }
-  
 })
 
 // app.get('/api/allSections', async (_, res) => {
