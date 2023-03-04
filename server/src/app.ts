@@ -1,3 +1,4 @@
+import { GetAllStrippedCourses } from './../../types/Queries/Register';
 import express, { Response } from "express";
 import CreateUserBodyParams from "../../types/Queries/CreateUser";
 import DbMongoose from "./db/db"
@@ -37,6 +38,15 @@ app.get("/api/getAllSections", async (req, res: Response<GetAllSectionsResponse>
   console.log('here.');
   if (Array.isArray(userClassSections)) {
     const result = await DbMongoose.getUserClasses(userClassSections);
+    res.json({ response: result })
+  } else {
+    res.sendStatus(400);
+  }
+})
+
+app.get("/api/getAllStrippedCourses", async (req, res: Response<GetAllStrippedCourses>) => {
+  const result = await DbMongoose.getAllStrippedCourses()
+  if (result && Array.isArray(result) && result.length > 0) {
     res.json({ response: result })
   } else {
     res.sendStatus(400);

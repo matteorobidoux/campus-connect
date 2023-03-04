@@ -1,3 +1,4 @@
+import { GetAllStrippedCourses } from './../../../types/Queries/Register';
 import axios from "axios";
 import { useMutation, useQuery } from "react-query";
 import CalendarEvents from "../../../types/Calendar"
@@ -11,6 +12,15 @@ export const useGetAllCourses = (classes: GetAllSectionsRequest) => {
   }
 
   return useQuery<GetAllSectionsResponse>(['getAllCourses', classes], () => queryFunction(classes), { staleTime: Infinity });
+}
+
+export const useCourseInfo = () => {
+  async function queryFunction() {
+    const data = await axios.get<GetAllStrippedCourses>('/api/getAllStrippedCourses')
+    return data.data
+  }
+
+  return useQuery<GetAllStrippedCourses>(['getAllStrippedCourses'], () => queryFunction(), { staleTime: Infinity })
 }
 
 export const useAddUserMutation = () => {
