@@ -1,39 +1,20 @@
-import { useEffect } from "react"
-import { colorVariables } from "../../cssUtils"
-import { useAddUserMutation, useGetAllCourses } from "../../custom-query-hooks"
+import { useSections, useUser } from "../../custom-query-hooks"
 import CourseQuickViewContainer from "../CourseQuickViewContainer/CourseQuickViewContainer"
 import styles from "./MainSidebar.module.scss"
 
 export default function MainSidebar() {
+  const user = useUser();
 
-  const fetchedCourses = {
-    userClassSections: [
-      {
-        courseNumber: "203-912-DW",
-        sectionNumber: "00001"
-      },
-      {
-        courseNumber: "203-912-DW",
-        sectionNumber: "00001"
-      },
-    ]
-  }
-
-  const { isLoading, isSuccess, data } = useGetAllCourses(fetchedCourses)
-
-  const defaultColor = "salmon"
-  let colors = [{ value: defaultColor }]
-
-  const addUser = useAddUserMutation();
-
+  const { isLoading, isSuccess, data } = useSections({userClassSections: user.sections});
   const onSubmit = () => {
+    //
+    // addUser.mutate({
+    //
+    // })
 
-    addUser.mutate({
-      sections: [{ courseNumber: "530-292-DW", sectionNumber: "00001" }],
-      name: "testUser",
-      password: "testPasswd",
-    })
-
+    // addUser.mutate({
+    //   sections: [{ courseNumber: "530-292-DW", sectionNumber: "00001" }],
+    // })
   }
 
   return (

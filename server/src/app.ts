@@ -1,11 +1,16 @@
+import { GetAllStrippedCourses } from './../../types/Queries/Register';
 import express, { Response } from "express";
 import CreateUserBodyParams from "../../types/Queries/CreateUser";
 import DbMongoose from "./db/db"
 import { GetAllSectionsRequest, GetAllSectionsResponse } from "../../types/Queries/GetAllCourses";
 import { LoginRequest } from "../../types/Queries/Login";
+import { generateAuthUrl } from "./oauth";
+import cors from "cors";
+import GAuth from "./oauth/gauth-endpoint";
 const app = express();
 const port = 8081
 
+app.use(cors())
 app.use(express.json())
 
 app.get("/users", async (_, res) => {
@@ -27,16 +32,29 @@ app.post('/api/addUser', async (req, res) => {
   console.log(body);
   res.json({ id: await DbMongoose.addUser(body) });
 })
-//
-// app.get('/api/allSections', async (_, res) => {
-//   res.json(await DbMongoose.getAllSections())
-// })
 
 app.get("/api/getAllSections", async (req, res: Response<GetAllSectionsResponse>) => {
   const { userClassSections } = req.query as Partial<GetAllSectionsRequest>;
-  console.log('here.');
   if (Array.isArray(userClassSections)) {
     const result = await DbMongoose.getUserClasses(userClassSections);
+    res.json(result)
+  } else {
+    res.sendStatus(400);
+  }
+})
+
+app.get("/gauth", async (req, res) => {
+  console.log("calling gauth.");
+  await GAuth(req, res);
+})
+
+app.get("/api/authenticate", async (req, res) => {
+  generateAuthUrl(res);
+})
+
+app.get("/api/getAllStrippedCourses", async (req, res: Response<GetAllStrippedCourses>) => {
+  const result = await DbMongoose.getAllStrippedCourses()
+  if (result && Array.isArray(result) && result.length > 0) {
     res.json({ response: result })
   } else {
     res.sendStatus(400);
