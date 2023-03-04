@@ -11,4 +11,4 @@ type User = {
   }
 }
 
-export { User };
+export type { User };

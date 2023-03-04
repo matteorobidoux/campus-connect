@@ -31,16 +31,12 @@ app.post('/api/addUser', async (req, res) => {
   console.log(body);
   res.json({ id: await DbMongoose.addUser(body) });
 })
-//
-// app.get('/api/allSections', async (_, res) => {
-//   res.json(await DbMongoose.getAllSections())
-// })
 
 app.get("/api/getAllSections", async (req, res: Response<GetAllSectionsResponse>) => {
   const { userClassSections } = req.query as Partial<GetAllSectionsRequest>;
   if (Array.isArray(userClassSections)) {
     const result = await DbMongoose.getUserClasses(userClassSections);
-    res.json({ response: result })
+    res.json(result)
   } else {
     res.sendStatus(400);
   }

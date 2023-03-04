@@ -1,15 +1,15 @@
 import axios from "axios";
 import { useQuery } from "react-query";
 import { GAuthResponse } from "../../../types/Queries/GAuth";
+import { User } from "../../../types/User";
 
-const getUser = () => JSON.parse(localStorage.getItem('user') ?? "false") ;
+export const getUser = () => JSON.parse(localStorage.getItem('user') ?? "undefined") ;
+export const writeUser = (user: User) => window.localStorage.setItem('user', JSON.stringify(user));
 
 const useGoogleOAuth = () => {
   const getter = async () => {
     const user = getUser();
     if (user != false) {
-      alert("internal")
-      console.log(user);
       return user;
     }
 
@@ -37,7 +37,7 @@ const useGoogleOAuth = () => {
     return;
   }
 
-  return useQuery(['googleOAuth'], getter, { staleTime: Infinity, retry: false })
+  return useQuery(['user'], getter, { staleTime: Infinity, retry: false })
 }
 
 export { useGoogleOAuth };

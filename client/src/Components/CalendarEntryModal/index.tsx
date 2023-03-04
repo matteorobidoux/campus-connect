@@ -4,17 +4,15 @@ import CalendarEvent from "../../../../types/Calendar";
 import styles from "./CalendarEntryModal.module.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useMutation } from "react-query";
-import { useSections } from "../../custom-query-hooks";
+import { useSections, useUser } from "../../custom-query-hooks";
 
 export interface CalendarEntryModalProps {
   onClose: () => void;
 }
 
 export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {
-  // const sections = useGetAllSections({userClassSections: [
-  //   {courseNumber: "ajskdpfk", sectionNumber: "00001"}
-  // ]});
-  const sectionsQuery = useSections();
+  const user = useUser();
+  const sectionsQuery = useSections({userClassSections: user.sections});
 
   const mutation = useMutation(async (arg: Omit<CalendarEvent, 'id'>) => {
     console.log(arg);
@@ -75,7 +73,7 @@ export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {
               <label htmlFor="courseTitle"> Class </label>
               <Field as="select" id="courseTitle" name="courseTitle" value={'DEFAULT'}>
                 <option value="DEFAULT" disabled>Pick a class</option>
-                {sectionsQuery.data?.map(s => <option key={s.title}> {s.title} </option>)}
+                {sectionsQuery.data?.map(s => <option key={s.courseTitle}> {s.courseTitle} </option>)}
               </Field>
               <p> {errors.courseTitle ? errors.courseTitle : null} </p>
             </div>

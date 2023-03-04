@@ -9,16 +9,18 @@ import MainSidebar from './Components/MainSidebar/MainSidebar';
 import NavBar from './Components/NavBar/NavBar';
 import ProfileBar from './Components/ProfileBar/ProfileBar';
 import { useGoogleOAuth } from './custom-query-hooks/useGoogleOAuth';
-import { useAddUserMutation } from './custom-query-hooks';
+import { useAddUserMutation, useUser } from './custom-query-hooks';
 import { RegisterInfo } from '../../types/Queries/GAuth';
 
 library.add(faCircleNotch)
 
 export default function App() {
   const query = useGoogleOAuth();
+  const addUser = useAddUserMutation();
   const [isOpen, setIsOpen] = useState(false);
   const [isReturningFromGoogleAuth, setIsReturningFromGoogleAuth] = useState(false);
-  const addUser = useAddUserMutation();
+
+  const user = useUser();
 
   useEffect(() => {
     if (query.isSuccess) {
@@ -60,7 +62,10 @@ export default function App() {
       <div className={"login-section"}>
         <h1> Returning ? {"" + isReturningFromGoogleAuth } </h1>
         { isReturningFromGoogleAuth && (
+          <>
           <button onClick={() => onSubmit(query.data as RegisterInfo)}> Create testUser </button>
+          User id {user._id}
+          </>
         )}
       </div>
       <div className="app-container">
