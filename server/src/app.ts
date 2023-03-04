@@ -1,21 +1,21 @@
-import express from "express";
+import express, { Response } from "express";
 import CreateUserBodyParams from "../../types/Queries/CreateUser";
 import CompletedEventBodyParams from "../../types/Queries/CompletedEvent"
 import DbMongoose from "./db/db"
-import { GetAllSectionsRequest } from "../../types/Queries/GetAllCourses";
+import { GetAllSectionsRequest, GetAllSectionsResponse } from "../../types/Queries/GetAllCourses";
 import { LoginRequest } from "../../types/Queries/Login";
 const app = express();
 const port = 8081
 
 app.use(express.json())
 
-app.get("/users", async (_,res) => {
+app.get("/users", async (_, res) => {
   const result = await DbMongoose.getAllUsers()
   res.json(result)
 })
 
 app.post("/api/login", async (req, res) => {
-  const { name , password }: Partial<LoginRequest> = req.body;
+  const { name, password }: Partial<LoginRequest> = req.body;
   if (!name || !password) {
     res.sendStatus(400);
   } else {
@@ -26,7 +26,7 @@ app.post("/api/login", async (req, res) => {
 app.post('/api/addUser', async (req, res) => {
   const body = req.body as CreateUserBodyParams;
   console.log(body);
-  res.json({id: await DbMongoose.addUser(body)});
+  res.json({ id: await DbMongoose.addUser(body) });
 })
 
 
@@ -44,12 +44,12 @@ app.post('/api/addCompletedEvent', async (req,res)=>{
 //   res.json(await DbMongoose.getAllSections())
 // })
 
-app.get("/api/getAllSections", async (req, res) => {
+app.get("/api/getAllSections", async (req, res: Response<GetAllSectionsResponse>) => {
   const { userClassSections } = req.query as Partial<GetAllSectionsRequest>;
   console.log('here.');
   if (Array.isArray(userClassSections)) {
     const result = await DbMongoose.getUserClasses(userClassSections);
-    res.json(result)
+    res.json({ response: result })
   } else {
     res.sendStatus(400);
   }
@@ -62,7 +62,7 @@ app.use(function (_, res) {
 })
 
 
-app.listen(port, ()=>{
+app.listen(port, () => {
   console.log(`at http://localhost:${port}`)
 })
 export { app };

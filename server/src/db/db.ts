@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import User from "./models/user-schema"
 import Event from './models/event-schema';
 import Course from "./models/course-schema";
-import UserClass from "../../../types/UserClass"
+import { UserClass } from "../../../types/UserClass"
 import CreateUserBodyParams from "../../../types/Queries/CreateUser";
 import { UserClassSection } from "../../../types/UserClassSection"
 import { GetAllSectionsResponse } from "../../../types/Queries/GetAllCourses"
@@ -95,18 +95,18 @@ class DbMongoose {
     return result;
   }
 
-  async getAllSections(): Promise<GetAllSectionsResponse> {
-    const mongoResp = await Course.find();
-    const result = mongoResp.map(r => ({
-      title: r.title,
-      sections: r.sections.map(s => ({ teacher: s.teacher, number: s.number })),
-      id: r.id as string,
-    }))
+  // async getAllSections(): Promise<GetAllSectionsResponse> {
+  //   const mongoResp = await Course.find();
+  //   const result = mongoResp.map(r => ({
+  //     title: r.title,
+  //     sections: r.sections.map(s => ({ teacher: s.teacher, number: s.number })),
+  //     id: r.id as string,
+  //   }))
 
-    console.log(result);
+  //   console.log(result);
 
-    return result;
-  }
+  //   return {response: result};
+  // }
 
 }
 
