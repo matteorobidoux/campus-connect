@@ -3,7 +3,7 @@ import { useQuery } from "react-query";
 import { GAuthResponse } from "../../../types/Queries/GAuth";
 import { User } from "../../../types/User";
 
-export const getUser = () => JSON.parse(localStorage.getItem('user') ?? "undefined") ;
+export const getUser = () => localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')!): undefined;
 export const writeUser = (user: User) => window.localStorage.setItem('user', JSON.stringify(user));
 
 const useGoogleOAuth = () => {
