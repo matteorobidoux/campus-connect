@@ -10,9 +10,13 @@ type ChosenCourseProps = {
 export default function ChosenCourse(props: ChosenCourseProps) {
   return (
     <div className={styles.container}>
-      {
-        `${props.course.title} - ${props.course.teacher} - ${props.course.sectionNumber}`
-      }
+      <div className={styles["info-container"]}>
+        <span>{props.course.title}</span>
+        <hr />
+        <span>{props.course.teacher}</span>
+        <hr />
+        <span>{props.course.sectionNumber}</span>
+      </div>
       <button onClick={e => {
         e.preventDefault();
         props.handleRemove(props.courseKey)

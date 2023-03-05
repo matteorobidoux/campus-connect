@@ -1,6 +1,31 @@
-.entry-container{
+.entry-container {
   padding: 0.3rem 0;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  font-size: 22px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+
+    select {
+      appearance: none;
+      background: var(--text-white);
+      color: var(--grey-background);
+      padding: .3rem;
+      border: var(--primary) 2px solid;
+      outline: var(--text-white) 2px solid;
+      border-radius: 4px;
+      font-size: 20px;
+    }
+
+    button[type="submit"] {
+      margin-top: .7rem;
+      border: var(--primary-dark) 1px solid;
+    }
+
+  }
 }

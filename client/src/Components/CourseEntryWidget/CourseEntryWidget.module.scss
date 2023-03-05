@@ -4,7 +4,7 @@
   gap: 1rem;
 
   .title {
-    font-size: 20px;
+    font-size: 28px;
     font-size: 500;
     margin-bottom: 1rem;
   }
@@ -13,7 +13,10 @@
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 0.3rem 1rem;
+    gap: 1rem 3rem;
   }
 
+  .add-course{
+    font-size: 22px;
+  }
 }
