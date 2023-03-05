@@ -5,7 +5,7 @@ import CalendarEvents from "../../../types/Calendar"
 import { GetAllSectionsRequest, GetAllSectionsResponse } from "../../../types/Queries/GetAllCourses"
 import CreateUserBodyParams from "../../../types/Queries/CreateUser"
 import { User } from "../../../types/User";
-import { getUser } from "./useGoogleOAuth";
+import { getUser, writeUser } from "./useGoogleOAuth";
 
 export function useUser() {
   let user = getUser() as ((User & {_id: string}) | undefined);
@@ -43,12 +43,12 @@ export const useAddUserMutation = () => {
 
   const qc = useQueryClient();
 
-  return useMutation<unknown, unknown, CreateUserBodyParams>({
+  return useMutation<User, unknown, CreateUserBodyParams>({
     mutationFn: (data) => addUser(data),
     onSuccess: async (data) => {
-      console.log('here.');
-      await qc.invalidateQueries(['user']);
-      debugger;
+      writeUser(data)
+      await qc.invalidateQueries({queryKey: ['user']});
+      await qc.refetchQueries({queryKey: ['user']});
     }
   })
 }
