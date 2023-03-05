@@ -56,7 +56,6 @@ class DbMongoose {
     await eventModel.save();
   }
 
-<<<<<<< HEAD
   async addCompletedEvent({ userName, completedEvent }: CompletedEventBodyParams) {
     const user = await userModel.findOne({ name: userName });
     user.completedEvents.push(completedEvent);
@@ -72,8 +71,6 @@ class DbMongoose {
   }
 
 
-=======
->>>>>>> 3eacaab68efa39b86d4972754427482ff6b7d230
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
     const courses = userSections.map(async userCourse => {
       const course = (await Course.findOne({ number: userCourse.courseNumber }))!.toObject();

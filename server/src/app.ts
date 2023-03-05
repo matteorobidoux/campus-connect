@@ -34,7 +34,6 @@ app.post('/api/addUser', async (req, res) => {
   console.log(body);
   res.json({ id: await DbMongoose.addUser(body) });
 })
-<<<<<<< HEAD
 
 
 app.post('/api/addCompletedEvent', async (req,res)=>{
@@ -59,8 +58,6 @@ app.delete('/api/removeEvent', async (req,res)=>{
 // app.get('/api/allSections', async (_, res) => {
 //   res.json(await DbMongoose.getAllSections())
 // })
-=======
->>>>>>> 3eacaab68efa39b86d4972754427482ff6b7d230
 
 app.get("/api/getAllSections", async (req, res: Response<GetAllSectionsResponse>) => {
   const { userClassSections } = req.query as Partial<GetAllSectionsRequest>;

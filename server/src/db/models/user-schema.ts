@@ -11,18 +11,12 @@ const googleTokensSchema = new Schema({
 
 const userSchema = new Schema<User>({
   name: String,
-<<<<<<< HEAD
-  password: String,
   completedEvents: Array<UserCompletedEvent>,
-  sections: [userClassSectionSchema]
-}, { collection: "users" });
-=======
   sections: [userClassSectionSchema],
   email: String,
   gid: String,
   googleTokens: googleTokensSchema,
 }, { collection: "users", strictQuery: true});
->>>>>>> 3eacaab68efa39b86d4972754427482ff6b7d230
 
 const userModel = model('User', userSchema);
 export default userModel;
