@@ -1,16 +1,38 @@
+import { GetAllStrippedCourses } from './../../../types/Queries/Register';
 import axios from "axios";
-import { useMutation, useQuery } from "react-query";
+import { useMutation, useQuery, useQueryClient } from "react-query";
 import CalendarEvents from "../../../types/Calendar"
 import { GetAllSectionsRequest, GetAllSectionsResponse } from "../../../types/Queries/GetAllCourses"
 import CreateUserBodyParams from "../../../types/Queries/CreateUser"
+import { User } from "../../../types/User";
+import { getUser } from "./useGoogleOAuth";
 
-export const useGetAllCourses = (classes: GetAllSectionsRequest) => {
+export function useUser() {
+  let user = getUser() as ((User & {_id: string}) | undefined);
+  if (!user) {
+    console.warn("Be alert that calling useUser without the user being logged in will result in side effects!");
+  }
+  return user!;
+}
+
+export const useSections = (classes: GetAllSectionsRequest) => {
   async function queryFunction(params: GetAllSectionsRequest) {
     const data = await axios.get<GetAllSectionsResponse>('/api/getAllSections', { params });
     return data.data;
   }
 
-  return useQuery<GetAllSectionsResponse>(['getAllCourses', classes], () => queryFunction(classes), { staleTime: Infinity });
+  return useQuery<GetAllSectionsResponse>(
+    ['getAllCourses', {...classes.userClassSections}],
+    () => queryFunction(classes), { staleTime: Infinity });
+}
+
+export const useCourseInfo = () => {
+  async function queryFunction() {
+    const data = await axios.get<GetAllStrippedCourses>('/api/getAllStrippedCourses')
+    return data.data
+  }
+
+  return useQuery<GetAllStrippedCourses>(['getAllStrippedCourses'], () => queryFunction(), { staleTime: Infinity })
 }
 
 export const useAddUserMutation = () => {
@@ -19,12 +41,20 @@ export const useAddUserMutation = () => {
     return resp.data;
   }
 
+  const qc = useQueryClient();
+
   return useMutation<unknown, unknown, CreateUserBodyParams>({
     mutationFn: (data) => addUser(data),
-    onSuccess: (data) => console.log(data)
+    onSuccess: async (data) => {
+      console.log('here.');
+      await qc.invalidateQueries(['user']);
+      debugger;
+    }
   })
 }
 
+// @deprecated events will be fetched with the section itself.
+// This will break very soon.
 export const useCalendarEvents = () => {
   async function getCalendarEvents() {
     // Fake a response time
@@ -54,47 +84,4 @@ export const useCalendarEvents = () => {
   }
 
   return useQuery(['events'], getCalendarEvents, { staleTime: Infinity })
-}
-
-export const useSections = () => {
-  const getClasses = async () => {
-    await new Promise(r => setTimeout(r, 1000));
-    const classes = [{
-      title: "Web Development",
-      section: "00001",
-      teacher: "Daniel Pomerantz",
-      schedule: [{
-        day: "Monday",
-        startTime: "4:00 PM",
-        endTime: "6:00 PM",
-        classroom: "3E.7"
-      }, {
-        day: "Wednesday",
-        startTime: "4:00 PM",
-        endTime: "6:00 PM",
-        classroom: "3E.7"
-      }
-      ]
-    },
-    {
-      title: "Software Development",
-      section: "00001",
-      teacher: "Maya Sspogjas",
-      schedule: [{
-        day: "Monday",
-        startTime: "4:00 PM",
-        endTime: "6:00 PM",
-        classroom: "3E.7"
-      }, {
-        day: "Wednesday",
-        startTime: "4:00 PM",
-        endTime: "6:00 PM",
-        classroom: "3E.7"
-      }
-      ]
-    },
-    ]
-    return classes;
-  }
-  return useQuery(['sections'], getClasses)
 }

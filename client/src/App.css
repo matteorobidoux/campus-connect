@@ -5,16 +5,16 @@
 .app-container {
     background: var(--background);
     display: flex;
-    height: auto;
+    height: 100vh;
     align-items: center;
     flex-direction: column;
 }
 
 .app-content-container{
     background: var(--background);
-    height: auto;
+    height: 100%;
     width: 100%; 
-    display: inherit;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     position: relative;
