@@ -27,6 +27,7 @@ export default function MainSidebar(props: MainSidebarProps) {
         {/* This is temporary - Marian - 27/02/2023 */}
         <button onClick={() => onSubmit()}> Create testUser </button>
         <div className={[styles["sidebar-section"], styles["classes"]].join(" ")}>
+          <div className={styles["menu"]}>
             <button onClick={() => {
               props.selectComponentFunc("calender");
               }}>Calender</button>
@@ -34,6 +35,7 @@ export default function MainSidebar(props: MainSidebarProps) {
               props.selectComponentFunc("chat");
               }}>Chat</button>
             <button>Marketplace</button>
+          </div>
           {
             isLoading ? <span>Loading...</span> :
               isSuccess ? <CourseQuickViewContainer data={data} /> :

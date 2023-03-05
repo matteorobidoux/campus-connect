@@ -21,6 +21,20 @@
     border-radius: 10px;
   }
 
+  .menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .menu button {
+    color: black;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
   // .links {
   //   display: flex;
   //   flex-direction: column;
