@@ -2,7 +2,11 @@ import { useSections, useUser } from "../../custom-query-hooks"
 import CourseQuickViewContainer from "../CourseQuickViewContainer/CourseQuickViewContainer"
 import styles from "./MainSidebar.module.scss"
 
-export default function MainSidebar() {
+type MainSidebarProps = {
+  selectComponentFunc : Function
+}
+
+export default function MainSidebar(props: MainSidebarProps) {
   const user = useUser();
 
   const { isLoading, isSuccess, data } = useSections({userClassSections: user.sections});
@@ -23,6 +27,13 @@ export default function MainSidebar() {
         {/* This is temporary - Marian - 27/02/2023 */}
         <button onClick={() => onSubmit()}> Create testUser </button>
         <div className={[styles["sidebar-section"], styles["classes"]].join(" ")}>
+            <button onClick={() => {
+              props.selectComponentFunc("calender");
+              }}>Calender</button>
+            <button onClick={() => {
+              props.selectComponentFunc("chat");
+              }}>Chat</button>
+            <button>Marketplace</button>
           {
             isLoading ? <span>Loading...</span> :
               isSuccess ? <CourseQuickViewContainer data={data} /> :

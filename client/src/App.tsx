@@ -19,6 +19,7 @@ library.add(faCircleNotch)
 export default function App() {
   const query = useGoogleOAuth();
   const addUser = useAddUserMutation();
+  const [selectedComponent, selectComponent] = useState("calender");
   const [isOpen, setIsOpen] = useState(false);
   const [isReturningFromGoogleAuth, setIsReturningFromGoogleAuth] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(query.data?._id)
@@ -47,6 +48,10 @@ export default function App() {
   // TODO: what should the type of e be?
   function openProfileBar() {
     setIsOpen(!isOpen)
+  }
+
+  function switchComponent(component : string) {
+    selectComponent(component)
   }
 
   const onSubmit = (info: RegisterInfo) => {
@@ -82,7 +87,7 @@ export default function App() {
       <div className="app-container">
         <NavBar toggleSidebar={openProfileBar} />
         <div className="app-content-container">
-          { isLoggedIn && <> <MainSidebar /> <Main /> </>}
+          { isLoggedIn && <> <MainSidebar selectComponentFunc={switchComponent}/> <Main selectedComponent={selectedComponent} /> </>}
           { isReturningFromGoogleAuth && ( <CourseEntryWidget />)}
           { !isReturningFromGoogleAuth && !isLoggedIn && <Login />}
         </div>
