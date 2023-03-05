@@ -11,7 +11,7 @@ import { LoginRequest, LoginResponse } from "../../../types/Queries/Login";
 import CompletedEventBodyParams from '../../../types/Queries/CompletedEvent';
 import RemoveEventBodyParams from '../../../types/Queries/RemoveEvent';
 import userModel from './models/user-schema';
-import { generateOAuthClient } from "../oauth/"; 
+import { generateOAuthClient } from "../oauth/";
 import { google } from 'googleapis';
 
 const dname = process.env.NAME || 'CampusConnect'
@@ -43,7 +43,7 @@ class DbMongoose {
 
   }
 
-  async addUser({name, sections, googleTokens, email, gid}: CreateUserBodyParams): Promise<string> {
+  async addUser({ name, sections, googleTokens, email, gid }: CreateUserBodyParams): Promise<string> {
     const userModel = new User({ name, sections, googleTokens, email, gid });
     console.log(userModel)
     await userModel.save();
@@ -58,16 +58,22 @@ class DbMongoose {
 
   async addCompletedEvent({ userName, completedEvent }: CompletedEventBodyParams) {
     const user = await userModel.findOne({ name: userName });
-    user.completedEvents.push(completedEvent);
-    const resp = await user.save()
-    return resp.id!
+    if (user) {
+      user.completedEvents.push(completedEvent);
+      const resp = await user.save()
+      return resp.id!
+    }
+
   }
 
-  async removeEvent({userId, courseNumber, courseSection}: RemoveEventBodyParams) {
+  async removeEvent({ userId, courseNumber, courseSection }: RemoveEventBodyParams) {
     const course = await Course.findOne({ number: courseNumber });
-    const section = course.sections.find(section => section.number == courseSection)!;
-    section.events = section.events.filter((section, i) => section.ownerId !== userId)
-    course.save()
+    if (course) {
+      const section = course.sections.find(section => section.number == courseSection)!;
+      section.events = section.events.filter((section, i) => section.ownerId !== userId)
+      course.save()
+    }
+
   }
 
 
