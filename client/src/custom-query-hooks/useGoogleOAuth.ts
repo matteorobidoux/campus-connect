@@ -9,6 +9,7 @@ export const writeUser = (user: User) => window.localStorage.setItem('user', JSO
 const useGoogleOAuth = () => {
   const getter = async () => {
     const user = getUser();
+    console.log('found user.');
     if (user) {
       return user;
     }
@@ -18,7 +19,7 @@ const useGoogleOAuth = () => {
       
       if (data.user) {
         console.log("Logged in with user", data.user);
-        writeUser(data.user)
+        writeUser(data.user);
         return data.user;
       }
 

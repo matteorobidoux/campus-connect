@@ -1,6 +1,6 @@
 type Events = {
   id: string,
-  date: typeof Date,
+  date: Date,
   title: string,
   desc: string,
 }
