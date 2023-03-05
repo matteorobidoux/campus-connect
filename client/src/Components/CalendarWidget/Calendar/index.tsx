@@ -5,7 +5,7 @@ import 'react-calendar/dist/Calendar.css';
 import "./calendar.css"
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
-import { useCalendarEvents } from "../../../custom-query-hooks";
+import { useCalendarEvents, useSections, useUser } from "../../../custom-query-hooks";
 import CalendarEvent from "../../../../../types/Calendar";
 
 

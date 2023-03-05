@@ -9,8 +9,7 @@ import MainSidebar from './Components/MainSidebar/MainSidebar';
 import NavBar from './Components/NavBar/NavBar';
 import ProfileBar from './Components/ProfileBar/ProfileBar';
 import { useGoogleOAuth } from './custom-query-hooks/useGoogleOAuth';
-import { useAddUserMutation, useUser } from './custom-query-hooks';
-import { RegisterInfo } from '../../types/Queries/GAuth';
+import { useUser } from './custom-query-hooks';
 import Login from './Components/Login/Login';
 import CourseEntryWidget from './Components/CourseEntryWidget/CourseEntryWidget';
 
@@ -18,7 +17,6 @@ library.add(faCircleNotch)
 
 export default function App() {
   const query = useGoogleOAuth();
-  const addUser = useAddUserMutation();
   const [isOpen, setIsOpen] = useState(false);
   const [isReturningFromGoogleAuth, setIsReturningFromGoogleAuth] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(query.data?._id)
@@ -38,6 +36,10 @@ export default function App() {
   }, [query.data, query.isSuccess])
 
   useEffect(() => {
+    setIsLoggedIn(user != undefined)
+  }, [user])
+
+  useEffect(() => {
     if (isLoggedIn) {
       setIsReturningFromGoogleAuth(false);
     }
@@ -49,41 +51,15 @@ export default function App() {
     setIsOpen(!isOpen)
   }
 
-  const onSubmit = (info: RegisterInfo) => {
-
-    addUser.mutate({
-      sections: [{courseNumber: "530-292-DW", sectionNumber: "00001"}],
-      name: "testUser",
-      email: info.email,
-      gid: info.gid,
-      googleTokens: {
-        access_token: info.access_token,
-        refresh_token: info.refresh_token,
-      }, // ! This should be only called if isReturningFromGoogleAuth == true
-    });
-
-  }
-
-
 
   return (
     <>
       <ToastContainer />
-      <div className={"login-section"}>
-        <h1> Returning ? {"" + isReturningFromGoogleAuth } </h1>
-        <h1> Logged in ? { "" + isLoggedIn }</h1>
-        { isReturningFromGoogleAuth && (
-          <>
-          <button onClick={() => onSubmit(query.data as RegisterInfo)}> Create testUser </button>
-          User {JSON.stringify(user)}
-          </>
-        )}
-      </div>
       <div className="app-container">
         <NavBar toggleSidebar={openProfileBar} />
         <div className="app-content-container">
           { isLoggedIn && <> <MainSidebar /> <Main /> </>}
-          { isReturningFromGoogleAuth && ( <CourseEntryWidget />)}
+          { !isLoggedIn && isReturningFromGoogleAuth && ( <CourseEntryWidget />)}
           { !isReturningFromGoogleAuth && !isLoggedIn && <Login />}
         </div>
         <ProfileBar isOpen={isOpen} toggleFunc={openProfileBar} />
