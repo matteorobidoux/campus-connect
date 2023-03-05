@@ -1,9 +1,15 @@
 import styles from "./Chat.module.scss"
 
-export default function Chat() {
+type ChatProps = {
+
+}
+
+export default function Chat(props: ChatProps) {
   return (
     <div>
-      <h1>Test</h1>
+      <div className={styles["chat-header"]}>
+        <h1>Test</h1>
+      </div>
     </div>
   )
 }
