@@ -33,7 +33,7 @@ app.post("/api/login", async (req, res) => {
 app.post('/api/addUser', async (req, res) => {
   const body = req.body as CreateUserBodyParams;
   console.log(body);
-  res.json({ id: await DbMongoose.addUser(body) });
+  res.json(await DbMongoose.addUser(body));
 })
 
 app.post("/api/addEvent", async (req, res: Response<AddEventResponse>) =>{
