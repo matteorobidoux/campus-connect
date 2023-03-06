@@ -21,7 +21,7 @@ const [selectedComponent, selectComponent] = useState("calender");
   const [isOpen, setIsOpen] = useState(false);
   const [isReturningFromGoogleAuth, setIsReturningFromGoogleAuth] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(query.data?._id)
-  const [selectedChat, selectChat] = useState("test");
+  const [selectedChat, selectChat] = useState("Intro To Computer Programming IV");
 
   const user = useUser();
 
