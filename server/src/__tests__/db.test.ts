@@ -6,8 +6,11 @@ describe('test mongoose User model', () => {
   it('should return the doc with findById', () => {
     const _doc = {
       name: 'nameOb',
-      password: 'name123',
-      classes: ["class1", "class2"]
+      completedEvents: [],
+      sections: [],
+      email:"",
+      gid: "",
+      googleTokens: {}
     };
 
     mockingoose(User).toReturn(_doc, 'findOne');
