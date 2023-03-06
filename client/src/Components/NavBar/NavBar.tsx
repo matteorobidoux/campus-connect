@@ -13,7 +13,7 @@ function NavBar(props: NavBarProps) {
       <nav>
         <h1 className={styles.logo}>Campus Connect</h1>
 
-        <img id="profile" src={profileImg} alt="profile" onClick={e => {
+        <img className={styles["profileImg"]} src={profileImg} alt="profile" onClick={e => {
           e.preventDefault()
           props.toggleSidebar(e)
         }}></img>

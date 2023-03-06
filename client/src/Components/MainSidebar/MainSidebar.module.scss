@@ -21,6 +21,34 @@
     border-radius: 10px;
   }
 
+  .menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .menu button {
+    color: black;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .groupchats {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .groupchats button {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+
+  }
+
   // .links {
   //   display: flex;
   //   flex-direction: column;
