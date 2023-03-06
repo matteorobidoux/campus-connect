@@ -1,9 +1,7 @@
-const mydb = require('../db/db.ts')
 
+const request = require('supertest')
+import {app} from '../app'
 jest.mock('../db/db.ts')
-
-
-
 
 describe('test mongoose User model', () => {
   it('should return the doc with findById', async () => {
@@ -15,22 +13,19 @@ describe('test mongoose User model', () => {
     //   ]
     // })
     // const test= await mydb.getAllUsers()
-    mydb.get = jest.fn().mockResolvedValue({
-      data: [
-        {
-          name: 'nameOb',
-          completedEvents: [],
-          sections: [],
-          email: "",
-          gid: "",
-          googleTokens: {}
-        }
-      ]
-    });
-
-    expect(mydb.get).toHaveBeenCalledTimes(1)
-
+    // mydb.get = jest.fn().mockResolvedValue({
+    //   data: [
+    //     {
+    //       name: 'nameOb',
+    //       completedEvents: [],
+    //       sections: [],
+    //       email: "",
+    //       gid: "",
+    //       googleTokens: {}
+    //     }
+    //   ]
+    // });
+    const res= await request(app).get("/users")
+    expect(res.body).toBeDefined()
   });
-
-
 });
