@@ -67,7 +67,7 @@ const [selectedComponent, selectComponent] = useState("calender");
       <div className="app-container">
         <NavBar toggleSidebar={openProfileBar} />
         <div className="app-content-container">
-          { isLoggedIn && <> <MainSidebar selectChatFunc={selectNewChat} selectComponentFunc={switchComponent}/> <Main selectedComponent={selectedComponent} selectedChat={selectedChat}/> </>}
+          { isLoggedIn && <> <MainSidebar selectedComponent={selectedComponent} selectChatFunc={selectNewChat} selectComponentFunc={switchComponent}/> <Main selectedComponent={selectedComponent} selectedChat={selectedChat}/> </>}
           { !isLoggedIn && isReturningFromGoogleAuth && ( <CourseEntryWidget />)}
           { !isReturningFromGoogleAuth && !isLoggedIn && <Login />}
         </div>

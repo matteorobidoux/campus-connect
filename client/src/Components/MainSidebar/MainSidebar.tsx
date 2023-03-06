@@ -3,6 +3,7 @@ import CourseQuickViewContainer from "../CourseQuickViewContainer/CourseQuickVie
 import styles from "./MainSidebar.module.scss"
 
 type MainSidebarProps = {
+  selectedComponent : string,
   selectChatFunc : Function,
   selectComponentFunc : Function
 }
@@ -26,10 +27,17 @@ export default function MainSidebar(props: MainSidebarProps) {
               }}>Chat</button>
             <button>Marketplace</button>
           </div>
-          {
-            isLoading ? <span>Loading...</span> :
-              isSuccess ? <CourseQuickViewContainer data={data} /> :
-                <span>Couldn't load data</span>
+          {props.selectedComponent === "calender" ?(
+              isLoading ? <span>Loading...</span> :
+                isSuccess ? <CourseQuickViewContainer data={data} /> :
+                  <span>Couldn't load data</span>
+            
+            ) : props.selectedComponent === "chat" ?(
+              <div>
+              <button>Convo 1</button>
+              <button>Convo 2</button>
+              </div>
+            ) : null
           }
         </div>
       </div>
