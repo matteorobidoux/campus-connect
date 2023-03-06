@@ -67,6 +67,7 @@ class DbMongoose {
   async addEventtoSection(courseNumber: string, sectionNumber:string, event: Events) {
       const course = (await Course.findOne({ number: courseNumber }))!;
       const section = course.sections.find(s => s.number == sectionNumber)!;
+      console.log("section: ", sectionNumber)
       section.events.push(event);
       await course.save();
   }

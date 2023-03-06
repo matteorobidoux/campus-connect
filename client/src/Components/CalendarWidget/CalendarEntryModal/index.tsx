@@ -23,7 +23,7 @@ export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {
 
   const initialValues = {
     title: "",
-    desc: "",
+    description: "",
     courseTitle: "",
     date: new Date()
   }
@@ -45,8 +45,8 @@ export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {
             event: {
               ownerId: user._id,
               date: values.date,
-              title: values.courseTitle,
-              desc: values.desc
+              title: values.title,
+              desc: values.description
             }
           });
           toast.done('addingEvent');
@@ -60,13 +60,14 @@ export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {
           }
 
           // eslint-disable-next-line eqeqeq
-          if (values.desc == "") {
+          if (values.description == "") {
             errors.description = "Please add a description.";
           }
           // eslint-disable-next-line eqeqeq
           if (values.courseTitle == "") {
             errors.courseTitle = "Please pick a course.";
           }
+          console.log(values.courseTitle)
 
           return errors;
         }}
@@ -83,14 +84,14 @@ export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {
             <div className={styles.formEntry}>
               <label htmlFor="description"> Description </label>
               <Field id="description" name="description" />
-              <p> {errors.desc ? errors.desc : null} </p>
+              <p> {errors.description ? errors.description : null} </p>
             </div>
 
             <div className={styles.formEntry}>
               <label htmlFor="courseTitle"> Class </label>
-              <Field as="select" id="courseTitle" name="courseTitle" value={'DEFAULT'}>
-                <option value="DEFAULT" disabled>Pick a class</option>
-                {sectionsQuery.data?.map(s => <option key={s.courseTitle}> {s.courseTitle} </option>)}
+              <Field as="select" id="courseTitle" name="courseTitle">
+                <option value="DEFAULT">Pick a class</option>
+                {sectionsQuery.data?.map(s => <option value={s.courseTitle} key={s.courseTitle}> {s.courseTitle} </option>)}
               </Field>
               <p> {errors.courseTitle ? errors.courseTitle : null} </p>
             </div>
