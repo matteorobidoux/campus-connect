@@ -7,6 +7,9 @@ import { LoginRequest } from "../../types/Queries/Login";
 import { generateAuthUrl } from "./oauth";
 import cors from "cors";
 import GAuth from "./oauth/gauth-endpoint";
+import http from "http";
+import { createServer } from './chat/index';
+
 const app = express();
 const port = 8081
 
@@ -67,8 +70,12 @@ app.use(function (_, res) {
   res.status(404).send("404 NOT FOUND");
 })
 
+const server = http.createServer(app)
+createServer(server);
 
-app.listen(port, () => {
+server.listen(port, () => {
   console.log(`at http://localhost:${port}`)
 })
+
+
 export { app };

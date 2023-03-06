@@ -1,10 +1,11 @@
+import { UserClassSection } from "../../../../types/UserClassSection"
 import { useSections, useUser } from "../../custom-query-hooks"
 import CourseQuickViewContainer from "../CourseQuickViewContainer/CourseQuickViewContainer"
 import styles from "./MainSidebar.module.scss"
 
 type MainSidebarProps = {
   selectedComponent : string,
-  selectChatFunc : Function,
+  selectChatFunc: (course: UserClassSection) => void,
   selectComponentFunc : Function
 }
 
@@ -21,28 +22,20 @@ export default function MainSidebar(props: MainSidebarProps) {
           <div className={styles["menu"]}>
             <button onClick={() => {
               props.selectComponentFunc("calender");
-              }}>Calender</button>
+            }}>Calender</button>
             <button onClick={() => {
               props.selectComponentFunc("chat");
-              }}>Chat</button>
+            }}>Chat</button>
             <button>Marketplace</button>
           </div>
           {props.selectedComponent === "calender" ?(
-              isLoading ? <span>Loading...</span> :
-                isSuccess ? <CourseQuickViewContainer data={data} /> :
-                  <span>Couldn't load data</span>
-            
-            ) : props.selectedComponent === "chat" ?(
+            isLoading ? <span>Loading...</span> :
+              isSuccess ? <CourseQuickViewContainer data={data} /> :
+                <span>Couldn't load data</span>
+
+          ) : props.selectedComponent === "chat" ?(
               <div className={styles["groupchats"]}>
-              <button onClick={() => {
-              props.selectChatFunc("Programming V");
-              }}>Convo 1</button>
-              <button onClick={() => {
-              props.selectChatFunc("Intro to Programming");
-              }}>Convo 2</button>
-              <button onClick={() => {
-              props.selectChatFunc("Pottery and growing flowers class");
-              }}>Convo 3</button>
+                {user.sections.map((value, index) => <button onClick={() => props.selectChatFunc(value)}> Convo {index} </button>)}
               </div>
             ) : null
           }
