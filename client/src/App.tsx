@@ -13,6 +13,8 @@ import { useUser } from './custom-query-hooks';
 import Login from './Components/Login/Login';
 import CourseEntryWidget from './Components/CourseEntryWidget/CourseEntryWidget';
 
+//import { useTranslation } from 'react-i18next';
+
 library.add(faCircleNotch)
 
 export default function App() {
@@ -22,6 +24,8 @@ export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(query.data?._id)
 
   const user = useUser();
+
+  //const {t, i18n} = useTranslation(['app']);
 
   useEffect(() => {
     if (query.isSuccess) {
@@ -58,6 +62,9 @@ export default function App() {
       <div className="app-container">
         <NavBar toggleSidebar={openProfileBar} />
         <div className="app-content-container">
+          {/* <button onClick={() => i18n.changeLanguage('en')}>English</button>
+          <button onClick={() => i18n.changeLanguage('fr')}>French</button>
+          <h1>{t('title')}</h1> */}
           { isLoggedIn && <> <MainSidebar /> <Main /> </>}
           { !isLoggedIn && isReturningFromGoogleAuth && ( <CourseEntryWidget />)}
           { !isReturningFromGoogleAuth && !isLoggedIn && <Login />}
