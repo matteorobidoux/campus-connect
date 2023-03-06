@@ -33,9 +33,16 @@ export default function MainSidebar(props: MainSidebarProps) {
                   <span>Couldn't load data</span>
             
             ) : props.selectedComponent === "chat" ?(
-              <div>
-              <button>Convo 1</button>
-              <button>Convo 2</button>
+              <div className={styles["groupchats"]}>
+              <button onClick={() => {
+              props.selectChatFunc("Programming V");
+              }}>Convo 1</button>
+              <button onClick={() => {
+              props.selectChatFunc("Intro to Programming");
+              }}>Convo 2</button>
+              <button onClick={() => {
+              props.selectChatFunc("Pottery and growing flowers class");
+              }}>Convo 3</button>
               </div>
             ) : null
           }

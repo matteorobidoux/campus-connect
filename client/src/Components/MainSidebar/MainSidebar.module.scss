@@ -35,6 +35,20 @@
     
   }
 
+  .groupchats {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .groupchats button {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+
+  }
+
   // .links {
   //   display: flex;
   //   flex-direction: column;
