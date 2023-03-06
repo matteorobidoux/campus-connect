@@ -21,6 +21,7 @@ const [selectedComponent, selectComponent] = useState("calender");
   const [isOpen, setIsOpen] = useState(false);
   const [isReturningFromGoogleAuth, setIsReturningFromGoogleAuth] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(query.data?._id)
+  const [selectedChat, selectChat] = useState("test");
 
   const user = useUser();
 
@@ -56,6 +57,9 @@ const [selectedComponent, selectComponent] = useState("calender");
     selectComponent(component)
   }
 
+  function selectNewChat(chat : string) {
+    selectChat(chat)
+  }
 
   return (
     <>
@@ -63,7 +67,7 @@ const [selectedComponent, selectComponent] = useState("calender");
       <div className="app-container">
         <NavBar toggleSidebar={openProfileBar} />
         <div className="app-content-container">
-          { isLoggedIn && <> <MainSidebar selectComponentFunc={switchComponent}/> <Main selectedComponent={selectedComponent} /> </>}
+          { isLoggedIn && <> <MainSidebar selectChatFunc={selectNewChat} selectComponentFunc={switchComponent}/> <Main selectedComponent={selectedComponent} selectedChat={selectedChat}/> </>}
           { !isLoggedIn && isReturningFromGoogleAuth && ( <CourseEntryWidget />)}
           { !isReturningFromGoogleAuth && !isLoggedIn && <Login />}
         </div>

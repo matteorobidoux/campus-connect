@@ -3,6 +3,7 @@ import CourseQuickViewContainer from "../CourseQuickViewContainer/CourseQuickVie
 import styles from "./MainSidebar.module.scss"
 
 type MainSidebarProps = {
+  selectChatFunc : Function,
   selectComponentFunc : Function
 }
 
