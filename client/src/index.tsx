@@ -5,7 +5,7 @@ import App from './App';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools'
 
-//import '../src/i18n/i18n';
+import './i18n/i18n';
 
 const queryClient = new QueryClient({defaultOptions: {queries: {retry: false}}});
 
