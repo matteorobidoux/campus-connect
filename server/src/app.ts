@@ -47,11 +47,11 @@ app.post('/api/addCompletedEvent', async (req,res)=>{
 })
 
 app.delete('/api/removeEvent', async (req,res)=>{
-  const {userId , courseNumber, courseSection} = req.body as Partial<RemoveEventBodyParams>;
-  if (!userId || !courseNumber || !courseSection) {
+  const {eventId , courseNumber, courseSection} = req.body as Partial<RemoveEventBodyParams>;
+  if (!eventId || !courseNumber || !courseSection) {
     res.sendStatus(400);
   } else {
-    res.json({id: await DbMongoose.removeEvent({userId, courseNumber, courseSection})})
+    res.json({id: await DbMongoose.removeEvent({eventId, courseNumber, courseSection})})
   }
 })
 
@@ -94,7 +94,7 @@ app.use(function (_, res) {
 })
 
 
-// app.listen(port, () => {
-//   console.log(`at http://localhost:${port}`)
-// })
+app.listen(port, () => {
+  console.log(`at http://localhost:${port}`)
+})
 export { app };

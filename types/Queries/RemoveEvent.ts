@@ -1,6 +1,6 @@
 
 type RemoveEventBodyParams = {
-  userId: string,
+  eventId: string,
   courseNumber: string,
   courseSection: string
 }

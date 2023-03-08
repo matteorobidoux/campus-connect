@@ -4,7 +4,7 @@ import {app} from '../app'
 jest.mock('../db/db.ts')
 
 afterAll( async () =>{
-  app.listen().close()
+  // app.listen().close()
 })
 
 describe('test Api Get All Users', () => {

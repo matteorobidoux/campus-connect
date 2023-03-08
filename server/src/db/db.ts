@@ -13,6 +13,7 @@ import RemoveEventBodyParams from '../../../types/Queries/RemoveEvent';
 import userModel from './models/user-schema';
 import { generateOAuthClient } from "../oauth/";
 import { google } from 'googleapis';
+import Events from '../../../types/Event';
 
 const dname = process.env.NAME || 'CampusConnect'
 
@@ -50,11 +51,11 @@ class DbMongoose {
     return userModel.toObject()
   }
 
-  async addEvent(id: string, date: Date, title: string, desc: string, sectionName: string) {
-    const eventModel = new Event({ id: id, date: date, title: title, desc: desc, associatedSection: { name: sectionName } })
-    console.log(eventModel)
-    await eventModel.save();
-  }
+  // async addEvent(id: string, date: Date, title: string, desc: string, sectionName: string) {
+  //   const eventModel = new Event({ id: id, date: date, title: title, desc: desc, associatedSection: { name: sectionName } })
+  //   console.log(eventModel)
+  //   await eventModel.save();
+  // }
 
   async addCompletedEvent({ userName, completedEvent }: CompletedEventBodyParams) {
     const user = await userModel.findOne({ name: userName });
@@ -65,12 +66,22 @@ class DbMongoose {
     }
 
   }
+  async addeventosection(cN: string, sN:string, event:Events){
+   
+    const course = await Course.findOne({ number: cN });
+    if (course) {
+      const section = course.sections.find(section => section.number == sN)!;
+       section.events.push((event))
+      course.save()
+      console.log("succeded")
+    }
+  }
 
-  async removeEvent({ userId, courseNumber, courseSection }: RemoveEventBodyParams) {
+  async removeEvent({ eventId, courseNumber, courseSection }: RemoveEventBodyParams) {
     const course = await Course.findOne({ number: courseNumber });
     if (course) {
       const section = course.sections.find(section => section.number == courseSection)!;
-      section.events = section.events.filter((section, i) => section.ownerId !== userId)
+      section.events = section.events.filter((event, i) => event.ownerId !== eventId)
       course.save()
     }
 
@@ -122,5 +133,12 @@ class DbMongoose {
   }
 
 }
+
+
+const f=new DbMongoose();
+const a=" 574-251-DW";
+
+f.addeventosection(a,"00001", {title:"", desc:"", ownerId:"", date:new Date()})
+
 
 export default new DbMongoose();
