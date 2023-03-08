@@ -27,9 +27,9 @@ function generateAuthUrl(res: Response) {
   console.log('generating url...');
   // Generate a url that asks permissions for the Drive activity scope
   const authorizationUrl = oauth2Client.generateAuthUrl({
-    prompt: "consent",
     // 'online' (default) or 'offline' (gets refresh_token)
     access_type: 'offline',
+    prompt: "consent",
     /** Pass in the scopes array defined above.
       * Alternatively, if only one scope is needed, you can pass a scope URL as a string */
     scope: scopes,
