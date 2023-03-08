@@ -23,7 +23,9 @@ export default async function GAuth(req: Request, res: Response<GAuthResponse>) 
 
     if (!gid || !email || !token.tokens.access_token || !token.tokens.refresh_token) {
       console.log(resp)
-      res.status(400).json({error: "" + resp});
+      console.log(token.tokens.access_token)
+      console.log(token.tokens.refresh_token)
+      res.status(400).json({error: "Couldn't find one of the required infos from google."});
       //res.status(400).json({error: "Couldn't find one of the required infos from google."});
       return;
     }
