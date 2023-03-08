@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { useMutation, useQueryClient } from "react-query";
 import { toast } from "react-toastify";
 import { getRandomColor } from "../../../cssUtils";
+import { useTranslation } from "react-i18next";
 
 export interface CalendarEntryDetailedModalProps {
   event: CalendarEvent;
@@ -12,10 +13,15 @@ export interface CalendarEntryDetailedModalProps {
 }
 
 export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetailedModalProps) {
-  const options: Intl.DateTimeFormatOptions = { weekday: undefined, year: 'numeric', month: 'long', day: 'numeric' };
+  const monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
   const [color] = useState(getRandomColor())
 
   const queryClient = useQueryClient();
+
+  const {t, i18n} = useTranslation(['events']);
+
   const markAsDone = useMutation(async () => {
     await new Promise(resolve => setTimeout(resolve, 1000));
   }, {
@@ -31,6 +37,7 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
       toast.done(toastId)
     }
   }, [markAsDone, markAsDone.isLoading])
+  console.log(event.date.getMonth())
 
   return (
     <div className={styles.wrapper}>
@@ -39,14 +46,17 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
         <div className={styles.top}>
           <h1> {event.title} </h1>
           <h2> {event.associatedSection.name} </h2>
-          <h2> Due {event.date.toLocaleDateString(undefined, options)} </h2>
+          { i18n.language == "fr" ? 
+            <h2> {t("due")} {event.date.getDay()} {t(monthNames[event.date.getMonth()])} </h2> : 
+            <h2> {t("due")} {t(monthNames[event.date.getMonth()])} {event.date.getDay()} </h2> 
+          }
         </div>
         <div className={styles.center}>
-          <h3> Event Description </h3>
+          <h3> {t("eventDescription")}</h3>
           <p> {event.description} </p>
         </div>
         <div className={styles.botton}>
-          <button onClick={() => markAsDone.mutate()}> Mark as Done </button>
+          <button onClick={() => markAsDone.mutate()}> {t("markAsDone")} </button>
         </div>
       </div>
     </div>

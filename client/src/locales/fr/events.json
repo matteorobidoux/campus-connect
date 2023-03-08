@@ -13,5 +13,17 @@
     "October": "Octobre",
     "November": "Novembre",
     "December": "Décembre",
-    "day": "Jour"
+    "day": "Jour",
+    "due": "À Remettre:",
+    "eventDescription": "Description De L'événement",
+    "markAsDone": "Marque Comme Terminé",
+    "addNewEvent": "Ajouter Un Nouvel Événement",
+    "titleError": "Titre est requis",
+    "descriptionError": "Description est requise",
+    "courseError": "Cours est requis",
+    "title": "Titre",
+    "description": "Description",
+    "class": "Cours",
+    "pickAClass": "Choisissez Un Cours",
+    "submit": "Soumettre"
 }

@@ -51,11 +51,11 @@ class DbMongoose {
     return userModel.toObject()
   }
 
-  async addEvent(id: string, date: Date, title: string, desc: string, sectionName: string) {
-    const eventModel = new Event({ id: id, date: date, title: title, desc: desc, associatedSection: { name: sectionName } })
-    console.log(eventModel)
-    await eventModel.save();
-  }
+  // async addEvent(id: string, date: Date, title: string, desc: string, sectionName: string) {
+  //   const eventModel = new Event({ id: id, date: date, title: title, desc: desc, associatedSection: { name: sectionName } })
+  //   console.log(eventModel)
+  //   await eventModel.save();
+  // }
 
   // async addUsertoSection(coursenumb:string) {
   //   Course.findOne({number: coursenumb}, function(err, course) {

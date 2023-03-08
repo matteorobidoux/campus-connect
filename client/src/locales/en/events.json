@@ -13,5 +13,17 @@
     "October": "October",
     "November": "November",
     "December": "December",
-    "day": "Day"
+    "day": "Day",
+    "due": "Due:",
+    "eventDescription": "Event Description",
+    "markAsDone": "Mark as done",
+    "addNewEvent": "Add New Event",
+    "titleError": "Title is required",
+    "descriptionError": "Description is required",
+    "courseError": "Course is required",
+    "title": "Title",
+    "description": "Description",
+    "class": "Class",
+    "pickAClass": "Pick a class",
+    "submit": "Submit"
 }

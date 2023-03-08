@@ -8,7 +8,7 @@ const resources = {
         events: eventsEn,
     },
     fr: {
-        events: eventsFr,
+        events: eventsFr
     }
 }
 

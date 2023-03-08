@@ -6,6 +6,7 @@ import { useMutation } from "react-query";
 import {AddEventBody} from "../../../../../types//Queries//AddEvent"
 import axios from "axios";
 import { useSections, useUser } from "../../../custom-query-hooks";
+import { useTranslation } from "react-i18next";
 
 export interface CalendarEntryModalProps {
   onClose: () => void;
@@ -13,7 +14,10 @@ export interface CalendarEntryModalProps {
 
 export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {  
   
+  const {t, i18n} = useTranslation(['events']);
+
   const user = useUser();
+
   const sectionsQuery = useSections({userClassSections: user.sections})
   
   const mutation = useMutation(async (arg: Omit<AddEventBody, 'id'>) => {
@@ -30,7 +34,7 @@ export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {
 
   return (
     <div className={styles.wrapper}>
-      <h1> Add new event </h1>
+      <h1> {t("addNewEvent")} </h1>
       <Formik
         initialValues={initialValues}
         onSubmit={async (values) => {
@@ -56,18 +60,17 @@ export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {
           const errors: {[key: string]: string} = {};
           // eslint-disable-next-line eqeqeq
           if (values.title == "") {
-            errors.title = "Name can't be empty.";
+            errors.title = t("titleError");
           }
 
           // eslint-disable-next-line eqeqeq
           if (values.description == "") {
-            errors.description = "Please add a description.";
+            errors.description = t("descriptionError");
           }
           // eslint-disable-next-line eqeqeq
           if (values.courseTitle == "") {
-            errors.courseTitle = "Please pick a course.";
+            errors.courseTitle = t("courseError");
           }
-          console.log(values.courseTitle)
 
           return errors;
         }}
@@ -76,28 +79,28 @@ export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {
         {({ errors, isValid, isSubmitting }) => (
           <Form className={styles.form}> 
             <div className={styles.formEntry}>
-              <label htmlFor="title"> Title </label>
+              <label htmlFor="title"> {t("title")} </label>
               <Field id="title" name="title" />
               <p> {errors.title ? errors.title : null} </p>
             </div>
 
             <div className={styles.formEntry}>
-              <label htmlFor="description"> Description </label>
+              <label htmlFor="description"> {t("description")} </label>
               <Field id="description" name="description" />
               <p> {errors.description ? errors.description : null} </p>
             </div>
 
             <div className={styles.formEntry}>
-              <label htmlFor="courseTitle"> Class </label>
+              <label htmlFor="courseTitle"> {t("class")} </label>
               <Field as="select" id="courseTitle" name="courseTitle">
-                <option value="DEFAULT">Pick a class</option>
+                <option value="DEFAULT"> {t("pickAClass")} </option>
                 {sectionsQuery.data?.map(s => <option value={s.courseTitle} key={s.courseTitle}> {s.courseTitle} </option>)}
               </Field>
               <p> {errors.courseTitle ? errors.courseTitle : null} </p>
             </div>
 
             <button type="submit" disabled={!isValid}>
-              {!isSubmitting ? "Submit" : <FontAwesomeIcon icon="circle-notch" className="fa-spin"/>}
+              {!isSubmitting ? t("submit") : <FontAwesomeIcon icon="circle-notch" className="fa-spin"/>}
             </button>
           </Form>
         )}
