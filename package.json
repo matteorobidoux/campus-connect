@@ -5,6 +5,8 @@
     "install:all": "cd ./client && npm i && cd ../server && npm i",
     "install:front-end": "cd ./client && npm i",
     "install:back-end": "cd ./server && npm i",
+    "dev": "cd ./client && npm run start && cd ../server && npm run dev ",
+    "build": "cd ./client && npm run build && cd ../server && npm run build",
     "start": "cd ./server && npm run start:prod"
   },
   "repository": {

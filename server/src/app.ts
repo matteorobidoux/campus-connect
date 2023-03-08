@@ -1,20 +1,25 @@
-import express from "express";
+import { GetAllStrippedCourses } from './../../types/Queries/Register';
+import express, { Response } from "express";
 import CreateUserBodyParams from "../../types/Queries/CreateUser";
 import DbMongoose from "./db/db"
-import { GetAllSectionsRequest } from "../../types/Queries/GetAllCourses";
+import { GetAllSectionsRequest, GetAllSectionsResponse } from "../../types/Queries/GetAllCourses";
 import { LoginRequest } from "../../types/Queries/Login";
+import { generateAuthUrl } from "./oauth";
+import cors from "cors";
+import GAuth from "./oauth/gauth-endpoint";
 const app = express();
 const port = 8080
 
+app.use(cors())
 app.use(express.json())
 
-app.get("/users", async (_,res) => {
+app.get("/users", async (_, res) => {
   const result = await DbMongoose.getAllUsers()
   res.json(result)
 })
 
 app.post("/api/login", async (req, res) => {
-  const { name , password }: Partial<LoginRequest> = req.body;
+  const { name, password }: Partial<LoginRequest> = req.body;
   if (!name || !password) {
     res.sendStatus(400);
   } else {
@@ -25,19 +30,32 @@ app.post("/api/login", async (req, res) => {
 app.post('/api/addUser', async (req, res) => {
   const body = req.body as CreateUserBodyParams;
   console.log(body);
-  res.json({id: await DbMongoose.addUser(body)});
+  res.json(await DbMongoose.addUser(body));
 })
-//
-// app.get('/api/allSections', async (_, res) => {
-//   res.json(await DbMongoose.getAllSections())
-// })
 
-app.get("/api/getAllSections", async (req, res) => {
+app.get("/api/getAllSections", async (req, res: Response<GetAllSectionsResponse>) => {
   const { userClassSections } = req.query as Partial<GetAllSectionsRequest>;
-  console.log('here.');
   if (Array.isArray(userClassSections)) {
     const result = await DbMongoose.getUserClasses(userClassSections);
     res.json(result)
+  } else {
+    res.sendStatus(400);
+  }
+})
+
+app.get("/gauth", async (req, res) => {
+  console.log("calling gauth.");
+  await GAuth(req, res);
+})
+
+app.get("/api/authenticate", async (req, res) => {
+  generateAuthUrl(res);
+})
+
+app.get("/api/getAllStrippedCourses", async (req, res: Response<GetAllStrippedCourses>) => {
+  const result = await DbMongoose.getAllStrippedCourses()
+  if (result && Array.isArray(result) && result.length > 0) {
+    res.json({ response: result })
   } else {
     res.sendStatus(400);
   }
@@ -50,7 +68,7 @@ app.use(function (_, res) {
 })
 
 
-app.listen(port, ()=>{
+app.listen(port, () => {
   console.log(`at http://localhost:${port}`)
 })
 export { app };

@@ -1,13 +1,11 @@
 .wrapper {
-  display: inline-flex;
+  display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 2%;
-  width: 100%;
-
-  // border-radius: 2rem;
-  // border: solid 1px #F7FDF0;
-  // box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+  margin-right: auto;
 
   .calendarEventsWrapper {
     display: flex;
@@ -19,7 +17,7 @@
   .right {
     display: flex;
     flex-direction: column;
-    min-width: 50%; 
+    min-width: 50%;
     align-content: center;
 
     .header {

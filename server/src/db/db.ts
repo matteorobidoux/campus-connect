@@ -3,12 +3,14 @@ import mongoose from 'mongoose';
 import User from "./models/user-schema"
 import Event from './models/event-schema';
 import Course from "./models/course-schema";
-import UserClass from "../../../types/UserClass"
+import { UserClass } from "../../../types/UserClass"
 import CreateUserBodyParams from "../../../types/Queries/CreateUser";
 import { UserClassSection } from "../../../types/UserClassSection"
 import { GetAllSectionsResponse } from "../../../types/Queries/GetAllCourses"
 import { LoginRequest, LoginResponse } from "../../../types/Queries/Login";
 import userModel from './models/user-schema';
+import { generateOAuthClient } from "../oauth/"; 
+import { google } from 'googleapis';
 
 // const dname = process.env.NAME || 'CampusConnect'
 const dname = process.env.NAME || 'CampusConnect'
@@ -29,8 +31,8 @@ class DbMongoose {
     mongoose.connection.close()
   }
 
-  async login({name, password}: LoginRequest): Promise<LoginResponse> {
-    const user = await userModel.findOne({name: name, password: password});
+  async login({ name, password }: LoginRequest): Promise<LoginResponse> {
+    const user = await userModel.findOne({ name: name, password: password });
 
     if (user) {
       return { data: user };
@@ -40,11 +42,11 @@ class DbMongoose {
 
   }
 
-  async addUser({name, password, sections}: CreateUserBodyParams): Promise<string> {
-    const userModel = new User({ name, password, sections })
+  async addUser({name, sections, googleTokens, email, gid}: CreateUserBodyParams): Promise<string> {
+    const userModel = new User({ name, sections, googleTokens, email, gid });
     console.log(userModel)
-    const resp = await userModel.save();
-    return resp.id!
+    await userModel.save();
+    return userModel.toObject()
   }
 
   async addEvent(id: string, date: Date, title: string, desc: string, sectionName: string) {
@@ -53,26 +55,35 @@ class DbMongoose {
     await eventModel.save();
   }
 
-  // async addUsertoSection(coursenumb:string) {
-  //   Course.findOne({number: coursenumb}, function(err, course) {
-  //     course.sections[0].students.push("ho")
-  //     course.save()
-  //   })
-  // }
-
-
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
-    const courses = userSections.map(async userCourse=> {
-      const course = (await Course.findOne({ number: userCourse.courseNumber }))!.toObject();
-      const section = course.sections.find(fullSection => fullSection.number == userCourse.sectionNumber)!;
+    const courses = userSections.map(async userCourse => {
+      // Some courses can be taken from different programs. Right now they are duplicated in the DB.
+      // For this reason, I'm alwaays selecting the first one.
+      const courses = (await Course.find({ number: userCourse.courseNumber }));
+      courses.forEach(c => c.sections.forEach(s => console.log(s.number)));
+      const course = courses.find(course => course.sections.find(fullSection => fullSection.number == userCourse.sectionNumber))!.toObject();
+      // const section = courses.sections.find(fullSection => fullSection.number == userCourse.sectionNumber)!;
       return {
-          ...section,
-          courseNumber: course.number,
-          courseTitle: course.title,
+        ...course.sections[0],
+        courseNumber: courses[0].number,
+        courseTitle: courses[0].title,
       }
     });
 
     return await Promise.all(courses);
+  }
+
+  async getAllStrippedCourses() {
+    const result = await Course.find()
+      .select({
+        _id: 1,
+        title: 1,
+        number: 1,
+        'sections.number': 1,
+        'sections.teacher': 1
+      })
+    console.log(result);
+    return result;
   }
 
   //Get All Users
@@ -85,19 +96,6 @@ class DbMongoose {
   async getAllEvents() {
     const result = await Event.find()
     console.log(result)
-    return result;
-  }
-
-  async getAllSections(): Promise<GetAllSectionsResponse> {
-    const mongoResp = await Course.find();
-    const result = mongoResp.map(r => ({
-      title: r.title,
-      sections: r.sections.map(s => ({teacher: s.teacher, number: s.number})),
-      id: r.id as string,
-    }))
-
-    console.log(result);
-
     return result;
   }
 

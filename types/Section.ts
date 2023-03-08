@@ -1,11 +1,14 @@
 import Schedule from "./Schedule";
 import Events from "./Event";
-type Section = {
+export type Section = {
   schedule: Schedule[];
   teacher: string;
   number: string;
   events: Events[];
-  students:string[]
+  students: string[]
 }
 
-export default Section;
+export type StrippedSection = {
+  teacher: string;
+  number: string;
+}

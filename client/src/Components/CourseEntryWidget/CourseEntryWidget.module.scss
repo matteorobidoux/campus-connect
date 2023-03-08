@@ -1,0 +1,19 @@
+.course-entry-widget-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .title {
+    font-size: 20px;
+    font-size: 500;
+    margin-bottom: 1rem;
+  }
+
+  .entered-courses {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.3rem 1rem;
+  }
+
+}

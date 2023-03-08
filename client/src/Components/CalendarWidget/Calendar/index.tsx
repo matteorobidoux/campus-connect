@@ -1,12 +1,12 @@
-import CalendarEvents from "../../../../types/Calendar"
+import CalendarEvents from "../../../../../types/Calendar"
 import ReactCalendar, { CalendarTileProperties, ViewCallbackProperties } from "react-calendar"
 
 import 'react-calendar/dist/Calendar.css';
 import "./calendar.css"
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
-import { useCalendarEvents } from "../../custom-query-hooks";
-import CalendarEvent from "../../../../types/Calendar";
+import { useCalendarEvents, useSections, useUser } from "../../../custom-query-hooks";
+import CalendarEvent from "../../../../../types/Calendar";
 
 
 export interface CalendarProps {
@@ -21,10 +21,10 @@ const getCEvClassName = (d1: Date, usedDates: Date[]) => usedDates.some(d => isS
  * TODO: Implement API call to fetch all the calendar events.
  * Wrapper for React-Calendar.
 */
-export default function Calendar({onMonthChanged, onScopeChanged}: CalendarProps) {
+export default function Calendar({ onMonthChanged, onScopeChanged }: CalendarProps) {
   const [clickedDayRef, setClickedDayRef] = useState<EventTarget | null>(null)
   const [currentDate, setCurrentDate] = useState<Date>(new Date());
-  
+
   const [currentDay, setCurrentDay] = useState<number | null>(null);
   const [currentMonth, setCurrentMonth] = useState(new Date().getMonth());
 
@@ -65,12 +65,12 @@ export default function Calendar({onMonthChanged, onScopeChanged}: CalendarProps
 
   useEffect(() => {
     if (queryEvents.isLoading) {
-      toast.loading("Loading events", {toastId: 'loadingEvents'});
+      toast.loading("Loading events", { toastId: 'loadingEvents' });
       return;
     }
 
     if (queryEvents.isStale) {
-      toast.loading("Re-fetching events", {toastId: 'loadingEvents'});
+      toast.loading("Re-fetching events", { toastId: 'loadingEvents' });
       return;
     }
 
@@ -82,7 +82,7 @@ export default function Calendar({onMonthChanged, onScopeChanged}: CalendarProps
   return <div>
     <ReactCalendar
       onClickDay={handleDayClicked}
-      tileClassName={(p) => queryEvents.data ? getCEvClassName(p.date, queryEvents.data.map(e => e.date)) : null} 
+      tileClassName={(p) => queryEvents.data ? getCEvClassName(p.date, queryEvents.data.map(e => e.date)) : null}
       onActiveStartDateChange={handleActiveStartDateChange}
       minDetail={'year'}
       showFixedNumberOfWeeks
