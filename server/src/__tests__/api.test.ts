@@ -6,29 +6,25 @@ jest.mock('../db/db.ts')
 afterAll( async () =>{
   app.listen().close()
 })
-describe('test mongoose User model', () => {
-  it('should return the doc with findById', async () => {
-    // mydb.getAllUsers.mockResolvedValue({
-    //   data:[
-    //     {
-    //       a:"e"
-    //     }
-    //   ]
-    // })
-    // const test= await mydb.getAllUsers()
-    // mydb.get = jest.fn().mockResolvedValue({
-    //   data: [
-    //     {
-    //       name: 'nameOb',
-    //       completedEvents: [],
-    //       sections: [],
-    //       email: "",
-    //       gid: "",
-    //       googleTokens: {}
-    //     }
-    //   ]
-    // });
+
+describe('test Api Get All Users', () => {
+  it('should return the doc ', async () => {
     const res= await request(app).get("/users")
     expect(res.body).toBeDefined()
   });
 });
+
+describe('test Api Login', () => {
+  it('should return 400 with no data', async () => {
+    const res= await request(app).get("/api/login")
+    expect(res.status).toBe(404)
+  });
+});
+
+describe('test api getAllStrippedCourses', () => {
+  it('should return not undefined', async () => {
+    const res= await request(app).get("/api/getAllStrippedCourses")
+    expect(res.body).toBeDefined()
+  });
+});
+
