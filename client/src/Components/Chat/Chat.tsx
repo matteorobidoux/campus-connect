@@ -20,23 +20,26 @@ const formatDate = (date: Date) => {
 export default function Chat({ selectedChat }: ChatProps) {
   const user = useUser();
   const sections = useSections({userClassSections: user.sections});
-  const [messages, setMessages] = useState<ChatMessage[]>([]);
+  const [messages, _setMessages] = useState<ChatMessage[]>([]);
   const textRef = useRef<HTMLInputElement>(null);
   const lastMessageRef = useRef<HTMLDivElement>(null);
 
   const chat = useChat({rooms: [selectedChat], onMessage: (m) => {
-      messages.push(m);
-      lastMessageRef.current?.scrollIntoView()
-      setMessages([...messages]);
-    }
+    m.date = new Date(m.date);
+    setMessages(m)
+    lastMessageRef.current?.scrollIntoView()
+  }
   });
+
+  const setMessages = (c: ChatMessage) => {
+    _setMessages((currentMessages) => [...currentMessages, c]);
+  }
 
   const onEnter = (message: string) => {
     if (message == "") return;
     const pMessage = {message, room: selectedChat, user: {_id: user._id, username: user.name}, date: new Date()}
     chat.sendMessage(pMessage);
-    messages.push(pMessage);
-    setMessages([...messages]);
+    setMessages(pMessage);
   }
 
   const onKeyUp = ({ key }: React.KeyboardEvent<HTMLInputElement>) => {
