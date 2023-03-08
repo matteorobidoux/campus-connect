@@ -2,7 +2,7 @@
   "scripts": {
     "dev": "nodemon src/app.ts",
     "build": "tsc",
-    "test": "jest --coverage --watchAll --detectOpenHandles",
+    "test": "jest --coverage",
     "start:prod": "node ./build/server/src/app.js"
   },
   "dependencies": {
