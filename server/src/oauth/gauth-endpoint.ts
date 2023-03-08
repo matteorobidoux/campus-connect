@@ -22,6 +22,7 @@ export default async function GAuth(req: Request, res: Response<GAuthResponse>) 
     const { id: gid, email } = resp;
 
     if (!gid || !email || !token.tokens.access_token || !token.tokens.refresh_token) {
+      console.log(resp)
       res.status(400).json({error: "Couldn't find one of the required infos from google."});
       return;
     }
