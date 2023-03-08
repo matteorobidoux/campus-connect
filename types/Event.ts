@@ -1,5 +1,4 @@
 type Events = {
-  _id: string,
   ownerId: string,
   date: Date,
   title: string,

@@ -15,6 +15,7 @@ export function CalendarWidget({ }: CalendarWidgetProps) {
   const [events, setEvents] = useState<Events[]>([])
   const [scope, setScope] = useState<"month" | "day">("month");
   const [text, setText] = useState<string>(months[new Date().getMonth()]);
+  const [date, setDate] = useState<Date>(new Date());
 
   const onScopeChanged = (scope: "month" | "day", date: Date) => {
     console.log(scope, date);
@@ -23,6 +24,8 @@ export function CalendarWidget({ }: CalendarWidgetProps) {
       setText(months[date.getMonth()])
     } else {
       setText(`${months[date.getMonth()]} ${date.getDate()}`)
+      setDate(date);
+      console.log("date" + date)
     }
   }
 
@@ -35,9 +38,9 @@ export function CalendarWidget({ }: CalendarWidgetProps) {
         </div>
 
         <div className={styles.calendarEventsWrapper}>
-          {events.map(ev => <CalendarEventRow event={ev} key={ev._id} />)}
+          {events.map(ev => <CalendarEventRow event={ev} />)}
           {scope == "day" && (
-            <AddEventEntry />
+            <AddEventEntry date={date}/>
           )}
         </div>
       </div>

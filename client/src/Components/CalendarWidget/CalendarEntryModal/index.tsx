@@ -9,9 +9,10 @@ import { useSections, useUser } from "../../../custom-query-hooks";
 
 export interface CalendarEntryModalProps {
   onClose: () => void;
+  date: Date
 }
 
-export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {  
+export default function CalendarEntryModal({onClose, date}: CalendarEntryModalProps) {  
   
   const user = useUser();
   const sectionsQuery = useSections({userClassSections: user.sections})
@@ -20,12 +21,12 @@ export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {
     axios.post('/api/addEvent', arg)
   });
 
-
+  console.log(date.getTime + "dATE")
   const initialValues = {
     title: "",
     description: "",
     courseTitle: "",
-    date: new Date()
+    date: new Date(date)
   }
 
   return (
