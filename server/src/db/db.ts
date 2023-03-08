@@ -70,8 +70,9 @@ class DbMongoose {
    
     const course = await Course.findOne({ number: cN });
     if (course) {
+      console.log("found the course")
       const section = course.sections.find(section => section.number == sN)!;
-       section.events.push((event))
+      section.events.push((event))
       course.save()
       console.log("succeded")
     }
@@ -81,7 +82,7 @@ class DbMongoose {
     const course = await Course.findOne({ number: courseNumber });
     if (course) {
       const section = course.sections.find(section => section.number == courseSection)!;
-      section.events = section.events.filter((event, i) => event.ownerId !== eventId)
+      section.events = section.events.filter((event, i) => event._id !== eventId)
       course.save()
     }
 
@@ -136,9 +137,14 @@ class DbMongoose {
 
 
 const f=new DbMongoose();
-const a=" 574-251-DW";
-
-f.addeventosection(a,"00001", {title:"", desc:"", ownerId:"", date:new Date()})
-
+const a="574-251-DW";
+const abs: Events = {
+  date: new Date(),
+  desc: "test",
+  ownerId: "asdsad",
+  title:"Trying to remove this"
+}
+f.addeventosection(a,"00001", abs)
+// f.getAllUsers()
 
 export default new DbMongoose();

@@ -1,10 +1,10 @@
 import Schedule from "./Schedule";
-import Events from "./Event";
+import  EventSchema from "../server/src/db/models/event-schema";
 export type Section = {
   schedule: Schedule[];
   teacher: string;
   number: string;
-  events: Events[];
+  events: Array<EventSchema.schema>;
   students: string[]
 }
 
