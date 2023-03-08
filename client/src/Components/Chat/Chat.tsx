@@ -3,7 +3,7 @@ import Message from "../Message/Message"
 import { useEffect, useRef, useState } from "react"
 import { ChatMessage, useChat } from "../../chat";
 import { UserClassSection } from "../../../../types/UserClassSection";
-import { useUser } from "../../custom-query-hooks";
+import { useSections, useUser } from "../../custom-query-hooks";
 
 type ChatProps = {
   selectedChat : UserClassSection;
@@ -12,9 +12,14 @@ type ChatProps = {
 //TODO: Change main bar depending on component selected
 //TODO: Change message input/button/route depending on groupchat selected
 //TODO: Make message into components
+//
+const formatDate = (date: Date) => {
+  return date.toLocaleString('en-US', { hour: 'numeric', minute: "2-digit", hour12: true })
+}
 
 export default function Chat({ selectedChat }: ChatProps) {
   const user = useUser();
+  const sections = useSections({userClassSections: user.sections});
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const textRef = useRef<HTMLInputElement>(null);
   const lastMessageRef = useRef<HTMLDivElement>(null);
@@ -28,7 +33,7 @@ export default function Chat({ selectedChat }: ChatProps) {
 
   const onEnter = (message: string) => {
     if (message == "") return;
-    const pMessage = {message, room: selectedChat, user: user._id, date: new Date()}
+    const pMessage = {message, room: selectedChat, user: {_id: user._id, username: user.name}, date: new Date()}
     chat.sendMessage(pMessage);
     messages.push(pMessage);
     setMessages([...messages]);
@@ -52,7 +57,7 @@ export default function Chat({ selectedChat }: ChatProps) {
           <header className={styles["msger-header"]}>
             <div className={styles["msger-header-title"]}>
               <i className={styles["fas fa-comment-alt"]}></i> 
-              {selectedChat.courseNumber}
+              {sections.data?.find(s => s.courseNumber == selectedChat.courseNumber)?.courseTitle}
             </div>
             <div className={styles["msger-header-options"]}>
               <span><i className={styles["fas fa-cog"]}></i></span>
@@ -62,8 +67,8 @@ export default function Chat({ selectedChat }: ChatProps) {
           <main className={styles["msger-chat"]}>
             {messages.map((message, i) => 
               <div ref={lastMessageRef}>
-                <Message leftOrRight={message.user == user._id ? "right-msg" : "left-msg"}
-                  user={message.user} message={message.message} time={message.date.toLocaleTimeString()} key={i} />
+                <Message leftOrRight={message.user._id == user._id ? "right-msg" : "left-msg"}
+                  user={message.user.username} message={message.message} time={formatDate(message.date)} key={i} />
               </div>
             )}
 

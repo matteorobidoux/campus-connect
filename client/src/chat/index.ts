@@ -5,7 +5,7 @@ import { UserClassSection } from '../../../types/UserClassSection';
 export interface ChatMessage {
   message: string,
   room: UserClassSection,
-  user: string,
+  user: {username: string, _id: string},
   date: Date,
 }
 
