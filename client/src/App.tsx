@@ -17,9 +17,11 @@ library.add(faCircleNotch)
 
 export default function App() {
   const query = useGoogleOAuth();
+const [selectedComponent, selectComponent] = useState("calender");
   const [isOpen, setIsOpen] = useState(false);
   const [isReturningFromGoogleAuth, setIsReturningFromGoogleAuth] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(query.data?._id)
+  const [selectedChat, selectChat] = useState("Intro To Computer Programming IV");
 
   const user = useUser();
 
@@ -51,6 +53,13 @@ export default function App() {
     setIsOpen(!isOpen)
   }
 
+  function switchComponent(component : string) {
+    selectComponent(component)
+  }
+
+  function selectNewChat(chat : string) {
+    selectChat(chat)
+  }
 
   return (
     <>
@@ -58,7 +67,7 @@ export default function App() {
       <div className="app-container">
         <NavBar toggleSidebar={openProfileBar} />
         <div className="app-content-container">
-          { isLoggedIn && <> <MainSidebar /> <Main /> </>}
+          { isLoggedIn && <> <MainSidebar selectedComponent={selectedComponent} selectChatFunc={selectNewChat} selectComponentFunc={switchComponent}/> <Main selectedComponent={selectedComponent} selectedChat={selectedChat}/> </>}
           { !isLoggedIn && isReturningFromGoogleAuth && ( <CourseEntryWidget />)}
           { !isReturningFromGoogleAuth && !isLoggedIn && <Login />}
         </div>
