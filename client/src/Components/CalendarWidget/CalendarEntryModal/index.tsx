@@ -16,7 +16,7 @@ export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {
   const user = useUser();
   const sectionsQuery = useSections({userClassSections: user.sections})
   
-  const mutation = useMutation(async (arg: Omit<AddEventBody, 'id'>) => {
+  const mutation = useMutation(async (arg: AddEventBody) => {
     axios.post('/api/addEvent', arg)
   });
 
@@ -43,6 +43,7 @@ export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {
               sectionNumber: course!.number
             },
             event: {
+              courseTitle: course!.courseTitle,
               ownerId: user._id,
               date: values.date,
               title: values.title,
