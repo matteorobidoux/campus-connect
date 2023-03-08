@@ -1,11 +1,18 @@
 import { Response } from 'express';
 import { google } from 'googleapis';
 
+const env = {
+  //CHANGE DEPENDING IF DEPLOYING OR LOCAL
+  //authUrl: "http://localhost:3000/gauth"
+  authUrl: "https://campus-connects-test.azurewebsites.net/gauth"
+  //authUrl: "https://campus-connects.azurewebsites.net/gauth"
+}
+
 function generateOAuthClient() {
   const oauth2Client = new google.auth.OAuth2(
     "339605005370-fv5vq1stf35b26ftkrh9ugkuju7p68f2.apps.googleusercontent.com",
     "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",
-    "http://localhost:3000/gauth"
+    env.authUrl
   );
   return oauth2Client;
 }
