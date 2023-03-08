@@ -23,10 +23,19 @@ function NavBar(props: NavBarProps) {
   return (
     <div className={styles.navbar}>
       <nav>
-        <select className={styles.languageSelect} value={language} onChange={handleLanguage}>
-            <option className={styles.languageOption} value="en">English</option>
-            <option className={styles.languageOption} value="fr">French</option>
-        </select>
+        <div className={styles["lang-menu"]}>
+          <div className={styles["selected-lang"]}>
+            English
+          </div>
+          <ul>
+            <li>
+                <p className={styles.en}>English</p>
+            </li>
+            <li>
+                <p className={styles.fr}>French</p>
+            </li>
+          </ul>
+        </div>
         <h1 className={styles.logo}>Campus Connect</h1>
         <img id="profile" src={profileImg} alt="profile" onClick={e => {
           e.preventDefault()
