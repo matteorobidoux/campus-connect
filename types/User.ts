@@ -4,6 +4,7 @@ type User = {
   gid: string;
   name: string,
   email: string;
+  picture: string;
   sections: UserClassSection[];
   googleTokens: {
     refresh_token: string;

@@ -36,7 +36,7 @@ export default function Chat({ selectedChat }: ChatProps) {
   }
 
   const onEnter = (message: string) => {
-    if (message == "") return;
+    if (message === "") return;
     const pMessage = {message, room: selectedChat, user: {_id: user._id, username: user.name}, date: new Date()}
     chat.sendMessage(pMessage);
     setMessages(pMessage);
@@ -60,7 +60,7 @@ export default function Chat({ selectedChat }: ChatProps) {
           <header className={styles["msger-header"]}>
             <div className={styles["msger-header-title"]}>
               <i className={styles["fas fa-comment-alt"]}></i> 
-              {sections.data?.find(s => s.courseNumber == selectedChat.courseNumber)?.courseTitle}
+              {sections.data?.find(s => s.courseNumber === selectedChat.courseNumber)?.courseTitle}
             </div>
             <div className={styles["msger-header-options"]}>
               <span><i className={styles["fas fa-cog"]}></i></span>
@@ -70,7 +70,7 @@ export default function Chat({ selectedChat }: ChatProps) {
           <main className={styles["msger-chat"]}>
             {messages.map((message, i) => 
               <div ref={lastMessageRef}>
-                <Message leftOrRight={message.user._id == user._id ? "right-msg" : "left-msg"}
+                <Message leftOrRight={message.user._id === user._id ? "right-msg" : "left-msg"}
                   user={message.user.username} message={message.message} time={formatDate(message.date)} key={i} />
               </div>
             )}

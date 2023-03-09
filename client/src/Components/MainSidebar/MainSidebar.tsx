@@ -5,7 +5,7 @@ import styles from "./MainSidebar.module.scss"
 
 type MainSidebarProps = {
   selectedComponent : string,
-  selectChatFunc: (course: UserClassSection) => void,
+  selectChatFunc: (course: UserClassSection | null) => void,
   selectComponentFunc : Function
 }
 
@@ -22,6 +22,7 @@ export default function MainSidebar(props: MainSidebarProps) {
           <div className={styles["menu"]}>
             <button onClick={() => {
               props.selectComponentFunc("calender");
+              props.selectChatFunc(null);
             }}>Calender</button>
             <button onClick={() => {
               props.selectComponentFunc("chat");

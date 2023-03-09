@@ -47,6 +47,7 @@ export default function CourseEntryWidget() {
     createUserMutation.mutateAsync({
       email: data.email,
       gid: data.gid,
+      picture: data.picture,
       googleTokens: {access_token: data.access_token, refresh_token: data.refresh_token},
       name: "placeholder",
       sections: selectedCourses.map(c => ({courseNumber: c.number, sectionNumber: c.sectionNumber})),

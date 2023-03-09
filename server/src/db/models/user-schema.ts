@@ -12,6 +12,7 @@ const googleTokensSchema = new Schema({
 const userSchema = new Schema<User>({
   name: String,
   sections: [userClassSectionSchema],
+  picture: String,
   email: String,
   gid: String,
   googleTokens: googleTokensSchema,
