@@ -47,7 +47,8 @@ export default async function GAuth(req: Request, res: Response<GAuthResponse>) 
       access_token: token.tokens.access_token, }
     });
 
-  } catch {
+  } catch(e: any) {
+    console.log(e);
     res.status(400).json({error: "invalid grand"});
   }
 

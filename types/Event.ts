@@ -1,7 +1,9 @@
 type Events = {
-  id: string,
+  ownerId: string,
   date: Date,
   title: string,
   desc: string,
+  courseTitle: string,
 }
-export default Events;
+
+export type { Events };

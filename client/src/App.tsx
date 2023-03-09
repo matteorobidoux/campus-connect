@@ -12,18 +12,19 @@ import { useGoogleOAuth } from './custom-query-hooks/useGoogleOAuth';
 import { useUser } from './custom-query-hooks';
 import Login from './Components/Login/Login';
 import CourseEntryWidget from './Components/CourseEntryWidget/CourseEntryWidget';
+import { UserClassSection } from '../../types/UserClassSection';
 
 library.add(faCircleNotch)
 
 export default function App() {
   const query = useGoogleOAuth();
-const [selectedComponent, selectComponent] = useState("calender");
+  const user = useUser();
+  const [selectedComponent, selectComponent] = useState("calender");
   const [isOpen, setIsOpen] = useState(false);
   const [isReturningFromGoogleAuth, setIsReturningFromGoogleAuth] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(query.data?._id)
-  const [selectedChat, selectChat] = useState("Intro To Computer Programming IV");
+  const [selectedChat, selectChat] = useState<UserClassSection | undefined>(undefined);
 
-  const user = useUser();
 
   useEffect(() => {
     if (query.isSuccess) {
@@ -57,8 +58,8 @@ const [selectedComponent, selectComponent] = useState("calender");
     selectComponent(component)
   }
 
-  function selectNewChat(chat : string) {
-    selectChat(chat)
+  function selectNewChat(course: UserClassSection) {
+    selectChat(course)
   }
 
   return (
@@ -67,7 +68,10 @@ const [selectedComponent, selectComponent] = useState("calender");
       <div className="app-container">
         <NavBar toggleSidebar={openProfileBar} />
         <div className="app-content-container">
-          { isLoggedIn && <> <MainSidebar selectedComponent={selectedComponent} selectChatFunc={selectNewChat} selectComponentFunc={switchComponent}/> <Main selectedComponent={selectedComponent} selectedChat={selectedChat}/> </>}
+          { isLoggedIn && <> 
+            <MainSidebar selectedComponent={selectedComponent} selectChatFunc={selectNewChat} selectComponentFunc={switchComponent}/> 
+            <Main selectedComponent={selectedComponent} selectedChat={selectedChat}/>
+          </>}
           { !isLoggedIn && isReturningFromGoogleAuth && ( <CourseEntryWidget />)}
           { !isReturningFromGoogleAuth && !isLoggedIn && <Login />}
         </div>

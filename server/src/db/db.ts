@@ -9,6 +9,8 @@ import { UserClassSection } from "../../../types/UserClassSection"
 import { GetAllSectionsResponse } from "../../../types/Queries/GetAllCourses"
 import { LoginRequest, LoginResponse } from "../../../types/Queries/Login";
 import userModel from './models/user-schema';
+import Section from './models/section-schema';
+import { Events } from '../../../types/Event';
 import { generateOAuthClient } from "../oauth/"; 
 import { google } from 'googleapis';
 
@@ -54,6 +56,24 @@ class DbMongoose {
     console.log(eventModel)
     await eventModel.save();
   }
+
+  // async addUsertoSection(coursenumb:string) {
+  //   Course.findOne({number: coursenumb}, function(err, course) {
+  //     course.sections[0].students.push("ho")
+  //     course.save()
+  //   })
+  // }
+
+  async addEventtoSection(courseNumber: string, sectionNumber:string, event: Events) {
+      const courses = (await Course.find({ number: courseNumber }));
+      courses.forEach(c => c.sections.forEach(s => console.log(s.number)));
+      const course = courses.find(course => course.sections.find(fullSection => fullSection.number == sectionNumber))!;
+      const section = course.sections.find(s => s.number == sectionNumber)!;
+      console.log("section: ", sectionNumber)
+      section.events.push(event);
+      await course.save();
+  }
+
 
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
     const courses = userSections.map(async userCourse => {

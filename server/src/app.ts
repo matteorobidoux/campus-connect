@@ -4,9 +4,15 @@ import CreateUserBodyParams from "../../types/Queries/CreateUser";
 import DbMongoose from "./db/db"
 import { GetAllSectionsRequest, GetAllSectionsResponse } from "../../types/Queries/GetAllCourses";
 import { LoginRequest } from "../../types/Queries/Login";
+import { AddEventBody, AddEventResponse } from "../../types/Queries/AddEvent";
+import { Events } from "../../types/Event";
+
 import { generateAuthUrl } from "./oauth";
 import cors from "cors";
 import GAuth from "./oauth/gauth-endpoint";
+import http from "http";
+import { createServer } from './chat/index';
+
 const app = express();
 const port = 8080
 
@@ -32,6 +38,22 @@ app.post('/api/addUser', async (req, res) => {
   console.log(body);
   res.json(await DbMongoose.addUser(body));
 })
+
+app.post("/api/addEvent", async (req, res: Response<AddEventResponse>) =>{
+  const body = req.body as Partial<AddEventBody>
+  if(!body.section || !body.event){
+    return res.sendStatus(400);
+  }
+  console.log(body);
+
+  await DbMongoose.addEventtoSection(body.section.courseNumber, body.section.sectionNumber, body.event);
+  res.json({success: true});
+})
+
+//
+// app.get('/api/allSections', async (_, res) => {
+//   res.json(await DbMongoose.getAllSections())
+// })
 
 app.get("/api/getAllSections", async (req, res: Response<GetAllSectionsResponse>) => {
   const { userClassSections } = req.query as Partial<GetAllSectionsRequest>;
@@ -67,8 +89,12 @@ app.use(function (_, res) {
   res.status(404).send("404 NOT FOUND");
 })
 
+const server = http.createServer(app)
+createServer(server);
 
-app.listen(port, () => {
+server.listen(port, () => {
   console.log(`at http://localhost:${port}`)
 })
+
+
 export { app };

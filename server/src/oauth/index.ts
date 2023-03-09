@@ -34,7 +34,8 @@ function generateAuthUrl(res: Response) {
       * Alternatively, if only one scope is needed, you can pass a scope URL as a string */
     scope: scopes,
     // Enable incremental authorization. Recommended as a best practice.
-    include_granted_scopes: true
+    include_granted_scopes: true,
+    prompt: "consent",
   });
 
   console.log(authorizationUrl);
