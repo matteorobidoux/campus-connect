@@ -118,5 +118,9 @@ server.listen(port, () => {
   console.log(`at http://localhost:${port}`)
 })
 
+async function closeServer(){
+   server.close()
+}
+  
 
-export { app };
+export { app, closeServer };
