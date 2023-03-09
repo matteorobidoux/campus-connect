@@ -2,13 +2,17 @@ import i18next from 'i18next';
 import {initReactI18next} from 'react-i18next';
 import eventsFr from '../locales/fr/events.json';
 import eventsEn from '../locales/en/events.json';
+import languagesEn from '../locales/en/languages.json';
+import languagesFr from '../locales/fr/languages.json';
 
 const resources = {
     en: {
         events: eventsEn,
+        languages: languagesEn
     },
     fr: {
-        events: eventsFr
+        events: eventsFr,
+        languages: languagesFr
     }
 }
 

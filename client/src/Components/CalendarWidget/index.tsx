@@ -15,7 +15,7 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 export function CalendarWidget({ }: CalendarWidgetProps) {
   const [events, setEvents] = useState<Events[]>([])
   const [scope, setScope] = useState<"month" | "day">("month");
-  const [text, setText] = useState<string>(months[new Date().getMonth()]);
+  const [month, setMonth] = useState<string>(months[new Date().getMonth()]);
   const [day, setDay] = useState("");
   const [date, setDate] = useState(new Date())
 
@@ -25,11 +25,11 @@ export function CalendarWidget({ }: CalendarWidgetProps) {
     console.log(scope, date);
     setScope(scope);
     if (scope == "month") {
-      setText(months[date.getMonth()])
+      setMonth(months[date.getMonth()])
       setDay("")
     } else {
       setDay(`${date.getDate()}`)
-      setText(`${months[date.getMonth()]} ${date.getDate()}`)
+      setMonth(`${months[date.getMonth()]}`)
       setDate(date)
     }
   }
@@ -39,7 +39,7 @@ export function CalendarWidget({ }: CalendarWidgetProps) {
       <Calendar onMonthChanged={(_, evs) => setEvents(evs)} onScopeChanged={onScopeChanged} />
       <div className={styles.right}>
         <div className={styles.header}>
-          { i18n.language == "fr" ? <h2> {t("events")} {t("in")} {day} {t(text)}</h2> : <h2> {t("events")} {t("in")} {text} {day}</h2> }
+          { i18n.language == "fr" ? <h2> {t("events")} {t("in")} {day} {t(month)}</h2> : <h2> {t("events")} {t("in")} {month} {day}</h2> }
         </div>
 
         <div className={styles.calendarEventsWrapper}>

@@ -1,5 +1,6 @@
 import profileImg from "../../assets/profile.png"
-import canadianFlag from "../../assets/canadianFlag.png"
+import canadianFlag from "../../assets/English.png"
+import frenchFlag from "../../assets/French.png"
 import styles from "./NavBar.module.scss";
 import { useTranslation } from 'react-i18next';
 import React from "react";
@@ -12,19 +13,19 @@ type NavBarProps = {
 
 function NavBar(props: NavBarProps) {
 
-  const [language, setLanguage] = React.useState('English')
+  const { t, i18n } = useTranslation(['languages']);
 
-  const { t, i18n } = useTranslation(['app']);
+  const [language, setLanguage] = React.useState("English")
+  const [emoji, setEmoji] = React.useState(canadianFlag)
 
-  const langaugeOptions = {English: "en", French: "fr"}
-
-  const handleLanguage = (e: any) => {
-    setLanguage(e.target.textContent)
-    for(var key in langaugeOptions){
-      if(key == e.target.textContent){
-        i18n.changeLanguage("en");
+  function alterLanguage(lang: string, src: string, e: any){
+    if(e!){
+      if(e.target!){
+        setLanguage(e.target.textContent)
+        setEmoji(src)
+        changeLanguage(lang)
       }
-    }    
+    }
   }
 
   return (
@@ -32,19 +33,22 @@ function NavBar(props: NavBarProps) {
       <nav>
         <div className={styles["lang-menu"]}>
           <div className={styles["selected-lang"]}>
-            {language}
+            <img className={styles.flag} src={emoji} alt="Flag"></img>
+            <p className={styles.language}> {t(language)} </p>
           </div>
           <ul>
-            <li>
-                <p className={styles.en} onClick={handleLanguage}><img src={canadianFlag} alt="Canadian Flag"></img>English</p>
+            <li onClick={(e)=> alterLanguage("en", canadianFlag, e)}>
+                <img className={styles.flag} src={canadianFlag} alt="Canadian Flag"></img>
+                <p className={styles.en}>{t("English")}</p>
             </li>
-            <li>
-                <p className={styles.fr} onClick={handleLanguage}>French</p>
+            <li onClick={(e)=> alterLanguage("fr", frenchFlag, e)}>
+                <img className={styles.flag} src={frenchFlag} alt="France Flag"></img>
+                <p className={styles.fr}>{t("French")}</p>
             </li>
           </ul>
         </div>
         <h1 className={styles.logo}>Campus Connect</h1>
-        <img id="profile" src={profileImg} alt="profile" onClick={e => {
+        <img className={styles["profileImg"]} src={profileImg} alt="profile" onClick={e => {
           e.preventDefault()
           props.toggleSidebar(e)
         }}></img>
