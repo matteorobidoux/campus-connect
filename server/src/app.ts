@@ -72,11 +72,6 @@ app.post("/api/addEvent", async (req, res: Response<AddEventResponse>) =>{
   res.json({success: true});
 })
 
-//
-// app.get('/api/allSections', async (_, res) => {
-//   res.json(await DbMongoose.getAllSections())
-// })
-
 app.get("/api/getAllSections", async (req, res: Response<GetAllSectionsResponse>) => {
   const { userClassSections } = req.query as Partial<GetAllSectionsRequest>;
   if (Array.isArray(userClassSections)) {

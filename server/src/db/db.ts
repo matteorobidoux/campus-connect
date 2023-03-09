@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-
 import User from "./models/user-schema"
 import Event from './models/event-schema';
 import Course from "./models/course-schema";
@@ -15,7 +14,6 @@ import Section from './models/section-schema';
 import { Events } from '../../../types/Event';
 import { generateOAuthClient } from "../oauth/";
 import { google } from 'googleapis';
-
 
 const dname = process.env.NAME || 'CampusConnect'
 
@@ -82,7 +80,6 @@ class DbMongoose {
     await course.save();
   }
 
-
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
     const courses = userSections.map(async userCourse => {
       // Some courses can be taken from different programs. Right now they are duplicated in the DB.
@@ -117,12 +114,6 @@ class DbMongoose {
   //Get All Users
   async getAllUsers() {
     const result = await User.find()
-    console.log(result)
-    return result;
-  }
-  //Get all Events
-  async getAllEvents() {
-    const result = await Event.find()
     console.log(result)
     return result;
   }
