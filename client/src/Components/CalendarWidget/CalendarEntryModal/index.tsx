@@ -10,9 +10,10 @@ import { useTranslation } from "react-i18next";
 
 export interface CalendarEntryModalProps {
   onClose: () => void;
+  date: Date
 }
 
-export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {  
+export default function CalendarEntryModal({onClose, date}: CalendarEntryModalProps) {  
   
   const {t, i18n} = useTranslation(['events']);
 
@@ -20,16 +21,16 @@ export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {
 
   const sectionsQuery = useSections({userClassSections: user.sections})
   
-  const mutation = useMutation(async (arg: Omit<AddEventBody, 'id'>) => {
+  const mutation = useMutation(async (arg: AddEventBody) => {
     axios.post('/api/addEvent', arg)
   });
 
-
+  console.log(date.getTime + "dATE")
   const initialValues = {
     title: "",
     description: "",
     courseTitle: "",
-    date: new Date()
+    date: new Date(date)
   }
 
   return (
@@ -47,6 +48,7 @@ export default function CalendarEntryModal({onClose}: CalendarEntryModalProps) {
               sectionNumber: course!.number
             },
             event: {
+              courseTitle: course!.courseTitle,
               ownerId: user._id,
               date: values.date,
               title: values.title,

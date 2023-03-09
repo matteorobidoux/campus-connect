@@ -1,4 +1,3 @@
-import CalendarEvent from "../../../../../types/Calendar"
 import styles from "./CalendarEntryDetailedModal.module.scss";
 import { ReactComponent as Background } from "./background.svg"
 import { useEffect, useState } from "react";
@@ -6,9 +5,10 @@ import { useMutation, useQueryClient } from "react-query";
 import { toast } from "react-toastify";
 import { getRandomColor } from "../../../cssUtils";
 import { useTranslation } from "react-i18next";
+import { Events } from "../../../../../types/Event";
 
 export interface CalendarEntryDetailedModalProps {
-  event: CalendarEvent;
+  event: Events;
   close: () => void;
 }
 
@@ -45,7 +45,7 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
       <div className={styles.innerWrapper}>
         <div className={styles.top}>
           <h1> {event.title} </h1>
-          <h2> {event.associatedSection.name} </h2>
+          <h2> {event.courseTitle} </h2>
           { i18n.language == "fr" ? 
             <h2> {t("due")} {event.date.getDay()} {t(monthNames[event.date.getMonth()])} </h2> : 
             <h2> {t("due")} {t(monthNames[event.date.getMonth()])} {event.date.getDay()} </h2> 
@@ -53,7 +53,7 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
         </div>
         <div className={styles.center}>
           <h3> {t("eventDescription")}</h3>
-          <p> {event.description} </p>
+          <p> {event.desc} </p>
         </div>
         <div className={styles.botton}>
           <button onClick={() => markAsDone.mutate()}> {t("markAsDone")} </button>

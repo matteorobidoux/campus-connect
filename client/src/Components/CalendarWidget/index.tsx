@@ -1,5 +1,6 @@
 import { useState } from "react";
 import CalendarEvent from "../../../../types/Calendar";
+import { Events } from "../../../../types/Event";
 import Calendar from "./Calendar";
 import CalendarEventRow from "./CalendarEntry";
 import { AddEventEntry } from "./CalendarEntry/AddEventEntry";
@@ -12,10 +13,11 @@ export interface CalendarWidgetProps {
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 export function CalendarWidget({ }: CalendarWidgetProps) {
-  const [events, setEvents] = useState<CalendarEvent[]>([])
+  const [events, setEvents] = useState<Events[]>([])
   const [scope, setScope] = useState<"month" | "day">("month");
   const [text, setText] = useState<string>(months[new Date().getMonth()]);
   const [day, setDay] = useState("");
+  const [date, setDate] = useState(new Date())
 
   const {t, i18n} = useTranslation(['events']);
 
@@ -27,6 +29,8 @@ export function CalendarWidget({ }: CalendarWidgetProps) {
       setDay("")
     } else {
       setDay(`${date.getDate()}`)
+      setText(`${months[date.getMonth()]} ${date.getDate()}`)
+      setDate(date)
     }
   }
 
@@ -39,9 +43,9 @@ export function CalendarWidget({ }: CalendarWidgetProps) {
         </div>
 
         <div className={styles.calendarEventsWrapper}>
-          {events.map(ev => <CalendarEventRow event={ev} key={ev.id} />)}
+          {events.map(ev => <CalendarEventRow event={ev} />)}
           {scope == "day" && (
-            <AddEventEntry />
+            <AddEventEntry date={date}/>
           )}
         </div>
       </div>
