@@ -50,4 +50,6 @@ export default async function GAuth(req: Request, res: Response<GAuthResponse>) 
   } catch {
     res.status(400).json({error: "invalid grand"});
   }
+
+ // window.location.replace("localhost");
 }
