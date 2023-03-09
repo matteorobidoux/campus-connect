@@ -23,7 +23,8 @@ export default function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [isReturningFromGoogleAuth, setIsReturningFromGoogleAuth] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(query.data?._id)
-  const [selectedChat, selectChat] = useState<UserClassSection | undefined>(undefined);
+  const [selectedChat, selectChat] = useState<UserClassSection | null>(null);
+  const [profileUrl, changeProfileImg] = useState("")
 
 
   useEffect(() => {
@@ -39,7 +40,7 @@ export default function App() {
   }, [query.data, query.isSuccess])
 
   useEffect(() => {
-    setIsLoggedIn(user != undefined)
+    setIsLoggedIn(user !== undefined)
   }, [user])
 
   useEffect(() => {
@@ -48,7 +49,15 @@ export default function App() {
     }
   }, [isLoggedIn])
 
-
+  useEffect(() => {
+    if(user !== undefined){
+    if(user.picture !== undefined){
+      changeProfileImg(user.picture)
+    } else {
+      changeProfileImg("");
+    }
+  }
+  },[user])
   // TODO: what should the type of e be?
   function openProfileBar() {
     setIsOpen(!isOpen)
@@ -58,7 +67,7 @@ export default function App() {
     selectComponent(component)
   }
 
-  function selectNewChat(course: UserClassSection) {
+  function selectNewChat(course: UserClassSection | null) {
     selectChat(course)
   }
 
@@ -66,7 +75,7 @@ export default function App() {
     <>
       <ToastContainer />
       <div className="app-container">
-        <NavBar toggleSidebar={openProfileBar} />
+        <NavBar toggleSidebar={openProfileBar} profileUrl={profileUrl} />
         <div className="app-content-container">
           { isLoggedIn && <> 
             <MainSidebar selectedComponent={selectedComponent} selectChatFunc={selectNewChat} selectComponentFunc={switchComponent}/> 

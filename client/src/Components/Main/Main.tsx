@@ -5,7 +5,7 @@ import styles from "./Main.module.scss"
 
 type MainProps = {
   selectedComponent: string,
-  selectedChat: UserClassSection | undefined; 
+  selectedChat: UserClassSection | null; 
 }
 
 
@@ -15,7 +15,7 @@ export default function Main(props: MainProps) {
       {!props.selectedChat ?(
       <CalendarWidget />
       ) : props.selectedComponent === "chat" ?(
-        < Chat selectedChat={props.selectedChat}/>
+        <Chat selectedChat={props.selectedChat}/>
       ) : null
     }
     </div>
