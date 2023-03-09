@@ -15,7 +15,7 @@ const useGoogleOAuth = () => {
     }
 
     if (document.documentURI.includes("/gauth")) {
-      const { data } = await axios.get<GAuthResponse>(document.documentURI);
+      const { data } = await axios.get<GAuthResponse>("/api/gauth" + document.documentURI.split('gauth')[1]);
       
       if (data.user) {
         console.log("Logged in with user", data.user);

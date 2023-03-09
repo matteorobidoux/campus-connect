@@ -43,7 +43,7 @@ app.get("/api/getAllSections", async (req, res: Response<GetAllSectionsResponse>
   }
 })
 
-app.get("/gauth", async (req, res) => {
+app.get("/api/gauth", async (req, res) => {
   console.log("calling gauth.");
   await GAuth(req, res);
 })
