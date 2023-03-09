@@ -41,7 +41,6 @@ app.post('/api/addUser', async (req, res) => {
   res.json(await DbMongoose.addUser(body));
 })
 
-<<<<<<< HEAD
 
 app.post('/api/addCompletedEvent', async (req,res)=>{
   const {userName , completedEvent} = req.body as Partial<CompletedEventBodyParams>;
@@ -62,7 +61,6 @@ app.delete('/api/removeEvent', async (req,res)=>{
   }
 })
 
-=======
 app.post("/api/addEvent", async (req, res: Response<AddEventResponse>) =>{
   const body = req.body as Partial<AddEventBody>
   if(!body.section || !body.event){
@@ -75,7 +73,6 @@ app.post("/api/addEvent", async (req, res: Response<AddEventResponse>) =>{
 })
 
 //
->>>>>>> 59e62a7a3128af36884ad41cd32089c7de9eed04
 // app.get('/api/allSections', async (_, res) => {
 //   res.json(await DbMongoose.getAllSections())
 // })

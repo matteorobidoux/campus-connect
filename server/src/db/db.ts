@@ -11,15 +11,11 @@ import { LoginRequest, LoginResponse } from "../../../types/Queries/Login";
 import CompletedEventBodyParams from '../../../types/Queries/CompletedEvent';
 import RemoveEventBodyParams from '../../../types/Queries/RemoveEvent';
 import userModel from './models/user-schema';
-<<<<<<< HEAD
-import { generateOAuthClient } from "../oauth/";
-=======
 import Section from './models/section-schema';
 import { Events } from '../../../types/Event';
-import { generateOAuthClient } from "../oauth/"; 
->>>>>>> 59e62a7a3128af36884ad41cd32089c7de9eed04
+import { generateOAuthClient } from "../oauth/";
 import { google } from 'googleapis';
-import Events from '../../../types/Event';
+
 
 const dname = process.env.NAME || 'CampusConnect'
 
@@ -57,12 +53,6 @@ class DbMongoose {
     return userModel.toObject()
   }
 
-  // async addEvent(id: string, date: Date, title: string, desc: string, sectionName: string) {
-  //   const eventModel = new Event({ id: id, date: date, title: title, desc: desc, associatedSection: { name: sectionName } })
-  //   console.log(eventModel)
-  //   await eventModel.save();
-  // }
-
   async addCompletedEvent({ userName, completedEvent }: CompletedEventBodyParams) {
     const user = await userModel.findOne({ name: userName });
     if (user) {
@@ -72,16 +62,6 @@ class DbMongoose {
     }
 
   }
-  // async addeventosection(cN: string, sN:string, event:Events){
-  //   const course = await Course.findOne({ number: cN });
-  //   if (course) {
-  //     console.log("found the course")
-  //     const section = course.sections.find(section => section.number == sN)!;
-  //     section.events.push((event))
-  //     course.save()
-  //     console.log("succeded")
-  //   }
-  // }
 
   async removeEvent({ eventId, courseNumber, courseSection }: RemoveEventBodyParams) {
     const course = await Course.findOne({ number: courseNumber });
@@ -92,21 +72,14 @@ class DbMongoose {
     }
   }
 
-  // async addUsertoSection(coursenumb:string) {
-  //   Course.findOne({number: coursenumb}, function(err, course) {
-  //     course.sections[0].students.push("ho")
-  //     course.save()
-  //   })
-  // }
-
-  async addEventtoSection(courseNumber: string, sectionNumber:string, event: Events) {
-      const courses = (await Course.find({ number: courseNumber }));
-      courses.forEach(c => c.sections.forEach(s => console.log(s.number)));
-      const course = courses.find(course => course.sections.find(fullSection => fullSection.number == sectionNumber))!;
-      const section = course.sections.find(s => s.number == sectionNumber)!;
-      console.log("section: ", sectionNumber)
-      section.events.push(event);
-      await course.save();
+  async addEventtoSection(courseNumber: string, sectionNumber: string, event: Events) {
+    const courses = (await Course.find({ number: courseNumber }));
+    courses.forEach(c => c.sections.forEach(s => console.log(s.number)));
+    const course = courses.find(course => course.sections.find(fullSection => fullSection.number == sectionNumber))!;
+    const section = course.sections.find(s => s.number == sectionNumber)!;
+    console.log("section: ", sectionNumber)
+    section.events.push(event);
+    await course.save();
   }
 
 
