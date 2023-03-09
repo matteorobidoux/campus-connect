@@ -13,6 +13,7 @@ const userSchema = new Schema<User>({
   name: String,
   completedEvents: Array<UserCompletedEvent>,
   sections: [userClassSectionSchema],
+  picture: String,
   email: String,
   gid: String,
   googleTokens: googleTokensSchema,

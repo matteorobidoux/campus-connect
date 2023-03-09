@@ -44,8 +44,8 @@ class DbMongoose {
 
   }
 
-  async addUser({ name, sections, googleTokens, email, gid }: CreateUserBodyParams): Promise<string> {
-    const userModel = new User({ name, sections, googleTokens, email, gid });
+  async addUser({name, sections, picture, googleTokens, email, gid}: CreateUserBodyParams): Promise<string> {
+    const userModel = new User({ name, sections, picture, googleTokens, email, gid });
     console.log(userModel)
     await userModel.save();
     return userModel.toObject()

@@ -4,6 +4,7 @@ type CreateUserBodyParams = {
   gid: string;
   email: string;
   name: string,
+  picture: string,
   sections: UserClassSection[]
   googleTokens: {
     refresh_token: string;

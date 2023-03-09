@@ -5,6 +5,7 @@ type User = {
   name: string,
   completedEvents: UserCompletedEvent[],
   email: string;
+  picture: string;
   sections: UserClassSection[];
   googleTokens: {
     refresh_token: string;
