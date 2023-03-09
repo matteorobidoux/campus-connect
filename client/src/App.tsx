@@ -12,16 +12,19 @@ import { useGoogleOAuth } from './custom-query-hooks/useGoogleOAuth';
 import { useUser } from './custom-query-hooks';
 import Login from './Components/Login/Login';
 import CourseEntryWidget from './Components/CourseEntryWidget/CourseEntryWidget';
+import { UserClassSection } from '../../types/UserClassSection';
 
 library.add(faCircleNotch)
 
 export default function App() {
   const query = useGoogleOAuth();
+  const user = useUser();
+  const [selectedComponent, selectComponent] = useState("calender");
   const [isOpen, setIsOpen] = useState(false);
   const [isReturningFromGoogleAuth, setIsReturningFromGoogleAuth] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(query.data?._id)
+  const [selectedChat, selectChat] = useState<UserClassSection | undefined>(undefined);
 
-  const user = useUser();
 
   useEffect(() => {
     if (query.isSuccess) {
@@ -51,6 +54,13 @@ export default function App() {
     setIsOpen(!isOpen)
   }
 
+  function switchComponent(component : string) {
+    selectComponent(component)
+  }
+
+  function selectNewChat(course: UserClassSection) {
+    selectChat(course)
+  }
 
   return (
     <>
@@ -58,7 +68,10 @@ export default function App() {
       <div className="app-container">
         <NavBar toggleSidebar={openProfileBar} />
         <div className="app-content-container">
-          { isLoggedIn && <> <MainSidebar /> <Main /> </>}
+          { isLoggedIn && <> 
+            <MainSidebar selectedComponent={selectedComponent} selectChatFunc={selectNewChat} selectComponentFunc={switchComponent}/> 
+            <Main selectedComponent={selectedComponent} selectedChat={selectedChat}/>
+          </>}
           { !isLoggedIn && isReturningFromGoogleAuth && ( <CourseEntryWidget />)}
           { !isReturningFromGoogleAuth && !isLoggedIn && <Login />}
         </div>
