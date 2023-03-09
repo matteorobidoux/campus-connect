@@ -1,16 +1,15 @@
-import CalendarEvents from "../../../../../types/Calendar"
-import ReactCalendar, { CalendarTileProperties, ViewCallbackProperties } from "react-calendar"
+import ReactCalendar, { ViewCallbackProperties } from "react-calendar"
 
 import 'react-calendar/dist/Calendar.css';
 import "./calendar.css"
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
-import { useCalendarEvents, useSections, useUser } from "../../../custom-query-hooks";
-import CalendarEvent from "../../../../../types/Calendar";
+import { useCalendarEvents } from "../../../custom-query-hooks";
+import { Events } from "../../../../../types/Event";
 
 
 export interface CalendarProps {
-  onMonthChanged?: (month: number, events: CalendarEvents[]) => void;
+  onMonthChanged?: (month: number, events: Events[]) => void;
   onScopeChanged?: (scope: "month" | "day", date: Date) => void;
 }
 
@@ -51,7 +50,7 @@ export default function Calendar({ onMonthChanged, onScopeChanged }: CalendarPro
     onScopeChanged?.("day", date);
   }
 
-  const filterByDayAndMonth = (cEv: CalendarEvent) => {
+  const filterByDayAndMonth = (cEv: Events) => {
     const evMonth = cEv.date.getMonth();
     if (evMonth != currentMonth) return false;
 

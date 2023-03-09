@@ -3,5 +3,7 @@ type Events = {
   date: Date,
   title: string,
   desc: string,
+  courseTitle: string,
 }
-export default Events;
+
+export type { Events };
