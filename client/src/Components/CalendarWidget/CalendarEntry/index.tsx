@@ -1,11 +1,11 @@
 import { useState } from "react";
 import Rodal from "rodal";
-import CalendarEvent from "../../../../../types/Calendar"
+import { Events } from "../../../../../types/Event";
 import { CalendarEntryDetailedModal } from "../CalendarEntryDetailedModal";
 import styles from "./CalendarEntry.module.scss"
 
 export interface CalendarEventRowProps {
-  event: CalendarEvent;
+  event: Events;
 }
 
 export default function CalendarEventRow({event}: CalendarEventRowProps) {
@@ -20,7 +20,7 @@ export default function CalendarEventRow({event}: CalendarEventRowProps) {
         <div className={styles.vl}/>
         <div className={styles.right}>
           <text className={styles.className}>
-            {event.associatedSection.name}
+            {event.courseTitle}
           </text>
           <text className={styles.eventName}>
             {event.title}

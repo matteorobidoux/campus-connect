@@ -1,7 +1,6 @@
 import { GetAllStrippedCourses } from './../../../types/Queries/Register';
 import axios from "axios";
 import { useMutation, useQuery, useQueryClient } from "react-query";
-import CalendarEvents from "../../../types/Calendar"
 import { GetAllSectionsRequest, GetAllSectionsResponse } from "../../../types/Queries/GetAllCourses"
 import CreateUserBodyParams from "../../../types/Queries/CreateUser"
 import { User } from "../../../types/User";
@@ -56,32 +55,13 @@ export const useAddUserMutation = () => {
 // @deprecated events will be fetched with the section itself.
 // This will break very soon.
 export const useCalendarEvents = () => {
-  async function getCalendarEvents() {
-    // Fake a response time
-    await new Promise(r => setTimeout(r, 1000));
-    const tomorrow = new Date();
-    tomorrow.setDate(1);
-    const afterTomorrow = new Date();
-    afterTomorrow.setDate(2);
+  const user = useUser();
+  const { isLoading, data, isStale }= useSections({ userClassSections: user.sections} );
 
-    const cEvents: CalendarEvents[] = [
-      {
-        id: 'ABC',
-        date: tomorrow,
-        associatedSection: { name: "Web Development" },
-        title: 'Submit thingy one',
-        description: 'We gotta submit the first sprint demo.',
-      },
-      {
-        id: 'ABD',
-        date: afterTomorrow,
-        associatedSection: { name: "Software Deployment" },
-        title: 'Submit thingy two',
-        description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas"
-      }
-    ]
-    return cEvents;
-  }
+  let events = data?.flatMap(s => s.events) ?? [];
+  console.log(events);
+  events = events.map(ev => ({...ev, date: new Date(ev.date)}) );
 
-  return useQuery(['events'], getCalendarEvents, { staleTime: Infinity })
+  return { isLoading, data: events, isStale }
+
 }

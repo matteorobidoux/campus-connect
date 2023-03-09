@@ -7,9 +7,10 @@ import { useState } from "react";
 import CalendarEntryModal from "../CalendarEntryModal";
 
 export interface AddEventEntryProps {
+  date: Date
 }
 
-export function AddEventEntry({}: AddEventEntryProps) {
+export function AddEventEntry({date}: AddEventEntryProps) {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleOnAdd = () => {
@@ -22,7 +23,7 @@ export function AddEventEntry({}: AddEventEntryProps) {
       <p className={styles.plus}> + </p>
     </div>
     <Rodal visible={isVisible} onClose={() => setIsVisible(false)} height={500}>
-      <CalendarEntryModal onClose={() => setIsVisible(false)}/>
+      <CalendarEntryModal onClose={() => setIsVisible(false)} date={date}/>
     </Rodal>
     </>
   )
