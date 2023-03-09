@@ -1,8 +1,9 @@
 import profileImg from "../../assets/profile.png"
-import en from "../../assets/en.png"
+import canadianFlag from "../../assets/canadianFlag.png"
 import styles from "./NavBar.module.scss";
 import { useTranslation } from 'react-i18next';
 import React from "react";
+import { changeLanguage } from "i18next";
 
 //Fix type script BS
 type NavBarProps = {
@@ -11,13 +12,19 @@ type NavBarProps = {
 
 function NavBar(props: NavBarProps) {
 
-  const [language, setLanguage] = React.useState('en')
+  const [language, setLanguage] = React.useState('English')
 
   const { t, i18n } = useTranslation(['app']);
 
+  const langaugeOptions = {English: "en", French: "fr"}
+
   const handleLanguage = (e: any) => {
-    setLanguage(e.target.value)
-    i18n.changeLanguage(e.target.value);
+    setLanguage(e.target.textContent)
+    for(var key in langaugeOptions){
+      if(key == e.target.textContent){
+        i18n.changeLanguage("en");
+      }
+    }    
   }
 
   return (
@@ -25,14 +32,14 @@ function NavBar(props: NavBarProps) {
       <nav>
         <div className={styles["lang-menu"]}>
           <div className={styles["selected-lang"]}>
-            English
+            {language}
           </div>
           <ul>
             <li>
-                <p className={styles.en}>English</p>
+                <p className={styles.en} onClick={handleLanguage}><img src={canadianFlag} alt="Canadian Flag"></img>English</p>
             </li>
             <li>
-                <p className={styles.fr}>French</p>
+                <p className={styles.fr} onClick={handleLanguage}>French</p>
             </li>
           </ul>
         </div>
