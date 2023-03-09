@@ -35,7 +35,6 @@ function generateAuthUrl(res: Response) {
     scope: scopes,
     // Enable incremental authorization. Recommended as a best practice.
     include_granted_scopes: true,
-    prompt: "consent",
   });
 
   console.log(authorizationUrl);
