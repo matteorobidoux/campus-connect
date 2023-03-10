@@ -5,7 +5,9 @@ import { useMutation, useQueryClient } from "react-query";
 import { toast } from "react-toastify";
 import { getRandomColor } from "../../../cssUtils";
 import { Events } from "../../../../../types/Event";
-
+import { useSections, useUser } from "../../../custom-query-hooks";
+import axios from "axios";
+import RemoveEventBodyParams from "../../../../../types/Queries/RemoveEvent"
 export interface CalendarEntryDetailedModalProps {
   event: Events;
   close: () => void;
@@ -14,6 +16,11 @@ export interface CalendarEntryDetailedModalProps {
 export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetailedModalProps) {
   const options: Intl.DateTimeFormatOptions = { weekday: undefined, year: 'numeric', month: 'long', day: 'numeric' };
   const [color] = useState(getRandomColor())
+
+  //Check for User and creation of button if User
+  const user = useUser();
+  const sectionsQuery = useSections({ userClassSections: user.sections })
+
 
   const queryClient = useQueryClient();
   const markAsDone = useMutation(async () => {
@@ -32,6 +39,11 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
     }
   }, [markAsDone, markAsDone.isLoading])
 
+  const isOwner = user._id === event.ownerId
+  const removeEvent = useMutation(async (arg: RemoveEventBodyParams) => {
+    axios.post('/api/removeEvent', arg)
+  });
+
   return (
     <div className={styles.wrapper}>
       <Background className={styles.svg} color={color} />
@@ -47,6 +59,20 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
         </div>
         <div className={styles.botton}>
           <button onClick={() => markAsDone.mutate()}> Mark as Done </button>
+          {isOwner
+            ? <button onClick={async () => {
+              toast.loading("Removing event...", { toastId: 'removingEvent' });
+              const course = sectionsQuery!.data!.find(s => s.courseTitle === event.courseTitle)
+              await removeEvent.mutateAsync({
+                eventId: event.mongoId!,
+                courseNumber: course!.courseNumber,
+                courseSection: course!.number
+              });
+              toast.done('RemovinggEvent');
+
+            }}> Delete </button>
+            : <></>
+          }
         </div>
       </div>
     </div>
