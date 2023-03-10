@@ -52,7 +52,7 @@ app.post('/api/addCompletedEvent', async (req,res)=>{
   
 })
 
-app.delete('/api/removeEvent', async (req,res)=>{
+app.post('/api/removeEvent', async (req,res)=>{
   const {eventId , courseNumber, courseSection} = req.body as Partial<RemoveEventBodyParams>;
   if (!eventId || !courseNumber || !courseSection) {
     res.sendStatus(400);

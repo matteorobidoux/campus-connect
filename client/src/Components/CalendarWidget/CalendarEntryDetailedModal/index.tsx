@@ -6,7 +6,8 @@ import { toast } from "react-toastify";
 import { getRandomColor } from "../../../cssUtils";
 import { Events } from "../../../../../types/Event";
 import { useSections, useUser } from "../../../custom-query-hooks";
-
+import axios from "axios";
+import RemoveEventBodyParams from "../../../../../types/Queries/RemoveEvent"
 export interface CalendarEntryDetailedModalProps {
   event: Events;
   close: () => void;
@@ -18,7 +19,7 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
 
   //Check for User and creation of button if User
   const user = useUser();
-  const sectionsQuery = useSections({userClassSections: user.sections})
+  const sectionsQuery = useSections({ userClassSections: user.sections })
 
 
   const queryClient = useQueryClient();
@@ -38,6 +39,11 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
     }
   }, [markAsDone, markAsDone.isLoading])
 
+  const isOwner = user._id === event.ownerId
+  const removeEvent = useMutation(async (arg: RemoveEventBodyParams) => {
+    axios.post('/api/removeEvent', arg)
+  });
+
   return (
     <div className={styles.wrapper}>
       <Background className={styles.svg} color={color} />
@@ -53,6 +59,20 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
         </div>
         <div className={styles.botton}>
           <button onClick={() => markAsDone.mutate()}> Mark as Done </button>
+          {isOwner
+            ? <button onClick={async () => {
+              toast.loading("Removing event...", { toastId: 'removingEvent' });
+              const course = sectionsQuery!.data!.find(s => s.courseTitle === event.courseTitle)
+              await removeEvent.mutateAsync({
+                eventId: event.mongoid!,
+                courseNumber: course!.courseNumber,
+                courseSection: course!.number
+              });
+              toast.done('RemovinggEvent');
+
+            }}> Delete </button>
+            : <></>
+          }
         </div>
       </div>
     </div>
