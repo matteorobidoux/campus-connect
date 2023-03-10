@@ -70,14 +70,14 @@ class DbMongoose {
     }
   }
 
-  async addEventtoSection(courseNumber: string, sectionNumber: string, event: Events) {
+  async addEventToSection(courseNumber: string, sectionNumber: string, event: Events) {
     const courses = (await Course.find({ number: courseNumber }));
     courses.forEach(c => c.sections.forEach(s => console.log(s.number)));
     const course = courses.find(course => course.sections.find(fullSection => fullSection.number == sectionNumber))!;
     const section = course.sections.find(s => s.number == sectionNumber)!;
     console.log("section: ", sectionNumber)
     section.events.push(event);
-    section.events[section.events.length-1].mongoid =section.events[section.events.length-1]._id
+    section.events[section.events.length-1].mongoId =section.events[section.events.length-1]._id
     await course.save();
   }
 

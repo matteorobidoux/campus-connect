@@ -68,7 +68,7 @@ app.post("/api/addEvent", async (req, res: Response<AddEventResponse>) =>{
   }
   console.log(body);
 
-  await DbMongoose.addEventtoSection(body.section.courseNumber, body.section.sectionNumber, body.event);
+  await DbMongoose.addEventToSection(body.section.courseNumber, body.section.sectionNumber, body.event);
   res.json({success: true});
 })
 

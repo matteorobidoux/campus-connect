@@ -8,7 +8,7 @@ const eventSchema = new Schema<Events>({
   title: String,
   desc: String,
   courseTitle: String,
-  mongoid: {type: String , required:false}
+  mongoId: {type: String , required:false}
 }, { collection: "events" });
 
 const Event = model('Events', eventSchema);

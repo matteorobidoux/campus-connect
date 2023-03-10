@@ -64,7 +64,7 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
               toast.loading("Removing event...", { toastId: 'removingEvent' });
               const course = sectionsQuery!.data!.find(s => s.courseTitle === event.courseTitle)
               await removeEvent.mutateAsync({
-                eventId: event.mongoid!,
+                eventId: event.mongoId!,
                 courseNumber: course!.courseNumber,
                 courseSection: course!.number
               });

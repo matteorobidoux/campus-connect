@@ -4,7 +4,7 @@ type Events = {
   title: string,
   desc: string,
   courseTitle: string,
-  mongoid?:string
+  mongoId?:string
 }
 
 export type { Events };
