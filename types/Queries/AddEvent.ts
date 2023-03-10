@@ -3,7 +3,7 @@ import { Events } from "../Event";
 
 type AddEventBody = {
     section: UserClassSection;
-    event: Events;
+    event: Omit<Events,'mongoid'>;
 }
 
 type AddEventResponse = {

@@ -5,6 +5,7 @@ import { useMutation, useQueryClient } from "react-query";
 import { toast } from "react-toastify";
 import { getRandomColor } from "../../../cssUtils";
 import { Events } from "../../../../../types/Event";
+import { useSections, useUser } from "../../../custom-query-hooks";
 
 export interface CalendarEntryDetailedModalProps {
   event: Events;
@@ -14,6 +15,11 @@ export interface CalendarEntryDetailedModalProps {
 export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetailedModalProps) {
   const options: Intl.DateTimeFormatOptions = { weekday: undefined, year: 'numeric', month: 'long', day: 'numeric' };
   const [color] = useState(getRandomColor())
+
+  //Check for User and creation of button if User
+  const user = useUser();
+  const sectionsQuery = useSections({userClassSections: user.sections})
+
 
   const queryClient = useQueryClient();
   const markAsDone = useMutation(async () => {

@@ -4,6 +4,7 @@ type Events = {
   title: string,
   desc: string,
   courseTitle: string,
+  mongoid?:string
 }
 
 export type { Events };
