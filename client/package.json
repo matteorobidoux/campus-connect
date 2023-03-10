@@ -26,6 +26,7 @@
     "rodal": "^2.0.1",
     "sass": "^1.58.0",
     "typescript": "^4.4.2",
+    "uuidv4": "^6.2.13",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
