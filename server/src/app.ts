@@ -16,7 +16,7 @@ import http from "http";
 import { createServer } from './chat/index';
 
 const app = express();
-const port = 8080
+const port = 8081
 
 app.use(cors())
 app.use(express.json())

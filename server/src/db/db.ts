@@ -77,6 +77,8 @@ class DbMongoose {
     const section = course.sections.find(s => s.number == sectionNumber)!;
     console.log("section: ", sectionNumber)
     section.events.push(event);
+    const result=  section.events[section.events.length-1]
+    console.log(result) 
     await course.save();
   }
 
