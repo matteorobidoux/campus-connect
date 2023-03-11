@@ -1,9 +1,12 @@
 import { useState } from "react"
 import styles from "./Login.module.scss"
 import CourseEntryWidget from "../CourseEntryWidget/CourseEntryWidget"
+import { useTranslation } from "react-i18next"
 
 export default function Login() {
   const [firstLogin, setFirstLogin] = useState(false);
+
+  const {t, i18n} = useTranslation(["login"]);
 
   const onConnectWithGoogle = () => {
     fetch('/api/authenticate').then(async r => {
@@ -19,9 +22,9 @@ export default function Login() {
         <div className={styles["options-menu"]}>
           {!firstLogin ?
             <>
-              <h1 className={styles.title}>Welcome to Campus Connect</h1>
-              <h4 className={styles.message}>Please select one of the following options:</h4>
-              <button onClick={onConnectWithGoogle }>Connect with Google</button>
+              <h1 className={styles.title}>{t("welcome")}</h1>
+              <h4 className={styles.message}>{t("selectOption")}</h4>
+              <button onClick={onConnectWithGoogle }>{t("connect")}</button>
             </> :
             <>
               <CourseEntryWidget />

@@ -14,6 +14,8 @@ import Login from './Components/Login/Login';
 import CourseEntryWidget from './Components/CourseEntryWidget/CourseEntryWidget';
 import { UserClassSection } from '../../types/UserClassSection';
 
+import { useTranslation } from 'react-i18next';
+
 library.add(faCircleNotch)
 
 export default function App() {
@@ -26,6 +28,8 @@ export default function App() {
   const [selectedChat, selectChat] = useState<UserClassSection | null>(null);
   const [profileUrl, changeProfileImg] = useState("")
 
+
+  const {t, i18n} = useTranslation(['app']);
 
   useEffect(() => {
     if (query.isSuccess) {
