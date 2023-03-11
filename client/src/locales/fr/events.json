@@ -25,5 +25,6 @@
     "description": "Description",
     "class": "Cours",
     "pickAClass": "Choisissez Un Cours",
-    "submit": "Soumettre"
+    "submit": "Soumettre",
+    "delete": "Supprimer"
 }

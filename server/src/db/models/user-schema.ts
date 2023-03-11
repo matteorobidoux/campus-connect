@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import { userClassSectionSchema } from './user-section-schema';
 import { User } from "../../../../types/User";
-
+import {UserCompletedEvent} from "../../../../types/UserCompletedEvent"
 const { Schema, model } = mongoose;
 
 const googleTokensSchema = new Schema({
@@ -11,7 +11,9 @@ const googleTokensSchema = new Schema({
 
 const userSchema = new Schema<User>({
   name: String,
+  completedEvents: Array<UserCompletedEvent>,
   sections: [userClassSectionSchema],
+  picture: String,
   email: String,
   gid: String,
   googleTokens: googleTokensSchema,

@@ -10,7 +10,6 @@ type MessageProps = {
 export default function Message(props: MessageProps){
     return (
         <div className={styles[props.leftOrRight]}>
-            <div className={styles["msg-img"]}></div>
 
             <div className={styles["msg-bubble"]}>
               <div className={styles["msg-info"]}>

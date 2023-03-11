@@ -25,5 +25,6 @@
     "description": "Description",
     "class": "Class",
     "pickAClass": "Pick a class",
-    "submit": "Submit"
+    "submit": "Submit",
+    "delete": "Delete"
 }

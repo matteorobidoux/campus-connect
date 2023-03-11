@@ -6,7 +6,9 @@ import { toast } from "react-toastify";
 import { getRandomColor } from "../../../cssUtils";
 import { useTranslation } from "react-i18next";
 import { Events } from "../../../../../types/Event";
-
+import { useSections, useUser } from "../../../custom-query-hooks";
+import axios from "axios";
+import RemoveEventBodyParams from "../../../../../types/Queries/RemoveEvent"
 export interface CalendarEntryDetailedModalProps {
   event: Events;
   close: () => void;
@@ -17,6 +19,11 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
     "July", "August", "September", "October", "November", "December"
   ];
   const [color] = useState(getRandomColor())
+
+  //Check for User and creation of button if User
+  const user = useUser();
+  const sectionsQuery = useSections({ userClassSections: user.sections })
+
 
   const queryClient = useQueryClient();
 
@@ -39,6 +46,11 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
   }, [markAsDone, markAsDone.isLoading])
   console.log(event.date.getMonth())
 
+  const isOwner = user._id === event.ownerId
+  const removeEvent = useMutation(async (arg: RemoveEventBodyParams) => {
+    axios.post('/api/removeEvent', arg)
+  });
+
   return (
     <div className={styles.wrapper}>
       <Background className={styles.svg} color={color} />
@@ -57,6 +69,20 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
         </div>
         <div className={styles.botton}>
           <button onClick={() => markAsDone.mutate()}> {t("markAsDone")} </button>
+          {isOwner
+            ? <button onClick={async () => {
+              toast.loading("Removing event...", { toastId: 'removingEvent' });
+              const course = sectionsQuery!.data!.find(s => s.courseTitle === event.courseTitle)
+              await removeEvent.mutateAsync({
+                eventId: event.mongoId!,
+                courseNumber: course!.courseNumber,
+                courseSection: course!.number
+              });
+              toast.done('RemovinggEvent');
+
+            }}> {t("delete")} </button>
+            : <></>
+          }
         </div>
       </div>
     </div>

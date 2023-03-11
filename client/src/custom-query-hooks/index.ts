@@ -60,7 +60,7 @@ export const useCalendarEvents = () => {
 
   let events = data?.flatMap(s => s.events) ?? [];
   console.log(events);
-  events = events.map(ev => ({...ev, date: new Date(ev.date)}) );
+  events = events.map(ev => ({...ev, date: new Date(ev.date), _id:ev._id}) );
 
   return { isLoading, data: events, isStale }
 

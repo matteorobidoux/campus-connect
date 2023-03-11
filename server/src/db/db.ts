@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-
 import User from "./models/user-schema"
 import Event from './models/event-schema';
 import Course from "./models/course-schema";
@@ -8,13 +7,14 @@ import CreateUserBodyParams from "../../../types/Queries/CreateUser";
 import { UserClassSection } from "../../../types/UserClassSection"
 import { GetAllSectionsResponse } from "../../../types/Queries/GetAllCourses"
 import { LoginRequest, LoginResponse } from "../../../types/Queries/Login";
+import CompletedEventBodyParams from '../../../types/Queries/CompletedEvent';
+import RemoveEventBodyParams from '../../../types/Queries/RemoveEvent';
 import userModel from './models/user-schema';
 import Section from './models/section-schema';
 import { Events } from '../../../types/Event';
-import { generateOAuthClient } from "../oauth/"; 
+import { generateOAuthClient } from "../oauth/";
 import { google } from 'googleapis';
 
-// const dname = process.env.NAME || 'CampusConnect'
 const dname = process.env.NAME || 'CampusConnect'
 
 class DbMongoose {
@@ -44,36 +44,42 @@ class DbMongoose {
 
   }
 
-  async addUser({name, sections, googleTokens, email, gid}: CreateUserBodyParams): Promise<string> {
-    const userModel = new User({ name, sections, googleTokens, email, gid });
+  async addUser({name, sections, picture, googleTokens, email, gid}: CreateUserBodyParams): Promise<string> {
+    const userModel = new User({ name, sections, picture, googleTokens, email, gid });
     console.log(userModel)
     await userModel.save();
     return userModel.toObject()
   }
 
-  // async addEvent(id: string, date: Date, title: string, desc: string, sectionName: string) {
-  //   const eventModel = new Event({ id: id, date: date, title: title, desc: desc, associatedSection: { name: sectionName } })
-  //   console.log(eventModel)
-  //   await eventModel.save();
-  // }
+  async addCompletedEvent({ userName, completedEvent }: CompletedEventBodyParams) {
+    const user = await userModel.findOne({ name: userName });
+    if (user) {
+      user.completedEvents.push(completedEvent);
+      const resp = await user.save()
+      return resp.id!
+    }
 
-  // async addUsertoSection(coursenumb:string) {
-  //   Course.findOne({number: coursenumb}, function(err, course) {
-  //     course.sections[0].students.push("ho")
-  //     course.save()
-  //   })
-  // }
-
-  async addEventtoSection(courseNumber: string, sectionNumber:string, event: Events) {
-      const courses = (await Course.find({ number: courseNumber }));
-      courses.forEach(c => c.sections.forEach(s => console.log(s.number)));
-      const course = courses.find(course => course.sections.find(fullSection => fullSection.number == sectionNumber))!;
-      const section = course.sections.find(s => s.number == sectionNumber)!;
-      console.log("section: ", sectionNumber)
-      section.events.push(event);
-      await course.save();
   }
 
+  async removeEvent({ eventId, courseNumber, courseSection }: RemoveEventBodyParams) {
+    const course = await Course.findOne({ number: courseNumber });
+    if (course) {
+      const section = course.sections.find(section => section.number == courseSection)!;
+      section.events = section.events.filter((event, i) => event._id != eventId)
+      course.save()
+    }
+  }
+
+  async addEventToSection(courseNumber: string, sectionNumber: string, event: Events) {
+    const courses = (await Course.find({ number: courseNumber }));
+    courses.forEach(c => c.sections.forEach(s => console.log(s.number)));
+    const course = courses.find(course => course.sections.find(fullSection => fullSection.number == sectionNumber))!;
+    const section = course.sections.find(s => s.number == sectionNumber)!;
+    console.log("section: ", sectionNumber)
+    section.events.push(event);
+    section.events[section.events.length-1].mongoId =section.events[section.events.length-1]._id
+    await course.save();
+  }
 
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
     const courses = userSections.map(async userCourse => {
@@ -109,12 +115,6 @@ class DbMongoose {
   //Get All Users
   async getAllUsers() {
     const result = await User.find()
-    console.log(result)
-    return result;
-  }
-  //Get all Events
-  async getAllEvents() {
-    const result = await Event.find()
     console.log(result)
     return result;
   }

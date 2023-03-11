@@ -1,6 +1,8 @@
 import { GetAllStrippedCourses } from './../../types/Queries/Register';
 import express, { Response } from "express";
 import CreateUserBodyParams from "../../types/Queries/CreateUser";
+import CompletedEventBodyParams from "../../types/Queries/CompletedEvent"
+import RemoveEventBodyParams from "../../types/Queries/RemoveEvent"
 import DbMongoose from "./db/db"
 import { GetAllSectionsRequest, GetAllSectionsResponse } from "../../types/Queries/GetAllCourses";
 import { LoginRequest } from "../../types/Queries/Login";
@@ -14,7 +16,7 @@ import http from "http";
 import { createServer } from './chat/index';
 
 const app = express();
-const port = 8081
+const port = 8080
 
 app.use(cors())
 app.use(express.json())
@@ -39,6 +41,26 @@ app.post('/api/addUser', async (req, res) => {
   res.json(await DbMongoose.addUser(body));
 })
 
+
+app.post('/api/addCompletedEvent', async (req,res)=>{
+  const {userName , completedEvent} = req.body as Partial<CompletedEventBodyParams>;
+  if (!userName || !completedEvent) {
+    res.sendStatus(400);
+  } else {
+    res.json({id: await DbMongoose.addCompletedEvent({userName, completedEvent})})
+  }
+  
+})
+
+app.post('/api/removeEvent', async (req,res)=>{
+  const {eventId , courseNumber, courseSection} = req.body as Partial<RemoveEventBodyParams>;
+  if (!eventId || !courseNumber || !courseSection) {
+    res.sendStatus(400);
+  } else {
+    res.json({id: await DbMongoose.removeEvent({eventId, courseNumber, courseSection})})
+  }
+})
+
 app.post("/api/addEvent", async (req, res: Response<AddEventResponse>) =>{
   const body = req.body as Partial<AddEventBody>
   if(!body.section || !body.event){
@@ -46,14 +68,9 @@ app.post("/api/addEvent", async (req, res: Response<AddEventResponse>) =>{
   }
   console.log(body);
 
-  await DbMongoose.addEventtoSection(body.section.courseNumber, body.section.sectionNumber, body.event);
+  await DbMongoose.addEventToSection(body.section.courseNumber, body.section.sectionNumber, body.event);
   res.json({success: true});
 })
-
-//
-// app.get('/api/allSections', async (_, res) => {
-//   res.json(await DbMongoose.getAllSections())
-// })
 
 app.get("/api/getAllSections", async (req, res: Response<GetAllSectionsResponse>) => {
   const { userClassSections } = req.query as Partial<GetAllSectionsRequest>;
@@ -96,5 +113,9 @@ server.listen(port, () => {
   console.log(`at http://localhost:${port}`)
 })
 
+async function closeServer(){
+   server.close()
+}
+  
 
-export { app };
+export { app, closeServer };
