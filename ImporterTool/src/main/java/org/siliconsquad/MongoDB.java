@@ -33,7 +33,8 @@ public class MongoDB
     {
         MongoClient mongoClient = connect();
         MongoDatabase database = mongoClient.getDatabase("CampusConnect");
-        MongoCollection<Course> courses = database.getCollection("Courses",Course.class);
+        MongoCollection<Course> courses = database.getCollection("test0",Course.class);
+        List<Course> completeCourseList = new ArrayList<Course>();
         ObjectMapper mapper = new ObjectMapper();
         JSONParser parser = new JSONParser();
         System.out.println("Inserting scraped data into MongoDB...");
@@ -41,8 +42,32 @@ public class MongoDB
             Object obj = parser.parse(new FileReader(file));
             JSONArray jsonObject = (JSONArray) obj;
             List<Course> courseList = Arrays.asList(mapper.readValue(jsonObject.toJSONString(), Course[].class));
-            courses.insertMany(courseList);
+            completeCourseList.addAll(courseList);
         }
+
+        Map<String, Course> courseMap = new HashMap<String, Course>();
+
+        for (Course c : completeCourseList) {
+            if(!courseMap.containsKey(c.getTitle() + " " + c.getNumber())){
+                courseMap.put(c.getTitle() + " " + c.getNumber(), c);
+            } else {
+                Course course = courseMap.get(c.getTitle() + " " + c.getNumber());
+                course.getSections().addAll(c.getSections());
+                Map<String, Section> sectionMap = new HashMap<String, Section>();
+                for(Section s : course.getSections()){
+                    if(!sectionMap.containsKey(s.getNumber())){
+                        sectionMap.put(s.getNumber(), s);
+                    }
+                }
+                course.setSections(new ArrayList<Section>(sectionMap.values()));
+                course.sortSections();
+            }
+        }
+
+        for(Course c : courseMap.values()){
+            courses.insertOne(c);
+        }
+
         System.out.println("Inserted scraped data into MongoDB!");
     }
 
