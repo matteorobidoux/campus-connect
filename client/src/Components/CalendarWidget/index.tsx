@@ -39,7 +39,11 @@ export function CalendarWidget({ }: CalendarWidgetProps) {
       <Calendar onMonthChanged={(_, evs) => setEvents(evs)} onScopeChanged={onScopeChanged} />
       <div className={styles.right}>
         <div className={styles.header}>
-          { i18n.language == "fr" ? <h2> {t("events")} {t("in")} {day} {t(month)}</h2> : <h2> {t("events")} {t("in")} {month} {day}</h2> }
+          { 
+            i18n.language == "fr" || i18n.language == "it"? 
+            <h2> {t("events")} {t("in")} {day} {t(month)}</h2> : 
+            <h2> {t("events")} {t("in")} {month} {day}</h2> 
+          }
         </div>
 
         <div className={styles.calendarEventsWrapper}>

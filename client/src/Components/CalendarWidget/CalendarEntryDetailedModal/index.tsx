@@ -46,7 +46,7 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
         <div className={styles.top}>
           <h1> {event.title} </h1>
           <h2> {event.courseTitle} </h2>
-          { i18n.language == "fr" ? 
+          { i18n.language == "it" || i18n.language == "fr" ? 
             <h2> {t("due")} {event.date.getDay()} {t(monthNames[event.date.getMonth()])} </h2> : 
             <h2> {t("due")} {t(monthNames[event.date.getMonth()])} {event.date.getDay()} </h2> 
           }

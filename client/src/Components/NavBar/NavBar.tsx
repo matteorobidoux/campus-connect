@@ -1,6 +1,7 @@
 import profileImg from "../../assets/profile.png"
 import canadianFlag from "../../assets/English.png"
 import frenchFlag from "../../assets/French.png"
+import italianFlag from "../../assets/Italian.png"
 import styles from "./NavBar.module.scss";
 import { useTranslation } from 'react-i18next';
 import React from "react";
@@ -39,11 +40,15 @@ function NavBar(props: NavBarProps) {
           <ul>
             <li onClick={(e)=> alterLanguage("en", canadianFlag, e)}>
                 <img className={styles.flag} src={canadianFlag} alt="Canadian Flag"></img>
-                <p className={styles.en}>{t("English")}</p>
+                <p>{t("English")}</p>
             </li>
             <li onClick={(e)=> alterLanguage("fr", frenchFlag, e)}>
-                <img className={styles.flag} src={frenchFlag} alt="France Flag"></img>
-                <p className={styles.fr}>{t("French")}</p>
+                <img className={styles.flag} src={frenchFlag} alt="French Flag"></img>
+                <p>{t("French")}</p>
+            </li>
+            <li onClick={(e)=> alterLanguage("it", italianFlag, e)}>
+                <img className={styles.flag} src={italianFlag} alt="Italian Flag"></img>
+                <p>{t("Italian")}</p>
             </li>
           </ul>
         </div>
