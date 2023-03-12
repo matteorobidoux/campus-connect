@@ -7,6 +7,8 @@ import { toast } from "react-toastify";
 import { useCalendarEvents } from "../../../custom-query-hooks";
 import { Events } from "../../../../../types/Event";
 
+import { useTranslation } from "react-i18next";
+
 
 export interface CalendarProps {
   onMonthChanged?: (month: number, events: Events[]) => void;
@@ -28,6 +30,8 @@ export default function Calendar({ onMonthChanged, onScopeChanged }: CalendarPro
   const [currentMonth, setCurrentMonth] = useState(new Date().getMonth());
 
   const queryEvents = useCalendarEvents();
+
+  const {t, i18n} = useTranslation();
 
   const handleActiveStartDateChange = (view: ViewCallbackProperties) => {
     if (view.action != "prev" && view.action != "next") return;
@@ -80,6 +84,7 @@ export default function Calendar({ onMonthChanged, onScopeChanged }: CalendarPro
 
   return <div>
     <ReactCalendar
+      locale={i18n.language}
       onClickDay={handleDayClicked}
       tileClassName={(p) => queryEvents.data ? getCEvClassName(p.date, queryEvents.data.map(e => e.date)) : null}
       onActiveStartDateChange={handleActiveStartDateChange}

@@ -4,18 +4,31 @@ import { useEffect, useState } from "react";
 import { useMutation, useQueryClient } from "react-query";
 import { toast } from "react-toastify";
 import { getRandomColor } from "../../../cssUtils";
+import { useTranslation } from "react-i18next";
 import { Events } from "../../../../../types/Event";
-
+import { useSections, useUser } from "../../../custom-query-hooks";
+import axios from "axios";
+import RemoveEventBodyParams from "../../../../../types/Queries/RemoveEvent"
 export interface CalendarEntryDetailedModalProps {
   event: Events;
   close: () => void;
 }
 
 export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetailedModalProps) {
-  const options: Intl.DateTimeFormatOptions = { weekday: undefined, year: 'numeric', month: 'long', day: 'numeric' };
+  const monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
   const [color] = useState(getRandomColor())
 
+  //Check for User and creation of button if User
+  const user = useUser();
+  const sectionsQuery = useSections({ userClassSections: user.sections })
+
+
   const queryClient = useQueryClient();
+
+  const {t, i18n} = useTranslation(['events']);
+
   const markAsDone = useMutation(async () => {
     await new Promise(resolve => setTimeout(resolve, 1000));
   }, {
@@ -31,6 +44,12 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
       toast.done(toastId)
     }
   }, [markAsDone, markAsDone.isLoading])
+  console.log(event.date.getMonth())
+
+  const isOwner = user._id === event.ownerId
+  const removeEvent = useMutation(async (arg: RemoveEventBodyParams) => {
+    axios.post('/api/removeEvent', arg)
+  });
 
   return (
     <div className={styles.wrapper}>
@@ -39,14 +58,31 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
         <div className={styles.top}>
           <h1> {event.title} </h1>
           <h2> {event.courseTitle} </h2>
-          <h2> Due {event.date.toLocaleDateString(undefined, options)} </h2>
+          { i18n.language == "it" || i18n.language == "fr" ? 
+            <h2> {t("due")} {event.date.getDay()} {t(monthNames[event.date.getMonth()])} </h2> : 
+            <h2> {t("due")} {t(monthNames[event.date.getMonth()])} {event.date.getDay()} </h2> 
+          }
         </div>
         <div className={styles.center}>
-          <h3> Event Description </h3>
+          <h3> {t("eventDescription")}</h3>
           <p> {event.desc} </p>
         </div>
         <div className={styles.botton}>
-          <button onClick={() => markAsDone.mutate()}> Mark as Done </button>
+          <button onClick={() => markAsDone.mutate()}> {t("markAsDone")} </button>
+          {isOwner
+            ? <button onClick={async () => {
+              toast.loading("Removing event...", { toastId: 'removingEvent' });
+              const course = sectionsQuery!.data!.find(s => s.courseTitle === event.courseTitle)
+              await removeEvent.mutateAsync({
+                eventId: event.mongoId!,
+                courseNumber: course!.courseNumber,
+                courseSection: course!.number
+              });
+              toast.done('RemovinggEvent');
+
+            }}> {t("delete")} </button>
+            : <></>
+          }
         </div>
       </div>
     </div>
