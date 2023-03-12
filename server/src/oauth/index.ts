@@ -3,20 +3,11 @@ import { google } from 'googleapis';
 
 const env = {
   //CHANGE DEPENDING IF DEPLOYING OR LOCAL
-<<<<<<< HEAD
   //authUrl: "http://localhost:3000/"
   authUrl: "https://campus-connects-test.azurewebsites.net/"
   //authUrl: "https://campus-connects.azurewebsites.net/"
 }
 
-=======
-  authUrl: "http://localhost:3000/"
-  //authUrl: "https://campus-connects-test.azurewebsites.net/"
-  //authUrl: "https://campus-connects.azurewebsites.net/"
-}
-
-
->>>>>>> 303a81a46001c0da12e562f7a4991d5235ff0527
 function generateOAuthClient() {
   const oauth2Client = new google.auth.OAuth2(
     "339605005370-fv5vq1stf35b26ftkrh9ugkuju7p68f2.apps.googleusercontent.com",
