@@ -22,13 +22,15 @@ export default function CourseEntryWidget() {
     setSelectedCourses(selectedCourses.filter(course => { return course !== selectedCourses[key] }))
   }
 
-  const handleAddCourse = (course: SelectedCourse) => {
-    if (selectedCourses.length < 1) {
-      setSelectedCourses([...selectedCourses, course])
-      return
-    }
-    if (selectedCourses.indexOf(course) === -1) {
-      setSelectedCourses([...selectedCourses, course])
+  const handleAddCourse = (course: string, section: string) => {
+    const generatedUUID = uuid()
+    console.log(selectedCourses.length === 0, !isCourseSelected(course));
+    if (selectedCourses.length === 0 || !isCourseSelected(course)) {
+      setSelectedCourses([...selectedCourses, {
+        uuid: generatedUUID,
+        number: course,
+        sectionNumber: section
+      }])
     }
   }
 
@@ -54,12 +56,12 @@ export default function CourseEntryWidget() {
                   {
                     selectedCourses.map((course, key) =>
                       <CoursePicker
-                        pickedCourse={course.number}
-                        pickedSection={course.sectionNumber}
+                        key={key}
+                        pickedCourse={course}
                         disabled={course.uuid !== editedCoursePickerUUID}
                         courses={data.response.filter((_course: StrippedCourse) =>
-                          !isCourseSelected(_course.number)
-                        )}
+                          _course.number === course.number || !isCourseSelected(_course.number)
+                        )}  
                         onEditingChange={(state: boolean) => {
                           if (state) {
                             setEditedCoursePickerUUID(course.uuid)
@@ -73,10 +75,8 @@ export default function CourseEntryWidget() {
                           selectedCourses[key].sectionNumber = section
                           setSelectedCourses(selectedCourses)
                         }}
-                        onRemove={() => {
-                          selectedCourses.splice(key, 1)
-                          setSelectedCourses(selectedCourses)
-                        }}
+                        onRemove={() => handleRemoveCourse(key)
+                        }
                       />
                     )
                   }
@@ -84,22 +84,11 @@ export default function CourseEntryWidget() {
                 {
                   selectedCourses.length < maxAmountOfCourses ?
                     <CoursePicker
-                      pickedCourse=""
-                      pickedSection=""
                       disabled={false}
                       courses={data.response.filter((course: StrippedCourse) =>
                         !isCourseSelected(course.number)
                       )}
-                      onAdd={(course: string, section: string) => {
-                        const generatedUUID = uuid()
-                        if (!isCourseSelected(course)) {
-                          setSelectedCourses([...selectedCourses, {
-                            uuid: generatedUUID,
-                            number: course,
-                            sectionNumber: section
-                          }])
-                        }
-                      }}
+                      onAdd={handleAddCourse}
                       onEditSave={() => { }}
                       onRemove={() => { }}
                       onEditingChange={() => { }}
