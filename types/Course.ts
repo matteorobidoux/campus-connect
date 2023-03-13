@@ -1,9 +1,13 @@
-import Section from "./Section";
+import { Section, StrippedSection } from "./Section";
 
-type Course = {
+export type Course = {
   title: string;
   number: string;
   sections: Section[];
 }
 
-export default Course;
+export type StrippedCourse = {
+  title: string;
+  number: string;
+  sections: StrippedSection[]
+}

@@ -27,6 +27,7 @@ code {
 }
 
 .rodal-fade-enter {
+  -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
 }
 
@@ -49,4 +50,5 @@ code {
   --grey-background: #444;
   --background: #fffcfc;
   --font: 'Inter', sans-serif;
+  --faded-black: #66666689; 
 }
