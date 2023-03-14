@@ -5,9 +5,8 @@ const { Schema, model } = mongoose;
 
 
 const gorupChatSchema = new Schema({
-  name: String,
   messagesList: Array<UserMessage>,
-  sections: [userClassSectionSchema],
+  room: userClassSectionSchema,
 
 }, { collection: "groupchat", strictQuery: true});
 
