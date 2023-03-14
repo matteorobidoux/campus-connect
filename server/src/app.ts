@@ -15,6 +15,7 @@ import GAuth from "./oauth/gauth-endpoint";
 import http from "http";
 import { createServer } from './chat/index';
 import { AddMessage } from '../../types/Queries/AddMessage';
+import { UserClassSection } from '../../types/UserClassSection';
 
 const app = express();
 const port = 8080
@@ -79,6 +80,15 @@ app.post("/api/addMessage", async (req, res) => {
     res.sendStatus(400)
   } else {
     res.json( {id: await DbMongoose.addMessage({room, message})})
+  }
+})
+app.get("/api/getAllMessages", async (req, res) => {
+  const {courseNumber, sectionNumber } = req.body as Partial<UserClassSection>;
+  if(!courseNumber ||!sectionNumber){
+    res.sendStatus(400)
+  } else {
+   const result= await DbMongoose.getAllMessages({courseNumber, sectionNumber})
+   res.json(result)
   }
 })
 

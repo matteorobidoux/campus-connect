@@ -90,6 +90,10 @@ class DbMongoose {
     await groupChat.save()
    }
   }
+  async getAllMessages(room: UserClassSection) {
+    const groupChat = await groupChatModel.findOne({room:room })
+    return groupChat;
+   }
 
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
     const courses = userSections.map(async userCourse => {
