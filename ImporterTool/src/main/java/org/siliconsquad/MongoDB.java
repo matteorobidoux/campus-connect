@@ -5,6 +5,7 @@ import com.mongodb.*;
 import com.mongodb.client.*;
 
 import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.siliconsquad.objects.*;
@@ -25,7 +26,7 @@ import org.bson.codecs.configuration.*;
 public class MongoDB 
 {
     /*
-     * This method inserts the scraped data into the MongoDB database
+     * This method inserts the scraped data into the MongoDB database without duplicates and sorts the sections by number
      * @throws IOException if the file is not found
      * @throws ParseException if the JSON file is not formatted correctly
      */
