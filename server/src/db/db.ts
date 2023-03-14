@@ -2,9 +2,11 @@ import mongoose from 'mongoose';
 import User from "./models/user-schema"
 import Event from './models/event-schema';
 import Course from "./models/course-schema";
+import groupChatModel from './models/group-chat-schema';
 import { UserClass } from "../../../types/UserClass"
 import CreateUserBodyParams from "../../../types/Queries/CreateUser";
 import { UserClassSection } from "../../../types/UserClassSection"
+import {AddMessage} from "../../../types/Queries/AddMessage"
 import { GetAllSectionsResponse } from "../../../types/Queries/GetAllCourses"
 import { LoginRequest, LoginResponse } from "../../../types/Queries/Login";
 import CompletedEventBodyParams from '../../../types/Queries/CompletedEvent';
@@ -79,6 +81,14 @@ class DbMongoose {
     section.events.push(event);
     section.events[section.events.length-1].mongoId =section.events[section.events.length-1]._id
     await course.save();
+  }
+
+  async addMessage({room, message}:AddMessage) {
+   const groupChat = await groupChatModel.findOne({room:room })
+   if(groupChat){
+    groupChat.messagesList.push(message)
+    await groupChat.save()
+   }
   }
 
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {

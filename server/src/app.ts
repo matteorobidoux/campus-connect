@@ -14,6 +14,7 @@ import cors from "cors";
 import GAuth from "./oauth/gauth-endpoint";
 import http from "http";
 import { createServer } from './chat/index';
+import { AddMessage } from '../../types/Queries/AddMessage';
 
 const app = express();
 const port = 8080
@@ -70,6 +71,15 @@ app.post("/api/addEvent", async (req, res: Response<AddEventResponse>) =>{
 
   await DbMongoose.addEventToSection(body.section.courseNumber, body.section.sectionNumber, body.event);
   res.json({success: true});
+})
+
+app.post("/api/addMessage", async (req, res) => {
+  const {room , message} = req.body as Partial<AddMessage>;
+  if(!room ||!message){
+    res.sendStatus(400)
+  } else {
+    res.json( {id: await DbMongoose.addMessage({room, message})})
+  }
 })
 
 app.get("/api/getAllSections", async (req, res: Response<GetAllSectionsResponse>) => {

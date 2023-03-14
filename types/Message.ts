@@ -1,7 +1,7 @@
 
 type UserMessage ={
   message: string,
-  user: {username: string, _id: string},
+  user: {userName: string, _id: string},
   date: Date,
 }
 
