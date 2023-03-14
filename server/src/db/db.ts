@@ -53,6 +53,13 @@ class DbMongoose {
     return userModel.toObject()
   }
 
+  async groupChat({courseNumber,  sectionNumber}: UserClassSection): Promise<string> {
+    const groupChat = new groupChatModel({ room:{courseNumber:courseNumber, sectionNumber:sectionNumber} });
+    console.log(groupChat)
+    await groupChat.save();
+    return groupChat.toObject()
+  }
+
   async addCompletedEvent({ userName, completedEvent }: CompletedEventBodyParams) {
     const user = await userModel.findOne({ name: userName });
     if (user) {
