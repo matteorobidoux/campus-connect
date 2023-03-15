@@ -62,15 +62,7 @@ class DbMongoose {
     return groupChat.toObject()
   }
 
-  //Prototype to create rooms forall Classes andsections
-  async groupChatMany( userClassSectionArray: UserClassSection[]){
-    userClassSectionArray.forEach( async (userC) =>{
-      const groupChat= new groupChatModel({room: {courseNumber:userC.courseNumber, sectionNumber: userC.sectionNumber}})
-      console.log(groupChat)
-      await groupChat.save()
-    })
-  }
-
+  
   async addCompletedEvent({ userName, completedEvent }: CompletedEventBodyParams) {
     const user = await userModel.findOne({ name: userName });
     if (user) {
