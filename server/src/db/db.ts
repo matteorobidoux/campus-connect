@@ -6,7 +6,7 @@ import groupChatModel from './models/group-chat-schema';
 import { UserClass } from "../../../types/UserClass"
 import CreateUserBodyParams from "../../../types/Queries/CreateUser";
 import { UserClassSection } from "../../../types/UserClassSection"
-import {AddMessage} from "../../../types/Queries/AddMessage"
+import { AddMessage } from "../../../types/Queries/AddMessage"
 import { GetAllSectionsResponse } from "../../../types/Queries/GetAllCourses"
 import { LoginRequest, LoginResponse } from "../../../types/Queries/Login";
 import CompletedEventBodyParams from '../../../types/Queries/CompletedEvent';
@@ -46,15 +46,15 @@ class DbMongoose {
 
   }
 
-  async addUser({name, sections, picture, googleTokens, email, gid}: CreateUserBodyParams): Promise<string> {
+  async addUser({ name, sections, picture, googleTokens, email, gid }: CreateUserBodyParams): Promise<string> {
     const userModel = new User({ name, sections, picture, googleTokens, email, gid });
     console.log(userModel)
     await userModel.save();
     return userModel.toObject()
   }
 
-  async groupChat({courseNumber,  sectionNumber}: UserClassSection): Promise<string> {
-    const groupChat = new groupChatModel({ room:{courseNumber:courseNumber, sectionNumber:sectionNumber} });
+  async groupChat({ courseNumber, sectionNumber }: UserClassSection): Promise<string> {
+    const groupChat = new groupChatModel({ room: { courseNumber: courseNumber, sectionNumber: sectionNumber } });
     console.log(groupChat)
     await groupChat.save();
     return groupChat.toObject()
@@ -86,21 +86,21 @@ class DbMongoose {
     const section = course.sections.find(s => s.number == sectionNumber)!;
     console.log("section: ", sectionNumber)
     section.events.push(event);
-    section.events[section.events.length-1].mongoId =section.events[section.events.length-1]._id
+    section.events[section.events.length - 1].mongoId = section.events[section.events.length - 1]._id
     await course.save();
   }
 
-  async addMessage({room, message}:AddMessage) {
-   const groupChat = await groupChatModel.findOne({room:room })
-   if(groupChat){
-    groupChat.messagesList.push(message)
-    await groupChat.save()
-   }
+  async addMessage({ room, message }: AddMessage) {
+    const groupChat = await groupChatModel.findOne({ room: room })
+    if (groupChat) {
+      groupChat.messagesList.push(message)
+      await groupChat.save()
+    }
   }
   async getAllMessages(room: UserClassSection) {
-    const groupChat = await groupChatModel.findOne({room:room })
+    const groupChat = await groupChatModel.findOne({ room: room })
     return groupChat;
-   }
+  }
 
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
     const courses = userSections.map(async userCourse => {
@@ -141,5 +141,6 @@ class DbMongoose {
   }
 
 }
+
 
 export default new DbMongoose();
