@@ -66,6 +66,7 @@ class DbMongoose {
   async groupChatMany( userClassSectionArray: UserClassSection[]){
     userClassSectionArray.forEach( async (userC) =>{
       const groupChat= new groupChatModel({room: {courseNumber:userC.courseNumber, sectionNumber: userC.sectionNumber}})
+      console.log(groupChat)
       await groupChat.save()
     })
   }
@@ -109,7 +110,7 @@ class DbMongoose {
       groupChat.messagesList.push(message)
       await groupChat.save()
     }else{
-      console.log("Dit not findthe room")
+      console.log("Dit not find the room")
     }
   }
   //Rerturns An Array with all themessages ordered by date.
