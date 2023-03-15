@@ -4,9 +4,11 @@ import { useEffect, useRef, useState } from "react"
 import { ChatMessage, useChat } from "../../chat";
 import { UserClassSection } from "../../../../types/UserClassSection";
 import { useSections, useUser } from "../../custom-query-hooks";
-
+import { useMutation } from "react-query";
+import axios from "axios";
+import { AddMessage } from "../../../../types/Queries/AddMessage"
 type ChatProps = {
-  selectedChat : UserClassSection;
+  selectedChat: UserClassSection;
 }
 
 //TODO: Change main bar depending on component selected
@@ -19,26 +21,42 @@ const formatDate = (date: Date) => {
 
 export default function Chat({ selectedChat }: ChatProps) {
   const user = useUser();
-  const sections = useSections({userClassSections: user.sections});
+  const sections = useSections({ userClassSections: user.sections });
   const [messages, _setMessages] = useState<ChatMessage[]>([]);
   const textRef = useRef<HTMLInputElement>(null);
   const lastMessageRef = useRef<HTMLDivElement>(null);
 
-  const chat = useChat({rooms: [selectedChat], onMessage: (m) => {
-    m.date = new Date(m.date);
-    setMessages(m)
-    lastMessageRef.current?.scrollIntoView()
-  }
+  const chat = useChat({
+    rooms: [selectedChat], onMessage: (m) => {
+      m.date = new Date(m.date);
+      setMessages(m)
+      lastMessageRef.current?.scrollIntoView()
+    }
   });
 
   const setMessages = (c: ChatMessage) => {
     _setMessages((currentMessages) => [...currentMessages, c]);
   }
 
+  const addMessage = useMutation(async (arg: AddMessage) => {
+    axios.post('/api/addMessage', arg)
+  });
+
   const onEnter = (message: string) => {
     if (message === "") return;
-    const pMessage = {message, room: selectedChat, user: {_id: user._id, username: user.name}, date: new Date()}
+    const pMessage = { message, room: selectedChat, user: { _id: user._id, username: user.name }, date: new Date() }
+    let room: AddMessage = {
+      room: pMessage.room,
+      message: { user: { userName: pMessage.user.username, _id: pMessage.user._id }, message: pMessage.message, date: pMessage.date }
+    };
+
     chat.sendMessage(pMessage);
+    if (room !== undefined) {
+      (async () => {
+        await addMessage.mutateAsync(room);
+      })();
+    }
+
     setMessages(pMessage);
   }
 
@@ -53,13 +71,15 @@ export default function Chat({ selectedChat }: ChatProps) {
     lastMessageRef.current?.scrollIntoView()
   }, [messages])
 
+
+
   return (
     <>
       <div className={styles["main-chat"]}>
         <section className={styles["msger"]}>
           <header className={styles["msger-header"]}>
             <div className={styles["msger-header-title"]}>
-              <i className={styles["fas fa-comment-alt"]}></i> 
+              <i className={styles["fas fa-comment-alt"]}></i>
               {sections.data?.find(s => s.courseNumber === selectedChat.courseNumber)?.courseTitle}
             </div>
             <div className={styles["msger-header-options"]}>
@@ -68,7 +88,7 @@ export default function Chat({ selectedChat }: ChatProps) {
           </header>
 
           <main className={styles["msger-chat"]}>
-            {messages.map((message, i) => 
+            {messages.map((message, i) =>
               <div ref={lastMessageRef}>
                 <Message leftOrRight={message.user._id === user._id ? "right-msg" : "left-msg"}
                   user={message.user.username} message={message.message} time={formatDate(message.date)} key={i} />
@@ -78,10 +98,10 @@ export default function Chat({ selectedChat }: ChatProps) {
           </main>
 
           <div className={styles["msger-inputarea"]}>
-            <input 
+            <input
               type="text"
               className={styles["msger-input"]}
-              placeholder="Enter your message..." 
+              placeholder="Enter your message..."
               onKeyUp={onKeyUp}
               ref={textRef}
             ></input>
