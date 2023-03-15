@@ -54,6 +54,7 @@ class DbMongoose {
     return userModel.toObject()
   }
 
+  //Creates a Group chat based on course Number and Section
   async groupChat({ courseNumber, sectionNumber }: UserClassSection): Promise<string> {
     const groupChat = new groupChatModel({ room: { courseNumber: courseNumber, sectionNumber: sectionNumber } });
     console.log(groupChat)
@@ -91,6 +92,7 @@ class DbMongoose {
     await course.save();
   }
 
+  //Adds Message needs room{UserClassSection}and message:{UserMessage}
   async addMessage({ room, message }: AddMessage) {
     const groupChat = await groupChatModel.findOne({ 'room.courseNumber': room.courseNumber, 'room.sectionNumber':room.sectionNumber })
     if (groupChat) {
@@ -102,9 +104,12 @@ class DbMongoose {
       console.log("Dit not findthe room")
     }
   }
+  //Rerturns An Array with all themessages ordered by date.
   async getAllMessages(room: UserClassSection) {
-    const groupChat = await groupChatModel.findOne({ room: room })
-    return groupChat;
+    const groupChat = await groupChatModel.findOne({ 'room.courseNumber': room.courseNumber, 'room.sectionNumber':room.sectionNumber })
+    const messagesList = groupChat.messagesList.sort((a,b)=>a.date.getTime() - b.date.getTime())
+    console.log(messagesList)
+    return messagesList;
   }
 
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
