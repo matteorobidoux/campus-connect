@@ -16,6 +16,7 @@ import Section from './models/section-schema';
 import { Events } from '../../../types/Event';
 import { generateOAuthClient } from "../oauth/";
 import { google } from 'googleapis';
+import { UserMessage } from '../../../types/MessageUser';
 
 const dname = process.env.NAME || 'CampusConnect'
 
@@ -91,10 +92,14 @@ class DbMongoose {
   }
 
   async addMessage({ room, message }: AddMessage) {
-    const groupChat = await groupChatModel.findOne({ room: room })
+    const groupChat = await groupChatModel.findOne({ 'room.courseNumber': room.courseNumber, 'room.sectionNumber':room.sectionNumber })
     if (groupChat) {
+      console.log("Found the Room")
+      console.log(groupChat)
       groupChat.messagesList.push(message)
       await groupChat.save()
+    }else{
+      console.log("Dit not findthe room")
     }
   }
   async getAllMessages(room: UserClassSection) {
@@ -141,6 +146,5 @@ class DbMongoose {
   }
 
 }
-
 
 export default new DbMongoose();
