@@ -47,7 +47,7 @@ export default function CourseEntryWidget() {
       <>
         {
           isLoading ?
-            <span>Loading..</span>
+            <span>Loading...</span>
             :
             isSuccess ?
               <>
@@ -61,7 +61,7 @@ export default function CourseEntryWidget() {
                         disabled={course.uuid !== editedCoursePickerUUID}
                         courses={data.response.filter((_course: StrippedCourse) =>
                           _course.number === course.number || !isCourseSelected(_course.number)
-                        )}  
+                        )}
                         onEditingChange={(state: boolean) => {
                           if (state) {
                             setEditedCoursePickerUUID(course.uuid)

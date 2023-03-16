@@ -1,0 +1,35 @@
+.course-picker {
+  display: flex;
+  flex-direction: row;
+  gap: .8rem;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+
+    .inputs {
+
+      input {
+        background: var(--text-white);
+        color: var(--grey-background);
+        padding: .3rem;
+        border: var(--primary) 3px solid;
+        border-radius: 4px;
+        font-size: 16px;
+
+        &:disabled {
+          border-color: var(--faded-black);
+          filter: brightness(0.8);
+        }
+      }
+    }
+  }
+
+  button {
+    flex-shrink: 1;
+    margin: 0 auto;
+  }
+}

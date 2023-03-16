@@ -12,11 +12,11 @@
   .entered-courses {
     display: grid;
     grid-auto-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem 3rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem 3rem;
   }
 
-  .add-course{
+  .add-course {
     font-size: 22px;
   }
 }
