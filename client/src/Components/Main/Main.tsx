@@ -1,24 +1,23 @@
+import { UserClassSection } from "../../../../types/UserClassSection"
 import { CalendarWidget } from "../CalendarWidget"
+import Chat from "../Chat/Chat"
 import styles from "./Main.module.scss"
-import { useEffect } from "react";
-import { useGetAllCourses } from "../../custom-query-hooks";
+
+type MainProps = {
+  selectedComponent: string,
+  selectedChat: UserClassSection | null; 
+}
 
 
-export default function Main() {
-  const query = useGetAllCourses({userClassSections: [
-    {
-      courseNumber: "574-251-DW",
-      sectionNumber: "00001",
-    }
-  ]});
-
-  useEffect(() => {
-    console.log(query.data)
-  }, [query.data])
-
+export default function Main(props: MainProps) {
   return (
     <div className={styles["main-content-container"]}>
+      {!props.selectedChat ?(
       <CalendarWidget />
+      ) : props.selectedComponent === "chat" ?(
+        <Chat selectedChat={props.selectedChat}/>
+      ) : null
+    }
     </div>
   )
 }

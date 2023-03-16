@@ -1,12 +1,24 @@
 import { GetAllStrippedCourses } from './../../types/Queries/Register';
 import express, { Response } from "express";
 import CreateUserBodyParams from "../../types/Queries/CreateUser";
+import CompletedEventBodyParams from "../../types/Queries/CompletedEvent"
+import RemoveEventBodyParams from "../../types/Queries/RemoveEvent"
 import DbMongoose from "./db/db"
 import { GetAllSectionsRequest, GetAllSectionsResponse } from "../../types/Queries/GetAllCourses";
 import { LoginRequest } from "../../types/Queries/Login";
-const app = express();
-const port = 8081
+import { AddEventBody, AddEventResponse } from "../../types/Queries/AddEvent";
+import { Events } from "../../types/Event";
 
+import { generateAuthUrl } from "./oauth";
+import cors from "cors";
+import GAuth from "./oauth/gauth-endpoint";
+import http from "http";
+import { createServer } from './chat/index';
+
+const app = express();
+const port = 8080
+
+app.use(cors())
 app.use(express.json())
 
 app.get("/users", async (_, res) => {
@@ -26,22 +38,57 @@ app.post("/api/login", async (req, res) => {
 app.post('/api/addUser', async (req, res) => {
   const body = req.body as CreateUserBodyParams;
   console.log(body);
-  res.json({ id: await DbMongoose.addUser(body) });
+  res.json(await DbMongoose.addUser(body));
 })
-//
-// app.get('/api/allSections', async (_, res) => {
-//   res.json(await DbMongoose.getAllSections())
-// })
+
+
+app.post('/api/addCompletedEvent', async (req,res)=>{
+  const {userName , completedEvent} = req.body as Partial<CompletedEventBodyParams>;
+  if (!userName || !completedEvent) {
+    res.sendStatus(400);
+  } else {
+    res.json({id: await DbMongoose.addCompletedEvent({userName, completedEvent})})
+  }
+  
+})
+
+app.post('/api/removeEvent', async (req,res)=>{
+  const {eventId , courseNumber, courseSection} = req.body as Partial<RemoveEventBodyParams>;
+  if (!eventId || !courseNumber || !courseSection) {
+    res.sendStatus(400);
+  } else {
+    res.json({id: await DbMongoose.removeEvent({eventId, courseNumber, courseSection})})
+  }
+})
+
+app.post("/api/addEvent", async (req, res: Response<AddEventResponse>) =>{
+  const body = req.body as Partial<AddEventBody>
+  if(!body.section || !body.event){
+    return res.sendStatus(400);
+  }
+  console.log(body);
+
+  await DbMongoose.addEventToSection(body.section.courseNumber, body.section.sectionNumber, body.event);
+  res.json({success: true});
+})
 
 app.get("/api/getAllSections", async (req, res: Response<GetAllSectionsResponse>) => {
   const { userClassSections } = req.query as Partial<GetAllSectionsRequest>;
-  console.log('here.');
   if (Array.isArray(userClassSections)) {
     const result = await DbMongoose.getUserClasses(userClassSections);
-    res.json({ response: result })
+    res.json(result)
   } else {
     res.sendStatus(400);
   }
+})
+
+app.get("/gauth", async (req, res) => {
+  console.log("calling gauth.");
+  await GAuth(req, res);
+})
+
+app.get("/api/authenticate", async (req, res) => {
+  generateAuthUrl(res);
 })
 
 app.get("/api/getAllStrippedCourses", async (req, res: Response<GetAllStrippedCourses>) => {
@@ -59,8 +106,16 @@ app.use(function (_, res) {
   res.status(404).send("404 NOT FOUND");
 })
 
+const server = http.createServer(app)
+createServer(server);
 
-app.listen(port, () => {
+server.listen(port, () => {
   console.log(`at http://localhost:${port}`)
 })
-export { app };
+
+async function closeServer(){
+   server.close()
+}
+  
+
+export { app, closeServer };

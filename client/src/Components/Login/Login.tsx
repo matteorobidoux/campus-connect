@@ -1,6 +1,7 @@
 import { FormEvent, useState } from "react"
 import styles from "./Login.module.scss"
 import CourseEntryWidget from "../CourseEntryWidget/CourseEntryWidget"
+import { useTranslation } from "react-i18next"
 import { validateStringLengthRange } from "../../validationUtils"
 
 type NamesFormEvent = FormEvent<HTMLFormElement> & {
@@ -41,16 +42,26 @@ export default function Login() {
     }
   }
 
+  const { t, i18n } = useTranslation(["login"]);
+
+  const onConnectWithGoogle = () => {
+    fetch('/api/authenticate').then(async r => {
+      const k = await r.json();
+      console.log(k.authorizationUrl);
+      window.location.href = k.authorizationUrl;
+    })
+  }
+
   return (
     <div className={styles["login-container"]}>
       <div className={styles["options-menu"]}>
         {!firstLogin ?
           <>
-            <h1 className={styles.title}>Welcome to Campus Connect</h1>
-            <h4 className={styles.message}>Please select one of the following options:</h4>
-            <button onClick={() => { setFirstLogin(true) }}>Connect with Google</button>
+            <h1 className={styles.title}>{t("welcome")}</h1>
+            <h4 className={styles.message}>{t("selectOption")}</h4>
+            <button onClick={onConnectWithGoogle}>{t("connect")}</button>
           </> :
-          !isNameEntered && !isNameValid ?
+          !isNameValid && !isNameEntered ?
             <>
               <h4 className={styles.message}>Please fill the following form:</h4>
               {

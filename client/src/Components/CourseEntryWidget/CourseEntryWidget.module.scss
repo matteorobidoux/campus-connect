@@ -1,12 +1,15 @@
 .course-entry-widget-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-self: center;
   gap: 1rem;
 
   .title {
     font-size: 28px;
     font-size: 500;
     margin-bottom: 1rem;
+    text-align: center;
   }
 
   .entered-courses {
@@ -18,5 +21,24 @@
 
   .add-course {
     font-size: 22px;
+  }
+
+  button {
+    background: var(--grey-background);
+    border: none;
+    color: var(--text-white);
+    margin: 0 auto;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0.5rem 0.9rem;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px;
+    transition: all .15s ease-in;
+    font-size: 22px;
+
+    &:hover {
+      color: var(--grey-background);
+      background: var(--text-white);
+    }
   }
 }

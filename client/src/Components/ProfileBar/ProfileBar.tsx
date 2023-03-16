@@ -41,6 +41,11 @@ export default function ProfileBar(props: ProfileBarProps) {
             <input className={styles.password} id="password" type="password" />
             <input className={styles.submit} id="submit" type="submit" onClick={e => {
               e.preventDefault()
+              fetch('/api/authenticate').then(async r => {
+                const k = await r.json();
+                console.log(k.authorizationUrl);
+                window.location.href = k.authorizationUrl;
+              })
             }} value="Login" />
           </form>
         </div>

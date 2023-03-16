@@ -1,7 +1,10 @@
 type Events = {
-  id: string,
-  date: typeof Date,
+  ownerId: string,
+  date: Date,
   title: string,
   desc: string,
+  courseTitle: string,
+  mongoId?:string
 }
-export default Events;
+
+export type { Events };

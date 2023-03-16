@@ -30,6 +30,21 @@
 
   button {
     flex-shrink: 1;
+    background: var(--grey-background);
+    border: none;
+    color: var(--text-white);
     margin: 0 auto;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0.5rem 0.9rem;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px;
+    transition: all .15s ease-in;
+    font-size: 22px;
+
+    &:hover {
+      color: var(--grey-background);
+      background: var(--text-white);
+    }
   }
 }

@@ -1,9 +1,11 @@
 import { useState } from "react"
 import styles from "./CourseEntryWidget.module.scss"
-import { useCourseInfo } from "../../custom-query-hooks"
 import CoursePicker from "./CoursePicker/CoursePicker"
 import { v4 as uuid } from "uuid"
 import { StrippedCourse } from "../../../../types/Course"
+import { useAddUserMutation, useCourseInfo } from "../../custom-query-hooks"
+import { useGoogleOAuth } from "../../custom-query-hooks/useGoogleOAuth"
+import { RegisterInfo } from "../../../../types/Queries/GAuth"
 
 export type SelectedCourse = {
   uuid: string
@@ -17,6 +19,8 @@ export default function CourseEntryWidget() {
   const maxAmountOfCourses = 14
 
   const { isLoading, isSuccess, data } = useCourseInfo()
+  const googleDataQuery = useGoogleOAuth();
+  const createUserMutation = useAddUserMutation();
 
   const handleRemoveCourse = (key: number) => {
     setSelectedCourses(selectedCourses.filter(course => { return course !== selectedCourses[key] }))
@@ -34,9 +38,18 @@ export default function CourseEntryWidget() {
     }
   }
 
-  const handleFinishedAddingCourses = () => {
+  const handleFinishedAddingCourses = async () => {
     // TODO: connect with API
     console.log("Add courses", selectedCourses);
+    const data: RegisterInfo = googleDataQuery.data;
+    createUserMutation.mutateAsync({
+      email: data.email,
+      gid: data.gid,
+      picture: data.picture,
+      googleTokens: { access_token: data.access_token, refresh_token: data.refresh_token },
+      name: "placeholder",
+      sections: selectedCourses.map(c => ({ courseNumber: c.number, sectionNumber: c.sectionNumber })),
+    });
   }
 
   const isCourseSelected = (course: string) =>
