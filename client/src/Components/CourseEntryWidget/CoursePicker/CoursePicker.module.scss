@@ -4,6 +4,18 @@
   gap: .8rem;
   justify-content: center;
   align-items: center;
+  transition: all .25s ease;
+  opacity: 0;
+
+  &-entering,
+  &-entered {
+    opacity: 1;
+  }
+
+  &-exiting,
+  &-exited {
+    opacity: 0;
+  }
 
   form {
     display: flex;
