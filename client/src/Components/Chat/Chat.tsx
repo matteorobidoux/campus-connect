@@ -38,25 +38,12 @@ export default function Chat({ selectedChat }: ChatProps) {
     _setMessages((currentMessages) => [...currentMessages, c]);
   }
 
-  // const addMessage = useMutation(async (arg: AddMessage) => {
-  //   axios.post('/api/addMessage', arg)
-  // });
 
   const onEnter = (message: string) => {
     if (message === "") return;
     const pMessage = { message, room: selectedChat, user: { _id: user._id, username: user.name }, date: new Date() }
-    let room: AddMessage = {
-      room: pMessage.room,
-      message: { user: { userName: pMessage.user.username, _id: pMessage.user._id }, message: pMessage.message, date: pMessage.date }
-    };
-
+    
     chat.sendMessage(pMessage);
-    // if (room !== undefined) {
-    //   (async () => {
-    //     await addMessage.mutateAsync(room);
-    //   })();
-    // }
-
     setMessages(pMessage);
   }
 
