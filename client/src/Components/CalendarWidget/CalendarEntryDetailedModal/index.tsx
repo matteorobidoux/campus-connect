@@ -22,8 +22,7 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
 
   //Check for User and creation of button if User
   const user = useUser();
-  const sectionsQuery = useSections({ userClassSections: user.sections })
-
+  const sectionsQuery = useSections({ userClassSections: user.sections });
 
   const queryClient = useQueryClient();
 
@@ -44,11 +43,13 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
       toast.done(toastId)
     }
   }, [markAsDone, markAsDone.isLoading])
-  console.log(event.date.getMonth())
 
   const isOwner = user._id === event.ownerId
+  const qc = useQueryClient();
   const removeEvent = useMutation(async (arg: RemoveEventBodyParams) => {
-    axios.post('/api/removeEvent', arg)
+    await axios.post('/api/removeEvent', arg);
+  }, {
+      onSuccess: () => qc.invalidateQueries({ queryKey: ['getAllCourses']}),
   });
 
   return (
@@ -73,12 +74,13 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
             ? <button onClick={async () => {
               toast.loading("Removing event...", { toastId: 'removingEvent' });
               const course = sectionsQuery!.data!.find(s => s.courseTitle === event.courseTitle)
+              console.log(sectionsQuery.data)
               await removeEvent.mutateAsync({
                 eventId: event.mongoId!,
                 courseNumber: course!.courseNumber,
                 courseSection: course!.number
               });
-              toast.done('RemovinggEvent');
+              toast.done('removingEvent');
 
             }}> {t("delete")} </button>
             : <></>

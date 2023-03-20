@@ -22,7 +22,6 @@ export function CalendarWidget({ }: CalendarWidgetProps) {
   const {t, i18n} = useTranslation(['events']);
 
   const onScopeChanged = (scope: "month" | "day", date: Date) => {
-    console.log(scope, date);
     setScope(scope);
     if (scope == "month") {
       setMonth(months[date.getMonth()])
