@@ -49,3 +49,46 @@ describe('test api removeEvent', () => {
     expect(res.statusCode).toBe(200);
   });
 });
+
+// describe('test api addEvent', () => {
+//   it('should return 200', async () => {
+//     const res = await request(app).post("/api/addEvent").send({
+//       eventId:"640ac0b131483eb8b8a1cb81",
+//       courseNumber: "574-453-DW",
+//       courseSection:"00001"
+
+//     })
+//     expect(res.statusCode).toBe(200);
+//   });
+// });
+
+describe('test api addUser', () => {
+  it('should return 200', async () => {
+
+    const user = {
+      gid: "string",
+      email: "string",
+      name: "string",
+      picture: "string",
+      sections: [],
+      googleTokens: {
+          refresh_token: "string",
+          access_token: "string"
+      }
+  }
+    const res = await request(app).post("/api/addUser").send({
+      user
+    })
+    expect(res.statusCode).toBe(200);
+  });
+});
+
+// describe('test api addCompletedEvent', () => {
+//   it('should return 200', async () => {
+//     const res = await request(app).post("/api/addCompletedEvent").send({
+//       userName:"640ac0b131483eb8b8a1cb81",
+//       completedEvent:{}
+//     })
+//     expect(res.statusCode).toBe(200);
+//   });
+// });

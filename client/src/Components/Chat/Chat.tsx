@@ -38,9 +38,9 @@ export default function Chat({ selectedChat }: ChatProps) {
     _setMessages((currentMessages) => [...currentMessages, c]);
   }
 
-  const addMessage = useMutation(async (arg: AddMessage) => {
-    axios.post('/api/addMessage', arg)
-  });
+  // const addMessage = useMutation(async (arg: AddMessage) => {
+  //   axios.post('/api/addMessage', arg)
+  // });
 
   const onEnter = (message: string) => {
     if (message === "") return;
@@ -51,11 +51,11 @@ export default function Chat({ selectedChat }: ChatProps) {
     };
 
     chat.sendMessage(pMessage);
-    if (room !== undefined) {
-      (async () => {
-        await addMessage.mutateAsync(room);
-      })();
-    }
+    // if (room !== undefined) {
+    //   (async () => {
+    //     await addMessage.mutateAsync(room);
+    //   })();
+    // }
 
     setMessages(pMessage);
   }
