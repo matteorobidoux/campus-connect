@@ -1,7 +1,6 @@
 import { Server } from "socket.io";
 import http from "http";
 import { UserClassSection } from "../../../types/UserClassSection";
-import { AddMessage } from "../../../types/Queries/AddMessage";
 import DbMongoose from "../db/db"
 export function createServer(server: http.Server) {
   const io = new Server(server);

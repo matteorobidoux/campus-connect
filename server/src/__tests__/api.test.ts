@@ -38,29 +38,114 @@ describe('test api getAllStrippedCourses', () => {
   });
 });
 
-describe('test api removeEvent', () => {
+describe('test api getAllMessages', () => {
   it('should return not undefined', async () => {
+    const room= {
+      courseNumber:"574-453-DW",
+      courseSection:"00001"
+    }
+    const res = await request(app).get("/api/getAllMessages").send(
+      room
+    )
+    expect(res.body).toBeDefined()
+  });
+});
+
+describe('test api getAllMessages', () => {
+  it('should return 400 missing parameter', async () => {
+    const room= {
+      courseSection:"00001"
+    }
+    const res = await request(app).get("/api/getAllMessages").send(
+      room
+    )
+    expect(res.status).toBe(400)
+  });
+});
+
+describe('test api getAllSections', () => {
+  it('should return not undefined', async () => {
+    const room= {
+      courseNumber:"574-453-DW",
+      courseSection:"00001"
+    }
+    const res = await request(app).get("/api/getAllSections").send(
+      room
+    )
+    expect(res.body).toBeDefined()
+  });
+});
+
+
+describe('test api removeEvent', () => {
+  it('should return status 200', async () => {
     const res = await request(app).post("/api/removeEvent").send({
       eventId:"640ac0b131483eb8b8a1cb81",
       courseNumber: "574-453-DW",
       courseSection:"00001"
-
     })
     expect(res.statusCode).toBe(200);
   });
 });
 
-// describe('test api addEvent', () => {
-//   it('should return 200', async () => {
-//     const res = await request(app).post("/api/addEvent").send({
-//       eventId:"640ac0b131483eb8b8a1cb81",
-//       courseNumber: "574-453-DW",
-//       courseSection:"00001"
+describe('test api removeEvent', () => {
+  it('should return status 400 missing a parameter', async () => {
+    const res = await request(app).post("/api/removeEvent").send({
+      eventId:"640ac0b131483eb8b8a1cb81",
+      courseNumber: "574-453-DW",
+     
+    })
+    expect(res.statusCode).toBe(400);
+  });
+});
 
-//     })
-//     expect(res.statusCode).toBe(200);
-//   });
-// });
+
+describe('test api appLogin', () => {
+  it('should return status 200', async () => {
+    const res = await request(app).post("/api/login").send({
+      name:"tesNameJesus",
+      password: "574-453-DW",
+    })
+    expect(res.statusCode).toBe(200);
+  });
+});
+
+describe('test api appLogin', () => {
+  it('should return status 400', async () => {
+    const res = await request(app).post("/api/login").send({
+      name:"tesNameJesus",
+    })
+    expect(res.statusCode).toBe(400);
+  });
+});
+
+describe('test api addEvent', () => {
+  it('should return 200', async () => {
+    const res = await request(app).post("/api/addEvent").send({
+      section:{ courseNumber:"574-453-DW" , sectionNumber:"00001"},
+      event: {ownerId: "640ac0b131483eb8b8a1cb82",
+        date: Date,
+        title: "Today Carrots",
+        desc: "carrots and eyes",
+        courseTitle: "Story Board",}
+    })
+    expect(res.statusCode).toBe(200);
+    expect(res.body).toStrictEqual({success: true})
+  });
+});
+
+describe('test api addEvent', () => {
+  it('should return 400 missing a parameter', async () => {
+    const res = await request(app).post("/api/addEvent").send({
+      event: {ownerId: "640ac0b131483eb8b8a1cb82",
+        date: Date,
+        title: "Today Carrots",
+        desc: "carrots and eyes",
+        courseTitle: "Story Board",}
+    })
+    expect(res.statusCode).toBe(400);
+  });
+});
 
 describe('test api addUser', () => {
   it('should return 200', async () => {
@@ -83,12 +168,24 @@ describe('test api addUser', () => {
   });
 });
 
-// describe('test api addCompletedEvent', () => {
-//   it('should return 200', async () => {
-//     const res = await request(app).post("/api/addCompletedEvent").send({
-//       userName:"640ac0b131483eb8b8a1cb81",
-//       completedEvent:{}
-//     })
-//     expect(res.statusCode).toBe(200);
-//   });
-// });
+describe('test api addCompletedEvent', () => {
+  it('should return 200', async () => {
+    const res = await request(app).post("/api/addCompletedEvent").send({
+      userName:"string",
+      completedEvent:{ id: "string",
+        date: Date}
+    })
+    expect(res.statusCode).toBe(200);
+  });
+});
+
+describe('test api addCompletedEvent', () => {
+  it('should return 400 a parameter is missing', async () => {
+    const res = await request(app).post("/api/addCompletedEvent").send({
+     
+      completedEvent:{ id: "string",
+        date: Date}
+    })
+    expect(res.statusCode).toBe(400);
+  });
+});

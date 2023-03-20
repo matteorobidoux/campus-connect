@@ -74,14 +74,6 @@ app.post("/api/addEvent", async (req, res: Response<AddEventResponse>) =>{
   res.json({success: true});
 })
 
-app.post("/api/addMessage", async (req, res) => {
-  const {room , message} = req.body as Partial<AddMessage>;
-  if(!room ||!message){
-    res.sendStatus(400)
-  } else {
-    res.json( {id: await DbMongoose.addMessage({room, message})})
-  }
-})
 app.get("/api/getAllMessages", async (req, res) => {
   const {courseNumber, sectionNumber } = req.body as Partial<UserClassSection>;
   if(!courseNumber ||!sectionNumber){
