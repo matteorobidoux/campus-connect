@@ -7,7 +7,7 @@ export function createServer(server: http.Server) {
   io.on('connection', (socket) => {
     socket.on('message', (payload ) => {
       socket.to(JSON.stringify(payload.room)).emit("message", payload); 
-      DbMongoose.addMessage({room: payload.room, message: {message:payload.message, user:payload.user,date:payload.date}})
+      DbMongoose.addMessage({room: payload.room, message: {message:payload.message, user:{userName:payload.user.username, _id:payload.user._id},date:payload.date}})
     });
 
     socket.on('setRoom', (courses: UserClassSection[]) => {
