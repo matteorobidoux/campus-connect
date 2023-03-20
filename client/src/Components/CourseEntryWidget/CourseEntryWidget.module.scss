@@ -25,6 +25,13 @@
     font-size: 22px;
   }
 
+  .bottom-options {
+    height: auto;
+    width: 100%;
+    flex-grow: 1;
+    align-self: flex-end;
+  }
+
   button {
     background: var(--grey-background);
     border: none;

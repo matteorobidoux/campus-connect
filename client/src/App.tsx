@@ -1,5 +1,4 @@
 import './App.css';
-import 'animate.css';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import { library } from '@fortawesome/fontawesome-svg-core'
