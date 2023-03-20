@@ -108,9 +108,12 @@ class DbMongoose {
   //Rerturns An Array with all themessages ordered by date.
   async getAllMessages(room: UserClassSection) {
     const groupChat = await groupChatModel.findOne({ 'room.courseNumber': room.courseNumber, 'room.sectionNumber':room.sectionNumber })
-    const messagesList = groupChat.messagesList.sort((a,b)=>a.date.getTime() - b.date.getTime())
-    console.log(messagesList)
-    return messagesList;
+    if(groupChat){
+       const messagesList = groupChat.messagesList.sort((a,b)=>a.date.getTime() - b.date.getTime())
+      console.log(messagesList)
+      return messagesList;
+    }
+   
   }
 
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {

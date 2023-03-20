@@ -38,3 +38,14 @@ describe('test api getAllStrippedCourses', () => {
   });
 });
 
+describe('test api removeEvent', () => {
+  it('should return not undefined', async () => {
+    const res = await request(app).post("/api/removeEvent").send({
+      eventId:"640ac0b131483eb8b8a1cb81",
+      courseNumber: "574-453-DW",
+      courseSection:"00001"
+
+    })
+    expect(res.statusCode).toBe(200);
+  });
+});
