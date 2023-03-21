@@ -33,7 +33,7 @@ public class MongoDB
     {
         MongoClient mongoClient = connect();
         MongoDatabase database = mongoClient.getDatabase("CampusConnect");
-        MongoCollection<Course> courses = database.getCollection("test0",Course.class);
+        MongoCollection<Course> courses = database.getCollection("Courses",Course.class);
         List<Course> completeCourseList = new ArrayList<Course>();
         ObjectMapper mapper = new ObjectMapper();
         JSONParser parser = new JSONParser();
