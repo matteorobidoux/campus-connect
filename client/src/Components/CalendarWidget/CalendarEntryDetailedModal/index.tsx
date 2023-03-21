@@ -15,9 +15,7 @@ export interface CalendarEntryDetailedModalProps {
 }
 
 export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetailedModalProps) {
-  const monthNames = ["January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-  ];
+ 
   const [color] = useState(getRandomColor())
 
   //Check for User and creation of button if User
@@ -26,7 +24,7 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
 
   const queryClient = useQueryClient();
 
-  const {t, i18n} = useTranslation(['events']);
+  const {t} = useTranslation(['events']);
 
   const markAsDone = useMutation(async () => {
     await new Promise(resolve => setTimeout(resolve, 1000));
@@ -59,10 +57,6 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
         <div className={styles.top}>
           <h1> {event.title} </h1>
           <h2> {event.courseTitle} </h2>
-          { i18n.language == "it" || i18n.language == "fr" ? 
-            <h2> {t("due")} {event.date.getDay()} {t(monthNames[event.date.getMonth()])} </h2> : 
-            <h2> {t("due")} {t(monthNames[event.date.getMonth()])} {event.date.getDay()} </h2> 
-          }
         </div>
         <div className={styles.center}>
           <h3> {t("eventDescription")}</h3>
