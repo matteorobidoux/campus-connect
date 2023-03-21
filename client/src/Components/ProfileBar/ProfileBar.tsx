@@ -1,6 +1,8 @@
 import styles from "./ProfileBar.module.scss"
 import closeImg from "../../assets/close.png"
 import Rodal from "rodal"
+import { removeUser } from "../../custom-query-hooks/useGoogleOAuth"
+import { useQueryClient } from "react-query"
 
 //fix type script stuff
 type ProfileBarProps = {
@@ -9,6 +11,7 @@ type ProfileBarProps = {
 }
 
 export default function ProfileBar(props: ProfileBarProps) {
+  const qc = useQueryClient();
 
   return (
     <>
@@ -48,6 +51,11 @@ export default function ProfileBar(props: ProfileBarProps) {
               })
             }} value="Login" />
           </form>
+          <button onClick={() => {
+            removeUser();
+            qc.invalidateQueries(['user']);
+            window.location.reload();
+          }}> Logout </button>
         </div>
       </Rodal>
     </>
