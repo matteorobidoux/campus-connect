@@ -117,7 +117,7 @@ class DbMongoose {
     const groupChat = await groupChatModel.findOne({ 'room.courseNumber': room.courseNumber, 'room.sectionNumber': room.sectionNumber })
     if (groupChat) {
       const messagesList = groupChat.messagesList
-      const indexLastMessage = messagesList.findIndex(message => message._id.toString() == messageId)
+      const indexLastMessage = messagesList.findIndex(message => message._id!.toString() == messageId)
       if (indexLastMessage < 15) {
         const messages = messagesList.slice(0, indexLastMessage + 1);
         return messages
@@ -169,4 +169,7 @@ class DbMongoose {
   }
 
 }
+
+const f= new DbMongoose()
+f.getLatestMessages({courseNumber:"574-453-DW", sectionNumber:"00001"},"641b2f57c08abd189ff18afa")
 export default new DbMongoose();
