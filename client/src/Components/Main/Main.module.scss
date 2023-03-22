@@ -1,14 +1,11 @@
 .main-content-container {
-  background: var(--background);
+  height: min-content;
   margin: 1rem;
   padding: .75rem;
   border-radius: 10px;
   box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
   max-width: 70%;
   min-width: 60%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  position: relative;
 }
 
 @media only screen and (max-width: 900px) {
