@@ -1,5 +1,7 @@
 import { useState } from "react"
+import Rodal from "rodal"
 import { UserClass } from "../../../../types/UserClass"
+import { CourseDetailedViewModal } from "../CourseDetailedViewModal"
 import styles from "./CourseQuickView.module.scss"
 
 type CourseQuickViewProps = {
@@ -8,13 +10,19 @@ type CourseQuickViewProps = {
 }
 
 export default function CourseQuickView(props: CourseQuickViewProps) {
-  const [animateBubble, setAnimateBubble] = useState(false)
+  const [animateBubble, setAnimateBubble] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
   const animationDuration: number = 2000
   return (
     <>
+      <Rodal visible={isVisible} onClose={() => setIsVisible(false)} height={500} width={600}>
+        <CourseDetailedViewModal userClass={props.course} close={() => setIsVisible(false)} />
+      </Rodal>
       <div className={styles["course-quick-view"]} onClick={e => {
         e.preventDefault()
-        setAnimateBubble(true)
+        setAnimateBubble(true);
+        setIsVisible(true);
         setTimeout(() => { setAnimateBubble(false) }, animationDuration); //need to change this
       }}>
         <h2>{props.course.courseTitle}</h2>
