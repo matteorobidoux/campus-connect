@@ -6,6 +6,7 @@ import { StrippedCourse } from "../../../../types/Course"
 import { useAddUserMutation, useCourseInfo } from "../../custom-query-hooks"
 import { useGoogleOAuth } from "../../custom-query-hooks/useGoogleOAuth"
 import { RegisterInfo } from "../../../../types/Queries/GAuth"
+import { AnimatePresence, LayoutGroup, motion } from "framer-motion"
 
 export type SelectedCourse = {
   uuid: string
@@ -56,46 +57,53 @@ export default function CourseEntryWidget() {
     selectedCourses.find(sCourse => sCourse.number === course) !== undefined
 
   return (
-    <div className={styles["course-entry-widget-container"]}>
-      <>
+    <LayoutGroup>
+      <div className={styles["course-entry-widget-container"]}>
         {
           isLoading ?
             <span>Loading...</span>
             :
             isSuccess ?
               <>
-                <span className={styles.title}>Choose your courses:</span>
+                <motion.span className={styles.title}>Choose your courses:</motion.span>
                 <div className={styles["entered-courses"]}>
-                  {
-                    selectedCourses.map((course, key) =>
-                      <CoursePicker
-                        key={key}
-                        pickedCourse={course}
-                        disabled={course.uuid !== editedCoursePickerUUID}
-                        courses={data.response.filter((_course: StrippedCourse) =>
-                          _course.number === course.number || !isCourseSelected(_course.number)
-                        )}
-                        onEditingChange={(state: boolean) => {
-                          if (state) {
-                            setEditedCoursePickerUUID(course.uuid)
-                          } else {
-                            setEditedCoursePickerUUID(null)
-                          }
-                        }}
-                        onAdd={() => { }}
-                        onEditSave={(course: string, section: string) => {
-                          selectedCourses[key].number = course
-                          selectedCourses[key].sectionNumber = section
-                          setSelectedCourses(selectedCourses)
-                        }}
-                        onRemove={() => handleRemoveCourse(key)
-                        }
-                      />
-                    )
-                  }
+                  <LayoutGroup>
+                    <AnimatePresence>
+                      {
+                        selectedCourses.map((course, key) =>
+                          <CoursePicker
+                            key={course.uuid}
+                            pickedCourse={course}
+                            disabled={course.uuid !== editedCoursePickerUUID}
+                            courses={data.response.filter((_course: StrippedCourse) =>
+                              _course.number === course.number || !isCourseSelected(_course.number)
+                            )}
+                            onEditingChange={(state: boolean) => {
+                              if (state) {
+                                setEditedCoursePickerUUID(course.uuid)
+                              } else {
+                                setEditedCoursePickerUUID(null)
+                              }
+                            }}
+                            onAdd={() => { }}
+                            onEditSave={(course: string, section: string) => {
+                              selectedCourses[key].number = course
+                              selectedCourses[key].sectionNumber = section
+                              setSelectedCourses(selectedCourses)
+                            }}
+                            onRemove={() => handleRemoveCourse(key)
+                            }
+                          />
+                        )
+                      }
+                    </AnimatePresence>
+                  </LayoutGroup>
                 </div>
-                {
-                  selectedCourses.length < maxAmountOfCourses ?
+                <motion.div
+                  className={[styles["course-entry-widget-container"], styles["bottom-options"]].join(" ")}
+                  layout="preserve-aspect">
+                  {
+                    selectedCourses.length < maxAmountOfCourses &&
                     <CoursePicker
                       disabled={false}
                       courses={data.response.filter((course: StrippedCourse) =>
@@ -106,20 +114,23 @@ export default function CourseEntryWidget() {
                       onRemove={() => { }}
                       onEditingChange={() => { }}
                     />
-                    : null
-                }
-                {
-                  selectedCourses.length < 1 ? null :
-                    <button onClick={e => {
-                      e.preventDefault()
-                      handleFinishedAddingCourses()
-                    }}>Finish</button>
-                }
+                  }
+                  {
+                    selectedCourses.length > 0 &&
+                    <button
+                      onClick={e => {
+                        e.preventDefault()
+                        handleFinishedAddingCourses()
+                      }}>
+                      Finish
+                    </button>
+                  }
+                </motion.div>
               </>
               :
               <span>Couldn't load data</span>
         }
-      </>
-    </div>
+      </div>
+    </LayoutGroup>
   )
 }
