@@ -21,7 +21,7 @@ export const useSections = (classes: GetAllSectionsRequest) => {
   }
 
   return useQuery<GetAllSectionsResponse>(
-    ['getAllCourses', {...classes.userClassSections}],
+    ['getAllCourses'],
     () => queryFunction(classes), { staleTime: Infinity });
 }
 
@@ -59,7 +59,6 @@ export const useCalendarEvents = () => {
   const { isLoading, data, isStale }= useSections({ userClassSections: user.sections} );
 
   let events = data?.flatMap(s => s.events) ?? [];
-  console.log(events);
   events = events.map(ev => ({...ev, date: new Date(ev.date), _id:ev._id}) );
 
   return { isLoading, data: events, isStale }
