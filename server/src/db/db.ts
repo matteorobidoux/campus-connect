@@ -116,6 +116,29 @@ class DbMongoose {
    
   }
 
+   //Rerturns An Array with all themessages ordered by date.
+   async getLatestMessages(room: UserClassSection, messageId:string) {
+    const groupChat = await groupChatModel.findOne({ 'room.courseNumber': room.courseNumber, 'room.sectionNumber':room.sectionNumber })
+    if(groupChat){
+       const messagesList = groupChat.messagesList.sort((a,b)=>a.date.getTime() - b.date.getTime())
+       const indexlastmessage= messagesList.findIndex(message => message!._id!.toHexString() == messageId)
+       console.log("The last Message Index is: "+indexlastmessage)
+       if(indexlastmessage <15){
+        const messages =messagesList.slice(0,indexlastmessage+1);
+        console.log("Messages returned: "+ messages.length)
+        console.log(messages)
+        return messages
+       }else{
+        const messages =messagesList.slice(indexlastmessage-14,indexlastmessage+1);
+        console.log("Messages returned: "+ messages.length)
+        console.log(messages)
+        return messages
+       }
+         
+    }
+   
+  }
+
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
     const courses = userSections.map(async userCourse => {
       // Some courses can be taken from different programs. Right now they are duplicated in the DB.

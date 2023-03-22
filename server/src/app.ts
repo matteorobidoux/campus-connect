@@ -8,7 +8,7 @@ import { GetAllSectionsRequest, GetAllSectionsResponse } from "../../types/Queri
 import { LoginRequest } from "../../types/Queries/Login";
 import { AddEventBody, AddEventResponse } from "../../types/Queries/AddEvent";
 import { Events } from "../../types/Event";
-
+import {LatestMessages} from "../../types/Queries/LatesMessage"
 import { generateAuthUrl } from "./oauth";
 import cors from "cors";
 import GAuth from "./oauth/gauth-endpoint";
@@ -80,6 +80,16 @@ app.get("/api/getAllMessages", async (req, res) => {
     res.sendStatus(400)
   } else {
    const result= await DbMongoose.getAllMessages({courseNumber, sectionNumber})
+   res.json(result)
+  }
+})
+
+app.get("/api/getLatestMessages", async (req, res) => {
+  const {room, messageId } = req.body as Partial<LatestMessages>;
+  if(!room ||!messageId){
+    res.sendStatus(400)
+  } else {
+   const result= await DbMongoose.getLatestMessages(room, messageId)
    res.json(result)
   }
 })
