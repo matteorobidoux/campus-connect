@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import { UserMessage }from '../../../../types/MessageUser'
+import { UserMessage }from '../../../../types/UserMessage'
 const { Schema, model } = mongoose;
 
 

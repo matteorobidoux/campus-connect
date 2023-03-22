@@ -1,8 +1,8 @@
 import { UserClassSection } from "../UserClassSection";
-type LatestMessages = {
+type LatestMessage = {
   room: UserClassSection,
   messageId: string
 }
 
-export type { LatestMessages };
+export type { LatestMessage };
 

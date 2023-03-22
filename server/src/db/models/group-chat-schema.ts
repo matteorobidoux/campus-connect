@@ -1,14 +1,13 @@
 import mongoose from 'mongoose';
 import { userClassSectionSchema } from './user-section-schema';
-import { UserMessage }from '../../../../types/MessageUser'
-import messageSchema from './messa-schema';
+import messageSchema from './message-schema';
 const { Schema, model } = mongoose;
 
 
-const gorupChatSchema = new Schema({
+const groupChatSchema = new Schema({
   room: userClassSectionSchema,
   messagesList: [messageSchema],
-}, { collection: "groupchat"});
+}, { collection: "groupchat", strictQuery: true });
 
-const groupChatModel = model('GroupChat', gorupChatSchema);
+const groupChatModel = model('GroupChat', groupChatSchema);
 export default groupChatModel;

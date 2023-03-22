@@ -1,5 +1,5 @@
 import { UserClassSection } from "../UserClassSection";
-import { UserMessage } from "../MessageUser"; 
+import { UserMessage } from "../UserMessage"; 
 
 type AddMessage = {
     room: UserClassSection;

@@ -8,13 +8,12 @@ import { GetAllSectionsRequest, GetAllSectionsResponse } from "../../types/Queri
 import { LoginRequest } from "../../types/Queries/Login";
 import { AddEventBody, AddEventResponse } from "../../types/Queries/AddEvent";
 import { Events } from "../../types/Event";
-import {LatestMessages} from "../../types/Queries/LatesMessage"
+import {LatestMessage} from "../../types/Queries/LatesMessage"
 import { generateAuthUrl } from "./oauth";
 import cors from "cors";
 import GAuth from "./oauth/gauth-endpoint";
 import http from "http";
 import { createServer } from './chat/index';
-import { AddMessage } from '../../types/Queries/AddMessage';
 import { UserClassSection } from '../../types/UserClassSection';
 
 const app = express();
@@ -85,7 +84,7 @@ app.get("/api/getAllMessages", async (req, res) => {
 })
 
 app.get("/api/getLatestMessages", async (req, res) => {
-  const {room, messageId } = req.body as Partial<LatestMessages>;
+  const {room, messageId } = req.body as Partial<LatestMessage>;
   if(!room ||!messageId){
     res.sendStatus(400)
   } else {

@@ -16,7 +16,7 @@ import Section from './models/section-schema';
 import { Events } from '../../../types/Event';
 import { generateOAuthClient } from "../oauth/";
 import { google } from 'googleapis';
-import { UserMessage } from '../../../types/MessageUser';
+import { UserMessage } from '../../../types/UserMessage';
 
 const dname = process.env.NAME || 'CampusConnect'
 
@@ -57,12 +57,11 @@ class DbMongoose {
   //Creates a Group chat based on course Number and Section
   async groupChat({ courseNumber, sectionNumber }: UserClassSection): Promise<string> {
     const groupChat = new groupChatModel({ room: { courseNumber: courseNumber, sectionNumber: sectionNumber } });
-    console.log(groupChat)
     await groupChat.save();
     return groupChat.toObject()
   }
 
-  
+
   async addCompletedEvent({ userName, completedEvent }: CompletedEventBodyParams) {
     const user = await userModel.findOne({ name: userName });
     if (user) {
@@ -95,48 +94,40 @@ class DbMongoose {
 
   //Adds Message needs room{UserClassSection}and message:{UserMessage}
   async addMessage({ room, message }: AddMessage) {
-    const groupChat = await groupChatModel.findOne({ 'room.courseNumber': room.courseNumber, 'room.sectionNumber':room.sectionNumber })
+    const groupChat = await groupChatModel.findOne({ 'room.courseNumber': room.courseNumber, 'room.sectionNumber': room.sectionNumber })
     if (groupChat) {
-      console.log("Found the Room")
-      console.log(groupChat)
       groupChat.messagesList.push(message)
       await groupChat.save()
-    }else{
+    } else {
       console.log("Dit not find the room")
     }
   }
   //Rerturns An Array with all themessages ordered by date.
   async getAllMessages(room: UserClassSection) {
-    const groupChat = await groupChatModel.findOne({ 'room.courseNumber': room.courseNumber, 'room.sectionNumber':room.sectionNumber })
-    if(groupChat){
-       const messagesList = groupChat.messagesList.sort((a,b)=>a.date.getTime() - b.date.getTime())
-      console.log(messagesList)
+    const groupChat = await groupChatModel.findOne({ 'room.courseNumber': room.courseNumber, 'room.sectionNumber': room.sectionNumber })
+    if (groupChat) {
+      const messagesList = groupChat.messagesList
       return messagesList;
     }
-   
+
   }
 
-   //Rerturns An Array with all themessages ordered by date.
-   async getLatestMessages(room: UserClassSection, messageId:string) {
-    const groupChat = await groupChatModel.findOne({ 'room.courseNumber': room.courseNumber, 'room.sectionNumber':room.sectionNumber })
-    if(groupChat){
-       const messagesList = groupChat.messagesList.sort((a,b)=>a.date.getTime() - b.date.getTime())
-       const indexlastmessage= messagesList.findIndex(message => message!._id!.toHexString() == messageId)
-       console.log("The last Message Index is: "+indexlastmessage)
-       if(indexlastmessage <15){
-        const messages =messagesList.slice(0,indexlastmessage+1);
-        console.log("Messages returned: "+ messages.length)
-        console.log(messages)
+  //Rerturns An Array with all themessages ordered by date.
+  async getLatestMessages(room: UserClassSection, messageId: string) {
+    const groupChat = await groupChatModel.findOne({ 'room.courseNumber': room.courseNumber, 'room.sectionNumber': room.sectionNumber })
+    if (groupChat) {
+      const messagesList = groupChat.messagesList
+      const indexLastMessage = messagesList.findIndex(message => message._id.toString() == messageId)
+      if (indexLastMessage < 15) {
+        const messages = messagesList.slice(0, indexLastMessage + 1);
         return messages
-       }else{
-        const messages =messagesList.slice(indexlastmessage-14,indexlastmessage+1);
-        console.log("Messages returned: "+ messages.length)
-        console.log(messages)
+      } else {
+        const messages = messagesList.slice(indexLastMessage - 14, indexLastMessage + 1);
         return messages
-       }
-         
+      }
+
     }
-   
+
   }
 
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
@@ -178,5 +169,4 @@ class DbMongoose {
   }
 
 }
-
 export default new DbMongoose();
