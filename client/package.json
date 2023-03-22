@@ -30,6 +30,7 @@
     "sass": "^1.58.0",
     "socket.io-client": "^4.6.1",
     "typescript": "^4.4.2",
+    "uuidv4": "^6.2.13",
     "web-vitals": "^2.1.0"
   },
   "scripts": {

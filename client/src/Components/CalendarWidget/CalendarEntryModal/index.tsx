@@ -2,7 +2,7 @@ import { Field, Form, Formik } from "formik";
 import { toast } from "react-toastify";
 import styles from "./CalendarEntryModal.module.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useMutation } from "react-query";
+import { useMutation, useQueryClient } from "react-query";
 import {AddEventBody} from "../../../../../types//Queries//AddEvent"
 import axios from "axios";
 import { useSections, useUser } from "../../../custom-query-hooks";
@@ -14,18 +14,16 @@ export interface CalendarEntryModalProps {
 }
 
 export default function CalendarEntryModal({onClose, date}: CalendarEntryModalProps) {  
-  
   const {t, i18n} = useTranslation(['events']);
 
   const user = useUser();
-
   const sectionsQuery = useSections({userClassSections: user.sections})
+  const qc = useQueryClient();
   
   const mutation = useMutation(async (arg: AddEventBody) => {
-    axios.post('/api/addEvent', arg)
-  });
+    await axios.post('/api/addEvent', arg)
+  }, {onSuccess: () => qc.invalidateQueries({ queryKey: ['getAllCourses'] })} );
 
-  console.log(date.getTime + "dATE")
   const initialValues = {
     title: "",
     description: "",
