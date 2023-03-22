@@ -36,22 +36,7 @@ export default function ProfileBar(props: ProfileBarProps) {
             e.preventDefault()
             props.toggleFunc()
           }}></img>
-          <h1>Login</h1>
-          <form className={styles.login} id="login">
-            <label htmlFor="username">Username</label>
-            <input className={styles.username} id="username" type="text" />
-            <label htmlFor="password">Password</label>
-            <input className={styles.password} id="password" type="password" />
-            <input className={styles.submit} id="submit" type="submit" onClick={e => {
-              e.preventDefault()
-              fetch('/api/authenticate').then(async r => {
-                const k = await r.json();
-                console.log(k.authorizationUrl);
-                window.location.href = k.authorizationUrl;
-              })
-            }} value="Login" />
-          </form>
-          <button onClick={() => {
+          <button className={styles.logout} onClick={() => {
             removeUser();
             qc.invalidateQueries(['user']);
             window.location.reload();

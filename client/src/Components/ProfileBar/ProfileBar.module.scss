@@ -5,36 +5,14 @@
   padding: 1.25rem;
   transition: right 0.2s;
   box-shadow: -3px 0px 8px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
 
-  form {
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-  }
+}
 
-  form input {
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  }
-
-  .username,
-  .password {
-    margin-bottom: 5%;
-    padding: 3%;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    border: none;
-    background-color: var(--background);
-    border-radius: 10px;
-
-  }
-
-  .submit {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+  .logout {
+    width: 200px;
+    height: 50px;
     border: none;
     border-radius: 20px;
     background-color: var(--background);
@@ -43,18 +21,19 @@
     padding: 1%;
     font-size: medium;
     font-weight: bold;
-  }
-
-  .username,
-  .password,
-  .submit:focus {
-    outline: none;
+    justify-self: center;
+    align-self: flex-end;
   }
 
   /* TODO: change this image to svg */
   .closeProfile {
     /* temp shadow to outline the white image in case of white bg */
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    //box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border: 0px;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    justify-self: flex-start;
+    align-self: flex-start;
   }
 
-}
