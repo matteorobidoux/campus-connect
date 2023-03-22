@@ -5,6 +5,7 @@ import { User } from "../../../types/User";
 
 export const getUser = () => localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')!): undefined;
 export const writeUser = (user: User) => window.localStorage.setItem('user', JSON.stringify(user));
+export const removeUser = () => window.localStorage.removeItem('user');
 
 const useGoogleOAuth = () => {
   const getter = async () => {
