@@ -29,7 +29,7 @@ export default function App() {
   const [profileUrl, changeProfileImg] = useState("")
 
 
-  const {t, i18n} = useTranslation(['app']);
+  const { t, i18n } = useTranslation(['app']);
 
   useEffect(() => {
     if (query.isSuccess) {
@@ -54,20 +54,20 @@ export default function App() {
   }, [isLoggedIn])
 
   useEffect(() => {
-    if(user !== undefined){
-    if(user.picture !== undefined){
-      changeProfileImg(user.picture)
-    } else {
-      changeProfileImg("");
+    if (user !== undefined) {
+      if (user.picture !== undefined) {
+        changeProfileImg(user.picture)
+      } else {
+        changeProfileImg("");
+      }
     }
-  }
-  },[user])
+  }, [user])
   // TODO: what should the type of e be?
   function openProfileBar() {
     setIsOpen(!isOpen)
   }
 
-  function switchComponent(component : string) {
+  function switchComponent(component: string) {
     selectComponent(component)
   }
 
@@ -81,12 +81,12 @@ export default function App() {
       <div className="app-container">
         <NavBar toggleSidebar={openProfileBar} profileUrl={profileUrl} />
         <div className="app-content-container">
-          { isLoggedIn && <> 
-            <MainSidebar selectedComponent={selectedComponent} selectChatFunc={selectNewChat} selectComponentFunc={switchComponent}/> 
-            <Main selectedComponent={selectedComponent} selectedChat={selectedChat}/>
+          {isLoggedIn && <>
+            <MainSidebar selectedComponent={selectedComponent} selectChatFunc={selectNewChat} selectComponentFunc={switchComponent} />
+            <Main selectedComponent={selectedComponent} selectedChat={selectedChat} />
           </>}
-          { !isLoggedIn && isReturningFromGoogleAuth && ( <CourseEntryWidget />)}
-          { !isReturningFromGoogleAuth && !isLoggedIn && <Login />}
+          {!isLoggedIn && isReturningFromGoogleAuth && (<CourseEntryWidget />)}
+          {!isReturningFromGoogleAuth && !isLoggedIn && <Login />}
         </div>
         <ProfileBar isOpen={isOpen} toggleFunc={openProfileBar} />
       </div>

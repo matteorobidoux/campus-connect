@@ -1,8 +1,8 @@
+import styles from "./CoursePicker.module.scss"
+import { motion } from "framer-motion"
 import { StrippedCourse } from "../../../../../types/Course"
 import { SelectedCourse } from "../CourseEntryWidget"
-import styles from "./CoursePicker.module.scss"
 import { useEffect, useState, useRef, MutableRefObject, FormEvent } from "react"
-
 
 type CoursePickerProps = {
   pickedCourse?: SelectedCourse
@@ -33,6 +33,7 @@ export default function CoursePicker(props: CoursePickerProps) {
   const sectionsInputEl: MutableRefObject<HTMLInputElement | null> = useRef(null)
   const coursesInputEl: MutableRefObject<HTMLInputElement | null> = useRef(null)
   const formEl: MutableRefObject<HTMLFormElement | null> = useRef(null)
+  const coursePickerEl: MutableRefObject<HTMLDivElement | null> = useRef(null)
 
   const handleSubmit = (e: FormSubmitEvent) => {
     const course = e.target.elements["course-choice"].value
@@ -53,6 +54,7 @@ export default function CoursePicker(props: CoursePickerProps) {
     }
     setIsAdding(false)
   }
+
   const validate = (course: string, section: string): boolean => {
     return (
       props.courses.find(_course =>
@@ -72,9 +74,30 @@ export default function CoursePicker(props: CoursePickerProps) {
 
   if (props.courses.length < 1) return <span>No courses to pick from </span>
 
+  const animation = {
+    hidden: {
+      opacity: 0,
+      transition: {
+        duration: 0.25
+      }
+    },
+    show: {
+      opacity: 1,
+      transition: {
+        duration: 0.15
+      }
+    }
+  }
+
   if (!props.pickedCourse) {
     return (
-      <div className={styles["course-picker"]}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.25 }}
+        exit={{ opacity: 0 }}
+        className={styles["course-picker"]}
+        ref={coursePickerEl}>
         {
           // Show form if you are adding
           isAdding ?
@@ -138,11 +161,20 @@ export default function CoursePicker(props: CoursePickerProps) {
             // Show Add Course button before being able to add
             <button type="button" onClick={e => { e.preventDefault(); setIsAdding(true) }}>Add Course</button>
         }
-      </div>
+      </motion.div>
     )
   } else {
     return (
-      <div className={styles["course-picker"]}>
+      <motion.div
+        layout
+        variants={animation}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        transition={{ duration: 0.25 }}
+        className={styles["course-picker"]}
+        ref={coursePickerEl}
+      >
         <form ref={formEl} onSubmit={e => {
           e.preventDefault()
           e.stopPropagation()
@@ -205,12 +237,12 @@ export default function CoursePicker(props: CoursePickerProps) {
         </form>
         {
           !props.disabled ?
-            <button type="button" onClick={e => {
+            <button className={styles["edit-button"]} type="button" onClick={e => {
               e.preventDefault()
               props.onEditingChange(false)
             }}>Done</button>
             :
-            <button type="button" onClick={e => {
+            <button className={styles["edit-button"]} type="button" onClick={e => {
               e.preventDefault()
               props.onEditingChange(true)
             }}>Edit</button>
@@ -219,7 +251,7 @@ export default function CoursePicker(props: CoursePickerProps) {
           e.preventDefault()
           props.onRemove()
         }}>Remove</button>
-      </div>
+      </motion.div>
     )
   }
 }
