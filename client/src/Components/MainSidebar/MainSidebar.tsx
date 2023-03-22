@@ -1,6 +1,7 @@
 import { UserClassSection } from "../../../../types/UserClassSection"
 import { useSections, useUser } from "../../custom-query-hooks"
 import CourseQuickViewContainer from "../CourseQuickViewContainer/CourseQuickViewContainer"
+import ChatButton from "../ChatButton/ChatButton"
 import styles from "./MainSidebar.module.scss"
 
 type MainSidebarProps = {
@@ -27,7 +28,6 @@ export default function MainSidebar(props: MainSidebarProps) {
             <button onClick={() => {
               props.selectComponentFunc("chat");
             }}>Chat</button>
-            <button>Marketplace</button>
           </div>
           {props.selectedComponent === "calender" ?(
             isLoading ? <span>Loading...</span> :
@@ -35,9 +35,11 @@ export default function MainSidebar(props: MainSidebarProps) {
                 <span>Couldn't load data</span>
 
           ) : props.selectedComponent === "chat" ?(
-              <div className={styles["groupchats"]}>
-                {user.sections.map((value, index) => <button onClick={() => props.selectChatFunc(value)}> Convo {index} </button>)}
-              </div>
+            isLoading ? <span>Loading...</span> :
+              isSuccess ? <div className={styles["groupchats"]}>
+                {user.sections.map((value,index) => <ChatButton data={data} index={index} onClick={() => props.selectChatFunc(value)} />)}
+              </div> :
+              <span>Couldn't load data</span>
             ) : null
           }
         </div>
