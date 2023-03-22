@@ -79,14 +79,14 @@ export default function CalendarEntryModal({onClose, date}: CalendarEntryModalPr
         {({ errors, isValid, isSubmitting }) => (
           <Form className={styles.form}> 
             <div className={styles.formEntry}>
-              <label htmlFor="title"> {t("title")} </label>
-              <Field id="title" name="title" />
+              <label className={styles["formTitle"]} htmlFor="title"> {t("title")} </label>
+              <Field maxlength="32" id="title" name="title" />
               <p> {errors.title ? errors.title : null} </p>
             </div>
 
             <div className={styles.formEntry}>
               <label htmlFor="description"> {t("description")} </label>
-              <Field id="description" name="description" />
+              <Field maxlength="400" as="textarea" className={styles["descTextBox"]} id="description" name="description" />
               <p> {errors.description ? errors.description : null} </p>
             </div>
 
