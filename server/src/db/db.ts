@@ -170,6 +170,4 @@ class DbMongoose {
 
 }
 
-const f= new DbMongoose()
-f.getLatestMessages({courseNumber:"574-453-DW", sectionNumber:"00001"},"641b2f57c08abd189ff18afa")
 export default new DbMongoose();
