@@ -2,7 +2,6 @@ const request = require("supertest");
 import mongoose from "mongoose";
 import { app, closeServer } from "../app";
 jest.mock("../db/db.ts");
-
 afterAll(async () => {
   jest.clearAllMocks();
   jest.restoreAllMocks();
@@ -168,7 +167,7 @@ describe("test api addCompletedEvent", () => {
     const res = await request(app)
       .post("/api/addCompletedEvent")
       .send({
-        userName: "string",
+        userId: "string",
         completedEvent: {
           id: "string",
           date: Date,

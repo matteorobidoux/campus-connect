@@ -6,6 +6,7 @@ import CalendarEventRow from "./CalendarEntry";
 import { AddEventEntry } from "./CalendarEntry/AddEventEntry";
 import styles from "./CalendarWidget.module.scss";
 import { useTranslation } from "react-i18next";
+import { useUser } from "../../custom-query-hooks";
 
 export interface CalendarWidgetProps {}
 
@@ -43,6 +44,13 @@ export function CalendarWidget({}: CalendarWidgetProps) {
       setMonth(`${months[date.getMonth()]}`);
       setDate(date);
     }
+  };
+  const user = useUser();
+  const filterEevnts= ()=>{
+      //Check for User and creation of button if User
+    let completedEvents= user.completedEvents
+    let filteredEvents= events.filter(evs => completedEvents.forEach(a=>a.id !== evs.mongoId!))
+    return filteredEvents
   };
 
   return (
