@@ -15,8 +15,10 @@ export function CourseDetailedViewModal({userClass, close}: CourseDetailedViewMo
         <div className={styles.left}>
           <h2> {userClass.courseTitle} </h2>
           <hr/>
-          <p> { userClass.teacher} </p>
-          <p> Section { Number.parseInt(userClass.number) } </p>
+          <div className={styles.info}>
+            <p> { userClass.teacher} </p>
+            <p> Section { Number.parseInt(userClass.number) } </p>
+          </div>
         </div>
 
         <div className={styles.right}>

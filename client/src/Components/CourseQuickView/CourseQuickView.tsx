@@ -16,7 +16,10 @@ export default function CourseQuickView(props: CourseQuickViewProps) {
   const animationDuration: number = 2000
   return (
     <>
-      <Rodal visible={isVisible} onClose={() => setIsVisible(false)} height={500} width={600}>
+      <Rodal visible={isVisible} onClose={() => setIsVisible(false)} height={500} width={600} customStyles={{
+        backgroundColor: "rgba(0, 0, 0, 0.05)",
+        boxShadow: "none"
+      }}>
         <CourseDetailedViewModal userClass={props.course} close={() => setIsVisible(false)} />
       </Rodal>
       <div className={styles["course-quick-view"]} onClick={e => {
