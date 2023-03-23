@@ -64,13 +64,9 @@ export default function App() {
   }, [user]);
   // TODO: what should the type of e be?
   function openProfileBar() {
-<<<<<<< HEAD
     if(isLoggedIn){
       setIsOpen(!isOpen)
     }
-=======
-    setIsOpen(!isOpen);
->>>>>>> 21fab3378f437067e1e048758b1f5b106793a139
   }
 
   function switchComponent(component: string) {
