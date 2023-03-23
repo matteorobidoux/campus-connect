@@ -1,5 +1,5 @@
-import { StrippedCourse } from './../Course';
+import { StrippedCourse } from "./../Course";
 
 export type GetAllStrippedCourses = {
-  response: StrippedCourse[]
-}
+  response: StrippedCourse[];
+};

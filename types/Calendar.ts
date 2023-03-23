@@ -9,5 +9,4 @@ export default interface CalendarEvent {
   associatedSection: {
     name: string;
   };
-
 }

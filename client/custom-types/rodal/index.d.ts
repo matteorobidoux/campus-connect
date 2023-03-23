@@ -1,5 +1,5 @@
-declare module 'rodal' {
-  import {MouseEventHandler, ReactNode} from 'react';
+declare module "rodal" {
+  import { MouseEventHandler, ReactNode } from "react";
 
   type RodalProps = {
     children?: ReactNode;
@@ -16,8 +16,8 @@ declare module 'rodal' {
     leaveAnimation?: string;
     duration?: number;
     className?: string;
-    customStyles?: {[key: string]: any};
-    customMaskStyles?: {[key: string]: any};
+    customStyles?: { [key: string]: any };
+    customMaskStyles?: { [key: string]: any };
     onClose?: MouseEventHandler<HTMLSpanElement>;
     onAnimationEnd?: () => never;
   };
