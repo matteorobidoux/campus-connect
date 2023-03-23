@@ -1,9 +1,9 @@
 import { UserClassSection } from "../UserClassSection";
-import { UserMessage } from "../UserMessage"; 
+import { UserMessage } from "../UserMessage";
 
 type AddMessage = {
-    room: UserClassSection;
-    message: UserMessage;
-}
+  room: UserClassSection;
+  message: UserMessage;
+};
 
-export type {AddMessage};
+export type { AddMessage };

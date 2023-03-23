@@ -3,9 +3,8 @@
   height: 100%;
   width: 100%;
   position: relative;
-  -webkit-box-shadow: 8px 6px 17px -3px rgba(0,0,0,0.15); 
-  box-shadow: 8px 6px 17px -3px rgba(0,0,0,0.15);
-
+  -webkit-box-shadow: 8px 6px 17px -3px rgba(0, 0, 0, 0.15);
+  box-shadow: 8px 6px 17px -3px rgba(0, 0, 0, 0.15);
 
   .svg {
     position: absolute;
@@ -21,11 +20,11 @@
     padding: 5%;
     padding-top: 8%;
     width: 100%;
-    
+
     .top {
       margin-bottom: 5%;
       height: 26%;
-      overflow:hidden;
+      overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
 
@@ -33,7 +32,7 @@
         font-weight: 400;
         font-size: 1.8rem;
         font-style: normal;
-        margin-bottom: 0.3rem;        
+        margin-bottom: 0.3rem;
       }
       h2 {
         font-family: Inter;
@@ -47,14 +46,13 @@
 
     .center {
       height: 55%;
-      overflow-wrap:break-word;
-      text-overflow:clip;
+      overflow-wrap: break-word;
+      text-overflow: clip;
       overflow: hidden;
       h3 {
         font-size: 1rem;
         font-weight: bold;
         margin-bottom: 2%;
-
       }
 
       // errors logs based on user; based on page; log everything?
@@ -84,9 +82,6 @@
           cursor: pointer;
         }
       }
-
     }
-
   }
 }
-
