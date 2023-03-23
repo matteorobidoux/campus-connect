@@ -32,7 +32,10 @@ export default function ProfileBar(props: ProfileBarProps) {
         showMask={true}
         showCloseButton={false}
         closeMaskOnClick={true}
-        onClose={() => { props.toggleFunc() }}>
+        onClose={() => {
+          props.toggleFunc();
+        }}
+      >
         <div className={styles.profileBar}>
           <img className={styles.closeProfile} src={closeImg} alt="close icon" onClick={e => {
             e.preventDefault()
@@ -62,5 +65,5 @@ export default function ProfileBar(props: ProfileBarProps) {
         </div>
       </Rodal>
     </>
-  )
+  );
 }

@@ -1,13 +1,16 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
-const {Schema, model} = mongoose;
+const { Schema, model } = mongoose;
 
-const slotSchema = new Schema({
+const slotSchema = new Schema(
+  {
     day: String,
     startTime: String,
     duration: Number,
-    classroom: String
-}, {collection: 'Slots'});
+    classroom: String,
+  },
+  { collection: "Slots" }
+);
 
-const Slot = model('Slot', slotSchema);
+const Slot = model("Slot", slotSchema);
 export default Slot;

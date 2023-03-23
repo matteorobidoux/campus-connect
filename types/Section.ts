@@ -4,10 +4,10 @@ export type Section = {
   teacher: string;
   number: string;
   events: Array<any>;
-  students: string[]
-}
+  students: string[];
+};
 
 export type StrippedSection = {
   teacher: string;
   number: string;
-}
+};
