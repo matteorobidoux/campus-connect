@@ -35,15 +35,11 @@
 
     .groupchats {
       display: flex;
+      width: auto;
+      margin: 1rem auto;
       flex-direction: column;
-      width: 100%;
-
-      button {
-        width: 25%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5%;
-      }
+      align-items: center;
+      gap: 1rem;
     }
   }
 }
