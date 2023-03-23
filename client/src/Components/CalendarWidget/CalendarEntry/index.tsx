@@ -10,6 +10,7 @@ export interface CalendarEventRowProps {
 }
 
 export default function CalendarEventRow({ event }: CalendarEventRowProps) {
+  console.log(event);
   const [isVisible, setIsVisible] = useState(false);
 
   const { t, i18n } = useTranslation(["events"]);

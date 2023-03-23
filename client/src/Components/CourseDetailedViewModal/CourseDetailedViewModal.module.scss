@@ -1,6 +1,8 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  gap: 15px;
 
   .top {
     display: flex;
@@ -9,7 +11,7 @@
 
     .left {
       display: flex;
-      background-color: #A1F683;
+      background-color: #a1f683;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -34,7 +36,6 @@
         width: 94%;
       }
 
-
       padding: 5%;
       width: 45%;
     }
@@ -48,6 +49,11 @@
     width: 100%;
     background-color: white;
     flex-grow: 1;
-  }
+    border-radius: 7px;
 
+    .left {
+      display: flex;
+      flex-grow: 1;
+    }
+  }
 }
