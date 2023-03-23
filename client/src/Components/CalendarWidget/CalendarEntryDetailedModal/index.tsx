@@ -9,6 +9,7 @@ import { Events } from "../../../../../types/Event";
 import { useSections, useUser } from "../../../custom-query-hooks";
 import axios from "axios";
 import RemoveEventBodyParams from "../../../../../types/Queries/RemoveEvent"
+import CompletedEventBodyParams from "../../../../../types/Queries/CompletedEvent"
 export interface CalendarEntryDetailedModalProps {
   event: Events;
   close: () => void;
@@ -21,17 +22,25 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
   //Check for User and creation of button if User
   const user = useUser();
   const sectionsQuery = useSections({ userClassSections: user.sections });
-
+  
   const queryClient = useQueryClient();
 
   const {t} = useTranslation(['events']);
 
   const markAsDone = useMutation(async () => {
+    addCompletedEvent.mutateAsync({
+      userId: user._id,
+      completedEvent: {id: event.mongoId!, date: new Date()}
+    })
     await new Promise(resolve => setTimeout(resolve, 1000));
   }, {
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ['events'] }),
     onSettled: () => { close(); }
   });
+
+  const addCompletedEvent = useMutation(async (arg: CompletedEventBodyParams)=>{
+    await axios.post('/api/addCompletedEvent', arg)
+  })
 
   useEffect(() => {
     const toastId = 'updatingEvent';

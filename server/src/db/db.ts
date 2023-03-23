@@ -62,8 +62,8 @@ class DbMongoose {
   }
 
 
-  async addCompletedEvent({ userName, completedEvent }: CompletedEventBodyParams) {
-    const user = await userModel.findOne({ name: userName });
+  async addCompletedEvent({ userId, completedEvent }: CompletedEventBodyParams) {
+    const user = await userModel.findOne({ _id: userId });
     if (user) {
       user.completedEvents.push(completedEvent);
       const resp = await user.save()
