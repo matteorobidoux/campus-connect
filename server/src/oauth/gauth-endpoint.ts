@@ -19,9 +19,9 @@ export default async function GAuth(req: Request, res: Response<GAuthResponse>) 
     });
 
     const resp = (await oauth2.userinfo.get()).data;
-    const { id: gid, email, picture } = resp;
+    const { id: gid, email, picture, family_name, given_name } = resp;
 
-    if (!gid || !email || !picture || !token.tokens.access_token || !token.tokens.refresh_token) {
+    if (!gid || !email || !picture || !token.tokens.access_token || !token.tokens.refresh_token || !given_name || !family_name) {
       res.status(400).json({error: "Couldn't find one of the required infos from google."});
       return;
     }
@@ -41,7 +41,9 @@ export default async function GAuth(req: Request, res: Response<GAuthResponse>) 
       email,
       picture,
       refresh_token: token.tokens.refresh_token,
-      access_token: token.tokens.access_token, }
+      access_token: token.tokens.access_token, 
+      family_name,
+      given_name}
     });
 
   } catch(e: any) {

@@ -11,7 +11,6 @@ import ProfileBar from './Components/ProfileBar/ProfileBar';
 import { useGoogleOAuth } from './custom-query-hooks/useGoogleOAuth';
 import { useUser } from './custom-query-hooks';
 import Login from './Components/Login/Login';
-import CourseEntryWidget from './Components/CourseEntryWidget/CourseEntryWidget';
 import { UserClassSection } from '../../types/UserClassSection';
 
 import { useTranslation } from 'react-i18next';
@@ -44,6 +43,13 @@ export default function App() {
   }, [query.data, query.isSuccess])
 
   useEffect(() => {
+    if (user !== undefined) {
+      if (user.picture !== undefined) {
+        changeProfileImg(user.picture)
+      } else {
+        changeProfileImg("");
+      }
+    }
     setIsLoggedIn(user !== undefined)
   }, [user])
 
@@ -52,17 +58,7 @@ export default function App() {
       setIsReturningFromGoogleAuth(false);
     }
   }, [isLoggedIn])
-
-  useEffect(() => {
-    if (user !== undefined) {
-      if (user.picture !== undefined) {
-        changeProfileImg(user.picture)
-      } else {
-        changeProfileImg("");
-      }
-    }
-  }, [user])
-  // TODO: what should the type of e be?
+  
   function openProfileBar() {
     setIsOpen(!isOpen)
   }
@@ -85,8 +81,7 @@ export default function App() {
             <MainSidebar selectedComponent={selectedComponent} selectChatFunc={selectNewChat} selectComponentFunc={switchComponent} />
             <Main selectedComponent={selectedComponent} selectedChat={selectedChat} />
           </>}
-          {!isLoggedIn && isReturningFromGoogleAuth && (<CourseEntryWidget />)}
-          {!isReturningFromGoogleAuth && !isLoggedIn && <Login />}
+          {!isLoggedIn && <Login returningFromGoogleAuth={isReturningFromGoogleAuth} givenName={query.isSuccess ? query.data["given_name"] : undefined} familyName={query.isSuccess ? query.data["family_name"] : undefined}/>}
         </div>
         <ProfileBar isOpen={isOpen} toggleFunc={openProfileBar} />
       </div>

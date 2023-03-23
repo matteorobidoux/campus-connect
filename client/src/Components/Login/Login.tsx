@@ -22,7 +22,13 @@ type PersonName = {
   lastName: string
 }
 
-export default function Login() {
+type LoginProps = {
+  returningFromGoogleAuth: boolean
+  givenName: string,
+  familyName: string,
+}
+
+export default function Login(props: LoginProps) {
   const [firstLogin, setFirstLogin] = useState<boolean>(false)
   const [isNameValid, setIsNameValid] = useState<boolean>(false)
   const [isNameEntered, setIsNameEntered] = useState<boolean>(false)
@@ -36,13 +42,13 @@ export default function Login() {
     setIsNameEntered(isValid)
     if (isValid) {
       setName({
-        firstName: firstName,
-        lastName: lastName
+        firstName,
+        lastName
       })
     }
   }
 
-  const { t, i18n } = useTranslation(["login"]);
+  const { t } = useTranslation(["login"]);
 
   const onConnectWithGoogle = () => {
     fetch('/api/authenticate').then(async r => {
@@ -50,12 +56,12 @@ export default function Login() {
       console.log(k.authorizationUrl);
       window.location.href = k.authorizationUrl;
     })
-  }
+  }  
 
   return (
     <div className={styles["login-container"]}>
       <div className={styles["options-menu"]}>
-        {!firstLogin ?
+        {!firstLogin && !props.returningFromGoogleAuth ?
           <>
             <h1 className={styles.title}>{t("welcome")}</h1>
             <h4 className={styles.message}>{t("selectOption")}</h4>
@@ -74,9 +80,11 @@ export default function Login() {
                 validateNames(e)
               }}>
                 <label htmlFor="firstName">Enter your first name:</label>
-                <input type="text" id="firstName" name="firstName" />
+                <input type="text" id="firstName" name="firstName" 
+                {...(props.givenName !== undefined ? {defaultValue: props.givenName} : {})}/>
                 <label htmlFor="lastName">Enter your last name:</label>
-                <input type="text" id="lastName" name="lastName" />
+                <input type="text" id="lastName" name="lastName" 
+                {...(props.familyName !== undefined ? {defaultValue: props.familyName} : {})}/>
                 <button type="submit" onClick={(e) => {
                   e.stopPropagation()
                 }}>Continue</button>

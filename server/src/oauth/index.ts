@@ -22,7 +22,8 @@ function generateOAuthClient() {
 function generateAuthUrl(res: Response) {
   const oauth2Client = generateOAuthClient();
   const scopes = [
-    'https://www.googleapis.com/auth/userinfo.email'
+    'https://www.googleapis.com/auth/userinfo.email',
+    'https://www.googleapis.com/auth/userinfo.profile'
   ];
 
   console.log('generating url...');
