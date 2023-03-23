@@ -8,12 +8,13 @@ import { GetAllSectionsRequest, GetAllSectionsResponse } from "../../types/Queri
 import { LoginRequest } from "../../types/Queries/Login";
 import { AddEventBody, AddEventResponse } from "../../types/Queries/AddEvent";
 import { Events } from "../../types/Event";
-
+import {LatestMessage} from "../../types/Queries/LatestMessage"
 import { generateAuthUrl } from "./oauth";
 import cors from "cors";
 import GAuth from "./oauth/gauth-endpoint";
 import http from "http";
 import { createServer } from './chat/index';
+import { UserClassSection } from '../../types/UserClassSection';
 
 const app = express();
 const port = 8080
@@ -70,6 +71,26 @@ app.post("/api/addEvent", async (req, res: Response<AddEventResponse>) =>{
 
   await DbMongoose.addEventToSection(body.section.courseNumber, body.section.sectionNumber, body.event);
   res.json({success: true});
+})
+
+app.get("/api/getAllMessages", async (req, res) => {
+  const {courseNumber, sectionNumber } = req.body as Partial<UserClassSection>;
+  if(!courseNumber ||!sectionNumber){
+    res.sendStatus(400)
+  } else {
+   const result = await DbMongoose.getAllMessages({courseNumber, sectionNumber})
+   res.json(result)
+  }
+})
+
+app.get("/api/getLatestMessages", async (req, res) => {
+  const {room, messageId } = req.body as Partial<LatestMessage>;
+  if(!room ||!messageId){
+    res.sendStatus(400)
+  } else {
+   const result = await DbMongoose.getLatestMessages(room, messageId)
+   res.json(result)
+  }
 })
 
 app.get("/api/getAllSections", async (req, res: Response<GetAllSectionsResponse>) => {

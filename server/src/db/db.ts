@@ -2,9 +2,11 @@ import mongoose from 'mongoose';
 import User from "./models/user-schema"
 import Event from './models/event-schema';
 import Course from "./models/course-schema";
+import groupChatModel from './models/group-chat-schema';
 import { UserClass } from "../../../types/UserClass"
 import CreateUserBodyParams from "../../../types/Queries/CreateUser";
 import { UserClassSection } from "../../../types/UserClassSection"
+import { AddMessage } from "../../../types/Queries/AddMessage"
 import { GetAllSectionsResponse } from "../../../types/Queries/GetAllCourses"
 import { LoginRequest, LoginResponse } from "../../../types/Queries/Login";
 import CompletedEventBodyParams from '../../../types/Queries/CompletedEvent';
@@ -14,6 +16,7 @@ import Section from './models/section-schema';
 import { Events } from '../../../types/Event';
 import { generateOAuthClient } from "../oauth/";
 import { google } from 'googleapis';
+import { UserMessage } from '../../../types/UserMessage';
 
 const dname = process.env.NAME || 'CampusConnect'
 
@@ -44,12 +47,20 @@ class DbMongoose {
 
   }
 
-  async addUser({name, sections, picture, googleTokens, email, gid}: CreateUserBodyParams): Promise<string> {
+  async addUser({ name, sections, picture, googleTokens, email, gid }: CreateUserBodyParams): Promise<string> {
     const userModel = new User({ name, sections, picture, googleTokens, email, gid });
     console.log(userModel)
     await userModel.save();
     return userModel.toObject()
   }
+
+  //Creates a Group chat based on course Number and Section
+  async groupChat({ courseNumber, sectionNumber }: UserClassSection): Promise<string> {
+    const groupChat = new groupChatModel({ room: { courseNumber: courseNumber, sectionNumber: sectionNumber } });
+    await groupChat.save();
+    return groupChat.toObject()
+  }
+
 
   async addCompletedEvent({ userName, completedEvent }: CompletedEventBodyParams) {
     const user = await userModel.findOne({ name: userName });
@@ -77,8 +88,46 @@ class DbMongoose {
     const section = course.sections.find(s => s.number == sectionNumber)!;
     console.log("section: ", sectionNumber)
     section.events.push(event);
-    section.events[section.events.length-1].mongoId =section.events[section.events.length-1]._id
+    section.events[section.events.length - 1].mongoId = section.events[section.events.length - 1]._id
     await course.save();
+  }
+
+  //Adds Message needs room{UserClassSection}and message:{UserMessage}
+  async addMessage({ room, message }: AddMessage) {
+    const groupChat = await groupChatModel.findOne({ 'room.courseNumber': room.courseNumber, 'room.sectionNumber': room.sectionNumber })
+    if (groupChat) {
+      groupChat.messagesList.push(message)
+      await groupChat.save()
+    } else {
+      console.log("Dit not find the room")
+    }
+  }
+  //Rerturns An Array with all themessages ordered by date.
+  async getAllMessages(room: UserClassSection) {
+    const groupChat = await groupChatModel.findOne({ 'room.courseNumber': room.courseNumber, 'room.sectionNumber': room.sectionNumber })
+    if (groupChat) {
+      const messagesList = groupChat.messagesList
+      return messagesList;
+    }
+
+  }
+
+  //Rerturns An Array with all themessages ordered by date.
+  async getLatestMessages(room: UserClassSection, messageId: string) {
+    const groupChat = await groupChatModel.findOne({ 'room.courseNumber': room.courseNumber, 'room.sectionNumber': room.sectionNumber })
+    if (groupChat) {
+      const messagesList = groupChat.messagesList
+      const indexLastMessage = messagesList.findIndex(message => message._id!.toString() == messageId)
+      if (indexLastMessage < 15) {
+        const messages = messagesList.slice(0, indexLastMessage + 1);
+        return messages
+      } else {
+        const messages = messagesList.slice(indexLastMessage - 14, indexLastMessage + 1);
+        return messages
+      }
+
+    }
+
   }
 
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
