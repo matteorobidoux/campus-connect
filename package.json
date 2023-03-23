@@ -5,10 +5,16 @@
     "install:all": "cd ./client && npm i && cd ../server && npm i",
     "dev": "cd ./client && npm run start && cd ../server && npm run dev ",
     "build": "cd ./client && npm run build && cd ../server && npm run build",
-    "start": "cd ./server && start npm run dev && cd ../client && start npm start"
+    "start": "cd ./server && start npm run dev && cd ../client && start npm start",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
     "url": "git+https://gitlab.com/dawson2223/620-w23/s01/TeamB/campus-connect.git"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "prettier": "2.8.6",
+    "pretty-quick": "^3.1.3"
   }
 }

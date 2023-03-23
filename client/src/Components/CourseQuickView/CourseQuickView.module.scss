@@ -35,7 +35,7 @@
   box-shadow: -5px 4px 12px 3px rgba(0, 0, 0, 0.07);
   position: relative;
 
-  &:hover>h2 {
+  &:hover > h2 {
     text-overflow: unset;
     overflow: auto;
     white-space: pre-wrap;
