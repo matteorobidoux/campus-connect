@@ -46,6 +46,14 @@ export default function ProfileBar(props: ProfileBarProps) {
         } 
         <button className={styles.changeProfileImg}>Change</button>
         <h1>Elidjay Ross</h1>
+        <div className={styles.profileInfo}>
+        <h3>School: Dawson College</h3>
+        <h3>Program: Computer Science</h3>
+        <h3>Total Courses: 5</h3>
+        <h3>Active Events: 7</h3>
+        <h3>Completed Events: 3</h3>
+
+        </div>
           <button className={styles.logout} onClick={() => {
             removeUser();
             qc.invalidateQueries(['user']);
