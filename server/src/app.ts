@@ -78,7 +78,7 @@ app.get("/api/getAllMessages", async (req, res) => {
   if(!courseNumber ||!sectionNumber){
     res.sendStatus(400)
   } else {
-   const result= await DbMongoose.getAllMessages({courseNumber, sectionNumber})
+   const result = await DbMongoose.getAllMessages({courseNumber, sectionNumber})
    res.json(result)
   }
 })
@@ -88,7 +88,7 @@ app.get("/api/getLatestMessages", async (req, res) => {
   if(!room ||!messageId){
     res.sendStatus(400)
   } else {
-   const result= await DbMongoose.getLatestMessages(room, messageId)
+   const result = await DbMongoose.getLatestMessages(room, messageId)
    res.json(result)
   }
 })
