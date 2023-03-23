@@ -8,7 +8,6 @@ type MainProps = {
   selectedChat: UserClassSection | null; 
 }
 
-
 export default function Main(props: MainProps) {
   return (
     <div className={styles["main-content-container"]}>

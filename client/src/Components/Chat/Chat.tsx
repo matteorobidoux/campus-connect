@@ -56,8 +56,8 @@ export default function Chat({ selectedChat }: ChatProps) {
   return (
     <>
       <div className={styles["main-chat"]}>
-        <section className={styles["msger"]}>
-          <header className={styles["msger-header"]}>
+        <div className={styles["msger"]}>
+          <div className={styles["msger-header"]}>
             <div className={styles["msger-header-title"]}>
               <i className={styles["fas fa-comment-alt"]}></i> 
               {sections.data?.find(s => s.courseNumber === selectedChat.courseNumber)?.courseTitle}
@@ -65,9 +65,9 @@ export default function Chat({ selectedChat }: ChatProps) {
             <div className={styles["msger-header-options"]}>
               <span><i className={styles["fas fa-cog"]}></i></span>
             </div>
-          </header>
+          </div>
 
-          <main className={styles["msger-chat"]}>
+          <div className={styles["msger-chat"]}>
             {messages.map((message, i) => 
               <div ref={lastMessageRef}>
                 <Message leftOrRight={message.user._id === user._id ? "right-msg" : "left-msg"}
@@ -75,7 +75,7 @@ export default function Chat({ selectedChat }: ChatProps) {
               </div>
             )}
 
-          </main>
+          </div>
 
           <div className={styles["msger-inputarea"]}>
             <input 
@@ -87,7 +87,7 @@ export default function Chat({ selectedChat }: ChatProps) {
             ></input>
           </div>
 
-        </section>
+        </div>
 
 
       </div>

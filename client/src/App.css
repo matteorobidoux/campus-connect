@@ -19,6 +19,7 @@
     justify-content: center;
     position: relative;
     margin: auto;
+    overflow-y: hidden;
 }
 
 @media only screen and (max-width: 900px) {
