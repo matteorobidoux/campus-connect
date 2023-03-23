@@ -88,7 +88,7 @@ export default function App() {
           {!isLoggedIn && isReturningFromGoogleAuth && (<CourseEntryWidget />)}
           {!isReturningFromGoogleAuth && !isLoggedIn && <Login />}
         </div>
-        <ProfileBar isOpen={isOpen} toggleFunc={openProfileBar} />
+        <ProfileBar isOpen={isOpen} toggleFunc={openProfileBar} profileUrl={profileUrl} />
       </div>
     </>
   );

@@ -60,7 +60,7 @@ function NavBar(props: NavBarProps) {
           props.toggleSidebar(e)
           }}></img>
           ) : props.profileUrl.length > 1 ?(
-            <img className={styles["profileImg"]} src={props.profileUrl} alt="profile" onClick={e => {
+            <img className={styles["profileImg"]} src={props.profileUrl} referrerPolicy="no-referrer" alt="profile" onClick={e => {
               e.preventDefault()
             props.toggleSidebar(e)
             }}></img>

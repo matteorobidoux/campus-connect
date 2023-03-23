@@ -3,11 +3,13 @@ import closeImg from "../../assets/close.png"
 import Rodal from "rodal"
 import { removeUser } from "../../custom-query-hooks/useGoogleOAuth"
 import { useQueryClient } from "react-query"
+import profileImg from "../../assets/profile.png"
 
 //fix type script stuff
 type ProfileBarProps = {
   isOpen: boolean,
-  toggleFunc: () => void
+  toggleFunc: () => void,
+  profileUrl: string
 }
 
 export default function ProfileBar(props: ProfileBarProps) {
@@ -36,6 +38,14 @@ export default function ProfileBar(props: ProfileBarProps) {
             e.preventDefault()
             props.toggleFunc()
           }}></img>
+          {props.profileUrl === "" ?(
+          <img className={styles["profileImg"]} src={profileImg} alt="profile" referrerPolicy="no-referrer"></img>
+          ) : props.profileUrl.length > 1 ?(
+            <img className={styles["profileImg"]} referrerPolicy="no-referrer" src={props.profileUrl} alt="profile"></img>
+          ) : null
+        } 
+        <button className={styles.changeProfileImg}>Change</button>
+        <h1>Elidjay Ross</h1>
           <button className={styles.logout} onClick={() => {
             removeUser();
             qc.invalidateQueries(['user']);
