@@ -4,7 +4,7 @@ import { UserClass } from "../UserClass";
 type GetAllSectionsResponse = UserClass[];
 
 type GetAllSectionsRequest = {
-  userClassSections: UserClassSection[]
-}
+  userClassSections: UserClassSection[];
+};
 
-export type {GetAllSectionsRequest, GetAllSectionsResponse} ;
+export type { GetAllSectionsRequest, GetAllSectionsResponse };

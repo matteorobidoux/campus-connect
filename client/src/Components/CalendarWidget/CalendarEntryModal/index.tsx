@@ -1,35 +1,41 @@
 import { Field, Form, Formik } from "formik";
 import { toast } from "react-toastify";
-import styles from "./CalendarEntryModal.module.scss"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import styles from "./CalendarEntryModal.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMutation, useQueryClient } from "react-query";
-import {AddEventBody} from "../../../../../types//Queries//AddEvent"
+import { AddEventBody } from "../../../../../types//Queries//AddEvent";
 import axios from "axios";
 import { useSections, useUser } from "../../../custom-query-hooks";
 import { useTranslation } from "react-i18next";
 
 export interface CalendarEntryModalProps {
   onClose: () => void;
-  date: Date
+  date: Date;
 }
 
-export default function CalendarEntryModal({onClose, date}: CalendarEntryModalProps) {  
-  const {t, i18n} = useTranslation(['events']);
+export default function CalendarEntryModal({
+  onClose,
+  date,
+}: CalendarEntryModalProps) {
+  const { t, i18n } = useTranslation(["events"]);
 
   const user = useUser();
-  const sectionsQuery = useSections({userClassSections: user.sections})
+  const sectionsQuery = useSections({ userClassSections: user.sections });
   const qc = useQueryClient();
-  
-  const mutation = useMutation(async (arg: AddEventBody) => {
-    await axios.post('/api/addEvent', arg)
-  }, {onSuccess: () => qc.invalidateQueries({ queryKey: ['getAllCourses'] })} );
+
+  const mutation = useMutation(
+    async (arg: AddEventBody) => {
+      await axios.post("/api/addEvent", arg);
+    },
+    { onSuccess: () => qc.invalidateQueries({ queryKey: ["getAllCourses"] }) }
+  );
 
   const initialValues = {
     title: "",
     description: "",
     courseTitle: "",
-    date: new Date(date)
-  }
+    date: new Date(date),
+  };
 
   return (
     <div className={styles.wrapper}>
@@ -37,27 +43,29 @@ export default function CalendarEntryModal({onClose, date}: CalendarEntryModalPr
       <Formik
         initialValues={initialValues}
         onSubmit={async (values) => {
-          toast.loading("Adding event...", {toastId: 'addingEvent'});
-          const course = sectionsQuery!.data!.find(s => s.courseTitle === values.courseTitle)
+          toast.loading("Adding event...", { toastId: "addingEvent" });
+          const course = sectionsQuery!.data!.find(
+            (s) => s.courseTitle === values.courseTitle
+          );
           await mutation.mutateAsync({
             ...values,
             section: {
               courseNumber: course!.courseNumber,
-              sectionNumber: course!.number
+              sectionNumber: course!.number,
             },
             event: {
               courseTitle: course!.courseTitle,
               ownerId: user._id,
               date: values.date,
               title: values.title,
-              desc: values.description
-            }
+              desc: values.description,
+            },
           });
-          toast.done('addingEvent');
+          toast.done("addingEvent");
           onClose();
         }}
-        validate={values => {
-          const errors: {[key: string]: string} = {};
+        validate={(values) => {
+          const errors: { [key: string]: string } = {};
           // eslint-disable-next-line eqeqeq
           if (values.title == "") {
             errors.title = t("titleError");
@@ -75,18 +83,27 @@ export default function CalendarEntryModal({onClose, date}: CalendarEntryModalPr
           return errors;
         }}
         validateOnBlur={true}
-      > 
+      >
         {({ errors, isValid, isSubmitting }) => (
-          <Form className={styles.form}> 
+          <Form className={styles.form}>
             <div className={styles.formEntry}>
-              <label htmlFor="title"> {t("title")} </label>
-              <Field id="title" name="title" />
+              <label className={styles["formTitle"]} htmlFor="title">
+                {" "}
+                {t("title")}{" "}
+              </label>
+              <Field maxlength="32" id="title" name="title" />
               <p> {errors.title ? errors.title : null} </p>
             </div>
 
             <div className={styles.formEntry}>
               <label htmlFor="description"> {t("description")} </label>
-              <Field id="description" name="description" />
+              <Field
+                maxlength="400"
+                as="textarea"
+                className={styles["descTextBox"]}
+                id="description"
+                name="description"
+              />
               <p> {errors.description ? errors.description : null} </p>
             </div>
 
@@ -94,13 +111,22 @@ export default function CalendarEntryModal({onClose, date}: CalendarEntryModalPr
               <label htmlFor="courseTitle"> {t("class")} </label>
               <Field as="select" id="courseTitle" name="courseTitle">
                 <option value="DEFAULT"> {t("pickAClass")} </option>
-                {sectionsQuery.data?.map(s => <option value={s.courseTitle} key={s.courseTitle}> {s.courseTitle} </option>)}
+                {sectionsQuery.data?.map((s) => (
+                  <option value={s.courseTitle} key={s.courseTitle}>
+                    {" "}
+                    {s.courseTitle}{" "}
+                  </option>
+                ))}
               </Field>
               <p> {errors.courseTitle ? errors.courseTitle : null} </p>
             </div>
 
             <button type="submit" disabled={!isValid}>
-              {!isSubmitting ? t("submit") : <FontAwesomeIcon icon="circle-notch" className="fa-spin"/>}
+              {!isSubmitting ? (
+                t("submit")
+              ) : (
+                <FontAwesomeIcon icon="circle-notch" className="fa-spin" />
+              )}
             </button>
           </Form>
         )}

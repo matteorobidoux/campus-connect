@@ -4,12 +4,15 @@
   justify-content: center;
   padding: 1rem;
   background-color: rgb(249 249 249);
-  -webkit-box-shadow: 8px 6px 17px -3px rgba(0,0,0,0.15); 
-  box-shadow: 8px 6px 17px -3px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 8px 6px 17px -3px rgba(0, 0, 0, 0.15);
+  box-shadow: 8px 6px 17px -3px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
   min-height: 20px;
   font-weight: 200;
   width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 
   .left {
     display: flex;
@@ -22,11 +25,10 @@
     }
   }
 
-
   .vl {
     border-left: 3px solid black;
     min-height: 100%;
-    border-color: #2084E7;
+    border-color: #2084e7;
     margin: 0 0.8rem 0 0.5rem;
   }
 
@@ -38,22 +40,21 @@
 
     .className {
       margin-right: 1rem;
-    }
-    
-    .eventName {
-      font-weight: 400;
+      font-size: large;
     }
 
+    .eventName {
+      font-weight: 400;
+      font-size: medium;
+    }
   }
 
   .plus {
     padding: 0;
     margin: 0;
-
   }
 }
 
 .selectable {
   cursor: pointer;
 }
-
