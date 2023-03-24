@@ -70,6 +70,14 @@ class DbMongoose {
     }
   }
 
+  async changeUserImage({ id, picture }: { id: string, picture: string }) {
+    const user = await User.findOne({ _id: id });
+    if (user) {
+      user.picture = picture;
+      await user.save();      
+    }
+  }
+
   async addEventToSection(courseNumber: string, sectionNumber: string, event: Events) {
     const courses = (await Course.find({ number: courseNumber }));
     courses.forEach(c => c.sections.forEach(s => console.log(s.number)));

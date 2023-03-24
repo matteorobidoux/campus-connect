@@ -1,5 +1,5 @@
 import { GetAllStrippedCourses } from './../../types/Queries/Register';
-import express, { Response } from "express";
+import express, { Response , Request} from "express";
 import CreateUserBodyParams from "../../types/Queries/CreateUser";
 import CompletedEventBodyParams from "../../types/Queries/CompletedEvent"
 import RemoveEventBodyParams from "../../types/Queries/RemoveEvent"
@@ -7,7 +7,8 @@ import DbMongoose from "./db/db"
 import { GetAllSectionsRequest, GetAllSectionsResponse } from "../../types/Queries/GetAllCourses";
 import { LoginRequest } from "../../types/Queries/Login";
 import { AddEventBody, AddEventResponse } from "../../types/Queries/AddEvent";
-import { Events } from "../../types/Event";
+import fileUpload from 'express-fileupload';
+import { BlobServiceClient } from '@azure/storage-blob';
 
 import { generateAuthUrl } from "./oauth";
 import cors from "cors";
@@ -15,11 +16,20 @@ import GAuth from "./oauth/gauth-endpoint";
 import http from "http";
 import { createServer } from './chat/index';
 
+require('dotenv').config({ path: __dirname + '/.env'});
+
+const sasToken = process.env.AZURE_SAS;
+const storageAccountName = process.env.AZURE_STORAGE_ACCOUNT_NAME;
+const containerName = "blobstorage";
+const blobService = new BlobServiceClient(`https://${storageAccountName}.blob.core.windows.net/?${sasToken}`);
+const containerClient = blobService.getContainerClient(containerName);
+
 const app = express();
 const port = 8080
 
 app.use(cors())
 app.use(express.json())
+app.use(fileUpload())
 
 app.get("/users", async (_, res) => {
   const result = await DbMongoose.getAllUsers()
@@ -49,8 +59,24 @@ app.post('/api/addCompletedEvent', async (req,res)=>{
   } else {
     res.json({id: await DbMongoose.addCompletedEvent({userName, completedEvent})})
   }
-  
 })
+
+app.post('/api/uploadBlob', async (req, res)=>{
+  if (req.files !== null && req.files !== undefined) {
+    if (!(req.files.file instanceof Array)) {
+      const file : fileUpload.UploadedFile = req.files.file;
+      const blobName = req.files.file.name;
+      const blobClient = containerClient.getBlockBlobClient(blobName);
+      const options = { blobHTTPHeaders: { blobContentType: file.mimetype } };
+      console.log("Saving File to Azure Blob Storage")
+      await blobClient.uploadData(file.data, options)
+        .then((data: { _response: any; }) => console.log(data, data._response))
+      const uploadedUrl: URL = new URL(`https://${storageAccountName}.blob.core.windows.net/${containerName}/${blobName}`)
+      await DbMongoose.changeUserImage({id: req.body.id, picture: uploadedUrl.toString()})
+      return res.status(200).json({ status: "success", url: uploadedUrl.toString() });
+    }
+  }
+});
 
 app.post('/api/removeEvent', async (req,res)=>{
   const {eventId , courseNumber, courseSection} = req.body as Partial<RemoveEventBodyParams>;

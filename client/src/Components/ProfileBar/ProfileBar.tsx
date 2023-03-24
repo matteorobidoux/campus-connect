@@ -3,15 +3,33 @@ import closeImg from "../../assets/close.png"
 import Rodal from "rodal"
 import { removeUser } from "../../custom-query-hooks/useGoogleOAuth"
 import { useQueryClient } from "react-query"
+import axios from "axios"
+import { useUser } from "../../custom-query-hooks"
 
 //fix type script stuff
 type ProfileBarProps = {
   isOpen: boolean,
-  toggleFunc: () => void
+  toggleFunc: () => void,
+  changeProfileImg: (url: string | null) => void
 }
 
 export default function ProfileBar(props: ProfileBarProps) {
   const qc = useQueryClient();
+  const user = useUser();
+  let file: File | null = null;
+
+  async function uploadFile(file: File | null){
+    console.log(file)
+    if (file !== null) {
+      var formData = new FormData();
+      formData.append('file',file);
+      formData.append('id', user._id)
+      let post = await axios.post('/api/uploadBlob', formData)
+      let response = await post.data;
+      console.log(response.url)
+      props.changeProfileImg(response.url)
+    }
+  }
 
   return (
     <>
@@ -36,6 +54,15 @@ export default function ProfileBar(props: ProfileBarProps) {
             e.preventDefault()
             props.toggleFunc()
           }}></img>
+            <button>
+            Set Image
+            <input type="file" name="file" onChange={(event) => {
+                  file = event.currentTarget.files ? event.currentTarget.files[0] : null;
+                }} />
+            </button>
+            <button onClick={()=> uploadFile(file)}>
+              Submit
+            </button>
           <h1>Login</h1>
           <form className={styles.login} id="login">
             <label htmlFor="username">Username</label>

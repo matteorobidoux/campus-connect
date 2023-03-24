@@ -10,5 +10,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://gitlab.com/dawson2223/620-w23/s01/TeamB/campus-connect.git"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
   }
 }

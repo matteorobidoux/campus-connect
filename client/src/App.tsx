@@ -26,7 +26,7 @@ export default function App() {
   const [isReturningFromGoogleAuth, setIsReturningFromGoogleAuth] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(query.data?._id)
   const [selectedChat, selectChat] = useState<UserClassSection | null>(null);
-  const [profileUrl, changeProfileImg] = useState("")
+  const [profileUrl, changeProfileImg] = useState("");
 
 
   const { t, i18n } = useTranslation(['app']);
@@ -55,7 +55,9 @@ export default function App() {
 
   useEffect(() => {
     if (user !== undefined) {
-      if (user.picture !== undefined) {
+      if(profileUrl !== ""){
+        changeProfileImg(profileUrl)
+      } else if (user.picture !== undefined) {
         changeProfileImg(user.picture)
       } else {
         changeProfileImg("");
@@ -75,6 +77,12 @@ export default function App() {
     selectChat(course)
   }
 
+  function setProfileImg(url: string | null) {
+    if (url) {
+      changeProfileImg(url)
+    }
+  }
+
   return (
     <>
       <ToastContainer />
@@ -88,7 +96,7 @@ export default function App() {
           {!isLoggedIn && isReturningFromGoogleAuth && (<CourseEntryWidget />)}
           {!isReturningFromGoogleAuth && !isLoggedIn && <Login />}
         </div>
-        <ProfileBar isOpen={isOpen} toggleFunc={openProfileBar} />
+        <ProfileBar isOpen={isOpen} toggleFunc={openProfileBar} changeProfileImg={setProfileImg}/>
       </div>
     </>
   );
