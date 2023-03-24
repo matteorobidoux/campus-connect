@@ -7,9 +7,6 @@ import { AddEventEntry } from "./CalendarEntry/AddEventEntry";
 import styles from "./CalendarWidget.module.scss";
 import { useTranslation } from "react-i18next";
 import { useUser } from "../../custom-query-hooks";
-import { UserClassSection } from "../../../../types/UserClassSection";
-import { UserCompletedEvent } from "../../../../types/UserCompletedEvent";
-
 export interface CalendarWidgetProps { }
 
 const months = [
@@ -48,16 +45,14 @@ export function CalendarWidget({ }: CalendarWidgetProps) {
     }
   };
   const user = useUser();
-  const filterEvents = (eventsTo: Events[]) => {
+  const filterEvents = (eventsToFilter: Events[]) => {
     //Check for User and creation of button if User
     if (user.completedEvents.length !== 0) {
-      let completedEvents = user.completedEvents.map(e=>{return e.id})
-      let filteredEvents = eventsTo.filter(evs => !completedEvents.includes(evs.mongoId!) )
-      console.log("Total of MarkedCompletedEvents:"+ completedEvents.length)
-      console.log("Total Number Of Events Now: "+filteredEvents.length+ "Unfiltered It was:"+eventsTo.length)
+      let completedEvents = user.completedEvents.map(e => { return e.id })
+      let filteredEvents = eventsToFilter.filter(evs => !completedEvents.includes(evs.mongoId!))
       return filteredEvents
     } else {
-      return eventsTo
+      return eventsToFilter
     }
   };
 
