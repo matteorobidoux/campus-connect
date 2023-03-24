@@ -7,8 +7,10 @@ import { AddEventEntry } from "./CalendarEntry/AddEventEntry";
 import styles from "./CalendarWidget.module.scss";
 import { useTranslation } from "react-i18next";
 import { useUser } from "../../custom-query-hooks";
+import { UserClassSection } from "../../../../types/UserClassSection";
+import { UserCompletedEvent } from "../../../../types/UserCompletedEvent";
 
-export interface CalendarWidgetProps {}
+export interface CalendarWidgetProps { }
 
 const months = [
   "January",
@@ -25,7 +27,7 @@ const months = [
   "December",
 ];
 
-export function CalendarWidget({}: CalendarWidgetProps) {
+export function CalendarWidget({ }: CalendarWidgetProps) {
   const [events, setEvents] = useState<Events[]>([]);
   const [scope, setScope] = useState<"month" | "day">("month");
   const [month, setMonth] = useState<string>(months[new Date().getMonth()]);
@@ -46,17 +48,23 @@ export function CalendarWidget({}: CalendarWidgetProps) {
     }
   };
   const user = useUser();
-  const filterEevnts= ()=>{
-      //Check for User and creation of button if User
-    let completedEvents= user.completedEvents
-    let filteredEvents= events.filter(evs => completedEvents.forEach(a=>a.id !== evs.mongoId!))
-    return filteredEvents
+  const filterEvents = (eventsTo: Events[]) => {
+    //Check for User and creation of button if User
+    if (user.completedEvents.length !== 0) {
+      let completedEvents = user.completedEvents.map(e=>{return e.id})
+      let filteredEvents = eventsTo.filter(evs => !completedEvents.includes(evs.mongoId!) )
+      console.log("Total of MarkedCompletedEvents:"+ completedEvents.length)
+      console.log("Total Number Of Events Now: "+filteredEvents.length+ "Unfiltered It was:"+eventsTo.length)
+      return filteredEvents
+    } else {
+      return eventsTo
+    }
   };
 
   return (
     <div className={styles.wrapper}>
       <Calendar
-        onMonthChanged={(_, evs) => setEvents(evs)}
+        onMonthChanged={(_, evs) => setEvents(filterEvents(evs))}
         onScopeChanged={onScopeChanged}
       />
       <div className={styles.right}>
