@@ -9,8 +9,6 @@
     justify-content: space-between;
     width: inherit;
     height: 100%;
-    position: sticky;
-    top: 0;
   }
 
   .logo {
@@ -20,10 +18,12 @@
     align-self: center;
   }
   .profileImg {
-    margin-right: 0;
     width: 50px;
     height: 50px;
     border-radius: 50px;
+    align-self: flex-end;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .selected-lang {
