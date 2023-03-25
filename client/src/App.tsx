@@ -64,7 +64,9 @@ export default function App() {
   }, [user]);
   // TODO: what should the type of e be?
   function openProfileBar() {
-    setIsOpen(!isOpen);
+    if(isLoggedIn){
+      setIsOpen(!isOpen)
+    }
   }
 
   function switchComponent(component: string) {
@@ -97,7 +99,7 @@ export default function App() {
           {!isLoggedIn && isReturningFromGoogleAuth && <CourseEntryWidget />}
           {!isReturningFromGoogleAuth && !isLoggedIn && <Login />}
         </div>
-        <ProfileBar isOpen={isOpen} toggleFunc={openProfileBar} />
+        <ProfileBar isOpen={isOpen} toggleFunc={openProfileBar} profileUrl={profileUrl} />
       </div>
     </>
   );

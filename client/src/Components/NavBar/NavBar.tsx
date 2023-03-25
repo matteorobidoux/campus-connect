@@ -65,28 +65,18 @@ function NavBar(props: NavBarProps) {
           </ul>
         </div>
         <h1 className={styles.logo}>Campus Connect</h1>
-        {props.profileUrl === "" ? (
-          <img
-            className={styles["profileImg"]}
-            src={profileImg}
-            alt="profile"
-            referrerPolicy="no-referrer"
-            onClick={(e) => {
-              e.preventDefault();
-              props.toggleSidebar(e);
-            }}
-          ></img>
-        ) : props.profileUrl.length > 1 ? (
-          <img
-            className={styles["profileImg"]}
-            src={props.profileUrl}
-            alt="profile"
-            onClick={(e) => {
-              e.preventDefault();
-              props.toggleSidebar(e);
-            }}
-          ></img>
-        ) : null}
+        {props.profileUrl === "" ?(
+          <img className={styles["profileImg"]} src={profileImg} alt="profile" referrerPolicy="no-referrer" onClick={e => {
+            e.preventDefault()
+          props.toggleSidebar(e)
+          }}></img>
+          ) : props.profileUrl.length > 1 ?(
+            <img className={styles["profileImg"]} src={props.profileUrl} referrerPolicy="no-referrer" alt="profile" onClick={e => {
+              e.preventDefault()
+            props.toggleSidebar(e)
+            }}></img>
+          ) : null
+        }   
       </nav>
     </div>
   );
