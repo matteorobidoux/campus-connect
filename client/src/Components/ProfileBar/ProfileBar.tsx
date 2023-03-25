@@ -6,6 +6,8 @@ import { useQueryClient } from "react-query"
 import axios from "axios"
 import { useUser } from "../../custom-query-hooks"
 import profileImg from "../../assets/profile.png"
+import { useRef } from "react"
+import { User } from "../../../../types/User"
 
 //fix type script stuff
 type ProfileBarProps = {
@@ -18,19 +20,34 @@ type ProfileBarProps = {
 export default function ProfileBar(props: ProfileBarProps) {
   const qc = useQueryClient();
   const user = useUser();
+  const inputref: any = useRef(null);
+
   let file: File | null = null;
 
   async function uploadFile(file: File | null){
-    console.log(file)
     if (file !== null) {
       var formData = new FormData();
       formData.append('file',file);
       formData.append('id', user._id)
       let post = await axios.post('/api/uploadBlob', formData)
       let response = await post.data;
-      console.log(response.url)
+      const userLocalStorage = qc.getQueryData('user') as User;
+      userLocalStorage.picture = response.url;
+      localStorage.removeItem('user');
+      localStorage.setItem('user', JSON.stringify(userLocalStorage));
       props.changeProfileImg(response.url)
     }
+  }
+
+  const handleInput = () => {
+    if(inputref.current !== null){
+      inputref.current.click();
+    }
+  }
+
+  const handleFileChange = (e: any) => {
+    file = e.currentTarget.files ? e.currentTarget.files[0] : null;
+    uploadFile(file);
   }
 
   return (
@@ -65,7 +82,10 @@ export default function ProfileBar(props: ProfileBarProps) {
             <img className={styles["profileImg"]} referrerPolicy="no-referrer" src={props.profileUrl} alt="profile"></img>
           ) : null
         } 
-        <button className={styles.changeProfileImg}>Change</button>
+        <div className={styles.changeProfileImgDiv}>
+          <input style={{display: "none"}} ref={inputref} type="file" name="file" onChange={handleFileChange}/>
+          <button className={styles.changeProfileImg} onClick={handleInput}>Change </button>
+        </div>
         <h1>Elidjay Ross</h1>
         <div className={styles.profileInfo}>
         <h3>School: Dawson College</h3>
@@ -85,3 +105,15 @@ export default function ProfileBar(props: ProfileBarProps) {
     </>
   );
 }
+
+
+
+// <button>
+//             Set Image
+//             <input type="file" name="file" onChange={(event) => {
+//                   file = event.currentTarget.files ? event.currentTarget.files[0] : null;
+//                 }} />
+//             </button>
+//             <button onClick={()=> uploadFile(file)}>
+//               Submit
+//             </button>
