@@ -38,21 +38,25 @@ export default function MainSidebar(props: MainSidebarProps) {
           className={[styles["sidebar-section"], styles["classes"]].join(" ")}
         >
           <div className={styles["menu"]}>
-            <button
+            <motion.button
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.1 }}
               onClick={() => {
                 props.selectComponentFunc("calender");
                 props.selectChatFunc(null);
               }}
             >
               Calender
-            </button>
-            <button
+            </motion.button>
+            <motion.button
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.1 }}
               onClick={() => {
                 props.selectComponentFunc("chat");
               }}
             >
               Chat
-            </button>
+            </motion.button>
           </div>
           {props.selectedComponent === "calender" ? (
             isLoading ? (
