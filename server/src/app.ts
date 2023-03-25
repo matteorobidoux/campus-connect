@@ -21,6 +21,7 @@ import GAuth from "./oauth/gauth-endpoint";
 import http from "http";
 import { createServer } from "./chat/index";
 import { UserClassSection } from "../../types/UserClassSection";
+import { MostRecentMessage } from "../../types/Queries/MostRecentMessage";
 
 require('dotenv').config({ path: __dirname + '/.env'});
 
@@ -83,6 +84,21 @@ app.post('/api/uploadBlob', async (req, res)=>{
       await DbMongoose.changeUserImage({id: req.body.id, picture: uploadedUrl.toString()})
       return res.status(200).json({ status: "success", url: uploadedUrl.toString() });
     }
+  }
+});
+
+app.get("/api/getMostRecentMessage", async (req, res) => {
+  const { courseNumber, sectionNumber } = req.query as Partial<MostRecentMessage>;
+  console.log(courseNumber, sectionNumber);
+  if (!courseNumber || !sectionNumber) {
+    console.log("No Bueno");
+    res.sendStatus(400);
+  } else {
+    const result = await DbMongoose.getMostRecentMessage({
+      courseNumber,
+      sectionNumber,
+    });
+    res.json(result);
   }
 });
 

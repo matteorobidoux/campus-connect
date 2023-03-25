@@ -141,7 +141,7 @@ class DbMongoose {
       groupChat.messagesList.push(message);
       await groupChat.save();
     } else {
-      console.log("Dit not find the room");
+      console.log("Did not find the room");
     }
   }
   //Rerturns An Array with all themessages ordered by date.
@@ -176,6 +176,22 @@ class DbMongoose {
           indexLastMessage + 1
         );
         return messages;
+      }
+    }
+  }
+
+  async getMostRecentMessage(room: UserClassSection) {
+    const groupChat = await groupChatModel.findOne({
+      "room.courseNumber": room.courseNumber,
+      "room.sectionNumber": room.sectionNumber,
+    });
+    if (groupChat) {
+      const message = groupChat.messagesList
+      if(message.length > 0){
+        return {
+          message: message[message.length - 1].message,
+          username: message[message.length - 1].user.userName
+        };
       }
     }
   }

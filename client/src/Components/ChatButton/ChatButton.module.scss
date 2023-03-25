@@ -50,6 +50,15 @@
     white-space: pre-wrap;
   }
 
+  .recent-message {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
   h2,
   h4 {
     font-weight: normal;
