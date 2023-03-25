@@ -55,14 +55,21 @@ export function CalendarWidget({ }: CalendarWidgetProps) {
       return eventsToFilter
     }
   };
+  const noFilterEvents =(eventsNoFilter: Events[])=> {
+    return eventsNoFilter
+  };
 
   return (
     <div className={styles.wrapper}>
       <Calendar
-        onMonthChanged={(_, evs) => setEvents(filterEvents(evs))}
+        onMonthChanged={(_, evs) => setEvents((evs))}
         onScopeChanged={onScopeChanged}
       />
       <div className={styles.right}>
+        <div className={styles.botton}>
+          <button onClick={() => setEvents(filterEvents(events))}>Hide MarkAsDone</button>
+        </div>
+        
         <div className={styles.header}>
           {i18n.language == "fr" || i18n.language == "it" ? (
             <h2>

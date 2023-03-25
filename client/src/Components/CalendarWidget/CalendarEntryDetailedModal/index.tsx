@@ -82,7 +82,7 @@ export function CalendarEntryDetailedModal({
           <p> {event.desc} </p>
         </div>
         <div className={styles.botton}>
-          <button onClick={() => markAsDone.mutate()}>
+          <button onClick={async () => markAsDone.mutate()}>
             {" "}
             {t("markAsDone")}{" "}
           </button>
