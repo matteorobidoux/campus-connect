@@ -1,5 +1,5 @@
 import { UserClassSection } from "../../../../types/UserClassSection";
-import { useSections, useUser } from "../../custom-query-hooks";
+import { useSections } from "../../custom-query-hooks";
 import CourseQuickViewContainer from "../CourseQuickViewContainer/CourseQuickViewContainer";
 import ChatButton from "../ChatButton/ChatButton";
 import styles from "./MainSidebar.module.scss";
@@ -8,15 +8,18 @@ import {
   FadeInAnimation,
   StaggeredFadeInAnimation,
 } from "../../framerMotionAnimations";
+import { User } from "../../../../types/User";
 
 type MainSidebarProps = {
   selectedComponent: string;
   selectChatFunc: (course: UserClassSection | null) => void;
   selectComponentFunc: Function;
+  user: User & {
+    _id: string;
+  };
 };
 
 export default function MainSidebar(props: MainSidebarProps) {
-  const user = useUser();
   const delay: number = 0.05;
   const groupChatButtonsAnimation = StaggeredFadeInAnimation(
     0.1,
@@ -25,7 +28,7 @@ export default function MainSidebar(props: MainSidebarProps) {
     delay
   );
   const { isLoading, isSuccess, data } = useSections({
-    userClassSections: user.sections,
+    userClassSections: props.user.sections,
   });
 
   const containerAnimation = FadeInAnimation(0.8);
@@ -60,6 +63,9 @@ export default function MainSidebar(props: MainSidebarProps) {
               whileHover={{ scale: 1.1 }}
               onClick={() => {
                 props.selectComponentFunc("chat");
+                // Select first chat by default
+                if (props.user.sections.length > 0)
+                  props.selectChatFunc(props.user.sections[0]);
               }}
             >
               Chat
@@ -83,7 +89,7 @@ export default function MainSidebar(props: MainSidebarProps) {
                 initial="hidden"
                 animate="visible"
               >
-                {user.sections.map((value, index) => (
+                {props.user.sections.map((value, index) => (
                   <ChatButton
                     data={data}
                     key={index}

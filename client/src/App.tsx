@@ -90,6 +90,7 @@ export default function App() {
                     selectedComponent={selectedComponent}
                     selectChatFunc={selectNewChat}
                     selectComponentFunc={switchComponent}
+                    user={user}
                   />
                   <Main
                     selectedComponent={selectedComponent}
