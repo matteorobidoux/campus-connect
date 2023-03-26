@@ -11,7 +11,7 @@ type ChatButtonProps = {
 
 export default function ChatButton(props: ChatButtonProps) {
   const animation = FadeInAnimation(0.15);
-  
+
   return (
     <motion.div
       className={styles["button-container"]}
