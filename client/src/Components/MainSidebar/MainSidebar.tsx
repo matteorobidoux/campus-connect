@@ -79,6 +79,7 @@ export default function MainSidebar(props: MainSidebarProps) {
                 {user.sections.map((value, index) => (
                   <ChatButton
                     data={data}
+                    key={index}
                     index={index}
                     onClick={() => props.selectChatFunc(value)}
                   />
