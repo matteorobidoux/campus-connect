@@ -4,7 +4,10 @@ import CourseQuickViewContainer from "../CourseQuickViewContainer/CourseQuickVie
 import ChatButton from "../ChatButton/ChatButton";
 import styles from "./MainSidebar.module.scss";
 import { AnimatePresence, motion } from "framer-motion";
-import { StaggeredFadeInAnimation } from "../../framerMotionAnimations";
+import {
+  FadeInAnimation,
+  StaggeredFadeInAnimation,
+} from "../../framerMotionAnimations";
 
 type MainSidebarProps = {
   selectedComponent: string;
@@ -25,13 +28,17 @@ export default function MainSidebar(props: MainSidebarProps) {
     userClassSections: user.sections,
   });
 
+  const containerAnimation = FadeInAnimation(0.8);
+
   return (
     <AnimatePresence>
       <motion.div
         className={styles["main-sidebar-container"]}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        initial="hidden"
+        exit="hidden"
+        animate="visible"
+        variants={containerAnimation}
+        layout="position"
       >
         {/* This is temporary - Marian - 27/02/2023 */}
         <div

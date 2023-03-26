@@ -17,6 +17,7 @@ export default function Main(props: MainProps) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.75, delay: 0.35 }}
+        layout="position"
       >
         {!props.selectedChat ? (
           <CalendarWidget />

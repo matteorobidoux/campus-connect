@@ -14,6 +14,7 @@ import Login from "./Components/Login/Login";
 import { UserClassSection } from "../../types/UserClassSection";
 
 import { useTranslation } from "react-i18next";
+import { LayoutGroup, motion } from "framer-motion";
 
 library.add(faCircleNotch);
 
@@ -74,34 +75,44 @@ export default function App() {
   return (
     <>
       <ToastContainer />
-      <div className="app-container">
-        <NavBar toggleSidebar={openProfileBar} profileUrl={profileUrl} />
-        <div className="app-content-container">
-          {isLoggedIn && (
-            <>
-              <MainSidebar
-                selectedComponent={selectedComponent}
-                selectChatFunc={selectNewChat}
-                selectComponentFunc={switchComponent}
-              />
-              <Main
-                selectedComponent={selectedComponent}
-                selectedChat={selectedChat}
-              />
-            </>
-          )}
-          {!isLoggedIn && (
-            <Login
-              returningFromGoogleAuth={isReturningFromGoogleAuth}
-              givenName={query.isSuccess ? query.data["given_name"] : undefined}
-              familyName={
-                query.isSuccess ? query.data["family_name"] : undefined
-              }
-            />
-          )}
-        </div>
-        <ProfileBar isOpen={isOpen} toggleFunc={openProfileBar} />
-      </div>
+      <LayoutGroup>
+        <motion.div
+          className="app-container"
+          layout="position"
+          transition={{duration: 0.2}}
+        >
+          <NavBar toggleSidebar={openProfileBar} profileUrl={profileUrl} />
+          <div className="app-content-container">
+            <LayoutGroup>
+              {isLoggedIn && (
+                <>
+                  <MainSidebar
+                    selectedComponent={selectedComponent}
+                    selectChatFunc={selectNewChat}
+                    selectComponentFunc={switchComponent}
+                  />
+                  <Main
+                    selectedComponent={selectedComponent}
+                    selectedChat={selectedChat}
+                  />
+                </>
+              )}
+              {!isLoggedIn && (
+                <Login
+                  returningFromGoogleAuth={isReturningFromGoogleAuth}
+                  givenName={
+                    query.isSuccess ? query.data["given_name"] : undefined
+                  }
+                  familyName={
+                    query.isSuccess ? query.data["family_name"] : undefined
+                  }
+                />
+              )}
+            </LayoutGroup>
+          </div>
+          <ProfileBar isOpen={isOpen} toggleFunc={openProfileBar} />
+        </motion.div>
+      </LayoutGroup>
     </>
   );
 }
