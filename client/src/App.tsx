@@ -1,74 +1,74 @@
-import './App.css';
-import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer } from 'react-toastify';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCircleNotch } from '@fortawesome/free-solid-svg-icons'
-import { useEffect, useState } from 'react';
-import Main from './Components/Main/Main';
-import MainSidebar from './Components/MainSidebar/MainSidebar';
-import NavBar from './Components/NavBar/NavBar';
-import ProfileBar from './Components/ProfileBar/ProfileBar';
-import { useGoogleOAuth } from './custom-query-hooks/useGoogleOAuth';
-import { useUser } from './custom-query-hooks';
-import Login from './Components/Login/Login';
-import { UserClassSection } from '../../types/UserClassSection';
+import "./App.css";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faCircleNotch } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useState } from "react";
+import Main from "./Components/Main/Main";
+import MainSidebar from "./Components/MainSidebar/MainSidebar";
+import NavBar from "./Components/NavBar/NavBar";
+import ProfileBar from "./Components/ProfileBar/ProfileBar";
+import { useGoogleOAuth } from "./custom-query-hooks/useGoogleOAuth";
+import { useUser } from "./custom-query-hooks";
+import Login from "./Components/Login/Login";
+import { UserClassSection } from "../../types/UserClassSection";
 
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
-library.add(faCircleNotch)
+library.add(faCircleNotch);
 
 export default function App() {
   const query = useGoogleOAuth();
   const user = useUser();
   const [selectedComponent, selectComponent] = useState("calender");
   const [isOpen, setIsOpen] = useState(false);
-  const [isReturningFromGoogleAuth, setIsReturningFromGoogleAuth] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(query.data?._id)
+  const [isReturningFromGoogleAuth, setIsReturningFromGoogleAuth] =
+    useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(query.data?._id);
   const [selectedChat, selectChat] = useState<UserClassSection | null>(null);
-  const [profileUrl, changeProfileImg] = useState("")
+  const [profileUrl, changeProfileImg] = useState("");
 
-
-  const { t, i18n } = useTranslation(['app']);
+  const { t, i18n } = useTranslation(["app"]);
 
   useEffect(() => {
     if (query.isSuccess) {
       if (query.data) {
-        setIsLoggedIn(typeof query.data._id !== "undefined")
-        window.history.pushState('', 'Index', '/');
+        setIsLoggedIn(typeof query.data._id !== "undefined");
+        window.history.pushState("", "Index", "/");
         setIsReturningFromGoogleAuth(true);
         return;
       }
       setIsReturningFromGoogleAuth(false);
     }
-  }, [query.data, query.isSuccess])
+  }, [query.data, query.isSuccess]);
 
   useEffect(() => {
     if (user !== undefined) {
       if (user.picture !== undefined) {
-        changeProfileImg(user.picture)
+        changeProfileImg(user.picture);
       } else {
         changeProfileImg("");
       }
     }
-    setIsLoggedIn(user !== undefined)
-  }, [user])
+    setIsLoggedIn(user !== undefined);
+  }, [user]);
 
   useEffect(() => {
     if (isLoggedIn) {
       setIsReturningFromGoogleAuth(false);
     }
-  }, [isLoggedIn])
-  
+  }, [isLoggedIn]);
+
   function openProfileBar() {
-    setIsOpen(!isOpen)
+    setIsOpen(!isOpen);
   }
 
   function switchComponent(component: string) {
-    selectComponent(component)
+    selectComponent(component);
   }
 
   function selectNewChat(course: UserClassSection | null) {
-    selectChat(course)
+    selectChat(course);
   }
 
   return (
@@ -77,11 +77,28 @@ export default function App() {
       <div className="app-container">
         <NavBar toggleSidebar={openProfileBar} profileUrl={profileUrl} />
         <div className="app-content-container">
-          {isLoggedIn && <>
-            <MainSidebar selectedComponent={selectedComponent} selectChatFunc={selectNewChat} selectComponentFunc={switchComponent} />
-            <Main selectedComponent={selectedComponent} selectedChat={selectedChat} />
-          </>}
-          {!isLoggedIn && <Login returningFromGoogleAuth={isReturningFromGoogleAuth} givenName={query.isSuccess ? query.data["given_name"] : undefined} familyName={query.isSuccess ? query.data["family_name"] : undefined}/>}
+          {isLoggedIn && (
+            <>
+              <MainSidebar
+                selectedComponent={selectedComponent}
+                selectChatFunc={selectNewChat}
+                selectComponentFunc={switchComponent}
+              />
+              <Main
+                selectedComponent={selectedComponent}
+                selectedChat={selectedChat}
+              />
+            </>
+          )}
+          {!isLoggedIn && (
+            <Login
+              returningFromGoogleAuth={isReturningFromGoogleAuth}
+              givenName={query.isSuccess ? query.data["given_name"] : undefined}
+              familyName={
+                query.isSuccess ? query.data["family_name"] : undefined
+              }
+            />
+          )}
         </div>
         <ProfileBar isOpen={isOpen} toggleFunc={openProfileBar} />
       </div>
