@@ -26,6 +26,8 @@ const months = [
 
 export function CalendarWidget({ }: CalendarWidgetProps) {
   const [events, setEvents] = useState<Events[]>([]);
+  const [showAll, setShow]= useState(true);
+  const [eventsF, setEventsFiltered] = useState<Events[]>([]);
   const [scope, setScope] = useState<"month" | "day">("month");
   const [month, setMonth] = useState<string>(months[new Date().getMonth()]);
   const [day, setDay] = useState("");
@@ -55,19 +57,21 @@ export function CalendarWidget({ }: CalendarWidgetProps) {
       return eventsToFilter
     }
   };
-  const noFilterEvents =(eventsNoFilter: Events[])=> {
-    return eventsNoFilter
-  };
-
   return (
     <div className={styles.wrapper}>
-      <Calendar
-        onMonthChanged={(_, evs) => setEvents((evs))}
-        onScopeChanged={onScopeChanged}
-      />
+     
       <div className={styles.right}>
         <div className={styles.botton}>
-          <button onClick={() => setEvents(filterEvents(events))}>Hide MarkAsDone</button>
+          <button onClick={() => {setShow(showAll); setEventsFiltered(filterEvents(events))}}>Hide MarkAsDone</button>
+          { showAll && <Calendar
+        onMonthChanged={(_, evs) => setEvents((filterEvents(evs)))}
+        onScopeChanged={onScopeChanged}
+      />}
+        <button onClick={() => {setShow(!showAll); setEvents((events))}}>Show MarkAsDone</button>
+        { !showAll && <Calendar
+        onMonthChanged={(_, evs) => setEvents(((evs)))}
+        onScopeChanged={onScopeChanged}
+      />}
         </div>
         
         <div className={styles.header}>
