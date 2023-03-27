@@ -1,6 +1,7 @@
 const request = require("supertest");
 import mongoose from "mongoose";
 import { app } from "../api-jest/app";
+import { UserClassSection } from "../../../types/UserClassSection";
 jest.mock("../db/db.ts");
 afterAll(async () => {
   jest.clearAllMocks();
@@ -34,13 +35,14 @@ describe("test api getAllStrippedCourses", () => {
 });
 
 describe("test api getAllMessages", () => {
-  it("should return not undefined", async () => {
+  it("should return not undefined and 200", async () => {
     const room = {
       courseNumber: "574-453-DW",
-      courseSection: "00001",
+      sectionNumber: "00001",
     };
     const res = await request(app).get("/api/getAllMessages").send(room);
     expect(res.body).toBeDefined();
+    expect(res.status).toBe(200);
   });
 });
 
@@ -54,14 +56,46 @@ describe("test api getAllMessages", () => {
   });
 });
 
+describe("test api getLatestMessages", () => {
+  it("should return 200 res body Defined", async () => {
+    const room = {
+      room: {courseNumber: "574-453-DW",
+      sectionNumber: "00001"},
+      messageId: "messageId"
+    };
+    const res = await request(app).get("/api/getLatestMessages").send(room);
+    expect(res.status).toBe(200);
+    expect(res.body).toBeDefined();
+  });
+});
+
+describe("test api getLatestMessages", () => {
+  it("should return 400 missig req param", async () => {
+    const room = {
+      room: {courseNumber: "574-453-DW",
+      sectionNumber: "00001"},
+    };
+    const res = await request(app).get("/api/getLatestMessages").send(room);
+    expect(res.status).toBe(400);
+ 
+  });
+});
+
 describe("test api getAllSections", () => {
   it("should return not undefined", async () => {
+    const room: UserClassSection[] =[{courseNumber:"a",sectionNumber:"a"},{courseNumber:"a",sectionNumber:"a"}]
+    const res = await request(app).get("/api/getAllSections").send(room);
+    expect(res.status).toBe(200);
+  });
+});
+
+describe("test api getAllSections", () => {
+  it("should return 400 error", async () => {
     const room = {
       courseNumber: "574-453-DW",
-      courseSection: "00001",
     };
-    const res = await request(app).get("/api/getAllSections").send(room);
-    expect(res.body).toBeDefined();
+    const res = await request(app).get("/api/getAllSections").send("room");
+    expect(res.status).toBe(400);
   });
 });
 
