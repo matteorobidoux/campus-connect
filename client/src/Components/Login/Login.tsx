@@ -18,7 +18,7 @@ type NamesFormEvent = FormEvent<HTMLFormElement> & {
   };
 };
 
-type PersonName = {
+export type PersonName = {
   firstName: string;
   lastName: string;
 };
@@ -120,7 +120,7 @@ export default function Login(props: LoginProps) {
             </form>
           </>
         ) : (
-          <CourseEntryWidget />
+          name && <CourseEntryWidget name={name} />
         )}
       </div>
     </div>
