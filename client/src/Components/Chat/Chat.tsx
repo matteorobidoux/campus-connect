@@ -4,7 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import { ChatMessage, useChat } from "../../chat";
 import { UserClassSection } from "../../../../types/UserClassSection";
 import { useSections, useUser } from "../../custom-query-hooks";
-
+import { useMutation } from "react-query";
+import axios from "axios";
+import { AddMessage } from "../../../../types/Queries/AddMessage";
 type ChatProps = {
   selectedChat: UserClassSection;
 };
