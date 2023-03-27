@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CalendarEvent from "../../../../types/Calendar";
 import { Events } from "../../../../types/Event";
 import Calendar from "./Calendar";
@@ -27,7 +27,7 @@ const months = [
 export function CalendarWidget({ }: CalendarWidgetProps) {
   const [events, setEvents] = useState<Events[]>([]);
   const [showAll, setShow]= useState(true);
-  const [eventsF, setEventsFiltered] = useState<Events[]>([]);
+  const [eventsFiltered, setEventsFiltered] = useState<Events[]>([]);
   const [scope, setScope] = useState<"month" | "day">("month");
   const [month, setMonth] = useState<string>(months[new Date().getMonth()]);
   const [day, setDay] = useState("");
@@ -57,21 +57,26 @@ export function CalendarWidget({ }: CalendarWidgetProps) {
       return eventsToFilter
     }
   };
+
+  useEffect(() => {
+    if(showAll){
+      setEventsFiltered(events);
+      return;
+    }
+     setEventsFiltered(filterEvents(events));
+     
+  }, [events, showAll])
+
   return (
     <div className={styles.wrapper}>
-     
+      <Calendar
+          onMonthChanged={(_, evs) => setEvents(((evs)))}
+          onScopeChanged={onScopeChanged}
+      />
+
       <div className={styles.right}>
         <div className={styles.botton}>
-          <button onClick={() => {setShow(showAll); setEventsFiltered(filterEvents(events))}}>Hide MarkAsDone</button>
-          { showAll && <Calendar
-        onMonthChanged={(_, evs) => setEvents((filterEvents(evs)))}
-        onScopeChanged={onScopeChanged}
-      />}
-        <button onClick={() => {setShow(!showAll); setEvents((events))}}>Show MarkAsDone</button>
-        { !showAll && <Calendar
-        onMonthChanged={(_, evs) => setEvents(((evs)))}
-        onScopeChanged={onScopeChanged}
-      />}
+        <button onClick={() => setShow(!showAll)}> {showAll ? "Hide" : "Show"} completed events</button>
         </div>
         
         <div className={styles.header}>
@@ -89,7 +94,7 @@ export function CalendarWidget({ }: CalendarWidgetProps) {
         </div>
 
         <div className={styles.calendarEventsWrapper}>
-          {events.map((ev) => (
+          {eventsFiltered.map((ev) => (
             <CalendarEventRow event={ev} />
           ))}
           {scope == "day" && <AddEventEntry date={date} />}
