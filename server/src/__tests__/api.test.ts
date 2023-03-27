@@ -1,12 +1,11 @@
 const request = require("supertest");
 import mongoose from "mongoose";
-import { app, closeServer } from "../app";
+import { app } from "../api-jest/app";
 jest.mock("../db/db.ts");
 afterAll(async () => {
   jest.clearAllMocks();
   jest.restoreAllMocks();
   jest.clearAllTimers();
-  await closeServer();
   await mongoose.connection.close();
   for (const connection of mongoose.connections) {
     await connection.close();
