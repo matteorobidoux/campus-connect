@@ -1,4 +1,4 @@
-.react-calendar { 
+.react-calendar {
   width: 400px;
   max-width: 100%;
   background-color: #fff;
@@ -83,7 +83,7 @@ abbr[title] {
   border-radius: 25px;
 }
 
-.react-calendar button { 
+.react-calendar button {
   padding: 0;
   border: 5px solid white;
   border-radius: 25px;

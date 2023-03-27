@@ -3,20 +3,27 @@ import { useQuery } from "react-query";
 import { GAuthResponse } from "../../../types/Queries/GAuth";
 import { User } from "../../../types/User";
 
-export const getUser = () => localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')!): undefined;
-export const writeUser = (user: User) => window.localStorage.setItem('user', JSON.stringify(user));
+export const getUser = () =>
+  localStorage.getItem("user")
+    ? JSON.parse(localStorage.getItem("user")!)
+    : undefined;
+export const writeUser = (user: User) =>
+  window.localStorage.setItem("user", JSON.stringify(user));
+export const removeUser = () => window.localStorage.removeItem("user");
 
 const useGoogleOAuth = () => {
   const getter = async () => {
     const user = getUser();
-    console.log('found user.');
+    console.log("found user.");
     if (user) {
       return user;
     }
 
     if (document.documentURI.includes("code")) {
-      const { data } = await axios.get<GAuthResponse>("/gauth?" + document.documentURI.split('?')[1]);     
-      
+      const { data } = await axios.get<GAuthResponse>(
+        "/gauth?" + document.documentURI.split("?")[1]
+      );
+
       if (data.user) {
         console.log("Logged in with user", data.user);
         writeUser(data.user);
@@ -35,10 +42,10 @@ const useGoogleOAuth = () => {
 
       return data;
     }
-    return;
-  }
+    throw new Error("Not returning from GAuth");
+  };
 
-  return useQuery(['user'], getter, { staleTime: Infinity, retry: false })
-}
+  return useQuery(["user"], getter, { staleTime: Infinity, retry: false });
+};
 
 export { useGoogleOAuth };

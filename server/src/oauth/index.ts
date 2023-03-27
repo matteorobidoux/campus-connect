@@ -1,13 +1,12 @@
-import { Response } from 'express';
-import { google } from 'googleapis';
+import { Response } from "express";
+import { google } from "googleapis";
 
 const env = {
   //CHANGE DEPENDING IF DEPLOYING OR LOCAL
-  authUrl: "http://localhost:3000/"
+  authUrl: "http://localhost:3000/",
   //authUrl: "https://campus-connects-test.azurewebsites.net/"
   //authUrl: "https://campus-connects.azurewebsites.net/"
-}
-
+};
 
 function generateOAuthClient() {
   const oauth2Client = new google.auth.OAuth2(
@@ -18,29 +17,28 @@ function generateOAuthClient() {
   return oauth2Client;
 }
 
-
 function generateAuthUrl(res: Response) {
   const oauth2Client = generateOAuthClient();
   const scopes = [
-    'https://www.googleapis.com/auth/userinfo.email'
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/userinfo.profile",
   ];
 
-  console.log('generating url...');
+  console.log("generating url...");
   // Generate a url that asks permissions for the Drive activity scope
   const authorizationUrl = oauth2Client.generateAuthUrl({
     // 'online' (default) or 'offline' (gets refresh_token)
-    access_type: 'offline',
+    access_type: "offline",
     prompt: "consent",
     /** Pass in the scopes array defined above.
-      * Alternatively, if only one scope is needed, you can pass a scope URL as a string */
+     * Alternatively, if only one scope is needed, you can pass a scope URL as a string */
     scope: scopes,
     // Enable incremental authorization. Recommended as a best practice.
-    include_granted_scopes: true
+    include_granted_scopes: true,
   });
 
   console.log(authorizationUrl);
-  res.json({authorizationUrl});
-
+  res.json({ authorizationUrl });
 }
 
 export { generateOAuthClient, generateAuthUrl };

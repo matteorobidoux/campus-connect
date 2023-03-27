@@ -1,0 +1,75 @@
+.transition {
+  transition: all 0.25s ease;
+  opacity: 0;
+
+  &-appear,
+  &-enter {
+    opacity: 0;
+
+    &-done {
+      opacity: 1;
+    }
+  }
+
+  &-exit {
+    opacity: 1;
+
+    &-done {
+      opacity: 0;
+    }
+  }
+}
+
+.course-picker {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+
+    .inputs {
+      input {
+        background: var(--text-white);
+        color: var(--grey-background);
+        padding: 0.3rem;
+        border: var(--primary) 3px solid;
+        border-radius: 4px;
+        font-size: 16px;
+
+        &:disabled {
+          border-color: var(--faded-black);
+          filter: brightness(0.8);
+        }
+      }
+    }
+  }
+
+  .edit-button {
+    width: 83px;
+  }
+
+  button {
+    flex-shrink: 1;
+    background: var(--grey-background);
+    border: none;
+    color: var(--text-white);
+    margin: 0 auto;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0.5rem 0.9rem;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px;
+    transition: all 0.15s ease-in;
+    font-size: 22px;
+
+    &:hover {
+      color: var(--grey-background);
+      background: var(--text-white);
+    }
+  }
+}

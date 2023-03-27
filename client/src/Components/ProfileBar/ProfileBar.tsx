@@ -1,14 +1,19 @@
-import styles from "./ProfileBar.module.scss"
-import closeImg from "../../assets/close.png"
-import Rodal from "rodal"
+import styles from "./ProfileBar.module.scss";
+import closeImg from "../../assets/close.png";
+import Rodal from "rodal";
+import { removeUser } from "../../custom-query-hooks/useGoogleOAuth";
+import { useQueryClient } from "react-query";
+import profileImg from "../../assets/profile.png";
 
 //fix type script stuff
 type ProfileBarProps = {
-  isOpen: boolean,
-  toggleFunc: () => void
-}
+  isOpen: boolean;
+  toggleFunc: () => void;
+  profileImageUrl: string;
+};
 
 export default function ProfileBar(props: ProfileBarProps) {
+  const qc = useQueryClient();
 
   return (
     <>
@@ -27,29 +32,57 @@ export default function ProfileBar(props: ProfileBarProps) {
         showMask={true}
         showCloseButton={false}
         closeMaskOnClick={true}
-        onClose={() => { props.toggleFunc() }}>
+        onClose={() => {
+          props.toggleFunc();
+        }}
+      >
         <div className={styles.profileBar}>
-          <img className={styles.closeProfile} src={closeImg} alt="close icon" onClick={e => {
-            e.preventDefault()
-            props.toggleFunc()
-          }}></img>
-          <h1>Login</h1>
-          <form className={styles.login} id="login">
-            <label htmlFor="username">Username</label>
-            <input className={styles.username} id="username" type="text" />
-            <label htmlFor="password">Password</label>
-            <input className={styles.password} id="password" type="password" />
-            <input className={styles.submit} id="submit" type="submit" onClick={e => {
-              e.preventDefault()
-              fetch('/api/authenticate').then(async r => {
-                const k = await r.json();
-                console.log(k.authorizationUrl);
-                window.location.href = k.authorizationUrl;
-              })
-            }} value="Login" />
-          </form>
+          <img
+            className={styles.closeProfile}
+            src={closeImg}
+            alt="close icon"
+            onClick={(e) => {
+              e.preventDefault();
+              props.toggleFunc();
+            }}
+          ></img>
+          {props.profileImageUrl === "" ? (
+            <img
+              className={styles["profileImg"]}
+              src={profileImg}
+              alt="profile"
+              referrerPolicy="no-referrer"
+            ></img>
+          ) : props.profileImageUrl.length > 1 ? (
+            <img
+              className={styles["profileImg"]}
+              referrerPolicy="no-referrer"
+              src={props.profileImageUrl}
+              alt="profile"
+            ></img>
+          ) : null}
+          <button className={styles.changeProfileImg}>Change</button>
+          <h1>Elidjay Ross</h1>
+          <div className={styles.profileInfo}>
+            <h3>School: Dawson College</h3>
+            <h3>Program: Computer Science</h3>
+            <h3>Total Courses: 5</h3>
+            <h3>Active Events: 7</h3>
+            <h3>Completed Events: 3</h3>
+          </div>
+          <button
+            className={styles.logout}
+            onClick={() => {
+              removeUser();
+              qc.invalidateQueries(["user"]);
+              window.location.reload();
+            }}
+          >
+            {" "}
+            Logout{" "}
+          </button>
         </div>
       </Rodal>
     </>
-  )
+  );
 }
