@@ -33,6 +33,7 @@ export default function Chat({ selectedChat }: ChatProps) {
   const chat = useChat({
     rooms: [selectedChat],
     onMessage: (m) => {
+      if(m.room.courseNumber + m.room.sectionNumber !== selectedChat.courseNumber + selectedChat.sectionNumber) return;
       m.date = new Date(m.date);
       setMessages(m);
       lastMessageRef.current?.scrollIntoView();

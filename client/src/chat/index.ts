@@ -52,7 +52,7 @@ export const useChat = ({ onMessage, rooms }: UseChatArgs) => {
         sectionNumber: r.sectionNumber,
       }))
     );
-  }, [isConnected]);
+  }, [isConnected, rooms]);
 
   return { isConnected, sendMessage };
 };

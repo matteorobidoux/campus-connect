@@ -14,7 +14,7 @@ export default function Main(props: MainProps) {
       {!props.selectedChat ? (
         <CalendarWidget />
       ) : props.selectedComponent === "chat" ? (
-        <Chat selectedChat={props.selectedChat} />
+        <Chat key={props.selectedChat.sectionNumber + props.selectedChat.courseNumber} selectedChat={props.selectedChat} />
       ) : null}
     </div>
   );
