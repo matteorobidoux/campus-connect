@@ -156,24 +156,37 @@ class DbMongoose {
 
   //Rerturns An Array with all themessages ordered by date.
   async getLatestMessages(room: UserClassSection, loadedMsgIndex: number ) {
+    //15 messages
     const groupChat = await groupChatModel.findOne({
       "room.courseNumber": room.courseNumber,
       "room.sectionNumber": room.sectionNumber,
     });
     if (groupChat) {
       const messagesList = groupChat.messagesList;
+      if((messagesList.length - (loadedMsgIndex * 15)) - 15 <= -15){
+        return null;
+      }
       if(messagesList.length < 15){
+        console.log("1")
         let messages;
         messagesList.forEach((message) => {
           messages.push(message);
         });
 
         return messages;
-      }else if(messagesList.length > (loadedMsgIndex * 15) -1) {
-        let messages = messagesList.slice((loadedMsgIndex * 15) -15, (loadedMsgIndex * 15) -1);
+      }else if(messagesList.length > (loadedMsgIndex * 15) && ((messagesList.length - (loadedMsgIndex * 15)) - 15) >= 0) {
+        console.log("2")
+        console.log(messagesList.length)
+        console.log((messagesList.length - (loadedMsgIndex * 15)) - 15)
+        console.log((messagesList.length - (loadedMsgIndex * 15)) - 1)
+        let messages = messagesList.slice(messagesList.length - (loadedMsgIndex * 15) - 15, messagesList.length - (loadedMsgIndex * 15));
         return messages;
       } else {
-        let messages = messagesList.slice(messagesList.length, (loadedMsgIndex * 15) -1);
+        console.log("3")
+        console.log(messagesList.length)
+        console.log((messagesList.length - (loadedMsgIndex * 15)) - 15)
+        console.log((messagesList.length - (loadedMsgIndex * 15)) - 1)
+        let messages = messagesList.slice(0, (messagesList.length - (loadedMsgIndex * 15)) - 1);
         return messages;
       }
     }

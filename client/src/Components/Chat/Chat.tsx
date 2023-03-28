@@ -30,25 +30,31 @@ export default function Chat({ selectedChat }: ChatProps) {
   const [messages, _setMessages] = useState<ChatMessage[]>([]);
   const textRef = useRef<HTMLInputElement>(null);
   const lastMessageRef = useRef<HTMLDivElement>(null);
-  const [loadedMsgIndex, setIndex] = useState(1);
+  const mainChatRef = useRef<HTMLDivElement>(null);
+  const [loadedMsgIndex, setIndex] = useState(0);
+  const [loadedMessageArray, addTo] = useState<ChatMessage>();
+  //let loadedMessageArray : ChatMessage[] = [];
 
   //const data = {room: selectedChat, loadedMsgIndex: 1};
   useEffect(() => {
     const loadLatestMessages = async () => await axios.get("/api/getLatestMessages",
-     {params: {room: selectedChat, loadedMsgIndex: 1}}
+     {params: {room: selectedChat, loadedMsgIndex: loadedMsgIndex}}
     );
 
     loadLatestMessages().then((res) => {
       console.log(res.data)
       if (res.data) {
         res.data.forEach((msg: ChatMessage) => {
-          setMessages(msg)
+          setMessages(msg);
         });
+        //loadedMessageArray.forEach((msg: ChatMessage) => {
+         // setMessages(msg);
+        //});
       }
     }).catch((err) => {
       console.log(err)
     })
-  }, [])
+  }, [loadedMsgIndex])
 
   const chat = useChat({
     rooms: [selectedChat],
@@ -60,8 +66,15 @@ export default function Chat({ selectedChat }: ChatProps) {
     },
   });
 
+ /* useEffect(() => {
+    loadedMessageArray.forEach((msg: ChatMessage) => {
+      _setMessages((currentMessages) => [...currentMessages, msg]);
+    });
+  }, [loadedMessageArray])*/
+
+
   const setMessages = (c: ChatMessage) => {
-    _setMessages((currentMessages) => [...currentMessages, c]);
+    _setMessages((currentMessages) => [c,...currentMessages]);
   };
 
   const onEnter = (message: string) => {
@@ -88,6 +101,13 @@ export default function Chat({ selectedChat }: ChatProps) {
     lastMessageRef.current?.scrollIntoView();
   }, [messages]);
 
+  function onScroll(){
+    if(mainChatRef.current?.scrollTop === 0){
+      setIndex(loadedMsgIndex+1);
+      console.log(loadedMsgIndex);
+    }
+  }
+
   return (
     <>
       <div className={styles["main-chat"]}>
@@ -108,7 +128,7 @@ export default function Chat({ selectedChat }: ChatProps) {
             </div>
           </header>
 
-          <main className={styles["msger-chat"]}>
+          <main className={styles["msger-chat"]} onScroll={() => onScroll()} ref={mainChatRef}>
             {messages.map((message, i) => (
               <div ref={lastMessageRef}>
                 <Message

@@ -102,8 +102,8 @@ app.get("/api/getAllMessages", async (req, res) => {
 });
 
 app.get("/api/getLatestMessages", async (req, res) => {
-  console.log(req.body)
-  const { room, loadedMsgIndex } = req.body as Partial<LatestMessage>;
+  const room = req.query.room as UserClassSection;
+  const loadedMsgIndex = req.query.loadedMsgIndex as unknown as number;
   //console.log(room,loadedMsgIndex);
   if (!room || !loadedMsgIndex) {
     res.sendStatus(400);
