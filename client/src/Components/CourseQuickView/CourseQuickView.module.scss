@@ -19,11 +19,6 @@
   }
 }
 
-.animationBubble {
-  // animation-name: bubbleUp;
-  // animation-direction: alternate;
-}
-
 .course-quick-view {
   padding: 1rem;
   margin: 0;
@@ -63,7 +58,7 @@
     display: block;
     width: 2rem;
     height: 2rem;
-    background: red;
+    background: var(--classes-salmon);
     border-top-right-radius: inherit;
     border-bottom-left-radius: 100%;
     top: 0;
