@@ -6,7 +6,7 @@
 
   .top {
     display: flex;
-    height: 50%;
+    height: 33%;
     justify-content: space-between;
 
     .left {
@@ -37,7 +37,7 @@
       }
 
       padding: 5%;
-      width: 45%;
+      width: 35%;
     }
 
     .right {
@@ -45,15 +45,37 @@
     }
   }
 
-  .bottom {
+  .bottomWrapper {
     width: 100%;
     background-color: white;
     flex-grow: 1;
     border-radius: 7px;
+    padding: 1rem 2rem;
+
+    h2 {
+      font-weight: 400;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
 
     .left {
       display: flex;
-      flex-grow: 1;
+      flex-direction: column;
+      width: 65%;
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .entry {
+        display: flex;
+      }
     }
   }
 }

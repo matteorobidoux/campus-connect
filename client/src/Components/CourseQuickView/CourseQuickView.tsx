@@ -19,8 +19,8 @@ export default function CourseQuickView(props: CourseQuickViewProps) {
       <Rodal
         visible={isVisible}
         onClose={() => setIsVisible(false)}
-        height={500}
-        width={600}
+        height={600}
+        width={800}
         customStyles={{
           backgroundColor: "rgba(0, 0, 0, 0.05)",
           boxShadow: "none",
