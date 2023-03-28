@@ -45,7 +45,7 @@ export default function Chat({ selectedChat }: ChatProps) {
       console.log(res.data)
       if (res.data) {
         res.data.forEach((msg: ChatMessage) => {
-          setMessages(msg);
+          setMessages(msg,2);
         });
         //loadedMessageArray.forEach((msg: ChatMessage) => {
          // setMessages(msg);
@@ -61,7 +61,7 @@ export default function Chat({ selectedChat }: ChatProps) {
     onMessage: (m) => {
       if(m.room.courseNumber + m.room.sectionNumber !== selectedChat.courseNumber + selectedChat.sectionNumber) return;
       m.date = new Date(m.date);
-      setMessages(m);
+      setMessages(m,1);
       lastMessageRef.current?.scrollIntoView();
     },
   });
@@ -73,8 +73,13 @@ export default function Chat({ selectedChat }: ChatProps) {
   }, [loadedMessageArray])*/
 
 
-  const setMessages = (c: ChatMessage) => {
+  const setMessages = (c: ChatMessage, messagesNum: number) => {
+    if(messagesNum > 1) {
     _setMessages((currentMessages) => [c,...currentMessages]);
+    }
+    else {
+      _setMessages((currentMessages) => [...currentMessages, c]);
+    }
   };
 
   const onEnter = (message: string) => {
@@ -87,7 +92,7 @@ export default function Chat({ selectedChat }: ChatProps) {
     };
 
     chat.sendMessage(pMessage);
-    setMessages(pMessage);
+    setMessages(pMessage,1);
   };
 
   const onKeyUp = ({ key }: React.KeyboardEvent<HTMLInputElement>) => {

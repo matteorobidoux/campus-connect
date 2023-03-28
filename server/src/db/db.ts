@@ -180,6 +180,7 @@ class DbMongoose {
         console.log((messagesList.length - (loadedMsgIndex * 15)) - 15)
         console.log((messagesList.length - (loadedMsgIndex * 15)) - 1)
         let messages = messagesList.slice(messagesList.length - (loadedMsgIndex * 15) - 15, messagesList.length - (loadedMsgIndex * 15));
+        messages.reverse();
         return messages;
       } else {
         console.log("3")
@@ -187,6 +188,7 @@ class DbMongoose {
         console.log((messagesList.length - (loadedMsgIndex * 15)) - 15)
         console.log((messagesList.length - (loadedMsgIndex * 15)) - 1)
         let messages = messagesList.slice(0, (messagesList.length - (loadedMsgIndex * 15)) - 1);
+        messages.reverse();
         return messages;
       }
     }
