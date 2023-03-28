@@ -102,11 +102,13 @@ app.get("/api/getAllMessages", async (req, res) => {
 });
 
 app.get("/api/getLatestMessages", async (req, res) => {
-  const { room, messageId } = req.body as Partial<LatestMessage>;
-  if (!room || !messageId) {
+  console.log(req.body)
+  const { room, loadedMsgIndex } = req.body as Partial<LatestMessage>;
+  //console.log(room,loadedMsgIndex);
+  if (!room || !loadedMsgIndex) {
     res.sendStatus(400);
   } else {
-    const result = await DbMongoose.getLatestMessages(room, messageId);
+    const result = await DbMongoose.getLatestMessages(room, loadedMsgIndex);
     res.json(result);
   }
 });

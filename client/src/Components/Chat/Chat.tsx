@@ -7,6 +7,7 @@ import { useSections, useUser } from "../../custom-query-hooks";
 import { useMutation } from "react-query";
 import axios from "axios";
 import { AddMessage } from "../../../../types/Queries/AddMessage";
+import { LatestMessage } from "../../../../types/Queries/LatestMessage";
 type ChatProps = {
   selectedChat: UserClassSection;
 };
@@ -29,6 +30,25 @@ export default function Chat({ selectedChat }: ChatProps) {
   const [messages, _setMessages] = useState<ChatMessage[]>([]);
   const textRef = useRef<HTMLInputElement>(null);
   const lastMessageRef = useRef<HTMLDivElement>(null);
+  const [loadedMsgIndex, setIndex] = useState(1);
+
+  //const data = {room: selectedChat, loadedMsgIndex: 1};
+  useEffect(() => {
+    const loadLatestMessages = async () => await axios.get("/api/getLatestMessages",
+     {params: {room: selectedChat, loadedMsgIndex: 1}}
+    );
+
+    loadLatestMessages().then((res) => {
+      console.log(res.data)
+      if (res.data) {
+        res.data.forEach((msg: ChatMessage) => {
+          setMessages(msg)
+        });
+      }
+    }).catch((err) => {
+      console.log(err)
+    })
+  }, [])
 
   const chat = useChat({
     rooms: [selectedChat],

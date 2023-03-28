@@ -155,28 +155,31 @@ class DbMongoose {
   }
 
   //Rerturns An Array with all themessages ordered by date.
-  async getLatestMessages(room: UserClassSection, messageId: string) {
+  async getLatestMessages(room: UserClassSection, loadedMsgIndex: number ) {
     const groupChat = await groupChatModel.findOne({
       "room.courseNumber": room.courseNumber,
       "room.sectionNumber": room.sectionNumber,
     });
     if (groupChat) {
       const messagesList = groupChat.messagesList;
-      const indexLastMessage = messagesList.findIndex(
-        (message) => message._id!.toString() == messageId
-      );
-      if (indexLastMessage < 15) {
-        const messages = messagesList.slice(0, indexLastMessage + 1);
+      if(messagesList.length < 15){
+        let messages;
+        messagesList.forEach((message) => {
+          messages.push(message);
+        });
+
+        return messages;
+      }else if(messagesList.length > (loadedMsgIndex * 15) -1) {
+        let messages = messagesList.slice((loadedMsgIndex * 15) -15, (loadedMsgIndex * 15) -1);
         return messages;
       } else {
-        const messages = messagesList.slice(
-          indexLastMessage - 14,
-          indexLastMessage + 1
-        );
+        let messages = messagesList.slice(messagesList.length, (loadedMsgIndex * 15) -1);
         return messages;
       }
     }
-  }
+      
+    }
+  
 
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
     const courses = userSections.map(async (userCourse) => {
