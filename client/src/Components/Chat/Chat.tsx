@@ -32,8 +32,6 @@ export default function Chat({ selectedChat }: ChatProps) {
   const lastMessageRef = useRef<HTMLDivElement>(null);
   const mainChatRef = useRef<HTMLDivElement>(null);
   const [loadedMsgIndex, setIndex] = useState(0);
-  const [loadedMessageArray, addTo] = useState<ChatMessage>();
-  //let loadedMessageArray : ChatMessage[] = [];
 
   //const data = {room: selectedChat, loadedMsgIndex: 1};
   useEffect(() => {
@@ -47,9 +45,9 @@ export default function Chat({ selectedChat }: ChatProps) {
         res.data.forEach((msg: ChatMessage) => {
           setMessages(msg,2);
         });
-        //loadedMessageArray.forEach((msg: ChatMessage) => {
-         // setMessages(msg);
-        //});
+      }
+      if(res.data != null){
+        scrollToTop();
       }
     }).catch((err) => {
       console.log(err)
@@ -109,7 +107,15 @@ export default function Chat({ selectedChat }: ChatProps) {
   function onScroll(){
     if(mainChatRef.current?.scrollTop === 0){
       setIndex(loadedMsgIndex+1);
-      console.log(loadedMsgIndex);
+    }
+  }
+
+  function scrollToTop(){
+    if(mainChatRef.current != undefined && loadedMsgIndex > 0){
+      let scrollOptions = {
+        top: 1000
+      }
+      setTimeout(() => (mainChatRef.current?.scrollTo(scrollOptions)),500);
     }
   }
 
