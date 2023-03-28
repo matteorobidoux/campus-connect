@@ -64,13 +64,6 @@ export default function Chat({ selectedChat }: ChatProps) {
     },
   });
 
- /* useEffect(() => {
-    loadedMessageArray.forEach((msg: ChatMessage) => {
-      _setMessages((currentMessages) => [...currentMessages, msg]);
-    });
-  }, [loadedMessageArray])*/
-
-
   const setMessages = (c: ChatMessage, messagesNum: number) => {
     if(messagesNum > 1) {
     _setMessages((currentMessages) => [c,...currentMessages]);
