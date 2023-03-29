@@ -13,10 +13,6 @@ type ChatProps = {
   setMostRecentMessage: (setMostRecentMessage: MostRecentMessage) => void;
 };
 
-//TODO: Change main bar depending on component selected
-//TODO: Change message input/button/route depending on groupchat selected
-//TODO: Make message into components
-//
 const formatDate = (date: Date) => {
   return date.toLocaleString("en-US", {
     hour: "numeric",
@@ -75,8 +71,8 @@ export default function Chat({ selectedChat, setMostRecentMessage }: ChatProps) 
   return (
     <>
       <div className={styles["main-chat"]}>
-        <section className={styles["msger"]}>
-          <header className={styles["msger-header"]}>
+        <div className={styles["msger"]}>
+          <div className={styles["msger-header"]}>
             <div className={styles["msger-header-title"]}>
               <i className={styles["fas fa-comment-alt"]}></i>
               {
@@ -90,9 +86,9 @@ export default function Chat({ selectedChat, setMostRecentMessage }: ChatProps) 
                 <i className={styles["fas fa-cog"]}></i>
               </span>
             </div>
-          </header>
+          </div>
 
-          <main className={styles["msger-chat"]}>
+          <div className={styles["msger-chat"]}>
             {messages.map((message, i) => (
               <div ref={lastMessageRef}>
                 <Message
@@ -106,7 +102,7 @@ export default function Chat({ selectedChat, setMostRecentMessage }: ChatProps) 
                 />
               </div>
             ))}
-          </main>
+          </div>
 
           <div className={styles["msger-inputarea"]}>
             <input
@@ -117,7 +113,7 @@ export default function Chat({ selectedChat, setMostRecentMessage }: ChatProps) 
               ref={textRef}
             ></input>
           </div>
-        </section>
+        </div>
       </div>
     </>
   );

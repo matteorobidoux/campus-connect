@@ -7,6 +7,11 @@ import { useAddUserMutation, useCourseInfo } from "../../custom-query-hooks";
 import { useGoogleOAuth } from "../../custom-query-hooks/useGoogleOAuth";
 import { RegisterInfo } from "../../../../types/Queries/GAuth";
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
+import { PersonName } from "../Login/Login";
+
+type CourseEntryWidgetProps = {
+  name: PersonName;
+};
 
 export type SelectedCourse = {
   uuid: string;
@@ -14,7 +19,7 @@ export type SelectedCourse = {
   sectionNumber: string;
 };
 
-export default function CourseEntryWidget() {
+export default function CourseEntryWidget(props: CourseEntryWidgetProps) {
   const [selectedCourses, setSelectedCourses] = useState<Array<SelectedCourse>>(
     []
   );
@@ -62,7 +67,7 @@ export default function CourseEntryWidget() {
         access_token: data.access_token,
         refresh_token: data.refresh_token,
       },
-      name: "placeholder",
+      name: `${props.name.firstName} ${props.name.lastName}`,
       sections: selectedCourses.map((c) => ({
         courseNumber: c.number,
         sectionNumber: c.sectionNumber,

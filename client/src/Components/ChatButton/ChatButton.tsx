@@ -1,8 +1,10 @@
 import { GetAllSectionsResponse } from "../../../../types/Queries/GetAllCourses";
 import { MostRecentMessage } from "../../../../types/Queries/MostRecentMessage";
 import { useEffect, useState } from "react";
-import styles from "./ChatButton.module.scss";
 import axios from "axios";
+import { FadeInAnimation } from "../../framerMotionAnimations";
+import styles from "./ChatButton.module.scss";
+import { motion } from "framer-motion";
 
 type ChatButtonProps = {
   data: GetAllSectionsResponse;
@@ -13,8 +15,7 @@ type ChatButtonProps = {
 };
 
 export default function ChatButton(props: ChatButtonProps) {
-  const [animateBubble, setAnimateBubble] = useState(false);
-  const animationDuration: number = 2000;
+  const animation = FadeInAnimation(0.15);
 
   useEffect(() => {
     console.log("Data", props.data, props.index)
@@ -31,27 +32,20 @@ export default function ChatButton(props: ChatButtonProps) {
       console.log(err)
     })
   }, [])
+
   return (
-    <>
-      <div className={styles["button-container"]} onClick={props.onClick}>
-        <div className={styles["button"]}>
-          <h2>{props.data[props.index].courseTitle}</h2>
-          <h4 className={styles["recent-message"]}>
-            {props.mostRecentMessage.username === null ? "Loading..." : props.mostRecentMessage.username === "" ? "No messages yet" : `${props.mostRecentMessage.username}: ${props.mostRecentMessage.message}`}
-          </h4>
-          <div
-            className={
-              animateBubble
-                ? [styles.bubble, styles.animationBubble].join(" ")
-                : styles.bubble
-            }
-            style={{
-              background: `lightgreen`,
-              animationDuration: `${animationDuration / 1000}s`,
-            }}
-          ></div>
-        </div>
+    <motion.div
+      className={styles["button-container"]}
+      onClick={props.onClick}
+      variants={animation}
+    >
+      <div className={styles["button"]}>
+        <h2>{props.data[props.index].courseTitle}</h2>
+        <h4>
+          {props.mostRecentMessage.username === null ? "Loading..." : props.mostRecentMessage.username === "" ? "No messages yet" : `${props.mostRecentMessage.username}: ${props.mostRecentMessage.message}`}
+        </h4>
+        <div className={styles.bubble}></div>
       </div>
-    </>
+    </motion.div>
   );
 }
