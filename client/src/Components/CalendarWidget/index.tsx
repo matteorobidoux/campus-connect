@@ -45,15 +45,6 @@ export function CalendarWidget({}: CalendarWidgetProps) {
     }
   };
 
-  const isNewEventDateValid = (date: Date): boolean => {
-    const currentDate = new Date()
-    return (
-      date.getFullYear() === currentDate.getFullYear()
-      && date.getMonth() === currentDate.getMonth()
-      && date.getDate() === currentDate.getDate()
-    ) || (date > currentDate)
-  }
-
   return (
     <div className={styles.wrapper}>
       <Calendar
@@ -79,7 +70,7 @@ export function CalendarWidget({}: CalendarWidgetProps) {
           {events.map((ev, key) => (
             <CalendarEventRow event={ev} key={key} />
           ))}
-          {scope === "day" && isNewEventDateValid(date) && <AddEventEntry date={date} />}
+          {scope === "day" && <AddEventEntry date={date} />}
         </div>
       </div>
     </div>
