@@ -101,6 +101,11 @@ export default function App() {
                     selectedComponent={selectedComponent}
                     selectedChat={selectedChat}
                   />
+                  <ProfileBar
+                    isOpen={isOpen}
+                    toggleFunc={openProfileBar}
+                    profileImageUrl={user.picture}
+                  />
                 </>
               )}
               {!isLoggedIn && (
@@ -116,11 +121,6 @@ export default function App() {
               )}
             </LayoutGroup>
           </motion.div>
-          <ProfileBar
-            isOpen={isOpen}
-            toggleFunc={openProfileBar}
-            profileImageUrl={user.picture}
-          />
         </motion.div>
       </LayoutGroup>
     </>
