@@ -18,13 +18,28 @@ import GAuth from "./oauth/gauth-endpoint";
 import http from "http";
 import { createServer } from "./chat/index";
 import { UserClassSection } from "../../types/UserClassSection";
+ const swaggerJSDoc = require('swagger-jsdoc');
+ const swaggerDefinition = {
+  openapi: '3.0.0',
+  info: {
+    title: 'Express API for CampusConnect',
+    version: '1.0.0',
+  },
+};
 
+const options = {
+  swaggerDefinition,
+  // Paths to files containing OpenAPI definitions
+  apis: ['./app.ts'],
+};
+const swaggerSpec = swaggerJSDoc(options);
+const swaggerUi = require('swagger-ui-express');
 const app = express();
 const port = 8080;
 
 app.use(cors());
 app.use(express.json());
-
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.get("/users", async (_, res) => {
   const result = await DbMongoose.getAllUsers();
   res.json(result);
