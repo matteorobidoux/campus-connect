@@ -14,6 +14,11 @@
     flex-direction: column;
     min-width: 50%;
     gap: 0.3em;
+
+    span {
+      padding: 0.2rem;
+      text-align: center;
+    }
   }
 
   .right {
