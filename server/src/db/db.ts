@@ -1,24 +1,24 @@
 import mongoose from "mongoose";
 import User from "./models/user-schema";
-import Event from "./models/event-schema";
 import Course from "./models/course-schema";
 import groupChatModel from "./models/group-chat-schema";
 import { UserClass } from "../../../types/UserClass";
 import CreateUserBodyParams from "../../../types/Queries/CreateUser";
 import { UserClassSection } from "../../../types/UserClassSection";
 import { AddMessage } from "../../../types/Queries/AddMessage";
-import { GetAllSectionsResponse } from "../../../types/Queries/GetAllCourses";
 import { LoginRequest, LoginResponse } from "../../../types/Queries/Login";
 import CompletedEventBodyParams from "../../../types/Queries/CompletedEvent";
 import RemoveEventBodyParams from "../../../types/Queries/RemoveEvent";
 import userModel from "./models/user-schema";
-import Section from "./models/section-schema";
 import { Events } from "../../../types/Event";
-import { generateOAuthClient } from "../oauth/";
-import { google } from "googleapis";
-import { UserMessage } from "../../../types/UserMessage";
+require("dotenv").config();
 
-const dname = process.env.NAME || "CampusConnect";
+const dbName = process.env.DB_NAME || "CampusConnect";
+const dbUri = process.env.DB_URI || "";
+
+if (dbUri.length === 0) {
+  process.exit(-1);
+}
 
 class DbMongoose {
   constructor() {
@@ -26,13 +26,10 @@ class DbMongoose {
   }
   connectDb() {
     let dbOptions = {
-      dbName: "" + dname,
+      dbName: "" + dbName,
     };
 
-    mongoose.connect(
-      "mongodb+srv://nenechi:nenechi12@exercise11.cfvsryo.mongodb.net/?retryWrites=true&w=majority",
-      dbOptions
-    );
+    mongoose.connect(dbUri, dbOptions);
   }
 
   disconnectdb() {
