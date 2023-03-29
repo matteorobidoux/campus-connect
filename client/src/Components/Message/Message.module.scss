@@ -42,19 +42,31 @@
   border-bottom-left-radius: 0;
 }
 
+.left-msg {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+
+  .msg-bubble {
+    border-bottom-left-radius: 0;
+  }
+}
+
 .right-msg {
   display: flex;
   align-items: flex-end;
   margin-bottom: 10px;
   flex-direction: row-reverse;
-}
-.right-msg .msg-bubble {
-  background: var(--primary);
-  color: #fff;
-  border-bottom-right-radius: 0;
-}
-.right-msg .msg-img {
-  margin: 0 0 0 10px;
+
+  .msg-bubble {
+    background: var(--primary);
+    color: #fff;
+    border-bottom-right-radius: 0;
+  }
+
+  .msg-img {
+    margin: 0 0 0 10px;
+  }
 }
 
 .msg-text {

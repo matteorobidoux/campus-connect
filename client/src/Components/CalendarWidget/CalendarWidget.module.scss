@@ -6,6 +6,8 @@
   padding: 2%;
   margin-left: auto;
   margin-right: auto;
+  height: 100%;
+  overflow-y: auto;
 
   .calendarEventsWrapper {
     display: flex;

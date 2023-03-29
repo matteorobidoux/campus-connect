@@ -6,6 +6,8 @@ export type RegisterInfo = {
   picture: string;
   refresh_token: string;
   access_token: string;
+  family_name: string;
+  given_name: string;
 };
 
 export type GAuthResponse = {
