@@ -12,10 +12,6 @@ type ChatProps = {
   selectedChat: UserClassSection;
 };
 
-//TODO: Change main bar depending on component selected
-//TODO: Change message input/button/route depending on groupchat selected
-//TODO: Make message into components
-//
 const formatDate = (date: Date) => {
   return date.toLocaleString("en-US", {
     hour: "numeric",
@@ -107,8 +103,8 @@ export default function Chat({ selectedChat }: ChatProps) {
   return (
     <>
       <div className={styles["main-chat"]}>
-        <section className={styles["msger"]}>
-          <header className={styles["msger-header"]}>
+        <div className={styles["msger"]}>
+          <div className={styles["msger-header"]}>
             <div className={styles["msger-header-title"]}>
               <i className={styles["fas fa-comment-alt"]}></i>
               {
@@ -122,7 +118,7 @@ export default function Chat({ selectedChat }: ChatProps) {
                 <i className={styles["fas fa-cog"]}></i>
               </span>
             </div>
-          </header>
+          </div>
 
           <main className={styles["msger-chat"]} onScroll={() => onScroll()} ref={mainChatRef}>
             {messages.map((message, i) => (
@@ -149,7 +145,7 @@ export default function Chat({ selectedChat }: ChatProps) {
               ref={textRef}
             ></input>
           </div>
-        </section>
+        </div>
       </div>
     </>
   );

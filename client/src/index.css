@@ -34,6 +34,21 @@ code {
   backdrop-filter: blur(1px);
 }
 
+input,
+select {
+  background: var(--text-white);
+  color: var(--grey-background);
+  padding: 0.3rem;
+  border: var(--primary) 3px solid;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input:disabled {
+  border-color: var(--faded-black);
+  filter: brightness(0.8);
+}
+
 :root {
   --classes-light-green: #d0ffb4;
   --classes-salmon: #ffb4b4;
