@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { ChatMessage, useChat } from "../../chat";
 import { UserClassSection } from "../../../../types/UserClassSection";
 import { useSections, useUser } from "../../custom-query-hooks";
-import { useMutation } from "react-query";
+import { useMutation, useQuery, useQueryClient } from "react-query";
 import axios from "axios";
 import { AddMessage } from "../../../../types/Queries/AddMessage";
 import { LatestMessage } from "../../../../types/Queries/LatestMessage";
@@ -25,28 +25,36 @@ export default function Chat({ selectedChat }: ChatProps) {
   const sections = useSections({ userClassSections: user.sections });
   const [messages, _setMessages] = useState<ChatMessage[]>([]);
   const textRef = useRef<HTMLInputElement>(null);
+  const messageToScrollRef = useRef<HTMLDivElement>(null);
   const lastMessageRef = useRef<HTMLDivElement>(null);
+  const lastMessageRefState = useState<HTMLDivElement | null>(null);
   const mainChatRef = useRef<HTMLDivElement>(null);
   const [loadedMsgIndex, setIndex] = useState(0);
+  const { data, status } = useQuery(["loading", selectedChat, loadedMsgIndex], loadMessages,{refetchOnWindowFocus: false, cacheTime: 0 });
+  const queryClient = useQueryClient();
+  const [justLoadedFromDb, setJustLoadedFromDb] = useState(false);
+  const [msgCount, setMsgCount] = useState(0);
 
-  //ON CHANGE PAS UNE FORMULE GAGNANTE
-  //This will work in production but doesnt in dev as react strict re renders twice
-  useEffect(() => {
-    const loadLatestMessages = async () => await axios.get("/api/getLatestMessages",
+
+
+  async function loadMessages(){
+    setJustLoadedFromDb(true);
+    const loadLatestMessages = await axios.get("/api/getLatestMessages",
      {params: {room: selectedChat, loadedMsgIndex: loadedMsgIndex}}
     );
+   return loadLatestMessages.data;
+  }
 
-    loadLatestMessages().then((res) => {
-      if (res.data) {
-        _setMessages((currentMessages) => [...res.data, ...currentMessages]);
-      }
-      if(res.data != null){
-        scrollToTop();
-      }
-    }).catch((err) => {
-      console.log(err)
-    })
-  }, [loadedMsgIndex])
+  useEffect(() => {
+    if (data) {
+      setJustLoadedFromDb(false);
+      //lastMessageRef = data[data.lenght]
+      _setMessages((currentMessages) => [...data, ...currentMessages]);
+    }
+    if (data != null) {
+      // scrollToTop();
+    }
+  }, [data])
 
   const chat = useChat({
     rooms: [selectedChat],
@@ -82,7 +90,11 @@ export default function Chat({ selectedChat }: ChatProps) {
   };
 
   useEffect(() => {
-    lastMessageRef.current?.scrollIntoView();
+    /*if (justLoadedFromDb) {
+      setJustLoadedFromDb(false);
+      return;
+    }*/
+    // lastMessageRef.current?.scrollIntoView();
   }, [messages]);
 
   function onScroll(){
@@ -93,15 +105,31 @@ export default function Chat({ selectedChat }: ChatProps) {
 
   function scrollToTop(){
     if(mainChatRef.current != undefined && loadedMsgIndex > 0){
+      let height = lastMessageRef.current?.offsetHeight;
+      if(height != undefined) {
+       // height = (height + 15) * 15
+      }
+
+      console.log(height);
       let scrollOptions = {
-        top: 1000
+        top: height
       }
       setTimeout(() => (mainChatRef.current?.scrollTo(scrollOptions)),500);
-    }
+    
   }
+
+  useEffect(() => {
+    if (!justLoadedFromDb) {
+      
+    }
+    messageToScrollRef.current?.scrollIntoView();
+  }, [messageToScrollRef])
 
   return (
     <>
+      {/* {status === "error" && <p>Error fetching data</p>}
+      {status === "loading" && <p>Fetching data...</p>}
+      {status === "success" && ( */}
       <div className={styles["main-chat"]}>
         <div className={styles["msger"]}>
           <div className={styles["msger-header"]}>
@@ -121,19 +149,16 @@ export default function Chat({ selectedChat }: ChatProps) {
           </div>
 
           <main className={styles["msger-chat"]} onScroll={() => onScroll()} ref={mainChatRef}>
-            {messages.map((message, i) => (
-              <div ref={lastMessageRef}>
-                <Message
-                  leftOrRight={
-                    message.user._id === user._id ? "right-msg" : "left-msg"
-                  }
-                  user={message.user.username}
-                  message={message.message}
-                  time={formatDate(message.date)}
-                  key={i}
-                />
+            {messages.splice(0, 1).map((message, i) => (
+              <div ref={messageToScrollRef}>
+                {generateChatMessage(message, i, user._id)}
               </div>
             ))}
+            {messages.map((message, i) => (
+              <div ref={lastMessageRef}>
+                {generateChatMessage(message, i, user._id)}
+              </div>
+            ))};
           </main>
 
           <div className={styles["msger-inputarea"]}>
@@ -147,6 +172,20 @@ export default function Chat({ selectedChat }: ChatProps) {
           </div>
         </div>
       </div>
+      {/* )}; */}
     </>
   );
+}
+
+
+function generateChatMessage(message: ChatMessage, i: number, userID: string) {
+  return <Message
+  leftOrRight={
+    message.user._id === userID ? "right-msg" : "left-msg"
+  }
+  user={message.user.username}
+  message={message.message}
+  time={formatDate(message.date)}
+  key={i}
+/>
 }
