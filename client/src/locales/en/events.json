@@ -26,5 +26,7 @@
   "class": "Class",
   "pickAClass": "Pick a class",
   "submit": "Submit",
-  "delete": "Delete"
+  "delete": "Delete",
+  "updatingEvent": "Updating event...",
+  "addingEvent": "Adding event..."
 }

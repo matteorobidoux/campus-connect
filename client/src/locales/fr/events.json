@@ -26,5 +26,7 @@
   "class": "Cours",
   "pickAClass": "Choisissez Un Cours",
   "submit": "Soumettre",
-  "delete": "Supprimer"
+  "delete": "Supprimer",
+  "updatingEvent": "Mise À Jour De L'événement...",
+  "addingEvent": "Ajout D'événement..."
 }

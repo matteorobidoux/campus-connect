@@ -32,6 +32,7 @@ export default function App() {
   const [mostRecentMessage, setMostRecentMessage] = useState({
     message: "",
     username: "",
+    room: { courseNumber: "", sectionNumber: "" },
   } as MostRecentMessage);
 
   const { t, i18n } = useTranslation(["app"]);

@@ -83,7 +83,7 @@ export default function MainSidebar(props: MainSidebarProps) {
             ) : isSuccess ? (
               <CourseQuickViewContainer data={data} />
             ) : (
-              <span>Couldn't load data</span>
+              <span>{t("CouldntLoadData")}</span>
             )
           ) : props.selectedComponent === "chat" ? (
             isLoading ? (

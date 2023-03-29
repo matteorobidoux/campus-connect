@@ -12,6 +12,9 @@ import loginIt from "../locales/it/login.json";
 import chatEn from "../locales/en/chat.json";
 import chatFr from "../locales/fr/chat.json";
 import chatIt from "../locales/it/chat.json";
+import profileEn from "../locales/en/profile.json";
+import profileFr from "../locales/fr/profile.json";
+import profileIt from "../locales/it/profile.json";
 
 const resources = {
   en: {
@@ -19,18 +22,21 @@ const resources = {
     languages: languagesEn,
     login: loginEn,
     chat: chatEn,
+    profile: profileEn,
   },
   fr: {
     events: eventsFr,
     languages: languagesFr,
     login: loginFr,
     chat: chatFr,
+    profile: profileFr,
   },
   it: {
     events: eventsIt,
     languages: languagesIt,
     login: loginIt,
     chat: chatIt,
+    profile: profileIt,
   },
 };
 

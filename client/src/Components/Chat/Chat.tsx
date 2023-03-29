@@ -5,6 +5,7 @@ import { ChatMessage, useChat } from "../../chat";
 import { UserClassSection } from "../../../../types/UserClassSection";
 import { useSections, useUser } from "../../custom-query-hooks";
 import { MostRecentMessage } from "../../../../types/Queries/MostRecentMessage";
+import { useTranslation } from "react-i18next";
 type ChatProps = {
   selectedChat: UserClassSection;
   setMostRecentMessage: (setMostRecentMessage: MostRecentMessage) => void;
@@ -27,6 +28,8 @@ export default function Chat({
   const [messages, _setMessages] = useState<ChatMessage[]>([]);
   const textRef = useRef<HTMLInputElement>(null);
   const lastMessageRef = useRef<HTMLDivElement>(null);
+  const { t } = useTranslation(["chat"]);
+  let enterMessage = t("enterYourMessage");
 
   const chat = useChat({
     rooms: [selectedChat],
@@ -112,7 +115,7 @@ export default function Chat({
             <input
               type="text"
               className={styles["msger-input"]}
-              placeholder="Enter your message..."
+              placeholder={enterMessage}
               onKeyUp={onKeyUp}
               ref={textRef}
             ></input>

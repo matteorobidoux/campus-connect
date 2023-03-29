@@ -26,5 +26,7 @@
   "class": "Classe",
   "pickAClass": "Scegli Una Classe",
   "submit": "Sottoscrivi",
-  "delete": "Elimina"
+  "delete": "Elimina",
+  "updatingEvent": "Aggiornamento Evento...",
+  "addingEvent": "Aggiunta Evento..."
 }

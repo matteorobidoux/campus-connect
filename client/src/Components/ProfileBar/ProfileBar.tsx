@@ -3,52 +3,54 @@ import closeImg from "../../assets/close.png";
 import Rodal from "rodal";
 import { removeUser } from "../../custom-query-hooks/useGoogleOAuth";
 import { useQueryClient } from "react-query";
-import axios from "axios"
-import { useUser } from "../../custom-query-hooks"
-import profileImg from "../../assets/profile.png"
-import { useRef } from "react"
-import { User } from "../../../../types/User"
+import axios from "axios";
+import { useUser } from "../../custom-query-hooks";
+import profileImg from "../../assets/profile.png";
+import { useRef } from "react";
+import { User } from "../../../../types/User";
+import { useTranslation } from "react-i18next";
 
 //fix type script stuff
 type ProfileBarProps = {
   isOpen: boolean;
   toggleFunc: () => void;
-  changeProfileImg: (url: string | null) => void
-  profileUrl: string
+  changeProfileImg: (url: string | null) => void;
+  profileUrl: string;
 };
 
 export default function ProfileBar(props: ProfileBarProps) {
   const qc = useQueryClient();
   const user = useUser();
   const inputref: any = useRef(null);
+  const { t } = useTranslation("profile");
 
   let file: File | null = null;
 
-  async function uploadFile(file: File | null){
+  async function uploadFile(file: File | null) {
     if (file !== null) {
       var formData = new FormData();
-      formData.append('file',file);
-      formData.append('id', user._id)
-      let post = await axios.post('/api/uploadBlob', formData)
+      formData.append("file", file);
+      formData.append("id", user._id);
+      let post = await axios.post("/api/uploadBlob", formData);
       let response = await post.data;
-      const userLocalStorage = qc.getQueryData('user') as User;
+      const userLocalStorage = qc.getQueryData("user") as User;
       userLocalStorage.picture = response.url;
-      localStorage.removeItem('user');
-      localStorage.setItem('user', JSON.stringify(userLocalStorage));
-      props.changeProfileImg(response.url)
+      localStorage.removeItem("user");
+      localStorage.setItem("user", JSON.stringify(userLocalStorage));
+      props.changeProfileImg(response.url);
     }
   }
 
   const handleInput = () => {
-    if(inputref.current !== null){
+    if (inputref.current !== null) {
       inputref.current.click();
     }
-  }
+  };
 
   const handleFileChange = (e: any) => {
     file = e.currentTarget.files ? e.currentTarget.files[0] : null;
     uploadFile(file);
-  }
+  };
 
   return (
     <>
@@ -72,19 +74,42 @@ export default function ProfileBar(props: ProfileBarProps) {
         }}
       >
         <div className={styles.profileBar}>
-          <img className={styles.closeProfile} src={closeImg} alt="close icon" onClick={e => {
-              e.preventDefault()
-              props.toggleFunc()
-            }}></img>
-            {props.profileUrl === "" ?(
-            <img className={styles["profileImg"]} src={profileImg} alt="profile" referrerPolicy="no-referrer"></img>
-            ) : props.profileUrl.length > 1 ?(
-              <img className={styles["profileImg"]} referrerPolicy="no-referrer" src={props.profileUrl} alt="profile"></img>
-            ) : null
-          }
+          <img
+            className={styles.closeProfile}
+            src={closeImg}
+            alt="close icon"
+            onClick={(e) => {
+              e.preventDefault();
+              props.toggleFunc();
+            }}
+          ></img>
+          {props.profileUrl === "" ? (
+            <img
+              className={styles["profileImg"]}
+              src={profileImg}
+              alt="profile"
+              referrerPolicy="no-referrer"
+            ></img>
+          ) : props.profileUrl.length > 1 ? (
+            <img
+              className={styles["profileImg"]}
+              referrerPolicy="no-referrer"
+              src={props.profileUrl}
+              alt="profile"
+            ></img>
+          ) : null}
           <div className={styles.changeProfileImgDiv}>
-            <input style={{display: "none"}} ref={inputref} type="file" name="file" onChange={handleFileChange}/>
-            <button className={styles.changeProfileImg} onClick={handleInput}>Change </button>
+            <input
+              style={{ display: "none" }}
+              ref={inputref}
+              type="file"
+              name="file"
+              onChange={handleFileChange}
+            />
+            <button className={styles.changeProfileImg} onClick={handleInput}>
+              {" "}
+              {t("change")}{" "}
+            </button>
           </div>
           <h1>Elidjay Ross</h1>
           <div className={styles.profileInfo}>
@@ -103,15 +128,13 @@ export default function ProfileBar(props: ProfileBarProps) {
             }}
           >
             {" "}
-            Logout{" "}
+            {t("logout")}{" "}
           </button>
         </div>
       </Rodal>
     </>
   );
 }
-
-
 
 // <button>
 //             Set Image

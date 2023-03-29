@@ -3,5 +3,6 @@
   "Calendar": "Calendar",
   "Loading": "Loading...",
   "CouldntLoadData": "Couldn't load data",
-  "NoMessagesYet": "No messages yet"
+  "NoMessagesYet": "No messages yet",
+  "enterYourMessage": "Enter your message..."
 }

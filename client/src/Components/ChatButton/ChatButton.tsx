@@ -1,6 +1,6 @@
 import { GetAllSectionsResponse } from "../../../../types/Queries/GetAllCourses";
 import { MostRecentMessage } from "../../../../types/Queries/MostRecentMessage";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { FadeInAnimation } from "../../framerMotionAnimations";
 import styles from "./ChatButton.module.scss";
@@ -17,16 +17,10 @@ type ChatButtonProps = {
 
 export default function ChatButton(props: ChatButtonProps) {
   const animation = FadeInAnimation(0.15);
-
+  let [message, setMessage] = useState(props.mostRecentMessage);
   const { t } = useTranslation(["chat"]);
 
   useEffect(() => {
-    console.log("Data", props.data, props.index);
-    console.log(
-      "In Fetch",
-      props.data[props.index].courseNumber,
-      props.data[props.index].number
-    );
     const getMostRecentMessage = async () =>
       axios.get("/api/getMostRecentMessage", {
         params: {
@@ -38,13 +32,24 @@ export default function ChatButton(props: ChatButtonProps) {
     getMostRecentMessage()
       .then((res) => {
         if (res.data) {
-          props.setMostRecentMessage(res.data);
+          setMessage(res.data);
         }
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
+
+  useEffect(() => {
+    if (
+      props.mostRecentMessage.room?.courseNumber ===
+        props.data[props.index].courseNumber &&
+      props.mostRecentMessage.room?.sectionNumber ===
+        props.data[props.index].number
+    ) {
+      setMessage(props.mostRecentMessage);
+    }
+  }, [props.mostRecentMessage]);
 
   return (
     <motion.div
@@ -55,11 +60,11 @@ export default function ChatButton(props: ChatButtonProps) {
       <div className={styles["button"]}>
         <h2>{props.data[props.index].courseTitle}</h2>
         <h4>
-          {props.mostRecentMessage.username === null
+          {message.username === null
             ? t("Loading")
-            : props.mostRecentMessage.username === ""
+            : message.username === ""
             ? t("NoMessagesYet")
-            : `${props.mostRecentMessage.username}: ${props.mostRecentMessage.message}`}
+            : `${message.username}: ${message.message}`}
         </h4>
         <div className={styles.bubble}></div>
       </div>
