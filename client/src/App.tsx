@@ -29,7 +29,10 @@ export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(query.data?._id);
   const [selectedChat, selectChat] = useState<UserClassSection | null>(null);
   const [profileUrl, changeProfileImg] = useState("");
-  const [mostRecentMessage, setMostRecentMessage] = useState({message: "", username: ""} as MostRecentMessage)
+  const [mostRecentMessage, setMostRecentMessage] = useState({
+    message: "",
+    username: "",
+  } as MostRecentMessage);
 
   const { t, i18n } = useTranslation(["app"]);
 
@@ -54,10 +57,10 @@ export default function App() {
   useEffect(() => {
     setIsLoggedIn(user !== undefined);
     if (user !== undefined) {
-      if(profileUrl !== ""){
-        changeProfileImg(profileUrl)
+      if (profileUrl !== "") {
+        changeProfileImg(profileUrl);
       } else if (user.picture !== undefined) {
-        changeProfileImg(user.picture)
+        changeProfileImg(user.picture);
       } else {
         changeProfileImg("");
       }
@@ -80,7 +83,7 @@ export default function App() {
 
   function setProfileImg(url: string | null) {
     if (url) {
-      changeProfileImg(url)
+      changeProfileImg(url);
     }
   }
 
@@ -104,6 +107,7 @@ export default function App() {
                     selectComponentFunc={switchComponent}
                     mostRecentMessage={mostRecentMessage}
                     setMostRecentMessage={setMostRecentMessage}
+                    user={user}
                   />
                   <Main
                     selectedComponent={selectedComponent}
@@ -128,7 +132,8 @@ export default function App() {
           <ProfileBar
             isOpen={isOpen}
             toggleFunc={openProfileBar}
-            profileImageUrl={user.picture}
+            profileUrl={user.picture}
+            changeProfileImg={setProfileImg}
           />
         </motion.div>
       </LayoutGroup>
