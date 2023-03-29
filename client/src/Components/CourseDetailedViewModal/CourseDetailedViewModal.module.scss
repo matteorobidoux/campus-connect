@@ -51,16 +51,39 @@
     flex-grow: 1;
     border-radius: 7px;
     padding: 1rem 2rem;
+    position: relative;
 
     h2 {
       font-weight: 400;
+      margin-left: 1.4rem;
     }
+
+    .svgLeft {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      color: #92fd53;
+    }
+
+    .svgRight {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      color: #92fd53;
+    }
+  }
+
+  .wrapperWrapper {
+    padding: 2rem;
   }
 
   .bottom {
     display: flex;
     justify-content: space-around;
     background-color: white;
+    position: relative;
 
     .left {
       display: flex;
