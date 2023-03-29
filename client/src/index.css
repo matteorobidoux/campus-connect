@@ -74,4 +74,7 @@ input:disabled {
   --background: #fffcfc;
   --font: "Inter", sans-serif;
   --faded-black: #66666689;
+
+  --calendar-selected-color: #d67e7e;
+  --calendar-selected-color-today: #20912d;
 }
