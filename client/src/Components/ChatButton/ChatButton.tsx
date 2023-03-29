@@ -1,4 +1,5 @@
 import { GetAllSectionsResponse } from "../../../../types/Queries/GetAllCourses";
+import { MostRecentMessage } from "../../../../types/Queries/MostRecentMessage";
 import { useEffect, useState } from "react";
 import styles from "./ChatButton.module.scss";
 import axios from "axios";
@@ -7,23 +8,24 @@ type ChatButtonProps = {
   data: GetAllSectionsResponse;
   index: any;
   onClick: any;
+  mostRecentMessage: MostRecentMessage;
+  setMostRecentMessage: (setMostRecentMessage: MostRecentMessage) => void;
 };
 
 export default function ChatButton(props: ChatButtonProps) {
   const [animateBubble, setAnimateBubble] = useState(false);
   const animationDuration: number = 2000;
-  const [mostRecentMessage, setMostRecentMessage] = useState({message: "", username: null})
 
   useEffect(() => {
-    console.log(props.data[props.index])
+    console.log("Data", props.data, props.index)
+    console.log("In Fetch", props.data[props.index].courseNumber, props.data[props.index].number)
     const getMostRecentMessage = async () => axios.get(
       "/api/getMostRecentMessage", {params: {courseNumber: props.data[props.index].courseNumber, sectionNumber: props.data[props.index].number}}
     );
 
     getMostRecentMessage().then((res) => {
       if (res.data) {
-        console.log(res.data.message)
-        setMostRecentMessage(res.data)
+        props.setMostRecentMessage(res.data)
       }
     }).catch((err) => {
       console.log(err)
@@ -35,7 +37,7 @@ export default function ChatButton(props: ChatButtonProps) {
         <div className={styles["button"]}>
           <h2>{props.data[props.index].courseTitle}</h2>
           <h4 className={styles["recent-message"]}>
-            {mostRecentMessage.username === null ? "Loading..." : mostRecentMessage.username === "" ? "No messages yet" : `${mostRecentMessage.username}: ${mostRecentMessage.message}`}
+            {props.mostRecentMessage.username === null ? "Loading..." : props.mostRecentMessage.username === "" ? "No messages yet" : `${props.mostRecentMessage.username}: ${props.mostRecentMessage.message}`}
           </h4>
           <div
             className={

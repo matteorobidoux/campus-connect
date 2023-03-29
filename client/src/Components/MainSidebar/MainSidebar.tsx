@@ -3,11 +3,14 @@ import { useSections, useUser } from "../../custom-query-hooks";
 import CourseQuickViewContainer from "../CourseQuickViewContainer/CourseQuickViewContainer";
 import ChatButton from "../ChatButton/ChatButton";
 import styles from "./MainSidebar.module.scss";
+import { MostRecentMessage } from "../../../../types/Queries/MostRecentMessage";
 
 type MainSidebarProps = {
   selectedComponent: string;
   selectChatFunc: (course: UserClassSection | null) => void;
   selectComponentFunc: Function;
+  mostRecentMessage: MostRecentMessage;
+  setMostRecentMessage: (setMostRecentMessage: MostRecentMessage) => void;
 };
 
 export default function MainSidebar(props: MainSidebarProps) {
@@ -58,6 +61,8 @@ export default function MainSidebar(props: MainSidebarProps) {
                   <ChatButton
                     data={data}
                     index={index}
+                    mostRecentMessage={props.mostRecentMessage}
+                    setMostRecentMessage={props.setMostRecentMessage}
                     onClick={() => props.selectChatFunc(value)}
                   />
                 ))}

@@ -15,6 +15,7 @@ import CourseEntryWidget from "./Components/CourseEntryWidget/CourseEntryWidget"
 import { UserClassSection } from "../../types/UserClassSection";
 
 import { useTranslation } from "react-i18next";
+import { MostRecentMessage } from "../../types/Queries/MostRecentMessage";
 
 library.add(faCircleNotch);
 
@@ -28,6 +29,7 @@ export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(query.data?._id);
   const [selectedChat, selectChat] = useState<UserClassSection | null>(null);
   const [profileUrl, changeProfileImg] = useState("");
+  const [mostRecentMessage, setMostRecentMessage] = useState({message: "", username: ""} as MostRecentMessage)
 
   const { t, i18n } = useTranslation(["app"]);
 
@@ -97,10 +99,13 @@ export default function App() {
                 selectedComponent={selectedComponent}
                 selectChatFunc={selectNewChat}
                 selectComponentFunc={switchComponent}
+                mostRecentMessage={mostRecentMessage}
+                setMostRecentMessage={setMostRecentMessage}
               />
               <Main
                 selectedComponent={selectedComponent}
                 selectedChat={selectedChat}
+                setMostRecentMessage={setMostRecentMessage}
               />
             </>
           )}

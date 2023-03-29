@@ -7,8 +7,10 @@ import { useSections, useUser } from "../../custom-query-hooks";
 import { useMutation } from "react-query";
 import axios from "axios";
 import { AddMessage } from "../../../../types/Queries/AddMessage";
+import { MostRecentMessage } from "../../../../types/Queries/MostRecentMessage";
 type ChatProps = {
   selectedChat: UserClassSection;
+  setMostRecentMessage: (setMostRecentMessage: MostRecentMessage) => void;
 };
 
 //TODO: Change main bar depending on component selected
@@ -23,7 +25,7 @@ const formatDate = (date: Date) => {
   });
 };
 
-export default function Chat({ selectedChat }: ChatProps) {
+export default function Chat({ selectedChat, setMostRecentMessage }: ChatProps) {
   const user = useUser();
   const sections = useSections({ userClassSections: user.sections });
   const [messages, _setMessages] = useState<ChatMessage[]>([]);
@@ -65,7 +67,10 @@ export default function Chat({ selectedChat }: ChatProps) {
 
   useEffect(() => {
     lastMessageRef.current?.scrollIntoView();
-  }, [messages]);
+    if(messages.length > 0){
+      setMostRecentMessage({message: messages[messages.length - 1].message, username: messages[messages.length - 1].user.username, room: selectedChat} as MostRecentMessage)
+    }
+  }, [messages, selectedChat, setMostRecentMessage]);
 
   return (
     <>

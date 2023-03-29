@@ -88,16 +88,15 @@ app.post('/api/uploadBlob', async (req, res)=>{
 });
 
 app.get("/api/getMostRecentMessage", async (req, res) => {
-  const { courseNumber, sectionNumber } = req.query as Partial<MostRecentMessage>;
-  console.log(courseNumber, sectionNumber);
+  const { courseNumber, sectionNumber } = req.query as Partial<UserClassSection>;
   if (!courseNumber || !sectionNumber) {
-    console.log("No Bueno");
     res.sendStatus(400);
   } else {
     const result = await DbMongoose.getMostRecentMessage({
       courseNumber,
       sectionNumber,
     });
+    console.log("Getting most recent message", courseNumber, sectionNumber, result?.message)
     res.json(result);
   }
 });

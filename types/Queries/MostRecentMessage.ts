@@ -1,4 +1,4 @@
 export type MostRecentMessage = {
-    courseNumber: string;
-    sectionNumber: string;
+    message: string;
+    username: string | null;
 }
