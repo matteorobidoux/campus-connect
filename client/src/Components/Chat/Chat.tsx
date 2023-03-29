@@ -33,18 +33,16 @@ export default function Chat({ selectedChat }: ChatProps) {
   const mainChatRef = useRef<HTMLDivElement>(null);
   const [loadedMsgIndex, setIndex] = useState(0);
 
-  //const data = {room: selectedChat, loadedMsgIndex: 1};
+  //ON CHANGE PAS UNE FORMULE GAGNANTE
+  //This will work in production but doesnt in dev as react strict re renders twice
   useEffect(() => {
     const loadLatestMessages = async () => await axios.get("/api/getLatestMessages",
      {params: {room: selectedChat, loadedMsgIndex: loadedMsgIndex}}
     );
 
     loadLatestMessages().then((res) => {
-      console.log(res.data)
       if (res.data) {
-        res.data.forEach((msg: ChatMessage) => {
-          setMessages(msg,2);
-        });
+        _setMessages((currentMessages) => [...res.data, ...currentMessages]);
       }
       if(res.data != null){
         scrollToTop();
@@ -59,18 +57,13 @@ export default function Chat({ selectedChat }: ChatProps) {
     onMessage: (m) => {
       if(m.room.courseNumber + m.room.sectionNumber !== selectedChat.courseNumber + selectedChat.sectionNumber) return;
       m.date = new Date(m.date);
-      setMessages(m,1);
+      setMessages(m);
       lastMessageRef.current?.scrollIntoView();
     },
   });
 
-  const setMessages = (c: ChatMessage, messagesNum: number) => {
-    if(messagesNum > 1) {
-    _setMessages((currentMessages) => [c,...currentMessages]);
-    }
-    else {
-      _setMessages((currentMessages) => [...currentMessages, c]);
-    }
+  const setMessages = (c: ChatMessage) => {
+    _setMessages((currentMessages) => [...currentMessages, c]);
   };
 
   const onEnter = (message: string) => {
@@ -81,9 +74,8 @@ export default function Chat({ selectedChat }: ChatProps) {
       user: { _id: user._id, username: user.name },
       date: new Date(),
     };
-
     chat.sendMessage(pMessage);
-    setMessages(pMessage,1);
+    setMessages(pMessage);
   };
 
   const onKeyUp = ({ key }: React.KeyboardEvent<HTMLInputElement>) => {

@@ -163,39 +163,38 @@ class DbMongoose {
     });
     if (groupChat) {
       const messagesList = groupChat.messagesList;
+      //Check if all messages have been loaded already
       if((messagesList.length - (loadedMsgIndex * 15)) - 15 <= -15){
         return null;
       }
+      //Check if less than 15 messages
       if(messagesList.length < 15){
-        console.log("1")
-        let messages;
-        messagesList.forEach((message) => {
-          messages.push(message);
-        });
-
-        return messages;
-      }else if(messagesList.length > (loadedMsgIndex * 15) && ((messagesList.length - (loadedMsgIndex * 15)) - 15) >= 0) {
-        console.log("2")
-        console.log(messagesList.length)
-        console.log((messagesList.length - (loadedMsgIndex * 15)) - 15)
-        console.log((messagesList.length - (loadedMsgIndex * 15)) - 1)
+        //console.log("1")
+        return messagesList.splice(messagesList.length,0)
+      }
+      //Check if more than 15 messages left to be displayed
+      else if(messagesList.length > (loadedMsgIndex * 15) && ((messagesList.length - (loadedMsgIndex * 15)) - 15) >= 0) {
+        //console.log("2")
+        //console.log(messagesList.length)
+        //console.log((messagesList.length - (loadedMsgIndex * 15)) - 15)
+        //console.log((messagesList.length - (loadedMsgIndex * 15)) - 1)
         let messages = messagesList.slice(messagesList.length - (loadedMsgIndex * 15) - 15, messagesList.length - (loadedMsgIndex * 15));
-        messages.reverse();
+        //messages.reverse();
         return messages;
+        //Between 1-14 message left to be displayed
       } else {
-        console.log("3")
-        console.log(messagesList.length)
-        console.log((messagesList.length - (loadedMsgIndex * 15)) - 15)
-        console.log((messagesList.length - (loadedMsgIndex * 15)) - 1)
+        //console.log("3")
+        //console.log(messagesList.length)
+        //console.log((messagesList.length - (loadedMsgIndex * 15)) - 15)
+        //console.log((messagesList.length - (loadedMsgIndex * 15)) - 1)
         let messages = messagesList.slice(0, (messagesList.length - (loadedMsgIndex * 15)) - 1);
-        messages.reverse();
+        //messages.reverse();
         return messages;
       }
     }
       
     }
   
-
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
     const courses = userSections.map(async (userCourse) => {
       // Some courses can be taken from different programs. Right now they are duplicated in the DB.
