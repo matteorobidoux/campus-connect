@@ -76,5 +76,5 @@ input:disabled {
   --faded-black: #66666689;
 
   --calendar-selected-color: #d67e7e;
-  --calendar-selected-color-today: #20912d;
+  --calendar-selected-color-today: black;
 }
