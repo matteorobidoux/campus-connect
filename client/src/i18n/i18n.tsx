@@ -9,22 +9,28 @@ import languagesIt from "../locales/it/languages.json";
 import loginEn from "../locales/en/login.json";
 import loginFr from "../locales/fr/login.json";
 import loginIt from "../locales/it/login.json";
+import chatEn from "../locales/en/chat.json";
+import chatFr from "../locales/fr/chat.json";
+import chatIt from "../locales/it/chat.json";
 
 const resources = {
   en: {
     events: eventsEn,
     languages: languagesEn,
     login: loginEn,
+    chat: chatEn,
   },
   fr: {
     events: eventsFr,
     languages: languagesFr,
     login: loginFr,
+    chat: chatFr,
   },
   it: {
     events: eventsIt,
     languages: languagesIt,
     login: loginIt,
+    chat: chatIt,
   },
 };
 

@@ -10,6 +10,7 @@ import {
   StaggeredFadeInAnimation,
 } from "../../framerMotionAnimations";
 import { User } from "../../../../types/User";
+import { useTranslation } from "react-i18next";
 
 type MainSidebarProps = {
   selectedComponent: string;
@@ -36,6 +37,8 @@ export default function MainSidebar(props: MainSidebarProps) {
 
   const containerAnimation = FadeInAnimation(0.8);
 
+  const { t } = useTranslation(["chat"]);
+
   return (
     <AnimatePresence>
       <motion.div
@@ -59,7 +62,7 @@ export default function MainSidebar(props: MainSidebarProps) {
                 props.selectChatFunc(null);
               }}
             >
-              Calender
+              {t("Calendar")}
             </motion.button>
             <motion.button
               whileTap={{ scale: 0.9 }}
@@ -71,7 +74,7 @@ export default function MainSidebar(props: MainSidebarProps) {
                   props.selectChatFunc(props.user.sections[0]);
               }}
             >
-              Chat
+              {t("Chat")}
             </motion.button>
           </div>
           {props.selectedComponent === "calender" ? (
@@ -84,7 +87,7 @@ export default function MainSidebar(props: MainSidebarProps) {
             )
           ) : props.selectedComponent === "chat" ? (
             isLoading ? (
-              <span>Loading...</span>
+              <span>{t("Loading")}</span>
             ) : isSuccess ? (
               <motion.div
                 className={styles["groupchats"]}
@@ -104,7 +107,7 @@ export default function MainSidebar(props: MainSidebarProps) {
                 ))}
               </motion.div>
             ) : (
-              <span>Couldn't load data</span>
+              <span>{t("CouldntLoadData")}</span>
             )
           ) : null}
         </div>
