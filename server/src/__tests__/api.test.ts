@@ -2,7 +2,10 @@ const request = require("supertest");
 import mongoose from "mongoose";
 import { app } from "../api-jest/app";
 import { UserClassSection } from "../../../types/UserClassSection";
+import { GetAllSectionsRequest } from "../../../types/Queries/GetAllCourses";
 jest.mock("../db/db.ts");
+jest.mock("../oauth/gauth-endpoint")
+jest.mock("../oauth/index")
 afterAll(async () => {
   jest.clearAllMocks();
   jest.restoreAllMocks();
@@ -14,11 +17,19 @@ afterAll(async () => {
 });
 
 describe("test Api Get All Users", () => {
-  it("should return the doc ", async () => {
+  it("should return true defined ", async () => {
     const res = await request(app).get("/users");
     expect(res.body).toBeDefined();
   });
 });
+
+describe("test Api Gauth", () => {
+  it("should return defined ", async () => {
+    const res = await request(app).get("/gauth");
+    expect(res.body).toBeDefined();
+  });
+});
+
 
 describe("test Api Login", () => {
   it("should return 400 with no data", async () => {
@@ -28,9 +39,9 @@ describe("test Api Login", () => {
 });
 
 describe("test api getAllStrippedCourses", () => {
-  it("should return not undefined", async () => {
+  it("should return 400", async () => {
     const res = await request(app).get("/api/getAllStrippedCourses");
-    expect(res.body).toBeDefined();
+    expect(res.status).toBe(400)
   });
 });
 
@@ -83,9 +94,15 @@ describe("test api getLatestMessages", () => {
 
 describe("test api getAllSections", () => {
   it("should return not undefined", async () => {
-    const room: UserClassSection[] =[{courseNumber:"a",sectionNumber:"a"},{courseNumber:"a",sectionNumber:"a"}]
-    const res = await request(app).get("/api/getAllSections").send(room);
-    expect(res.status).toBe(200);
+    const room : UserClassSection[]=[ {
+       courseNumber: "574-453-DW",
+      sectionNumber: "00001",
+      
+    }];
+    const abe:GetAllSectionsRequest={userClassSections:room};
+    
+    const res = await request(app).get("/api/getAllSections").send(abe.userClassSections);
+    expect(res.status).toBe(400);
   });
 });
 

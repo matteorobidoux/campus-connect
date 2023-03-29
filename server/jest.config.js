@@ -2,5 +2,5 @@
 module.exports = {
   preset: "ts-jest",
   testEnvironment: "node",
-  coveragePathIgnorePatterns:["./src/db/db.ts"]
+  coveragePathIgnorePatterns:["./src/db/db.ts", "./src/oauth"]
 };

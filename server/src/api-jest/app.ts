@@ -10,18 +10,13 @@ import {
 } from "../../../types/Queries/GetAllCourses";
 import { LoginRequest } from "../../../types/Queries/Login";
 import { AddEventBody, AddEventResponse } from "../../../types/Queries/AddEvent";
-import { Events } from "../../../types/Event";
 import { LatestMessage } from "../../../types/Queries/LatestMessage";
 import { generateAuthUrl } from "./../oauth";
 import cors from "cors";
 import GAuth from "./../oauth/gauth-endpoint";
-import http from "http";
-import { createServer } from "./../chat/index";
 import { UserClassSection } from "../../../types/UserClassSection";
 
 const app = express();
-const port = 8080;
-
 app.use(cors());
 app.use(express.json());
 
@@ -115,10 +110,11 @@ app.get(
   "/api/getAllSections",
   async (req, res: Response<GetAllSectionsResponse>) => {
     const { userClassSections } = req.query as Partial<GetAllSectionsRequest>;
-    if (Array.isArray(userClassSections)) {
+    if(Array.isArray(userClassSections)) {
       const result = await DbMongoose.getUserClasses(userClassSections);
       res.json(result);
     } else {
+      console.log(typeof(userClassSections))
       res.sendStatus(400);
     }
   }
@@ -127,11 +123,9 @@ app.get(
 app.get("/gauth", async (req, res) => {
   console.log("calling gauth.");
   await GAuth(req, res);
+  res.sendStatus(200)
 });
 
-app.get("/api/authenticate", async (req, res) => {
-  generateAuthUrl(res);
-});
 
 app.get(
   "/api/getAllStrippedCourses",

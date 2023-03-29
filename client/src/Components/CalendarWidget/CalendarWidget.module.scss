@@ -27,4 +27,27 @@
       }
     }
   }
+  
+  .botton {
+    display: flex;
+    justify-content: center;
+
+    button {
+      color: white;
+      width: 50%;
+      border: 0px;
+      border-radius: 5px;
+      background-color: var(--grey-background);
+      padding-top: 15px;
+      padding-bottom: 15px;
+      text-align: center;
+      margin: 5px;
+      font-weight: bold;
+      box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
 }
