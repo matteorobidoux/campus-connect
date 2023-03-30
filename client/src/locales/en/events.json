@@ -28,5 +28,6 @@
   "submit": "Submit",
   "delete": "Delete",
   "updatingEvent": "Updating event...",
-  "addingEvent": "Adding event..."
+  "addingEvent": "Adding event...",
+  "noEvents": "No events"
 }

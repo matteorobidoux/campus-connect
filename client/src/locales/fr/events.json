@@ -28,5 +28,6 @@
   "submit": "Soumettre",
   "delete": "Supprimer",
   "updatingEvent": "Mise À Jour De L'événement...",
-  "addingEvent": "Ajout D'événement..."
+  "addingEvent": "Ajout D'événement...",
+  "noEvents": "Aucun événements"
 }

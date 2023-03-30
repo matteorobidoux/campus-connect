@@ -28,5 +28,6 @@
   "submit": "Sottoscrivi",
   "delete": "Elimina",
   "updatingEvent": "Aggiornamento Evento...",
-  "addingEvent": "Aggiunta Evento..."
+  "addingEvent": "Aggiunta Evento...",
+  "noEvents": "Nessun evento"
 }

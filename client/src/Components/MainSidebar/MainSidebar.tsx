@@ -85,7 +85,7 @@ export default function MainSidebar(props: MainSidebarProps) {
           </div>
           {props.selectedComponent === "calender" ? (
             isLoading ? (
-              <span>Loading...</span>
+              <span>{t("Loading")}</span>
             ) : isSuccess ? (
               <CourseQuickViewContainer data={data} />
             ) : (
