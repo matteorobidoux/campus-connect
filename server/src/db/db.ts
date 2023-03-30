@@ -199,31 +199,6 @@ class DbMongoose {
     }
   }
 
-  // async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
-  //   console.log("Sections in db", userSections);
-  //   const courses = userSections.map(async (userCourse) => {
-  //     // Some courses can be taken from different programs. Right now they are duplicated in the DB.
-  //     // For this reason, I'm alwaays selecting the first one.
-  //     const courses = await Course.find({ number: userCourse.courseNumber });
-  //     courses.forEach((c) => c.sections.forEach((s) => console.log(s.number)));
-  //     const course = courses
-  //       .find((course) =>
-  //         course.sections.find(
-  //           (fullSection) => fullSection.number == userCourse.sectionNumber
-  //         )
-  //       )!
-  //       .toObject();
-  //     // const section = courses.sections.find(fullSection => fullSection.number == userCourse.sectionNumber)!;
-  //     return {
-  //       ...course.sections[0],
-  //       courseNumber: courses[0].number,
-  //       courseTitle: courses[0].title,
-  //     };
-  //   });
-
-  //   return await Promise.all(courses);
-  // }
-
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
     const courses = userSections.map(async (userCourse) => {
       const course = (await Course.findOne({

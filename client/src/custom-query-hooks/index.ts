@@ -25,7 +25,6 @@ export const useSections = (classes: GetAllSectionsRequest) => {
       "/api/getAllSections",
       { params }
     );
-    console.log("useSections",data.data)
     return data.data;
   }
 
@@ -86,3 +85,5 @@ export const useCalendarEvents = () => {
 
   return { isLoading, data: events, isStale };
 };
+
+export { writeUser };

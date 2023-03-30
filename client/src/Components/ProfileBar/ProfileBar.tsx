@@ -4,7 +4,7 @@ import Rodal from "rodal";
 import { removeUser } from "../../custom-query-hooks/useGoogleOAuth";
 import { useQueryClient } from "react-query";
 import axios from "axios";
-import { useUser } from "../../custom-query-hooks";
+import { useUser, writeUser } from "../../custom-query-hooks";
 import profileImg from "../../assets/profile.png";
 import { useRef } from "react";
 import { User } from "../../../../types/User";
@@ -21,7 +21,7 @@ type ProfileBarProps = {
 export default function ProfileBar(props: ProfileBarProps) {
   const qc = useQueryClient();
   const user = useUser();
-  const inputref: any = useRef(null);
+  const inputref = useRef<HTMLInputElement>(null);
   const { t } = useTranslation("profile");
 
   let file: File | null = null;
@@ -35,8 +35,7 @@ export default function ProfileBar(props: ProfileBarProps) {
       let response = await post.data;
       const userLocalStorage = qc.getQueryData("user") as User;
       userLocalStorage.picture = response.url;
-      localStorage.removeItem("user");
-      localStorage.setItem("user", JSON.stringify(userLocalStorage));
+      writeUser(userLocalStorage);
       props.changeProfileImg(response.url);
     }
   }
@@ -135,13 +134,3 @@ export default function ProfileBar(props: ProfileBarProps) {
     </>
   );
 }
-
-// <button>
-//             Set Image
-//             <input type="file" name="file" onChange={(event) => {
-//                   file = event.currentTarget.files ? event.currentTarget.files[0] : null;
-//                 }} />
-//             </button>
-//             <button onClick={()=> uploadFile(file)}>
-//               Submit
-//             </button>

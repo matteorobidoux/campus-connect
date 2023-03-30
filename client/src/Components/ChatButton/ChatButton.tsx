@@ -6,6 +6,7 @@ import { FadeInAnimation } from "../../framerMotionAnimations";
 import styles from "./ChatButton.module.scss";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useQuery } from "react-query";
 
 type ChatButtonProps = {
   data: GetAllSectionsResponse;
@@ -20,25 +21,28 @@ export default function ChatButton(props: ChatButtonProps) {
   let [message, setMessage] = useState(props.mostRecentMessage);
   const { t } = useTranslation(["chat"]);
 
-  useEffect(() => {
-    const getMostRecentMessage = async () =>
-      axios.get("/api/getMostRecentMessage", {
-        params: {
-          courseNumber: props.data[props.index].courseNumber,
-          sectionNumber: props.data[props.index].number,
-        },
-      });
+  const getMostRecentMessage = async () =>
+    axios.get("/api/getMostRecentMessage", {
+      params: {
+        courseNumber: props.data[props.index].courseNumber,
+        sectionNumber: props.data[props.index].number,
+      },
+    });
 
-    getMostRecentMessage()
-      .then((res) => {
-        if (res.data) {
-          setMessage(res.data);
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+  let query = useQuery({
+    queryKey: [
+      "recentMessage",
+      props.data[props.index].courseNumber,
+      props.data[props.index].number,
+    ],
+    queryFn: getMostRecentMessage,
+  });
+
+  useEffect(() => {
+    if (query.data) {
+      setMessage(query.data.data);
+    }
+  }, [query.data]);
 
   useEffect(() => {
     if (
