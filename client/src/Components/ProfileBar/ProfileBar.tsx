@@ -4,6 +4,10 @@ import Rodal from "rodal";
 import { removeUser } from "../../custom-query-hooks/useGoogleOAuth";
 import { useQueryClient } from "react-query";
 import profileImg from "../../assets/profile.png";
+import { User } from "../../../../types/User";
+import { UserClassSection } from "../../../../types/UserClassSection";
+import { useSections, useUser } from "../../custom-query-hooks";
+import { UserClass } from "../../../../types/UserClass";
 
 //fix type script stuff
 type ProfileBarProps = {
@@ -14,6 +18,12 @@ type ProfileBarProps = {
 
 export default function ProfileBar(props: ProfileBarProps) {
   const qc = useQueryClient();
+  const user = useUser();
+  const sections = useSections({ userClassSections: user.sections });
+  const numberOfActiveEvents: number =
+    sections.data?.reduce<number>((previous: number, current: UserClass) => {
+      return previous + current.events.length;
+    }, 0) ?? 0;
 
   return (
     <>
@@ -62,13 +72,11 @@ export default function ProfileBar(props: ProfileBarProps) {
             ></img>
           ) : null}
           <button className={styles.changeProfileImg}>Change</button>
-          <h1>Elidjay Ross</h1>
+          <h1>{user.name}</h1>
           <div className={styles.profileInfo}>
-            <h3>School: Dawson College</h3>
-            <h3>Program: Computer Science</h3>
-            <h3>Total Courses: 5</h3>
-            <h3>Active Events: 7</h3>
-            <h3>Completed Events: 3</h3>
+            <h3>Total Courses: {user.sections.length}</h3>
+            <h3>Active Events: {numberOfActiveEvents}</h3>
+            <h3>Completed Events: {user.completedEvents.length}</h3>
           </div>
           <button
             className={styles.logout}
