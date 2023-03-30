@@ -154,6 +154,36 @@ router.get("/api/getAllMessages", async (req, res) => {
   }
 });
 
+
+
+/**
+ * @swagger
+ * /api/getLatestMessages:
+ *  get:
+ *    summary: Get LastestMessages
+ *    description: Returns an array with last 15 Messages from the given message Index
+ *    parameters:
+ *      - in: query 
+ *        name: LatestMessage
+ *        schema:
+ *          type: object
+ *          properties:
+ *            data:
+ *               type: object
+ *               example: {room: {courseNumber: "574-453-DW", sectionNumber:  "00001"}, messageIndex: 0}
+ *        description: The courseNumber and sectionNumber of the group chat       
+ *    responses:
+ *      200:
+ *         description: A list of Messages
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 data:
+ *                    type: array
+ *                    example: ["a"]
+ */
 router.get("/api/getLatestMessages", async (req, res) => {
   const { room, messageId } = req.body as Partial<LatestMessage>;
   if (!room || !messageId) {
@@ -164,6 +194,35 @@ router.get("/api/getLatestMessages", async (req, res) => {
   }
 });
 
+
+/**
+ * @swagger
+ * /api/getAllSections:
+ *  get:
+ *    summary: Get All user class Sections
+ *    description: Returns an array with All user's classes based on the UserClassSection[]
+ *    parameters:
+ *      - in: query 
+ *        name: UserClassSections
+ *        schema:
+ *          type: object
+ *          properties:
+ *            data:
+ *               type: array
+ *               example: [ { sections: {courseNumber: "574-453-DW", sectionNumber:  "00001"} } ]
+ *        description: The array Containing courseNumber and section where user belongs       
+ *    responses:
+ *      200:
+ *         description: A list of all User Classes
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 data:
+ *                    type: array
+ *                    example: [ {courseNumber: "574-453-DW", courseTitle: "StoryBoard", section: { number: "00001", schedule: [ {begin: "9:00 AM", day: "Monday", duration: { hours: 4, minutes: 0}, end: "1:00 PM" } ]  }, teacher: "Kate Morrison" } ]
+ */
 router.get(
   "/api/getAllSections",
   async (req, res: Response<GetAllSectionsResponse>) => {
@@ -186,6 +245,36 @@ router.get("/api/authenticate", async (req, res) => {
   generateAuthUrl(res);
 });
 
+
+
+/**
+ * @swagger
+ * /api/getLatestMessages:
+ *  get:
+ *    summary: Get LastestMessages
+ *    description: Returns a array with last 15 Messages from the given message Index
+ *    parameters:
+ *      - in: query 
+ *        name: LatestMessage
+ *        schema:
+ *          type: object
+ *          properties:
+ *            data:
+ *               type: object
+ *               example: {room: {courseNumber: "a", sectionNumber:  "00001"}, messageIndex: 0}
+ *        description: The courseNumber and sectionNumber of the group chat       
+ *    responses:
+ *      200:
+ *         description: A list of Messages
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 data:
+ *                    type: array
+ *                    example: ["a"]
+ */
 router.get(
   "/api/getAllStrippedCourses",
   async (req, res: Response<GetAllStrippedCourses>) => {
