@@ -91,14 +91,14 @@ export default function CalendarEntryModal({
                 {" "}
                 {t("title")}{" "}
               </label>
-              <Field maxlength="32" id="title" name="title" />
+              <Field maxLength="32" id="title" name="title" />
               <p> {errors.title ? errors.title : null} </p>
             </div>
 
             <div className={styles.formEntry}>
               <label htmlFor="description"> {t("description")} </label>
               <Field
-                maxlength="400"
+                maxLength="400"
                 as="textarea"
                 className={styles["descTextBox"]}
                 id="description"
