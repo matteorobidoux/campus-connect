@@ -17,6 +17,7 @@ export default function CourseQuickView(props: CourseQuickViewProps) {
   return (
     <>
       <Rodal
+        className={styles.rodal}
         visible={isVisible}
         onClose={() => setIsVisible(false)}
         height={600}
