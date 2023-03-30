@@ -32,6 +32,8 @@ export function CourseDetailedViewModal({
   const leftSide = schedules.slice(0, halfLength - 1) ?? [];
   const rightSide = schedules.slice(halfLength - 1) ?? [];
 
+  const currentDate: Date = new Date(new Date().setHours(0, 0, 0, 0));
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.top}>
@@ -65,7 +67,8 @@ export function CourseDetailedViewModal({
           <div className={styles.bottom}>
             <div className={styles.left}>
               {userClass.events
-                .sort((a, b) => b.date.valueOf() - a.date.valueOf())
+                .filter((event) => event.date >= currentDate)
+                .sort((a, b) => a.date.valueOf() - b.date.valueOf())
                 .slice(0, 3)
                 .map((ev) => (
                   <CalendarEventRow key={ev._id} event={ev} />
