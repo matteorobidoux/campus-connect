@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 import { useEffect, useState } from "react";
 import CalendarEvent from "../../../../types/Calendar";
-=======
-import { useState } from "react";
->>>>>>> dbe76416f9e8d04a0dec050562822aa60bb160a3
 import { Events } from "../../../../types/Event";
 import Calendar from "./Calendar";
 import CalendarEventRow from "./CalendarEntry";
