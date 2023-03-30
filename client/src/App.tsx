@@ -13,6 +13,7 @@ import { useUser } from "./custom-query-hooks";
 import Login from "./Components/Login/Login";
 import { UserClassSection } from "../../types/UserClassSection";
 import { useTranslation } from "react-i18next";
+import { MostRecentMessage } from "../../types/Queries/MostRecentMessage";
 import { LayoutGroup, motion } from "framer-motion";
 
 library.add(faCircleNotch);
@@ -27,6 +28,11 @@ export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(query.data?._id);
   const [selectedChat, selectChat] = useState<UserClassSection | null>(null);
   const [profileUrl, changeProfileImg] = useState("");
+  const [mostRecentMessage, setMostRecentMessage] = useState({
+    message: "",
+    username: "",
+    room: { courseNumber: "", sectionNumber: "" },
+  } as MostRecentMessage);
 
   const { t, i18n } = useTranslation(["app"]);
 
@@ -51,7 +57,9 @@ export default function App() {
   useEffect(() => {
     setIsLoggedIn(user !== undefined);
     if (user !== undefined) {
-      if (user.picture !== undefined) {
+      if (profileUrl !== "") {
+        changeProfileImg(profileUrl);
+      } else if (user.picture !== undefined) {
         changeProfileImg(user.picture);
       } else {
         changeProfileImg("");
@@ -71,6 +79,12 @@ export default function App() {
 
   function selectNewChat(course: UserClassSection | null) {
     selectChat(course);
+  }
+
+  function setProfileImg(url: string | null) {
+    if (url) {
+      changeProfileImg(url);
+    }
   }
 
   return (
@@ -94,16 +108,20 @@ export default function App() {
                     selectedComponent={selectedComponent}
                     selectChatFunc={selectNewChat}
                     selectComponentFunc={switchComponent}
+                    mostRecentMessage={mostRecentMessage}
+                    setMostRecentMessage={setMostRecentMessage}
                     user={user}
                   />
                   <Main
                     selectedComponent={selectedComponent}
                     selectedChat={selectedChat}
+                    setMostRecentMessage={setMostRecentMessage}
                   />
                   <ProfileBar
                     isOpen={isOpen}
                     toggleFunc={openProfileBar}
-                    profileImageUrl={user.picture}
+                    profileUrl={user.picture}
+                    changeProfileImg={setProfileImg}
                   />
                 </>
               )}

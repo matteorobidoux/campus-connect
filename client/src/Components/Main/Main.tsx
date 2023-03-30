@@ -1,3 +1,4 @@
+import { MostRecentMessage } from "../../../../types/Queries/MostRecentMessage";
 import { UserClassSection } from "../../../../types/UserClassSection";
 import { CalendarWidget } from "../CalendarWidget";
 import { AnimatePresence, motion } from "framer-motion";
@@ -7,6 +8,7 @@ import styles from "./Main.module.scss";
 type MainProps = {
   selectedComponent: string;
   selectedChat: UserClassSection | null;
+  setMostRecentMessage: (setMostRecentMessage: MostRecentMessage) => void;
 };
 
 export default function Main(props: MainProps) {
@@ -22,7 +24,7 @@ export default function Main(props: MainProps) {
         {!props.selectedChat ? (
           <CalendarWidget />
         ) : props.selectedComponent === "chat" ? (
-          <Chat selectedChat={props.selectedChat} />
+          <Chat selectedChat={props.selectedChat} setMostRecentMessage={props.setMostRecentMessage}/>
         ) : null}
       </motion.div>
     </AnimatePresence>
