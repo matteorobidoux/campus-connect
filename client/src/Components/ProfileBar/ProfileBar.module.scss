@@ -16,20 +16,25 @@
   align-self: center;
 }
 
-.changeProfileImg {
-  width: 75px;
-  height: 20px;
-  border: none;
-  border-radius: 20px;
-  background-color: var(--background);
-  color: var(--primary);
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
-  padding: 1%;
-  font-size: small;
-  font-weight: bold;
-  margin-top: 3%;
+.changeProfileImgDiv {
   align-self: center;
-  margin-bottom: 5%;
+  margin-top: 3%;
+
+  .changeProfileImg {
+    width: 75px;
+    height: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--background);
+    color: var(--primary);
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+    padding: 1%;
+    font-size: small;
+    font-weight: bold;
+    margin-top: 3%;
+    align-self: center;
+    margin-bottom: 5%;
+  }
 }
 
 .logout {
