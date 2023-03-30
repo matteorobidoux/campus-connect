@@ -10,9 +10,15 @@
   min-height: 20px;
   font-weight: 200;
   width: 100%;
+  max-width: 400px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+
+  @media only screen and (min-width: 1612px) {
+    width: 100%;
+    max-width: 100%;
+  }
 
   .left {
     display: flex;
@@ -37,12 +43,13 @@
     flex-grow: 2;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     .className {
       margin-right: 1rem;
-      max-width: 200px;
       overflow-wrap: break-word;
       font-size: large;
+      max-width: 100%;
     }
 
     .eventName {
