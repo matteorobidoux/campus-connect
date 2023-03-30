@@ -31,6 +31,7 @@ export const useChat = ({ onMessage, rooms }: UseChatArgs) => {
 
     socket.on("disconnect", () => setIsConnected(false));
     socket.on("message", onMessage);
+    socket.on("latestMessage", onMessage);
 
     // rooms.forEach(room => socket.on("message", (message) => onMessage(message)) );
 

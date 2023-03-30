@@ -1,19 +1,59 @@
 import styles from "./ProfileBar.module.scss";
 import closeImg from "../../assets/close.png";
 import Rodal from "rodal";
-import { removeUser } from "../../custom-query-hooks/useGoogleOAuth";
+import {
+  getUser,
+  removeUser,
+  writeUser,
+} from "../../custom-query-hooks/useGoogleOAuth";
 import { useQueryClient } from "react-query";
+import axios from "axios";
+import { useUser } from "../../custom-query-hooks";
 import profileImg from "../../assets/profile.png";
+import { useRef } from "react";
+import { User } from "../../../../types/User";
+import { useTranslation } from "react-i18next";
 
 //fix type script stuff
 type ProfileBarProps = {
   isOpen: boolean;
   toggleFunc: () => void;
-  profileImageUrl: string;
+  changeProfileImg: (url: string | null) => void;
+  profileUrl: string;
 };
 
 export default function ProfileBar(props: ProfileBarProps) {
   const qc = useQueryClient();
+  const user = useUser();
+  const inputref = useRef<HTMLInputElement>(null);
+  const { t } = useTranslation("profile");
+
+  let file: File | null = null;
+
+  async function uploadFile(file: File | null) {
+    if (file !== null) {
+      var formData = new FormData();
+      formData.append("file", file);
+      formData.append("id", user._id);
+      let post = await axios.post("/api/uploadBlob", formData);
+      let response = await post.data;
+      const userLocalStorage = getUser() as User;
+      userLocalStorage.picture = response.url;
+      writeUser(userLocalStorage);
+      props.changeProfileImg(response.url);
+    }
+  }
+
+  const handleInput = () => {
+    if (inputref.current !== null) {
+      inputref.current.click();
+    }
+  };
+
+  const handleFileChange = (e: any) => {
+    file = e.currentTarget.files ? e.currentTarget.files[0] : null;
+    uploadFile(file);
+  };
 
   return (
     <>
@@ -46,22 +86,34 @@ export default function ProfileBar(props: ProfileBarProps) {
               props.toggleFunc();
             }}
           ></img>
-          {props.profileImageUrl === "" ? (
+          {props.profileUrl === "" ? (
             <img
               className={styles["profileImg"]}
               src={profileImg}
               alt="profile"
               referrerPolicy="no-referrer"
             ></img>
-          ) : props.profileImageUrl.length > 1 ? (
+          ) : props.profileUrl.length > 1 ? (
             <img
               className={styles["profileImg"]}
               referrerPolicy="no-referrer"
-              src={props.profileImageUrl}
+              src={props.profileUrl}
               alt="profile"
             ></img>
           ) : null}
-          <button className={styles.changeProfileImg}>Change</button>
+          <div className={styles.changeProfileImgDiv}>
+            <input
+              style={{ display: "none" }}
+              ref={inputref}
+              type="file"
+              name="file"
+              onChange={handleFileChange}
+            />
+            <button className={styles.changeProfileImg} onClick={handleInput}>
+              {" "}
+              {t("change")}{" "}
+            </button>
+          </div>
           <h1>Elidjay Ross</h1>
           <div className={styles.profileInfo}>
             <h3>School: Dawson College</h3>
@@ -79,7 +131,7 @@ export default function ProfileBar(props: ProfileBarProps) {
             }}
           >
             {" "}
-            Logout{" "}
+            {t("logout")}{" "}
           </button>
         </div>
       </Rodal>
