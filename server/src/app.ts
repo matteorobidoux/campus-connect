@@ -11,7 +11,7 @@ const swaggerDefinition = {
    title: 'Express API for CampusConnect',
    version: '1.0.0',
    description: 'API documentation',
- },
+ }
 };
 
 const options = {
