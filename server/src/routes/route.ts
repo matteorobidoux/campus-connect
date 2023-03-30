@@ -28,29 +28,19 @@ router.use(express.json());
  * @swagger
  * /users:
  *  get:
- *    summary: Get all users
- *    description: Returns a list of all users
+ *    summary: Get all Users from Db
+ *    description: Returns a array with All Users  
  *    responses:
- *         200:
- *         description: A list of users
+ *      200:
+ *         description: A list of all Messages In the group Chat. Sample model
  *         content:
  *           application/json:
  *             schema:
  *               type: object
  *               properties:
  *                 data:
- *                   type: array
- *                   items:
- *                     type: object
- *                     properties:
- *                       id:
- *                         type: integer
- *                         description: The user ID.
- *                         example: 0
- *                       name:
- *                         type: string
- *                         description: The user's name.
- *                         example: Leanne Graham
+ *                    type: array
+ *                    example: [ { user: { userName: "TestName", _id: "010101010101"}, email: "a@hot.com", completedEvents: [] } ]
  */
 router.get("/users", async (_, res) => {
   const result = await DbMongoose.getAllUsers();
@@ -127,19 +117,23 @@ router.post("/api/addEvent", async (req, res: Response<AddEventResponse>) => {
  *      - in: query 
  *        name: UserClassSection
  *        schema:
- *          type: UserClassSection
- *        description: The courseNumber and sectionNumber of the group chat       
+ *          type: object
+ *          properties:
+ *            data:
+ *               type: object
+ *               example: {room: {courseNumber: "574-453-DW", sectionNumber:  "00001"}, messageIndex: 0}
+ *        description: The courseNumber and sectionNumber of the group chat to retrieve themessages      
  *    responses:
  *      200:
- *         description: A list of Messages
+ *         description: A list of all Messages In the group Chat
  *         content:
  *           application/json:
  *             schema:
  *               type: object
  *               properties:
  *                 data:
- *                    type: string
- *                    example: "a"
+ *                    type: array
+ *                    example: [ { user: { userName: "TestName", _id: "010101010101"}, date: "2023-03-28T23:00:10.537+00:00", message: "Swagger"} ]
  */
 router.get("/api/getAllMessages", async (req, res) => {
   const { courseNumber, sectionNumber } = req.body as Partial<UserClassSection>;
@@ -182,7 +176,7 @@ router.get("/api/getAllMessages", async (req, res) => {
  *               properties:
  *                 data:
  *                    type: array
- *                    example: ["a"]
+ *                    example: [ { user: { userName: "TestName", _id: "010101010101"}, date: "2023-03-28T23:00:10.537+00:00", message: "Swagger"} ]
  */
 router.get("/api/getLatestMessages", async (req, res) => {
   const { room, messageId } = req.body as Partial<LatestMessage>;
@@ -249,7 +243,7 @@ router.get("/api/authenticate", async (req, res) => {
 
 /**
  * @swagger
- * /api/getLatestMessages:
+ * /api/getAllStrippedCourses:
  *  get:
  *    summary: Get LastestMessages
  *    description: Returns a array with last 15 Messages from the given message Index
