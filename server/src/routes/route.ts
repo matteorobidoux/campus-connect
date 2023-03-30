@@ -15,32 +15,43 @@ import { LatestMessage } from "../../../types/Queries/LatestMessage";
 import { generateAuthUrl } from "../oauth";
 import GAuth from "../oauth/gauth-endpoint";
 import { UserClassSection } from "../../../types/UserClassSection";
- const swaggerJSDoc = require('swagger-jsdoc');
- const swaggerDefinition = {
-  openapi: '3.0.0',
-  info: {
-    title: 'Express API for CampusConnect',
-    version: '1.0.0',
-    description: 'API documentation',
-  },
-};
 
-const options = {
-  swaggerDefinition,
-  // Paths to files containing OpenAPI definitions
-  apis: ['./routes/*.ts']
-};
-const swaggerSpec = swaggerJSDoc(options);
-const swaggerUi = require('swagger-ui-express');
 
 const router= express.Router()
 
 router.use(express.json());
 
-router.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 
 
+/**
+ * @swagger
+ * /users:
+ *  get:
+ *    summary: Get all users
+ *    description: Returns a list of all users
+ *    responses:
+ *         200:
+ *         description: A list of users
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 data:
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       id:
+ *                         type: integer
+ *                         description: The user ID.
+ *                         example: 0
+ *                       name:
+ *                         type: string
+ *                         description: The user's name.
+ *                         example: Leanne Graham
+ */
 router.get("/users", async (_, res) => {
   const result = await DbMongoose.getAllUsers();
   res.json(result);
@@ -89,6 +100,7 @@ router.post("/api/removeEvent", async (req, res) => {
   }
 });
 
+
 router.post("/api/addEvent", async (req, res: Response<AddEventResponse>) => {
   const body = req.body as Partial<AddEventBody>;
   if (!body.section || !body.event) {
@@ -104,6 +116,31 @@ router.post("/api/addEvent", async (req, res: Response<AddEventResponse>) => {
   res.json({ success: true });
 });
 
+
+/**
+ * @swagger
+ * /api/getAllMessages:
+ *  get:
+ *    summary: Get all Messages
+ *    description: Returns a array with All Messages
+ *    parameters:
+ *      - in: query 
+ *        name: UserClassSection
+ *        schema:
+ *          type: UserClassSection
+ *        description: The courseNumber and sectionNumber of the group chat       
+ *    responses:
+ *      200:
+ *         description: A list of Messages
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 data:
+ *                    type: string
+ *                    example: "a"
+ */
 router.get("/api/getAllMessages", async (req, res) => {
   const { courseNumber, sectionNumber } = req.body as Partial<UserClassSection>;
   if (!courseNumber || !sectionNumber) {
