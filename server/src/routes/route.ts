@@ -101,7 +101,7 @@ router.post("/api/addCompletedEvent", async (req, res) => {
 
 /**
  * @swagger
- * /api/addEvent:
+ * /api/RemoveEvent:
  *  post:
  *    summary: Adds an Event to the specific course
  *    description: Returns Boolean true
