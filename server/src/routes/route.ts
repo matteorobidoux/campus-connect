@@ -230,11 +230,57 @@ router.get(
   }
 );
 
+
+/**
+ * @swagger
+ * /gauth:
+ *  get:
+ *    summary: Google Authorization req / res 
+ *    description: Returns an user object
+ *    parameters:
+ *      - in: query 
+ *        name: Code
+ *        schema:
+ *          type: object
+ *          properties:
+ *            data:
+ *               type: string
+ *               example: "somecredentialcodeforthegoogleauths"      
+ *    responses:
+ *      200:
+ *         description: An User object info response
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 data:
+ *                    type: object
+ *                    example: { gid: "12342", email: "a@hot.com", picture: "url",}
+ */
 router.get("/gauth", async (req, res) => {
   console.log("calling gauth.");
   await GAuth(req, res);
 });
 
+/**
+ * @swagger
+ * /api/authenticate:
+ *  get:
+ *    summary: authetificates the user
+ *    description: Returns a array with last 15 Messages from the given message Index    
+ *    responses:
+ *      200:
+ *         description: Authorization Url
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 data:
+ *                    type: string
+ *                    example: "thisisasampleurlauthoriationurl.auth.com"
+ */
 router.get("/api/authenticate", async (req, res) => {
   generateAuthUrl(res);
 });
