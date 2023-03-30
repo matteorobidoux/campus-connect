@@ -62,6 +62,31 @@ router.post("/api/addUser", async (req, res) => {
   res.json(await DbMongoose.addUser(body));
 });
 
+
+
+/**
+ * @swagger
+ * /api/addCompletedEvent:
+ *  post:
+ *    summary: Adds an Event to the specific course
+ *    description: Returns Boolean true
+ *    parameters:
+ *      - in: query 
+ *        name: RemoveEventBodyParams
+ *        schema:
+ *          type: object
+ *          properties:
+ *            userId:
+ *               type: string
+ *               example: "someuserId"
+ *            UserCompletedEvent:
+ *                    type: object
+ *                    example:  {id: "someid", date: "2023-03-28T23:00:10.537+00:00"}
+ *        description: Adding event id to the userCompletedEvent Array 
+ *    responses:
+ *      200:
+ *         description: An Event was succesfully removed.
+ */
 router.post("/api/addCompletedEvent", async (req, res) => {
   const { userId, completedEvent } =
     req.body as Partial<CompletedEventBodyParams>;
@@ -74,6 +99,32 @@ router.post("/api/addCompletedEvent", async (req, res) => {
   }
 });
 
+/**
+ * @swagger
+ * /api/addEvent:
+ *  post:
+ *    summary: Adds an Event to the specific course
+ *    description: Returns Boolean true
+ *    parameters:
+ *      - in: query 
+ *        name: RemoveEventBodyParams
+ *        schema:
+ *          type: object
+ *          properties:
+ *            eventId:
+ *               type: string
+ *               example: "5td4ageayuadahwywe"
+ *            courseNumber:
+ *                    type: string
+ *                    example:  "574-453-DW"
+ *            courseSection:
+ *                     type: string
+ *                     example: "00001"
+ *        description: RemoveEventBody has all the required stuff to remove event  
+ *    responses:
+ *      200:
+ *         description: An Event was succesfully removed.
+ */
 router.post("/api/removeEvent", async (req, res) => {
   const { eventId, courseNumber, courseSection } =
     req.body as Partial<RemoveEventBodyParams>;
@@ -91,6 +142,34 @@ router.post("/api/removeEvent", async (req, res) => {
 });
 
 
+/**
+ * @swagger
+ * /api/addEvent:
+ *  post:
+ *    summary: Adds an Event to the specific course
+ *    description: Returns Boolean true
+ *    parameters:
+ *      - in: query 
+ *        name: AddEventBody
+ *        schema:
+ *          type: object
+ *          properties:
+ *            section:
+ *               type: object
+ *               example: {{courseNumber: "574-453-DW", sectionNumber:  "00001"}}
+ *            event:
+ *             type: object
+ *             example: { owenerid: "someownerid", date: "2023-03-30T04:00:00.000+00:00", title: "Swagger Post",desc: "swagger post",courseTitle: "WebDev"}
+ *        description: Section containes courseNumber and section, event is the event objet to be added    
+ *    responses:
+ *      200:
+ *         description: An Event was succesfully added.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: boolean
+ *               example: true
+ */
 router.post("/api/addEvent", async (req, res: Response<AddEventResponse>) => {
   const body = req.body as Partial<AddEventBody>;
   if (!body.section || !body.event) {
