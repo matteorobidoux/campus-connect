@@ -3,6 +3,8 @@ import Rodal from "rodal";
 import { UserClass } from "../../../../types/UserClass";
 import { CourseDetailedViewModal } from "../CourseDetailedViewModal";
 import styles from "./CourseQuickView.module.scss";
+import { motion } from "framer-motion";
+import { FadeInAnimation } from "../../framerMotionAnimations";
 
 type CourseQuickViewProps = {
   course: UserClass;
@@ -12,8 +14,8 @@ type CourseQuickViewProps = {
 export default function CourseQuickView(props: CourseQuickViewProps) {
   const [animateBubble, setAnimateBubble] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const animation = FadeInAnimation(0.15);
 
-  const animationDuration: number = 2000;
   return (
     <>
       <Rodal
@@ -32,32 +34,19 @@ export default function CourseQuickView(props: CourseQuickViewProps) {
           close={() => setIsVisible(false)}
         />
       </Rodal>
-      <div
+      <motion.div
+        variants={animation}
         className={styles["course-quick-view"]}
         onClick={(e) => {
           e.preventDefault();
-          setAnimateBubble(true);
           setIsVisible(true);
-          setTimeout(() => {
-            setAnimateBubble(false);
-          }, animationDuration); //need to change this
         }}
       >
         <h2>{props.course.courseTitle}</h2>
         {/* Keep TBA but pririotize passed section teacher prop */}
         <h4>{props.course.teacher || "TBA"}</h4>
-        <div
-          className={
-            animateBubble
-              ? [styles.bubble, styles.animationBubble].join(" ")
-              : styles.bubble
-          }
-          style={{
-            background: `var(--classes-salmon)`,
-            animationDuration: `${animationDuration / 1000}s`,
-          }}
-        ></div>
-      </div>
+        <div className={styles.bubble}></div>
+      </motion.div>
     </>
   );
 }

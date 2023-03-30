@@ -42,7 +42,7 @@ const useGoogleOAuth = () => {
 
       return data;
     }
-    return;
+    throw new Error("Not returning from GAuth");
   };
 
   return useQuery(["user"], getter, { staleTime: Infinity, retry: false });

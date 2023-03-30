@@ -80,6 +80,7 @@ function NavBar(props: NavBarProps) {
           <img
             className={styles["profileImg"]}
             src={props.profileUrl}
+            referrerPolicy="no-referrer"
             alt="profile"
             onClick={(e) => {
               e.preventDefault();

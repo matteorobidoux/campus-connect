@@ -19,13 +19,13 @@ export default function CalendarEventRow({ event }: CalendarEventRowProps) {
     <>
       <div className={styles.wrapper} onClick={() => setIsVisible(true)}>
         <div className={styles.left}>
-          <text className={styles.text}> {t("day")} </text>
-          <text className={styles.day}> {event.date.getDate()} </text>
+          <span className={styles.text}> {t("day")} </span>
+          <span className={styles.day}> {event.date.getDate()} </span>
         </div>
         <div className={styles.vl} />
         <div className={styles.right}>
-          <text className={styles.className}>{event.courseTitle}</text>
-          <text className={styles.eventName}>{event.title}</text>
+          <span className={styles.className}>{event.courseTitle}</span>
+          <span className={styles.eventName}>{event.title}</span>
         </div>
       </div>
 

@@ -35,7 +35,7 @@ export function CalendarWidget({}: CalendarWidgetProps) {
 
   const onScopeChanged = (scope: "month" | "day", date: Date) => {
     setScope(scope);
-    if (scope == "month") {
+    if (scope === "month") {
       setMonth(months[date.getMonth()]);
       setDay("");
     } else {
@@ -67,10 +67,10 @@ export function CalendarWidget({}: CalendarWidgetProps) {
         </div>
 
         <div className={styles.calendarEventsWrapper}>
-          {events.map((ev) => (
-            <CalendarEventRow event={ev} />
+          {events.map((ev, key) => (
+            <CalendarEventRow event={ev} key={key} />
           ))}
-          {scope == "day" && <AddEventEntry date={date} />}
+          {scope === "day" && <AddEventEntry date={date} />}
         </div>
       </div>
     </div>

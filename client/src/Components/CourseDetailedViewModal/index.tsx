@@ -28,12 +28,6 @@ export function CourseDetailedViewModal({
   };
   const schedules: Schedule[][] = Object.values(groupByDay(userClass.schedule));
 
-  // let schedules: { [key: string]: Schedule[] } = {};
-
-  // userClass.schedule.forEach((s) => {
-  //   schedules[s.day].push(s);
-  // });
-
   const halfLength = Math.ceil(schedules.length / 2) ?? 0;
   const leftSide = schedules.slice(0, halfLength - 1) ?? [];
   const rightSide = schedules.slice(halfLength - 1) ?? [];
@@ -67,7 +61,7 @@ export function CourseDetailedViewModal({
         <BottomRightSVG className={styles.svgRight} />
         <TopLeftSVG className={styles.svgLeft} />
         <div className={styles.wrapperWrapper}>
-          <h2> Next Events </h2>
+          <h2> Next Upcoming Events </h2>
           <div className={styles.bottom}>
             <div className={styles.left}>
               {userClass.events
