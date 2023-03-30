@@ -14,10 +14,20 @@ export interface CalendarProps {
   onScopeChanged?: (scope: "month" | "day", date: Date) => void;
 }
 
-const isSameDayAndMonth = (d1: Date, d2: Date) =>
-  d1.getMonth() == d2.getMonth() && d2.getDate() == d1.getDate();
-const getCEvClassName = (d1: Date, usedDates: Date[]) =>
-  usedDates.some((d) => isSameDayAndMonth(d, d1)) ? "used" : null;
+const isSameDDMMYY = (d1: Date, d2: Date) =>
+  d1.getMonth() == d2.getMonth() &&
+  d2.getDate() == d1.getDate() &&
+  d1.getFullYear() == d2.getFullYear();
+
+function getCEvClassName(d1: Date, usedDates: Date[], currentMonth: number) {
+  return usedDates
+    .filter((usedDate) => currentMonth == usedDate.getMonth())
+    .some((usedDate) => isSameDDMMYY(usedDate, d1))
+    ? "used"
+    : null;
+  // usedDates.filter(d => )
+  // usedDates.some((d) => isSameDDMMYY(d, d1)) ? "used" : null;
+}
 
 /**
  * TODO: Implement API call to fetch all the calendar events.
@@ -43,7 +53,7 @@ export default function Calendar({
   };
 
   const handleDayClicked = (date: Date, ev: React.MouseEvent) => {
-    if (isSameDayAndMonth(date, currentDate)) {
+    if (isSameDDMMYY(date, currentDate)) {
       setCurrentDay(null);
       setCurrentDate(new Date());
       setClickedDayRef(null);
@@ -55,6 +65,7 @@ export default function Calendar({
     setCurrentDay(clickedDay);
     setClickedDayRef(ev.currentTarget);
     setCurrentDate(date);
+    setCurrentMonth(date.getMonth());
     onScopeChanged?.("day", date);
   };
 
@@ -95,7 +106,8 @@ export default function Calendar({
           queryEvents.data
             ? getCEvClassName(
                 p.date,
-                queryEvents.data.map((e) => e.date)
+                queryEvents.data.map((e) => e.date),
+                currentMonth
               )
             : null
         }
