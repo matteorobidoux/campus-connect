@@ -1,10 +1,14 @@
 import styles from "./ProfileBar.module.scss";
 import closeImg from "../../assets/close.png";
 import Rodal from "rodal";
-import { removeUser } from "../../custom-query-hooks/useGoogleOAuth";
+import {
+  getUser,
+  removeUser,
+  writeUser,
+} from "../../custom-query-hooks/useGoogleOAuth";
 import { useQueryClient } from "react-query";
 import axios from "axios";
-import { useUser, writeUser } from "../../custom-query-hooks";
+import { useUser } from "../../custom-query-hooks";
 import profileImg from "../../assets/profile.png";
 import { useRef } from "react";
 import { User } from "../../../../types/User";
@@ -33,7 +37,7 @@ export default function ProfileBar(props: ProfileBarProps) {
       formData.append("id", user._id);
       let post = await axios.post("/api/uploadBlob", formData);
       let response = await post.data;
-      const userLocalStorage = qc.getQueryData("user") as User;
+      const userLocalStorage = getUser() as User;
       userLocalStorage.picture = response.url;
       writeUser(userLocalStorage);
       props.changeProfileImg(response.url);

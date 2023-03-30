@@ -85,5 +85,3 @@ export const useCalendarEvents = () => {
 
   return { isLoading, data: events, isStale };
 };
-
-export { writeUser };
