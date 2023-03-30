@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
 import CalendarEvent from "../../../../types/Calendar";
+=======
+import { useState } from "react";
+>>>>>>> dbe76416f9e8d04a0dec050562822aa60bb160a3
 import { Events } from "../../../../types/Event";
 import Calendar from "./Calendar";
 import CalendarEventRow from "./CalendarEntry";
@@ -67,6 +71,16 @@ export function CalendarWidget({ }: CalendarWidgetProps) {
      
   }, [events, showAll])
 
+  const isNewEventDateValid = (date: Date): boolean => {
+    const currentDate = new Date();
+    return (
+      (date.getFullYear() === currentDate.getFullYear() &&
+        date.getMonth() === currentDate.getMonth() &&
+        date.getDate() === currentDate.getDate()) ||
+      date > currentDate
+    );
+  };
+
   return (
     <div className={styles.wrapper}>
       <Calendar
@@ -94,10 +108,13 @@ export function CalendarWidget({ }: CalendarWidgetProps) {
         </div>
 
         <div className={styles.calendarEventsWrapper}>
-          {eventsFiltered.map((ev) => (
-            <CalendarEventRow event={ev} />
+          {eventsFiltered.length === 0 && <span>No events</span>}
+          {eventsFiltered.map((ev, key) => (
+            <CalendarEventRow event={ev} key={key} />
           ))}
-          {scope === "day" && <AddEventEntry date={date} />}
+          {scope === "day" && isNewEventDateValid(date) && (
+            <AddEventEntry date={date} />
+          )}
         </div>
       </div>
     </div>

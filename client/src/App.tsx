@@ -84,7 +84,10 @@ export default function App() {
           transition={{ duration: 0.2 }}
         >
           <NavBar toggleSidebar={openProfileBar} profileUrl={profileUrl} />
-          <div className="app-content-container">
+          <motion.div
+            className="app-content-container"
+            layout="preserve-aspect"
+          >
             <LayoutGroup>
               {isLoggedIn && (
                 <>
@@ -97,6 +100,11 @@ export default function App() {
                   <Main
                     selectedComponent={selectedComponent}
                     selectedChat={selectedChat}
+                  />
+                  <ProfileBar
+                    isOpen={isOpen}
+                    toggleFunc={openProfileBar}
+                    profileImageUrl={user.picture}
                   />
                 </>
               )}
@@ -112,12 +120,7 @@ export default function App() {
                 />
               )}
             </LayoutGroup>
-          </div>
-          <ProfileBar
-            isOpen={isOpen}
-            toggleFunc={openProfileBar}
-            profileImageUrl={user.picture}
-          />
+          </motion.div>
         </motion.div>
       </LayoutGroup>
     </>

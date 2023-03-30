@@ -26,7 +26,6 @@
       height: 26%;
       overflow: hidden;
       text-overflow: ellipsis;
-      white-space: nowrap;
 
       h1 {
         font-weight: 400;
@@ -34,6 +33,7 @@
         font-style: normal;
         margin-bottom: 0.3rem;
       }
+
       h2 {
         font-family: Inter;
         font-size: 1.3rem;
@@ -41,6 +41,7 @@
         line-height: 19px;
         letter-spacing: 0em;
         margin-bottom: 6px;
+        max-width: 100%;
       }
     }
 
