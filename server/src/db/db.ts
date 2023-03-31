@@ -160,26 +160,39 @@ class DbMongoose {
   }
 
   //Rerturns An Array with all themessages ordered by date.
-  async getLatestMessages(room: UserClassSection, messageId: string) {
+  async getLatestMessages(room: UserClassSection, loadedMsgIndex: number) {
+    //15 messages
     const groupChat = await groupChatModel.findOne({
       "room.courseNumber": room.courseNumber,
       "room.sectionNumber": room.sectionNumber,
     });
     if (groupChat) {
       const messagesList = groupChat.messagesList;
-      const indexLastMessage = messagesList.findIndex(
-        (message) => message._id!.toString() == messageId
-      );
-      if (indexLastMessage < 15) {
-        const messages = messagesList.slice(0, indexLastMessage + 1);
+      //Check if all messages have been loaded already
+      if (messagesList.length - loadedMsgIndex * 15 - 15 <= -15) {
+        return null;
+      }
+      //Check if less than 15 messages
+      if (messagesList.length < 15) {
+        return messagesList;
+      } else if (
+        messagesList.length > loadedMsgIndex * 15 &&
+        messagesList.length - loadedMsgIndex * 15 - 15 >= 0
+      ) {
+        let messages = messagesList.slice(
+          messagesList.length - loadedMsgIndex * 15 - 15,
+          messagesList.length - loadedMsgIndex * 15
+        );
         return messages;
       } else {
-        const messages = messagesList.slice(
-          indexLastMessage - 14,
-          indexLastMessage + 1
+        let messages = messagesList.slice(
+          0,
+          messagesList.length - loadedMsgIndex * 15 - 1
         );
         return messages;
       }
+    } else {
+      throw new Error("trying to get inexisting room");
     }
   }
 

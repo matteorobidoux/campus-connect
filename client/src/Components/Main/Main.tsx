@@ -24,7 +24,12 @@ export default function Main(props: MainProps) {
         {!props.selectedChat ? (
           <CalendarWidget />
         ) : props.selectedComponent === "chat" ? (
-          <Chat selectedChat={props.selectedChat} setMostRecentMessage={props.setMostRecentMessage}/>
+          <Chat
+            key={
+              props.selectedChat.sectionNumber + props.selectedChat.courseNumber
+            }
+            selectedChat={props.selectedChat}
+          />
         ) : null}
       </motion.div>
     </AnimatePresence>

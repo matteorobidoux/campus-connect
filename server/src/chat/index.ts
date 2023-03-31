@@ -3,7 +3,7 @@ import http from "http";
 import { UserClassSection } from "../../../types/UserClassSection";
 import DbMongoose from "../db/db";
 export function createServer(server: http.Server) {
-  let info: { room: UserClassSection; } | null = null;
+  let info: { room: UserClassSection } | null = null;
   const io = new Server(server);
   io.on("connection", (socket) => {
     socket.on("message", (payload) => {
