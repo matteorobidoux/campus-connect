@@ -24,29 +24,6 @@ router.use(express.json());
 
 
 
-/**
- * @swagger
- * /users:
- *  get:
- *    summary: Get all Users from Db
- *    description: Returns a array with All Users  
- *    responses:
- *      200:
- *         description: A list of all Messages In the group Chat. Sample model
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 data:
- *                    type: array
- *                    example: [ { user: { userName: "TestName", _id: "010101010101"}, email: "a@hot.com", completedEvents: [] } ]
- */
-router.get("/users", async (_, res) => {
-  const result = await DbMongoose.getAllUsers();
-  res.json(result);
-});
-
 router.post("/api/login", async (req, res) => {
   const { name, password }: Partial<LoginRequest> = req.body;
   if (!name || !password) {
@@ -56,6 +33,40 @@ router.post("/api/login", async (req, res) => {
   }
 });
 
+
+/**
+ * @swagger
+ * /api/addUser:
+ *  post:
+ *    summary: Adds an User to the Db
+ *    description: Returns Boolean true
+ *    parameters:
+ *      - in: query 
+ *        name: CreateUserBodyParams
+ *        schema:
+ *          type: object
+ *          properties:
+ *            gid:
+ *               type: string
+ *               example: "somegid"
+ *            sections:
+ *                    type: array
+ *                    example:  [ { courseNumber: "574-453-DW", sectionNumber: "00001"} ]
+ *            name:
+ *                type: string
+ *                example: Neils Hambile
+ *            picture:
+ *                   type: string
+ *                   example: url.blob.jpg 
+ *            email:
+ *                 type: string
+ *                   example: ahaha@ahaha.com
+ *            
+ *        description: Adding event id to the userCompletedEvent Array 
+ *    responses:
+ *      200:
+ *         description: An Event was succesfully removed.
+ */
 router.post("/api/addUser", async (req, res) => {
   const body = req.body as CreateUserBodyParams;
   console.log(body);

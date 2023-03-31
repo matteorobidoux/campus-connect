@@ -214,12 +214,6 @@ class DbMongoose {
     return result;
   }
 
-  //Get All Users
-  async getAllUsers() {
-    const result = await User.find();
-    console.log(result);
-    return result;
-  }
 }
 
 export default new DbMongoose();
