@@ -174,7 +174,6 @@ class DbMongoose {
       }
       //Check if less than 15 messages
       if (messagesList.length < 15) {
-        console.log("1");
         return messagesList;
       } else if (
         messagesList.length > loadedMsgIndex * 15 &&
