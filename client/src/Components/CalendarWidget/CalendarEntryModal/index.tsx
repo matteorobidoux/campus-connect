@@ -17,7 +17,7 @@ export default function CalendarEntryModal({
   onClose,
   date,
 }: CalendarEntryModalProps) {
-  const { t, i18n } = useTranslation(["events"]);
+  const { t } = useTranslation(["events"]);
 
   const user = useUser();
   const sectionsQuery = useSections({ userClassSections: user.sections });
@@ -43,7 +43,7 @@ export default function CalendarEntryModal({
       <Formik
         initialValues={initialValues}
         onSubmit={async (values) => {
-          toast.loading("Adding event...", { toastId: "addingEvent" });
+          toast.loading(t("addingEvent"), { toastId: "addingEvent" });
           const course = sectionsQuery!.data!.find(
             (s) => s.courseTitle === values.courseTitle
           );

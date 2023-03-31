@@ -3,9 +3,11 @@ import http from "http";
 import { UserClassSection } from "../../../types/UserClassSection";
 import DbMongoose from "../db/db";
 export function createServer(server: http.Server) {
+  let info: { room: UserClassSection } | null = null;
   const io = new Server(server);
   io.on("connection", (socket) => {
     socket.on("message", (payload) => {
+      info = payload;
       socket.to(JSON.stringify(payload.room)).emit("message", payload);
       DbMongoose.addMessage({
         room: payload.room,
@@ -18,6 +20,7 @@ export function createServer(server: http.Server) {
     });
 
     socket.on("setRoom", (courses: UserClassSection[]) => {
+      // socket.emit("latestMessage", DbMongoose.getMostRecentMessage(info!.room))
       courses.forEach((course) => socket.join(JSON.stringify(course)));
     });
   });

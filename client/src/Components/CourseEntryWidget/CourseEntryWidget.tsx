@@ -8,6 +8,7 @@ import { useGoogleOAuth } from "../../custom-query-hooks/useGoogleOAuth";
 import { RegisterInfo } from "../../../../types/Queries/GAuth";
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
 import { PersonName } from "../Login/Login";
+import { useTranslation } from "react-i18next";
 
 type CourseEntryWidgetProps = {
   name: PersonName;
@@ -31,6 +32,7 @@ export default function CourseEntryWidget(props: CourseEntryWidgetProps) {
   const { isLoading, isSuccess, data } = useCourseInfo();
   const googleDataQuery = useGoogleOAuth();
   const createUserMutation = useAddUserMutation();
+  const { t } = useTranslation(["login"]);
 
   const handleRemoveCourse = (key: number) => {
     setSelectedCourses(
@@ -82,11 +84,11 @@ export default function CourseEntryWidget(props: CourseEntryWidgetProps) {
     <LayoutGroup>
       <div className={styles["course-entry-widget-container"]}>
         {isLoading ? (
-          <span>Loading...</span>
+          <span>{t("Loading")}</span>
         ) : isSuccess ? (
           <>
             <motion.span className={styles.title}>
-              Choose your courses:
+              {t("chooseYourCourses")}
             </motion.span>
             <div className={styles["entered-courses"]}>
               <LayoutGroup>
@@ -146,13 +148,13 @@ export default function CourseEntryWidget(props: CourseEntryWidgetProps) {
                     handleFinishedAddingCourses();
                   }}
                 >
-                  Finish
+                  {t("finish")}
                 </button>
               )}
             </motion.div>
           </>
         ) : (
-          <span>Couldn't load data</span>
+          <span>{t("couldntloaddata")}</span>
         )}
       </div>
     </LayoutGroup>

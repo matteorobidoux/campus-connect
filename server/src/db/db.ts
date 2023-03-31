@@ -108,6 +108,14 @@ class DbMongoose {
     }
   }
 
+  async changeUserImage({ id, picture }: { id: string; picture: string }) {
+    const user = await User.findOne({ _id: id });
+    if (user) {
+      user.picture = picture;
+      await user.save();
+    }
+  }
+
   async addEventToSection(
     courseNumber: string,
     sectionNumber: string,
@@ -136,7 +144,7 @@ class DbMongoose {
       groupChat.messagesList.push(message);
       await groupChat.save();
     } else {
-      console.log("Dit not find the room");
+      console.log("Did not find the room");
     }
   }
   //Rerturns An Array with all themessages ordered by date.
@@ -189,24 +197,34 @@ class DbMongoose {
     }
   }
 
+  async getMostRecentMessage(room: UserClassSection) {
+    const groupChat = await groupChatModel.findOne({
+      "room.courseNumber": room.courseNumber,
+      "room.sectionNumber": room.sectionNumber,
+    });
+    if (groupChat) {
+      const message = groupChat.messagesList;
+      if (message.length > 0) {
+        return {
+          message: message[message.length - 1].message,
+          username: message[message.length - 1].user.userName,
+        };
+      }
+    }
+  }
+
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
     const courses = userSections.map(async (userCourse) => {
-      // Some courses can be taken from different programs. Right now they are duplicated in the DB.
-      // For this reason, I'm alwaays selecting the first one.
-      const courses = await Course.find({ number: userCourse.courseNumber });
-      courses.forEach((c) => c.sections.forEach((s) => console.log(s.number)));
-      const course = courses
-        .find((course) =>
-          course.sections.find(
-            (fullSection) => fullSection.number == userCourse.sectionNumber
-          )
-        )!
-        .toObject();
-      // const section = courses.sections.find(fullSection => fullSection.number == userCourse.sectionNumber)!;
+      const course = (await Course.findOne({
+        number: userCourse.courseNumber,
+      }))!.toObject();
+      const section = course.sections.find(
+        (fullSection) => fullSection.number == userCourse.sectionNumber
+      )!;
       return {
-        ...course.sections[0],
-        courseNumber: courses[0].number,
-        courseTitle: courses[0].title,
+        ...section,
+        courseNumber: course.number,
+        courseTitle: course.title,
       };
     });
 
