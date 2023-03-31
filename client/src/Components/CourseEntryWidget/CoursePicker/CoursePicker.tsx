@@ -9,6 +9,7 @@ import {
   MutableRefObject,
   FormEvent,
 } from "react";
+import { useTranslation } from "react-i18next";
 
 type CoursePickerProps = {
   pickedCourse?: SelectedCourse;
@@ -43,6 +44,7 @@ export default function CoursePicker(props: CoursePickerProps) {
     useRef(null);
   const formEl: MutableRefObject<HTMLFormElement | null> = useRef(null);
   const coursePickerEl: MutableRefObject<HTMLDivElement | null> = useRef(null);
+  const { t } = useTranslation(["login"]);
 
   const handleSubmit = (e: FormSubmitEvent) => {
     const course = e.target.elements["course-choice"].value;
@@ -196,7 +198,7 @@ export default function CoursePicker(props: CoursePickerProps) {
                 setIsAdding(true);
               }}
             >
-              Add Course
+              {t("addCourse")}
             </button>
           )
         }
@@ -296,7 +298,7 @@ export default function CoursePicker(props: CoursePickerProps) {
               props.onEditingChange(false);
             }}
           >
-            Done
+            {t("done")}
           </button>
         ) : (
           <button
@@ -307,7 +309,7 @@ export default function CoursePicker(props: CoursePickerProps) {
               props.onEditingChange(true);
             }}
           >
-            Edit
+            {t("edit")}
           </button>
         )}
         <button
@@ -317,7 +319,7 @@ export default function CoursePicker(props: CoursePickerProps) {
             props.onRemove();
           }}
         >
-          Remove
+          {t("remove")}
         </button>
       </motion.div>
     );

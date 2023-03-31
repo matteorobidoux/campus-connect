@@ -30,18 +30,16 @@
   flex: 1;
   overflow-y: auto;
   padding: 10px;
-
-  &::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: #ddd;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: #bdbdbd;
-  }
+  //scroll-behavior: smooth !important;
+}
+.msger-chat::-webkit-scrollbar {
+  width: 6px;
+}
+.msger-chat::-webkit-scrollbar-track {
+  background: #ddd;
+}
+.msger-chat::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
 }
 
 .msger-inputarea {

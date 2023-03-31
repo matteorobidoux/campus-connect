@@ -104,7 +104,7 @@ export function CalendarWidget({ }: CalendarWidgetProps) {
         </div>
 
         <div className={styles.calendarEventsWrapper}>
-          {eventsFiltered.length === 0 && <span>No events</span>}
+          {eventsFiltered.length === 0 && <span>{t("noEvents")}</span>}
           {eventsFiltered.map((ev, key) => (
             <CalendarEventRow event={ev} key={key} />
           ))}
