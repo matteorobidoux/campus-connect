@@ -42,7 +42,7 @@ const swaggerDefinition = {
 const options = {
  swaggerDefinition,
  // Paths to files containing OpenAPI definitions
- apis: ['./routes/route.ts'],
+ apis: ['./src/routes/route.ts'],
  
 };
 const swaggerSpec = swaggerJSDoc(options);
@@ -89,12 +89,12 @@ router.post("/api/login", async (req, res) => {
  *                   example: url.blob.jpg 
  *            email:
  *                 type: string
- *                   example: ahaha@ahaha.com
+ *                 example: ahaha@ahaha.com
  *            
- *        description: Adding event id to the userCompletedEvent Array 
+ *        description: Adding user to the Db 
  *    responses:
  *      200:
- *         description: An Event was succesfully removed.
+ *         description: User Succesfully added.
  */
 router.post("/api/addUser", async (req, res) => {
   const body = req.body as CreateUserBodyParams;
