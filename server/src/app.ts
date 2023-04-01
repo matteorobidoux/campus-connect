@@ -34,7 +34,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/",router);
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use(fileUpload());
 
 app.use(express.static("../client/build/"));

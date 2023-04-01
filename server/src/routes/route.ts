@@ -28,12 +28,30 @@ const blobService = new BlobServiceClient(
 );
 const containerClient = blobService.getContainerClient(containerName);
 
-const router= express.Router()
 
+const swaggerJSDoc = require('swagger-jsdoc');
+const swaggerDefinition = {
+ openapi: '3.0.0',
+ info: {
+   title: 'Express API for CampusConnect',
+   version: '1.0.0',
+   description: 'API documentation',
+ }
+};
+
+const options = {
+ swaggerDefinition,
+ // Paths to files containing OpenAPI definitions
+ apis: ['./routes/route.ts'],
+ 
+};
+const swaggerSpec = swaggerJSDoc(options);
+const swaggerUi = require('swagger-ui-express');
+
+const router= express.Router()
+router.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 router.use(express.json());
 router.use(fileUpload());
-
-
 
 router.post("/api/login", async (req, res) => {
   const { name, password }: Partial<LoginRequest> = req.body;
