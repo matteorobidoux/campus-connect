@@ -122,6 +122,18 @@ router.post("/api/addCompletedEvent", async (req, res) => {
 });
 
 
+
+
+/**
+ * @swagger
+ * /api/uploadBlob:
+ *  post:
+ *    summary: changes profile picture for user
+ *    description: Returns Boolean true
+ *    responses:
+ *      200:
+ *         description: Image have been  changed.
+ */
 router.post("/api/uploadBlob", async (req, res) => {
   if (req.files !== null && req.files !== undefined) {
     if (!(req.files.file instanceof Array)) {
@@ -147,8 +159,34 @@ router.post("/api/uploadBlob", async (req, res) => {
   }
 });
 
-
-
+/**
+ * @swagger
+ * /api/getMostRecentMessage:
+ *  post:
+ *    summary: Get the last message from Chat
+ *    description: Returns Boolean true
+ *    parameters:
+ *      - in: query 
+ *        name: UserClassSection
+ *        schema:
+ *          type: object
+ *          properties:
+ *            courseNumber:
+ *                    type: string
+ *                    example:  "574-453-DW"
+ *            sectionNumber:
+ *                     type: string
+ *                     example: "00001"
+ *        description: Gets Latest Message (Last message Sent) 
+ *    responses:
+ *      200:
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               example:  { user: { userName: "TestName", _id: "010101010101"}, date: "2023-03-28T23:00:10.537+00:00", message: "Swagger"}
+ *         description: Retrieves the lastest messages from the chat.
+ */
 router.get("/api/getMostRecentMessage", async (req, res) => {
   const { courseNumber, sectionNumber } =
     req.query as Partial<UserClassSection>;
