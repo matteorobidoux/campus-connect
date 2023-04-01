@@ -1,7 +1,7 @@
 import { UserClassSection } from "../UserClassSection";
-type LatestMessage = {
-  room: UserClassSection;
-  loadedMsgIndex: number;
-};
 
-export type { LatestMessage };
+export type MostRecentMessage = {
+  message: string;
+  username: string | null;
+  room: UserClassSection;
+};

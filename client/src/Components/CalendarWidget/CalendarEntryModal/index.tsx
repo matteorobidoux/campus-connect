@@ -17,7 +17,7 @@ export default function CalendarEntryModal({
   onClose,
   date,
 }: CalendarEntryModalProps) {
-  const { t, i18n } = useTranslation(["events"]);
+  const { t } = useTranslation(["events"]);
 
   const user = useUser();
   const sectionsQuery = useSections({ userClassSections: user.sections });
@@ -43,7 +43,7 @@ export default function CalendarEntryModal({
       <Formik
         initialValues={initialValues}
         onSubmit={async (values) => {
-          toast.loading("Adding event...", { toastId: "addingEvent" });
+          toast.loading(t("addingEvent"), { toastId: "addingEvent" });
           const course = sectionsQuery!.data!.find(
             (s) => s.courseTitle === values.courseTitle
           );
@@ -91,14 +91,14 @@ export default function CalendarEntryModal({
                 {" "}
                 {t("title")}{" "}
               </label>
-              <Field maxlength="32" id="title" name="title" />
+              <Field maxLength="32" id="title" name="title" />
               <p> {errors.title ? errors.title : null} </p>
             </div>
 
             <div className={styles.formEntry}>
               <label htmlFor="description"> {t("description")} </label>
               <Field
-                maxlength="400"
+                maxLength="400"
                 as="textarea"
                 className={styles["descTextBox"]}
                 id="description"

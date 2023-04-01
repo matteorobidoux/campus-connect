@@ -52,7 +52,7 @@ export function CalendarEntryDetailedModal({
   useEffect(() => {
     const toastId = "updatingEvent";
     if (markAsDone.isLoading) {
-      toast.loading("Updating event...", { toastId });
+      toast.loading(t("updatingEvent"), { toastId });
     } else {
       toast.done(toastId);
     }

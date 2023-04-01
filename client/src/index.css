@@ -14,6 +14,10 @@ body {
   height: 100%;
 }
 
+button {
+  cursor: pointer;
+}
+
 body {
   color: var(--text-black);
   font-family: Arial, Helvetica, sans-serif;
@@ -32,6 +36,21 @@ code {
 .rodal-fade-enter {
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
+}
+
+input,
+select {
+  background: var(--text-white);
+  color: var(--grey-background);
+  padding: 0.3rem;
+  border: var(--primary) 3px solid;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input:disabled {
+  border-color: var(--faded-black);
+  filter: brightness(0.8);
 }
 
 :root {
@@ -55,4 +74,7 @@ code {
   --background: #fffcfc;
   --font: "Inter", sans-serif;
   --faded-black: #66666689;
+
+  --calendar-selected-color: #d67e7e;
+  --calendar-selected-color-today: black;
 }

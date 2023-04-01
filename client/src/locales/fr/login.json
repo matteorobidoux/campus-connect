@@ -1,5 +1,12 @@
 {
   "welcome": "Bienvenu à Campus Connect",
   "selectOption": "Veuillez sélectionner une des options suivantes:",
-  "connect": "Connecter avec google"
+  "connect": "Connecter avec google",
+  "chooseYourCourses": "Choisissez vos cours:",
+  "finish": "Terminer",
+  "couldntloaddata": "Impossible de charger les données",
+  "addCourse": "Ajouter un cours",
+  "done": "Terminer",
+  "edit": "Modifier",
+  "remove": "Supprimer"
 }

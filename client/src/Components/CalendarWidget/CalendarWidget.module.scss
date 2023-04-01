@@ -6,12 +6,21 @@
   padding: 2%;
   margin-left: auto;
   margin-right: auto;
+  height: 100%;
+  overflow-y: auto;
+  align-content: flex-start;
 
   .calendarEventsWrapper {
     display: flex;
     flex-direction: column;
     min-width: 50%;
+    align-items: center;
     gap: 0.3em;
+
+    span {
+      padding: 0.2rem;
+      text-align: center;
+    }
   }
 
   .right {

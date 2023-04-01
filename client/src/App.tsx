@@ -11,10 +11,11 @@ import ProfileBar from "./Components/ProfileBar/ProfileBar";
 import { useGoogleOAuth } from "./custom-query-hooks/useGoogleOAuth";
 import { useUser } from "./custom-query-hooks";
 import Login from "./Components/Login/Login";
-import CourseEntryWidget from "./Components/CourseEntryWidget/CourseEntryWidget";
 import { UserClassSection } from "../../types/UserClassSection";
 
 import { useTranslation } from "react-i18next";
+import { MostRecentMessage } from "../../types/Queries/MostRecentMessage";
+import { LayoutGroup, motion } from "framer-motion";
 
 library.add(faCircleNotch);
 
@@ -28,6 +29,11 @@ export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(query.data?._id);
   const [selectedChat, selectChat] = useState<UserClassSection | null>(null);
   const [profileUrl, changeProfileImg] = useState("");
+  const [mostRecentMessage, setMostRecentMessage] = useState({
+    message: "",
+    username: "",
+    room: { courseNumber: "", sectionNumber: "" },
+  } as MostRecentMessage);
 
   const { t, i18n } = useTranslation(["app"]);
 
@@ -44,28 +50,27 @@ export default function App() {
   }, [query.data, query.isSuccess]);
 
   useEffect(() => {
-    setIsLoggedIn(user !== undefined);
-  }, [user]);
-
-  useEffect(() => {
     if (isLoggedIn) {
       setIsReturningFromGoogleAuth(false);
     }
   }, [isLoggedIn]);
 
   useEffect(() => {
+    setIsLoggedIn(user !== undefined);
     if (user !== undefined) {
-      if (user.picture !== undefined) {
+      if (profileUrl !== "") {
+        changeProfileImg(profileUrl);
+      } else if (user.picture !== undefined) {
         changeProfileImg(user.picture);
       } else {
         changeProfileImg("");
       }
     }
   }, [user]);
-  // TODO: what should the type of e be?
+
   function openProfileBar() {
-    if(isLoggedIn){
-      setIsOpen(!isOpen)
+    if (isLoggedIn) {
+      setIsOpen(!isOpen);
     }
   }
 
@@ -77,30 +82,65 @@ export default function App() {
     selectChat(course);
   }
 
+  function setProfileImg(url: string | null) {
+    if (url) {
+      changeProfileImg(url);
+    }
+  }
+
   return (
     <>
       <ToastContainer />
-      <div className="app-container">
-        <NavBar toggleSidebar={openProfileBar} profileUrl={profileUrl} />
-        <div className="app-content-container">
-          {isLoggedIn && (
-            <>
-              <MainSidebar
-                selectedComponent={selectedComponent}
-                selectChatFunc={selectNewChat}
-                selectComponentFunc={switchComponent}
-              />
-              <Main
-                selectedComponent={selectedComponent}
-                selectedChat={selectedChat}
-              />
-            </>
-          )}
-          {!isLoggedIn && isReturningFromGoogleAuth && <CourseEntryWidget />}
-          {!isReturningFromGoogleAuth && !isLoggedIn && <Login />}
-        </div>
-        <ProfileBar isOpen={isOpen} toggleFunc={openProfileBar} profileUrl={profileUrl} />
-      </div>
+      <LayoutGroup>
+        <motion.div
+          className="app-container"
+          layout="position"
+          transition={{ duration: 0.2 }}
+        >
+          <NavBar toggleSidebar={openProfileBar} profileUrl={profileUrl} />
+          <motion.div
+            className="app-content-container"
+            layout="preserve-aspect"
+          >
+            <LayoutGroup>
+              {isLoggedIn && (
+                <>
+                  <MainSidebar
+                    selectedComponent={selectedComponent}
+                    selectChatFunc={selectNewChat}
+                    selectComponentFunc={switchComponent}
+                    mostRecentMessage={mostRecentMessage}
+                    setMostRecentMessage={setMostRecentMessage}
+                    user={user}
+                  />
+                  <Main
+                    selectedComponent={selectedComponent}
+                    selectedChat={selectedChat}
+                    setMostRecentMessage={setMostRecentMessage}
+                  />
+                  <ProfileBar
+                    isOpen={isOpen}
+                    toggleFunc={openProfileBar}
+                    profileUrl={user.picture}
+                    changeProfileImg={setProfileImg}
+                  />
+                </>
+              )}
+              {!isLoggedIn && (
+                <Login
+                  returningFromGoogleAuth={isReturningFromGoogleAuth}
+                  givenName={
+                    query.isSuccess ? query.data["given_name"] : undefined
+                  }
+                  familyName={
+                    query.isSuccess ? query.data["family_name"] : undefined
+                  }
+                />
+              )}
+            </LayoutGroup>
+          </motion.div>
+        </motion.div>
+      </LayoutGroup>
     </>
   );
 }
