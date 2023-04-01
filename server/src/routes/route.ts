@@ -10,8 +10,6 @@ import {
 } from "../../../types/Queries/GetAllCourses";
 import { LoginRequest } from "../../../types/Queries/Login";
 import { AddEventBody, AddEventResponse } from "../../../types/Queries/AddEvent";
-import { Events } from "../../../types/Event";
-import { LatestMessage } from "../../../types/Queries/LatestMessage";
 import { generateAuthUrl } from "../oauth";
 import GAuth from "../oauth/gauth-endpoint";
 import { UserClassSection } from "../../../types/UserClassSection";
