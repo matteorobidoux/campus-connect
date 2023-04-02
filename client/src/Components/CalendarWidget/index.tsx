@@ -5,6 +5,7 @@ import CalendarEventRow from "./CalendarEntry";
 import { AddEventEntry } from "./CalendarEntry/AddEventEntry";
 import styles from "./CalendarWidget.module.scss";
 import { useTranslation } from "react-i18next";
+import { isDateCurrentDay } from "../../validationUtils";
 
 export interface CalendarWidgetProps {}
 
@@ -44,16 +45,6 @@ export function CalendarWidget({}: CalendarWidgetProps) {
     }
   };
 
-  const isNewEventDateValid = (date: Date): boolean => {
-    const currentDate = new Date();
-    return (
-      (date.getFullYear() === currentDate.getFullYear() &&
-        date.getMonth() === currentDate.getMonth() &&
-        date.getDate() === currentDate.getDate()) ||
-      date > currentDate
-    );
-  };
-
   return (
     <div className={styles.wrapper}>
       <Calendar
@@ -80,7 +71,7 @@ export function CalendarWidget({}: CalendarWidgetProps) {
           {events.map((ev, key) => (
             <CalendarEventRow event={ev} key={key} />
           ))}
-          {scope === "day" && isNewEventDateValid(date) && (
+          {scope === "day" && isDateCurrentDay(date) && (
             <AddEventEntry date={date} />
           )}
         </div>
