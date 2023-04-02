@@ -42,10 +42,15 @@ const useGoogleOAuth = () => {
 
       return data;
     }
+    // Error is still thrown and shown in the console.
+    // The absence of data is still handled
     throw new Error("Not returning from GAuth");
   };
 
-  return useQuery(["user"], getter, { staleTime: Infinity, retry: false });
+  return useQuery(["user"], getter, {
+    staleTime: Infinity,
+    retry: false,
+  });
 };
 
 export { useGoogleOAuth };

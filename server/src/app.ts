@@ -10,8 +10,8 @@ import {
 } from "../../types/Queries/GetAllCourses";
 import { LoginRequest } from "../../types/Queries/Login";
 import { AddEventBody, AddEventResponse } from "../../types/Queries/AddEvent";
-import fileUpload from 'express-fileupload';
-import { BlobServiceClient } from '@azure/storage-blob';
+import fileUpload from "express-fileupload";
+import { BlobServiceClient } from "@azure/storage-blob";
 
 import { Events } from "../../types/Event";
 import { LatestMessage } from "../../types/Queries/LatestMessage";
@@ -23,20 +23,22 @@ import { createServer } from "./chat/index";
 import { UserClassSection } from "../../types/UserClassSection";
 import { MostRecentMessage } from "../../types/Queries/MostRecentMessage";
 
-require('dotenv').config({ path: __dirname + '/.env'});
+require("dotenv").config({ path: __dirname + "/.env" });
 
 const sasToken = process.env.AZURE_SAS;
 const storageAccountName = process.env.AZURE_STORAGE_ACCOUNT_NAME;
 const containerName = "blobstorage";
-const blobService = new BlobServiceClient(`https://${storageAccountName}.blob.core.windows.net/?${sasToken}`);
+const blobService = new BlobServiceClient(
+  `https://${storageAccountName}.blob.core.windows.net/?${sasToken}`
+);
 const containerClient = blobService.getContainerClient(containerName);
 
 const app = express();
 const port = 8080;
 
-app.use(cors())
-app.use(express.json())
-app.use(fileUpload())
+app.use(cors());
+app.use(express.json());
+app.use(fileUpload());
 
 app.get("/users", async (_, res) => {
   const result = await DbMongoose.getAllUsers();
@@ -68,27 +70,36 @@ app.post("/api/addCompletedEvent", async (req, res) => {
       id: await DbMongoose.addCompletedEvent({ userName, completedEvent }),
     });
   }
-})
+});
 
-app.post('/api/uploadBlob', async (req, res)=>{
+app.post("/api/uploadBlob", async (req, res) => {
   if (req.files !== null && req.files !== undefined) {
     if (!(req.files.file instanceof Array)) {
-      const file : fileUpload.UploadedFile = req.files.file;
+      const file: fileUpload.UploadedFile = req.files.file;
       const blobName = req.files.file.name;
       const blobClient = containerClient.getBlockBlobClient(blobName);
       const options = { blobHTTPHeaders: { blobContentType: file.mimetype } };
-      console.log("Saving File to Azure Blob Storage")
-      await blobClient.uploadData(file.data, options)
-        .then((data: { _response: any; }) => console.log(data, data._response))
-      const uploadedUrl: URL = new URL(`https://${storageAccountName}.blob.core.windows.net/${containerName}/${blobName}`)
-      await DbMongoose.changeUserImage({id: req.body.id, picture: uploadedUrl.toString()})
-      return res.status(200).json({ status: "success", url: uploadedUrl.toString() });
+      console.log("Saving File to Azure Blob Storage");
+      await blobClient
+        .uploadData(file.data, options)
+        .then((data: { _response: any }) => console.log(data, data._response));
+      const uploadedUrl: URL = new URL(
+        `https://${storageAccountName}.blob.core.windows.net/${containerName}/${blobName}`
+      );
+      await DbMongoose.changeUserImage({
+        id: req.body.id,
+        picture: uploadedUrl.toString(),
+      });
+      return res
+        .status(200)
+        .json({ status: "success", url: uploadedUrl.toString() });
     }
   }
 });
 
 app.get("/api/getMostRecentMessage", async (req, res) => {
-  const { courseNumber, sectionNumber } = req.query as Partial<UserClassSection>;
+  const { courseNumber, sectionNumber } =
+    req.query as Partial<UserClassSection>;
   if (!courseNumber || !sectionNumber) {
     res.sendStatus(400);
   } else {
@@ -96,13 +107,19 @@ app.get("/api/getMostRecentMessage", async (req, res) => {
       courseNumber,
       sectionNumber,
     });
-    console.log("Getting most recent message", courseNumber, sectionNumber, result?.message)
+    console.log(
+      "Getting most recent message",
+      courseNumber,
+      sectionNumber,
+      result?.message
+    );
     res.json(result);
   }
 });
 
-app.post('/api/removeEvent', async (req,res)=>{
-  const {eventId , courseNumber, courseSection} = req.body as Partial<RemoveEventBodyParams>;
+app.post("/api/removeEvent", async (req, res) => {
+  const { eventId, courseNumber, courseSection } =
+    req.body as Partial<RemoveEventBodyParams>;
   if (!eventId || !courseNumber || !courseSection) {
     res.sendStatus(400);
   } else {
@@ -145,11 +162,12 @@ app.get("/api/getAllMessages", async (req, res) => {
 });
 
 app.get("/api/getLatestMessages", async (req, res) => {
-  const { room, messageId } = req.body as Partial<LatestMessage>;
-  if (!room || !messageId) {
+  const room = req.query.room as UserClassSection;
+  const loadedMsgIndex = req.query.loadedMsgIndex as unknown as number;
+  if (!room || !loadedMsgIndex) {
     res.sendStatus(400);
   } else {
-    const result = await DbMongoose.getLatestMessages(room, messageId);
+    const result = await DbMongoose.getLatestMessages(room, loadedMsgIndex);
     res.json(result);
   }
 });
