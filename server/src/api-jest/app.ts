@@ -79,6 +79,27 @@ app.post("/api/addEvent", async (req, res: Response<AddEventResponse>) => {
   res.json({ success: true });
 });
 
+app.get("/api/getMostRecentMessage", async (req, res) => {
+  const { courseNumber, sectionNumber } =
+    req.query as Partial<UserClassSection>;
+  if (!courseNumber || !sectionNumber) {
+    res.sendStatus(400);
+  } else {
+    const result = await DbMongoose.getMostRecentMessage({
+      courseNumber,
+      sectionNumber,
+    });
+    console.log(
+      "Getting most recent message",
+      courseNumber,
+      sectionNumber,
+      result?.message
+    );
+    res.json(result);
+  }
+});
+
+
 app.get("/api/getAllMessages", async (req, res) => {
   const { courseNumber, sectionNumber } = req.body as Partial<UserClassSection>;
   if (!courseNumber || !sectionNumber) {

@@ -79,6 +79,19 @@ describe("test api getLatestMessages", () => {
   });
 });
 
+
+describe("test api getMostRecentMessage", () => {
+  it("should return 200 res body Defined", async () => {
+    const room = {
+       courseNumber: "574-453-DW",
+      sectionNumber: "00001"
+     
+    };
+    const res = await request(app).get("/api/getMostRecentMessage").send(room);
+    expect(res.body).toBeDefined();
+  });
+});
+
 describe("test api getLatestMessages", () => {
   it("should return 400 missig req param", async () => {
     const room = {
