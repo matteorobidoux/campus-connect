@@ -20,10 +20,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/users", async (_, res) => {
-  const result = await DbMongoose.getAllUsers();
-  res.json(result);
-});
 
 app.post("/api/login", async (req, res) => {
   const { name, password }: Partial<LoginRequest> = req.body;
@@ -97,11 +93,11 @@ app.get("/api/getAllMessages", async (req, res) => {
 });
 
 app.get("/api/getLatestMessages", async (req, res) => {
-  const { room, messageId } = req.body as Partial<LatestMessage>;
-  if (!room || !messageId) {
+  const { room, loadedMsgIndex } = req.body as Partial<LatestMessage>;
+  if (!room || !loadedMsgIndex) {
     res.sendStatus(400);
   } else {
-    const result = await DbMongoose.getLatestMessages(room, messageId);
+    const result = await DbMongoose.getLatestMessages(room, loadedMsgIndex);
     res.json(result);
   }
 });

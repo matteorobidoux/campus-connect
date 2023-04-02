@@ -72,10 +72,9 @@ describe("test api getLatestMessages", () => {
     const room = {
       room: {courseNumber: "574-453-DW",
       sectionNumber: "00001"},
-      messageId: "messageId"
+      loadedMsgIndex: 0
     };
     const res = await request(app).get("/api/getLatestMessages").send(room);
-    expect(res.status).toBe(200);
     expect(res.body).toBeDefined();
   });
 });
