@@ -45,6 +45,8 @@ export default function CoursePicker(props: CoursePickerProps) {
   const formEl: MutableRefObject<HTMLFormElement | null> = useRef(null);
   const coursePickerEl: MutableRefObject<HTMLDivElement | null> = useRef(null);
   const { t } = useTranslation(["login"]);
+  let chooseACourse = t("chooseACourse");
+  let chooseASection = t("chooseASection");
 
   const handleSubmit = (e: FormSubmitEvent) => {
     const course = e.target.elements["course-choice"].value;
@@ -133,7 +135,7 @@ export default function CoursePicker(props: CoursePickerProps) {
                 <input
                   list="courses-main"
                   id="course-choice"
-                  placeholder="Choose a course"
+                  placeholder={chooseACourse}
                   autoComplete="off"
                   onInput={(e) => {
                     e.preventDefault();
@@ -159,7 +161,7 @@ export default function CoursePicker(props: CoursePickerProps) {
                 <input
                   list="sections-main"
                   id="section-choice"
-                  placeholder="Choose a section"
+                  placeholder={chooseASection}
                   ref={sectionsInputEl}
                   autoComplete="off"
                   onInput={(e) => {
@@ -231,7 +233,7 @@ export default function CoursePicker(props: CoursePickerProps) {
             <input
               list={`courses-${props.pickedCourse!.uuid}`}
               id="course-choice"
-              placeholder="Choose a course"
+              placeholder={chooseACourse}
               autoComplete="off"
               ref={coursesInputEl}
               disabled={props.disabled}
@@ -260,7 +262,7 @@ export default function CoursePicker(props: CoursePickerProps) {
             <input
               list={`sections-${props.pickedCourse!.uuid}`}
               id="section-choice"
-              placeholder="Choose a section"
+              placeholder={chooseASection}
               ref={sectionsInputEl}
               disabled={props.disabled}
               value={props.pickedCourse!.sectionNumber}

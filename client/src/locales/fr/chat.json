@@ -4,5 +4,7 @@
   "Loading": "Chargement...",
   "CouldntLoadData": "Impossible de charger les données",
   "NoMessagesYet": "Pas encore de messages",
-  "enterYourMessage": "Entrez votre message..."
+  "enterYourMessage": "Entrez votre message...",
+  "chooseACourse": "Choisissez un cours",
+  "chooseASection": "Choisissez une section"
 }

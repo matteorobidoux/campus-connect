@@ -28,6 +28,7 @@ export default function Main(props: MainProps) {
             key={
               props.selectedChat.sectionNumber + props.selectedChat.courseNumber
             }
+            setMostRecentMessage={props.setMostRecentMessage}
             selectedChat={props.selectedChat}
           />
         ) : null}
