@@ -58,7 +58,7 @@ export default function MainSidebar(props: MainSidebarProps) {
               whileTap={{ scale: 0.9 }}
               whileHover={{ scale: 1.1 }}
               className={
-                props.selectedComponent == "calender" ? styles.selected : ""
+                props.selectedComponent === "calender" ? styles.selected : ""
               }
               onClick={() => {
                 props.selectComponentFunc("calender");
@@ -71,7 +71,7 @@ export default function MainSidebar(props: MainSidebarProps) {
               whileTap={{ scale: 0.9 }}
               whileHover={{ scale: 1.1 }}
               className={
-                props.selectedComponent == "chat" ? styles.selected : ""
+                props.selectedComponent === "chat" ? styles.selected : ""
               }
               onClick={() => {
                 props.selectComponentFunc("chat");

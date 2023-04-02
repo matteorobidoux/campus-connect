@@ -126,7 +126,7 @@ class DbMongoose {
   async addEventToSection(
     courseNumber: string,
     sectionNumber: string,
-    event: Events
+    event: Omit<Events, "_id">
   ) {
     const courses = await Course.find({ number: courseNumber });
     courses.forEach((c) => c.sections.forEach((s) => console.log(s.number)));
@@ -135,7 +135,7 @@ class DbMongoose {
     )!;
     const section = course.sections.find((s) => s.number == sectionNumber)!;
     console.log("section: ", sectionNumber);
-    section.events.push(event);
+    section.events.push(event as Events);
     section.events[section.events.length - 1].mongoId =
       section.events[section.events.length - 1]._id;
     await course.save();

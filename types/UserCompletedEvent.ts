@@ -3,4 +3,4 @@ type UserCompletedEvent = {
   date: Date;
 };
 
-export { UserCompletedEvent };
+export type { UserCompletedEvent };
