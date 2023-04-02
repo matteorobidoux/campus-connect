@@ -34,7 +34,7 @@ export default function App() {
   const [profileUrl, changeProfileImg] = useState("");
   const [mostRecentMessage, setMostRecentMessage] = useState({
     message: "",
-    username: "",
+    userName: "",
     room: { courseNumber: "", sectionNumber: "" },
   } as MostRecentMessage);
 
