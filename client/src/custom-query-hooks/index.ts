@@ -25,7 +25,11 @@ export const useSections = (classes: GetAllSectionsRequest) => {
       "/api/getAllSections",
       { params }
     );
-    return data.data;
+
+    return data.data.map((uc) => ({
+      ...uc,
+      events: uc.events.map((ev) => ({ ...ev, date: new Date(ev.date) })),
+    }));
   }
 
   return useQuery<GetAllSectionsResponse>(

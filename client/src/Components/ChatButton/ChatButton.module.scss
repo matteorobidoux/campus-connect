@@ -47,6 +47,8 @@
 
   h4 {
     padding-top: 0.2rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   .bubble {

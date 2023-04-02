@@ -9,7 +9,23 @@ export interface CalendarEventRowProps {
   event: Events;
 }
 
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
 export default function CalendarEventRow({ event }: CalendarEventRowProps) {
+  console.log(event);
   const [isVisible, setIsVisible] = useState(false);
 
   const { t } = useTranslation(["events"]);
@@ -18,7 +34,10 @@ export default function CalendarEventRow({ event }: CalendarEventRowProps) {
     <>
       <div className={styles.wrapper} onClick={() => setIsVisible(true)}>
         <div className={styles.left}>
-          <span className={styles.text}> {t("day")} </span>
+          <span className={styles.text}>
+            {" "}
+            {t(months[event.date.getMonth()]).slice(0, 3)}{" "}
+          </span>
           <span className={styles.day}> {event.date.getDate()} </span>
         </div>
         <div className={styles.vl} />
