@@ -1,6 +1,7 @@
 .msg:last-of-type {
   margin: 0;
 }
+
 /* NEEDED FOR IMG
   .msg-img {
     width: 50px;
@@ -18,16 +19,19 @@
   border-radius: 15px;
   background: #ececec;
 }
+
 .msg-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
+
 .msg-info-name {
   margin-right: 10px;
   font-weight: bold;
 }
+
 .msg-info-time {
   font-size: 0.85em;
 }
@@ -60,6 +64,7 @@
 
   .msg-bubble {
     background: var(--primary);
+    filter: brightness(1.1);
     color: #fff;
     border-bottom-right-radius: 0;
   }
