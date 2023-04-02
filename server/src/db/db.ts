@@ -85,9 +85,16 @@ class DbMongoose {
   }: CompletedEventBodyParams) {
     const user = await userModel.findOne({ _id: userId });
     if (user) {
-      user.completedEvents.push(completedEvent);
-      const resp = await user.save();
-      return resp.id!;
+      let hasEvent = user.completedEvents.map(e =>{return e.id })
+      if(!hasEvent.includes(completedEvent.id!)){
+         user.completedEvents.push(completedEvent);
+        const resp = await user.save();
+        return resp.id!;
+      }else{
+        console.log("The event you tried to add Already exists")
+      }
+     
+      
     }
   }
 
