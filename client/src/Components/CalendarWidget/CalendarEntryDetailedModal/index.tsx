@@ -49,6 +49,7 @@ export function CalendarEntryDetailedModal({
     await axios.post('/api/addCompletedEvent', arg)
   })
 
+ 
   useEffect(() => {
     const toastId = "updatingEvent";
     if (markAsDone.isLoading) {

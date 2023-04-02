@@ -79,6 +79,14 @@ class DbMongoose {
     return groupChat.toObject();
   }
 
+
+  async getUser(gid:String){
+    const userFound= userModel.findOne({gid:gid});
+    if(userFound){
+      return userFound
+    }
+  }
+
   async addCompletedEvent({
     userId,
     completedEvent,

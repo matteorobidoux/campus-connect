@@ -15,6 +15,7 @@ import GAuth from "../oauth/gauth-endpoint";
 import { UserClassSection } from "../../../types/UserClassSection";
 import { BlobServiceClient } from "@azure/storage-blob";
 import fileUpload from "express-fileupload";
+import { User } from "../../../types/User";
 
 require("dotenv").config({ path: __dirname + "/.env" });
 
@@ -60,6 +61,15 @@ router.post("/api/login", async (req, res) => {
   }
 });
 
+
+router.get("/api/user", async (req,res)=> {
+  if(!req.query.gid){
+    res.sendStatus(400);
+  }else{
+    const a = ""+req.query.gid
+    res.json(await DbMongoose.getUser(a))
+  }
+})
 
 /**
  * @swagger
