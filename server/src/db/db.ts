@@ -92,9 +92,7 @@ class DbMongoose {
         return resp.id!;
       }else{
         console.log("The event you tried to add Already exists")
-      }
-     
-      
+      }    
     }
   }
 
