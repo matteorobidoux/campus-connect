@@ -21,6 +21,10 @@ library.add(faCircleNotch);
 
 export default function App() {
   const query = useGoogleOAuth();
+
+  if (query.isError) {
+    // do nothing
+  }
   const user = useUser();
   const [selectedComponent, selectComponent] = useState("calender");
   const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +51,7 @@ export default function App() {
       }
       setIsReturningFromGoogleAuth(false);
     }
-  }, [query.data, query.isSuccess]);
+  }, [query.isSuccess]);
 
   useEffect(() => {
     if (isLoggedIn) {
@@ -97,7 +101,17 @@ export default function App() {
           layout="position"
           transition={{ duration: 0.2 }}
         >
-          <NavBar toggleSidebar={openProfileBar} profileUrl={profileUrl} />
+          <NavBar
+            toggleSidebar={openProfileBar}
+            profileUrl={profileUrl}
+            logoOnClick={
+              isLoggedIn
+                ? () => {
+                    switchComponent("calendar");
+                  }
+                : () => {}
+            }
+          />
           <motion.div
             className="app-content-container"
             layout="preserve-aspect"
@@ -121,7 +135,7 @@ export default function App() {
                   <ProfileBar
                     isOpen={isOpen}
                     toggleFunc={openProfileBar}
-                    profileUrl={user.picture}
+                    profileUrl={user?.picture}
                     changeProfileImg={setProfileImg}
                   />
                 </>
@@ -130,10 +144,14 @@ export default function App() {
                 <Login
                   returningFromGoogleAuth={isReturningFromGoogleAuth}
                   givenName={
-                    query.isSuccess ? query.data["given_name"] : undefined
+                    query.isSuccess && query.data
+                      ? query.data["given_name"]
+                      : undefined
                   }
                   familyName={
-                    query.isSuccess ? query.data["family_name"] : undefined
+                    query.isSuccess && query.data
+                      ? query.data["family_name"]
+                      : undefined
                   }
                 />
               )}

@@ -11,6 +11,7 @@ import { changeLanguage } from "i18next";
 type NavBarProps = {
   toggleSidebar: Function;
   profileUrl: string;
+  logoOnClick: Function;
 };
 
 function NavBar(props: NavBarProps) {
@@ -65,10 +66,10 @@ function NavBar(props: NavBarProps) {
           </ul>
         </div>
         <h1 className={styles.logo}>Campus Connect</h1>
-        {props.profileUrl === "" ? (
+        {props.profileUrl && (
           <img
             className={styles["profileImg"]}
-            src={profileImg}
+            src={props.profileUrl.length < 1 ? profileImg : props.profileUrl}
             alt="profile"
             referrerPolicy="no-referrer"
             onClick={(e) => {
@@ -76,18 +77,7 @@ function NavBar(props: NavBarProps) {
               props.toggleSidebar(e);
             }}
           ></img>
-        ) : props.profileUrl.length > 1 ? (
-          <img
-            className={styles["profileImg"]}
-            src={props.profileUrl}
-            referrerPolicy="no-referrer"
-            alt="profile"
-            onClick={(e) => {
-              e.preventDefault();
-              props.toggleSidebar(e);
-            }}
-          ></img>
-        ) : null}
+        )}
       </nav>
     </div>
   );
