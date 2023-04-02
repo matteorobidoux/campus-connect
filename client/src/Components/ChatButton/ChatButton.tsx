@@ -64,11 +64,11 @@ export default function ChatButton(props: ChatButtonProps) {
       <div className={styles["button"]}>
         <h2>{props.data[props.index].courseTitle}</h2>
         <h4>
-          {message.username === null
+          {message.userName === null
             ? t("Loading")
-            : message.username === ""
+            : message.userName === ""
             ? t("NoMessagesYet")
-            : `${message.username}: ${message.message}`}
+            : `${message.userName}: ${message.message}`}
         </h4>
         <div className={styles.bubble}></div>
       </div>

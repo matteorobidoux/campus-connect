@@ -23,7 +23,10 @@ const formatDate = (date: Date) => {
   });
 };
 
-export default function Chat({ selectedChat }: ChatProps) {
+export default function Chat({
+  selectedChat,
+  setMostRecentMessage,
+}: ChatProps) {
   const user = useUser();
   const sections = useSections({ userClassSections: user.sections });
   const [messages, _setMessages] = useState<ChatMessage[]>([]);
@@ -71,6 +74,11 @@ export default function Chat({ selectedChat }: ChatProps) {
   });
 
   const setMessages = (c: ChatMessage) => {
+    setMostRecentMessage({
+      message: c.message,
+      room: c.room,
+      userName: c.user.userName,
+    });
     _setMessages((currentMessages) => [...currentMessages, c]);
   };
 
@@ -79,7 +87,7 @@ export default function Chat({ selectedChat }: ChatProps) {
     const pMessage = {
       message,
       room: selectedChat,
-      user: { _id: user._id, username: user.name },
+      user: { _id: user._id, userName: user.name },
       date: new Date(),
     };
 
@@ -188,7 +196,7 @@ function GenerateChatMessage({
   return (
     <Message
       leftOrRight={message.user._id === userID ? "right-msg" : "left-msg"}
-      user={message.user.username}
+      user={message.user.userName}
       message={message.message}
       time={formatDate(message.date)}
     />
