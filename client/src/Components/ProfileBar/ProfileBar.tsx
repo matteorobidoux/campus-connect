@@ -8,11 +8,12 @@ import {
 } from "../../custom-query-hooks/useGoogleOAuth";
 import { useQueryClient } from "react-query";
 import axios from "axios";
-import { useUser } from "../../custom-query-hooks";
+import { useSections, useUser } from "../../custom-query-hooks";
 import profileImg from "../../assets/profile.png";
 import { useRef } from "react";
 import { User } from "../../../../types/User";
 import { useTranslation } from "react-i18next";
+import { UserClass } from "../../../../types/UserClass";
 
 //fix type script stuff
 type ProfileBarProps = {
@@ -25,6 +26,11 @@ type ProfileBarProps = {
 export default function ProfileBar(props: ProfileBarProps) {
   const qc = useQueryClient();
   const user = useUser();
+  const sections = useSections({ userClassSections: user.sections });
+  const numberOfActiveEvents: number =
+    sections.data?.reduce<number>((previous: number, current: UserClass) => {
+      return previous + current.events.length;
+    }, 0) ?? 0;
   const inputref = useRef<HTMLInputElement>(null);
   const { t } = useTranslation("profile");
 
@@ -114,13 +120,11 @@ export default function ProfileBar(props: ProfileBarProps) {
               {t("change")}{" "}
             </button>
           </div>
-          <h1>Elidjay Ross</h1>
+          <h1>{user.name}</h1>
           <div className={styles.profileInfo}>
-            <h3>School: Dawson College</h3>
-            <h3>Program: Computer Science</h3>
-            <h3>Total Courses: 5</h3>
-            <h3>Active Events: 7</h3>
-            <h3>Completed Events: 3</h3>
+            <h3>Total Courses: {user.sections.length}</h3>
+            <h3>Active Events: {numberOfActiveEvents}</h3>
+            <h3>Completed Events: {user.completedEvents.length}</h3>
           </div>
           <button
             className={styles.logout}

@@ -9,8 +9,10 @@ import axios from "axios";
 import { AddMessage } from "../../../../types/Queries/AddMessage";
 import { LatestMessage } from "../../../../types/Queries/LatestMessage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { MostRecentMessage } from "../../../../types/Queries/MostRecentMessage";
 type ChatProps = {
   selectedChat: UserClassSection;
+  setMostRecentMessage: (setMostRecentMessage: MostRecentMessage) => void;
 };
 
 const formatDate = (date: Date) => {
