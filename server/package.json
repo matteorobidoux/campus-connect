@@ -6,12 +6,12 @@
     "start:prod": "node ./build/server/src/app.js"
   },
   "dependencies": {
-    "@types/cors": "^2.8.13",
     "@azure/storage-blob": "^12.13.0",
-    "express-fileupload": "^1.4.0",
+    "@types/cors": "^2.8.13",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
     "googleapis": "^111.0.0",
     "mockingoose": "^2.16.2",
     "mongoose": "^6.9.1",
@@ -27,6 +27,7 @@
     "@types/express-fileupload": "^1.4.1",
     "@types/jest": "^29.4.0",
     "@types/mocha": "^10.0.1",
+    "@types/swagger-jsdoc": "^6.0.1",
     "supertest": "^6.3.3",
     "ts-jest": "^29.0.5"
   }
