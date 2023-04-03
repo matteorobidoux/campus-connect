@@ -122,9 +122,15 @@ export default function ProfileBar(props: ProfileBarProps) {
           </div>
           <h1>{user.name}</h1>
           <div className={styles.profileInfo}>
-            <h3>Total Courses: {user.sections.length}</h3>
-            <h3>Active Events: {numberOfActiveEvents}</h3>
-            <h3>Completed Events: {user.completedEvents.length}</h3>
+            <h3>
+              {t("totalCourses")} {user.sections.length}
+            </h3>
+            <h3>
+              {t("activeEvents")} {numberOfActiveEvents}
+            </h3>
+            <h3>
+              {t("completedEvents")} {user.completedEvents.length}
+            </h3>
           </div>
           <button
             className={styles.logout}

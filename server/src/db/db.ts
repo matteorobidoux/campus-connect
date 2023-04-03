@@ -219,7 +219,7 @@ class DbMongoose {
       if (message.length > 0) {
         return {
           message: message[message.length - 1].message,
-          username: message[message.length - 1].user.userName,
+          userName: message[message.length - 1].user.userName,
         };
       }
     }

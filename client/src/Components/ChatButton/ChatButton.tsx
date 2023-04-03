@@ -39,12 +39,7 @@ export default function ChatButton(props: ChatButtonProps) {
   });
 
   useEffect(() => {
-    if (query.data) {
-      setMessage(query.data.data);
-    }
-  }, [query.data]);
-
-  useEffect(() => {
+    console.log("In ports");
     if (
       props.mostRecentMessage.room?.courseNumber ===
         props.data[props.index].courseNumber &&
@@ -55,6 +50,13 @@ export default function ChatButton(props: ChatButtonProps) {
     }
   }, [props.mostRecentMessage]);
 
+  useEffect(() => {
+    console.log("In query");
+    if (query.data) {
+      setMessage(query.data.data);
+    }
+  }, [query.data]);
+
   return (
     <motion.div
       className={styles["button-container"]}
@@ -64,11 +66,11 @@ export default function ChatButton(props: ChatButtonProps) {
       <div className={styles["button"]}>
         <h2>{props.data[props.index].courseTitle}</h2>
         <h4>
-          {message.username === null
+          {message.userName === ""
             ? t("Loading")
-            : message.username === ""
+            : message.userName === undefined
             ? t("NoMessagesYet")
-            : `${message.username}: ${message.message}`}
+            : `${message.userName}: ${message.message}`}
         </h4>
         <div className={styles.bubble}></div>
       </div>

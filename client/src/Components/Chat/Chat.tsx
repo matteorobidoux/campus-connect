@@ -4,27 +4,41 @@ import { useEffect, useRef, useState } from "react";
 import { ChatMessage, useChat } from "../../chat";
 import { UserClassSection } from "../../../../types/UserClassSection";
 import { useSections, useUser } from "../../custom-query-hooks";
-import { useMutation, useQuery, useQueryClient } from "react-query";
+import { useQuery } from "react-query";
 import axios from "axios";
-import { AddMessage } from "../../../../types/Queries/AddMessage";
-import { LatestMessage } from "../../../../types/Queries/LatestMessage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { MostRecentMessage } from "../../../../types/Queries/MostRecentMessage";
+import { useTranslation } from "react-i18next";
+
+import { isDateCurrentDay } from "../../validationUtils";
 type ChatProps = {
   selectedChat: UserClassSection;
   setMostRecentMessage: (setMostRecentMessage: MostRecentMessage) => void;
 };
 
 const formatDate = (date: Date) => {
-  return date.toLocaleString("en-US", {
-    hour: "numeric",
-    minute: "2-digit",
-    hour12: true,
-  });
+  return isDateCurrentDay(date)
+    ? date.toLocaleString("en-US", {
+        hour: "numeric",
+        minute: "2-digit",
+        hour12: true,
+      })
+    : date.toLocaleString("en-US", {
+        year: "numeric",
+        month: "numeric",
+        day: "numeric",
+        hour: "numeric",
+        minute: "2-digit",
+        hour12: true,
+      });
 };
 
-export default function Chat({ selectedChat }: ChatProps) {
+export default function Chat({
+  selectedChat,
+  setMostRecentMessage,
+}: ChatProps) {
   const user = useUser();
+  const { t } = useTranslation(["chat"]);
   const sections = useSections({ userClassSections: user.sections });
   const [messages, _setMessages] = useState<ChatMessage[]>([]);
   const [loadedMsgIndex, setIndex] = useState(0);
@@ -39,8 +53,19 @@ export default function Chat({ selectedChat }: ChatProps) {
   const textRef = useRef<HTMLInputElement>(null);
   const [messageToScrollKey, setMessageToScrollKey] = useState("");
   const messageToScrollRef = useRef<HTMLDivElement>(null);
-
   const lastMessageRef = useRef<HTMLDivElement>(null);
+  let enterMessageText = t("enterYourMessage");
+
+  useEffect(() => {
+    lastMessageRef.current?.scrollIntoView();
+    if (messages.length > 0 && !justLoadedFromDb) {
+      setMostRecentMessage({
+        message: messages[messages.length - 1].message,
+        userName: messages[messages.length - 1].user.userName,
+        room: selectedChat,
+      } as MostRecentMessage);
+    }
+  }, [messages]);
 
   async function loadMessages() {
     setJustLoadedFromDb(true);
@@ -53,6 +78,7 @@ export default function Chat({ selectedChat }: ChatProps) {
   useEffect(() => {
     if (msgsFromDBQ) {
       setJustLoadedFromDb(true);
+      msgsFromDBQ.forEach((d: ChatMessage) => (d.date = new Date(d.date)));
       _setMessages((currentMessages) => [...msgsFromDBQ, ...currentMessages]);
     }
   }, [msgsFromDBQ]);
@@ -65,12 +91,17 @@ export default function Chat({ selectedChat }: ChatProps) {
         selectedChat.courseNumber + selectedChat.sectionNumber
       )
         return;
-      m.date = new Date(m.date);
       setMessages(m);
     },
   });
 
   const setMessages = (c: ChatMessage) => {
+    c.date = new Date(c.date);
+    setMostRecentMessage({
+      message: c.message,
+      room: c.room,
+      userName: c.user.userName,
+    });
     _setMessages((currentMessages) => [...currentMessages, c]);
   };
 
@@ -79,7 +110,7 @@ export default function Chat({ selectedChat }: ChatProps) {
     const pMessage = {
       message,
       room: selectedChat,
-      user: { _id: user._id, username: user.name },
+      user: { _id: user._id, userName: user.name },
       date: new Date(),
     };
 
@@ -167,7 +198,7 @@ export default function Chat({ selectedChat }: ChatProps) {
             <input
               type="text"
               className={styles["msger-input"]}
-              placeholder="Enter your message..."
+              placeholder={enterMessageText}
               onKeyUp={onKeyUp}
               ref={textRef}
             ></input>
@@ -188,7 +219,7 @@ function GenerateChatMessage({
   return (
     <Message
       leftOrRight={message.user._id === userID ? "right-msg" : "left-msg"}
-      user={message.user.username}
+      user={message.user.userName}
       message={message.message}
       time={formatDate(message.date)}
     />

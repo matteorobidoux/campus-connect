@@ -1,4 +1,7 @@
 {
   "change": "Modificare",
-  "logout": "Disconnettersi"
+  "logout": "Disconnettersi",
+  "totalCourses": "Corsi Totali:",
+  "activeEvents": "Eventi Attivi:",
+  "completedEvents": "Eventi Completati:"
 }

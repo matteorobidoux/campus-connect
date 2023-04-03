@@ -13,7 +13,7 @@ export function createServer(server: http.Server) {
         room: payload.room,
         message: {
           message: payload.message,
-          user: { userName: payload.user.username, _id: payload.user._id },
+          user: { userName: payload.user.userName, _id: payload.user._id },
           date: payload.date,
         },
       });
