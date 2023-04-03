@@ -1,8 +1,7 @@
-import { UserCompletedEvent} from "../UserCompletedEvent"
+import { UserCompletedEvent } from "../UserCompletedEvent";
 type CompletedEventBodyParams = {
-  userName: string,
-  completedEvent: UserCompletedEvent
-}
+  userId: string;
+  completedEvent: UserCompletedEvent;
+};
 
 export default CompletedEventBodyParams;
-

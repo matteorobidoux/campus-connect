@@ -1,13 +1,16 @@
 #THIS IS A TEST BUILD, DOESNT MATTER IF ANYONE HAS ACCESS TO IT, PRODUCTION WILL BE KEPT SECRET
-variables: 
-    AZ_SP_ID: "9ada1129-4f0c-4336-88f1-f4d01c996aa2"
-    AZ_SP_SECRET: "4Ls8Q~YFWtz9YJQEDYPVuuAvtMF3WHzffLZ.scDV"
-    AZ_TENANT: "b6b66a7a-fbbb-42b8-a7c5-712342094eef"
-    RESOURCE_GROUP_NAME: "campus-connects_group"
-    APP_NAME: "campus-connects-test"
-    WEBSITE_RUN_FROM_PACKAGE: 1
-    ATLAS_URI: "mongodb+srv://nenechi:nenechi12@exercise11.cfvsryo.mongodb.net/?retryWrites=true&w=majority"
-    
+variables:
+  AZ_SP_ID: "9ada1129-4f0c-4336-88f1-f4d01c996aa2"
+  AZ_SP_SECRET: "4Ls8Q~YFWtz9YJQEDYPVuuAvtMF3WHzffLZ.scDV"
+  AZ_TENANT: "b6b66a7a-fbbb-42b8-a7c5-712342094eef"
+  RESOURCE_GROUP_NAME: "campus-connects_group"
+  APP_NAME: "campus-connects-test"
+  WEBSITE_RUN_FROM_PACKAGE: 1
+  DB_URI: "mongodb+srv://nenechi:nenechi12@exercise11.cfvsryo.mongodb.net/?retryWrites=true&w=majority"
+  TEST: "mongodb+srv://nenechi:nenechi12@exercise11.cfvsryo.mongodb.net/test"
+  DB_NAME: "CampusConnect"
+  AZURE_SAS: "sv=2021-10-04&st=2023-03-23T19%3A22%3A51Z&se=2027-02-09T20%3A22%3A00Z&sr=c&sp=racwdxltf&sig=hQP5lVIQb0t43g2gLaK4WVTdOKtY85VkFyZ%2F6meWi%2FE%3D"
+  AZURE_STORAGE_ACCOUNT_NAME: "campusconnectblob"
 
 image: node:latest
 
@@ -16,18 +19,17 @@ stages:
   - test
   - deploy
 
-
 build-frontend:
   stage: build
-  only: 
-  - test
+  only:
+    - test
   cache:
     key:
-      prefix: 'frontend'
+      prefix: "frontend"
       files:
-        - 'client/package-lock.json'
+        - "client/package-lock.json"
     paths:
-      - 'client/node_modules/'
+      - "client/node_modules/"
 
   script:
     - cd client && npm install && CI=false npm run build
@@ -39,15 +41,15 @@ build-frontend:
 
 build-backend:
   stage: build
-  only: 
-  - test
+  only:
+    - test
   cache:
     key:
-      prefix: 'backend'
+      prefix: "backend"
       files:
-        - 'server/package-lock.json'
+        - "server/package-lock.json"
     paths:
-      - 'server/node_modules/'
+      - "server/node_modules/"
 
   script:
     - cd server && npm install && CI=false npm run build
@@ -72,7 +74,7 @@ build-backend:
 
 deploy:
   stage: deploy
-  image:  mcr.microsoft.com/azure-cli
+  image: mcr.microsoft.com/azure-cli
   dependencies:
     - build-frontend
     - build-backend
@@ -82,7 +84,7 @@ deploy:
     - "az login --allow-no-subscriptions --service-principal -u $AZ_SP_ID -p $AZ_SP_SECRET --tenant $AZ_TENANT"
   script:
     - zip -r deploy.zip ./client ./server ./package.json
-##    - "az webapp config appsettings set --resource-group $RESOURCE_GROUP_NAME --name $APP_NAME --settings WEBSITE_RUN_FROM_PACKAGE='1'"
+    ##    - "az webapp config appsettings set --resource-group $RESOURCE_GROUP_NAME --name $APP_NAME --settings WEBSITE_RUN_FROM_PACKAGE='1'"
     ##- "az webapp config appsettings set --resource-group $RESOURCE_GROUP_NAME --name $APP_NAME --settings ATLAS_URI=$ATLAS_URI"
     - "az webapp deployment source config-zip --resource-group $RESOURCE_GROUP_NAME --name $APP_NAME --src deploy.zip"
   artifacts:
@@ -90,4 +92,3 @@ deploy:
     when: on_success
     paths:
       - deploy.zip
-

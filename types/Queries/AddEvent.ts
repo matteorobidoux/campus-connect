@@ -1,13 +1,13 @@
 import { UserClassSection } from "../UserClassSection";
-import { Events } from "../Event"; 
+import { Events } from "../Event";
 
 type AddEventBody = {
-    section: UserClassSection;
-    event: Omit<Events,'mongoid'>;
-}
+  section: UserClassSection;
+  event: Omit<Events, "mongoid" | "_id">;
+};
 
 type AddEventResponse = {
-    success: boolean;
-}
+  success: boolean;
+};
 
-export type {AddEventBody, AddEventResponse};
+export type { AddEventBody, AddEventResponse };
