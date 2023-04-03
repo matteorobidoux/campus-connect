@@ -8,6 +8,8 @@ import { useQuery } from "react-query";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { MostRecentMessage } from "../../../../types/Queries/MostRecentMessage";
+import { useTranslation } from "react-i18next";
+
 import { isDateCurrentDay } from "../../validationUtils";
 type ChatProps = {
   selectedChat: UserClassSection;
@@ -36,6 +38,7 @@ export default function Chat({
   setMostRecentMessage,
 }: ChatProps) {
   const user = useUser();
+  const { t } = useTranslation(["chat"]);
   const sections = useSections({ userClassSections: user.sections });
   const [messages, _setMessages] = useState<ChatMessage[]>([]);
   const [loadedMsgIndex, setIndex] = useState(0);
@@ -50,8 +53,19 @@ export default function Chat({
   const textRef = useRef<HTMLInputElement>(null);
   const [messageToScrollKey, setMessageToScrollKey] = useState("");
   const messageToScrollRef = useRef<HTMLDivElement>(null);
-
   const lastMessageRef = useRef<HTMLDivElement>(null);
+  let enterMessageText = t("enterYourMessage");
+
+  useEffect(() => {
+    lastMessageRef.current?.scrollIntoView();
+    if (messages.length > 0 && !justLoadedFromDb) {
+      setMostRecentMessage({
+        message: messages[messages.length - 1].message,
+        userName: messages[messages.length - 1].user.userName,
+        room: selectedChat,
+      } as MostRecentMessage);
+    }
+  }, [messages]);
 
   async function loadMessages() {
     setJustLoadedFromDb(true);
@@ -184,7 +198,7 @@ export default function Chat({
             <input
               type="text"
               className={styles["msger-input"]}
-              placeholder="Enter your message..."
+              placeholder={enterMessageText}
               onKeyUp={onKeyUp}
               ref={textRef}
             ></input>

@@ -7,6 +7,7 @@ import { ReactComponent as TopLeftSVG } from "./top-left.svg";
 import styles from "./CourseDetailedViewModal.module.scss";
 import { Timeslot } from "./Timeslot";
 import Schedule from "../../../../types/Schedule";
+import { useTranslation } from "react-i18next";
 
 export interface CourseDetailedViewModalProps {
   userClass: UserClass;
@@ -27,7 +28,7 @@ export function CourseDetailedViewModal({
     );
   };
   const schedules: Schedule[][] = Object.values(groupByDay(userClass.schedule));
-
+  const { t } = useTranslation(["course"]);
   const halfLength = Math.ceil(schedules.length / 2) ?? 0;
   const leftSide = schedules.slice(0, halfLength - 1) ?? [];
   const rightSide = schedules.slice(halfLength - 1) ?? [];
@@ -42,7 +43,10 @@ export function CourseDetailedViewModal({
           <hr />
           <div className={styles.info}>
             <p> {userClass.teacher} </p>
-            <p> Section {Number.parseInt(userClass.number)} </p>
+            <p>
+              {" "}
+              {t("section")} {Number.parseInt(userClass.number)}{" "}
+            </p>
           </div>
         </div>
 
@@ -63,7 +67,7 @@ export function CourseDetailedViewModal({
         <BottomRightSVG className={styles.svgRight} />
         <TopLeftSVG className={styles.svgLeft} />
         <div className={styles.wrapperWrapper}>
-          <h2> Next Upcoming Events </h2>
+          <h2> {t("nextUpcomingEvents")} </h2>
           <div className={styles.bottom}>
             <div className={styles.left}>
               {userClass.events
@@ -79,7 +83,7 @@ export function CourseDetailedViewModal({
               <div className={styles.entry}>
                 {/* Using as any here is necessary because they have a bug with FontAwesome types*/}
                 <FontAwesomeIcon icon={faCalendar as any} />
-                {userClass.events.length} upcoming events
+                {userClass.events.length} {t("upcomingEvents")}
               </div>
               {/* <div className={styles.entry}>
                 <FontAwesomeIcon icon={faFile as any} />5 assignments
