@@ -25,7 +25,7 @@ build-frontend:
   only:
     - test
   dependencies:
-    - run-tests
+    - test
   cache:
     key:
       prefix: "frontend"
@@ -65,7 +65,7 @@ build-backend:
 test:
   stage: run-tests
   dependencies:
-    - build-server
+    - build-backend
   script:
     - cd server && npm run test
 
@@ -75,6 +75,7 @@ deploy:
   dependencies:
     - build-frontend
     - build-backend
+    - test
   only:
     - production
   before_script:
