@@ -25,7 +25,6 @@ const months = [
 ];
 
 export default function CalendarEventRow({ event }: CalendarEventRowProps) {
-  console.log(event);
   const [isVisible, setIsVisible] = useState(false);
 
   const { t } = useTranslation(["events"]);
