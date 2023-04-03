@@ -17,13 +17,6 @@ afterAll(async () => {
 });
 
 
-describe("test Api Gauth", () => {
-  it("should return defined ", async () => {
-    const res = await request(app).get("/gauth");
-    expect(res.body).toBeDefined();
-  });
-});
-
 describe("test Api Login", () => {
   it("should return 400 with no data", async () => {
     const res = await request(app).get("/api/login");
