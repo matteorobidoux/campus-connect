@@ -70,12 +70,13 @@ export default function Main(props: MainProps) {
   const chat = useChat({
     rooms: user.sections,
     onMessage: (m) => {
+      // debugger;
       setStates((prevState) => mutateMap(prevState, m.room, false, m));
     },
   });
 
   const useMessages = (id: string) => {
-    let [messages, setMessages] = useState<ChatMessage[]>([]);
+    let [messages, setMessages] = useState<ChatMessage[]>(states.get(id)!);
     useEffect(() => {
       setMessages(states.get(id)!);
     }, [states]);
