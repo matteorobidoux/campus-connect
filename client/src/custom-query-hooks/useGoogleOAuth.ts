@@ -14,7 +14,6 @@ export const removeUser = () => window.localStorage.removeItem("user");
 const useGoogleOAuth = () => {
   const getter = async () => {
     const user = getUser();
-    console.log("found user.");
     if (user) {
       return user;
     }

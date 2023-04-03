@@ -39,7 +39,6 @@ class DbMongoose {
 
   async getUser(gid: string): Promise<UserType> {
     const user = await userModel.findOne({ gid });
-    console.log("Found user:", user?.toObject());
     return user!.toObject();
   }
 

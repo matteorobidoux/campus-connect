@@ -45,7 +45,6 @@ export const useChat = ({ onMessage, rooms }: UseChatArgs) => {
 
   useEffect(() => {
     if (!isConnected) return;
-    console.log("emitting");
     socket.emit(
       "setRoom",
       rooms.map((r) => ({
