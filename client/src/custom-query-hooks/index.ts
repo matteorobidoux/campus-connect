@@ -93,6 +93,7 @@ export const useAddUserMutation = () => {
     onSuccess: async (data) => {
       writeUser(data);
       await qc.invalidateQueries({ queryKey: ["userUpdate", data.gid] });
+      await qc.invalidateQueries({ queryKey: ["user"] });
       await qc.refetchQueries({ queryKey: ["userUpdate", data.gid] });
     },
   });

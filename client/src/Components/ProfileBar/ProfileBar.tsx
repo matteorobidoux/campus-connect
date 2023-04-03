@@ -46,6 +46,7 @@ export default function ProfileBar(props: ProfileBarProps) {
       const userLocalStorage = getUser() as User;
       userLocalStorage.picture = response.url;
       writeUser(userLocalStorage);
+      qc.invalidateQueries(["user"]);
       props.changeProfileImg(response.url);
     }
   }
