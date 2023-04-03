@@ -37,11 +37,22 @@ class DbMongoose {
     mongoose.connection.close();
   }
 
+  /**
+   * Returns the User Based on the gid
+   * @param gid Google Id fromthe user
+   * @returns  UserType object 
+   */
   async getUser(gid: string): Promise<UserType> {
     const user = await userModel.findOne({ gid });
     return user!.toObject();
   }
 
+  /**
+   *  Logs the user 
+   * @param name name of the user
+   * @param password password of the user
+   * @returns  user object data 
+   */
   async login({ name, password }: LoginRequest): Promise<LoginResponse> {
     const user = await userModel.findOne({ name: name, password: password });
 
@@ -52,6 +63,11 @@ class DbMongoose {
     }
   }
 
+  /**
+   * Add user to the Database
+   * @param CreateUserBodyParams 
+   * @returns  void
+   */
   async addUser({
     name,
     sections,
@@ -85,6 +101,11 @@ class DbMongoose {
     return groupChat.toObject();
   }
 
+  /**
+   * Add a completed event to Array completedEvents from user
+   * @param userId From current user  
+   * @returns 
+   */
   async addCompletedEvent({
     userId,
     completedEvent,
@@ -104,6 +125,10 @@ class DbMongoose {
     }
   }
 
+  /**
+   * Removes the current event
+   * @param RemoveEventBodyParams 
+   */
   async removeEvent({
     eventId,
     courseNumber,
@@ -121,6 +146,11 @@ class DbMongoose {
     }
   }
 
+  /**
+   * Change User profile Pick
+   * @param id
+   * @param picture
+   */
   async changeUserImage({ id, picture }: { id: string; picture: string }) {
     const user = await User.findOne({ _id: id });
     if (user) {
@@ -129,6 +159,12 @@ class DbMongoose {
     }
   }
 
+  /**
+   * Add the current event to the course
+   * @param courseNumber 
+   * @param sectionNumber 
+   * @param event 
+   */
   async addEventToSection(
     courseNumber: string,
     sectionNumber: string,
@@ -209,6 +245,11 @@ class DbMongoose {
     }
   }
 
+  /**
+   * Returns most recen message from the chat
+   * @param room 
+   * @returns most recent message
+   */
   async getMostRecentMessage(room: UserClassSection) {
     const groupChat = await groupChatModel.findOne({
       "room.courseNumber": room.courseNumber,
@@ -225,6 +266,11 @@ class DbMongoose {
     }
   }
 
+  /**
+   * Returns all the users Courses
+   * @param userSections 
+   * @returns All UserClasses 
+   */
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
     const courses = userSections.map(async (userCourse) => {
       const course = (await Course.findOne({
@@ -243,6 +289,10 @@ class DbMongoose {
     return await Promise.all(courses);
   }
 
+  /**
+   * 
+   * @returns All the courses Stripped Information
+   */
   async getAllStrippedCourses() {
     const result = await Course.find().select({
       _id: 1,
