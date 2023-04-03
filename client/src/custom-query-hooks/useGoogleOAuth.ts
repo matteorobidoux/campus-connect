@@ -23,6 +23,8 @@ const useGoogleOAuth = () => {
         "/gauth?" + document.documentURI.split("?")[1]
       );
 
+      console.log(data);
+
       if (data.user) {
         console.log("Logged in with user", data.user);
         writeUser(data.user);
@@ -30,7 +32,7 @@ const useGoogleOAuth = () => {
       }
 
       if (data.registerInfo) {
-        console.log("Should move to registration", data.user);
+        console.log("Should move to registration", data.registerInfo);
         return data.registerInfo;
       }
 
@@ -46,7 +48,7 @@ const useGoogleOAuth = () => {
     throw new Error("Not returning from GAuth");
   };
 
-  return useQuery(["user"], getter, {
+  return useQuery(["usergauth"], getter, {
     staleTime: Infinity,
     retry: false,
   });
