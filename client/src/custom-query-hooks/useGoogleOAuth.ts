@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useQuery } from "react-query";
+import { useQuery, useQueryClient } from "react-query";
 import { GAuthResponse } from "../../../types/Queries/GAuth";
 import { User } from "../../../types/User";
 
@@ -7,11 +7,13 @@ export const getUser = () =>
   localStorage.getItem("user")
     ? JSON.parse(localStorage.getItem("user")!)
     : undefined;
+
 export const writeUser = (user: User) =>
   window.localStorage.setItem("user", JSON.stringify(user));
 export const removeUser = () => window.localStorage.removeItem("user");
 
 const useGoogleOAuth = () => {
+  const queryClient = useQueryClient();
   const getter = async () => {
     const user = getUser();
     if (user) {
@@ -28,6 +30,7 @@ const useGoogleOAuth = () => {
       if (data.user) {
         console.log("Logged in with user", data.user);
         writeUser(data.user);
+        queryClient.invalidateQueries("user");
         return data.user;
       }
 

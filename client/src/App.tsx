@@ -132,7 +132,6 @@ export default function App() {
                     selectComponentFunc={switchComponent}
                     mostRecentMessage={mostRecentMessage}
                     setMostRecentMessageById={setMostRecentMessageById}
-                    user={user}
                   />
                   <Main
                     selectedComponent={selectedComponent}
