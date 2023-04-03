@@ -11,6 +11,7 @@ import CompletedEventBodyParams from "../../../types/Queries/CompletedEvent";
 import RemoveEventBodyParams from "../../../types/Queries/RemoveEvent";
 import userModel from "./models/user-schema";
 import { Events } from "../../../types/Event";
+import { User as UserType } from "../../../types/User";
 require("dotenv").config();
 
 const dbName = process.env.DB_NAME || "CampusConnect";
@@ -34,6 +35,12 @@ class DbMongoose {
 
   disconnectdb() {
     mongoose.connection.close();
+  }
+
+  async getUser(gid: string): Promise<UserType> {
+    const user = await userModel.findOne({ gid });
+    console.log("Found user:", user?.toObject());
+    return user!.toObject();
   }
 
   async login({ name, password }: LoginRequest): Promise<LoginResponse> {
@@ -85,14 +92,16 @@ class DbMongoose {
   }: CompletedEventBodyParams) {
     const user = await userModel.findOne({ _id: userId });
     if (user) {
-      let hasEvent = user.completedEvents.map(e =>{return e.id })
-      if(!hasEvent.includes(completedEvent.id!)){
-         user.completedEvents.push(completedEvent);
+      let hasEvent = user.completedEvents.map((e) => {
+        return e.id;
+      });
+      if (!hasEvent.includes(completedEvent.id!)) {
+        user.completedEvents.push(completedEvent);
         const resp = await user.save();
         return resp.id!;
-      }else{
-        console.log("The event you tried to add Already exists")
-      }    
+      } else {
+        console.log("The event you tried to add Already exists");
+      }
     }
   }
 
@@ -246,7 +255,6 @@ class DbMongoose {
     console.log(result);
     return result;
   }
-
 }
 
 export default new DbMongoose();

@@ -9,12 +9,19 @@ import {
   GetAllSectionsResponse,
 } from "../../../types/Queries/GetAllCourses";
 import { LoginRequest } from "../../../types/Queries/Login";
-import { AddEventBody, AddEventResponse } from "../../../types/Queries/AddEvent";
+import {
+  AddEventBody,
+  AddEventResponse,
+} from "../../../types/Queries/AddEvent";
 import { generateAuthUrl } from "../oauth";
 import GAuth from "../oauth/gauth-endpoint";
 import { UserClassSection } from "../../../types/UserClassSection";
 import { BlobServiceClient } from "@azure/storage-blob";
 import fileUpload from "express-fileupload";
+import swaggerJSDoc from "swagger-jsdoc";
+import { User } from "../../../types/User";
+import { Mongoose } from "mongoose";
+import db from "../db/db";
 
 require("dotenv").config({ path: __dirname + "/.env" });
 
@@ -26,28 +33,25 @@ const blobService = new BlobServiceClient(
 );
 const containerClient = blobService.getContainerClient(containerName);
 
-
-const swaggerJSDoc = require('swagger-jsdoc');
 const swaggerDefinition = {
- openapi: '3.0.0',
- info: {
-   title: 'Express API for CampusConnect',
-   version: '1.0.0',
-   description: 'API documentation',
- }
+  openapi: "3.0.0",
+  info: {
+    title: "Express API for CampusConnect",
+    version: "1.0.0",
+    description: "API documentation",
+  },
 };
 
 const options = {
- swaggerDefinition,
- // Paths to files containing OpenAPI definitions
- apis: ['./src/routes/route.ts'],
- 
+  swaggerDefinition,
+  // Paths to files containing OpenAPI definitions
+  apis: ["./src/routes/route.ts"],
 };
 const swaggerSpec = swaggerJSDoc(options);
-const swaggerUi = require('swagger-ui-express');
+const swaggerUi = require("swagger-ui-express");
 
-const router= express.Router()
-router.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+const router = express.Router();
+router.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 router.use(express.json());
 router.use(fileUpload());
 
@@ -60,6 +64,14 @@ router.post("/api/login", async (req, res) => {
   }
 });
 
+router.get("/api/getUserInfo", async (req, res) => {
+  const { gid } = req.query;
+  if (!gid && typeof gid != "string") {
+    res.sendStatus(400);
+    return;
+  }
+  res.json({ user: await db.getUser(gid as string) });
+});
 
 /**
  * @swagger
@@ -68,7 +80,7 @@ router.post("/api/login", async (req, res) => {
  *    summary: Adds an User to the Db
  *    description: Returns Boolean true
  *    parameters:
- *      - in: query 
+ *      - in: query
  *        name: CreateUserBodyParams
  *        schema:
  *          type: object
@@ -84,12 +96,12 @@ router.post("/api/login", async (req, res) => {
  *                example: Neils Hambile
  *            picture:
  *                   type: string
- *                   example: url.blob.jpg 
+ *                   example: url.blob.jpg
  *            email:
  *                 type: string
  *                 example: ahaha@ahaha.com
- *            
- *        description: Adding user to the Db 
+ *
+ *        description: Adding user to the Db
  *    responses:
  *      200:
  *         description: User Succesfully added.
@@ -100,8 +112,6 @@ router.post("/api/addUser", async (req, res) => {
   res.json(await DbMongoose.addUser(body));
 });
 
-
-
 /**
  * @swagger
  * /api/addCompletedEvent:
@@ -109,7 +119,7 @@ router.post("/api/addUser", async (req, res) => {
  *    summary: Adds an Event to the specific course
  *    description: Returns Boolean true
  *    parameters:
- *      - in: query 
+ *      - in: query
  *        name: RemoveEventBodyParams
  *        schema:
  *          type: object
@@ -120,7 +130,7 @@ router.post("/api/addUser", async (req, res) => {
  *            UserCompletedEvent:
  *                    type: object
  *                    example:  {id: "someid", date: "2023-03-28T23:00:10.537+00:00"}
- *        description: Adding event id to the userCompletedEvent Array 
+ *        description: Adding event id to the userCompletedEvent Array
  *    responses:
  *      200:
  *         description: An Event was succesfully removed.
@@ -136,9 +146,6 @@ router.post("/api/addCompletedEvent", async (req, res) => {
     });
   }
 });
-
-
-
 
 /**
  * @swagger
@@ -182,7 +189,7 @@ router.post("/api/uploadBlob", async (req, res) => {
  *    summary: Get the last message from Chat
  *    description: Returns Boolean true
  *    parameters:
- *      - in: query 
+ *      - in: query
  *        name: UserClassSection
  *        schema:
  *          type: object
@@ -193,7 +200,7 @@ router.post("/api/uploadBlob", async (req, res) => {
  *            sectionNumber:
  *                     type: string
  *                     example: "00001"
- *        description: Gets Latest Message (Last message Sent) 
+ *        description: Gets Latest Message (Last message Sent)
  *    responses:
  *      200:
  *         content:
@@ -230,7 +237,7 @@ router.get("/api/getMostRecentMessage", async (req, res) => {
  *    summary: Adds an Event to the specific course
  *    description: Returns Boolean true
  *    parameters:
- *      - in: query 
+ *      - in: query
  *        name: RemoveEventBodyParams
  *        schema:
  *          type: object
@@ -244,7 +251,7 @@ router.get("/api/getMostRecentMessage", async (req, res) => {
  *            courseSection:
  *                     type: string
  *                     example: "00001"
- *        description: RemoveEventBody has all the required stuff to remove event  
+ *        description: RemoveEventBody has all the required stuff to remove event
  *    responses:
  *      200:
  *         description: An Event was succesfully removed.
@@ -265,7 +272,6 @@ router.post("/api/removeEvent", async (req, res) => {
   }
 });
 
-
 /**
  * @swagger
  * /api/addEvent:
@@ -273,7 +279,7 @@ router.post("/api/removeEvent", async (req, res) => {
  *    summary: Adds an Event to the specific course
  *    description: Returns Boolean true
  *    parameters:
- *      - in: query 
+ *      - in: query
  *        name: AddEventBody
  *        schema:
  *          type: object
@@ -284,7 +290,7 @@ router.post("/api/removeEvent", async (req, res) => {
  *            event:
  *             type: object
  *             example: { owenerid: "someownerid", date: "2023-03-30T04:00:00.000+00:00", title: "Swagger Post",desc: "swagger post",courseTitle: "WebDev"}
- *        description: Section containes courseNumber and section, event is the event objet to be added    
+ *        description: Section containes courseNumber and section, event is the event objet to be added
  *    responses:
  *      200:
  *         description: An Event was succesfully added.
@@ -309,7 +315,6 @@ router.post("/api/addEvent", async (req, res: Response<AddEventResponse>) => {
   res.json({ success: true });
 });
 
-
 /**
  * @swagger
  * /api/getAllMessages:
@@ -317,7 +322,7 @@ router.post("/api/addEvent", async (req, res: Response<AddEventResponse>) => {
  *    summary: Get all Messages
  *    description: Returns a array with All Messages
  *    parameters:
- *      - in: query 
+ *      - in: query
  *        name: UserClassSection
  *        schema:
  *          type: object
@@ -325,7 +330,7 @@ router.post("/api/addEvent", async (req, res: Response<AddEventResponse>) => {
  *            data:
  *               type: object
  *               example: {room: {courseNumber: "574-453-DW", sectionNumber:  "00001"}, messageIndex: 0}
- *        description: The courseNumber and sectionNumber of the group chat to retrieve themessages      
+ *        description: The courseNumber and sectionNumber of the group chat to retrieve themessages
  *    responses:
  *      200:
  *         description: A list of all Messages In the group Chat
@@ -351,8 +356,6 @@ router.get("/api/getAllMessages", async (req, res) => {
   }
 });
 
-
-
 /**
  * @swagger
  * /api/getLatestMessages:
@@ -360,7 +363,7 @@ router.get("/api/getAllMessages", async (req, res) => {
  *    summary: Get LastestMessages
  *    description: Returns an array with last 15 Messages from the given message Index
  *    parameters:
- *      - in: query 
+ *      - in: query
  *        name: LatestMessage
  *        schema:
  *          type: object
@@ -368,7 +371,7 @@ router.get("/api/getAllMessages", async (req, res) => {
  *            data:
  *               type: object
  *               example: {room: {courseNumber: "574-453-DW", sectionNumber:  "00001"}, messageIndex: 0}
- *        description: The courseNumber and sectionNumber of the group chat       
+ *        description: The courseNumber and sectionNumber of the group chat
  *    responses:
  *      200:
  *         description: A list of Messages
@@ -392,7 +395,6 @@ router.get("/api/getLatestMessages", async (req, res) => {
   }
 });
 
-
 /**
  * @swagger
  * /api/getAllSections:
@@ -400,7 +402,7 @@ router.get("/api/getLatestMessages", async (req, res) => {
  *    summary: Get All user class Sections
  *    description: Returns an array with All user's classes based on the UserClassSection[]
  *    parameters:
- *      - in: query 
+ *      - in: query
  *        name: UserClassSections
  *        schema:
  *          type: object
@@ -408,7 +410,7 @@ router.get("/api/getLatestMessages", async (req, res) => {
  *            data:
  *               type: array
  *               example: [ { sections: {courseNumber: "574-453-DW", sectionNumber:  "00001"} } ]
- *        description: The array Containing courseNumber and section where user belongs       
+ *        description: The array Containing courseNumber and section where user belongs
  *    responses:
  *      200:
  *         description: A list of all User Classes
@@ -434,22 +436,21 @@ router.get(
   }
 );
 
-
 /**
  * @swagger
  * /gauth:
  *  get:
- *    summary: Google Authorization req / res 
+ *    summary: Google Authorization req / res
  *    description: Returns an user object
  *    parameters:
- *      - in: query 
+ *      - in: query
  *        name: Code
  *        schema:
  *          type: object
  *          properties:
  *            data:
  *               type: string
- *               example: "somecredentialcodeforthegoogleauths"      
+ *               example: "somecredentialcodeforthegoogleauths"
  *    responses:
  *      200:
  *         description: An User object info response
@@ -472,7 +473,7 @@ router.get("/gauth", async (req, res) => {
  * /api/authenticate:
  *  get:
  *    summary: authetificates the user
- *    description: Returns a array with last 15 Messages from the given message Index    
+ *    description: Returns a array with last 15 Messages from the given message Index
  *    responses:
  *      200:
  *         description: Authorization Url
@@ -489,8 +490,6 @@ router.get("/api/authenticate", async (req, res) => {
   generateAuthUrl(res);
 });
 
-
-
 /**
  * @swagger
  * /api/getAllStrippedCourses:
@@ -498,7 +497,7 @@ router.get("/api/authenticate", async (req, res) => {
  *    summary: Get LastestMessages
  *    description: Returns a array with last 15 Messages from the given message Index
  *    parameters:
- *      - in: query 
+ *      - in: query
  *        name: LatestMessage
  *        schema:
  *          type: object
@@ -506,7 +505,7 @@ router.get("/api/authenticate", async (req, res) => {
  *            data:
  *               type: object
  *               example: {room: {courseNumber: "a", sectionNumber:  "00001"}, messageIndex: 0}
- *        description: The courseNumber and sectionNumber of the group chat       
+ *        description: The courseNumber and sectionNumber of the group chat
  *    responses:
  *      200:
  *         description: A list of Messages
@@ -530,7 +529,5 @@ router.get(
     }
   }
 );
-
-
 
 export { router };
