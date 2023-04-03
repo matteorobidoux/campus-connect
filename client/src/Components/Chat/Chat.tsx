@@ -73,7 +73,11 @@ export default function Chat({
   }
 
   useEffect(() => {
-    if (msgsFromDBQ && messages.length == 0) {
+    if (msgsFromDBQ) {
+      let isRepeated = messages.some(
+        (m) => (m as any)._id == msgsFromDBQ[0]._id
+      );
+      if (isRepeated) return;
       setJustLoadedFromDb(true);
       msgsFromDBQ.forEach((d: ChatMessage) => (d.date = new Date(d.date)));
       _setMessages(true, ...msgsFromDBQ);
@@ -166,7 +170,7 @@ export default function Chat({
                     <GenerateChatMessage
                       userID={user._id}
                       message={message}
-                      key={user._id + message.date}
+                      key={user._id + message.date + message.message}
                     />
                   </div>
                 );
