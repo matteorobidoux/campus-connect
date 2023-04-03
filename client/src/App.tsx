@@ -59,6 +59,7 @@ export default function App() {
   }, [isLoggedIn]);
 
   useEffect(() => {
+    console.log(user);
     setIsLoggedIn(user !== undefined);
     if (user !== undefined) {
       if (profileUrl !== "") {
