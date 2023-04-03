@@ -1,14 +1,31 @@
+variables:
+  AZ_SP_ID: "9ada1129-4f0c-4336-88f1-f4d01c996aa2"
+  AZ_SP_SECRET: "4Ls8Q~YFWtz9YJQEDYPVuuAvtMF3WHzffLZ.scDV"
+  AZ_TENANT: "b6b66a7a-fbbb-42b8-a7c5-712342094eef"
+  RESOURCE_GROUP_NAME: "campus-connects_group"
+  APP_NAME: "campus-connects-test"
+  WEBSITE_RUN_FROM_PACKAGE: 1
+  DB_URI: "mongodb+srv://nenechi:nenechi12@exercise11.cfvsryo.mongodb.net/?retryWrites=true&w=majority"
+  TEST: "mongodb+srv://nenechi:nenechi12@exercise11.cfvsryo.mongodb.net/test"
+  DB_NAME: "CampusConnect"
+  AZURE_SAS: "sv=2021-10-04&st=2023-03-23T19%3A22%3A51Z&se=2027-02-09T20%3A22%3A00Z&sr=c&sp=racwdxltf&sig=hQP5lVIQb0t43g2gLaK4WVTdOKtY85VkFyZ%2F6meWi%2FE%3D"
+  AZURE_STORAGE_ACCOUNT_NAME: "campusconnectblob"
+
+
 image: node:latest
 
 stages:
-  - build
-  - test
+  - build-server
+  - run-tests
+  - build-client
   - deploy
 
 build-frontend:
-  stage: build
+  stage: build-client
   only:
-    - production
+    - test
+  dependencies:
+    - run-tests
   cache:
     key:
       prefix: "frontend"
@@ -26,9 +43,9 @@ build-frontend:
       - client/build
 
 build-backend:
-  stage: build
+  stage: build-server
   only:
-    - production
+    - test
   cache:
     key:
       prefix: "backend"
@@ -36,7 +53,6 @@ build-backend:
         - "server/package-lock.json"
     paths:
       - "server/node_modules/"
-
   script:
     - cd server && npm install && CI=false npm run build
   artifacts:
@@ -46,17 +62,12 @@ build-backend:
       - server/node_modules
       - server/build
 
-#test:
-#  stage: test
-#  dependencies:
-#    - build-backend
-#  script:
-#    - cd server && npm run test
-
-#test_db:
-#  script:
-#    - npm install
-#    - node ./specs/start.js ./specs/db-postgres.spec.js
+test:
+  stage: run-tests
+  dependencies:
+    - build-server
+  script:
+    - cd server && npm run test
 
 deploy:
   stage: deploy
