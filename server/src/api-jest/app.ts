@@ -115,16 +115,10 @@ app.get(
   "/api/getAllSections",
   async (req, res: Response<GetAllSectionsResponse>) => {
     const { userClassSections } = req.query as Partial<GetAllSectionsRequest>;
-<<<<<<< HEAD
-    if (Array.isArray(userClassSections)) {
-      const result = await DbMongoose.getUserClasses(userClassSections);
-      res.json(result);
-=======
     if(Array.isArray(userClassSections)) {
       const result = await jest.spyOn(DbMongoose, "getUserClasses");
       const result2: UserClass[]=[]
       res.json(result2);
->>>>>>> 29152ecff5f0f2fba3daf2b4842725b297a3c139
     } else {
       console.log(typeof userClassSections);
       res.sendStatus(400);
