@@ -12,7 +12,7 @@ type ChatButtonProps = {
   data: GetAllSectionsResponse;
   index: any;
   onClick: any;
-  mostRecentMessage: MostRecentMessage;
+  mostRecentMessage?: MostRecentMessage;
   setMostRecentMessage: (setMostRecentMessage: MostRecentMessage) => void;
 };
 
@@ -36,26 +36,20 @@ export default function ChatButton(props: ChatButtonProps) {
       props.data[props.index].number,
     ],
     queryFn: getMostRecentMessage,
+    staleTime: Infinity,
+    refetchOnWindowFocus: false,
   });
 
   useEffect(() => {
-    console.log("In ports");
-    if (
-      props.mostRecentMessage.room?.courseNumber ===
-        props.data[props.index].courseNumber &&
-      props.mostRecentMessage.room?.sectionNumber ===
-        props.data[props.index].number
-    ) {
+    if (props.mostRecentMessage) {
       setMessage(props.mostRecentMessage);
+      return;
     }
-  }, [props.mostRecentMessage]);
 
-  useEffect(() => {
-    console.log("In query");
-    if (query.data) {
+    if (query.data && !message) {
       setMessage(query.data.data);
     }
-  }, [query.data]);
+  }, [query.data, props.mostRecentMessage]);
 
   return (
     <motion.div
@@ -66,7 +60,7 @@ export default function ChatButton(props: ChatButtonProps) {
       <div className={styles["button"]}>
         <h2>{props.data[props.index].courseTitle}</h2>
         <h4>
-          {message.userName === ""
+          {!message
             ? t("Loading")
             : message.userName === undefined
             ? t("NoMessagesYet")
