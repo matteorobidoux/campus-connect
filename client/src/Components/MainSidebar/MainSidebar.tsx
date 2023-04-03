@@ -11,13 +11,17 @@ import {
 } from "../../framerMotionAnimations";
 import { User } from "../../../../types/User";
 import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
 
 type MainSidebarProps = {
   selectedComponent: string;
   selectChatFunc: (course: UserClassSection | null) => void;
   selectComponentFunc: Function;
-  mostRecentMessage: MostRecentMessage;
-  setMostRecentMessage: (setMostRecentMessage: MostRecentMessage) => void;
+  mostRecentMessage: Map<string, MostRecentMessage>;
+  setMostRecentMessageById: (
+    id: string,
+    setMostRecentMessage: MostRecentMessage
+  ) => void;
   user: User & {
     _id: string;
   };
@@ -36,6 +40,8 @@ export default function MainSidebar(props: MainSidebarProps) {
   });
 
   const containerAnimation = FadeInAnimation(0.8);
+
+  // useEffect(() => {debugger}, [props.mostRecentMessage])
 
   const { t } = useTranslation(["chat"]);
 
@@ -106,8 +112,12 @@ export default function MainSidebar(props: MainSidebarProps) {
                     data={data}
                     key={index}
                     index={index}
-                    mostRecentMessage={props.mostRecentMessage}
-                    setMostRecentMessage={props.setMostRecentMessage}
+                    mostRecentMessage={props.mostRecentMessage.get(
+                      value.courseNumber
+                    )}
+                    setMostRecentMessage={(m) =>
+                      props.setMostRecentMessageById(value.courseNumber, m)
+                    }
                     onClick={() => props.selectChatFunc(value)}
                   />
                 ))}

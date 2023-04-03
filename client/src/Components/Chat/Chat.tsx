@@ -1,6 +1,6 @@
 import styles from "./Chat.module.scss";
 import Message from "../Message/Message";
-import { useEffect, useRef, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import { ChatMessage, useChat } from "../../chat";
 import { UserClassSection } from "../../../../types/UserClassSection";
 import { useSections, useUser } from "../../custom-query-hooks";
@@ -13,7 +13,9 @@ import { useTranslation } from "react-i18next";
 import { isDateCurrentDay } from "../../validationUtils";
 type ChatProps = {
   selectedChat: UserClassSection;
-  setMostRecentMessage: (setMostRecentMessage: MostRecentMessage) => void;
+  useMessages: (id: string) => ChatMessage[];
+  _setMessages: (before: boolean, ...arg0: ChatMessage[]) => void;
+  sendMessage: (message: ChatMessage) => void;
 };
 
 const formatDate = (date: Date) => {
@@ -35,36 +37,31 @@ const formatDate = (date: Date) => {
 
 export default function Chat({
   selectedChat,
-  setMostRecentMessage,
+  sendMessage,
+  useMessages,
+  _setMessages,
 }: ChatProps) {
   const user = useUser();
   const { t } = useTranslation(["chat"]);
   const sections = useSections({ userClassSections: user.sections });
-  const [messages, _setMessages] = useState<ChatMessage[]>([]);
+  // const [messages, _setMessages] = useState<ChatMessage[]>([]);
   const [loadedMsgIndex, setIndex] = useState(0);
   const { data: msgsFromDBQ, isLoading } = useQuery(
     ["loading", selectedChat, loadedMsgIndex],
     loadMessages,
-    { refetchOnWindowFocus: false, cacheTime: 0 }
+    { refetchOnWindowFocus: false, staleTime: Infinity }
   );
   const [justLoadedFromDb, setJustLoadedFromDb] = useState(false);
-
   const mainChatRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLInputElement>(null);
   const [messageToScrollKey, setMessageToScrollKey] = useState("");
   const messageToScrollRef = useRef<HTMLDivElement>(null);
   const lastMessageRef = useRef<HTMLDivElement>(null);
+  const messages = useMessages(selectedChat.courseNumber);
   let enterMessageText = t("enterYourMessage");
 
   useEffect(() => {
     lastMessageRef.current?.scrollIntoView();
-    if (messages.length > 0 && !justLoadedFromDb) {
-      setMostRecentMessage({
-        message: messages[messages.length - 1].message,
-        userName: messages[messages.length - 1].user.userName,
-        room: selectedChat,
-      } as MostRecentMessage);
-    }
   }, [messages]);
 
   async function loadMessages() {
@@ -76,33 +73,16 @@ export default function Chat({
   }
 
   useEffect(() => {
-    if (msgsFromDBQ) {
+    if (msgsFromDBQ && messages.length == 0) {
       setJustLoadedFromDb(true);
       msgsFromDBQ.forEach((d: ChatMessage) => (d.date = new Date(d.date)));
-      _setMessages((currentMessages) => [...msgsFromDBQ, ...currentMessages]);
+      _setMessages(true, ...msgsFromDBQ);
     }
   }, [msgsFromDBQ]);
 
-  const chat = useChat({
-    rooms: [selectedChat],
-    onMessage: (m) => {
-      if (
-        m.room.courseNumber + m.room.sectionNumber !==
-        selectedChat.courseNumber + selectedChat.sectionNumber
-      )
-        return;
-      setMessages(m);
-    },
-  });
-
   const setMessages = (c: ChatMessage) => {
     c.date = new Date(c.date);
-    setMostRecentMessage({
-      message: c.message,
-      room: c.room,
-      userName: c.user.userName,
-    });
-    _setMessages((currentMessages) => [...currentMessages, c]);
+    _setMessages(false, c);
   };
 
   const onEnter = (message: string) => {
@@ -114,7 +94,7 @@ export default function Chat({
       date: new Date(),
     };
 
-    chat.sendMessage(pMessage);
+    sendMessage(pMessage);
     setMessages(pMessage);
   };
 
@@ -193,7 +173,6 @@ export default function Chat({
               })}
             </>
           </div>
-
           <div className={styles["msger-inputarea"]}>
             <input
               type="text"
