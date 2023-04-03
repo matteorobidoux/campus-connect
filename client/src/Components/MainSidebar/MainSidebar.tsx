@@ -1,5 +1,5 @@
 import { UserClassSection } from "../../../../types/UserClassSection";
-import { useSections } from "../../custom-query-hooks";
+import { useSections, useUser } from "../../custom-query-hooks";
 import CourseQuickViewContainer from "../CourseQuickViewContainer/CourseQuickViewContainer";
 import ChatButton from "../ChatButton/ChatButton";
 import styles from "./MainSidebar.module.scss";
@@ -22,9 +22,6 @@ type MainSidebarProps = {
     id: string,
     setMostRecentMessage: MostRecentMessage
   ) => void;
-  user: User & {
-    _id: string;
-  };
 };
 
 export default function MainSidebar(props: MainSidebarProps) {
@@ -35,8 +32,9 @@ export default function MainSidebar(props: MainSidebarProps) {
     delay,
     delay
   );
+  const user = useUser();
   const { isLoading, isSuccess, data } = useSections({
-    userClassSections: props.user.sections,
+    userClassSections: user.sections,
   });
 
   const containerAnimation = FadeInAnimation(0.8);
@@ -82,8 +80,8 @@ export default function MainSidebar(props: MainSidebarProps) {
               onClick={() => {
                 props.selectComponentFunc("chat");
                 // Select first chat by default
-                if (props.user.sections.length > 0)
-                  props.selectChatFunc(props.user.sections[0]);
+                if (user.sections.length > 0)
+                  props.selectChatFunc(user.sections[0]);
               }}
             >
               {t("Chat")}
@@ -107,7 +105,7 @@ export default function MainSidebar(props: MainSidebarProps) {
                 initial="hidden"
                 animate="visible"
               >
-                {props.user.sections.map((value, index) => (
+                {user.sections.map((value, index) => (
                   <ChatButton
                     data={data}
                     key={index}

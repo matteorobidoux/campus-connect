@@ -69,10 +69,10 @@ export default function App() {
     console.log(user);
     setIsLoggedIn(user !== undefined);
     if (user !== undefined) {
-      if (profileUrl !== "") {
-        changeProfileImg(profileUrl);
-      } else if (user.picture !== undefined) {
+      if (user.picture) {
         changeProfileImg(user.picture);
+        // } else if (user.picture !== undefined) {
+        //   changeProfileImg(user.picture);
       } else {
         changeProfileImg("");
       }
@@ -132,7 +132,6 @@ export default function App() {
                     selectComponentFunc={switchComponent}
                     mostRecentMessage={mostRecentMessage}
                     setMostRecentMessageById={setMostRecentMessageById}
-                    user={user}
                   />
                   <Main
                     selectedComponent={selectedComponent}
