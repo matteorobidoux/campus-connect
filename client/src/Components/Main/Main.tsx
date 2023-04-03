@@ -94,7 +94,6 @@ export default function Main(props: MainProps) {
       >
         {props.selectedComponent === "chat" ? (
           sections.data?.map((s, i) => {
-            console.log("Select chat: ", props.selectedChat);
             const currentChat = {
               courseNumber: s.courseNumber,
               sectionNumber: s.number,
