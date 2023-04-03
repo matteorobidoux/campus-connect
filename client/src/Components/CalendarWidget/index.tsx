@@ -7,7 +7,7 @@ import { AddEventEntry } from "./CalendarEntry/AddEventEntry";
 import styles from "./CalendarWidget.module.scss";
 import { useTranslation } from "react-i18next";
 import { useUser } from "../../custom-query-hooks";
-export interface CalendarWidgetProps { }
+export interface CalendarWidgetProps {}
 
 const months = [
   "January",
@@ -24,9 +24,9 @@ const months = [
   "December",
 ];
 
-export function CalendarWidget({ }: CalendarWidgetProps) {
+export function CalendarWidget({}: CalendarWidgetProps) {
   const [events, setEvents] = useState<Events[]>([]);
-  const [showAll, setShow]= useState(true);
+  const [showAll, setShow] = useState(false);
   const [eventsFiltered, setEventsFiltered] = useState<Events[]>([]);
   const [scope, setScope] = useState<"month" | "day">("month");
   const [month, setMonth] = useState<string>(months[new Date().getMonth()]);
@@ -50,22 +50,25 @@ export function CalendarWidget({ }: CalendarWidgetProps) {
   const filterEvents = (eventsToFilter: Events[]) => {
     //Check for User and creation of button if User
     if (user.completedEvents.length !== 0) {
-      let completedEvents = user.completedEvents.map(e => { return e.id })
-      let filteredEvents = eventsToFilter.filter(evs => !completedEvents.includes(evs.mongoId!))
-      return filteredEvents
+      let completedEvents = user.completedEvents.map((e) => {
+        return e.id;
+      });
+      let filteredEvents = eventsToFilter.filter(
+        (evs) => !completedEvents.includes(evs.mongoId!)
+      );
+      return filteredEvents;
     } else {
-      return eventsToFilter
+      return eventsToFilter;
     }
   };
 
   useEffect(() => {
-    if(showAll){
+    if (showAll) {
       setEventsFiltered(events);
       return;
     }
-     setEventsFiltered(filterEvents(events));
-     
-  }, [events, showAll])
+    setEventsFiltered(filterEvents(events));
+  }, [events, showAll, user]);
 
   const isNewEventDateValid = (date: Date): boolean => {
     const currentDate = new Date();
@@ -80,15 +83,18 @@ export function CalendarWidget({ }: CalendarWidgetProps) {
   return (
     <div className={styles.wrapper}>
       <Calendar
-          onMonthChanged={(_, evs) => setEvents(((evs)))}
-          onScopeChanged={onScopeChanged}
+        onMonthChanged={(_, evs) => setEvents(evs)}
+        onScopeChanged={onScopeChanged}
       />
 
       <div className={styles.right}>
         <div className={styles.botton}>
-        <button onClick={() => setShow(!showAll)}> {showAll ? "Hide" : "Show"} completed events</button>
+          <button onClick={() => setShow(!showAll)}>
+            {" "}
+            {showAll ? "Hide" : "Show"} completed events
+          </button>
         </div>
-        
+
         <div className={styles.header}>
           {i18n.language == "fr" || i18n.language == "it" ? (
             <h2>
