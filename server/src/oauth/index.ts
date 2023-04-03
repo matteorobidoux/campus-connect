@@ -3,7 +3,7 @@ import { google } from "googleapis";
 
 const env = {
   //CHANGE DEPENDING IF DEPLOYING OR LOCAL
-  //authUrl: "http://localhost:3000/"
+  //authUrl: "http://localhost:8080/"
   //authUrl: "https://campus-connects-test.azurewebsites.net/",
   authUrl: "https://campus-connects.azurewebsites.net/",
 };
