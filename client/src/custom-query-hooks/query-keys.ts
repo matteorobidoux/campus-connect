@@ -1,1 +1,1 @@
-export type Keys = 'events' | 'sections';
+export type Keys = "events" | "sections";

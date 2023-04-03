@@ -1,54 +1,68 @@
 import styles from "./CalendarEntryDetailedModal.module.scss";
-import { ReactComponent as Background } from "./background.svg"
+import { ReactComponent as Background } from "./background.svg";
 import { useEffect, useState } from "react";
 import { useMutation, useQueryClient } from "react-query";
 import { toast } from "react-toastify";
 import { getRandomColor } from "../../../cssUtils";
 import { useTranslation } from "react-i18next";
 import { Events } from "../../../../../types/Event";
-import { useSections, useUser } from "../../../custom-query-hooks";
+import {
+  useSections,
+  useUpdateUser,
+  useUser,
+} from "../../../custom-query-hooks";
 import axios from "axios";
-import RemoveEventBodyParams from "../../../../../types/Queries/RemoveEvent"
+import RemoveEventBodyParams from "../../../../../types/Queries/RemoveEvent";
+import CompletedEventBodyParams from "../../../../../types/Queries/CompletedEvent";
 export interface CalendarEntryDetailedModalProps {
   event: Events;
   close: () => void;
 }
 
-export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetailedModalProps) {
- 
-  const [color] = useState(getRandomColor())
+export function CalendarEntryDetailedModal({
+  event,
+  close,
+}: CalendarEntryDetailedModalProps) {
+  const [color] = useState(getRandomColor());
 
   //Check for User and creation of button if User
   const user = useUser();
+  const updateUser = useUpdateUser(user.gid);
   const sectionsQuery = useSections({ userClassSections: user.sections });
 
   const queryClient = useQueryClient();
 
-  const {t} = useTranslation(['events']);
+  const { t } = useTranslation(["events"]);
 
-  const markAsDone = useMutation(async () => {
-    await new Promise(resolve => setTimeout(resolve, 1000));
-  }, {
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['events'] }),
-    onSettled: () => { close(); }
-  });
+  const addCompletedEvent = useMutation(
+    async (arg: CompletedEventBodyParams) => {
+      await axios.post("/api/addCompletedEvent", arg);
+    },
+    {
+      onSuccess: () =>
+        queryClient.invalidateQueries({ queryKey: ["userUpdate"] }),
+    }
+  );
 
   useEffect(() => {
-    const toastId = 'updatingEvent';
-    if (markAsDone.isLoading) {
-      toast.loading("Updating event...", { toastId });
+    const toastId = "updatingEvent";
+    if (addCompletedEvent.isLoading) {
+      toast.loading(t("updatingEvent"), { toastId });
     } else {
-      toast.done(toastId)
+      toast.done(toastId);
     }
-  }, [markAsDone, markAsDone.isLoading])
+  }, [addCompletedEvent, addCompletedEvent.isLoading]);
 
-  const isOwner = user._id === event.ownerId
+  const isOwner = user._id === event.ownerId;
   const qc = useQueryClient();
-  const removeEvent = useMutation(async (arg: RemoveEventBodyParams) => {
-    await axios.post('/api/removeEvent', arg);
-  }, {
-      onSuccess: () => qc.invalidateQueries({ queryKey: ['getAllCourses']}),
-  });
+  const removeEvent = useMutation(
+    async (arg: RemoveEventBodyParams) => {
+      await axios.post("/api/removeEvent", arg);
+    },
+    {
+      onSuccess: () => qc.invalidateQueries({ queryKey: ["getAllCourses"] }),
+    }
+  );
 
   return (
     <div className={styles.wrapper}>
@@ -63,24 +77,43 @@ export function CalendarEntryDetailedModal({ event, close }: CalendarEntryDetail
           <p> {event.desc} </p>
         </div>
         <div className={styles.botton}>
-          <button onClick={() => markAsDone.mutate()}> {t("markAsDone")} </button>
-          {isOwner
-            ? <button onClick={async () => {
-              toast.loading("Removing event...", { toastId: 'removingEvent' });
-              const course = sectionsQuery!.data!.find(s => s.courseTitle === event.courseTitle)
-              console.log(sectionsQuery.data)
-              await removeEvent.mutateAsync({
-                eventId: event.mongoId!,
-                courseNumber: course!.courseNumber,
-                courseSection: course!.number
-              });
-              toast.done('removingEvent');
-
-            }}> {t("delete")} </button>
-            : <></>
-          }
+          <button
+            onClick={async () =>
+              addCompletedEvent.mutate({
+                userId: user._id,
+                completedEvent: { id: event._id, date: new Date() },
+              })
+            }
+          >
+            {" "}
+            {t("markAsDone")}{" "}
+          </button>
+          {isOwner ? (
+            <button
+              onClick={async () => {
+                toast.loading("Removing event...", {
+                  toastId: "removingEvent",
+                });
+                const course = sectionsQuery!.data!.find(
+                  (s) => s.courseTitle === event.courseTitle
+                );
+                console.log(sectionsQuery.data);
+                await removeEvent.mutateAsync({
+                  eventId: event.mongoId!,
+                  courseNumber: course!.courseNumber,
+                  courseSection: course!.number,
+                });
+                toast.done("removingEvent");
+              }}
+            >
+              {" "}
+              {t("delete")}{" "}
+            </button>
+          ) : (
+            <></>
+          )}
         </div>
       </div>
     </div>
-  )
+  );
 }

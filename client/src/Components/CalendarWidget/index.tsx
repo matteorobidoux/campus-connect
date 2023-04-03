@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CalendarEvent from "../../../../types/Calendar";
 import { Events } from "../../../../types/Event";
 import Calendar from "./Calendar";
@@ -6,52 +6,110 @@ import CalendarEventRow from "./CalendarEntry";
 import { AddEventEntry } from "./CalendarEntry/AddEventEntry";
 import styles from "./CalendarWidget.module.scss";
 import { useTranslation } from "react-i18next";
+import { useUser } from "../../custom-query-hooks";
+import { isDateCurrentDay } from "../../validationUtils";
+export interface CalendarWidgetProps {}
 
-export interface CalendarWidgetProps {
-}
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
 
-const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
-export function CalendarWidget({ }: CalendarWidgetProps) {
-  const [events, setEvents] = useState<Events[]>([])
+export function CalendarWidget({}: CalendarWidgetProps) {
+  const [events, setEvents] = useState<Events[]>([]);
+  const [showAll, setShow] = useState(false);
+  const [eventsFiltered, setEventsFiltered] = useState<Events[]>([]);
   const [scope, setScope] = useState<"month" | "day">("month");
   const [month, setMonth] = useState<string>(months[new Date().getMonth()]);
   const [day, setDay] = useState("");
-  const [date, setDate] = useState(new Date())
+  const [date, setDate] = useState(new Date());
 
-  const {t, i18n} = useTranslation(['events']);
+  const { t, i18n } = useTranslation(["events"]);
 
   const onScopeChanged = (scope: "month" | "day", date: Date) => {
     setScope(scope);
-    if (scope == "month") {
-      setMonth(months[date.getMonth()])
-      setDay("")
+    if (scope === "month") {
+      setMonth(months[date.getMonth()]);
+      setDay("");
     } else {
-      setDay(`${date.getDate()}`)
-      setMonth(`${months[date.getMonth()]}`)
-      setDate(date)
+      setDay(`${date.getDate()}`);
+      setMonth(`${months[date.getMonth()]}`);
+      setDate(date);
     }
-  }
+  };
+  const user = useUser();
+  const filterEvents = (eventsToFilter: Events[]) => {
+    //Check for User and creation of button if User
+    if (user.completedEvents.length !== 0) {
+      let completedEvents = user.completedEvents.map((e: { id: any }) => {
+        return e.id;
+      });
+      let filteredEvents = eventsToFilter.filter(
+        (evs) => !completedEvents.includes(evs.mongoId!)
+      );
+      return filteredEvents;
+    } else {
+      return eventsToFilter;
+    }
+  };
+
+  useEffect(() => {
+    if (showAll) {
+      setEventsFiltered(events);
+      return;
+    }
+    setEventsFiltered(filterEvents(events));
+  }, [events, showAll, user]);
 
   return (
     <div className={styles.wrapper}>
-      <Calendar onMonthChanged={(_, evs) => setEvents(evs)} onScopeChanged={onScopeChanged} />
+      <Calendar
+        onMonthChanged={(_, evs) => setEvents(evs)}
+        onScopeChanged={onScopeChanged}
+      />
+
       <div className={styles.right}>
+        <div className={styles.botton}>
+          <button onClick={() => setShow(!showAll)}>
+            {" "}
+            {showAll ? "Hide" : "Show"} completed events
+          </button>
+        </div>
+
         <div className={styles.header}>
-          { 
-            i18n.language == "fr" || i18n.language == "it"? 
-            <h2> {t("events")} {t("in")} {day} {t(month)}</h2> : 
-            <h2> {t("events")} {t("in")} {month} {day}</h2> 
-          }
+          {i18n.language == "fr" || i18n.language == "it" ? (
+            <h2>
+              {" "}
+              {t("events")} {t("in")} {day} {t(month)}
+            </h2>
+          ) : (
+            <h2>
+              {" "}
+              {t("events")} {t("in")} {month} {day}
+            </h2>
+          )}
         </div>
 
         <div className={styles.calendarEventsWrapper}>
-          {events.map(ev => <CalendarEventRow event={ev} />)}
-          {scope == "day" && (
-            <AddEventEntry date={date}/>
+          {eventsFiltered.length === 0 && <span>{t("noEvents")}</span>}
+          {eventsFiltered.map((ev, key) => (
+            <CalendarEventRow event={ev} key={key} />
+          ))}
+          {scope === "day" && isDateCurrentDay(date) && (
+            <AddEventEntry date={date} />
           )}
         </div>
       </div>
     </div>
-  )
+  );
 }

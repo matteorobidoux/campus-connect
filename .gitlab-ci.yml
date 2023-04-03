@@ -5,18 +5,17 @@ stages:
   - test
   - deploy
 
-
 build-frontend:
   stage: build
   only: 
   - production
   cache:
     key:
-      prefix: 'frontend'
+      prefix: "frontend"
       files:
-        - 'client/package-lock.json'
+        - "client/package-lock.json"
     paths:
-      - 'client/node_modules/'
+      - "client/node_modules/"
 
   script:
     - cd client && npm install && CI=false npm run build
@@ -32,11 +31,11 @@ build-backend:
   - production
   cache:
     key:
-      prefix: 'backend'
+      prefix: "backend"
       files:
-        - 'server/package-lock.json'
+        - "server/package-lock.json"
     paths:
-      - 'server/node_modules/'
+      - "server/node_modules/"
 
   script:
     - cd server && npm install && CI=false npm run build
@@ -61,7 +60,7 @@ build-backend:
 
 deploy:
   stage: deploy
-  image:  mcr.microsoft.com/azure-cli
+  image: mcr.microsoft.com/azure-cli
   dependencies:
     - build-frontend
     - build-backend
@@ -71,7 +70,7 @@ deploy:
     - "az login --allow-no-subscriptions --service-principal -u $AZ_SP_ID -p $AZ_SP_SECRET --tenant $AZ_TENANT"
   script:
     - zip -r deploy.zip ./client ./server ./package.json
-##    - "az webapp config appsettings set --resource-group $RESOURCE_GROUP_NAME --name $APP_NAME --settings WEBSITE_RUN_FROM_PACKAGE='1'"
+    ##    - "az webapp config appsettings set --resource-group $RESOURCE_GROUP_NAME --name $APP_NAME --settings WEBSITE_RUN_FROM_PACKAGE='1'"
     ##- "az webapp config appsettings set --resource-group $RESOURCE_GROUP_NAME --name $APP_NAME --settings ATLAS_URI=$ATLAS_URI"
     - "az webapp deployment source config-zip --resource-group $RESOURCE_GROUP_NAME --name $APP_NAME --src deploy.zip"
   artifacts:
