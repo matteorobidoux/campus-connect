@@ -18,10 +18,9 @@ import GAuth from "../oauth/gauth-endpoint";
 import { UserClassSection } from "../../../types/UserClassSection";
 import { BlobServiceClient } from "@azure/storage-blob";
 import fileUpload from "express-fileupload";
-import swaggerJSDoc from "swagger-jsdoc";
 import { User } from "../../../types/User";
-import { Mongoose } from "mongoose";
 import db from "../db/db";
+import swaggerJSDoc from "swagger-jsdoc";
 
 require("dotenv").config({ path: __dirname + "/.env" });
 

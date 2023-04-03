@@ -34,21 +34,6 @@ export function CalendarEntryDetailedModal({
 
   const { t } = useTranslation(["events"]);
 
-  // const markAsDone = useMutation(
-  //   async () => {
-  //     addCompletedEvent.mutateAsync({
-  //       userId: user._id,
-  //       completedEvent: {id: event.mongoId!, date: new Date()}
-  //     })
-  //   },
-  //   {
-  //     onSuccess: () => queryClient.invalidateQueries({ queryKey: ["events"] }),
-  //     onSettled: () => {
-  //       close();
-  //     },
-  //   }
-  // );
-
   const addCompletedEvent = useMutation(
     async (arg: CompletedEventBodyParams) => {
       await axios.post("/api/addCompletedEvent", arg);
