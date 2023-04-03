@@ -52,13 +52,13 @@ export function CourseDetailedViewModal({
 
         <div className={styles.schedule}>
           <div className={styles["top-schedule"]}>
-            {leftSide.map((s) => (
-              <Timeslot schedule={s} />
+            {leftSide.map((s, index) => (
+              <Timeslot schedule={s} key={index} />
             ))}
           </div>
           <div className={styles["bottom-schedule"]}>
-            {rightSide.map((s) => (
-              <Timeslot schedule={s} />
+            {rightSide.map((s, index) => (
+              <Timeslot schedule={s} key={index} />
             ))}
           </div>
         </div>
