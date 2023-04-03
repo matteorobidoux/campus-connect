@@ -32,13 +32,20 @@ export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(query.data?._id);
   const [selectedChat, selectChat] = useState<UserClassSection | null>(null);
   const [profileUrl, changeProfileImg] = useState("");
-  const [mostRecentMessage, setMostRecentMessage] = useState({
-    message: "",
-    userName: "",
-    room: { courseNumber: "", sectionNumber: "" },
-  } as MostRecentMessage);
+  const [mostRecentMessage, setMostRecentMessage] = useState<
+    Map<string, MostRecentMessage>
+  >(new Map());
 
   const { t, i18n } = useTranslation(["app"]);
+
+  function setMostRecentMessageById(id: string, message: MostRecentMessage) {
+    // let index: number = parseInt(id.replace(/\D/g,''));
+    // debugger;
+    setMostRecentMessage((old) => {
+      old.set(id, message);
+      return new Map(old);
+    });
+  }
 
   useEffect(() => {
     if (query.isSuccess) {
@@ -124,13 +131,13 @@ export default function App() {
                     selectChatFunc={selectNewChat}
                     selectComponentFunc={switchComponent}
                     mostRecentMessage={mostRecentMessage}
-                    setMostRecentMessage={setMostRecentMessage}
+                    setMostRecentMessageById={setMostRecentMessageById}
                     user={user}
                   />
                   <Main
                     selectedComponent={selectedComponent}
                     selectedChat={selectedChat}
-                    setMostRecentMessage={setMostRecentMessage}
+                    setMostRecentMessageById={setMostRecentMessageById}
                   />
                   <ProfileBar
                     isOpen={isOpen}

@@ -20,7 +20,6 @@ export function createServer(server: http.Server) {
     });
 
     socket.on("setRoom", (courses: UserClassSection[]) => {
-      // socket.emit("latestMessage", DbMongoose.getMostRecentMessage(info!.room))
       courses.forEach((course) => socket.join(JSON.stringify(course)));
     });
   });
