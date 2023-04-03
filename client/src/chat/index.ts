@@ -30,7 +30,10 @@ export const useChat = ({ onMessage, rooms }: UseChatArgs) => {
     });
 
     socket.on("disconnect", () => setIsConnected(false));
-    socket.on("message", onMessage);
+    socket.on("message", (m: ChatMessage) => {
+      m.date = new Date(m.date);
+      onMessage(m);
+    });
     socket.on("latestMessage", onMessage);
 
     // rooms.forEach(room => socket.on("message", (message) => onMessage(message)) );
@@ -45,7 +48,6 @@ export const useChat = ({ onMessage, rooms }: UseChatArgs) => {
 
   useEffect(() => {
     if (!isConnected) return;
-    console.log("emitting");
     socket.emit(
       "setRoom",
       rooms.map((r) => ({
