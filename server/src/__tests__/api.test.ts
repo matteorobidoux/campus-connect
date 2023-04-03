@@ -1,25 +1,21 @@
 const request = require("supertest");
 import mongoose from "mongoose";
-import { app, closeServer } from "../app";
+import { app } from "../api-jest/app";
+import { UserClassSection } from "../../../types/UserClassSection";
+import { GetAllSectionsRequest } from "../../../types/Queries/GetAllCourses";
 jest.mock("../db/db.ts");
-
+jest.mock("../oauth/gauth-endpoint")
+jest.mock("../oauth/index")
 afterAll(async () => {
   jest.clearAllMocks();
   jest.restoreAllMocks();
   jest.clearAllTimers();
-  await closeServer();
   await mongoose.connection.close();
   for (const connection of mongoose.connections) {
     await connection.close();
   }
 });
 
-describe("test Api Get All Users", () => {
-  it("should return the doc ", async () => {
-    const res = await request(app).get("/users");
-    expect(res.body).toBeDefined();
-  });
-});
 
 describe("test Api Login", () => {
   it("should return 400 with no data", async () => {
@@ -29,20 +25,21 @@ describe("test Api Login", () => {
 });
 
 describe("test api getAllStrippedCourses", () => {
-  it("should return not undefined", async () => {
+  it("should return 400", async () => {
     const res = await request(app).get("/api/getAllStrippedCourses");
-    expect(res.body).toBeDefined();
+    expect(res.status).toBe(400)
   });
 });
 
 describe("test api getAllMessages", () => {
-  it("should return not undefined", async () => {
+  it("should return not undefined and 200", async () => {
     const room = {
       courseNumber: "574-453-DW",
-      courseSection: "00001",
+      sectionNumber: "00001",
     };
     const res = await request(app).get("/api/getAllMessages").send(room);
     expect(res.body).toBeDefined();
+    expect(res.status).toBe(200);
   });
 });
 
@@ -56,14 +53,64 @@ describe("test api getAllMessages", () => {
   });
 });
 
+describe("test api getLatestMessages", () => {
+  it("should return 200 res body Defined", async () => {
+    const room = {
+      room: {courseNumber: "574-453-DW",
+      sectionNumber: "00001"},
+      loadedMsgIndex: 0
+    };
+    const res = await request(app).get("/api/getLatestMessages").send(room);
+    expect(res.body).toBeDefined();
+  });
+});
+
+
+describe("test api getMostRecentMessage", () => {
+  it("should return 200 res body Defined", async () => {
+    const room = {
+       courseNumber: "574-453-DW",
+      sectionNumber: "00001"
+     
+    };
+    const res = await request(app).get("/api/getMostRecentMessage").send(room);
+    expect(res.body).toBeDefined();
+  });
+});
+
+describe("test api getLatestMessages", () => {
+  it("should return 400 missig req param", async () => {
+    const room = {
+      room: {courseNumber: "574-453-DW",
+      sectionNumber: "00001"},
+    };
+    const res = await request(app).get("/api/getLatestMessages").send(room);
+    expect(res.status).toBe(400);
+ 
+  });
+});
+
 describe("test api getAllSections", () => {
   it("should return not undefined", async () => {
+    const room : UserClassSection[]=[ {
+       courseNumber: "574-453-DW",
+      sectionNumber: "00001",
+      
+    }];
+    const abe:GetAllSectionsRequest={userClassSections:room};
+    
+    const res = await request(app).get("/api/getAllSections").send(abe.userClassSections);
+    expect(res.status).toBe(400);
+  });
+});
+
+describe("test api getAllSections", () => {
+  it("should return 400 error", async () => {
     const room = {
       courseNumber: "574-453-DW",
-      courseSection: "00001",
     };
-    const res = await request(app).get("/api/getAllSections").send(room);
-    expect(res.body).toBeDefined();
+    const res = await request(app).get("/api/getAllSections").send("room");
+    expect(res.status).toBe(400);
   });
 });
 
@@ -168,7 +215,7 @@ describe("test api addCompletedEvent", () => {
     const res = await request(app)
       .post("/api/addCompletedEvent")
       .send({
-        userName: "string",
+        userId: "string",
         completedEvent: {
           id: "string",
           date: Date,

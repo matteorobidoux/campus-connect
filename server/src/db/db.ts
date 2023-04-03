@@ -11,6 +11,7 @@ import CompletedEventBodyParams from "../../../types/Queries/CompletedEvent";
 import RemoveEventBodyParams from "../../../types/Queries/RemoveEvent";
 import userModel from "./models/user-schema";
 import { Events } from "../../../types/Event";
+import { User as UserType } from "../../../types/User";
 require("dotenv").config();
 
 const dbName = process.env.DB_NAME || "CampusConnect";
@@ -36,6 +37,22 @@ class DbMongoose {
     mongoose.connection.close();
   }
 
+  /**
+   * Returns the User Based on the gid
+   * @param gid Google Id fromthe user
+   * @returns  UserType object 
+   */
+  async getUser(gid: string): Promise<UserType> {
+    const user = await userModel.findOne({ gid });
+    return user!.toObject();
+  }
+
+  /**
+   *  Logs the user 
+   * @param name name of the user
+   * @param password password of the user
+   * @returns  user object data 
+   */
   async login({ name, password }: LoginRequest): Promise<LoginResponse> {
     const user = await userModel.findOne({ name: name, password: password });
 
@@ -46,6 +63,11 @@ class DbMongoose {
     }
   }
 
+  /**
+   * Add user to the Database
+   * @param CreateUserBodyParams 
+   * @returns  void
+   */
   async addUser({
     name,
     sections,
@@ -79,18 +101,34 @@ class DbMongoose {
     return groupChat.toObject();
   }
 
+  /**
+   * Add a completed event to Array completedEvents from user
+   * @param userId From current user  
+   * @returns 
+   */
   async addCompletedEvent({
-    userName,
+    userId,
     completedEvent,
   }: CompletedEventBodyParams) {
-    const user = await userModel.findOne({ name: userName });
+    const user = await userModel.findOne({ _id: userId });
     if (user) {
-      user.completedEvents.push(completedEvent);
-      const resp = await user.save();
-      return resp.id!;
+      let hasEvent = user.completedEvents.map((e) => {
+        return e.id;
+      });
+      if (!hasEvent.includes(completedEvent.id!)) {
+        user.completedEvents.push(completedEvent);
+        const resp = await user.save();
+        return resp.id!;
+      } else {
+        console.log("The event you tried to add Already exists");
+      }
     }
   }
 
+  /**
+   * Removes the current event
+   * @param RemoveEventBodyParams 
+   */
   async removeEvent({
     eventId,
     courseNumber,
@@ -108,6 +146,11 @@ class DbMongoose {
     }
   }
 
+  /**
+   * Change User profile Pick
+   * @param id
+   * @param picture
+   */
   async changeUserImage({ id, picture }: { id: string; picture: string }) {
     const user = await User.findOne({ _id: id });
     if (user) {
@@ -116,6 +159,12 @@ class DbMongoose {
     }
   }
 
+  /**
+   * Add the current event to the course
+   * @param courseNumber 
+   * @param sectionNumber 
+   * @param event 
+   */
   async addEventToSection(
     courseNumber: string,
     sectionNumber: string,
@@ -196,6 +245,11 @@ class DbMongoose {
     }
   }
 
+  /**
+   * Returns most recen message from the chat
+   * @param room 
+   * @returns most recent message
+   */
   async getMostRecentMessage(room: UserClassSection) {
     const groupChat = await groupChatModel.findOne({
       "room.courseNumber": room.courseNumber,
@@ -212,6 +266,11 @@ class DbMongoose {
     }
   }
 
+  /**
+   * Returns all the users Courses
+   * @param userSections 
+   * @returns All UserClasses 
+   */
   async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
     const courses = userSections.map(async (userCourse) => {
       const course = (await Course.findOne({
@@ -230,6 +289,10 @@ class DbMongoose {
     return await Promise.all(courses);
   }
 
+  /**
+   * 
+   * @returns All the courses Stripped Information
+   */
   async getAllStrippedCourses() {
     const result = await Course.find().select({
       _id: 1,
@@ -238,13 +301,6 @@ class DbMongoose {
       "sections.number": 1,
       "sections.teacher": 1,
     });
-    console.log(result);
-    return result;
-  }
-
-  //Get All Users
-  async getAllUsers() {
-    const result = await User.find();
     console.log(result);
     return result;
   }

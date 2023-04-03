@@ -40,9 +40,7 @@ export default async function GAuth(
 
     // Verify if the gID exists so we can login the user.
     // Otherwise we just want to return the google identification so the user acn register
-    console.log({ gid });
     const user = await userModel.findOne({ gid });
-    console.log(user);
     if (user) {
       res.json({ user: user.toObject() });
       return;

@@ -10,13 +10,39 @@ import { User } from "../../../types/User";
 import { getUser, writeUser } from "./useGoogleOAuth";
 
 export function useUser() {
-  let user = getUser() as (User & { _id: string }) | undefined;
-  if (!user) {
-    console.warn(
-      "Be alert that calling useUser without the user being logged in will result in side effects!"
-    );
+  function queryFunction() {
+    console.log("re-funning user");
+    let user = getUser() as (User & { _id: string }) | undefined;
+    if (!user) {
+      console.warn(
+        "Be alert that calling useUser without the user being logged in will result in side effects!"
+      );
+    }
+    return user!;
   }
-  return user!;
+  const uq = useQuery("user", queryFunction, { staleTime: Infinity });
+
+  return uq.data!;
+}
+
+export function useUpdateUser(gid: string) {
+  const queryClient = useQueryClient();
+  async function queryFunction() {
+    const user = await axios.get<{ user: User }>("/api/getUserInfo", {
+      params: { gid },
+    });
+    if (user.data.user) {
+      console.log("Updating user.");
+      writeUser(user.data.user);
+    }
+    return user.data;
+  }
+
+  useQuery(["userUpdate", gid], queryFunction, {
+    cacheTime: Infinity,
+    staleTime: Infinity,
+    onSuccess: () => queryClient.invalidateQueries("user"),
+  });
 }
 
 export const useSections = (classes: GetAllSectionsRequest) => {
@@ -66,8 +92,8 @@ export const useAddUserMutation = () => {
     mutationFn: (data) => addUser(data),
     onSuccess: async (data) => {
       writeUser(data);
-      await qc.invalidateQueries({ queryKey: ["user"] });
-      await qc.refetchQueries({ queryKey: ["user"] });
+      await qc.invalidateQueries({ queryKey: ["userUpdate", data.gid] });
+      await qc.refetchQueries({ queryKey: ["userUpdate", data.gid] });
     },
   });
 };

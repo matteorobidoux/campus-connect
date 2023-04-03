@@ -6,9 +6,14 @@ import { toast } from "react-toastify";
 import { getRandomColor } from "../../../cssUtils";
 import { useTranslation } from "react-i18next";
 import { Events } from "../../../../../types/Event";
-import { useSections, useUser } from "../../../custom-query-hooks";
+import {
+  useSections,
+  useUpdateUser,
+  useUser,
+} from "../../../custom-query-hooks";
 import axios from "axios";
 import RemoveEventBodyParams from "../../../../../types/Queries/RemoveEvent";
+import CompletedEventBodyParams from "../../../../../types/Queries/CompletedEvent";
 export interface CalendarEntryDetailedModalProps {
   event: Events;
   close: () => void;
@@ -22,32 +27,31 @@ export function CalendarEntryDetailedModal({
 
   //Check for User and creation of button if User
   const user = useUser();
+  const updateUser = useUpdateUser(user.gid);
   const sectionsQuery = useSections({ userClassSections: user.sections });
 
   const queryClient = useQueryClient();
 
   const { t } = useTranslation(["events"]);
 
-  const markAsDone = useMutation(
-    async () => {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+  const addCompletedEvent = useMutation(
+    async (arg: CompletedEventBodyParams) => {
+      await axios.post("/api/addCompletedEvent", arg);
     },
     {
-      onSuccess: () => queryClient.invalidateQueries({ queryKey: ["events"] }),
-      onSettled: () => {
-        close();
-      },
+      onSuccess: () =>
+        queryClient.invalidateQueries({ queryKey: ["userUpdate"] }),
     }
   );
 
   useEffect(() => {
     const toastId = "updatingEvent";
-    if (markAsDone.isLoading) {
+    if (addCompletedEvent.isLoading) {
       toast.loading(t("updatingEvent"), { toastId });
     } else {
       toast.done(toastId);
     }
-  }, [markAsDone, markAsDone.isLoading]);
+  }, [addCompletedEvent, addCompletedEvent.isLoading]);
 
   const isOwner = user._id === event.ownerId;
   const qc = useQueryClient();
@@ -73,7 +77,14 @@ export function CalendarEntryDetailedModal({
           <p> {event.desc} </p>
         </div>
         <div className={styles.botton}>
-          <button onClick={() => markAsDone.mutate()}>
+          <button
+            onClick={async () =>
+              addCompletedEvent.mutate({
+                userId: user._id,
+                completedEvent: { id: event._id, date: new Date() },
+              })
+            }
+          >
             {" "}
             {t("markAsDone")}{" "}
           </button>
