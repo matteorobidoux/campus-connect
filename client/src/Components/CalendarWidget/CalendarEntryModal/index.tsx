@@ -39,6 +39,7 @@ export default function CalendarEntryModal({
 
   return (
     <div className={styles.wrapper}>
+      <p> {date.toDateString()} </p>
       <h1> {t("addNewEvent")} </h1>
       <Formik
         initialValues={initialValues}
@@ -56,7 +57,7 @@ export default function CalendarEntryModal({
             event: {
               courseTitle: course!.courseTitle,
               ownerId: user._id,
-              date: values.date,
+              date: date,
               title: values.title,
               desc: values.description,
             },
