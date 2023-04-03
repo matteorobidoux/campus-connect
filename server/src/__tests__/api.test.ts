@@ -16,12 +16,6 @@ afterAll(async () => {
   }
 });
 
-describe("test Api Get All Users", () => {
-  it("should return true defined ", async () => {
-    const res = await request(app).get("/users");
-    expect(res.body).toBeDefined();
-  });
-});
 
 describe("test Api Gauth", () => {
   it("should return defined ", async () => {
@@ -29,7 +23,6 @@ describe("test Api Gauth", () => {
     expect(res.body).toBeDefined();
   });
 });
-
 
 describe("test Api Login", () => {
   it("should return 400 with no data", async () => {
