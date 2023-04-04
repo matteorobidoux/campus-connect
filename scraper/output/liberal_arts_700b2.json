@@ -1,0 +1,398 @@
+[
+	{
+		"title": "Post-Classical History",
+		"number": "330-270-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Gesche Peters",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Modern Philosophy",
+		"number": "340-912-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Susan-Judith Hoffmann",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Principles of Mathematics and Logic",
+		"number": "360-124-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Brian Redekopp",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Renaissance to Baroque Art",
+		"number": "520-903-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Sarah Watson",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Literary Genres",
+		"number": "603-102-MQ",
+		"sections": [
+			{
+				"title": "Liberal Arts Poetry",
+				"number": "00021",
+				"teacher": "Susan Elmslie",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "20th Century History",
+		"number": "330-214-DW",
+		"sections": [
+			{
+				"title": "Snapshots of the 20th Century",
+				"number": "00003",
+				"teacher": "Deborah Shulman",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Applied Canadian History",
+		"number": "330-302-DW",
+		"sections": [
+			{
+				"title": "History of Indigenous Canada",
+				"number": "00001",
+				"teacher": "Michael Duckett",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Myths in Classical Society",
+		"number": "332-302-DW",
+		"sections": [
+			{
+				"title": "Ancient Gods, Monsters, and Encounters",
+				"number": "00001",
+				"teacher": "Jiri Tucker",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Applied Ethics in Humanities",
+		"number": "345-BXH-DW",
+		"sections": [
+			{
+				"title": "Moral Issues in Law (Liberal Arts)",
+				"number": "00032",
+				"teacher": "Robert Stephens",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Integrative Seminar for Liberal Arts",
+		"number": "360-199-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Beverly Sing, Susan-Judith Hoffmann",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Work and Society",
+		"number": "387-229-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Jennifer Sigouin",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Sexuality and Society",
+		"number": "387-314-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Sarah Beer",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Applied Themes in English",
+		"number": "603-BXE-DW",
+		"sections": [
+			{
+				"title": "Writing about the Novel",
+				"number": "00004",
+				"teacher": "Simon Fanning",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	}
+]

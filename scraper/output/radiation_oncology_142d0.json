@@ -1,0 +1,602 @@
+[
+	{
+		"title": "Fundamentals of Radiation Oncology",
+		"number": "142-231-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Radiation Oncology team McGill",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "11:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Treatment Application 1",
+		"number": "142-241-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Jocelyne Napias-Pfeiffer, John Robert C. Battista",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "12:30 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Jocelyne Napias-Pfeiffer, John Robert C. Battista",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "12:30 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00003",
+				"teacher": "Jocelyne Napias-Pfeiffer, John Robert C. Battista",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "3:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "12:30 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Principles of Oncology 1",
+		"number": "142-251-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Jocelyne Napias-Pfeiffer",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "9:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "9:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Jocelyne Napias-Pfeiffer",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "9:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "9:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00003",
+				"teacher": "Jocelyne Napias-Pfeiffer",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "11:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Internship 1",
+		"number": "142-901-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Elias Katsaros, Giovanna Miceli, Gita Ebrahimi, Isabelle Labbé, Jocelyne Napias-Pfeiffer, John Robert C. Battista",
+				"schedule": []
+			}
+		]
+	},
+	{
+		"title": "Radiation Effects and Safety 2",
+		"number": "142-401-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Jocelyne Napias-Pfeiffer",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "3:00 PM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Jocelyne Napias-Pfeiffer",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Patient Care 2",
+		"number": "142-411-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "John Robert C. Battista",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "9:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "John Robert C. Battista",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Applied Dosimetry",
+		"number": "142-421-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Radiation Oncology team McGill",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "3:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "5:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Treatment Application 2",
+		"number": "142-441-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Elias Katsaros",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Elias Katsaros",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "11:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Reflection on Professional Practice",
+		"number": "142-601-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Anabel Gratton",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Anabel Gratton",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Internship 4",
+		"number": "142-904-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Elias Katsaros, Giovanna Miceli, Gita Ebrahimi, Isabelle Labbé, Jocelyne Napias-Pfeiffer, John Robert C. Battista",
+				"schedule": []
+			}
+		]
+	},
+	{
+		"title": "Internship 5",
+		"number": "142-905-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Elias Katsaros, Giovanna Miceli, Gita Ebrahimi, Isabelle Labbé, Jocelyne Napias-Pfeiffer, John Robert C. Battista",
+				"schedule": []
+			}
+		]
+	}
+]

@@ -1,0 +1,269 @@
+[
+	{
+		"title": "Research Methods",
+		"number": "300-300-DW",
+		"sections": [
+			{
+				"number": "00041",
+				"teacher": "Laurence Nixon",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Natural Environment",
+		"number": "320-216-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Richard Soare",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "General Psychology",
+		"number": "350-101-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Madelaine Côté",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Introduction to Business",
+		"number": "401-101-DW",
+		"sections": [
+			{
+				"number": "00004",
+				"teacher": "Roberto Greco",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Integrative Seminar",
+		"number": "300-308-DW",
+		"sections": [
+			{
+				"title": "The X-Files: The Truth about Belief",
+				"number": "00022",
+				"teacher": "Richard Soare",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Advanced Environmental Studies",
+		"number": "360-401-DW",
+		"sections": [
+			{
+				"title": "Sustenance, Sustainability, and the Sacred",
+				"number": "00001",
+				"teacher": "Natalie Kepka",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			},
+			{
+				"title": "Sustenance, Sustainability, and the Sacred",
+				"number": "00002",
+				"teacher": "Natalie Kepka",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Social Problems",
+		"number": "387-201-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Dan Loomer",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Sustainability and Business",
+		"number": "401-225-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Helen Stavaris",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	}
+]

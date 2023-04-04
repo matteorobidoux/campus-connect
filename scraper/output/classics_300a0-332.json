@@ -1,0 +1,89 @@
+[
+	{
+		"title": "Introduction to the Classical World",
+		"number": "332-101-DW",
+		"sections": [
+			{
+				"title": "Egypt, Greece, and Rome",
+				"number": "00001",
+				"teacher": "Jiri Tucker",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			},
+			{
+				"title": "Egypt, Greece, and Rome",
+				"number": "00002",
+				"teacher": "Michael Leon",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Myths in Classical Society",
+		"number": "332-302-DW",
+		"sections": [
+			{
+				"title": "Ancient Gods, Monsters, and Encounters",
+				"number": "00001",
+				"teacher": "Jiri Tucker",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	}
+]

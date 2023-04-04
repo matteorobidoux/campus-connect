@@ -1,0 +1,666 @@
+[
+	{
+		"title": "Microorganisms and Disease 1",
+		"number": "140-211-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Penny Smith",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:30 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Penny Smith",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "12:30 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Applied Immunology",
+		"number": "140-222-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Daniel P. Vescio",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:30 AM",
+						"end": "1:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Daniel P. Vescio",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Descriptive Histology",
+		"number": "140-232-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Andrew Wieczorek",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Andrew Wieczorek",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Clinical Chemistry 1",
+		"number": "140-241-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Hannah Heath-Engel",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Hannah Heath-Engel",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Diagnostic Microbiology 1",
+		"number": "140-411-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Penny Smith",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "2:30 PM",
+						"end": "3:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "12:30 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "11:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Penny Smith",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "12:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "11:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Basic Histotechniques",
+		"number": "140-421-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Paraskevi Siandris",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "9:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Paraskevi Siandris",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Transfusion Practices 1",
+		"number": "140-431-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Heleni Siandris",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Heleni Siandris",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "1:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Clinical Chemistry 3",
+		"number": "140-441-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Hannah Heath-Engel",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "1:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Hannah Heath-Engel",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Clinical Hematology",
+		"number": "140-451-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Vincenza C. Pascale",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Vincenza C. Pascale",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:30 AM",
+						"end": "1:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Procurement Internship",
+		"number": "140-461-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Daniel P. Vescio",
+				"schedule": []
+			}
+		]
+	},
+	{
+		"title": "Clinical Microbiology Internship",
+		"number": "140-661-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Luigi Bruno",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "9:00 AM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 5,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Histology/Molecular Biology Internship",
+		"number": "140-662-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Andrew Wieczorek, Carmela Di Grappa",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "9:00 AM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 7,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Core Lab Internship",
+		"number": "140-663-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Daniel P. Vescio, Vincenza C. Pascale",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 5,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 6,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Transfusion Sciences Internship",
+		"number": "140-664-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Heleni Siandris",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "9:00 AM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 6,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Pharmacology for Biomedical Technologists",
+		"number": "140-665-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Daniel P. Vescio, Luigi Bruno",
+				"schedule": []
+			}
+		]
+	}
+]

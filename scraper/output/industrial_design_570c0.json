@@ -1,0 +1,428 @@
+[
+	{
+		"title": "Design Studio 2",
+		"number": "570-270-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Michael Santella",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Presentation Layout II",
+		"number": "570-277-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Michel Seguin",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "3D Computer Modeling II",
+		"number": "570-278-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "David Weeks",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Manufacturing Field Trips",
+		"number": "570-279-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Kim Anita Webb, Véronique Bibeau-Poissant",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Prototyping II",
+		"number": "570-27A-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "David Weeks",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Kim Anita Webb",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Material and Manufacturing II",
+		"number": "570-27B-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Pascal Boissé",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Design Studio IV",
+		"number": "570-470-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Michel Seguin",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "12:30 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Design Studio IV Support",
+		"number": "570-476-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Michel Seguin",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Product Design Semantics",
+		"number": "570-479-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Michael Santella",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Prototyping IV",
+		"number": "570-47A-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Pascal Boissé",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "David Weeks",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Presentation Layout IV",
+		"number": "570-47B-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Carlos Carpintero",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "3D Computer Modeling IV",
+		"number": "570-47D-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "David Weeks",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Product Ergonomics",
+		"number": "570-47E-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Kim Anita Webb",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Design Studio VI",
+		"number": "570-670-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Carlos Carpintero, Michael Santella, Véronique Bibeau-Poissant",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "1:30 PM",
+						"duration": {
+							"hours": 5,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Professional Portfolio",
+		"number": "570-675-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Kim Anita Webb",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "3D Computer Modeling V",
+		"number": "570-678-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Kim Anita Webb",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Prototyping V",
+		"number": "570-67A-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Michel Seguin",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Presentation Layout V",
+		"number": "570-67B-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Carlos Carpintero, Pascal Boissé",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	}
+]

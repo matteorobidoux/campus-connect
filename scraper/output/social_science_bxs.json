@@ -1,0 +1,150 @@
+[
+	{
+		"title": "Social Science, Ensemble 2",
+		"number": "381-BXS-DW",
+		"sections": [
+			{
+				"title": "Culture on Display (INTENSIVE)",
+				"number": "00001",
+				"teacher": "Sabrina Smofsky",
+				"schedule": []
+			}
+		]
+	},
+	{
+		"title": "Social science: introduction to business administration",
+		"number": "401-BXS-03",
+		"sections": [
+			{
+				"title": "Entrepreneurship",
+				"number": "00001",
+				"teacher": "Amanda Petriello",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Social science: applications in economics",
+		"number": "383-BXS-03",
+		"sections": [
+			{
+				"title": "The Economics of Sex and Drugs",
+				"number": "00001",
+				"teacher": "Ahmad Banki",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Applications in History",
+		"number": "330-BXS-03",
+		"sections": [
+			{
+				"title": "Snapshots of the 20th Century",
+				"number": "00001",
+				"teacher": "Deborah Shulman",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Applications in Psychology",
+		"number": "350-BXS-03",
+		"sections": [
+			{
+				"title": "Interaction and Communication (INTENSIVE)",
+				"number": "00001",
+				"teacher": "Marie-Pierre Gosselin",
+				"schedule": []
+			}
+		]
+	},
+	{
+		"title": "Social science: applications in religion studies",
+		"number": "370-BXS-03",
+		"sections": [
+			{
+				"title": "Contemporary Social Concerns: Sex, Gender and Religion",
+				"number": "00001",
+				"teacher": "Sonia Zylberberg",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	}
+]

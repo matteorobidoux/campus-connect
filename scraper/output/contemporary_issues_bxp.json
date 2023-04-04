@@ -1,0 +1,90 @@
+[
+	{
+		"title": "Contemporary Issues Set 2",
+		"number": "365-BXP-DW",
+		"sections": [
+			{
+				"title": "Learning Perspectives 2",
+				"number": "00001",
+				"teacher": "Amanda Lickers, Jocelyn Parr, Morgan Phillips",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			},
+			{
+				"title": "S.P.A.C.E.: Make Things That Matter",
+				"number": "00002",
+				"teacher": "Joel Trudeau",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Introduction to Research in Neuroscience",
+				"number": "00003",
+				"teacher": "Hélène Nadeau",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			},
+			{
+				"title": "Imaging Violence and Nonviolence",
+				"number": "12001",
+				"teacher": "Kim Simard, Patricia Romano",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	}
+]

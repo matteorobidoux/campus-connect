@@ -1,0 +1,501 @@
+[
+	{
+		"title": "Human Body for Nurses II",
+		"number": "101-986-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Caroline Robert",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Caroline Robert",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			},
+			{
+				"number": "00003",
+				"teacher": "Man-Tze Mabel Chong",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			},
+			{
+				"number": "00004",
+				"teacher": "Man-Tze Mabel Chong",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			},
+			{
+				"number": "00005",
+				"teacher": "Christine Lafleur",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Nursing the Hospitalized Adult",
+		"number": "180-212-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Cecilia Poleon, Charlie Myriam Julien, Christina Wagner, Devin Katrina Smith, Jian Ning Li, Judith Peterkin, Lauren Elisabeth Haughton, Lucien Chiasson, Lynette Robinson, Magdalena Mlek, Merben Tongco, Natalie Turner, Rhizlane Bougrine, Sabrina Zaman, Sawsan Ibrahim, Sherry McMillan, Youngnam Hwang",
+				"schedule": []
+			},
+			{
+				"number": "00002",
+				"teacher": "Cecilia Poleon, Charlie Myriam Julien, Christina Wagner, Devin Katrina Smith, Jian Ning Li, Judith Peterkin, Lauren Elisabeth Haughton, Lucien Chiasson, Lynette Robinson, Magdalena Mlek, Merben Tongco, Natalie Turner, Rhizlane Bougrine, Sabrina Zaman, Sawsan Ibrahim, Sherry McMillan, Youngnam Hwang",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 9,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Basic Health Assessment",
+		"number": "180-214-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Charlie Myriam Julien, Devin Katrina Smith, Jian Ning Li, Magdalena Mlek, Natalie Turner, Sherry McMillan",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "3:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Charlie Myriam Julien, Devin Katrina Smith, Jian Ning Li, Magdalena Mlek, Natalie Turner, Sherry McMillan",
+				"schedule": []
+			},
+			{
+				"number": "00003",
+				"teacher": "Charlie Myriam Julien, Devin Katrina Smith, Jian Ning Li, Magdalena Mlek, Natalie Turner, Sherry McMillan",
+				"schedule": []
+			}
+		]
+	},
+	{
+		"title": "Psychology: Human Development",
+		"number": "350-980-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Marie-Pierre Gosselin",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Marie-Pierre Gosselin",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Human Body for Nurses IV",
+		"number": "101-988-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Gina Gentile",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Gina Gentile",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "3:00 PM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00003",
+				"teacher": "Gina Gentile",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "9:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00004",
+				"teacher": "Gina Gentile",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Maternal/Child Health Nursing Winter",
+		"number": "180-434-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Anouchka Lemoine, Devin Katrina Smith, Marie-Christine Borruel, Meggie Carpel, Natalie Morin, Natalie Turner, Shafiqa Awj Allahyar, Sherry McMillan",
+				"schedule": []
+			}
+		]
+	},
+	{
+		"title": "Collaborative Therapies in Health and Illness II",
+		"number": "180-441-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "TBA-180-D, Devin Katrina Smith, Geneviève McCaughey, Marie-Christine Borruel, Meggie Carpel, Natalie Morin, Natalie Turner, Patricia Bondu, Sherry McMillan, Yvette Marks",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "TBA-180-D, Devin Katrina Smith, Geneviève McCaughey, Marie-Christine Borruel, Meggie Carpel, Natalie Morin, Natalie Turner, Patricia Bondu, Sherry McMillan, Yvette Marks",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Medical/Surgical Nursing Winter",
+		"number": "180-424-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Devin Katrina Smith, Geneviève McCaughey, Giovanna Primerano, Jocelyne Blondeau, Natalie Turner, Patricia Bondu, Sherry McMillan, Yvette Marks",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 9,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 9,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "3:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:00 PM",
+						"end": "3:30 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Internship",
+		"number": "180-617-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Alfi Riffat Mahbub, Atif Abbas, Christina Craighead, Debra Goldstein, Devin Katrina Smith, Hélène Lefebvre, Khaleda Begum, Melanie Zseder, Natalie Turner, Sarah Bolivar, Sarah Robertson, Sherry McMillan, Uliana Grebenuk Roy, Yael Hoffman",
+				"schedule": []
+			}
+		]
+	}
+]

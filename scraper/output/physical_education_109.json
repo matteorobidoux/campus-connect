@@ -1,0 +1,2554 @@
+[
+	{
+		"title": "Physical Activity and Health",
+		"number": "109-101-MQ",
+		"sections": [
+			{
+				"title": "Outdoor Fitness (COMPRESSED)",
+				"number": "00001",
+				"teacher": "Caroline Haddad",
+				"schedule": []
+			},
+			{
+				"title": "Fitness Walking (COMPRESSED)",
+				"number": "00002",
+				"teacher": "Angela Corinthios",
+				"schedule": []
+			},
+			{
+				"title": "Fitness Walking (COMPRESSED)",
+				"number": "00003",
+				"teacher": "Angela Corinthios",
+				"schedule": []
+			},
+			{
+				"title": "Urban Hiking (COMPRESSED)",
+				"number": "00004",
+				"teacher": "Cory Deegan",
+				"schedule": []
+			},
+			{
+				"title": "Fitness Walking (COMPRESSED)",
+				"number": "00005",
+				"teacher": "Venere Di Genova",
+				"schedule": []
+			},
+			{
+				"title": "Introduction to Outdoor Education (COMPRESSED)",
+				"number": "00006",
+				"teacher": "Jonathan Egan",
+				"schedule": []
+			},
+			{
+				"title": "Combative Fitness",
+				"number": "00007",
+				"teacher": "Ricky Lew",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Combative Fitness",
+				"number": "00008",
+				"teacher": "Ricky Lew",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Combative Fitness",
+				"number": "00009",
+				"teacher": "Venere Di Genova",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Combative Fitness",
+				"number": "00010",
+				"teacher": "Ricky Lew",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Dance Fitness",
+				"number": "00011",
+				"teacher": "Patricia Walker",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Dance Fitness",
+				"number": "00012",
+				"teacher": "Patricia Walker",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Dance Fitness",
+				"number": "00013",
+				"teacher": "Patricia Walker",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Dance Fitness",
+				"number": "00014",
+				"teacher": "Chantal St-Pierre",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Dance Fitness",
+				"number": "00015",
+				"teacher": "Karina Palacio",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Dance Fitness",
+				"number": "00016",
+				"teacher": "Karina Palacio",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness",
+				"number": "00017",
+				"teacher": "Marcela Donoso",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness",
+				"number": "00018",
+				"teacher": "Marcela Donoso",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness",
+				"number": "00019",
+				"teacher": "Patrick Burkhard",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness",
+				"number": "00020",
+				"teacher": "Patrick Burkhard",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness",
+				"number": "00021",
+				"teacher": "Chantal St-Pierre",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness",
+				"number": "00022",
+				"teacher": "André Armand Gear",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness",
+				"number": "00023",
+				"teacher": "André Armand Gear",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness",
+				"number": "00024",
+				"teacher": "Karina Palacio",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness",
+				"number": "00025",
+				"teacher": "Layal Nakhlé",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Resistance Training",
+				"number": "00026",
+				"teacher": "Matthew Potter",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Sport Fitness",
+				"number": "00027",
+				"teacher": "Marcela Donoso",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Resistance Training",
+				"number": "00028",
+				"teacher": "Jonathan Egan",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Resistance Training",
+				"number": "00029",
+				"teacher": "Douglas Smyth",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Resistance Training",
+				"number": "00030",
+				"teacher": "Douglas Smyth",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Resistance Training",
+				"number": "00031",
+				"teacher": "James Brasseur",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Resistance Training",
+				"number": "00032",
+				"teacher": "Linda Benjamin",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Resistance Training",
+				"number": "00033",
+				"teacher": "Linda Benjamin",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Resistance Training",
+				"number": "00034",
+				"teacher": "James Brasseur",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Introduction to Outdoor Education",
+				"number": "00035",
+				"teacher": "Cory Deegan",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness",
+				"number": "00036",
+				"teacher": "James Brasseur",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Games Fitness",
+				"number": "00037",
+				"teacher": "Angela Corinthios",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Sport Fitness",
+				"number": "00038",
+				"teacher": "Marcela Donoso",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Sport Fitness",
+				"number": "00039",
+				"teacher": "Patrick Burkhard",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Sport Fitness",
+				"number": "00040",
+				"teacher": "Richard Montreuil",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Sport Fitness",
+				"number": "00041",
+				"teacher": "Richard Montreuil",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Sport Fitness",
+				"number": "00042",
+				"teacher": "Rona Joan Brodie",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Sport Fitness",
+				"number": "00043",
+				"teacher": "Rona Joan Brodie",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Walking",
+				"number": "00044",
+				"teacher": "Cindy Cantin-Starzenski",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Walking",
+				"number": "00045",
+				"teacher": "Cindy Cantin-Starzenski",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Walking",
+				"number": "00046",
+				"teacher": "Cindy Cantin-Starzenski",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Walking",
+				"number": "00047",
+				"teacher": "Caroline Haddad",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Walking",
+				"number": "00048",
+				"teacher": "Caroline Haddad",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Walking",
+				"number": "00049",
+				"teacher": "Patricia Armeni",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Mind-Body Wellness",
+				"number": "00050",
+				"teacher": "Carrie Markin",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Eco Landscaping (COMPRESSED)",
+				"number": "00051",
+				"teacher": "Paul Wasacz",
+				"schedule": []
+			},
+			{
+				"title": "Fitness Walking",
+				"number": "00052",
+				"teacher": "Paul Wasacz",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Resistance Training",
+				"number": "00053",
+				"teacher": "Alessandro Tirelli",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness",
+				"number": "00054",
+				"teacher": "Alessandro Tirelli",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Games Fitness",
+				"number": "00055",
+				"teacher": "James Brasseur",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness",
+				"number": "00056",
+				"teacher": "Holly McIntyre",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Physical Activity and Effectiveness",
+		"number": "109-102-MQ",
+		"sections": [
+			{
+				"title": "Dance Styles",
+				"number": "00001",
+				"teacher": "Patricia Walker",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Basketball (PRE-SEMESTER)",
+				"number": "00002",
+				"teacher": "Linda Benjamin",
+				"schedule": []
+			},
+			{
+				"title": "Volleyball  (PRE-SEMESTER)",
+				"number": "00003",
+				"teacher": "Rona Joan Brodie",
+				"schedule": []
+			},
+			{
+				"title": "Downhill Skiing (INTENSIVE)",
+				"number": "00004",
+				"teacher": "Richard Montreuil",
+				"schedule": []
+			},
+			{
+				"title": "Tennis (INTENSIVE)",
+				"number": "00005",
+				"teacher": "Patricia Walker",
+				"schedule": []
+			},
+			{
+				"title": "Downhill Skiing/Snowboarding (INTENSIVE)",
+				"number": "00006",
+				"teacher": "Richard Montreuil",
+				"schedule": []
+			},
+			{
+				"title": "Sport Participation Contract (INTENSIVE)",
+				"number": "00007",
+				"teacher": "Matthew Potter",
+				"schedule": []
+			},
+			{
+				"title": "Kung Fu",
+				"number": "00008",
+				"teacher": "Ricky Lew",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Kung Fu",
+				"number": "00009",
+				"teacher": "Ricky Lew",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Karate",
+				"number": "00010",
+				"teacher": "Venere Di Genova",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Karate",
+				"number": "00011",
+				"teacher": "Venere Di Genova",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Karate",
+				"number": "00012",
+				"teacher": "Venere Di Genova",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Karate",
+				"number": "00013",
+				"teacher": "Venere Di Genova",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Dance Styles",
+				"number": "00014",
+				"teacher": "Patricia Walker",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Dance Styles",
+				"number": "00015",
+				"teacher": "Carrie Markin",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Dance Styles",
+				"number": "00016",
+				"teacher": "Karina Palacio",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Dance Styles",
+				"number": "00017",
+				"teacher": "Karina Palacio",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Pilates",
+				"number": "00018",
+				"teacher": "Chantal St-Pierre",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Pilates",
+				"number": "00019",
+				"teacher": "Chantal St-Pierre",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Posture, Stability, and Mobility Skills",
+				"number": "00020",
+				"teacher": "André Armand Gear",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Posture, Stability, and Mobility Skills",
+				"number": "00021",
+				"teacher": "André Armand Gear",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Weight Training Skills",
+				"number": "00022",
+				"teacher": "Matthew Potter",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Weight Training Skills",
+				"number": "00023",
+				"teacher": "Matthew Potter",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Weight Training Skills",
+				"number": "00024",
+				"teacher": "Linda Benjamin",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Weight Training Skills",
+				"number": "00025",
+				"teacher": "Linda Benjamin",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Weight Training Skills",
+				"number": "00026",
+				"teacher": "James Brasseur",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Weight Training Skills",
+				"number": "00027",
+				"teacher": "Paul Wasacz",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Weight Training Skills",
+				"number": "00028",
+				"teacher": "Holly McIntyre",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Weight Training Skills",
+				"number": "00029",
+				"teacher": "Alessandro Tirelli",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Badminton",
+				"number": "00030",
+				"teacher": "Marcela Donoso",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Rock Climbing",
+				"number": "00031",
+				"teacher": "Cory Deegan",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Rock Climbing",
+				"number": "00032",
+				"teacher": "Cory Deegan",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Badminton",
+				"number": "00033",
+				"teacher": "Angela Corinthios",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Golf",
+				"number": "00034",
+				"teacher": "Douglas Smyth",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Golf",
+				"number": "00035",
+				"teacher": "Douglas Smyth",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Rock Climbing",
+				"number": "00036",
+				"teacher": "Cindy Cantin-Starzenski",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Rock Climbing",
+				"number": "00037",
+				"teacher": "Jonathan Egan",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Rock Climbing",
+				"number": "00038",
+				"teacher": "Cindy Cantin-Starzenski",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Rock Climbing",
+				"number": "00039",
+				"teacher": "Jonathan Egan",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Rock Climbing",
+				"number": "00040",
+				"teacher": "Jonathan Egan",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Badminton",
+				"number": "00041",
+				"teacher": "Patrick Burkhard",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Basketball",
+				"number": "00042",
+				"teacher": "Marcela Donoso",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Basketball",
+				"number": "00043",
+				"teacher": "Marcela Donoso",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Volleyball",
+				"number": "00044",
+				"teacher": "Patricia Armeni",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Volleyball",
+				"number": "00045",
+				"teacher": "Patrick Burkhard",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Volleyball",
+				"number": "00046",
+				"teacher": "Patrick Burkhard",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Volleyball",
+				"number": "00047",
+				"teacher": "Rona Joan Brodie",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Soccer",
+				"number": "00048",
+				"teacher": "Angela Corinthios",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Stress Coping Skills",
+				"number": "00049",
+				"teacher": "Paul Wasacz",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Stress Coping Skills",
+				"number": "00050",
+				"teacher": "Paul Wasacz",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Basketball",
+				"number": "00051",
+				"teacher": "Paul Wasacz",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Stress Coping Skills",
+				"number": "00052",
+				"teacher": "Layal Nakhlé",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Stress Coping Skills",
+				"number": "00053",
+				"teacher": "Layal Nakhlé",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Yoga",
+				"number": "00054",
+				"teacher": "Chantal St-Pierre",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Yoga",
+				"number": "00055",
+				"teacher": "Caroline Haddad",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Yoga",
+				"number": "00056",
+				"teacher": "Caroline Haddad",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Yoga",
+				"number": "00057",
+				"teacher": "André Armand Gear",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Weight Training Skills",
+				"number": "00058",
+				"teacher": "Alessandro Tirelli",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Weight Training Skills",
+				"number": "00059",
+				"teacher": "Alessandro Tirelli",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Weight Training Skills",
+				"number": "00060",
+				"teacher": "Alessandro Tirelli",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Weight Training Skills",
+				"number": "00061",
+				"teacher": "Holly McIntyre",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Physical Activity and Autonomy",
+		"number": "109-103-MQ",
+		"sections": [
+			{
+				"title": "Combative Activities",
+				"number": "00001",
+				"teacher": "Ricky Lew",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Activities (PRE-SEMESTER)",
+				"number": "00002",
+				"teacher": "Venere Di Genova",
+				"schedule": []
+			},
+			{
+				"title": "Yoga Lifestyles",
+				"number": "00003",
+				"teacher": "André Armand Gear",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Walking Activities (COMPRESSED)",
+				"number": "00004",
+				"teacher": "Caroline Haddad",
+				"schedule": []
+			},
+			{
+				"title": "Outdoor Education Activities (INTENSIVE)",
+				"number": "00006",
+				"teacher": "Cindy Cantin-Starzenski",
+				"schedule": []
+			},
+			{
+				"title": "Winter Camping (INTENSIVE)",
+				"number": "00007",
+				"teacher": "Jonathan Egan",
+				"schedule": []
+			},
+			{
+				"title": "Backpack Hiking (INTENSIVE)",
+				"number": "00008",
+				"teacher": "Jonathan Egan",
+				"schedule": []
+			},
+			{
+				"title": "Outdoor Education Activities (INTENSIVE)",
+				"number": "00009",
+				"teacher": "Richard Montreuil",
+				"schedule": []
+			},
+			{
+				"title": "Outdoor Education Activities (INTENSIVE)",
+				"number": "00010",
+				"teacher": "Layal Nakhlé",
+				"schedule": []
+			},
+			{
+				"title": "Nature Retreat (INTENSIVE)",
+				"number": "00011",
+				"teacher": "Layal Nakhlé",
+				"schedule": []
+			},
+			{
+				"title": "Yoga Retreat (INTENSIVE)",
+				"number": "00012",
+				"teacher": "André Armand Gear",
+				"schedule": []
+			},
+			{
+				"title": "Martial Arts Retreat (INTENSIVE)",
+				"number": "00013",
+				"teacher": "Ricky Lew",
+				"schedule": []
+			},
+			{
+				"title": "Bike Explorations (INTENSIVE)",
+				"number": "00014",
+				"teacher": "Cory Deegan",
+				"schedule": []
+			},
+			{
+				"title": "Fitness Activities",
+				"number": "00015",
+				"teacher": "Paul Wasacz",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Activities",
+				"number": "00016",
+				"teacher": "Holly McIntyre",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Combative Activities",
+				"number": "00017",
+				"teacher": "Venere Di Genova",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Combative Activities",
+				"number": "00018",
+				"teacher": "Ricky Lew",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Dance Activities",
+				"number": "00019",
+				"teacher": "Patricia Walker",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Dance Activities",
+				"number": "00020",
+				"teacher": "Patricia Walker",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Dance Activities",
+				"number": "00021",
+				"teacher": "Chantal St-Pierre",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Activities",
+				"number": "00022",
+				"teacher": "Chantal St-Pierre",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Dance Activities",
+				"number": "00023",
+				"teacher": "Karina Palacio",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Active Living",
+				"number": "00024",
+				"teacher": "Cory Deegan",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Active Living",
+				"number": "00025",
+				"teacher": "Cory Deegan",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Active Living",
+				"number": "00026",
+				"teacher": "Patricia Armeni",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Activities",
+				"number": "00027",
+				"teacher": "Cindy Cantin-Starzenski",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Activities",
+				"number": "00028",
+				"teacher": "Douglas Smyth",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Activities",
+				"number": "00029",
+				"teacher": "Patrick Burkhard",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Activities",
+				"number": "00030",
+				"teacher": "James Brasseur",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Activities",
+				"number": "00031",
+				"teacher": "Chantal St-Pierre",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Activities",
+				"number": "00032",
+				"teacher": "Karina Palacio",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Activities",
+				"number": "00033",
+				"teacher": "Karina Palacio",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Outdoor Ed Activities",
+				"number": "00034",
+				"teacher": "Cory Deegan",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Activities",
+				"number": "00035",
+				"teacher": "Layal Nakhlé",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Sport Performance Training",
+				"number": "00036",
+				"teacher": "Matthew Potter",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Sport Performance Training",
+				"number": "00037",
+				"teacher": "Matthew Potter",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Sport Performance Training",
+				"number": "00038",
+				"teacher": "Matthew Potter",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Active Living (Indoor Cycling)",
+				"number": "00039",
+				"teacher": "Jonathan Egan",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Sport Performance Training",
+				"number": "00040",
+				"teacher": "André Armand Gear",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Sport Performance Training",
+				"number": "00041",
+				"teacher": "Linda Benjamin",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Sport Performance Training",
+				"number": "00042",
+				"teacher": "Linda Benjamin",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Sport Performance Training",
+				"number": "00043",
+				"teacher": "Linda Benjamin",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Sport Performance Training",
+				"number": "00044",
+				"teacher": "Matthew Potter",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Team Sports",
+				"number": "00045",
+				"teacher": "Angela Corinthios",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Team Sports",
+				"number": "00046",
+				"teacher": "Patrick Burkhard",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Team Sports",
+				"number": "00047",
+				"teacher": "Angela Corinthios",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Team Sports",
+				"number": "00048",
+				"teacher": "Angela Corinthios",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Team Sports",
+				"number": "00049",
+				"teacher": "Rona Joan Brodie",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Team Sports",
+				"number": "00050",
+				"teacher": "Rona Joan Brodie",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Activities",
+				"number": "00051",
+				"teacher": "James Brasseur",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Activities",
+				"number": "00052",
+				"teacher": "James Brasseur",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "4:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Yoga Lifestyles",
+				"number": "00053",
+				"teacher": "Carrie Markin",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Activities",
+				"number": "00054",
+				"teacher": "Paul Wasacz",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Activities",
+				"number": "00055",
+				"teacher": "Alessandro Tirelli",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Activities",
+				"number": "00056",
+				"teacher": "Alessandro Tirelli",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Fitness Activities",
+				"number": "00057",
+				"teacher": "Holly McIntyre",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"title": "Canoe Camping (INTENSIVE)",
+				"number": "12001",
+				"teacher": "Cindy Cantin-Starzenski",
+				"schedule": []
+			}
+		]
+	}
+]

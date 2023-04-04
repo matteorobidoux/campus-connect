@@ -1,0 +1,33 @@
+[
+	{
+		"title": "Modern Languages",
+		"number": "607-BXX-03",
+		"sections": [
+			{
+				"title": "Spanish 3",
+				"number": "00001",
+				"teacher": "Maria-Elena Grijalva-Barba",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	}
+]

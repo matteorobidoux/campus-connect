@@ -1,0 +1,58 @@
+[
+	{
+		"title": "Advanced Environmental Studies",
+		"number": "360-401-DW",
+		"sections": [
+			{
+				"title": "Sustenance, Sustainability, and the Sacred",
+				"number": "00001",
+				"teacher": "Natalie Kepka",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			},
+			{
+				"title": "Sustenance, Sustainability, and the Sacred",
+				"number": "00002",
+				"teacher": "Natalie Kepka",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "11:30 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					}
+				]
+			}
+		]
+	}
+]

@@ -1,0 +1,389 @@
+[
+	{
+		"title": "Fieldwork 1",
+		"number": "391-123-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Debbie Resurreccion, Heather Martin, Kyle Zacharie, Lara Falquero, Marc Laurent Sauvé, Myka Taylor, Sarah Cartier, Simeon Pompey",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Creativity",
+		"number": "391-201-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Sarah Cartier",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Debbie Resurreccion",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Group Leadership : Theory and Practice 1",
+		"number": "391-210-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Debbie Resurreccion, Marc Laurent Sauvé, Myka Taylor, Sarah Cartier",
+				"schedule": []
+			},
+			{
+				"number": "00002",
+				"teacher": "Debbie Resurreccion, Marc Laurent Sauvé, Myka Taylor, Sarah Cartier",
+				"schedule": []
+			}
+		]
+	},
+	{
+		"title": "Clientele : Consumer Needs",
+		"number": "391-211-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Kyle Zacharie, Lara Falquero",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Kyle Zacharie, Lara Falquero",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Business Administration in Recreation",
+		"number": "401-990-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Amanda Petriello",
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Amanda Petriello",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Fieldwork 2",
+		"number": "391-128-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Debbie Resurreccion, Heather Martin, Lara Falquero, Marc Laurent Sauvé, Myka Taylor, Sarah Cartier, Simeon Pompey",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "2:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:30 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Organization and Management of Recreation Programs",
+		"number": "391-184-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Marc Laurent Sauvé, Myka Taylor",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Marc Laurent Sauvé, Myka Taylor",
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Program Design 1",
+		"number": "391-401-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Heather Martin, Myka Taylor",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Heather Martin, Myka Taylor",
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Winter Outdoor Experience",
+		"number": "391-402-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Heather Martin, Lara Falquero, Marc Laurent Sauvé, Myka Taylor",
+				"schedule": []
+			},
+			{
+				"number": "00002",
+				"teacher": "Heather Martin, Lara Falquero, Marc Laurent Sauvé, Myka Taylor",
+				"schedule": []
+			}
+		]
+	},
+	{
+		"title": "Principles of Fundraising",
+		"number": "391-525-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Debbie Resurreccion, Simeon Pompey",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			},
+			{
+				"number": "00002",
+				"teacher": "Debbie Resurreccion, Simeon Pompey",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Internship",
+		"number": "391-651-DW",
+		"sections": [
+			{
+				"title": "Fieldwork 3",
+				"number": "00001",
+				"teacher": "Debbie Resurreccion, Heather Martin, Lara Falquero, Marc Laurent Sauvé, Myka Taylor, Sarah Cartier, Simeon Pompey",
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 8,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 8,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "8:00 AM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 8,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "8:00 AM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 8,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "9:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:30 PM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"title": "Integrative Seminar",
+		"number": "391-652-DW",
+		"sections": [
+			{
+				"number": "00001",
+				"teacher": "Sarah Cartier",
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "10:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
+			}
+		]
+	}
+]
