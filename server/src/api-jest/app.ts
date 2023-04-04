@@ -15,7 +15,8 @@ import { generateAuthUrl } from "./../oauth";
 import cors from "cors";
 import GAuth from "./../oauth/gauth-endpoint";
 import { UserClassSection } from "../../../types/UserClassSection";
-
+import { UserClass } from "../../../types/UserClass";
+jest.mock("./../db/db")
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -26,14 +27,13 @@ app.post("/api/login", async (req, res) => {
   if (!name || !password) {
     res.sendStatus(400);
   } else {
-    res.json(await DbMongoose.login({ name, password }));
+    res.json( jest.spyOn(DbMongoose, "login"));
   }
 });
 
 app.post("/api/addUser", async (req, res) => {
   const body = req.body as CreateUserBodyParams;
-  console.log(body);
-  res.json(await DbMongoose.addUser(body));
+  res.json(jest.spyOn(DbMongoose, "addUser"));
 });
 
 app.post("/api/addCompletedEvent", async (req, res) => {
@@ -43,7 +43,7 @@ app.post("/api/addCompletedEvent", async (req, res) => {
     res.sendStatus(400);
   } else {
     res.json({
-      id: await DbMongoose.addCompletedEvent({ userId, completedEvent }),
+      id: await jest.spyOn(DbMongoose, "addCompletedEvent"),
     });
   }
 });
@@ -55,11 +55,7 @@ app.post("/api/removeEvent", async (req, res) => {
     res.sendStatus(400);
   } else {
     res.json({
-      id: await DbMongoose.removeEvent({
-        eventId,
-        courseNumber,
-        courseSection,
-      }),
+      id: await jest.spyOn(DbMongoose, "removeEvent")
     });
   }
 });
@@ -69,13 +65,7 @@ app.post("/api/addEvent", async (req, res: Response<AddEventResponse>) => {
   if (!body.section || !body.event) {
     return res.sendStatus(400);
   }
-  console.log(body);
-
-  await DbMongoose.addEventToSection(
-    body.section.courseNumber,
-    body.section.sectionNumber,
-    body.event
-  );
+  jest.spyOn(DbMongoose, "addEventToSection")
   res.json({ success: true });
 });
 
@@ -85,16 +75,7 @@ app.get("/api/getMostRecentMessage", async (req, res) => {
   if (!courseNumber || !sectionNumber) {
     res.sendStatus(400);
   } else {
-    const result = await DbMongoose.getMostRecentMessage({
-      courseNumber,
-      sectionNumber,
-    });
-    console.log(
-      "Getting most recent message",
-      courseNumber,
-      sectionNumber,
-      result?.message
-    );
+    const result =  jest.spyOn(DbMongoose, "getMostRecentMessage");
     res.json(result);
   }
 });
@@ -105,10 +86,7 @@ app.get("/api/getAllMessages", async (req, res) => {
   if (!courseNumber || !sectionNumber) {
     res.sendStatus(400);
   } else {
-    const result = await DbMongoose.getAllMessages({
-      courseNumber,
-      sectionNumber,
-    });
+    const result =  jest.spyOn(DbMongoose, "getAllMessages");;
     res.json(result);
   }
 });
@@ -118,7 +96,7 @@ app.get("/api/getLatestMessages", async (req, res) => {
   if (!room || !loadedMsgIndex) {
     res.sendStatus(400);
   } else {
-    const result = await DbMongoose.getLatestMessages(room, loadedMsgIndex);
+    const result = await jest.spyOn(DbMongoose, "getLatestMessages");
     res.json(result);
   }
 });
@@ -128,10 +106,10 @@ app.get(
   async (req, res: Response<GetAllSectionsResponse>) => {
     const { userClassSections } = req.query as Partial<GetAllSectionsRequest>;
     if(Array.isArray(userClassSections)) {
-      const result = await DbMongoose.getUserClasses(userClassSections);
-      res.json(result);
+      const result = await jest.spyOn(DbMongoose, "getUserClasses");
+      const result2: UserClass[]=[]
+      res.json(result2);
     } else {
-      console.log(typeof(userClassSections))
       res.sendStatus(400);
     }
   }
@@ -147,7 +125,7 @@ app.get("/gauth", async (req, res) => {
 app.get(
   "/api/getAllStrippedCourses",
   async (req, res: Response<GetAllStrippedCourses>) => {
-    const result = await DbMongoose.getAllStrippedCourses();
+    const result = await jest.spyOn(DbMongoose, "getAllStrippedCourses");
     if (result && Array.isArray(result) && result.length > 0) {
       res.json({ response: result });
     } else {
