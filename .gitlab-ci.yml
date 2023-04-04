@@ -1,14 +1,17 @@
 image: node:latest
 
 stages:
-  - build
-  - test
+  - build-server
+  - run-tests
+  - build-client
   - deploy
 
 build-frontend:
-  stage: build
+  stage: build-client
   only:
     - production
+  dependencies:
+    - test
   cache:
     key:
       prefix: "frontend"
@@ -26,7 +29,7 @@ build-frontend:
       - client/build
 
 build-backend:
-  stage: build
+  stage: build-server
   only:
     - production
   cache:
@@ -36,7 +39,6 @@ build-backend:
         - "server/package-lock.json"
     paths:
       - "server/node_modules/"
-
   script:
     - cd server && npm install && CI=false npm run build
   artifacts:
@@ -46,17 +48,12 @@ build-backend:
       - server/node_modules
       - server/build
 
-#test:
-#  stage: test
-#  dependencies:
-#    - build-backend
-#  script:
-#    - cd server && npm run test
-
-#test_db:
-#  script:
-#    - npm install
-#    - node ./specs/start.js ./specs/db-postgres.spec.js
+test:
+  stage: run-tests
+  dependencies:
+    - build-backend
+  script:
+    - cd server && npm run test
 
 deploy:
   stage: deploy
@@ -64,14 +61,13 @@ deploy:
   dependencies:
     - build-frontend
     - build-backend
+    - test
   only:
     - production
   before_script:
     - "az login --allow-no-subscriptions --service-principal -u $AZ_SP_ID -p $AZ_SP_SECRET --tenant $AZ_TENANT"
   script:
     - zip -r deploy.zip ./client ./server ./package.json
-    ##    - "az webapp config appsettings set --resource-group $RESOURCE_GROUP_NAME --name $APP_NAME --settings WEBSITE_RUN_FROM_PACKAGE='1'"
-    ##- "az webapp config appsettings set --resource-group $RESOURCE_GROUP_NAME --name $APP_NAME --settings ATLAS_URI=$ATLAS_URI"
     - "az webapp deployment source config-zip --resource-group $RESOURCE_GROUP_NAME --name $APP_NAME --src deploy.zip"
   artifacts:
     expire_in: 1 days
