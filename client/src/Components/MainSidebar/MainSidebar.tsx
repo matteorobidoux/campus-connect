@@ -1,92 +1,131 @@
-import { useQuery } from "react-query"
-import { Course, ColoredCourse } from "../../../../types/Course"
-import { colorVariables } from "../../cssUtils"
-import CourseQuickViewContainer from "../CourseQuickViewContainer/CourseQuickViewContainer"
-import styles from "./MainSidebar.module.scss"
+import { UserClassSection } from "../../../../types/UserClassSection";
+import { useSections, useUser } from "../../custom-query-hooks";
+import CourseQuickViewContainer from "../CourseQuickViewContainer/CourseQuickViewContainer";
+import ChatButton from "../ChatButton/ChatButton";
+import styles from "./MainSidebar.module.scss";
+import { MostRecentMessage } from "../../../../types/Queries/MostRecentMessage";
+import { AnimatePresence, motion } from "framer-motion";
+import {
+  FadeInAnimation,
+  StaggeredFadeInAnimation,
+} from "../../framerMotionAnimations";
+import { User } from "../../../../types/User";
+import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
 
-export default function MainSidebar() {
-  const fetchCourse = async (): Promise<ColoredCourse[]> => {
-    let promise = new Promise<ColoredCourse[]>((res, rej) => {
-      const defaultColor = "salmon"
-      let colors = [{ value: defaultColor }]
-      // Need to fetch courses here
-      const courses: Course[] = [
-        {
-          title: "Organic Chemistry I",
-          number: "202-BZF-05",
-          sections: [
-            {
-              title: "Organic Chemistry I",
-              number: "00002",
-              teacher: "Carmen Leung",
-              schedule: "Tuesday8:30 AM - 10:00 AM3F.7ClassWednesday10:00 AM - 1:00 PM6A.13LabFriday8:30 AM - 10:00 AM3F.7Class"
-            }
-          ]
-        },
-        {
-          title: "Mise à niveau pour Français, langue seconde de la 5e secondaire",
-          number: "602-008-RE",
-          sections: [
-            {
-              title: "Mise à niveau pour Français, langue seconde de la 5e secondaire",
-              number: "00031",
-              teacher: "Francesca Roy",
-              schedule: "Tuesday10:00 AM - 12:00 PM4E.18ClassFriday10:00 AM - 12:00 PM4E.18Class"
-            }
-          ]
-        },
-        {
-          title: "Linear Algebra",
-          number: "201-105-DW",
-          sections: [
-            {
-              title: "Linear Algebra",
-              number: "00005",
-              teacher: "Gilbert Honnouvo",
-              schedule: "Tuesday2:00 PM - 4:00 PM4D.2LabWednesday1:00 PM - 2:30 PM4H.19ClassFriday1:00 PM - 2:30 PM4H.19Class"
-            }
-          ]
-        },
-      ]
-      let coloredCourses = courses as ColoredCourse[]
-      try {
-        colors = []
-        coloredCourses.map((course) => {
-          course.color = colors.pop()?.value || defaultColor;
-        })
-      } catch (e) {
-        coloredCourses.map((course) => {
-          course.color = colors[0].value;
-        })
-      }
-      res(coloredCourses)
-    })
-    return promise
-  }
+type MainSidebarProps = {
+  selectedComponent: string;
+  selectChatFunc: (course: UserClassSection | null) => void;
+  selectComponentFunc: Function;
+  mostRecentMessage: Map<string, MostRecentMessage>;
+  setMostRecentMessageById: (
+    id: string,
+    setMostRecentMessage: MostRecentMessage
+  ) => void;
+};
 
-  const { isLoading, isError, data } = useQuery(
-    {
-      queryKey: ['sections'],
-      queryFn: fetchCourse
-    }
-  )
+export default function MainSidebar(props: MainSidebarProps) {
+  const delay: number = 0.05;
+  const groupChatButtonsAnimation = StaggeredFadeInAnimation(
+    0.1,
+    0.1,
+    delay,
+    delay
+  );
+  const user = useUser();
+  const { isLoading, isSuccess, data } = useSections({
+    userClassSections: user.sections,
+  });
 
-  if (isLoading) return <> <span>Loading...</span> </>
-  if (isError || data === undefined) return <> <span>Couldn't load data</span> </>
+  const containerAnimation = FadeInAnimation(0.8);
+
+  // useEffect(() => {debugger}, [props.mostRecentMessage])
+
+  const { t } = useTranslation(["chat"]);
 
   return (
-    <>
-      <div className={styles["main-sidebar-container"]}>
-        <div className={[styles["sidebar-section"], styles["links"]].join(" ")}>
-          <h2>Classes</h2>
-          <h2>GroupChats</h2>
-          <h2>Bookstore</h2>
-          <h2>Calendar</h2>
+    <AnimatePresence>
+      <motion.div
+        className={styles["main-sidebar-container"]}
+        initial="hidden"
+        exit="hidden"
+        animate="visible"
+        variants={containerAnimation}
+        layout="position"
+      >
+        {/* This is temporary - Marian - 27/02/2023 */}
+        <div
+          className={[styles["sidebar-section"], styles["classes"]].join(" ")}
+        >
+          <div className={styles["menu"]}>
+            <motion.button
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.1 }}
+              className={
+                props.selectedComponent === "calender" ? styles.selected : ""
+              }
+              onClick={() => {
+                props.selectComponentFunc("calender");
+                props.selectChatFunc(null);
+              }}
+            >
+              {t("Calendar")}
+            </motion.button>
+            <motion.button
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.1 }}
+              className={
+                props.selectedComponent === "chat" ? styles.selected : ""
+              }
+              onClick={() => {
+                props.selectComponentFunc("chat");
+                // Select first chat by default
+                if (user.sections.length > 0)
+                  props.selectChatFunc(user.sections[0]);
+              }}
+            >
+              {t("Chat")}
+            </motion.button>
+          </div>
+          {props.selectedComponent === "calender" ? (
+            isLoading ? (
+              <span>{t("Loading")}</span>
+            ) : isSuccess ? (
+              <CourseQuickViewContainer data={data} />
+            ) : (
+              <span>{t("CouldntLoadData")}</span>
+            )
+          ) : props.selectedComponent === "chat" ? (
+            isLoading ? (
+              <span>{t("Loading")}</span>
+            ) : isSuccess ? (
+              <motion.div
+                className={styles["groupchats"]}
+                variants={groupChatButtonsAnimation}
+                initial="hidden"
+                animate="visible"
+              >
+                {user.sections.map((value, index) => (
+                  <ChatButton
+                    data={data}
+                    key={index}
+                    index={index}
+                    mostRecentMessage={props.mostRecentMessage.get(
+                      value.courseNumber
+                    )}
+                    setMostRecentMessage={(m) =>
+                      props.setMostRecentMessageById(value.courseNumber, m)
+                    }
+                    onClick={() => props.selectChatFunc(value)}
+                  />
+                ))}
+              </motion.div>
+            ) : (
+              <span>{t("CouldntLoadData")}</span>
+            )
+          ) : null}
         </div>
-        <div className={[styles["sidebar-section"], styles["classes"]].join(" ")}>
-          <CourseQuickViewContainer courses={data} />
-        </div>
-      </div>
-    </>
-  )
+      </motion.div>
+    </AnimatePresence>
+  );
 }

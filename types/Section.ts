@@ -1,8 +1,14 @@
-type Section = {
-  schedule: string;
+import { Events } from "./Event";
+import Schedule from "./Schedule";
+export type Section = {
+  schedule: Schedule[];
   teacher: string;
   number: string;
-  title: string;
-}
+  events: Array<Events>;
+  students: string[];
+};
 
-export default Section;
+export type StrippedSection = {
+  teacher: string;
+  number: string;
+};

@@ -6,12 +6,32 @@
 			{
 				"number": "00001",
 				"teacher": "Joe Becker",
-				"schedule": "Tuesday11:30 AM - 2:30 PM3B.23Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Joe Becker",
-				"schedule": "Friday1:00 PM - 4:00 PM3B.23Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -22,12 +42,50 @@
 			{
 				"number": "00001",
 				"teacher": "Martin Segal, Patrizia Castiglione",
-				"schedule": "Monday8:00 AM - 10:00 AM1G.14ClassMonday8:00 AM - 10:00 AM4A.14ClassMonday10:30 AM - 2:30 PM1G.14LabMonday10:30 AM - 2:30 PM1G.9Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "10:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Martin Segal, Patrizia Castiglione",
-				"schedule": "Monday8:00 AM - 10:00 AM1G.14ClassMonday8:00 AM - 10:00 AM4A.14ClassWednesday9:00 AM - 1:00 PM1G.14LabWednesday9:00 AM - 1:00 PM1G.9Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "9:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -38,12 +96,32 @@
 			{
 				"number": "00001",
 				"teacher": "Kate Hutchinson",
-				"schedule": "Wednesday9:00 AM - 1:00 PM1G.18-5Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "9:00 AM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Kate Hutchinson",
-				"schedule": "Tuesday11:00 AM - 3:00 PM1G.18-5Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "11:00 AM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -54,12 +132,50 @@
 			{
 				"number": "00001",
 				"teacher": "Claudio Calligaris",
-				"schedule": "Tuesday3:00 PM - 6:00 PM1G.18-5ClassFriday3:00 PM - 6:00 PM1G.18-5Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Pierre Arsenault",
-				"schedule": "Monday12:00 PM - 3:00 PM1G.18-5ClassThursday8:00 AM - 11:00 AM1G.18-5Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -70,7 +186,17 @@
 			{
 				"number": "00001",
 				"teacher": "Peter Berra",
-				"schedule": "Thursday11:30 AM - 2:30 PM3H.10Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -81,12 +207,50 @@
 			{
 				"number": "00001",
 				"teacher": "Laurel Breidon",
-				"schedule": "Tuesday2:00 PM - 4:00 PM1G.14ClassTuesday2:00 PM - 4:00 PM4H.23ClassWednesday2:00 PM - 6:00 PM1G.14LabWednesday2:00 PM - 6:00 PM1G.9Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Laurel Breidon",
-				"schedule": "Tuesday2:00 PM - 4:00 PM1G.14ClassTuesday2:00 PM - 4:00 PM4H.23ClassThursday12:00 PM - 4:00 PM1G.14LabThursday12:00 PM - 4:00 PM1G.9Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "12:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "2:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -97,7 +261,26 @@
 			{
 				"number": "00001",
 				"teacher": "Peter Berra",
-				"schedule": "Friday1:00 PM - 3:00 PM1G.18-5LabFriday3:00 PM - 5:00 PM3F.45Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "3:00 PM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 2,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -108,7 +291,26 @@
 			{
 				"number": "00001",
 				"teacher": "Claudio Calligaris",
-				"schedule": "Monday3:00 PM - 6:00 PM1G.18-5ClassFriday8:00 AM - 11:00 AM1G.18-5Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:00 AM",
+						"end": "11:00 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -119,7 +321,26 @@
 			{
 				"number": "00001",
 				"teacher": "Pierre Arsenault",
-				"schedule": "Monday8:00 AM - 9:00 AM1G.14ClassMonday8:00 AM - 9:00 AM3E.6ClassMonday9:00 AM - 12:00 PM1G.14LabMonday9:00 AM - 12:00 PM4G.15Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:00 AM",
+						"end": "9:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "9:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -130,7 +351,17 @@
 			{
 				"number": "00001",
 				"teacher": "Nelly Dahan",
-				"schedule": "Tuesday8:30 AM - 11:30 AM1G.9LabTuesday8:30 AM - 11:30 AM4G.15Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -141,7 +372,17 @@
 			{
 				"number": "00001",
 				"teacher": "Helen Stavaris",
-				"schedule": "Tuesday11:30 AM - 2:30 PM3F.45Class"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -152,12 +393,50 @@
 			{
 				"number": "00001",
 				"teacher": "Valerie Simmons",
-				"schedule": "Thursday8:00 AM - 9:00 AM1G.14LabThursday8:00 AM - 9:00 AM1G.9LabThursday8:00 AM - 9:00 AM3E.6LabThursday9:00 AM - 12:00 PM1G.14LabThursday9:00 AM - 12:00 PM1G.9Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:00 AM",
+						"end": "9:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "9:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Valerie Simmons",
-				"schedule": "Monday2:00 PM - 3:00 PM1G.14LabMonday2:00 PM - 3:00 PM1G.9LabMonday2:00 PM - 3:00 PM3E.4LabMonday3:00 PM - 6:00 PM1G.14LabMonday3:00 PM - 6:00 PM1G.9Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "2:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -168,12 +447,32 @@
 			{
 				"number": "00001",
 				"teacher": "Kate Hutchinson",
-				"schedule": "Monday12:30 PM - 5:30 PM1G.18-1Class"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "12:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 5,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Kate Hutchinson",
-				"schedule": "Thursday10:00 AM - 3:00 PM1G.18-1Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "10:00 AM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 5,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -184,12 +483,59 @@
 			{
 				"number": "00001",
 				"teacher": "Patrizia Castiglione, Valerie Simmons",
-				"schedule": "Monday8:30 AM - 11:30 AM1G.18-1ClassMonday8:30 AM - 11:30 AM3H.10ClassThursday3:00 PM - 6:00 PM1G.18-1Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Patrizia Castiglione, Valerie Simmons",
-				"schedule": "Wednesday2:30 PM - 5:30 PM3H.10ClassFriday8:30 AM - 10:00 AM1G.18-1LabFriday8:30 AM - 10:00 AM3H.10LabFriday10:00 AM - 11:30 AM1G.18-1Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "10:00 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Friday",
+						"begin": "10:00 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 1,
+							"minutes": 30
+						}
+					},
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -200,7 +546,26 @@
 			{
 				"number": "00001",
 				"teacher": "Martin Segal, Nelly Dahan",
-				"schedule": "Tuesday3:00 PM - 6:00 PM1G.14LabTuesday3:00 PM - 6:00 PM1G.9LabFriday12:00 PM - 1:00 PM4A.2Class"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "12:00 PM",
+						"end": "1:00 PM",
+						"duration": {
+							"hours": 1,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -211,12 +576,32 @@
 			{
 				"number": "00001",
 				"teacher": "Peter Berra",
-				"schedule": "Wednesday2:30 PM - 5:30 PM1G.18-1Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Peter Berra",
-				"schedule": "Wednesday9:00 AM - 12:00 PM1G.18-1Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "9:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	}

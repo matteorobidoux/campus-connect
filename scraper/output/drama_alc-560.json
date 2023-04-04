@@ -6,7 +6,17 @@
 			{
 				"number": "00001",
 				"teacher": "Matt Holland",
-				"schedule": "Thursday11:30 AM - 2:30 PM3E.13Class"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "11:30 AM",
+						"end": "2:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -17,7 +27,17 @@
 			{
 				"number": "00001",
 				"teacher": "Arianna Bardesono",
-				"schedule": "Tuesday3:00 PM - 6:00 PM4E.20Class"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "3:00 PM",
+						"end": "6:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	}

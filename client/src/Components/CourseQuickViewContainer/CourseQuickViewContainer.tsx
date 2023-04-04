@@ -1,25 +1,29 @@
-import { ColoredCourse } from "../../../../types/Course"
-import CourseQuickView from "../CourseQuickView/CourseQuickView"
-import styles from "./CourseQuickViewContainer.module.scss"
+import styles from "./CourseQuickViewContainer.module.scss";
+import { GetAllSectionsResponse } from "../../../../types/Queries/GetAllCourses";
+import CourseQuickView from "../CourseQuickView/CourseQuickView";
+import { motion } from "framer-motion";
+import { StaggeredFadeInAnimation } from "../../framerMotionAnimations";
 
 type CourseQuickViewContainerProps = {
-	courses: ColoredCourse[]
-}
+  data: GetAllSectionsResponse;
+};
 
-export default function CourseQuickViewContainer(props: CourseQuickViewContainerProps) {
-	return (
-		<>
-			<div className={styles["course-quick-view-container"]}>
-				{
-					props.courses.map((course, key) => {
-						return (
-							<div key={key}>
-								<CourseQuickView color={course.color} title={course.title} number={course.number} sections={course.sections} />
-							</div>
-						)
-					})
-				}
-			</div>
-		</>
-	)
+export default function CourseQuickViewContainer(
+  props: CourseQuickViewContainerProps
+) {
+  const delay: number = 0.05;
+  const animation = StaggeredFadeInAnimation(0.1, 0.1, delay, delay);
+
+  return (
+    <motion.div
+      variants={animation}
+      initial="hidden"
+      animate="visible"
+      className={styles["course-quick-view-container"]}
+    >
+      {props.data.map((course, key) => (
+        <CourseQuickView course={course} key={key} />
+      ))}
+    </motion.div>
+  );
 }

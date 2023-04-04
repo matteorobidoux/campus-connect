@@ -1,0 +1,69 @@
+.wrapper {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0.75rem;
+  background-color: rgb(249 249 249);
+  -webkit-box-shadow: 8px 6px 17px -3px rgba(0, 0, 0, 0.15);
+  box-shadow: 8px 6px 17px -3px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  min-height: 20px;
+  font-weight: 200;
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  @media only screen and (min-width: 1612px) {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.2em;
+
+    .day {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+  }
+
+  .vl {
+    border-left: 3px solid black;
+    min-height: 100%;
+    border-color: #2084e7;
+    margin: 0 0.8rem 0 0.5rem;
+  }
+
+  .right {
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .className {
+      margin-right: 1rem;
+      overflow-wrap: break-word;
+      font-size: large;
+      max-width: 100%;
+    }
+
+    .eventName {
+      font-weight: 400;
+      font-size: medium;
+    }
+  }
+
+  .plus {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.selectable {
+  cursor: pointer;
+}

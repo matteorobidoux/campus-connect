@@ -6,12 +6,32 @@
 			{
 				"number": "00001",
 				"teacher": "Neal Armstrong",
-				"schedule": "Monday12:00 PM - 3:00 PM3B.25Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "12:00 PM",
+						"end": "3:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Neal Armstrong",
-				"schedule": "Monday8:30 AM - 11:30 AM3B.25Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -22,12 +42,32 @@
 			{
 				"number": "00001",
 				"teacher": "Xin Ran Liu",
-				"schedule": "Friday8:30 AM - 11:30 AM3G.17Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Xin Ran Liu",
-				"schedule": "Friday1:00 PM - 4:00 PM3G.17Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -38,12 +78,32 @@
 			{
 				"number": "00001",
 				"teacher": "Stéphanie Aubin",
-				"schedule": "Thursday1:30 PM - 4:30 PM3G.17Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "1:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Chantal Chapson",
-				"schedule": "Thursday9:30 AM - 12:30 PM3G.17Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "9:30 AM",
+						"end": "12:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -54,12 +114,32 @@
 			{
 				"number": "00001",
 				"teacher": "Mark Sy",
-				"schedule": "Monday8:30 AM - 11:30 AM3G.17Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Mark Sy",
-				"schedule": "Monday12:30 PM - 3:30 PM3G.17Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "12:30 PM",
+						"end": "3:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -70,12 +150,32 @@
 			{
 				"number": "00001",
 				"teacher": "Jennifer Phelan",
-				"schedule": "Thursday8:30 AM - 12:30 PM3G.15Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "8:30 AM",
+						"end": "12:30 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Paul Turgeon",
-				"schedule": "Thursday1:30 PM - 5:30 PM3G.15Lab"
+				"schedule": [
+					{
+						"day": "Thursday",
+						"begin": "1:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -86,12 +186,32 @@
 			{
 				"number": "00001",
 				"teacher": "Chantal Chapson",
-				"schedule": "Tuesday9:00 AM - 12:00 PM3G.17Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "9:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Chantal Chapson",
-				"schedule": "Tuesday1:00 PM - 4:00 PM3G.17Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -102,12 +222,32 @@
 			{
 				"number": "00001",
 				"teacher": "James Giberson",
-				"schedule": "Wednesday8:30 AM - 11:30 AM3G.17Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "James Giberson",
-				"schedule": "Wednesday1:00 PM - 4:00 PM3G.17Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -118,12 +258,32 @@
 			{
 				"number": "00001",
 				"teacher": "Maria Chronopoulos, Stéphanie Aubin",
-				"schedule": "Tuesday8:30 AM - 11:30 AM2G.13LabTuesday8:30 AM - 11:30 AM3G.15Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Maria Chronopoulos, Stéphanie Aubin",
-				"schedule": "Tuesday2:30 PM - 5:30 PM2G.13LabTuesday2:30 PM - 5:30 PM3G.15Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -134,12 +294,32 @@
 			{
 				"number": "00001",
 				"teacher": "Meinert Hansen",
-				"schedule": "Friday2:00 PM - 5:00 PM3G.15Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "2:00 PM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Meinert Hansen",
-				"schedule": "Friday8:30 AM - 11:30 AM3G.15Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -150,12 +330,32 @@
 			{
 				"number": "00001",
 				"teacher": "Marc-Andre Cright",
-				"schedule": "Monday12:30 PM - 3:30 PM3G.15Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "12:30 PM",
+						"end": "3:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Marc-Andre Cright",
-				"schedule": "Monday8:30 AM - 11:30 AM3G.15Lab"
+				"schedule": [
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -166,12 +366,32 @@
 			{
 				"number": "00001",
 				"teacher": "Jennifer Phelan, Mark Sy",
-				"schedule": "Wednesday8:30 AM - 11:30 AM3G.15Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Jennifer Phelan, Mark Sy",
-				"schedule": "Wednesday2:00 PM - 5:00 PM3G.15Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:00 PM",
+						"end": "5:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -182,12 +402,32 @@
 			{
 				"number": "00001",
 				"teacher": "Nabil E. Kachaami",
-				"schedule": "Friday8:30 AM - 11:30 AM-2H.25Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Nabil E. Kachaami",
-				"schedule": "Tuesday8:30 AM - 11:30 AM-2H.25Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -198,12 +438,32 @@
 			{
 				"number": "00001",
 				"teacher": "Geoff Carley",
-				"schedule": "Wednesday2:30 PM - 5:30 PM4G.8Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "2:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Geoff Carley",
-				"schedule": "Wednesday8:30 AM - 11:30 AM4G.15Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "11:30 AM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -214,12 +474,32 @@
 			{
 				"number": "00001",
 				"teacher": "Neal Armstrong",
-				"schedule": "Wednesday9:00 AM - 12:00 PM2G.10Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "9:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Neal Armstrong",
-				"schedule": "Wednesday1:30 PM - 4:30 PM2G.10Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "1:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -230,12 +510,68 @@
 			{
 				"number": "00001",
 				"teacher": "Mark Sy, Nabil E. Kachaami, Neal Armstrong, Xin Ran Liu",
-				"schedule": "Thursday9:00 AM - 12:00 PM2G.10LabThursday1:00 PM - 4:00 PM2G.8LabFriday1:00 PM - 4:00 PM2G.10Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "9:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Mark Sy, Nabil E. Kachaami, Neal Armstrong, Xin Ran Liu",
-				"schedule": "Thursday9:00 AM - 12:00 PM2G.8LabThursday1:00 PM - 4:00 PM2G.10LabFriday9:00 AM - 12:00 PM2G.10Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "9:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "9:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Thursday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -246,12 +582,68 @@
 			{
 				"number": "00001",
 				"teacher": "Jennifer Phelan, John A. Singer, Meinert Hansen",
-				"schedule": "Monday8:30 AM - 12:30 PM2G.8LabMonday1:30 PM - 4:30 PM2G.10LabTuesday1:30 PM - 5:30 PM2G.8Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "1:30 PM",
+						"end": "5:30 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "8:30 AM",
+						"end": "12:30 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "1:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Jennifer Phelan, John A. Singer, Meinert Hansen",
-				"schedule": "Monday9:00 AM - 12:00 PM2G.10LabTuesday8:30 AM - 12:30 PM2G.8LabWednesday8:30 AM - 12:30 PM2G.8Lab"
+				"schedule": [
+					{
+						"day": "Wednesday",
+						"begin": "8:30 AM",
+						"end": "12:30 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Tuesday",
+						"begin": "8:30 AM",
+						"end": "12:30 PM",
+						"duration": {
+							"hours": 4,
+							"minutes": 0
+						}
+					},
+					{
+						"day": "Monday",
+						"begin": "9:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -262,12 +654,32 @@
 			{
 				"number": "00001",
 				"teacher": "Stéphanie Aubin",
-				"schedule": "Friday9:00 AM - 12:00 PM2G.8Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "9:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Stéphanie Aubin",
-				"schedule": "Friday1:00 PM - 4:00 PM2G.8Lab"
+				"schedule": [
+					{
+						"day": "Friday",
+						"begin": "1:00 PM",
+						"end": "4:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	},
@@ -278,12 +690,32 @@
 			{
 				"number": "00001",
 				"teacher": "Marc-Andre Cright",
-				"schedule": "Tuesday9:00 AM - 12:00 PM2G.10Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "9:00 AM",
+						"end": "12:00 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			},
 			{
 				"number": "00002",
 				"teacher": "Marc-Andre Cright",
-				"schedule": "Tuesday1:30 PM - 4:30 PM2G.10Lab"
+				"schedule": [
+					{
+						"day": "Tuesday",
+						"begin": "1:30 PM",
+						"end": "4:30 PM",
+						"duration": {
+							"hours": 3,
+							"minutes": 0
+						}
+					}
+				]
 			}
 		]
 	}
