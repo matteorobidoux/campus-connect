@@ -7,6 +7,23 @@
     width: 100%;
     gap: 0.3rem;
 
+    .descTextBox {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0.7rem;
+      border: 1px solid grey;
+      border-radius: 8px;
+      height: 10rem;
+      resize: none;
+    }
+
+    .formTitle {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: medium;
+    }
+
     .formEntry {
       width: 100%;
       display: flex;
@@ -15,21 +32,22 @@
 
       p {
         padding: 0;
-        margin: 0;
+        margin: 2px;
         color: red;
         font-size: 0.8rem;
+        font-family: Arial, Helvetica, sans-serif;
       }
 
       label {
         font-size: 0.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        font-weight: bold;
       }
 
-      input, select {
+      input,
+      select {
         width: 100%;
-        padding: 0.7rem;
-        border: 1px solid grey;
-        border-radius: 8px;
-        // background-color: ;
       }
     }
 
@@ -38,7 +56,7 @@
       width: 80%;
       margin-top: 3%;
       border-radius: 8px;
-      background-color: #7EB77f;
+      background-color: #7eb77f;
       color: white;
       font-weight: 600;
       font-size: 1.1rem;
@@ -53,5 +71,4 @@
       }
     }
   }
-
 }

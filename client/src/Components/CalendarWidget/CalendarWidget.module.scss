@@ -6,12 +6,21 @@
   padding: 2%;
   margin-left: auto;
   margin-right: auto;
+  height: 100%;
+  overflow-y: auto;
+  align-content: flex-start;
 
   .calendarEventsWrapper {
     display: flex;
     flex-direction: column;
     min-width: 50%;
+    align-items: center;
     gap: 0.3em;
+
+    span {
+      padding: 0.2rem;
+      text-align: center;
+    }
   }
 
   .right {
@@ -21,13 +30,33 @@
     align-content: center;
 
     .header {
-
       h2 {
         text-align: center;
         font-weight: 300;
       }
-
     }
   }
+  
+  .botton {
+    display: flex;
+    justify-content: center;
 
+    button {
+      color: white;
+      width: 50%;
+      border: 0px;
+      border-radius: 5px;
+      background-color: var(--grey-background);
+      padding-top: 15px;
+      padding-bottom: 15px;
+      text-align: center;
+      margin: 5px;
+      font-weight: bold;
+      box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
 }

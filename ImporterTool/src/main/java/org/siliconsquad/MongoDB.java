@@ -25,7 +25,7 @@ import org.bson.codecs.configuration.*;
 public class MongoDB 
 {
     /*
-     * This method inserts the scraped data into the MongoDB database
+     * This method inserts the scraped data into the MongoDB database without duplicates and sorts the sections by number
      * @throws IOException if the file is not found
      * @throws ParseException if the JSON file is not formatted correctly
      */
@@ -33,7 +33,7 @@ public class MongoDB
     {
         MongoClient mongoClient = connect();
         MongoDatabase database = mongoClient.getDatabase("CampusConnect");
-        MongoCollection<Course> courses = database.getCollection("test0",Course.class);
+        MongoCollection<Course> courses = database.getCollection("Courses",Course.class);
         List<Course> completeCourseList = new ArrayList<Course>();
         ObjectMapper mapper = new ObjectMapper();
         JSONParser parser = new JSONParser();

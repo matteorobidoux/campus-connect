@@ -4,7 +4,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-common-types": "^6.4.0",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@tanstack/react-query-devtools": "^4.24.12",
@@ -18,6 +20,7 @@
     "@types/react-dom": "^18.0.0",
     "axios": "^1.3.4",
     "formik": "^2.2.9",
+    "framer-motion": "^10.6.0",
     "i18next": "^22.4.10",
     "react": "^18.2.0",
     "react-calendar": "^4.0.0",
@@ -30,6 +33,7 @@
     "sass": "^1.58.0",
     "socket.io-client": "^4.6.1",
     "typescript": "^4.4.2",
+    "uuidv4": "^6.2.13",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
@@ -56,5 +60,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-transition-group": "^4.4.5"
   }
 }

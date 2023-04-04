@@ -1,21 +1,25 @@
-import mongoose from 'mongoose';
-import User from "./models/user-schema"
-import Event from './models/event-schema';
+import mongoose from "mongoose";
+import User from "./models/user-schema";
 import Course from "./models/course-schema";
-import { UserClass } from "../../../types/UserClass"
+import groupChatModel from "./models/group-chat-schema";
+import { UserClass } from "../../../types/UserClass";
 import CreateUserBodyParams from "../../../types/Queries/CreateUser";
-import { UserClassSection } from "../../../types/UserClassSection"
-import { GetAllSectionsResponse } from "../../../types/Queries/GetAllCourses"
+import { UserClassSection } from "../../../types/UserClassSection";
+import { AddMessage } from "../../../types/Queries/AddMessage";
 import { LoginRequest, LoginResponse } from "../../../types/Queries/Login";
-import CompletedEventBodyParams from '../../../types/Queries/CompletedEvent';
-import RemoveEventBodyParams from '../../../types/Queries/RemoveEvent';
-import userModel from './models/user-schema';
-import Section from './models/section-schema';
-import { Events } from '../../../types/Event';
-import { generateOAuthClient } from "../oauth/";
-import { google } from 'googleapis';
+import CompletedEventBodyParams from "../../../types/Queries/CompletedEvent";
+import RemoveEventBodyParams from "../../../types/Queries/RemoveEvent";
+import userModel from "./models/user-schema";
+import { Events } from "../../../types/Event";
+import { User as UserType } from "../../../types/User";
+require("dotenv").config();
 
-const dname = process.env.NAME || 'CampusConnect'
+const dbName = process.env.DB_NAME || "CampusConnect";
+const dbUri = process.env.DB_URI || "";
+
+if (dbUri.length === 0) {
+  process.exit(-1);
+}
 
 class DbMongoose {
   constructor() {
@@ -23,16 +27,32 @@ class DbMongoose {
   }
   connectDb() {
     let dbOptions = {
-      dbName: "" + dname
-    }
+      dbName: "" + dbName,
+    };
 
-    mongoose.connect("mongodb+srv://nenechi:nenechi12@exercise11.cfvsryo.mongodb.net/?retryWrites=true&w=majority", dbOptions);
+    mongoose.connect(dbUri, dbOptions);
   }
 
   disconnectdb() {
-    mongoose.connection.close()
+    mongoose.connection.close();
   }
 
+  /**
+   * Returns the User Based on the gid
+   * @param gid Google Id fromthe user
+   * @returns  UserType object 
+   */
+  async getUser(gid: string): Promise<UserType> {
+    const user = await userModel.findOne({ gid });
+    return user!.toObject();
+  }
+
+  /**
+   *  Logs the user 
+   * @param name name of the user
+   * @param password password of the user
+   * @returns  user object data 
+   */
   async login({ name, password }: LoginRequest): Promise<LoginResponse> {
     const user = await userModel.findOne({ name: name, password: password });
 
@@ -41,84 +61,249 @@ class DbMongoose {
     } else {
       return { data: null };
     }
-
   }
 
-  async addUser({name, sections, picture, googleTokens, email, gid}: CreateUserBodyParams): Promise<string> {
-    const userModel = new User({ name, sections, picture, googleTokens, email, gid });
-    console.log(userModel)
+  /**
+   * Add user to the Database
+   * @param CreateUserBodyParams 
+   * @returns  void
+   */
+  async addUser({
+    name,
+    sections,
+    picture,
+    googleTokens,
+    email,
+    gid,
+  }: CreateUserBodyParams): Promise<string> {
+    const userModel = new User({
+      name,
+      sections,
+      picture,
+      googleTokens,
+      email,
+      gid,
+    });
+    console.log(userModel);
     await userModel.save();
-    return userModel.toObject()
+    return userModel.toObject();
   }
 
-  async addCompletedEvent({ userName, completedEvent }: CompletedEventBodyParams) {
-    const user = await userModel.findOne({ name: userName });
+  //Creates a Group chat based on course Number and Section
+  async groupChat({
+    courseNumber,
+    sectionNumber,
+  }: UserClassSection): Promise<string> {
+    const groupChat = new groupChatModel({
+      room: { courseNumber: courseNumber, sectionNumber: sectionNumber },
+    });
+    await groupChat.save();
+    return groupChat.toObject();
+  }
+
+  /**
+   * Add a completed event to Array completedEvents from user
+   * @param userId From current user  
+   * @returns 
+   */
+  async addCompletedEvent({
+    userId,
+    completedEvent,
+  }: CompletedEventBodyParams) {
+    const user = await userModel.findOne({ _id: userId });
     if (user) {
-      user.completedEvents.push(completedEvent);
-      const resp = await user.save()
-      return resp.id!
+      let hasEvent = user.completedEvents.map((e) => {
+        return e.id;
+      });
+      if (!hasEvent.includes(completedEvent.id!)) {
+        user.completedEvents.push(completedEvent);
+        const resp = await user.save();
+        return resp.id!;
+      } else {
+        console.log("The event you tried to add Already exists");
+      }
     }
-
   }
 
-  async removeEvent({ eventId, courseNumber, courseSection }: RemoveEventBodyParams) {
+  /**
+   * Removes the current event
+   * @param RemoveEventBodyParams 
+   */
+  async removeEvent({
+    eventId,
+    courseNumber,
+    courseSection,
+  }: RemoveEventBodyParams) {
     const course = await Course.findOne({ number: courseNumber });
     if (course) {
-      const section = course.sections.find(section => section.number == courseSection)!;
-      section.events = section.events.filter((event, i) => event._id != eventId)
-      course.save()
+      const section = course.sections.find(
+        (section) => section.number == courseSection
+      )!;
+      section.events = section.events.filter(
+        (event, i) => event._id != eventId
+      );
+      course.save();
     }
   }
 
-  async addEventToSection(courseNumber: string, sectionNumber: string, event: Events) {
-    const courses = (await Course.find({ number: courseNumber }));
-    courses.forEach(c => c.sections.forEach(s => console.log(s.number)));
-    const course = courses.find(course => course.sections.find(fullSection => fullSection.number == sectionNumber))!;
-    const section = course.sections.find(s => s.number == sectionNumber)!;
-    console.log("section: ", sectionNumber)
-    section.events.push(event);
-    section.events[section.events.length-1].mongoId =section.events[section.events.length-1]._id
+  /**
+   * Change User profile Pick
+   * @param id
+   * @param picture
+   */
+  async changeUserImage({ id, picture }: { id: string; picture: string }) {
+    const user = await User.findOne({ _id: id });
+    if (user) {
+      user.picture = picture;
+      await user.save();
+    }
+  }
+
+  /**
+   * Add the current event to the course
+   * @param courseNumber 
+   * @param sectionNumber 
+   * @param event 
+   */
+  async addEventToSection(
+    courseNumber: string,
+    sectionNumber: string,
+    event: Omit<Events, "_id">
+  ) {
+    const courses = await Course.find({ number: courseNumber });
+    courses.forEach((c) => c.sections.forEach((s) => console.log(s.number)));
+    const course = courses.find((course) =>
+      course.sections.find((fullSection) => fullSection.number == sectionNumber)
+    )!;
+    const section = course.sections.find((s) => s.number == sectionNumber)!;
+    console.log("section: ", sectionNumber);
+    section.events.push(event as Events);
+    section.events[section.events.length - 1].mongoId =
+      section.events[section.events.length - 1]._id;
     await course.save();
   }
 
-  async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
-    const courses = userSections.map(async userCourse => {
-      // Some courses can be taken from different programs. Right now they are duplicated in the DB.
-      // For this reason, I'm alwaays selecting the first one.
-      const courses = (await Course.find({ number: userCourse.courseNumber }));
-      courses.forEach(c => c.sections.forEach(s => console.log(s.number)));
-      const course = courses.find(course => course.sections.find(fullSection => fullSection.number == userCourse.sectionNumber))!.toObject();
-      // const section = courses.sections.find(fullSection => fullSection.number == userCourse.sectionNumber)!;
-      return {
-        ...course.sections[0],
-        courseNumber: courses[0].number,
-        courseTitle: courses[0].title,
+  //Adds Message needs room{UserClassSection}and message:{UserMessage}
+  async addMessage({ room, message }: AddMessage) {
+    const groupChat = await groupChatModel.findOne({
+      "room.courseNumber": room.courseNumber,
+      "room.sectionNumber": room.sectionNumber,
+    });
+    if (groupChat) {
+      groupChat.messagesList.push(message);
+      await groupChat.save();
+    } else {
+      console.log("Did not find the room");
+    }
+  }
+  //Rerturns An Array with all themessages ordered by date.
+  async getAllMessages(room: UserClassSection) {
+    const groupChat = await groupChatModel.findOne({
+      "room.courseNumber": room.courseNumber,
+      "room.sectionNumber": room.sectionNumber,
+    });
+    if (groupChat) {
+      const messagesList = groupChat.messagesList;
+      return messagesList;
+    }
+  }
+
+  //Rerturns An Array with all themessages ordered by date.
+  async getLatestMessages(room: UserClassSection, loadedMsgIndex: number) {
+    //15 messages
+    const groupChat = await groupChatModel.findOne({
+      "room.courseNumber": room.courseNumber,
+      "room.sectionNumber": room.sectionNumber,
+    });
+    if (groupChat) {
+      const messagesList = groupChat.messagesList;
+      //Check if all messages have been loaded already
+      if (messagesList.length - loadedMsgIndex * 15 - 15 <= -15) {
+        return null;
       }
+      //Check if less than 15 messages
+      if (messagesList.length < 15) {
+        return messagesList;
+      } else if (
+        messagesList.length > loadedMsgIndex * 15 &&
+        messagesList.length - loadedMsgIndex * 15 - 15 >= 0
+      ) {
+        let messages = messagesList.slice(
+          messagesList.length - loadedMsgIndex * 15 - 15,
+          messagesList.length - loadedMsgIndex * 15
+        );
+        return messages;
+      } else {
+        let messages = messagesList.slice(
+          0,
+          messagesList.length - loadedMsgIndex * 15 - 1
+        );
+        return messages;
+      }
+    } else {
+      throw new Error("trying to get inexisting room");
+    }
+  }
+
+  /**
+   * Returns most recen message from the chat
+   * @param room 
+   * @returns most recent message
+   */
+  async getMostRecentMessage(room: UserClassSection) {
+    const groupChat = await groupChatModel.findOne({
+      "room.courseNumber": room.courseNumber,
+      "room.sectionNumber": room.sectionNumber,
+    });
+    if (groupChat) {
+      const message = groupChat.messagesList;
+      if (message.length > 0) {
+        return {
+          message: message[message.length - 1].message,
+          userName: message[message.length - 1].user.userName,
+        };
+      }
+    }
+  }
+
+  /**
+   * Returns all the users Courses
+   * @param userSections 
+   * @returns All UserClasses 
+   */
+  async getUserClasses(userSections: UserClassSection[]): Promise<UserClass[]> {
+    const courses = userSections.map(async (userCourse) => {
+      const course = (await Course.findOne({
+        number: userCourse.courseNumber,
+      }))!.toObject();
+      const section = course.sections.find(
+        (fullSection) => fullSection.number == userCourse.sectionNumber
+      )!;
+      return {
+        ...section,
+        courseNumber: course.number,
+        courseTitle: course.title,
+      };
     });
 
     return await Promise.all(courses);
   }
 
+  /**
+   * 
+   * @returns All the courses Stripped Information
+   */
   async getAllStrippedCourses() {
-    const result = await Course.find()
-      .select({
-        _id: 1,
-        title: 1,
-        number: 1,
-        'sections.number': 1,
-        'sections.teacher': 1
-      })
+    const result = await Course.find().select({
+      _id: 1,
+      title: 1,
+      number: 1,
+      "sections.number": 1,
+      "sections.teacher": 1,
+    });
     console.log(result);
     return result;
   }
-
-  //Get All Users
-  async getAllUsers() {
-    const result = await User.find()
-    console.log(result)
-    return result;
-  }
-
 }
 
 export default new DbMongoose();
