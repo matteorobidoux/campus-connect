@@ -33,7 +33,6 @@ app.post("/api/login", async (req, res) => {
 
 app.post("/api/addUser", async (req, res) => {
   const body = req.body as CreateUserBodyParams;
-  console.log(body);
   res.json(jest.spyOn(DbMongoose, "addUser"));
 });
 
@@ -66,8 +65,6 @@ app.post("/api/addEvent", async (req, res: Response<AddEventResponse>) => {
   if (!body.section || !body.event) {
     return res.sendStatus(400);
   }
-  console.log(body);
-
   jest.spyOn(DbMongoose, "addEventToSection")
   res.json({ success: true });
 });
@@ -79,12 +76,6 @@ app.get("/api/getMostRecentMessage", async (req, res) => {
     res.sendStatus(400);
   } else {
     const result =  jest.spyOn(DbMongoose, "getMostRecentMessage");
-    console.log(
-      "Getting most recent message",
-      courseNumber,
-      sectionNumber,
-      result
-    );
     res.json(result);
   }
 });
@@ -119,7 +110,6 @@ app.get(
       const result2: UserClass[]=[]
       res.json(result2);
     } else {
-      console.log(typeof(userClassSections))
       res.sendStatus(400);
     }
   }
